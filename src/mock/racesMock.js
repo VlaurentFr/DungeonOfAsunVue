@@ -42,7 +42,7 @@ export const human = [
   },
   {
     name: `Bretons`,
-    img: `/Asun/Assets/races/bretons.png`,
+    img: `races/bretons.png`,
     desc: `Les Bretons sont réputés pour leur finesse d'esprit, leur raffinement et leur aptitude à la magie. Ils vivent principalement dans des royaumes et des terres paisibles, où l'art, la culture et la chevalerie sont hautement valorisés. Ils ont une apparence gracieuse, avec des traits fins, des cheveux bruns ou blonds, et des yeux expressifs. Leur peau est généralement claire, reflétant leur préférence pour rester à l'abri des rigueurs du soleil. Ils sont habiles en diplomatie et en négociation, et sont connus pour leur intelligence et leur sagesse. Les Bretons valorisent l'honneur, la loyauté et le courage. Ils sont souvent impliqués dans des quêtes chevaleresques et des aventures héroïques, cherchant à défendre leur royaume contre les menaces extérieures et à protéger les valeurs de la courtoisie et de la bravoure. Les Bretons sont également connus pour leur attachement à la terre et à la nature. Ils vénèrent des dieux liés à la terre, aux eaux et aux forêts, et ont un profond respect pour la nature et ses créatures. Ils entretiennent souvent des liens étroits avec les fées, les esprits et les êtres magiques qui peuplent leurs contrées.
     `,
   },
