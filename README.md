@@ -50,3 +50,14 @@ npm run test:unit
 ```sh
 npm run lint
 ```
+### Deploy
+
+```sh
+npm run build
+
+git add dist -f
+
+git commit -m "adding dist"
+
+git subtree push --prefix dist origin gh-pages
+```
