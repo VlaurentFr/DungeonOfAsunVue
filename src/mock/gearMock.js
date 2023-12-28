@@ -160,8 +160,8 @@ export const lightgears = [
   },
   {
     name: 'Armure de Cuir Cloutée',
-    def: '2',
-    res: '1',
+    def: '1',
+    res: '2',
     cost: '45 po'
   },
 ]
@@ -169,32 +169,32 @@ export const lightgears = [
 export const gears = [
   {
     name: 'Armures de Peaux',
-    def: '2',
-    res: '2',
+    def: '1',
+    res: '1',
     cost: '10 po'
   },
   {
     name: 'Armures de Mailles',
-    def: '3',
-    res: '3',
+    def: '2',
+    res: '1',
     cost: '50 po'
   },
   {
     name: 'Armures d\'Ecailles',
-    def: '4',
-    res: '4',
+    def: '1',
+    res: '2',
     cost: '50 po'
   },
   {
     name: 'Cuirrasse',
-    def: '4',
+    def: '1',
     res: '4',
     cost: '400 po'
   },
   {
     name: 'Armures de Demi-plate',
-    def: '5',
-    res: '3',
+    def: '1',
+    res: '5',
     cost: '750 po'
   },
 ]
@@ -203,25 +203,25 @@ export const heavygears = [
   {
     name: 'Armure de Fer',
     def: '4',
-    res: '2',
-    cost: '30 po'
+    res: '1',
+    cost: '100 po'
   },
   {
     name: 'Armure d\'Acier',
     def: '6',
-    res: '3',
-    cost: '75 po'
+    res: '1',
+    cost: '200 po'
   },
   {
     name: 'Armure d\'Argent',
     def: '7',
-    res: '3',
-    cost: '200 po'
+    res: '1',
+    cost: '500 po'
   },
   {
     name: 'Armure de Plate',
     def: '8',
-    res: '4',
+    res: '1',
     cost: '1500 po'
   },
 ]

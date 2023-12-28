@@ -1,13 +1,18 @@
 <script setup lang="ts">
+import SideMenuUnivers from '../components/SideMenuUnivers.vue'
+
 import { ref } from 'vue';
-import { human } from '@/mock/racesMock.js';
+import { human, elf, dwarf, orc, other } from '@/mock/racesMock.js';
 
-const type = ref("humans")
-
+const type = ref("")
+function getImageUrl(name: string) {
+  return new URL(`../assets/${name}`, import.meta.url).href
+}
 </script>
 <template>
-  <div>
-    <div className='title-page'>
+  <SideMenuUnivers></SideMenuUnivers>
+  <div class="visible">
+    <div class='title-page'>
       <h1>Races</h1>
       <h2>Découvrez la liste des races de l'univers</h2>
       <button id="back" v-if="type" @click="type = ''">Retour à la liste</button>
@@ -15,7 +20,7 @@ const type = ref("humans")
     <div id="races" v-if="!type">
       <button @click="type = 'humans'">
         <img src="../assets/Races-logo/humans.png"/>
-        <span>humains</span>
+        <span>Humains</span>
       </button>
       <button @click="type = 'elves'">
         <img src="../assets/Races-logo/wood-elf.png"/>
@@ -26,7 +31,7 @@ const type = ref("humans")
         <span>Nains</span>
       </button>
       <button @click="type = 'orcs'">
-        <img src="../assets/Races-logo/green-orc.png"/>
+        <img src="../assets/races/orc.png"/>
         <span>Orcs</span>
       </button>
       <button @click="type = 'other'">
@@ -34,17 +39,59 @@ const type = ref("humans")
         <span>Autres</span>
       </button>
     </div>
+    <!-- HUMANS -->
     <div v-if="type == 'humans'">
       <div v-for="h of human" :key="h.name">
         <h3>{{ h.name }}</h3>
         <div class="race">
-          <img :src="`/src/assets/${h.img}`"/>
+          <img :src="getImageUrl(h.img)"/>
+          <p>{{ h.desc }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- ELVES -->
+    <div v-if="type == 'elves'">
+      <div v-for="h of elf" :key="h.name">
+        <h3>{{ h.name }}</h3>
+        <div class="race">
+          <img :src="getImageUrl(h.img)"/>
+          <p>{{ h.desc }}</p>
+        </div>
+      </div>
+    </div>
+     <!-- DWARFS -->
+     <div v-if="type == 'dwarfs'">
+      <div v-for="h of dwarf" :key="h.name">
+        <h3>{{ h.name }}</h3>
+        <div class="race">
+          <img :src="getImageUrl(h.img)"/>
+          <p>{{ h.desc }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- ELVES -->
+    <div v-if="type == 'orcs'">
+      <div v-for="h of orc" :key="h.name">
+        <h3>{{ h.name }}</h3>
+        <div class="race">
+          <img :src="getImageUrl(h.img)"/>
+          <p>{{ h.desc }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- OTHER -->
+    <div v-if="type == 'other'">
+      <div v-for="h of other" :key="h.name">
+        <h3>{{ h.name }}</h3>
+        <div class="race">
+          <img :src="getImageUrl(h.img)"/>
           <p>{{ h.desc }}</p>
         </div>
       </div>
     </div>
   </div>
 </template>
+
 <style>
 #back {
   background-color: var(--primaryColor);
@@ -53,6 +100,7 @@ const type = ref("humans")
   color: var(--textColor);
   padding: 8px 16px;
   font-size: 16px;
+  cursor: pointer;
 }
 #races {
   display: flex;
@@ -62,6 +110,7 @@ const type = ref("humans")
   align-content: center;
   flex: 1;
   gap: 64px;
+  margin-bottom: 64px;
 }
 #races button {
   background-color: transparent;
@@ -77,18 +126,24 @@ const type = ref("humans")
 #races button img {
   width: 244px;
   border-radius: 8px;
+  border: 3px solid var(--textColor);
 }
 #races button:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 #races button span {
   font-size: 24px;
+  font-family: cursive;
+}
+.race {
+  margin-bottom: 68px;
 }
 .race img {
   width: 244px;
   border-radius: 8px;
   float: left;
-  margin: 0 16px 0 0;
+  margin: 0 16px 16px 0;
   border: 3px solid var(--textColor);
 }
 

@@ -35,7 +35,7 @@
 }
 
   :root.dark {
-    --bg: url("../assets/bg1.webp");
+    --bg: url("../assets/bg1.png");
     --primaryColor: #DC5A41;
     --secondaryColor: #F6BE4F;
     --background: #303036;
@@ -87,7 +87,7 @@ table, td, th, tr {
   padding: 16px;
   margin-bottom: 16px;
   height: fit-content;
-  width: max-content;
+  /* width: max-content; */
 }
 
 thead, th {

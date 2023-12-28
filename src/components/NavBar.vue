@@ -14,7 +14,7 @@ const LINKS = [
     name: 'Accueil'
   },
   {
-    url: '/Univers/races',
+    url: '/Univers/story',
     name: 'Univers'
   },
   {

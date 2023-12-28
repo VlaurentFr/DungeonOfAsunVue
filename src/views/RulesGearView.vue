@@ -15,22 +15,24 @@ import { weapons, lightgears, gears, heavygears, shields } from '../mock/gearMoc
         </div>
         <h3>Liste des équipements</h3>
         <article class='row'>
-          <table>
-            <thead>
-              <tr>
-                <th colspan="1">Nom</th>
-                <th colspan="1">Dégâts</th>
-                <th colspan="1">Coûts</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="w of weapons" :key="w.name">
-                <td>{{w.name}}</td>
-                <td>{{w.dmg}}</td>
-                <td>{{w.cost}}</td>
-              </tr>
-            </tbody>
-          </table>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="1">Nom</th>
+                  <th colspan="1">Dégâts</th>
+                  <th colspan="1">Coûts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="w of weapons" :key="w.name">
+                  <td>{{w.name}}</td>
+                  <td>{{w.dmg}}</td>
+                  <td>{{w.cost}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div>
             <table>
               <thead>

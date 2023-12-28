@@ -5,7 +5,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Accueil',
       component: () => import('../views/HomeView.vue')
     },
     {
@@ -30,11 +30,31 @@ const router = createRouter({
       component: () => import('../views/RulesFightView.vue')
     },
     {
+      path: '/Rules/weapon',
+      name: 'rules-weapon',
+      component: () => import('../views/RulesWeaponView.vue')
+    },
+    {
+      path: '/Rules/orga',
+      name: 'rules-orga',
+      component: () => import('../views/RulesOrganisationView.vue')
+    },
+    {
+      path: '/Rules/spell',
+      name: 'rules-spell',
+      component: () => import('../views/RulesSpellView.vue')
+    },
+    {
       path: '/Rules/gear',
       name: 'rules-gear',
       component: () => import('../views/RulesGearView.vue')
     },
     // UNIVERS
+    {
+      path: '/Univers/story',
+      name: 'univers-story',
+      component: () => import('../views/UniversStoryView.vue')
+    },
     {
       path: '/Univers/races',
       name: 'univers-races',

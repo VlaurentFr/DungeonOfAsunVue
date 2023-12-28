@@ -4,36 +4,12 @@ import {useRoute} from 'vue-router'
 
 const LINKS = [
   {
-    url: '/Rules/creation',
-    name: 'Création de personnage'
+    url: '/Univers/story',
+    name: 'Histoires générales'
   },
   {
-    url: '/Rules/fight',
-    name: 'Combats'
-  },
-  {
-    url: '/Rules/class',
-    name: 'Classes'
-  },
-  {
-    url: '/Rules/archetype',
-    name: 'Archetypes'
-  },
-  {
-    url: '/Rules/weapons',
-    name: 'Maîtrises d\'armes'
-  },
-  {
-    url: '/Rules/orga',
-    name: 'Organisations'
-  },
-  {
-    url: '/Rules/spell',
-    name: 'Sorts'
-  },
-  {
-    url: '/Rules/gear',
-    name: 'Equipements'
+    url: '/Univers/races',
+    name: 'Races & Peuples'
   },
 ]
 

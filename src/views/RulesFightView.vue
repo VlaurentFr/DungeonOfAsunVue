@@ -5,6 +5,10 @@ import SideMenuRules from '../components/SideMenuRules.vue'
 <template>
   <SideMenuRules></SideMenuRules>
   <div class="visible">
+    <div class='title-page'>
+      <h1>Combats</h1>
+      <h2>Découvrez comment ce déroule les combats</h2>
+    </div>
     <div>
       <div>
         <h3>Les mecaniques de bases</h3>
