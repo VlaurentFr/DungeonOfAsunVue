@@ -10,7 +10,7 @@
   flex-direction: column;
   z-index: 1;
   gap: 8px;
-  max-height: 90vh;
+  max-height: 50vh;
   transition: all 300ms ease-in-out;
 }
 .sideNav.close {
@@ -34,6 +34,7 @@
 }
 .sideMenuContent {
   padding: 12px;
+  overflow: scroll;
 }
 
 .slot p{
@@ -48,11 +49,17 @@
 .slot a{
   text-decoration: none;
 }
+.slot .selected {
+  color: var(--dark);
+  background-color: var(--secondaryColor);
+  border-radius: 6px;
+}
 .slot.no-hover p:hover {
   color: var(--textColor);
   background-color: transparent;
   cursor: initial;
 }
+
 .slot p:hover, .slot .subslot p:hover{
   color: var(--dark);
   background-color: var(--secondaryColor);

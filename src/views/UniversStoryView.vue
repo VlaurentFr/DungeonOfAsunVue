@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import SideMenuUnivers from '../components/SideMenuUnivers.vue'
 </script>
 <template>
-  <SideMenuUnivers></SideMenuUnivers>
   <div class="visible">
     <div className='title-page'>
       <h1>Histoire générale</h1>

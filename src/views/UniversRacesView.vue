@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import SideMenuUnivers from '../components/SideMenuUnivers.vue'
 
 import { ref } from 'vue';
 import { human, elf, dwarf, orc, other } from '@/mock/racesMock.js';
@@ -10,7 +9,6 @@ function getImageUrl(name: string) {
 }
 </script>
 <template>
-  <SideMenuUnivers></SideMenuUnivers>
   <div class="visible">
     <div class='title-page'>
       <h1>Races</h1>

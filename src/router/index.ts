@@ -30,6 +30,11 @@ const router = createRouter({
       component: () => import('../views/RulesFightView.vue')
     },
     {
+      path: '/Rules/class',
+      name: 'rules-class',
+      component: () => import('../views/ClassesView.vue')
+    },
+    {
       path: '/Rules/weapon',
       name: 'rules-weapon',
       component: () => import('../views/RulesWeaponView.vue')
@@ -37,7 +42,7 @@ const router = createRouter({
     {
       path: '/Rules/orga',
       name: 'rules-orga',
-      component: () => import('../views/RulesOrganisationView.vue')
+      component: () => import('../views/OrganisationView.vue')
     },
     {
       path: '/Rules/spell',
@@ -59,6 +64,12 @@ const router = createRouter({
       path: '/Univers/races',
       name: 'univers-races',
       component: () => import('../views/UniversRacesView.vue')
+    },
+    // BESTIAIRE
+    {
+      path: '/Bestiary',
+      name: 'bestiary',
+      component: () => import('../views/BestiaryView.vue')
     },
   ]
 })

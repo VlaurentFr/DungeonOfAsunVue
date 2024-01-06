@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import SideMenuRules from '../components/SideMenuRules.vue'
 import { spell } from '@/mock/spellMock';
 </script>
 <template>
-  <SideMenuRules></SideMenuRules>
   <div class='visible'>
     <div class='title-page'>
       <h1>Sorts</h1>

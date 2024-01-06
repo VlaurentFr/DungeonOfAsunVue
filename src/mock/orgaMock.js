@@ -62,10 +62,10 @@ export const orga = [
     ]
   },
   {
-    title: `L'ordre du gantelet`,
+    title: `L'ordre du Heaume`,
     img: `orga/Glotergan.png`,
     color: "orange",
-    desc: `L'Ordre du Gantelet est une organisation de chevaliers dévoués à la protection des opprimés, à la défense de la justice et à la lutte contre les forces du mal. Fondé il y a des siècles, l'ordre a traversé les âges en poursuivant sa mission de protéger les plus faibles et d'assurer la paix dans les royaumes.`,
+    desc: `L'Ordre du Heaume est une organisation de chevaliers dévoués à la protection des opprimés, à la défense de la justice et à la lutte contre les forces du mal. Fondé il y a des siècles, l'ordre a traversé les âges en poursuivant sa mission de protéger les plus faibles et d'assurer la paix dans les royaumes.`,
     rank: [
       {name:"Grand Heaume de Lion :", desc:"Le plus haut rang de l'ordre est celui du Grand Heaume de Lion. Les chevaliers qui ont atteint ce rang ont démontré leur bravoure, leur sagesse et leur engagement sans faille envers la justice. Ils sont les chefs de l'ordre et sont chargés de guider les autres membres dans leur quête pour protéger les innocents."},
       {name:"Duc de Guerre :", desc:"Le Duc de Guerre est le second rang de l'ordre. Ces chevaliers sont des experts dans l'art de la guerre, prêts à se battre contre toutes les forces du mal pour défendre les opprimés et éradiquer les menaces qui pèsent sur les royaumes."},

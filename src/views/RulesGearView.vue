@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import SideMenuRules from '../components/SideMenuRules.vue'
 import { weapons, lightgears, gears, heavygears, shields } from '../mock/gearMock.js';
 
 </script>
 <template>
-  <SideMenuRules></SideMenuRules>
   <div class='visible'>
     <div>
     <div>

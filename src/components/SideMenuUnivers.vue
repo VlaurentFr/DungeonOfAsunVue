@@ -20,7 +20,7 @@ const isOpen = ref(true);
 
 </script>
 <template>
-  <side class='sideNav' :class="{close: !isOpen}" >
+  <aside class='sideNav' :class="{close: !isOpen}" >
     <div class=' sideMenuHeader'>
       <h4>Menu des règles</h4>
       <div id="open-side-nav" @click="isOpen = !isOpen">
@@ -39,7 +39,7 @@ const isOpen = ref(true);
         </RouterLink>
       </div>
     </div>
-  </side>
+  </aside>
 </template>
 
 <style>

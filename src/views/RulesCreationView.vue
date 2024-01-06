@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import SideMenuRules from '../components/SideMenuRules.vue'
 </script>
 <template>
-	<SideMenuRules></SideMenuRules>
   <div class='visible'>
 		<div class='title-page'>
 			<h1>Creation de personnage</h1>
