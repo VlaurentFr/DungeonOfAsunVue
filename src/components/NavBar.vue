@@ -21,8 +21,24 @@ const LINKS = [
         name: 'Histoires générales'
       },
       {
+        url: '/Univers/gods',
+        name: 'Mythologie'
+      },
+      {
+        url: '/Univers/panth',
+        name: 'Panthéons'
+      },
+      {
         url: '/Univers/races',
         name: 'Races & Peuples'
+      },
+      {
+        url: '/Univers/faction',
+        name: 'Factions & Royaumes'
+      },
+      {
+        url: '/Univers/orga',
+        name: 'Organisations'
       },
     ]
   },
@@ -48,10 +64,6 @@ const LINKS = [
       {
         url: '/Rules/weapons',
         name: 'Maîtrises d\'armes'
-      },
-      {
-        url: '/Rules/orga',
-        name: 'Organisations'
       },
       {
         url: '/Rules/spell',

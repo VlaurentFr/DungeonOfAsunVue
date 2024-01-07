@@ -1,23 +1,5 @@
 export const spell = [
   {
-    name: "Archetype 1",
-    type: "Passif",
-    lvl: 0,
-    desc: "Permet de choisir son archetype et donc sont sort de niveau 1",
-  },
-  {
-    name: "Archetype 2",
-    type: "Passif",
-    lvl: 0,
-    desc: "Sort d'archetype niveau 2",
-  },
-  {
-    name: "Archetype 3",
-    type: "Passif",
-    lvl: 0,
-    desc: "Sort d'archetype niveau 3",
-  },
-  {
     name: "Feu",
     type: "DPS",
     lvl: 1,
@@ -228,7 +210,7 @@ export const spell = [
     name: "Récupération",
     type: "Soin",
     lvl: 2,
-    desc: "Heal un joueur",
+    desc: "Soigne un joueur",
     dices: ["3d6 PV"],
     price: "5",
     range: "longue",

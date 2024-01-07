@@ -47,39 +47,6 @@ function changeOrga(index: number) {
 </template>
 
 <style scoped>
-.header {
-  width: fit-content;
-  margin: auto;
-  text-align: center;
-}
-.header h2, .header h1 {
-  text-align: center;
-}
-.header h1 {
-  color: #FFF;
-  font-family: Work Sans;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.header h2 {
-  color: #FFF;
-  font-family: Caladea;
-  font-size: 32px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 48px;
-}
-.header h2 span {
-  font-weight: 400;
-  padding: 0 0 6px 0;
-  border-bottom: 1px solid var(--primaryColor);
-}
-.header p {
-  max-width: 560px;
-}
 .orga-container {
   display: flex;
   margin-top: 80px;
@@ -133,7 +100,8 @@ function changeOrga(index: number) {
   height: 48px;
   width: 48px;
   font-size: 24px;
-  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   background: #202124;
   display: flex;
   justify-content: center;

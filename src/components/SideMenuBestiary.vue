@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import {useRoute} from 'vue-router';
-import { MOB } from '@/mock/bestiaryMock';
+import { MOB } from '@/mock/bestiaryMock';
 
 const route = useRoute();
 const path = computed(() =>route.hash || "#");
-
 </script>
 <template>
   <aside>

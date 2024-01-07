@@ -3,9 +3,9 @@ import { spell } from '@/mock/spellMock';
 </script>
 <template>
   <div class='visible'>
-    <div class='title-page'>
-      <h1>Sorts</h1>
-      <h2>Découvrez la liste des sorts de l'univers</h2>
+    <div class='header'>
+      <h1>Les Sorts</h1>
+      <h2>Découvrez la liste des<span> sorts </span></h2>
     </div>
     <div class="title-section">
         <h3>Liste des sorts</h3>
@@ -29,7 +29,7 @@ import { spell } from '@/mock/spellMock';
             <td>{{s.type}}</td>
             <td>{{s.lvl}}</td>
             <td>{{s.desc}}</td>
-            <td>{{s.dices?.[0]}}</td>
+            <td v-html="s.dices?.[0]"></td>
             <td>{{s.price}}</td>
             <td>{{s.range}}</td>
           </tr>

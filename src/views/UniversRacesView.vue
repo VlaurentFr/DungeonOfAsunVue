@@ -10,30 +10,42 @@ function getImageUrl(name: string) {
 </script>
 <template>
   <div class="visible">
+    <div class='header'>
+      <h1>Les Races</h1>
+      <h2>Découvrez la liste des <span> races </span></h2>
+    </div>
     <div class='title-page'>
-      <h1>Races</h1>
-      <h2>Découvrez la liste des races de l'univers</h2>
       <button id="back" v-if="type" @click="type = ''">Retour à la liste</button>
     </div>
     <div id="races" v-if="!type">
       <button @click="type = 'humans'">
-        <img src="../assets/Races-logo/humans.png"/>
+        <div>
+          <img src="../assets/Races-logo/humans.png"/>
+        </div>
         <span>Humains</span>
       </button>
       <button @click="type = 'elves'">
-        <img src="../assets/Races-logo/wood-elf.png"/>
+        <div>
+          <img src="../assets/Races-logo/wood-elf.png"/>
+        </div>
         <span>Elfes</span>
       </button>
       <button @click="type = 'dwarfs'">
-        <img src="../assets/Races-logo/dwarf.png"/>
+        <div>
+          <img src="../assets/Races-logo/dwarf.png"/>
+        </div>
         <span>Nains</span>
       </button>
       <button @click="type = 'orcs'">
-        <img src="../assets/races/orc.png"/>
+        <div>
+          <img src="../assets/races/orc.png"/>
+        </div>
         <span>Orcs</span>
       </button>
       <button @click="type = 'other'">
-        <img src="../assets/Races-logo/drak.png"/>
+        <div>
+          <img src="../assets/Races-logo/drak.png"/>
+        </div>
         <span>Autres</span>
       </button>
     </div>
@@ -121,12 +133,18 @@ function getImageUrl(name: string) {
   align-items: center;
   transition: all 300ms ease-in-out;
 }
-#races button img {
+#races button div {
   width: 244px;
+  height: 244px;
   border-radius: 8px;
   border: 3px solid var(--textColor);
+  overflow: hidden;
 }
-#races button:hover {
+#races button img {
+  width: 244px;
+  height: 244px;
+}
+#races button:hover img{
   transform: scale(1.2);
   cursor: pointer;
 }

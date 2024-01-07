@@ -35,19 +35,14 @@ const router = createRouter({
       component: () => import('../views/ClassesView.vue')
     },
     {
-      path: '/Rules/weapon',
+      path: '/Rules/weapons',
       name: 'rules-weapon',
       component: () => import('../views/RulesWeaponView.vue')
     },
     {
-      path: '/Rules/orga',
-      name: 'rules-orga',
-      component: () => import('../views/OrganisationView.vue')
-    },
-    {
       path: '/Rules/spell',
       name: 'rules-spell',
-      component: () => import('../views/RulesSpellView.vue')
+      component: () => import('../views/SpellView.vue')
     },
     {
       path: '/Rules/gear',
@@ -61,9 +56,34 @@ const router = createRouter({
       component: () => import('../views/UniversStoryView.vue')
     },
     {
+      path: '/Univers/gods',
+      name: 'univers-gods',
+      component: () => import('../views/MythView.vue')
+    },
+    {
+      path: '/Univers/godsDetails',
+      name: 'univers-god-detail',
+      component: () => import('../views/MythDetailsView.vue')
+    },
+    {
+      path: '/Univers/panth',
+      name: 'univers-panth',
+      component: () => import('../views/PanthView.vue')
+    },
+    {
+      path: '/Univers/panthDetails',
+      name: 'univers-panth-detail',
+      component: () => import('../views/PanthDetailsView.vue')
+    },
+    {
       path: '/Univers/races',
       name: 'univers-races',
       component: () => import('../views/UniversRacesView.vue')
+    },
+    {
+      path: '/Univers/orga',
+      name: 'univers-orga',
+      component: () => import('../views/OrganisationView.vue')
     },
     // BESTIAIRE
     {

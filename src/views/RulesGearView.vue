@@ -7,9 +7,9 @@ import { weapons, lightgears, gears, heavygears, shields } from '../mock/gearMoc
     <div>
     <div>
       <div>
-        <div className='title-page'>
-          <h1>Equipements</h1>
-          <h2>Découvrez la liste des équipements de l'univers</h2>
+        <div class='header'>
+          <h1>Les Equipements</h1>
+          <h2>Découvrez la liste des <span> équipements </span></h2>
         </div>
         <h3>Liste des équipements</h3>
         <article class='row'>

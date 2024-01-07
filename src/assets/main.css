@@ -1,6 +1,7 @@
 @import './base.css';
 @import './footer.css';
 @import './nav.css';
+@import './header.css';
 /* @import './sideNav.css'; */
 ::-webkit-scrollbar-thumb {
   background: var(--primaryColor); 
@@ -52,12 +53,13 @@ p {
 }
 h3 {
   font-family: Work Sans;
-  font-size: 48px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   position: relative;
   width: fit-content;
+  margin: 128px 0 64px 0;
 }
 h3:after {
   content: "";

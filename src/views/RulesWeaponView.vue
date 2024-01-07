@@ -2,9 +2,9 @@
 </script>
 <template>
   <div class='visible'>
-    <div class='title-page'>
-      <h1>Equipements</h1>
-      <h2>Découvrez la liste des équipements de l'univers</h2>
+    <div class='header'>
+      <h1>La Maîtrises d'armes</h1>
+      <!-- <h2>Découvrez comment créer votre personnage pour<span> jouer </span></h2> -->
     </div>
       <div class="title-section">
         <h3>Qu'est-ce que c'est ?</h3>
@@ -70,8 +70,8 @@
             </tr>
             <tr>
               <td>Exp. Gagné</td>
-              <td>2d6</td>
-              <td>1d6</td>
+              <td>2 <i class="fas fa-dice-d20"></i> 6</td>
+              <td>1 <i class="fas fa-dice-d20"></i> 6</td>
               <td>x1,5</td>
             </tr>
           </tbody>

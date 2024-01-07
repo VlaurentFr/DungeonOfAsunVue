@@ -1,25 +1,7 @@
 /* color palette from <https://github.com/vuejs/theme> */
 
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
-
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
-
-  --vt-c-indigo: #2c3e50;
-
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  background-color: #000;
 }
 
 /* semantic color variables for this project */
@@ -93,28 +75,29 @@ table {
 }
 
 table, td, th, tr {
-  border: black 1px solid;
+  border: white 1px solid;
   padding: 16px;
   margin-bottom: 16px;
   height: fit-content;
-  /* width: max-content; */
+  text-align: center;
 }
 
-thead, th {
+thead {
   background-color: var(--background) !important;
   color: var(--textColor) !important;
 }
 
-tr:nth-child(odd) {
+thead:first-child tr {
+  background-color: var(--primaryColor);
+  color: black;
+}
+
+/* tr:nth-child(odd) {
   background: lightgray;
   color: #000;
-}
+} */
 
 tr:nth-child(even) {
-  background: grey;
-  color: #000;
-}
-
-h3 {
-  margin: 64px 0;
+  background: #202124;
+  color: white; 
 }

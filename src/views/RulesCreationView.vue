@@ -2,16 +2,14 @@
 </script>
 <template>
   <div class='visible'>
-		<div class='title-page'>
-			<h1>Creation de personnage</h1>
-			<h2>Découvrez comment créer votre personnage pour jouer</h2>
-		</div>
+		<div class='header'>
+      <h1>La creation de personnage</h1>
+      <h2>Découvrez comment créer votre personnage pour<span> jouer </span></h2>
+			<p>
+				Bienvenue sur la page de création de personnage de notre jeu de rôle épique ! Ici, vous pouvez donner vie à votre héros, le personnaliser à votre guise et le préparer pour des aventures palpitantes dans notre univers fantastique. Suivez les étapes ci-dessous pour créer votre personnage unique.
+			</p>
+    </div>
 		<div>
-			<div class='fight-container'>
-				<p>
-					Bienvenue sur la page de création de personnage de notre jeu de rôle épique ! Ici, vous pouvez donner vie à votre héros, le personnaliser à votre guise et le préparer pour des aventures palpitantes dans notre univers fantastique. Suivez les étapes ci-dessous pour créer votre personnage unique.
-				</p>
-			</div>
 			<div class='title-section'>
 				<h3>
 					Étape 1 : Choisissez une Race

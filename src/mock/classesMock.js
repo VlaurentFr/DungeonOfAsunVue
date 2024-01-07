@@ -2,15 +2,15 @@ export const basicClasses = [
   {
     name: `Noble`,
     img: `classes/Noble.png`,
-    spell: ['Feu'],
-    weapons: ['Aucune'],
+    spell: ['Sort mineur, n\'importe quel sort de niveau 1, dégât diviser par 2'],
+    weapons: ['Aucun'],
     mastery: ['+ 5 PV'],
     desc: "Le Noble est un individu issu de la haute société, possédant un statut social élevé et souvent lié à une lignée aristocratique. Habile en diplomatie et doté d'une éducation raffinée, le Noble excelle dans l'art de la négociation et de la persuasion. Sa formation peut inclure des compétences équestres, la maîtrise des armes élégantes, et une connaissance approfondie des coutumes et des règles sociales. Bien qu'il puisse ne pas être directement impliqué dans les affrontements physiques, le Noble utilise son influence et ses ressources pour atteindre ses objectifs, que ce soit dans le domaine politique, économique ou diplomatique. Sa présence peut être à la fois un atout précieux dans la cour royale et un défi à relever pour ceux qui cherchent à remettre en question son autorité.",
   },
   {
     name: `Roturier`,
     img: `classes/roturier.png`,
-    weapons: ['Aucune'],
+    weapons: ['Aucun'],
     mastery: ['+ 5 PV'],
     desc: "Le Roturier est un individu issu des classes sociales inférieures, souvent sans titre nobiliaire ni privilèges héréditaires. Il provient du peuple, travaillant dur pour gagner sa vie dans des professions variées telles que l'agriculture, l'artisanat ou le commerce. Le Roturier est généralement polyvalent, ayant acquis des compétences pratiques nécessaires à sa survie quotidienne. Sa force réside dans son pragmatisme, sa résilience face aux difficultés et sa connexion avec la réalité du monde. Bien qu'il puisse manquer du raffinement associé à la noblesse, le Roturier apporte souvent une perspective terre-à-terre et une compréhension intuitive des besoins du peuple. En temps de crise, les Roturiers peuvent se révéler être des leaders communautaires fiables, défendant les intérêts du peuple laborieux au sein de la société."
   },

@@ -1,7 +1,7 @@
 export const orga = [
   {
     title: `Le Cercle d'Emeraude`,
-    img: `orga/Elf.png`,
+    img: `classes/druid3.png`,
     color: "green",
     desc: `Le Cercle d'Emeraude est une organisation secrète composée de druides et de rôdeurs qui se consacrent à la protection de la nature et à la préservation de la vie sauvage. Ils se réunissent dans des lieux sacrés de la nature pour discuter des menaces qui pèsent sur l'environnement et pour élaborer des stratégies pour y faire face. Ils sont également connus pour leur expertise dans les plantes et les animaux, ainsi que pour leur capacité à communiquer avec eux.`,
     rank: [
@@ -17,7 +17,7 @@ export const orga = [
   },
   {
     title: `Le Cercle de Rubis`,
-    img: `orga/harm.png`,
+    img: `classes/roturier.png`,
     color: "red",
     desc: `Le Cercle de Rubis est une organisation secrète composée de moines et de combattants qui se consacrent à la protection des faibles et des opprimés. Ils ont juré de défendre les innocents et de lutter contre l'injustice, qu'elle soit causée par des puissants ou par des criminels. Leur entraînement rigoureux leur permet de maîtriser les arts martiaux et de devenir des guerriers redoutables.`,
     rank: [

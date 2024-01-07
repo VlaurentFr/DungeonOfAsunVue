@@ -3,9 +3,9 @@
 
 <template>
   <div class="visible">
-    <div class='title-page'>
-      <h1>Combats</h1>
-      <h2>Découvrez comment ce déroule les combats</h2>
+    <div class='header'>
+      <h1>Les Combats</h1>
+      <h2>Découvrez comment ce déroule les <span> combats </span></h2>
     </div>
     <div>
       <div>

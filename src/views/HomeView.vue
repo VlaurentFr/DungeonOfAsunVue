@@ -99,11 +99,11 @@
     font-size: 32px;
 }
 
-#redirect:hover .redirect-card {
+/* #redirect:hover .redirect-card {
     filter: blur(8px);
     transform: scale(0.9);
     opacity: .9;
-}
+} */
 #redirect .redirect-card:hover {
     filter: blur(0px);
     transform: scale(1);

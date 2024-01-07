@@ -2,9 +2,9 @@
 </script>
 <template>
   <div class="visible">
-    <div className='title-page'>
-      <h1>Histoire générale</h1>
-      <h2>Découvrez l'histoire d’Asun</h2>
+    <div class='header'>
+      <h1>L'Histoire générale</h1>
+      <h2>Découvrez l'histoire <span> d'Asun </span></h2>
     </div>
     <div class="title-section">
         <h3>La genèse</h3>
@@ -23,7 +23,7 @@
         La domination des hommes était en marche sous la bannière d'Edes "Le Justicier".
         </p>
         <div class="image">
-          <img src="/assets/gods/Riannedos.png" />
+          <img src="@/assets/gods/Riannedos.png" />
           <span>illustration de la genèse</span>
         </div>
       </div>
@@ -79,7 +79,7 @@
         Si l'empire n'a jamais contrôlé la totalité de ce monde, il en est la principale force armée et culturelle, le seul à avoir établi un environnement stable, sain et prospère pour la plupart de ses citoyens malgré quelques déboires au fils des siècles. Il arriva même à soumettre les forces de Thierion le reconnaissance comme plus puissant et plus grand qu'eux.
         </p>
         <div class="image">
-          <img src="/assets//cults/six.png" />
+          <img src="@/assets/cults/six.png" />
           <span>illustration de l'Empire</span>
         </div>
       </div>
