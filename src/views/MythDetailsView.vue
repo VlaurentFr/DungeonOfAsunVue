@@ -34,12 +34,13 @@ function navigate(panthIndex: number){
     </div>
     <div class="desc">
       <img class="img-desc" :src="getImageUrl(godStore.god.img)" />
+      <div class="filter"></div>
       <div>
         <h3>Description</h3>
         <p>{{ godStore.god.desc }}</p>
       </div>
     </div>
-    <h3>Panthéon</h3>
+    <h3>Religions</h3>
     <div class="desc">
       <div class="panth" v-for="p of godStore.god.cults" :key="p" @click="navigate(p)">
         <p class="panth-name">{{ panth[p].name }}</p>
@@ -61,10 +62,33 @@ function navigate(panthIndex: number){
   cursor: pointer;
 }
 .img-desc {
-  width: 244px;
-  height: 244px;
-  margin: 128px 64px 0 0;
+  width: 33%;
+  height: 100%;
+  margin: 73px 0px 0 0;
   border-radius: 4px;
+  position:fixed ;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.filter {
+  width: 33%;
+  height: 100%;
+  margin: 73px 0px 0 0;
+  border-radius: 4px;
+  position:fixed ;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 80%);
+}
+@media screen and (max-width: 1024px) {
+  .img-desc {
+    position: initial;
+    height: 344px;
+    margin: 128px 0 0 0;
+  }
+  
 }
 .desc {
   display: flex;
@@ -85,38 +109,22 @@ img {
   position: relative;
   margin: 24px 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  border: white solid 4px;
   cursor: pointer;
   border-radius: 8px;
 }
 .panth-name {
-  position: absolute;
-  bottom: -32px;
   padding: 16px 32px;
-  max-width: 75%;
   font-size: 16px;
   border-radius: 4px;
   text-align: center;
   width: fit-content;
-  background-color: white;
-  color: var(--primaryColor);
+  color: white;
   z-index: 2;
 }
-.panth:hover .panth-name {
-  position: absolute;
-  bottom: -32px;
-  padding: 16px 32px;
-  max-width: 75%;
-  font-size: 16px;
-  border-radius: 4px;
-  text-align: center;
-  width: fit-content;
-  background-color: var(--primaryColor);
-  color: black;
-}
+
 .panth:hover img {
   transform: scale(1.2);
 }

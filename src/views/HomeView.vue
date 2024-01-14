@@ -9,7 +9,7 @@
 				<section>
 					<div class='title-page'>
 						<div id="play">
-							<h1>Dungeons of Asun</h1>
+							<img src="../assets/DoA.svg"/>
 						</div>
 						<div id="redirect">
 							<div class='redirect-card'>
@@ -71,10 +71,12 @@
 </template>
 
 <style scoped>
-#play h1 {
-  text-align: center;
-  font-size: xxx-large;
-  font-family: fantasy;
+#play {
+	margin: auto;
+	width: fit-content;
+}
+#play img {
+  height: 164px;
 }
 
 #redirect {

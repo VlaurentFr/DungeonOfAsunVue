@@ -31,16 +31,17 @@ function changeOrga(index: number) {
       <div class="orga-desc">
         <h3>Description</h3>
         <p>{{ orga[selected].desc }}</p>
+        <h3 class="rank-title">Rangs</h3>
         <div class="rank-number-container">
           <div v-for="(rank, index) of orga[selected].rank" :key="rank.name">
-            <p @click="selectedRank = index" :class="{ 'selected': selectedRank === index }">{{ index + 1 }}</p>
+            <p @click="selectedRank = index" class="rank-number" :class="{ 'selected': selectedRank === index }">{{ index + 1 }}</p>
           </div>
         </div>
         <p><span>{{ orga[selected].rank[selectedRank].name }}</span> {{ orga[selected].rank[selectedRank].desc }}</p>
       </div>
       <div class="aside-img">
-        <div class="green-filter"></div>
         <img :src="getImageUrl(orga[selected].img)"/>
+        <div class="green-filter"></div>
       </div>
     </div>
   </div>
@@ -71,7 +72,7 @@ function changeOrga(index: number) {
 .orga-title p {
   color: #FFF;
   font-family: Work Sans;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -81,14 +82,12 @@ function changeOrga(index: number) {
 }
 .selected-orga p {
   color: #000;
-  font-family: Work Sans;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
 }
 .orga-desc {
   max-width: 560px;
+}
+.rank-title {
+  margin: 64px 0 !important;
 }
 .rank-number-container {
   display: flex;
@@ -106,31 +105,40 @@ function changeOrga(index: number) {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.rank-number-container p:hover {
+  background: var(--primaryColor);
+  color: #000;
 }
 .rank-number-container .selected {
   background: var(--primaryColor);
   color: #000;
 }
 .aside-img{
-  position: absolute;
+  position: fixed;
   top: 73px;
   height: calc(100vh - 73px);
   right: 0;
-  width: 200px;
+  width: 33%;
+  z-index: -1;
 }
 .aside-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: grayscale();
 }
 .green-filter {
-  position: absolute;
-  top: 0px;
+  position: fixed;
+  top: 73px;
   height: calc(100vh - 73px);
   right: 0;
-  width: 200px;
-  background: linear-gradient(0deg, rgba(36, 190, 116, 0.80) 0%, rgba(36, 190, 116, 0.80) 100%), lightgray 50% / cover no-repeat;
+  width: 33%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(36, 190, 116, 0.80) 100%), lightgray 50% / cover no-repeat;
   mix-blend-mode: multiply;
+
 }
 @media screen and (max-width: 768px) {
   .orga-container {

@@ -64,6 +64,7 @@ function getImageUrl(name: string) {
 </div>
   <div class="cards" v-for="c of selected" :key="c.name">
     <img :src="getImageUrl(c.img)"/>
+    <div class="filter"></div>
     <h2>
       {{ c.name }}
     </h2>
@@ -71,7 +72,7 @@ function getImageUrl(name: string) {
     <div class="spec">
       <div class="green-cards">
         <h4>Prérequis</h4>
-        <p><span v-for="w of c.weapons" :key="w">{{ w }}</span> </p>
+        <p><span v-for="w of c.weapons" :key="w">Maîtrise {{ w }}</span> </p>
       </div>
       <div class="green-cards">
         <h4>Bonus de maîtrise</h4>
@@ -104,7 +105,15 @@ img {
   right: 0;
   height: -webkit-fill-available;
   object-fit: cover;
-  mix-blend-mode: overlay;
+}
+.filter {
+  width: 320px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  height: -webkit-fill-available;
+  background: linear-gradient(90deg, rgba(32,33,36,1) 0%, rgba(255,255,255,0) 80%);;
 }
 .spec {
   display: flex;

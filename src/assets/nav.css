@@ -51,7 +51,7 @@ nav a {
   position: relative;
   padding: 0 20px;
   margin: 0 10px;
-  display: inline-block;
+  display: block;
   color: var(--textColor);
   font-size: 14px;
   text-decoration: none;

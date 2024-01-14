@@ -81,6 +81,11 @@ const router = createRouter({
       component: () => import('../views/UniversRacesView.vue')
     },
     {
+      path: '/Univers/faction',
+      name: 'univers-faction',
+      component: () => import('../views/FactionView.vue')
+    },
+    {
       path: '/Univers/orga',
       name: 'univers-orga',
       component: () => import('../views/OrganisationView.vue')

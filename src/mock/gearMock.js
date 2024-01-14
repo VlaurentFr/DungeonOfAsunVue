@@ -45,6 +45,26 @@ export const weapons = [
     cost: '50 po'
   },
   {
+    name: 'Epée de Fer à 2 mains',
+    dmg: '1d6+3',
+    cost: '40 po'
+  },
+  {
+    name: 'Epée d\'Acier à 2 mains',
+    dmg: '1d10+3',
+    cost: '50 po'
+  },
+  {
+    name: 'Epée d\'Argent à 2 mains',
+    dmg: '1d12+3',
+    cost: '60 po'
+  },
+  {
+    name: 'Epée Héros à 2 mains',
+    dmg: '2d8+3',
+    cost: '80 po'
+  },
+  {
     name: 'Hache de Fer',
     dmg: '1d6',
     cost: '10 po'
@@ -63,6 +83,26 @@ export const weapons = [
     name: 'Hache Héros',
     dmg: '2d8',
     cost: '50 po'
+  },
+  {
+    name: 'Hache de Fer de Bataille',
+    dmg: '1d6+3',
+    cost: '40 po'
+  },
+  {
+    name: 'Hache d\'Acier de Bataille',
+    dmg: '1d10+3',
+    cost: '50 po'
+  },
+  {
+    name: 'Hache d\'Argent de Bataille',
+    dmg: '1d12+3',
+    cost: '60 po'
+  },
+  {
+    name: 'Hache Héros de Bataille',
+    dmg: '2d8+3',
+    cost: '80 po'
   },
   {
     name: 'Lance de Fer',
@@ -143,6 +183,26 @@ export const weapons = [
     name: 'Masse Héros',
     dmg: '2d8',
     cost: '50 po'
+  },
+  {
+    name: 'Masse de Fer de Guerre',
+    dmg: '1d6+3',
+    cost: '40 po'
+  },
+  {
+    name: 'Masse d\'Acier de Guerre',
+    dmg: '1d10+3',
+    cost: '50 po'
+  },
+  {
+    name: 'Masse d\'Argent de Guerre',
+    dmg: '1d12+3',
+    cost: '60 po'
+  },
+  {
+    name: 'Masse Héros de Guerre',
+    dmg: '2d8+3',
+    cost: '80 po'
   },
 ]
 export const lightgears = [

@@ -25,6 +25,8 @@ function navigate(godValue: any) {
     <div class="god-container">
       <div class="god" v-for="major of majorGods" :key="major.name" @click="navigate(major)">
         <img class="god-image" :src="getImageUrl(major.img)"/>
+        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+        <div class="character filter"></div>
         <div class="logo-type">
           <img src="../assets/Lawfull.svg"/>
         </div>
@@ -36,6 +38,8 @@ function navigate(godValue: any) {
     <div class="god-container">
       <div class="god" v-for="major of minorGods" :key="major.name" @click="navigate(major)">
         <img class="god-image" :src="getImageUrl(major.img)"/>
+        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+        <div class="character filter"></div>
         <div class="logo-type">
           <img src="../assets/Lawfull.svg"/>
         </div>
@@ -47,6 +51,8 @@ function navigate(godValue: any) {
     <div class="god-container">
       <div class="god" v-for="major of kingGods" :key="major.name" @click="navigate(major)">
         <img class="god-image" :src="getImageUrl(major.img)"/>
+        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+        <div class="character filter"></div>
         <div class="logo-type">
           <img src="../assets/Void.svg"/>
         </div>
@@ -58,6 +64,8 @@ function navigate(godValue: any) {
     <div class="god-container">
       <div class="god" v-for="major of princeGods" :key="major.name" @click="navigate(major)">
         <img class="god-image" :src="getImageUrl(major.img)"/>
+        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+        <div class="character filter"></div>
         <div class="logo-type">
           <img src="../assets/Void.svg"/>
         </div>
@@ -69,6 +77,8 @@ function navigate(godValue: any) {
     <div class="god-container">
       <div class="god" v-for="major of otherGods" :key="major.name" @click="navigate(major)">
         <img class="god-image" :src="getImageUrl(major.img)"/>
+        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+        <div class="character filter"></div>
         <div class="logo-type">
           <img src="../assets/Lawfull.svg"/>
         </div>
@@ -108,7 +118,11 @@ img {
   left: 32px;
 }
 .god:hover .god-image {
-  transform: scale(1.2);
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  filter: opacity(0.3);
 }
 .logo-type img {
   border: none;
@@ -122,5 +136,24 @@ img {
 }
 .god-title {
   text-align: center;
+}
+.character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+  border: none;
+}
+.filter {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%);
+  height: 244px;
+  width: 100%;
+  top: 0;
+}
+.god:hover .character {
+  opacity: 1;
+  height: 304px;
+  transform: translate3d(0%, -84px, 100px);
 }
 </style>

@@ -216,15 +216,6 @@ export const spell = [
     range: "longue",
   },
   {
-    name: "Anditote",
-    type: "Soin",
-    lvl: 2,
-    desc: "soigne des poisons",
-    dices: ["3d6 PV"],
-    price: "5",
-    range: "moyenne",
-  },
-  {
     name: "Mort",
     type: "DPS",
     lvl: 2,

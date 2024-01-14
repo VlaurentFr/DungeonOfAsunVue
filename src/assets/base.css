@@ -6,15 +6,12 @@
 
 /* semantic color variables for this project */
 :root {
+  --bg: url("../assets/bg1.png");
   --primaryColor: #24BE74;
-  ;
-  --secondaryColor:  #24BE74;
-  --secondaryColorTint: #565d6a;
-  --secondaryColorShade: #232a37;
-  --background: #F0ECE3;
-  --textColor: #000;
-  --dark: #2C3545;
-  --bg: url("../assets/bg.webp");
+  --secondaryColor: #24BE74;
+  --background: #303036;
+  --textColor: #fff;
+  background-color: #000;
 }
 
   :root.dark {

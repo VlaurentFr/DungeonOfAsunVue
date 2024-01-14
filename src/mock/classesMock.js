@@ -2,15 +2,15 @@ export const basicClasses = [
   {
     name: `Noble`,
     img: `classes/Noble.png`,
-    spell: ['Sort mineur, n\'importe quel sort de niveau 1, dégât diviser par 2'],
-    weapons: ['Aucun'],
+    spell: ['Sort mineur, n\'importe quel sort de niveau 1, Effet diviser par 2'],
+    weapons: ['Aucune'],
     mastery: ['+ 5 PV'],
     desc: "Le Noble est un individu issu de la haute société, possédant un statut social élevé et souvent lié à une lignée aristocratique. Habile en diplomatie et doté d'une éducation raffinée, le Noble excelle dans l'art de la négociation et de la persuasion. Sa formation peut inclure des compétences équestres, la maîtrise des armes élégantes, et une connaissance approfondie des coutumes et des règles sociales. Bien qu'il puisse ne pas être directement impliqué dans les affrontements physiques, le Noble utilise son influence et ses ressources pour atteindre ses objectifs, que ce soit dans le domaine politique, économique ou diplomatique. Sa présence peut être à la fois un atout précieux dans la cour royale et un défi à relever pour ceux qui cherchent à remettre en question son autorité.",
   },
   {
     name: `Roturier`,
     img: `classes/roturier.png`,
-    weapons: ['Aucun'],
+    weapons: ['Aucune'],
     mastery: ['+ 5 PV'],
     desc: "Le Roturier est un individu issu des classes sociales inférieures, souvent sans titre nobiliaire ni privilèges héréditaires. Il provient du peuple, travaillant dur pour gagner sa vie dans des professions variées telles que l'agriculture, l'artisanat ou le commerce. Le Roturier est généralement polyvalent, ayant acquis des compétences pratiques nécessaires à sa survie quotidienne. Sa force réside dans son pragmatisme, sa résilience face aux difficultés et sa connexion avec la réalité du monde. Bien qu'il puisse manquer du raffinement associé à la noblesse, le Roturier apporte souvent une perspective terre-à-terre et une compréhension intuitive des besoins du peuple. En temps de crise, les Roturiers peuvent se révéler être des leaders communautaires fiables, défendant les intérêts du peuple laborieux au sein de la société."
   },
@@ -29,7 +29,7 @@ export const noviceClasses = [
     
     weapons: ['Hache C'],
     mastery: ['+ 10 PV'],
-    desc: ""
+    desc: "Le Brigand a préféré mettre ses capacités au service d’une cause moins noble. La hache est sa plus fidèle alliée, capable de briser des portes, les coffres ou les caisses de transport standards et même, en de rares occasions, de briser les portes des maisonnettes des villages ne lui accordant pas l’hospitalité. Il n’use pas à proprement parler de technique au combat, préférant baser ses chances sur sa son avantage de force pour briser ses ennemis. Il préfèrera porter des armures intermédiaires, pouvant facilement l’aider à braver les éléments lorsqu’il attend de pouvoir commettre sa prochaine exaction. En dehors du combat, bien que patibulaire, le Brigand sait se montrer loyal envers qui le mérite."
   },
   {
     name: `Archer`,
@@ -53,7 +53,7 @@ export const noviceClasses = [
     
     weapons: ['Lance C'],
     mastery: ['+ 10 PV'],
-    desc: ""
+    desc: "Le Soldat manie la lance comme un artisan manie ses outils. Un entraînement, voir une carrière dans l’armée fait de lui un rempart naturel pour ses alliés, ou une menace agile et polyvalente sur le champ de bataille. Souvent rustre dans sa façon de procéder, le Soldat ne laisse pas place à l’hésitation, et agît à l’instinct tout en suivant nombre de codes appris et récités pendant des années. Nul n’irait mettre en doute la possibilité d’un assaut si un Soldat a exprimé son opinion. Hors du combat, il adopte la même ligne de conduite que les lances les plus affutées : Droiture et inflexibilité. Si vous connaissez et suivez le code moral, il sera un soutien à toute épreuve."
   },
   {
     name: `Pugiliste`,
@@ -69,7 +69,7 @@ export const noviceClasses = [
     
     weapons: ['Masse C'],
     mastery: ['+ 10 PV'],
-    desc: ""
+    desc: "Le Combattant est une force de la nature, brisant sans effort la plupart des défenses légères de ses ennemis. Sa masse fend l’air et les boucliers avec l’aisance du mistral. Maniant sa masse efficacement et sans efforts, sa présence sur le champ de bataille impose une idée commune ; il brisera tout objet ou personne entre lui et sa cible.  En dehors du combat, le Combattant s’entraîne sans relâche, prêt à affronter la plus grande et la plus robuste des menaces qui pourrait le confronter lui ou son peuple, prêt à donner sa vie pour le protéger ou imposer sa supériorité combative."
   },
   {
     name: `Apprenti Pyromancien`,
@@ -117,7 +117,7 @@ export const noviceClasses = [
     spell: ['Force Bestial'],
     weapons: ['Magie D'],
     mastery: ['+ 10 Énergie'],
-    desc: ""
+    desc: "L’apprenti Chaman puise sa force dans la nature. Ceux apprenant ce type de magie ont une tendance beaucoup plus grande à vivre dans la nature, entourés d’animaux ou de plantes, puisant dans cette ressource infinie pour la décliner sous forme magique. Souvent appareillé de tenue légère, représentant ce milieu qu’il affectionne tant, la puissance bestiale de son apparence suffit en un clin d’oeil à connaître son appartenance à ce groupe clos des chamans. Leurs magie, appelée Magie Bestiale, ou Magie Verte, faisant référence aux bêtes ou à la nature, est encore mal comprise par les castes classique de magicien, ne semblant pas venir de l’énergie mais presque de la nature, comme s’ils s’en servaient comme d’un énorme catalyseur."
   },
   {
     name: `Apprenti Illutionniste`,
@@ -133,7 +133,7 @@ export const noviceClasses = [
     spell: ['Foudre'],
     weapons: ['Magie D'],
     mastery: ['+ 10 Énergie'],
-    desc: ""
+    desc: "L’apprenti Drakomancien a une affinité particulière avec les Dragons, et particulièrement avec leurs attraits et leurs manipulations de la foudre. Souvent associé à la race des Drakeïdes, et ainsi aussi mal vu dans certaines régions, sa seule présence peut justifier certaines exactions à son encontre. Manipulant la foudre à moindre échelle, il peut créer un courant électrique dans sa paume, qu’il peut projeter sur sa cible sans grand effort. Physiquement et vestimentairement, il ressemble trait pour trait à un clerc, son armure étant plus proche de l’armure intermédiaire que légère, et son aura est plus menaçante que bienveillante, comme si la lumière salvatrice du Clerc avait été retournée pour châtier et non plus guérir."
   },
   {
     name: `Mage Noir`,

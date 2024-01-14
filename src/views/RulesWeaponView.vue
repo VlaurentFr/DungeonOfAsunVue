@@ -10,7 +10,7 @@
         <h3>Qu'est-ce que c'est ?</h3>
       </div>
       <div>
-        <p>Afin d'obtenir l'accès a certaines classe et de nouvelles compétences il vous faudra vous entrainer a manier vos armes. Pour cela vous pouvez lors q'un entrainement entrainer soit une ou deux armes a la fois,vous pouvez également vous faire aider par quelqu'un possèdant une plus grande maitrise que vous afin d'obtenir un bonus d'expériences lors de l'entrainement. Chaque entrainement permet de lancer  2d6 se qui revient a 1d6 par armes. Le tuteur quand a lui multiplie le résultat obtenue par x1,5. Votre maitrise d'armes s'accompagnera alors de nouveau bonus lorsque vous serez equipé de l'arme associer.</p>
+        <p>Afin d'obtenir l'accès a certaines classe et de nouvelles compétences il vous faudra vous entrainer a manier vos armes. Pour cela vous pouvez lors q'un entrainement entrainer soit une ou deux armes a la fois,vous pouvez également vous faire aider par quelqu'un possèdant une plus grande maitrise que vous afin d'obtenir un bonus d'expériences lors de l'entrainement. Chaque entrainement permet de lancer  2 <i class="fas fa-dice-d20"></i> 6 se qui revient a 1 <i class="fas fa-dice-d20"></i> 6 par armes. Le tuteur quand a lui multiplie le résultat obtenue par x1,5. Votre maitrise d'armes s'accompagnera alors de nouveau bonus lorsque vous serez equipé de l'arme associer.</p>
       </div>
       <div class="title-section">
         <h3>L'expériences</h3>
@@ -114,13 +114,13 @@
             </tr>
             <tr>
               <td>E+</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
               <td></td>
               <td></td>
             </tr>
@@ -138,15 +138,15 @@
             </tr>
             <tr>
               <td>D+</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
               <td></td>
-              <td>+5 ATQ</td>
+              <td><p>+ 5 ATQ</p></td>
             </tr>
             <tr>
               <td>C</td>
@@ -157,18 +157,18 @@
               <td></td>
               <td></td>
               <td></td>
-              <td>+5 PRD</td>
+              <td><p>+ 5 PRD</p></td>
               <td></td>
             </tr>
             <tr>
               <td>C+</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
               <td></td>
               <td></td>
             </tr>
@@ -186,15 +186,15 @@
             </tr>
             <tr>
               <td>B+</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
               <td></td>
-              <td>+5 ATQ</td>
+              <td><p>+ 5 ATQ</p></td>
             </tr>
             <tr>
               <td>A</td>
@@ -205,44 +205,44 @@
               <td></td>
               <td></td>
               <td></td>
-              <td>+5 PRD</td>
+              <td><p>+ 5 PRD</p></td>
               <td></td>
             </tr>
             <tr>
               <td>A+</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
-              <td>+5 CHA</td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
+              <td><p>+ 5 CHA</p></td>
               <td></td>
               <td></td>
             </tr>
             <tr>
               <td>S</td>
-              <td>+10 CRIT</td>
-              <td>+10 CRIT</td>
-              <td>+10 CRIT</td>
-              <td>+10 CRIT</td>
-              <td>+10 CRIT</td>
-              <td>+10 CRIT</td>
-              <td>+10 CRIT</td>
+              <td><p>+ 10 CRIT</p></td>
+              <td><p>+ 10 CRIT</p></td>
+              <td><p>+ 10 CRIT</p></td>
+              <td><p>+ 10 CRIT</p></td>
+              <td><p>+ 10 CRIT</p></td>
+              <td><p>+ 10 CRIT</p></td>
+              <td><p>+ 10 CRIT</p></td>
               <td></td>
-              <td>+10 CRIT</td>
+              <td><p>+ 10 CRIT</p></td>
             </tr>
             <tr>
               <td>S+</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 ATQ</td>
-              <td>+5 PRD</td>
-              <td>+5 ATQ</td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 ATQ</p></td>
+              <td><p>+ 5 PRD</p></td>
+              <td><p>+ 5 ATQ</p></td>
             </tr>
           </tbody>
         </table>
@@ -254,6 +254,12 @@
 .row {
   gap: 64px;
   overflow: auto;
+}
+td p {
+  padding: 4px 8px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
 }
 
 </style>

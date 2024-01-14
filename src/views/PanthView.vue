@@ -33,53 +33,32 @@ function navigate(panthIndex: number){
 </template>
 <style scoped>
 img {
-  width: 264px;
+  width: 100%;
   height: 164px;
   border-radius: 4px;
   object-fit: cover;
 }
 .desc {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
-  justify-content: center;
-  align-items: center;
 }
 .panth {
   position: relative;
   margin: 24px 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: center;
-  align-items: center;
-  border: white solid 4px;
   cursor: pointer;
   border-radius: 8px;
 }
 .panth-name {
-  position: absolute;
-  bottom: -32px;
   padding: 16px 32px;
-  max-width: 75%;
   font-size: 16px;
   border-radius: 4px;
   text-align: center;
-  width: fit-content;
-  background-color: white;
-  color: var(--primaryColor);
+  color: white;
   z-index: 2;
-}
-.panth:hover .panth-name {
-  position: absolute;
-  bottom: -32px;
-  padding: 16px 32px;
-  max-width: 75%;
-  font-size: 16px;
-  border-radius: 4px;
-  text-align: center;
-  width: fit-content;
-  background-color: var(--primaryColor);
-  color: black;
 }
 .panth:hover img {
   transform: scale(1.2);

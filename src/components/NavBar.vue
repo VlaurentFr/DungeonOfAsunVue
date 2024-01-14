@@ -176,12 +176,13 @@ const hideMenu = () => {
 .subNav {
   display: none;
   position: absolute;
-  top: 55px;
+  top: 52px;
   z-index: 3;
   color: white;
   background-color: #202124;
   border-radius: 6px;
   line-height: 48px;
+  text-align: left;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .subNav {display: block;}

@@ -69,51 +69,51 @@ export const panth= [
   {name: `Panthéon Skurf`, color:`#41DCC0`, img: `cults/skurf.png`, 
   desc:`Le culte Skurf implique la vénération de ces divinités à travers des cérémonies et des prières. Les temples dédiés aux divinités sont dispersés dans tous les Hightlands, et les fidèles peuvent y prier et offrir des offrandes en échange de bénédictions et de faveurs divines. 
   Les Skurfs croient également en la vie après la mort, et la façon dont un individu est honoré dans la mort peut affecter son sort dans l'au-delà. Ils croient en une forme de cycle de la vie et de la mort, où les âmes peuvent être réincarnées ou rejoindre les divinités dans l'après-vie.
-  
+  <br/><br/>
   Chacune de ces divinité sont associées à des animaux, les Skurfs voue donc à ses derniers un profond respect. On retrouve parmis eux :
-
+  <br/><br/>
   Le loup : Le loup est associé à la chasse, à la loyauté et à la force. Les Skurfs admirent la capacité du loup à traquer sa proie et à travailler en meute pour atteindre un objectif commun. Le loup est également considéré comme un animal protecteur et symbolise la force physique.
-
+  <br/><br/>
   Le renard : Le renard est souvent associé à la ruse et à l'intelligence. Les Skurfs admirent la capacité du renard à se faufiler dans les endroits les plus étroits et à trouver des solutions ingénieuses aux problèmes. Le renard est également associé à la magie et à l'astuce, et est souvent représenté comme un animal rusé et malin.
-
+  <br/><br/>
   La baleine : La baleine est un symbole de force, de sagesse et de longévité. Les Skurfs admirent la capacité de la baleine à naviguer dans les eaux les plus profondes et à fournir de la nourriture et des matériaux de construction. La baleine est également considérée comme un animal sacré, associé à la fertilité et à la fécondité.
-
+  <br/><br/>
   L'aigle : L'aigle est associé à la liberté, à la force et à la clarté de vision. Les Skurfs admirent la capacité de l'aigle à voler haut dans le ciel et à repérer sa proie de loin. L'aigle est également associé à la divinité et à la royauté, et est souvent représenté comme un animal noble et majestueux.
-
+  <br/><br/>
   Le dragon : Le dragon est associé à la puissance, à la sagesse et à la richesse. Les Skurfs admirent la capacité du dragon à cracher du feu et à protéger ses trésors. Le dragon est également associé à la magie et à la divinité, et est souvent représenté comme un animal terrifiant et majestueux.
-
+  <br/><br/>
   Le serpent : Le serpent est souvent associé à la ruse et à la tromperie, mais chez les Skurfs, il est également associé à la guérison et à la régénération. Les Skurfs admirent la capacité du serpent à se régénérer et à renouveler sa peau, et le serpent est souvent considéré comme un animal sacré, associé à la sagesse et à la guérison.
-
+  <br/><br/>
   Les dieux :
-
+  <br/><br/>
   Thorgar (Serpent, Theomis): considéré comme le dieu patron des Hommes des Hightlands, Thorgar est un dieu guerrier qui a un lien fort avec la guerre et la victoire. Il est souvent représenté avec une épée ou une hache de guerre.
   Hjarta (Aigle, Quaara) : la déesse de la nature, du vent et des cieux, Hjarta est associée à l'aigle et est vénérée pour sa sagesse et son pouvoir de guérison.
-
+  <br/><br/>
   Harald (Serpent, Edis) : le dieu de la mort et du renouveau, Harald est souvent représenté comme un guerrier en armure. Il est également associé à la vie après la mort et est considéré comme le gardien des portes de Valngarde, le paradis des hommes des Hightlands.
-
+  <br/><br/>
   Marantha (Loup, Metona): la déesse de l'amour et de la fertilité, Marantha est souvent vénérée pour sa capacité à guérir les relations brisées et à apporter la paix et l'harmonie.
-
+  <br/><br/>
   Dibellia (Renard, Qaas): la déesse de la beauté et de l'art, Dibellia est souvent représentée avec une lyre ou un pinceau et est vénérée pour sa capacité à inspirer les artistes et les poètes.
-
+  <br/><br/>
   Zenir (Renard, Othar): le dieu du commerce et de l'artisanat, Zenir est souvent vénéré pour sa capacité à apporter la prospérité et la richesse.
-
+  <br/><br/>
   Akator (Dragon, Riannedos) : le dieu du temps et du changement, Akator est souvent associé au dragon et est vénéré pour sa capacité à protéger les mortels contre les forces du mal.
-
+  <br/><br/>
   Hrothgar (Aigle): également connu sous le nom de l’Aigle du Nord, Hrothgar est un héros légendaire vénéré comme une divinité guerrière et le défenseur des Hightlands.
-
+  <br/><br/>
   Sturin (Baleine, Edes): Il est le dieu de l'opposition honorable, de la lutte contre les ennemis et de la résistance face à l'adversité. Sturin est souvent représenté sous la forme d'un guerrier imposant avec une épée à la main.
-
+  <br/><br/>
   Tsunar (Loup, Fauchst): Il est le dieu nordique de la mort honorable, de la guerre et de l'épreuve. Tsunar est souvent représenté sous la forme d'un guerrier massif et redoutable, portant une hache ou une massue.
-  
+  <br/><br/>
   Hrafn (Baleine, Eone): Il est le dieu nordique de la connaissance et de l'histoire, souvent associé à la magie et à l'apprentissage. Hrafn est représenté sous la forme d'un vieil homme portant des vêtements de mage et tenant un livre ou un parchemin.
   `},
   {name: `Panthéon Orcs`, color:`#C641DC`, img: `cults/orc.png`, 
-  desc:`Gruumsh (Rhabus): le dieu de la guerre et le dieu principal des orcs. Il est souvent représenté comme un guerrier colérique et impitoyable, portant une armure de peau de dragon.
-  Luthic (Metona): la déesse de la fertilité et de la maternité. Elle est souvent vénérée par les femmes orcs et les mères, et est représentée comme une orc maternelle et protectrice.
-  Bahgtru (Rhabus): le dieu de la force brute et de la violence. Il est souvent invoqué par les guerriers orcs qui cherchent à devenir plus forts et plus puissants, et est représenté comme un orc massif portant une hache de bataille.
-  Ilneval (Theomis): le dieu de la tactique et de la stratégie militaire. Il est souvent vénéré par les chefs de guerre et les stratèges orcs, et est représenté comme un orc portant une armure de plaques et une épée longue.
-  Shargaas (Sithis): le dieu de la nuit et de l'obscurité. Il est souvent invoqué par les assassins et les voleurs orcs, et est représenté comme un orc furtif portant une cape d'ombre.
-  Yurtrus (Fauchst): le dieu de la maladie et de la mort. Il est souvent craint et vénéré par les orcs qui cherchent à utiliser la maladie et les poisons dans leur stratégie de guerre, et est représenté comme un orc malade et décharné portant une robe de guérisseur.
-  Grolantor (Rhabus): le dieu des géants et des titans. Bien qu'il ne soit pas exclusivement vénéré par les orcs, de nombreux orcs voient en lui un modèle de force et de puissance, et l'associent souvent à leur propre culture guerrière. Il est représenté comme un géant barbu portant une massue massive.
-  Khurgorbaeyag (Emhjir): le dieu de la forge et de la métallurgie. Bien que peu d'orcs soient des forgerons, Khurgorbaeyag est souvent vénéré par ceux qui travaillent le métal et qui cherchent à créer des armes et des armures puissantes. Il est représenté comme un orc à la musculature massive portant un tablier de cuir et une enclume`},
+  desc:`<span>Gruumsh (Rhabus):</span> le dieu de la guerre et le dieu principal des orcs. Il est souvent représenté comme un guerrier colérique et impitoyable, portant une armure de peau de dragon.<br/><br/>
+  <span>Luthic (Metona):</span> la déesse de la fertilité et de la maternité. Elle est souvent vénérée par les femmes orcs et les mères, et est représentée comme une orc maternelle et protectrice.<br/><br/>
+  <span>Bahgtru (Rhabus):</span> le dieu de la force brute et de la violence. Il est souvent invoqué par les guerriers orcs qui cherchent à devenir plus forts et plus puissants, et est représenté comme un orc massif portant une hache de bataille.
+  <span>Ilneval (Theomis):</span> le dieu de la tactique et de la stratégie militaire. Il est souvent vénéré par les chefs de guerre et les stratèges orcs, et est représenté comme un orc portant une armure de plaques et une épée longue.<br/><br/>
+  <span>Shargaas (Sithis):</span> le dieu de la nuit et de l'obscurité. Il est souvent invoqué par les assassins et les voleurs orcs, et est représenté comme un orc furtif portant une cape d'ombre.<br/><br/>
+  <span>Yurtrus (Fauchst):</span> le dieu de la maladie et de la mort. Il est souvent craint et vénéré par les orcs qui cherchent à utiliser la maladie et les poisons dans leur stratégie de guerre, et est représenté comme un orc malade et décharné portant une robe de guérisseur.<br/><br/>
+  <span>Grolantor (Rhabus):</span> le dieu des géants et des titans. Bien qu'il ne soit pas exclusivement vénéré par les orcs, de nombreux orcs voient en lui un modèle de force et de puissance, et l'associent souvent à leur propre culture guerrière. Il est représenté comme un géant barbu portant une massue massive.<br/><br/>
+  <span>Khurgorbaeyag (Emhjir):</span> le dieu de la forge et de la métallurgie. Bien que peu d'orcs soient des forgerons, Khurgorbaeyag est souvent vénéré par ceux qui travaillent le métal et qui cherchent à créer des armes et des armures puissantes. Il est représenté comme un orc à la musculature massive portant un tablier de cuir et une enclume`},
 ]
