@@ -17,20 +17,20 @@ function changeOrga(index: number) {
 <template>
   <div class="visible">
     <div class='header'>
-      <h1>Les organisations</h1>
+      <h1>Les Factions</h1>
       <h2>Rejoignez celle qui<span> correspond </span></h2>
-      <p>Au cours de votre aventure, il vous sera possible de rejoindre une des  7 organisations d'Asun. Plusieurs vous intéressent ? <br/>Rejoignez les toutes !</p>
+      <p>Au cours de votre aventure, il vous sera possible de rejoindre une faction d'Asun</p>
     </div>
 
     <div class='orga-container'>
       <div class="orga-title-list">
-        <div class="orga-title" :class="{ 'selected-orga': selected === index }" v-for="(o, index) of faction" :key="o.title">
-          <p @click="changeOrga(index)">{{ o.title }}</p>
+        <div class="orga-title" :class="{ 'selected-orga': selected === index }" v-for="(o, index) of faction" :key="o.title" @click="changeOrga(index)">
+          <p>{{ o.title }}</p>
         </div>
       </div>
       <div class="orga-desc">
         <h3>Description</h3>
-        <p>{{ faction[selected].desc }}</p>
+        <div v-html="faction[selected].desc"></div>
       </div>
       <div class="aside-img">
         <img :src="getImageUrl(faction[selected].img)"/>
@@ -54,18 +54,30 @@ function changeOrga(index: number) {
   border-right: #FFF solid 1px;
   padding: 0 41px 0 0;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  height: min-content;
+  width: 33%;
 }
 .orga-title {
   padding: 16px 32px;
   border-radius: 8px;
   cursor: pointer;
+  flex: 1;
+  flex-basis: calc(50% - 16px);
+  height: fit-content;
+}
+.orga-title:hover {
+  background-color: #202124;
+}
+.orga-title:hover p {
+  color: #fff;
 }
 .orga-title p {
   color: #FFF;
   font-family: Work Sans;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -79,35 +91,8 @@ function changeOrga(index: number) {
 .orga-desc {
   max-width: 560px;
 }
-.rank-title {
-  margin: 64px 0 !important;
-}
-.rank-number-container {
-  display: flex;
-  margin: 64px 0 24px 0;
-  gap: 4px;
-  border-bottom: solid var(--primaryColor) 4px;
-}
-.rank-number-container p {
-  height: 48px;
-  width: 48px;
-  font-size: 24px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  background: #202124;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.rank-number-container p:hover {
-  background: var(--primaryColor);
-  color: #000;
-}
-.rank-number-container .selected {
-  background: var(--primaryColor);
-  color: #000;
+.orga-desc :deep(span) {
+  color: var(--primaryColor);
 }
 .aside-img{
   position: fixed;
@@ -138,11 +123,12 @@ function changeOrga(index: number) {
     flex-direction: column;
   }
   .orga-title-list {
-    flex-direction: row;
+    flex-wrap: nowrap;
     height: fit-content;
-    overflow: scroll;
+    overflow: auto;
     border-right: none;
     border-bottom: solid white 1px;
+    width: auto;
   }
   .orga-title {
     display: flex;
@@ -151,9 +137,6 @@ function changeOrga(index: number) {
   }
   .orga-title p {
     font-size: 16px;
-  }
-  .rank-number-container {
-    overflow: auto;
   }
 }
 @media screen and (max-width: 1024px) { 

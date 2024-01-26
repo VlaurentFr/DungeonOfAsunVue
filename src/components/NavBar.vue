@@ -71,7 +71,7 @@ const LINKS = [
       },
       {
         url: '/Rules/gear',
-        name: 'Equipements'
+        name: 'Objets'
       },
     ]
   },

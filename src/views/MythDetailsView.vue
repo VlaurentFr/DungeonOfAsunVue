@@ -40,8 +40,11 @@ function navigate(panthIndex: number){
         <p>{{ godStore.god.desc }}</p>
       </div>
     </div>
-    <h3>Religions</h3>
-    <div class="desc">
+    <div class="head-religion">
+      <h3>Religions</h3>
+      <p @click="$router.push({ path: '/Univers/panth'})">Voir toutes</p>
+    </div>
+    <div class="religions">
       <div class="panth" v-for="p of godStore.god.cults" :key="p" @click="navigate(p)">
         <p class="panth-name">{{ panth[p].name }}</p>
         <div class="panth-desc">
@@ -56,7 +59,7 @@ function navigate(panthIndex: number){
   background-color: var(--primaryColor);
   border: none;
   border-radius: 8px;
-  color: var(--textColor);
+  color: black;
   padding: 8px 16px;
   font-size: 16px;
   cursor: pointer;
@@ -95,19 +98,28 @@ function navigate(panthIndex: number){
   flex-wrap: wrap;
 }
 img {
-  width: 264px;
+  width: 320px;
   height: 164px;
   border-radius: 4px;
   object-fit: cover;
 }
-.desc {
+.head-religion {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.head-religion p {
+  width: fit-content;
+  margin-right: 128px;
+  cursor: pointer;
+}
+.religions {
+  display: grid;
   gap: 24px;
+  grid-template-columns: repeat(auto-fit, 320px);
 }
 .panth {
   position: relative;
-  margin: 24px 0;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;

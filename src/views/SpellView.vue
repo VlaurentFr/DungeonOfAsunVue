@@ -38,7 +38,22 @@ function clickSuggest(name: string) {
     <div class="cards">
       <div class="card" v-for="s of selected" :key="s.name">
         <div class="card-desc">
-          <h4>{{ s.name }}</h4>
+          <h4>
+            <i v-if="s.el == 'Feu'" class="fas fa-fire"></i>
+            <i v-if="s.el == 'Glace'" class="fas fa-snowflake"></i>
+            <i v-if="s.el == 'Vent'" class="fas fa-wind"></i>
+            <i v-if="s.el == 'Plant'" class="fas fa-seedling"></i>
+            <i v-if="s.el == 'Poison'" class="fas fa-virus"></i>
+            <i v-if="s.el == 'Dark'" class="fas fa-moon"></i>
+            <i v-if="s.el == 'Light'" class="fas fa-sun"></i>
+            <i v-if="s.el == 'Druid'" class="fas fa-frog"></i>
+            <i v-if="s.el == 'Alchi'" class="fas fa-flask"></i>
+            <i v-if="s.el == 'Foudre'" class="fas fa-dragon"></i>
+            <i v-if="s.el == 'Psy'" class="fas fa-eye"></i>
+            <i v-if="s.el == 'Blood'" class="fas fa-tint"></i>
+            <i v-if="s.el == 'Illu'" class="fas fa-theater-masks"></i>
+            {{ s.name }}
+          </h4>
           <p><span>Level :</span> {{ s.lvl }}</p>
           <p>{{ s.desc }}</p>
         </div>
@@ -126,6 +141,9 @@ input:focus-visible {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  display: flex;
+  gap: 8px;
 }
 .card .side {
   display: flex;

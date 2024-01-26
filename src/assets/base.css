@@ -42,6 +42,8 @@ html{
 
 body {
   min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
   color: var(--textColor);
   transition:
     color 0.5s,
@@ -60,7 +62,7 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -69,10 +71,13 @@ body {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: #202124 1px solid;
 }
 
 table, td, th, tr {
-  border: white 1px solid;
+  border-bottom: #202124 1px solid;
   padding: 16px;
   margin-bottom: 16px;
   height: fit-content;
@@ -85,16 +90,6 @@ thead {
 }
 
 thead:first-child tr {
-  background-color: var(--primaryColor);
-  color: black;
-}
-
-/* tr:nth-child(odd) {
-  background: lightgray;
-  color: #000;
-} */
-
-tr:nth-child(even) {
-  background: #202124;
-  color: white; 
+  background-color: #202124;
+  color: white;
 }

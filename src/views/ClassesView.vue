@@ -51,17 +51,15 @@ function getImageUrl(name: string) {
     </table>
   </article>
   <div class="card tabs">
-  <input id="tab-1" type="radio" class="tab tab-selector" checked="true" name="tab"/>
-  <label for="tab-1" class="tab tab-primary" @click="selected = basicClasses">Base</label>
-  <input id="tab-2" type="radio" class="tab tab-selector" name="tab"/>
-  <label for="tab-2" class="tab tab-success" @click="selected = noviceClasses">Novices</label>
-  <input id="tab-3" type="radio" class="tab tab-selector" name="tab" />
-  <label for="tab-3" class="tab tab-default" @click="selected = avancedClasses">Avancées</label>
-  <input id="tab-4" type="radio" class="tab tab-selector" name="tab" />
-  <label for="tab-4" class="tab tab-warning" @click="selected = masterClasses">Maîtres</label>
-  <div class="tabsShadow"></div>
-  <div class="glider"></div>
-</div>
+    <input id="tab-1" type="radio" class="tab tab-selector" checked="true" name="tab"/>
+    <label for="tab-1" class="tab tab-primary" @click="selected = basicClasses">Base</label>
+    <input id="tab-2" type="radio" class="tab tab-selector" name="tab"/>
+    <label for="tab-2" class="tab tab-success" @click="selected = noviceClasses">Novices</label>
+    <input id="tab-3" type="radio" class="tab tab-selector" name="tab" />
+    <label for="tab-3" class="tab tab-default" @click="selected = avancedClasses">Avancées</label>
+    <input id="tab-4" type="radio" class="tab tab-selector" name="tab" />
+    <label for="tab-4" class="tab tab-warning" @click="selected = masterClasses">Maîtres</label>
+  </div>
   <div class="cards" v-for="c of selected" :key="c.name">
     <img :src="getImageUrl(c.img)"/>
     <div class="filter"></div>
@@ -113,7 +111,7 @@ img {
   top: 0;
   right: 0;
   height: -webkit-fill-available;
-  background: linear-gradient(90deg, rgba(32,33,36,1) 0%, rgba(255,255,255,0) 80%);;
+  background: linear-gradient(90deg, rgba(32,33,36,1) 0%, rgba(255,255,255,0) 80%);
 }
 .spec {
   display: flex;
@@ -153,54 +151,4 @@ img {
     display: none;
   }
 }
-</style>
-
-<style scoped>
-.tabs {
-  text-align: left;
-  position: relative;
-  border-bottom: solid var(--primaryColor) 4px;
-}
-.tabs input {
-  position: absolute;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-}
-
-.tabs input + label:hover {
-  color: var(--primaryColor);
-}
-
-.tab:checked + label {
-  color: black;
-  background-color: var(--primaryColor);
-}
-.tab:checked + label:hover {
-  color: white;
-}
-
-.tabs input + label {
-  margin: 12px 0 0 0;
-  transition: all 0.3s;
-  text-align: center;
-  color: #e7e9f5;
-  height: 48px;
-  justify-content: center;
-  align-items: center;
-  display: inline-flex;
-  padding: 5pt 10pt;
-  font-size: 16px;
-  background: #202124;
-  border-radius: 4px 4px 0 0;
-  cursor: pointer;
-}
-
-.tabs input {
-  position: relative;
-  opacity: 0;
-  margin: auto !important;
-  padding: 0;
-}
-
 </style>

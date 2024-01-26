@@ -1,4 +1,25 @@
 <script setup lang="ts">
+import { computed, ref } from 'vue';
+import { masterySword, masteryMagic, masteryShield } from '@/mock/weaponMasteryMock'
+
+const selectedRankW = ref("S+")
+const selectedRankM = ref("E")
+const selectedRankB = ref("E")
+
+const compRankW = computed(() => {
+  const res = masterySword.filter((v) => v.rank == selectedRankW.value )[0]
+  return res
+})
+// MAGIE
+const compRankM = computed(() => {
+  const res = masteryMagic.filter((v) => v.rank == selectedRankM.value )[0]
+  return res
+})
+// BOUCLIER
+const compRankB = computed(() => {
+  const res = masteryShield.filter((v) => v.rank == selectedRankB.value )[0]
+  return res
+})
 </script>
 <template>
   <div class='visible'>
@@ -24,7 +45,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Maîtrise</td>
+              <td>Niveau de Maîtrise</td>
               <td>E</td>
               <td>E+</td>
               <td>D</td>
@@ -39,19 +60,19 @@
               <td>S+</td>
             </tr>
             <tr>
-              <td>Exp. requises</td>
-              <td></td>
+              <td>Exp. Cumul. requises</td>
+              <td>0</td>
               <td>3</td>
-              <td>6</td>
-              <td>12</td>
-              <td>18</td>
-              <td>27</td>
-              <td>36</td>
-              <td>48</td>
-              <td>60</td>
-              <td>74</td>
-              <td>88</td>
-              <td>116</td>
+              <td>9</td>
+              <td>21</td>
+              <td>39</td>
+              <td>66</td>
+              <td>102</td>
+              <td>150</td>
+              <td>210</td>
+              <td>284</td>
+              <td>372</td>
+              <td>488</td>
             </tr>
           </tbody>
         </table>
@@ -63,13 +84,13 @@
           </thead>
           <tbody>
             <tr>
-              <td>Type</td>
-              <td>Seul</td>
-              <td>Double</td>
+              <td>Type d'entrainement</td>
+              <td>1 arme</td>
+              <td>2 armes</td>
               <td>Tutoré</td>
             </tr>
             <tr>
-              <td>Exp. Gagné</td>
+              <td>Exp. Gagné / Armes</td>
               <td>2 <i class="fas fa-dice-d20"></i> 6</td>
               <td>1 <i class="fas fa-dice-d20"></i> 6</td>
               <td>x1,5</td>
@@ -80,186 +101,237 @@
       <div class='title-section'>
         <h3>Les bonus</h3>
       </div>
-      <div>
-      <table>
-          <thead>
-            <tr>
-              <th colspan="13">Maitrises d'armes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td></td>
-              <td>Epée</td>
-              <td>Hache</td>
-              <td>Lance</td>
-              <td>Arc</td>
-              <td>Dague</td>
-              <td>Masse</td>
-              <td>Poing</td>
-              <td>Bouc.</td>
-              <td>Magie</td>
-            </tr>
-            <tr>
-              <td>E</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>E+</td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>D</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>D+</td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td></td>
-              <td><p>+ 5 ATQ</p></td>
-            </tr>
-            <tr>
-              <td>C</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td><p>+ 5 PRD</p></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>C+</td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>B</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>B+</td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td></td>
-              <td><p>+ 5 ATQ</p></td>
-            </tr>
-            <tr>
-              <td>A</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td><p>+ 5 PRD</p></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>A+</td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td><p>+ 5 CHA</p></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>S</td>
-              <td><p>+ 10 CRIT</p></td>
-              <td><p>+ 10 CRIT</p></td>
-              <td><p>+ 10 CRIT</p></td>
-              <td><p>+ 10 CRIT</p></td>
-              <td><p>+ 10 CRIT</p></td>
-              <td><p>+ 10 CRIT</p></td>
-              <td><p>+ 10 CRIT</p></td>
-              <td></td>
-              <td><p>+ 10 CRIT</p></td>
-            </tr>
-            <tr>
-              <td>S+</td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 ATQ</p></td>
-              <td><p>+ 5 PRD</p></td>
-              <td><p>+ 5 ATQ</p></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="cards">
+        <div class="card">
+          <div class="illustration">
+            <img src="../assets/swords.png"/>
+          </div>
+          <div class="card-content">
+            <div class="card-head">
+              <div>
+                <h4>Physiques</h4>
+                <p class="sub-title">Epée, Hache, Arc, Lance ...</p>
+              </div>
+              <div class="row">
+                <p>Rang : </p>
+                <select v-model="selectedRankW">
+                  <option>E</option>
+                  <option>E+</option>
+                  <option>D</option>
+                  <option>D+</option>
+                  <option>C</option>
+                  <option>C+</option>
+                  <option>B</option>
+                  <option>B+</option>
+                  <option>A</option>
+                  <option>A+</option>
+                  <option>S</option>
+                  <option>S+</option>
+                </select>
+              </div>
+            </div>
+            <div class="card-value">
+              <div class="current-value-container">
+                <p><span>Gain du rang </span></p>
+                <p class="current-value">{{ compRankW.bonus }} <span>{{ compRankW.type }}</span></p>
+              </div>
+              <div>
+                <p><span>Bonus cumulées </span></p>
+                <ul>
+                  <li v-for="(b, index) of compRankW?.total" :key="index" :class="{'upgraded': b?.upgraded == true}">
+                    <p>{{ b?.bonus }}</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="illustration">
+            <img src="../assets/spellbook.png"/>
+          </div>
+          <div class="card-content">
+            <div class="card-head">
+              <div>
+                <h4>Magie</h4>
+              </div>
+              <div class="row">
+                <p>Rang : </p>
+                <select v-model="selectedRankM">
+                  <option>E</option>
+                  <option>E+</option>
+                  <option>D</option>
+                  <option>D+</option>
+                  <option>C</option>
+                  <option>C+</option>
+                  <option>B</option>
+                  <option>B+</option>
+                  <option>A</option>
+                  <option>A+</option>
+                  <option>S</option>
+                  <option>S+</option>
+                </select>
+              </div>
+            </div>
+            <div class="card-value">
+              <div class="current-value-container">
+                <p><span>Gain du rang </span></p>
+                <p class="current-value">{{ compRankM.bonus }} <span>{{ compRankM.type }}</span></p>
+              </div>
+              <div>
+                <p><span>Bonus cumulées </span></p>
+                <ul>
+                  <li v-for="(b, index) of compRankM?.total" :key="index" :class="{'upgraded': b?.upgraded == true}">
+                    <p>{{ b?.bonus }}</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="illustration">
+            <img src="../assets/shield.png"/>
+          </div>
+          <div class="card-content">
+            <div class="card-head">
+              <div>
+                <h4>Boucliers</h4>
+              </div>
+              <div class="row">
+                <p>Rang : </p>
+                <select v-model="selectedRankB">
+                  <option>E</option>
+                  <option>E+</option>
+                  <option>D</option>
+                  <option>D+</option>
+                  <option>C</option>
+                  <option>C+</option>
+                  <option>B</option>
+                  <option>B+</option>
+                  <option>A</option>
+                  <option>A+</option>
+                  <option>S</option>
+                  <option>S+</option>
+                </select>
+              </div>
+            </div>
+            <div class="card-value">
+              <div class="current-value-container">
+                <p><span>Gain du rang </span></p>
+                <p class="current-value">{{ compRankB.bonus }} <span>{{ compRankB.type }}</span></p>
+              </div>
+              <div>
+                <p><span>Bonus cumulées </span></p>
+                <ul>
+                  <li v-for="(b, index) of compRankB?.total" :key="index" :class="{'upgraded': b?.upgraded == true}">
+                    <p>{{ b?.bonus }}</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
   </div>
 </template>
 
 <style scoped>
-.row {
-  gap: 64px;
-  overflow: auto;
+select {
+  width: 68px;
+  padding: 8px;
+  margin-left: 24px;
+  border-radius: 4px;
+  color: white;
+  background-color: #202124;
+  height: fit-content;
 }
-td p {
-  padding: 4px 8px;
-    background-color: white;
-    color: black;
-    border-radius: 4px;
+select:-ms-expand {
+  right: 8px;
+  background-color: aliceblue;
 }
-
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  border-radius: 28px;
+  background: #0F0F0F;
+  overflow: hidden;
+}
+.illustration {
+  position: relative;
+  width: 150px;
+}
+.illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale();
+}
+.illustration::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  content: "";
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%,rgba(0, 0, 0, 0.20) 100%);
+}
+.illustration::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  content: "";
+  background: linear-gradient(0deg, rgba(36, 190, 116, 0.60) 0%,rgba(36, 190, 116, 0.20) 100%);
+}
+.card-content {
+  display: flex;
+  width: 400px;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  transition: all .3s ease-in-out;
+}
+.card-head {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.card-head .sub-title {
+  font-style: italic;
+}
+.card-value {
+  display: flex;
+}
+.current-value-container {
+  flex: 1;
+}
+.current-value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primaryColor);
+  border-radius: 8px;
+  font-size: 48px;
+}
+.current-value span {
+  font-weight: 400;
+  font-size: 16px;
+}
+.card h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+ul {
+  padding: 0 20px;
+}
+ul .upgraded {
+  color: var(--primaryColor);
+}
 </style>

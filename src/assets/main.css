@@ -15,9 +15,9 @@
 
 #container {
   display: flex;
-  max-width: calc(1136px + 97px);
+  max-width: calc(1136px + (97px * 2));
   margin: 122px auto 80px;
-  padding: 0 0 0 97px;
+  padding: 0 97px;
   font-weight: normal;
   flex: 1;
   width: -webkit-fill-available;

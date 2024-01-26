@@ -3,10 +3,11 @@ export const spell = [
     name: "Feu",
     type: "DPS",
     lvl: 1,
-    desc: "lance une boule de feu, peut bruler (33%) ",
+    desc: "lance une boule de feu ",
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
+    el: "Feu"
   },
   {
     name: "Vent",
@@ -16,33 +17,27 @@ export const spell = [
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
+    el: "Vent"
   },
   {
     name: "Glacier",
     type: "DPS",
     lvl: 1,
-    desc: "lance une boule de glace, peut geler (33%) ",
+    desc: "lance une boule de glace",
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
-  },
-  {
-    name: "Rune Mineur",
-    type: "Soutien",
-    lvl: 1,
-    desc: "creer un petit cercle runique qui explose dans l'element voulu",
-    dices: ["2d6 dégâts"],
-    price: "3",
-    range: "courte",
+    el: "Glace"
   },
   {
     name: "Poison",
     type: "DPS",
     lvl: 1,
-    desc: "Lance une boule de poison, peut empoisonner (33%) ",
+    desc: "Lance une boule de poison ",
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
+    el: "Poison"
   },
   {
     name: "Plante",
@@ -52,24 +47,17 @@ export const spell = [
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
+    el: "Plant"
   },
   {
     name: "Terre",
     type: "DPS",
     lvl: 1,
-    desc: "lance une bloc de terre, peut etourdir (33%)",
+    desc: "lance une bloc de terre",
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
-  },
-  {
-    name: "Anticipation",
-    type: "Soutien",
-    lvl: 1,
-    desc: "Permet de connaitre la prochaine action d'un adversaire",
-    dices: [],
-    price: "3",
-    range: "courte",
+    el: "Plant"
   },
   {
     name: "Illusion",
@@ -79,6 +67,7 @@ export const spell = [
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
+    el: "Psy"
   },
   {
     name: "Foudre",
@@ -88,6 +77,7 @@ export const spell = [
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
+    el: "Foudre"
   },
   {
     name: "Force Bestial",
@@ -97,15 +87,17 @@ export const spell = [
     dices: ["+10 FRC"],
     price: "3",
     range: "courte",
+    el: "Druid"
   },
   {
     name: "Transmutation Mineur",
     type: "DPS",
     lvl: 1,
-    desc: "permet de creer un petit sorts",
-    dices: ["2d6 dégâts"],
+    desc: "permet de creer un sorts mineur (level 1 effet/2)",
+    dices: [],
     price: "3",
     range: "courte",
+    el: "Alchi"
   },
   {
     name: "Soin",
@@ -115,6 +107,7 @@ export const spell = [
     dices: ["2d6 PV"],
     price: "3",
     range: "courte",
+    el: "Light"
   },
   {
     name: "Lumière",
@@ -124,6 +117,7 @@ export const spell = [
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
+    el: "Light"
   },
   {
     name: "Sang",
@@ -133,6 +127,7 @@ export const spell = [
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
+    el: "Blood"
   },
   {
     name: "Miasme",
@@ -142,6 +137,7 @@ export const spell = [
     dices: ["2d6 dégâts"],
     price: "3",
     range: "courte",
+    el: "Dark"
   },
 
   {
@@ -152,6 +148,7 @@ export const spell = [
     dices: ["3d6 dégâts"],
     price: "5",
     range: "moyenne",
+    el: "Feu"
   },
   {
     name: "Luna",
@@ -161,6 +158,7 @@ export const spell = [
     dices: ["3d6 dégâts"],
     price: "3",
     range: "moyenne",
+    el: "Glace"
   },
   {
     name: "Vents Tranchants",
@@ -170,15 +168,7 @@ export const spell = [
     dices: ["3d6 dégâts"],
     price: "5",
     range: "moyenne",
-  },
-  {
-    name: "Rune",
-    type: "Soutien",
-    lvl: 2,
-    desc: "creer un cercle runique qui explose dans l'element voulu",
-    dices: ["3d6 dégâts"],
-    price: "5",
-    range: "courte",
+    el: "Vent"
   },
   {
     name: "Invisibilité",
@@ -187,6 +177,7 @@ export const spell = [
     desc: "rend invisible pendant 2d6 tours",
     price: "5",
     range: "courte",
+    el: "Illu"
   },
   {
     name: "Remède",
@@ -196,6 +187,7 @@ export const spell = [
     dices: ["3d6 PV"],
     price: "5",
     range: "moyenne",
+    el: "Light"
   },
   {
     name: "Nosferatu",
@@ -205,6 +197,7 @@ export const spell = [
     dices: ["2d6 dégâts sur la cible", "1d6 PV sur le lanceur"],
     price: "5",
     range: "moyenne",
+    el: "Light"
   },
   {
     name: "Récupération",
@@ -214,6 +207,7 @@ export const spell = [
     dices: ["3d6 PV"],
     price: "5",
     range: "longue",
+    el: "Plant"
   },
   {
     name: "Mort",
@@ -223,6 +217,7 @@ export const spell = [
     dices: ["3d6 dégâts"],
     price: "5",
     range: "moyenne",
+    el: "Dark"
   },
   {
     name: "Sangsue",
@@ -232,15 +227,7 @@ export const spell = [
     dices: ["3d6 dégâts"],
     price: "5",
     range: "moyenne",
-  },
-  {
-    name: "Aveuglement",
-    type: "Soutien",
-    lvl: 2,
-    desc: "Brule les yeux de la cible, aveugle pendant 2d6 tours",
-    dices: ["3d6 dégâts"],
-    price: "5",
-    range: "moyenne",
+    el: "Blood"
   },
   {
     name: "Thoron",
@@ -250,6 +237,7 @@ export const spell = [
     dices: ["3d6 dégâts"],
     price: "5",
     range: "moyenne",
+    el: "Foudre"
   },
 
   {
@@ -260,15 +248,17 @@ export const spell = [
     dices: ["+10 CHA"],
     price: "5",
     range: "courte",
+    el: "Druid"
   },
   {
     name: "Transmutation",
     type: "DPS",
     lvl: 2,
-    desc: "permet de creer un sort",
-    dices: ["3d6 dégâts"],
+    desc: "permet de creer un sort level 1",
+    dices: [],
     price: "5",
     range: "moyenne",
+    el: "Alchi"
   },
   {
     name: "Sagitae",
@@ -278,6 +268,7 @@ export const spell = [
     dices: ["3d6 dégâts"],
     price: "5",
     range: "moyenne",
+    el: "Light"
   },
   {
     name: "Piques Noirs",
@@ -287,6 +278,7 @@ export const spell = [
     dices: ["3d6 dégâts"],
     price: "5",
     range: "moyenne",
+    el: "Dark"
   },
   {
     name: "Ragnarok",
@@ -296,6 +288,7 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "7",
     range: "longue",
+    el: "Feu"
   },
   {
     name: "Météore",
@@ -305,6 +298,7 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "10",
     range: "universelle",
+    el: "Feu"
   },
   {
     name: "Fimbulvetr",
@@ -314,6 +308,7 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "10",
     range: "universelle",
+    el: "Glace"
   },
   {
     name: "Foudroiement",
@@ -323,6 +318,7 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "7",
     range: "longue",
+    el: "Glace"
   },
   {
     name: "Excalibur",
@@ -332,15 +328,7 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "7",
     range: "longue",
-  },
-  {
-    name: "Rune Majeur",
-    type: "Soutien",
-    lvl: 3,
-    desc: "creer un grand cercle runique qui explose dans l'element voulu",
-    dices: ["4d6 dégâts"],
-    price: "7",
-    range: "courte",
+    el: "Vent"
   },
   {
     name: "Corrosion",
@@ -350,6 +338,7 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "7",
     range: "longue",
+    el: "Poison"
   },
   {
     name: "Aura",
@@ -359,6 +348,7 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "7",
     range: "courte",
+    el: "Ligth"
   },
   {
     name: "Séisme",
@@ -368,6 +358,7 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "7",
     range: "longue",
+    el: "Plant"
   },
   {
     name: "Hades",
@@ -377,6 +368,7 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "7",
     range: "longue",
+    el: "Dark"
   },
   {
     name: "Banshee",
@@ -386,6 +378,7 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "7",
     range: "longue",
+    el: "Dark"
   },
   {
     name: "Doppelganger",
@@ -395,15 +388,7 @@ export const spell = [
     dices: [],
     price: "7",
     range: "courte",
-  },
-  {
-    name: "Silence",
-    type: "Soutien",
-    lvl: 3,
-    desc: "empeche la cible d'utiliser la magie pendant 2d6 tours",
-    dices: [],
-    price: "7",
-    range: "longue",
+    el: "Illu"
   },
   {
     name: "Fulguration",
@@ -413,6 +398,7 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "10",
     range: "universelle",
+    el: "Foudre"
   },
   {
     name: "Transformation Bestial",
@@ -422,15 +408,17 @@ export const spell = [
     dices: [],
     price: "7",
     range: "courte",
+    el: "Druid"
   },
   {
     name: "Transmutation Majeur",
     type: "DPS",
     lvl: 3,
-    desc: "permet de creer un puissant sort",
-    dices: ["4d6 dégâts"],
+    desc: "permet de creer un puissant sort level 2",
+    dices: [],
     price: "7",
     range: "longue",
+    el: "Alchi"
   },
   {
     name: "Fortification",
@@ -440,6 +428,7 @@ export const spell = [
     dices: [],
     price: "7",
     range: "courte",
+    el: "Light"
   },
   {
     name: "Abraxas",
@@ -449,5 +438,6 @@ export const spell = [
     dices: ["4d6 dégâts"],
     price: "7",
     range: "longue",
+    el: "Light"
   },
 ]

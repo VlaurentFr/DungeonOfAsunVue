@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
+
+ const router = useRouter()
 </script>
 <template>
   <div class="visible">
@@ -29,7 +32,7 @@
         <div class="filter"></div>
       </div>
     </div>
-    <div class="row">
+    <div class="row-reverse">
     <article>
       <div class="title-section">
         <h2>Ère des Hommes</h2>
@@ -47,9 +50,9 @@
         Un 4ème royaume apparaîtra vers la fin de cette ère, La Dynastie Owrilia, issue du pacifisme de Trésabia et de l'aide des dragons, apparaîtra vers la fin de cette ère. Ils découvriront bien d'autres lieux sur cette planète, notamment le "Nouveau Monde".<br/>
         </p>
       </article>
-      <div class="image">
+      <div class="image-left">
         <img src="/assets/genese.png" />
-        <div class="filter"></div>
+        <div class="filter-left"></div>
       </div>
   </div>
   <div class="row">
@@ -71,7 +74,7 @@
         <div class="filter"></div>
       </div>
     </div>
-    <div class="row">
+    <div class="row-reverse">
       <article>
       <div class="title-section">
           <h2>L'Empire</h2>
@@ -83,17 +86,27 @@
         Si l'empire n'a jamais contrôlé la totalité de ce monde, il en est la principale force armée et culturelle, le seul à avoir établi un environnement stable, sain et prospère pour la plupart de ses citoyens malgré quelques déboires au fils des siècles. Il arriva même à soumettre les forces de Thierion le reconnaissance comme plus puissant et plus grand qu'eux.
         </p>
       </article>
-      <div class="image">
+      <div class="image-left">
         <img src="@/assets/cults/six.png" />
-        <div class="filter"></div>
+        <div class="filter-left"></div>
       </div>
+    </div>
+    <div class="banner">
+      <h3>Ecrivez l'histoire</h3>
+      <button @click="router.push({ path: '/Rules/creation' })">Commencer</button>
+      <img class="banner-img" src="../assets/combats/combat3.png" />
     </div>
   </div>
 </template>
 
 <style scoped>
 .row {
-  /* position: relative; */
+  align-items: center;
+  height: 700px;
+}
+.row-reverse {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
   height: 700px;
 }
@@ -115,7 +128,7 @@ h3 {
   height: 600px;
   z-index: -1;
 }
-.image img {
+.image img, .image-left img {
   border-radius: 8px;
   width: 100%;
   height: 100%;
@@ -129,9 +142,57 @@ h3 {
   height: 100%;
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 80%);;
 }
+.image-left {
+  position: absolute;
+  left: 0;
+  width: 33%;
+  height: 600px;
+  z-index: -1;
+}
+.filter-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 80%);;
+}
+.banner {
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+.banner h3 {
+  margin: auto;
+}
+.banner button {
+  border-radius: 8px;
+  border: none;
+  background-color: var(--primaryColor);
+  padding: 16px 32px;
+  cursor: pointer;
+  width: fit-content;
+}
+.banner img {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  height: 300px;
+  z-index: -1;
+  object-fit: cover;
+  object-position: bottom;
+}
 @media screen and (max-width: 768px) {
-  .image {
+  .image, .image-left {
     display: none;
+  }
+  .row-reverse, .row {
+    justify-content: space-around;
+    height: fit-content;
+    margin-bottom: 128px;
   }
 }
 </style>

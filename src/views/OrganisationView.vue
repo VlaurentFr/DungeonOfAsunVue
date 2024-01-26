@@ -24,8 +24,8 @@ function changeOrga(index: number) {
 
     <div class='orga-container'>
       <div class="orga-title-list">
-        <div class="orga-title" :class="{ 'selected-orga': selected === index }" v-for="(o, index) of orga" :key="o.title">
-          <p @click="changeOrga(index)">{{ o.title }}</p>
+        <div class="orga-title" :class="{ 'selected-orga': selected === index }" v-for="(o, index) of orga" :key="o.title" @click="changeOrga(index)">
+          <p>{{ o.title }}</p>
         </div>
       </div>
       <div class="orga-desc">
@@ -68,6 +68,12 @@ function changeOrga(index: number) {
   padding: 16px 32px;
   border-radius: 8px;
   cursor: pointer;
+}
+.orga-title:hover {
+  background-color: #202124;
+}
+.orga-title:hover p {
+  color: #fff;
 }
 .orga-title p {
   color: #FFF;

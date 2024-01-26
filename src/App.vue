@@ -38,3 +38,53 @@ watch(route, (newValue) => {
   margin: auto;
 }
 </style>
+
+<style>
+.tabs {
+  text-align: left;
+  position: relative;
+  border-bottom: solid var(--primaryColor) 4px;
+}
+.tabs input {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs input + label:hover {
+  color: var(--primaryColor);
+}
+
+.tab:checked + label {
+  color: black;
+  background-color: var(--primaryColor);
+}
+.tab:checked + label:hover {
+  color: white;
+}
+
+.tabs input + label {
+  margin: 12px 0 0 0;
+  transition: all 0.3s;
+  text-align: center;
+  color: #e7e9f5;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  padding: 5pt 10pt;
+  font-size: 16px;
+  background: #202124;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+}
+
+.tabs input {
+  position: relative;
+  opacity: 0;
+  margin: auto !important;
+  padding: 0;
+}
+
+</style>

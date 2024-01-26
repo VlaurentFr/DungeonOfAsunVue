@@ -27,7 +27,7 @@ const router = createRouter({
     {
       path: '/Rules/fight',
       name: 'rules-fight',
-      component: () => import('../views/RulesFightView.vue')
+      component: () => import('../views/FightView.vue')
     },
     {
       path: '/Rules/class',
