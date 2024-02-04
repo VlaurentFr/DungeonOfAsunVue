@@ -13,6 +13,7 @@ watch(route, (newValue) => {
   } else {
     loading.value = false;
   }
+  window.scrollTo(0,0);
 })
 </script>
 

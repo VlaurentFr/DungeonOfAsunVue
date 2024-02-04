@@ -11,38 +11,39 @@ function getImageUrl(name: string) {
 <template>
   <div class="visible">
     <div class='header'>
-      <h1>Les Races</h1>
-      <h2>Découvrez la liste des <span> races </span></h2>
+      <h1 v-if="!type">Les Races</h1>
+      <h1 v-else>Les {{ type }}</h1>
+      <h2>Découvrez la liste des <span v-if="!type"> races </span> <span v-if="type"> {{ type }} </span></h2>
     </div>
     <div class='title-page'>
       <button id="back" v-if="type" @click="type = ''">Retour à la liste</button>
     </div>
     <div id="races" v-if="!type">
-      <button @click="type = 'humans'">
+      <button @click="type = 'Humains'">
         <div>
           <img src="../assets/Races-logo/humans.png"/>
           <span>Humains</span>
         </div>
       </button>
-      <button @click="type = 'elves'">
+      <button @click="type = 'Elfes'">
         <div>
           <img src="../assets/Races-logo/wood-elf.png"/>
           <span>Elfes</span>
         </div>
       </button>
-      <button @click="type = 'dwarfs'">
+      <button @click="type = 'Nains'">
         <div>
           <img src="../assets/Races-logo/dwarf.png"/>
           <span>Nains</span>
         </div>
       </button>
-      <button @click="type = 'orcs'">
+      <button @click="type = 'Orcs'">
         <div>
           <img src="../assets/races/orc.png"/>
           <span>Orcs</span>
         </div>
       </button>
-      <button @click="type = 'other'">
+      <button @click="type = 'Autres'">
         <div>
           <img src="../assets/Races-logo/drak.png"/>
           <span>Autres</span>
@@ -50,7 +51,7 @@ function getImageUrl(name: string) {
       </button>
     </div>
     <!-- HUMANS -->
-    <div v-if="type == 'humans'">
+    <div v-if="type == 'Humains'">
       <div v-for="h of human" :key="h.name">
         <h3>{{ h.name }}</h3>
         <div class="race">
@@ -60,7 +61,7 @@ function getImageUrl(name: string) {
       </div>
     </div>
     <!-- ELVES -->
-    <div v-if="type == 'elves'">
+    <div v-if="type == 'Elfes'">
       <div v-for="h of elf" :key="h.name">
         <h3>{{ h.name }}</h3>
         <div class="race">
@@ -70,7 +71,7 @@ function getImageUrl(name: string) {
       </div>
     </div>
      <!-- DWARFS -->
-     <div v-if="type == 'dwarfs'">
+     <div v-if="type == 'Nains'">
       <div v-for="h of dwarf" :key="h.name">
         <h3>{{ h.name }}</h3>
         <div class="race">
@@ -80,7 +81,7 @@ function getImageUrl(name: string) {
       </div>
     </div>
     <!-- ELVES -->
-    <div v-if="type == 'orcs'">
+    <div v-if="type == 'Orcs'">
       <div v-for="h of orc" :key="h.name">
         <h3>{{ h.name }}</h3>
         <div class="race">
@@ -90,7 +91,7 @@ function getImageUrl(name: string) {
       </div>
     </div>
     <!-- OTHER -->
-    <div v-if="type == 'other'">
+    <div v-if="type == 'Autres'">
       <div v-for="h of other" :key="h.name">
         <h3>{{ h.name }}</h3>
         <div class="race">

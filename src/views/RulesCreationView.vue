@@ -39,10 +39,9 @@
 					Vous pouvez maintenant répartir vos points d'attribut pour déterminer les forces et les faiblesses de votre personnage.
 				</p>
 				<p>
-					 Choisissez judicieusement, car cela influencera vos compétences et capacités. Les guerriers auront besoin de force, les mages de la magie, et ainsi de suite. Vous possèdez 220 points à répartir entre la Force (FRC), la Magie (MAG), la Chance (CHA) et le Charisme (CHM) avec au maximum 70 et minimum 30 dans chaque caractéristiques. Ainsi que 30 points pour les points de vie et d'énergie (PV et PdE).
+					 Choisissez judicieusement, car cela influencera vos compétences et capacités. Les guerriers auront besoin de force, les mages de la magie, et ainsi de suite. Vous possèdez <span>220 points</span> à répartir entre <span>la Force</span> (FRC), <span>la Magie</span> (MAG), <span>la Chance</span> (CHA) et <span>le Charisme</span> (CHM) avec au maximum 70 et minimum 30 dans chaque caractéristiques. Ainsi que <span>30 points</span> pour <span>les points de vie et d'énergie</span> (PV et PdE).
 				</p>
-				<p>Vous pouvez également choisir votre nombre de point de vie et d'énergie, pour cela vous avez 30 points à répartir.</p>
-				<p>Vous pouvez également choisir votre rang d'armes, pour cela vous avez le droit de commencer avec un rang D+, 2 rang D et E+ le reste sera de rang E</p>
+				<p>Vous pouvez également choisir votre rang d'armes, pour cela vous avez le droit de commencer avec un rang <span>D+</span>, 2 rang <span>D</span> et <span>E+</span> le reste sera de rang <span>E</span></p>
 			</div>
 			<div class='fight-container'>
 				<div class='title-section'>
@@ -61,7 +60,7 @@
 					</h3>
 				</div>
 				<p>
-					Achetez votre équipement, vous possèdez pour cela de 60 po de départ à consommer pour vous équiper de la tête aux pieds. Penser à en gardez un peu de côté pour vos aventures.
+					Achetez votre équipement, vous possèdez pour cela de <span>60 po</span> de départ à consommer pour vous équiper de la tête aux pieds. Penser à en gardez un peu de côté pour vos aventures.
 				</p>
 			</div>
 			<div class='fight-container'>
@@ -110,6 +109,10 @@ h3 {
 	border-radius: 28px;
 	background: #202124;
 	transition: all .3s ease-in-out;
+}
+
+.fight-container span {
+	color: var(--primaryColor);
 }
 .fight-container:nth-child(1){
 	flex: 1 1 calc(50% - 12px);

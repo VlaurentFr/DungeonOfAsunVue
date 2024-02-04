@@ -34,14 +34,14 @@ function getImageUrl(name: string) {
       </thead>
       <tbody>
         <tr>
-          <td>Exp. Requis</td>
+          <td><p>Exp. Requis</p></td>
           <td>20 xp</td>
           <td>40 xp</td>
           <td>80 xp</td>
           <td>140 xp</td>
         </tr>
         <tr>
-          <td>Exp. Gagné</td>
+          <td><p>Exp. Gagné</p></td>
           <td>2 <i class="fas fa-dice-d20"></i> 6</td>
           <td>2 <i class="fas fa-dice-d20"></i> 6</td>
           <td>1 <i class="fas fa-dice-d20"></i> 6</td>
@@ -94,6 +94,12 @@ article {
 table {
   margin: 16px 0px 128px;
   width: 100%;
+}
+td p {
+  background-color: var(--primaryColor);
+  border-radius: 8px;
+  color: black;
+  padding: 4px 8px;
 }
 img {
   width: 320px;

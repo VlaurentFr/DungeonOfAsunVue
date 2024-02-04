@@ -45,7 +45,7 @@ const compRankB = computed(() => {
           </thead>
           <tbody>
             <tr>
-              <td>Niveau de Maîtrise</td>
+              <td><p>Niveau de Maîtrise</p></td>
               <td>E</td>
               <td>E+</td>
               <td>D</td>
@@ -60,7 +60,7 @@ const compRankB = computed(() => {
               <td>S+</td>
             </tr>
             <tr>
-              <td>Exp. Cumul. requises</td>
+              <td><p>Exp. Cumul. requises</p></td>
               <td>0</td>
               <td>3</td>
               <td>9</td>
@@ -84,13 +84,13 @@ const compRankB = computed(() => {
           </thead>
           <tbody>
             <tr>
-              <td>Type d'entrainement</td>
+              <td><p>Type d'entrainement</p></td>
               <td>1 arme</td>
               <td>2 armes</td>
               <td>Tutoré</td>
             </tr>
             <tr>
-              <td>Exp. Gagné / Armes</td>
+              <td><p>Exp. Gagné / Armes</p></td>
               <td>2 <i class="fas fa-dice-d20"></i> 6</td>
               <td>1 <i class="fas fa-dice-d20"></i> 6</td>
               <td>x1,5</td>
@@ -237,6 +237,12 @@ const compRankB = computed(() => {
 </template>
 
 <style scoped>
+td p {
+  background-color: var(--primaryColor);
+  border-radius: 8px;
+  color: black;
+  padding: 4px 8px;
+}
 select {
   width: 68px;
   padding: 8px;

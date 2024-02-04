@@ -7,6 +7,7 @@ const search = ref("");
 const selected = computed(() => {
   return spell.filter(x => 
     x.type.toLowerCase().includes(search.value.toLowerCase()) ||
+    x.el.toLowerCase().includes(search.value.toLowerCase()) ||
     x.name.toLowerCase().includes(search.value.toLowerCase()) ||
     x.lvl.toString().includes(search.value.toLowerCase())
     )
@@ -27,7 +28,22 @@ function clickSuggest(name: string) {
         <input placeholder="Rechercher un sort ..." type="text" v-model="search"/>
         <div v-if="selected.length !== spell.length" class="searh-suggest">
           <div class="suggest" v-for="m of selected" :key="m.name" @click="clickSuggest(m.name)">
-            <p>{{ m.name }}</p>
+            <p>
+              <i v-if="m.el == 'Feu'" class="fas fa-fire"></i>
+              <i v-if="m.el == 'Glace'" class="fas fa-snowflake"></i>
+              <i v-if="m.el == 'Vent'" class="fas fa-wind"></i>
+              <i v-if="m.el == 'Plant'" class="fas fa-seedling"></i>
+              <i v-if="m.el == 'Poison'" class="fas fa-skull-crossbones"></i>
+              <i v-if="m.el == 'Dark'" class="fas fa-skull"></i>
+              <i v-if="m.el == 'Light'" class="fas fa-sun"></i>
+              <i v-if="m.el == 'Druid'" class="fas fa-paw"></i>
+              <i v-if="m.el == 'Alchi'" class="fas fa-flask"></i>
+              <i v-if="m.el == 'Foudre'" class="fas fa-bolt"></i>
+              <i v-if="m.el == 'Psy'" class="fas fa-eye"></i>
+              <i v-if="m.el == 'Blood'" class="fas fa-tint"></i>
+              <i v-if="m.el == 'Illu'" class="fas fa-theater-masks"></i>
+              {{ m.name }}
+            </p>
           </div>
         </div>
       </div>
@@ -43,12 +59,12 @@ function clickSuggest(name: string) {
             <i v-if="s.el == 'Glace'" class="fas fa-snowflake"></i>
             <i v-if="s.el == 'Vent'" class="fas fa-wind"></i>
             <i v-if="s.el == 'Plant'" class="fas fa-seedling"></i>
-            <i v-if="s.el == 'Poison'" class="fas fa-virus"></i>
-            <i v-if="s.el == 'Dark'" class="fas fa-moon"></i>
+            <i v-if="s.el == 'Poison'" class="fas fa-skull-crossbones"></i>
+            <i v-if="s.el == 'Dark'" class="fas fa-skull"></i>
             <i v-if="s.el == 'Light'" class="fas fa-sun"></i>
-            <i v-if="s.el == 'Druid'" class="fas fa-frog"></i>
+            <i v-if="s.el == 'Druid'" class="fas fa-paw"></i>
             <i v-if="s.el == 'Alchi'" class="fas fa-flask"></i>
-            <i v-if="s.el == 'Foudre'" class="fas fa-dragon"></i>
+            <i v-if="s.el == 'Foudre'" class="fas fa-bolt"></i>
             <i v-if="s.el == 'Psy'" class="fas fa-eye"></i>
             <i v-if="s.el == 'Blood'" class="fas fa-tint"></i>
             <i v-if="s.el == 'Illu'" class="fas fa-theater-masks"></i>
@@ -75,7 +91,7 @@ function clickSuggest(name: string) {
   width: 640px;
   align-items: flex-start;
 }
-#search svg {
+#search .fa-search {
   position: absolute;
   height: 24px;
   width: 24px;

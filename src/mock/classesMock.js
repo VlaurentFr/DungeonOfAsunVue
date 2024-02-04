@@ -43,6 +43,7 @@ export const noviceClasses = [
     name: `Voleur`,
     img: `classes/thief.png`,
     
+    spell: ["Lame d'acide"],
     weapons: ['Dague C'],
     mastery: ['+ 10 PV'],
     desc: "Le Voleur est un maître de l'art de l'infiltration et du vol. Agile et furtif, il excelle dans la discrétion et l'évitement. Le Voleur peut se faufiler dans l'ombre, éviter les pièges et les gardes, et dérober des objets précieux sans être détecté. Il est souvent équipé d'outils tels que des crochets, des poisons, et d'autres gadgets utiles pour ses activités illicites. En combat, le Voleur préfère les attaques sournoises, utilisant sa vitesse et sa ruse pour prendre ses ennemis par surprise. Certains Voleurs peuvent être des assassins experts, tandis que d'autres se spécialisent dans le vol à la tire ou le sabotage. En dehors du monde criminel, un Voleur peut trouver sa place en tant qu'éclaireur, explorateur, ou même en tant que membre d'une guilde d'espions travaillant pour des causes variées. Bien que souvent perçu comme immoral, le Voleur peut avoir ses propres codes d'éthique ou agir par nécessité dans un monde difficile."
@@ -82,7 +83,7 @@ export const noviceClasses = [
   {
     name: `Apprenti Cryomancien`,
     img: `classes/cryomancer.png`,
-    spell: ['Glacier'],
+    spell: ['Main de Givre'],
     weapons: ['Magie D'],
     mastery: ['+ 10 Énergie'],
     desc: " L'Apprenti Cryomancien est un étudiant débutant dans l'art de manipuler la glace et les éléments froids. En quête de maîtrise des forces cryomantiques, cet apprenti apprend à générer des rafales de froid, à créer de petites structures de glace, et à ralentir ses adversaires avec des techniques de givre. Ses pouvoirs sont souvent teintés d'une certaine inexpérience, pouvant parfois créer des effets inattendus ou être difficiles à contrôler. Guidé par un mentor expérimenté, l'Apprenti Cryomancien cherche à comprendre les subtilités de sa magie et à éviter les écueils liés à la manipulation de la glace. En dehors de l'entraînement, il peut être perçu comme quelqu'un qui apprécie la fraîcheur et la beauté de la glace, mais qui doit faire preuve de prudence pour ne pas laisser son pouvoir s'échapper de son emprise."
@@ -145,15 +146,6 @@ export const noviceClasses = [
     desc: "Le Mage Noir est un praticien des arts obscurs, se penchant vers la magie noire et les forces ténébreuses. Maître de sorts impies, il tire son pouvoir des ombres, invoquant des énergies maléfiques pour atteindre ses objectifs. Les sorts du Mage Noir peuvent inclure des malédictions, des invocations démoniaques, et même des manipulations des âmes. Sa magie est souvent teintée d'une aura sinistre, et son apprentissage peut le conduire à des pactes obscurs pour accroître son pouvoir. Le Mage Noir peut être perçu comme un individu énigmatique, attiré par le pouvoir interdit et prêt à utiliser des moyens sombres pour parvenir à ses fins. Sur le champ de bataille, ses sorts peuvent semer la peur et infliger des blessures dévastatrices. En dehors du combat, le Mage Noir peut être un chercheur de connaissances interdites, un manipulateur des intrigues occultes, ou même un serviteur d'entités maléfiques."
   },
   {
-    name: `Apprenti Alchimiste`,
-    img: `classes/alchimiste.png`,
-    
-    weapons: ['Magie D'],
-    spell: ['Transmutation Mineur'],
-    mastery: ['+ 10 Énergie'],
-    desc: ""
-  },
-  {
     name: `Clerc`,
     img: `classes/Clerc.webp`,
     weapons: ['Magie C'],
@@ -180,6 +172,7 @@ export const avancedClasses = [
   {
     name: `Archer d'élite`,
     img: `classes/Archer2.png`,
+    spell: ['Tir arcanique'],
     weapons: ['Arc A'],
     mastery: ['+ 15 PV'],
     desc: "L'Archer d'Élite est un maître incontesté dans l'art du tir à l'arc, surpassant ses pairs par sa précision et son expertise inégalées. Sa maîtrise de l'arc long ou du composite lui permet de frapper des cibles avec une précision mortelle même à des distances extrêmes. L'Archer d'Élite excelle dans la rapidité d'exécution, la discrétion et la capacité à tirer des flèches imprévisibles. En plus de ses compétences de tir exceptionnelles, il peut avoir des talents spéciaux tels que le tir multiple, le tir perforant ou la capacité de décocher des flèches imprégnées de magie. Souvent employé dans des rôles d'éclaireur ou de tireur d'élite sur le champ de bataille, l'Archer d'Élite peut changer le cours d'une guerre avec une seule flèche bien placée. En dehors du combat, il peut être un chasseur émérite, un gardien des frontières ou un protecteur efficace contre les menaces lointaines."
@@ -187,6 +180,7 @@ export const avancedClasses = [
   {
     name: `Assassin`,
     img: `classes/thief2.png`,
+    spell: ["Lame d'acide", 'Invisibilité'],
     weapons: ['Dague A'],
     mastery: ['+ 15 PV'],
     desc: "L'Assassin est une ombre mortelle, un maître de l'art de l'infiltration et de l'élimination silencieuse. Habile dans les arts de la discrétion, il excelle à se faufiler dans l'ombre, à éviter les pièges et à éliminer ses cibles avec une précision mortelle. Armé de lames empoisonnées, de dagues ou d'armes silencieuses, l'Assassin est capable de neutraliser ses ennemis sans éveiller de soupçons. Il peut aussi être un maître des déguisements et des illusions pour tromper ses adversaires. Les Assassins sont souvent employés pour des missions d'espionnage, d'assassinat politique ou de sabotage. Ils peuvent être des agents indépendants ou travailler pour des organisations obscures. En dehors de leurs activités meurtrières, les Assassins peuvent être des individus solitaires, méfiants et mystérieux, opérant dans l'ombre pour atteindre leurs objectifs."
@@ -201,6 +195,7 @@ export const avancedClasses = [
   {
     name: `Moine`,
     img: `classes/monk.webp`,
+    spell: ['Main de Givre'],
     weapons: ['Poing A'],
     mastery: ['+ 15 PV'],
     desc: "Le Moine est un maître martial qui allie discipline physique, spiritualité et techniques de combat raffinées. Guidé par des principes éthiques et une connexion spirituelle profonde, le Moine utilise souvent des arts martiaux uniques qui mettent l'accent sur la rapidité, l'agilité et la maîtrise de soi. Sa formation peut inclure des styles de combat à mains nues, l'utilisation d'armes traditionnelles comme le bâton ou les couteaux de moine, et même la maîtrise de techniques de guérison spirituelle. Sur le champ de bataille, le Moine est un adversaire redoutable, capable de se déplacer rapidement, d'esquiver les attaques et de délivrer des coups précis. En dehors du combat, il peut jouer le rôle d'un sage, d'un médiateur ou d'un guérisseur spirituel, utilisant ses compétences pour apporter l'harmonie et la paix à ceux qui l'entourent."
@@ -223,7 +218,7 @@ export const avancedClasses = [
   {
     name: `Cryomancien`,
     img: `classes/cryomancer.png`,
-    spell: ['Glacier', 'Luna'],
+    spell: ['Main de Givre', 'Couteau de glace'],
     weapons: ['Magie A'],
     mastery: ['+ 15 Énergie'],
     desc: "Le Cryomancien est un maître de la magie du froid, capable de manipuler les éléments glacés pour geler ses ennemis et créer des conditions glaciales. Ses sorts peuvent inclure la création de projectiles de glace, des rafales de vent glacial, et même la formation de barrières de glace pour se protéger. Certains Cryomanciens peuvent étendre leur pouvoir pour contrôler la météo, créant des tempêtes de neige ou des blizzards. Sur le champ de bataille, le Cryomancien peut ralentir ses ennemis, créer des pièges gelés, et infliger des dommages considérables avec ses sorts de glace. En dehors du combat, il peut être un protecteur des régions froides, un expert en survie dans des environnements glaciaux, ou même un chercheur de secrets liés à la magie de la glace. Bien que son pouvoir soit souvent associé à la froideur, le Cryomancien peut avoir des motivations variées, que ce soit la recherche de connaissance, la préservation de l'équilibre naturel, ou la défense de son peuple contre les menaces glaciales."
@@ -295,15 +290,6 @@ export const avancedClasses = [
     desc: "Le Nécromancien est un praticien des arts sombres, maître dans la manipulation des forces de la mort et des morts-vivants. Utilisant des sorts morbides et des rituels ténébreux, il peut évoquer des squelettes, des zombies et même des spectres pour accomplir sa volonté. Les Nécromanciens peuvent également maîtriser des sorts liés à la maladie et à la putréfaction. Sur le champ de bataille, ils commandent des armées de morts-vivants, drainent la vie de leurs ennemis, et peuvent même rechercher l'immortalité en liant leur propre existence à la mort. En dehors du combat, les Nécromanciens peuvent être des chercheurs de connaissances interdites, des chercheurs de l'au-delà, ou des individus corrompus cherchant à étendre leur pouvoir sur les âmes des défunts. Leur magie est souvent mal vue, et les Nécromanciens sont généralement craints et évités par la société."
   },
   {
-    name: `Alchimiste`,
-    img: `classes/alchimiste.png`,
-    
-    weapons: ['Magie A'],
-    spell: ['Transmutation Mineur', 'Transmutation'],
-    mastery: ['+ 15 Énergie'],
-    desc: ""
-  },
-  {
     name: `Prêtre`,
     img: `classes/Clerc2.png`,
     weapons: ['Magie A'],
@@ -332,6 +318,7 @@ export const masterClasses = [
   {
     name: `Maître Epéiste`,
     img: `classes/epeiste3.png`,
+    spell: ['Fortification'],
     weapons: ['Epee S'],
     mastery: ['+ 20 PV'],
     desc: "Le Maître Épéiste représente l'apogée de l'art du combat à l'épée. Grâce à des années d'entraînement intense et de perfectionnement de ses compétences, le Maître Épéiste est devenu une véritable légende parmi les guerriers. Sa maîtrise de l'épée est inégalée, et il est capable de réaliser des mouvements complexes avec une fluidité exceptionnelle. Le Maître Épéiste a transcendé les simples techniques de combat pour atteindre un niveau d'harmonie entre son esprit et son arme. Son regard perçant et sa concentration inébranlable font de lui un adversaire redoutable sur le champ de bataille. Certains Maîtres Épéistes, en plus de leurs compétences martiales, peuvent être des mentors, partageant leur sagesse et leurs enseignements avec la génération suivante d'épéistes aspirants."
@@ -339,6 +326,7 @@ export const masterClasses = [
   {
     name: `Berserker`,
     img: `classes/Warrior3.png`,
+    spell: ['Fortification'],
     weapons: ['Hache S'],
     mastery: ['+ 20 PV'],
     desc: "Le Berserker incarne la fureur indomptable et la sauvagerie brutale sur le champ de bataille. Animé par une rage intérieure, le Berserker entre dans un état de transe lorsqu'il est confronté à ses ennemis, ignorant la douleur et la peur. Armé d'armes lourdes, telles que haches ou épées massives, le Berserker cherche le carnage, déferlant sur ses adversaires avec une force dévastatrice. Sa furie peut être déclenchée par la colère, l'honneur bafoué ou même la simple adrénaline du combat. Cependant, cette rage intense peut également le rendre imprudent, le poussant parfois à négliger la défense au profit de l'attaque. En dehors du champ de bataille, le Berserker peut être perçu comme une force chaotique, mais certains peuvent apprécier son sens de la loyauté et son engagement total envers la protection de ses proches."
@@ -346,6 +334,7 @@ export const masterClasses = [
   {
     name: `Maître Archer`,
     img: `classes/Archer3.webp`,
+    spell: ['Tir arcanique'],
     weapons: ['Arc S'],
     mastery: ['+ 20 PV'],
     desc: " Le Maître Archer est un virtuose de l'art du tir à l'arc, ayant perfectionné ses compétences au-delà de la norme. Doté d'une précision exceptionnelle et d'une connaissance approfondie des arcs et des flèches, le Maître Archer excelle dans l'art de frapper ses cibles à distance avec une précision mortelle. Sa technique de tir peut inclure des tirs rapides, des tirs de précision et même des tirs multiples sur des cibles variées. Le Maître Archer est également capable de s'adapter à différentes situations sur le champ de bataille, que ce soit en escalade, en embuscade ou en combat à distance. En plus de ses compétences martiales, le Maître Archer peut être un expert en stratégie, utilisant son arc comme une extension de sa pensée tactique pour infliger des dégâts dévastateurs à ses ennemis."
@@ -353,6 +342,7 @@ export const masterClasses = [
   {
     name: `Maître Assassin`,
     img: `classes/thief3.png`,
+    spell: ["Lame d'acide", 'Invisibilité', 'Vif Eclair'],
     weapons: ['Dague S'],
     mastery: ['+ 20 PV'],
     desc: "Le Maître Assassin est l'incarnation de l'ombre et de la mort silencieuse. Ayant perfectionné les arts de l'infiltration et de l'assassinat, il se fond dans les ténèbres pour atteindre sa cible sans être détecté. Doté d'une agilité exceptionnelle, le Maître Assassin excelle dans les attaques furtives, les mouvements silencieux et l'utilisation d'armes mortelles comme les dagues empoisonnées. Sa connaissance approfondie de l'anatomie humaine lui permet d'asséner des coups précis et mortels. Le Maître Assassin est également un expert en camouflage, se mêlant à la foule ou se fondant dans l'environnement pour échapper à toute détection. Bien qu'il puisse être perçu comme un agent des ombres, le Maître Assassin peut agir avec un code d'éthique, n'éliminant que ceux qu'il juge dignes de son art ou de ceux qui représentent une menace grave."
@@ -360,6 +350,7 @@ export const masterClasses = [
   {
     name: `Grand Lancier`,
     img: `classes/lancier3.webp`,
+    spell: ['Fortification'],
     weapons: ['Lance S'],
     mastery: ['+ 20 PV'],
     desc: "Le Grand Lancier est le maître incontesté de la lance, combinant une maîtrise technique exceptionnelle avec une portée dévastatrice. Doté d'une lance imposante, il excelle dans les charges dévastatrices et la création de lignes de défense infranchissables. La portée étendue de sa lance lui permet de garder les ennemis à distance, faisant de lui un adversaire redoutable sur le champ de bataille. Le Grand Lancier peut également utiliser sa lance pour repousser les assaillants, créant un périmètre de sécurité autour de lui. Certains Grand Lanciers peuvent également être formés à l'équitation, devenant des cavaliers redoutables capables de manœuvres stratégiques sur le champ de bataille. En dehors de la guerre, le Grand Lancier peut être perçu comme un gardien de la paix, prêt à défendre les frontières et à assurer la stabilité avec son habileté à manier sa lance avec une précision mortelle."
@@ -367,6 +358,7 @@ export const masterClasses = [
   {
     name: `Grand Moine`,
     img: `classes/monk.webp`,
+    spell: ['Main de Givre','Main de feu'],
     weapons: ['Poing S'],
     mastery: ['+ 20 PV'],
     desc: "Le Grand Moine est un maître spirituel et martial, fusionnant la sagesse spirituelle avec des compétences martiales exceptionnelles. Ayant consacré sa vie à la voie de la méditation et de l'entraînement physique, le Grand Moine incarne l'harmonie entre le corps et l'esprit. Il excelle dans les arts martiaux à mains nues, déployant des techniques de combat fluides et puissantes. La maîtrise du Grand Moine va au-delà de la simple force physique, englobant des capacités surnaturelles telles que la guérison par l'énergie intérieure, la préscience et la manipulation des énergies spirituelles. Certains Grand Moines peuvent également manier des armes exotiques ou utiliser des objets sacrés dans leur quête de justice et d'équilibre. En dehors du combat, le Grand Moine est souvent un conseiller sage, offrant des conseils spirituels et prodiguant des enseignements de vie à ceux qui recherchent la voie de l'harmonie."
@@ -375,6 +367,7 @@ export const masterClasses = [
     name: `Brise'Os`,
     img: `classes/combattant3.png`,
     weapons: ['Masse S'],
+    spell: ['Fortification'],
     mastery: ['+ 20 PV'],
     desc: " Le Brise-Os est un guerrier spécialisé dans le maniement d'armes contondantes, concentrant sa force brute sur la destruction des défenses adverses. Armé de masses, de marteaux ou de gourdins massifs, le Brise-Os peut pulvériser les armures, écraser les boucliers et infliger des dégâts considérables aux ennemis. Son approche axée sur la destruction des os et des protections en fait un adversaire redoutable sur le champ de bataille. En plus de sa force physique, le Brise-Os peut développer des compétences de contrôle de foule en assourdissant ses ennemis avec des impacts assourdissants. Certains Brise-Os peuvent même invoquer des séismes mineurs en frappant le sol avec une force terrifiante. En dehors du combat, le Brise-Os peut être perçu comme un artisan capable de forger des armes lourdes ou un protecteur des faibles, utilisant sa puissance pour défendre ceux qui ne peuvent se défendre."
   },
@@ -389,7 +382,7 @@ export const masterClasses = [
   {
     name: `Maître Cryomancien`,
     img: `classes/cryomancer.png`,
-    spell: ['Glacier', 'Luna', 'Foudroiment', 'Fimbulvetr'],
+    spell: ['Main de Givre', 'Couteau de glace', 'Foudroiment', 'Fimbulvetr'],
     weapons: ['Magie S'],
     mastery: ['+ 20 Énergie'],
     desc: "Le Maître Cryomancien est un mage expert dans la manipulation des forces glaciales. Il a affiné son art au point de pouvoir plonger le monde dans un froid glacial et glaçant. Les sorts du Maître Cryomancien vont au-delà de simples rafales de froid, incluant la création de blizzards dévastateurs, la formation de golems de glace et même la capacité à geler le temps dans une zone spécifique. Ses compétences en cryomancie lui permettent également de ralentir ses ennemis, de créer des barrières de glace pour se protéger, et d'invoquer des armes gelées pour le combat. Le Maître Cryomancien peut également avoir la capacité de geler l'humidité de l'air pour créer des sculptures de glace complexes. Toutefois, l'utilisation excessive de cette magie peut entraîner des conditions météorologiques extrêmes et des effets collatéraux imprévus. En dehors du champ de bataille, le Maître Cryomancien peut être un gardien de terres gelées, un chercheur de secrets liés à la cryomancie, ou même un créateur d'objets magiques gelés d'une beauté glaciale."
@@ -461,15 +454,6 @@ export const masterClasses = [
     desc: " Le Maître Nécromancien est un sorcier spécialisé dans la magie noire, manipulant les forces de la mort pour atteindre ses objectifs. Maître de la nécromancie, il a la capacité d'invoquer et de contrôler les morts, créant des serviteurs squelettiques ou des goules pour servir ses desseins. Ses sorts peuvent infliger des malédictions, drainer la vie de ses ennemis, et même manipuler les ombres pour semer la terreur parmi ses adversaires. Bien que souvent perçu comme sinistre, le Maître Nécromancien peut poursuivre des buts variés, de la recherche du savoir interdit à la défense de son peuple contre des menaces surnaturelles. Sur le champ de bataille, sa capacité à réanimer les morts peut inverser le cours d'une bataille, faisant de lui un adversaire redoutable. En dehors du combat, le Maître Nécromancien peut être un chercheur de secrets interdits, un gardien des frontières entre la vie et la mort, ou même un conseiller auprès de ceux qui acceptent la nature sombre de ses pouvoirs."
   },
   {
-    name: `Maître Alchimiste`,
-    img: `classes/alchimiste.png`,
-    
-    weapons: ['Magie S'],
-    spell: ['Transmutation Mineur', 'Transmutation', 'Transmutation Majeur'],
-    mastery: ['+ 20 Énergie'],
-    desc: ""
-  },
-  {
     name: `Evêque`,
     img: `classes/Clerc3.png`,
     weapons: ['Magie S'],
@@ -481,7 +465,7 @@ export const masterClasses = [
     name: `Grand Croisé`,
     img: `classes/Croise2.png`,
     weapons: ['1 Rang A+, Magie A'],
-    spell: ['Soin', 'Lumière','Sagitae', 'Fortification', 'Abraxas'],
+    spell: ['Soin', 'Lumière','Sagitae', 'Abraxas'],
     mastery: ['+ 10 PV + 10 Énergie'],
     desc: "Le Grand Croisé est un guerrier dévoué, alliant la force martiale à une profonde foi religieuse. Portant une armure sacrée et maniant une épée bénie, le Grand Croisé est un champion de la foi prêt à défendre les valeurs sacrées. Sa mission est souvent liée à l'éradication du mal, à la protection des innocents et à la réalisation des desseins divins. Doté d'une détermination inébranlable, le Grand Croisé inspire ses alliés et incarne la vertu sur le champ de bataille. Il peut également avoir des compétences spéciales liées à la détection du mal, à la purification des lieux corrompus et à la résistance aux forces obscures. En tant que défenseur de la foi, le Grand Croisé peut être reconnu comme un symbole d'espoir et de justice. En dehors des conflits, il peut assumer un rôle de leader spirituel, encourageant la piété et guidant sa communauté vers la lumière."
   },

@@ -16,15 +16,21 @@ import { useRouter } from 'vue-router';
             <h3>Introduction</h3>
         </div>
         <p>
-        A l'origine les êtres du Néant vivaient seuls dans le Void, lorsqu'un jour l'un d'eux décida de créer un nouveau monde, une terre ou vivraient d'autres êtres vivants. Riannedos créa donc un monde en le protégeant de son corps, et créant ses enfants : les dragons et le temps.<br/><br/>
-
-        Très vite, il fut rejoint par d'autres êtres comme Quara et son frère Gusius, créant la faune et la flore. <br/>
-        Eone donna le savoir aux dragons, ce qui leur permit de vivre ensemble. <br/>
-        Fauscht brisa leurs vies intemporelles, et leur fit don de la mortalité.<br/>
-        Theomis et ses fils rejoignirent sa femme Quara, créant les hommes qui furent soumis a la puissance et le savoir des dragons. <br/>
-        Mais cela ne dura qu'un temps ; Théomis, avide de sa création, voulait les rendre plus forts et demanda à son fils Edes de descendre sur ce monde pour les aider. Edes fut sans pitié pour la création de Riannedos et massacra la plupart d'entre eux, bien que certains hommes continuèrent à vivre avec les Dragons, donnant par ailleurs naissance aux Drakèides.<br/><br/>
-
-        La domination des hommes était en marche sous la bannière d'Edes "Le Justicier".
+          À l'origine, les Êtres du Néant vivaient seuls dans le Void. L'un d'eux décida un jour de
+          créer un nouveau monde, une terre où vivraient d'autres êtres vivants.<br/>
+          Riannedos créa donc un monde en le protégeant de son corps. Il y plaça ses enfants : les
+          Dragons et le Temps.<br/><br/>
+          Très vite, d'autres Êtres le rejoinrent. Parmi eux, Quara et son frère Gusius, qui créèrent la
+          faune et la flore.<br/>
+          Soucieux de garantir l'harmonie de ce monde, Eone insuffla le savoir aux Dragons.<br/>
+          Fauscht leur fit don de la mortalité, pour les soulager de leurs vies intemporelles.<br/>
+          Quara fut rejointe par son époux, Theomis, et ses fils. Ils créèrent les hommes qui furent
+          soumis à la puissance et au savoir des dragons.<br/><br/>
+          Mais cela ne dura qu'un temps ; soucieux d'aider les hommes, Theomis demanda à son
+          fils Edes de descendre sur le monde, pour prêter main forte à sa création. Edes fut sans
+          pitié pour les Dragons, et décima la plupart d'entre eux. Certains subsistèrent toutefois, et
+          vécurent avec des hommes, donnant naissance aux Drakèides.<br/><br/>
+          La domination des hommes était en marche sous la bannière d'Edes "Le Justicier".
         </p>
       </article>
       <div class="image">

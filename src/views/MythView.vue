@@ -89,7 +89,7 @@ function navigate(godValue: any) {
   </div>
 </template>
 <style scoped>
-img {
+.god-image, .character {
   height: 244px;
   width: 124px;
   object-fit: cover;

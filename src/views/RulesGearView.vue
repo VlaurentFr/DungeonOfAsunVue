@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { stick, daggers, swords, Axes, spears, hands, bows, masses, gears, shields, spellBook, potions, divers } from '../mock/gearMock.js';
+import { stick, daggers, swords, Axes, spears, hands, bows, masses, gears, shields, spellBook, potions, feed, alcool, lunch, house, stones, treasure, divers } from '../mock/gearMock.js';
 
 const selected = ref('WEAPONS');
 
@@ -26,7 +26,13 @@ const selected = ref('WEAPONS');
           <input id="tab-4" type="radio" class="tab tab-selector" name="tab" />
           <label for="tab-4" class="tab tab-warning" @click="selected = 'MAGIC'">Magie</label>
           <input id="tab-5" type="radio" class="tab tab-selector" name="tab" />
-          <label for="tab-5" class="tab tab-warning" @click="selected = 'OTHERS'">Divers</label>
+          <label for="tab-5" class="tab tab-warning" @click="selected = 'FEEDS'">Repas</label>
+          <input id="tab-6" type="radio" class="tab tab-selector" name="tab" />
+          <label for="tab-6" class="tab tab-warning" @click="selected = 'HOUSES'">Logements</label>
+          <input id="tab-7" type="radio" class="tab tab-selector" name="tab" />
+          <label for="tab-7" class="tab tab-warning" @click="selected = 'TRESOR'">Trésors</label>
+          <input id="tab-8" type="radio" class="tab tab-selector" name="tab" />
+          <label for="tab-8" class="tab tab-warning" @click="selected = 'OTHERS'">Divers</label>
         </div>
         <article class='row'>
           <div  v-if="selected === 'WEAPONS'">
@@ -45,7 +51,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.name}}</td>
                   <td>{{w.dmg}}</td>
                   <td>{{w.type}}</td>
-                  <td>{{w.cost}}</td>
+                  <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
             </table>
@@ -64,7 +70,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.name}}</td>
                   <td>{{w.dmg}}</td>
                   <td>{{w.type}}</td>
-                  <td>{{w.cost}}</td>
+                  <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
             </table>
@@ -83,7 +89,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.name}}</td>
                   <td>{{w.dmg}}</td>
                   <td>{{w.type}}</td>
-                  <td>{{w.cost}}</td>
+                  <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
             </table>
@@ -102,7 +108,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.name}}</td>
                   <td>{{w.dmg}}</td>
                   <td>{{w.type}}</td>
-                  <td>{{w.cost}}</td>
+                  <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
             </table>
@@ -121,7 +127,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.name}}</td>
                   <td>{{w.dmg}}</td>
                   <td>{{w.type}}</td>
-                  <td>{{w.cost}}</td>
+                  <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
             </table>
@@ -140,7 +146,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.name}}</td>
                   <td>{{w.dmg}}</td>
                   <td>{{w.type}}</td>
-                  <td>{{w.cost}}</td>
+                  <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
             </table>
@@ -159,7 +165,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.name}}</td>
                   <td>{{w.dmg}}</td>
                   <td>{{w.type}}</td>
-                  <td>{{w.cost}}</td>
+                  <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
             </table>
@@ -178,7 +184,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.name}}</td>
                   <td>{{w.dmg}}</td>
                   <td>{{w.type}}</td>
-                  <td>{{w.cost}}</td>
+                  <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
             </table>
@@ -201,7 +207,7 @@ const selected = ref('WEAPONS');
                   <td>{{g.def}}</td>
                   <td>{{g.res}}</td>
                   <td>{{g.type}}</td>
-                  <td>{{g.cost}}</td>
+                  <td><p>{{g.cost}}</p></td>
                 </tr>
               </tbody>
            </table>
@@ -220,7 +226,71 @@ const selected = ref('WEAPONS');
                 <tr v-for="s of shields" :key="s.name">
                   <td>{{s.name}}</td>
                   <td>{{s.def}}</td>
-                  <td>{{s.cost}}</td>
+                  <td><p>{{s.cost}}</p></td>
+                </tr>
+              </tbody>
+           </table>
+          </div>
+          <div  v-if="selected === 'FEEDS'">
+           <h3>Nourriture</h3>
+           <table>
+              <thead>
+                <tr>
+                  <th colspan="1">Nom</th>
+                  <th colspan="1">Coûts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="s of feed" :key="s.name">
+                  <td>{{s.name}}</td>
+                  <td><p>{{s.cost}}</p></td>
+                </tr>
+              </tbody>
+           </table>
+           <h3>Alcool</h3>
+           <table>
+              <thead>
+                <tr>
+                  <th colspan="1">Nom</th>
+                  <th colspan="1">Coûts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="s of alcool" :key="s.name">
+                  <td>{{s.name}}</td>
+                  <td><p>{{s.cost}}</p></td>
+                </tr>
+              </tbody>
+           </table>
+           <h3>Repas</h3>
+           <table>
+              <thead>
+                <tr>
+                  <th colspan="1">Nom</th>
+                  <th colspan="1">Coûts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="s of lunch" :key="s.name">
+                  <td>{{s.name}}</td>
+                  <td><p>{{s.cost}}</p></td>
+                </tr>
+              </tbody>
+           </table>
+          </div>
+          <div  v-if="selected === 'HOUSES'">
+           <h3>Nourriture</h3>
+           <table>
+              <thead>
+                <tr>
+                  <th colspan="1">Nom</th>
+                  <th colspan="1">Coûts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="s of house" :key="s.name">
+                  <td>{{s.name}}</td>
+                  <td><p>{{s.cost}}</p></td>
                 </tr>
               </tbody>
            </table>
@@ -237,7 +307,7 @@ const selected = ref('WEAPONS');
               <tbody>
                 <tr v-for="s of spellBook" :key="s.name">
                   <td>{{s.name}}</td>
-                  <td>{{s.cost}}</td>
+                  <td><p>{{s.cost}}</p></td>
                 </tr>
               </tbody>
            </table>
@@ -254,7 +324,39 @@ const selected = ref('WEAPONS');
                 <tr v-for="s of potions" :key="s.name">
                   <td>{{s.name}}</td>
                   <td>{{s.effect}}</td>
-                  <td>{{s.cost}}</td>
+                  <td><p>{{s.cost}}</p></td>
+                </tr>
+              </tbody>
+           </table>
+          </div>
+          <div  v-if="selected === 'TRESOR'">
+           <h3>Pierres précieuses</h3>
+           <table>
+              <thead>
+                <tr>
+                  <th colspan="1">Nom</th>
+                  <th colspan="1">Coûts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="s of stones" :key="s.name">
+                  <td>{{s.name}}</td>
+                  <td><p>{{s.cost}}</p></td>
+                </tr>
+              </tbody>
+           </table>
+           <h3>Trésors</h3>
+           <table>
+              <thead>
+                <tr>
+                  <th colspan="1">Nom</th>
+                  <th colspan="1">Coûts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="s of treasure" :key="s.name">
+                  <td>{{s.name}}</td>
+                  <td><p>{{s.cost}}</p></td>
                 </tr>
               </tbody>
            </table>
@@ -271,7 +373,7 @@ const selected = ref('WEAPONS');
               <tbody>
                 <tr v-for="s of divers" :key="s.name">
                   <td>{{s.name}}</td>
-                  <td>{{s.cost}}</td>
+                  <td><p>{{s.cost}}</p></td>
                 </tr>
               </tbody>
            </table>
@@ -289,6 +391,13 @@ table {
 }
 th, td {
   text-align: left;
+}
+td p {
+  background-color: var(--primaryColor);
+  border-radius: 8px;
+  color: black;
+  padding: 4px 8px;
+  width: fit-content;
 }
 h3 {
   font-size: 24px;
