@@ -15,7 +15,13 @@ const path = computed(() =>route.hash || "#");
     </div>
     <div class='slot' v-for="(link, index) of (MOB as Array<any>)" :key="link.name">
       <a :href="'#'+link.name">
-        <p :class="{selected: path.includes(link.name)}">{{ index == 0 || link.name.slice(0,1) !== MOB[index -1].name.slice(0,1) ? link.name.slice(0,1) : "·" }}</p>
+        <p 
+        :class="{
+          selected: path.includes(link.name),
+          is_dot: index != 0 && link.name.slice(0,1) === MOB[index-1].name.slice(0,1)}"
+        >
+          {{ index == 0 || link.name.slice(0,1) !== MOB[index -1].name.slice(0,1) ? link.name.slice(0,1) : "·" }}
+        </p>
       </a>
     </div>
   </aside>
@@ -74,6 +80,12 @@ aside {
   margin: 0 12px;
   transition: all ease-in-out 300ms;
   text-align: center;
+}
+.slot .is_dot {
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slot a, .all a {
   text-decoration: none;

@@ -21,19 +21,19 @@ function getImageUrl(name: string) {
     <div id="races" v-if="!type">
       <button @click="type = 'Humains'">
         <div>
-          <img src="../assets/Races-logo/humans.png"/>
+          <img src="../assets/races/humans.png"/>
           <span>Humains</span>
         </div>
       </button>
       <button @click="type = 'Elfes'">
         <div>
-          <img src="../assets/Races-logo/wood-elf.png"/>
+          <img src="../assets/races/wood-elf.png"/>
           <span>Elfes</span>
         </div>
       </button>
       <button @click="type = 'Nains'">
         <div>
-          <img src="../assets/Races-logo/dwarf.png"/>
+          <img src="../assets/races/dwarf.png"/>
           <span>Nains</span>
         </div>
       </button>
@@ -45,7 +45,7 @@ function getImageUrl(name: string) {
       </button>
       <button @click="type = 'Autres'">
         <div>
-          <img src="../assets/Races-logo/drak.png"/>
+          <img src="../assets/races/drak.png"/>
           <span>Autres</span>
         </div>
       </button>
@@ -180,7 +180,7 @@ function getImageUrl(name: string) {
   color: black;
   border-radius: 4px;
   font-size: 48px;
-  font-family: Work Sans;
+  font-family: Caladea;
   position: absolute;
   bottom: 64px;
   left: 50%;
@@ -197,9 +197,10 @@ function getImageUrl(name: string) {
   display: flex;
   margin-bottom: 68px;
   position: relative;
+  min-height: 500px;
 }
 .race img {
-  width: 244px;
+  width: 300px;
   border-radius: 8px;
   margin: 0 48px 16px 0;
   object-fit: cover;
@@ -210,10 +211,10 @@ function getImageUrl(name: string) {
   position: absolute;
   content:'';
   height: 100%;
-  width:244px;
+  width:300px;
   top:0;
   left:0;
-  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 80%);
+  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%);
 }
 
 @media screen and (max-width: 768px) {

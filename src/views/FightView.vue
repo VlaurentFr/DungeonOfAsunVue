@@ -14,7 +14,7 @@ const router = useRouter();
     <div id="section-1">
       <div>
         <h3>Les mecaniques de bases</h3>
-        <p>La mécanique de base est celle du lancé de dé pour réussir sont une actions. L'actions est réussi si la valeur obtenue est inférieur à la statistique exigée. On aura donc soit un jets de force pour un déplacement complexe ou une attaque avec une arme, soit un jet de magie pour l'usage de la magie. Lorsqu'une attaque est réussi qu'elle soit magique ou physique, un certains nombres de dé sont lancées afin de déterminer les points de vie infligées à la cible dépendant du sort et de l'armes utilisées. Lorsque vous êtes attaqué, vous avez CHA % d'esquiver dans la mesure du possible.</p>
+        <p>La mécanique de base est celle du lancé de dés pour réussir une actions. L'actions est réussi si la valeur obtenue est inférieur à la statistique exigée. On aura donc soit un jets de <span>force</span> pour un déplacement complexe ou une attaque avec une arme, soit un jet de <span>magie</span> pour l'usage de la magie. Lorsqu'une attaque est réussi qu'elle soit magique ou physique, un certains nombres de dés sont lancées afin de déterminer les points de vie infligées à la cible dépendant du sort et de l'armes utilisées. Lorsque vous êtes attaqué, vous avez <span>CHA %</span> d'esquiver dans la mesure du possible.</p>
       </div>
       <div class="image-left">
         <img src="@/assets/combats/combat1.png" />
@@ -27,7 +27,7 @@ const router = useRouter();
         <div class="row">
           <div>
             <h4><i class="fas fa-shield-alt"></i> Armures</h4>
-            <p>Cette règle modifie celle des points de vie et d'attaque. Lorsqu'un personnage est équipé d'une armure et qu'il reçoit une attaque, il peut soustraire au nombre de points d'attaque de son ennemi ses points de défense (DEF). Cependant dans le cas d'attaque magique cela se base sur la deuxième statistique de l'armure appelé "Résistance" ou RES. Une Armure peut donc avoir un grand nombre de points de Défense mais une faible Résistance et dans ce cas ne pas prémunir d'une bonne protection contre les mages et inversement. Elle peut avoir peu de points mais beaucoup de Résistance protégeant mieux des mages que de n'importe qu'elle autres guerriers sanguinaires qui chercherai a vous faire la peaux. Si une attaque fait 6 de dégâts mais que la cible a trois points d'armure, l'attaque ne fera que 3 points de dégâts (6-3 = 3).</p>
+            <p>Cette règle modifie celle des points de vie et d'attaque. Lorsqu'un personnage est équipé d'une armure et qu'il reçoit une attaque, il peut soustraire au nombre de points d'attaque de son ennemi ses points de défense (DEF). Cependant dans le cas d'attaque magique cela se base sur la deuxième statistique de l'armure appelé "Résistance" ou RES. Une Armure peut donc avoir un grand nombre de points de Défense mais une faible Résistance et dans ce cas ne pas prémunir d'une bonne protection contre les mages et inversement. Elle peut avoir peu de points de défense mais beaucoup de résistance protégeant mieux des mages que de n'importe qu'elle autres guerriers sanguinaires qui chercherai a vous faire la peaux. Si une attaque fait 6 de dégâts mais que la cible a 3 points d'armure, l'attaque ne fera que 3 points de dégâts (6-3 = 3).</p>
           </div>
           <div>
             <h4><i class="fas fa-bolt"></i> Energie</h4>
@@ -86,6 +86,9 @@ const router = useRouter();
 </template>
 
 <style scoped>
+p span {
+  color:var(--primaryColor);
+}
 #section-1 {
   display: flex;
   justify-content: center;

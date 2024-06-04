@@ -31,7 +31,22 @@ const compRankB = computed(() => {
         <h3>Qu'est-ce que c'est ?</h3>
       </div>
       <div>
-        <p>Afin d'obtenir l'accès a certaines classe et de nouvelles compétences il vous faudra vous entrainer a manier vos armes. Pour cela vous pouvez lors q'un entrainement entrainer soit une ou deux armes a la fois,vous pouvez également vous faire aider par quelqu'un possèdant une plus grande maitrise que vous afin d'obtenir un bonus d'expériences lors de l'entrainement. Chaque entrainement permet de lancer  2 <i class="fas fa-dice-d20"></i> 6 se qui revient a 1 <i class="fas fa-dice-d20"></i> 6 par armes. Le tuteur quand a lui multiplie le résultat obtenue par x1,5. Votre maitrise d'armes s'accompagnera alors de nouveau bonus lorsque vous serez equipé de l'arme associer.</p>
+        <p>Afin d'obtenir l'accès a certaines classe et de nouvelles compétences il vous faudra vous entrainer à manier vos armes. Pour cela vous pouvez lors d'un entrainement, entrainer soit une ou deux armes a la fois, vous pouvez également vous faire aider par quelqu'un possèdant une plus grande maitrise que vous afin d'obtenir un bonus d'expériences lors de l'entrainement. Chaque entrainement permet de lancer  2 <i class="fas fa-dice-d20"></i> 6 se qui revient a 1 <i class="fas fa-dice-d20"></i> 6 par armes. Le tuteur quand a lui multiplie le résultat obtenue par x1,5. Votre maitrise d'armes s'accompagnera alors de nouveau bonus lorsque vous serez equipé de l'arme associer.</p>
+      </div>
+      <div class="title-section">
+        <h3>Capacités</h3>
+      </div>
+      <div>
+        <p>Au cours de votre progressions vous pourrez débloquer deux capacité, utilisable au besoin :</p>
+        <br/>
+        <ul>
+          <li>
+            <p><span>Dash</span> permet de reculer ou avancer rapide a n'importe quel moment, 2 fois par combat</p>
+          </li>
+          <li>
+            <p><span>Secours</span> permet de téléporté un allier à moins de 10m a côté de soi, 1 fois par comba</p>
+          </li>
+        </ul>
       </div>
       <div class="title-section">
         <h3>L'expériences</h3>

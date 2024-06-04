@@ -37,7 +37,7 @@ function navigate(panthIndex: number){
       <div class="filter"></div>
       <div>
         <h3>Description</h3>
-        <p>{{ godStore.god.desc }}</p>
+        <p v-html="godStore.god.desc"></p>
       </div>
     </div>
     <div class="head-religion">

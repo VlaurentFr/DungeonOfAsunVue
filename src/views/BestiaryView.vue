@@ -5,9 +5,11 @@ import { MOB } from '@/mock/bestiaryMock';
 
 const search = ref("");
 const openSpell = ref<Array<string>>([]);
+const isActive = ref(false);
+const MobSorted = MOB.sort((a, b) => a.name.localeCompare(b.name))
 
 const selected = computed(() => {
-  return MOB.filter(x => 
+  return MobSorted.filter(x => 
     x.cards.some(g => g.type.toLowerCase().includes(search.value.toLowerCase())) ||
     x.cards.some(g => g.name.toLowerCase().includes(search.value.toLowerCase())))
 });
@@ -18,6 +20,9 @@ function getImageUrl(name: string) {
 function clickSuggest(name: string) {
   search.value = name;
   console.log('click')
+}
+function toggle() {
+  isActive.value = !isActive.value;
 }
 </script>
 <template>
@@ -34,20 +39,29 @@ function clickSuggest(name: string) {
             <p>{{ m.name }}</p>
           </div>
         </div>
+        <div class="row">
+          <p>Caractéristiques seulement</p>
+          <button
+            class="simplify_button"
+            :class="{active:isActive}"
+            @click="toggle"
+            >{{isActive ? 'Oui' : 'Non'}}
+          </button>
+        </div>
       </div>
     </div>
     <div class="content" :id="mobs.name" v-for="mobs of selected" :key="mobs.name">
       <div>
         <h3>{{ mobs.name }}</h3>
-        <p class="general-desc">{{ mobs.desc }}</p>
+        <p v-if="!isActive && mobs.desc" class="general-desc">{{ mobs.desc }}</p>
       </div>
-      <div class="img-container">
+      <div v-if="!isActive && (mobs.desc || mobs.img)" class="img-container">
         <div class="img-filter" v-if="mobs.img"></div>
         <img class="background-img" src="../assets/Void-green.svg">
         <img class="mob-img" v-if="mobs.img" :src="getImageUrl(mobs.img)"/>
       </div>
       <div class="cards-container">
-        <h4>Caractéristiques</h4>
+        <h4 v-if="!isActive">Caractéristiques</h4>
         <div class="cards">
           <div class="mob" v-for="(m, index) of mobs.cards" :key="m.name">
             <div class="mob-wrapper">
@@ -92,7 +106,7 @@ function clickSuggest(name: string) {
                 </div>
               </div>
             </div>
-            <p v-if="!openSpell.includes(m.name + index) && m.act.length" class="open-spell" @click="openSpell.push(m.name + index)">Voir les sorts</p>
+            <p v-if="!openSpell.includes(m.name + index) && m.act.length" class="open-spell" @click="openSpell.push(m.name + index)">Voir les actions</p>
             <div v-if="openSpell.includes(m.name + index)" class="spell-container">
               <div class="spell" v-for="s of m.act" :key="s.name">
                 <div>
@@ -100,17 +114,17 @@ function clickSuggest(name: string) {
                   <p class="effect"><span>Effet:</span> {{ s.effect }}</p>
                   <p class="spell-desc" v-html="s.desc"></p>
                 </div>
-                <div class="card">
-                  <div>
+                <div class="card" v-if="s.dmg || s.type || s.range || s.target">
+                  <div v-if="s.dmg">
                     <p><span>Dégâts : </span>{{ s.dmg }}</p>
                   </div>
-                  <div>
+                  <div v-if="s.type">
                     <p><span>Type : </span><span class="type">{{ s.type }}</span></p>
                   </div>
-                  <div>
+                  <div v-if="s.range">
                     <p><span>Portée : </span>{{ s.range }}</p>
                   </div>
-                  <div>
+                  <div v-if="s.target">
                     <p><span>Cible : </span>{{ s.target }}</p>
                   </div>
                 </div>
@@ -120,7 +134,7 @@ function clickSuggest(name: string) {
               v-if="openSpell.includes(m.name + index)"
               class="open-spell"
               @click="openSpell = openSpell.filter((i) => i !== (m.name + index))">
-              Reduire les sorts
+              Reduire les actions
             </p>
           </div>
         </div>
@@ -168,8 +182,19 @@ function clickSuggest(name: string) {
 #search {
   position: relative;
   display: flex;
+  flex-direction: column;
   width: 640px;
-  align-items: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.active {
+  background-color: var(--primaryColor);
+}
+.simplify_button {
+  border-radius: 6px;
+  border: none;
+  margin-left: 20px;
+  width: 40px;
 }
 #search svg {
   position: absolute;
@@ -223,17 +248,19 @@ input:focus-visible {
 .general-desc {
   width: 560px;
   margin-bottom: 80px;
+  margin-right: 106px;
 }
 .img-container {
-  width: 464px;
-  height: 518px;
+  width: 300px;
+  height: 300px;
   position: relative;
   overflow: visible;
-  margin-left: 106px;
+  margin-left: auto;
 
 }
 .background-img {
   position: absolute;
+  width: 440px;
   top: -42px;
   left: -72px;
   z-index: -1;
@@ -442,7 +469,7 @@ h4 {
   line-height: normal;
   margin-bottom: 40px;
 }
-.spell .spell-desc span{
+.spell .spell-desc :deep(span){
   color: #24BE74;
   font-family: Work Sans;
   font-size: 12px;

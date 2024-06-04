@@ -1,7 +1,7 @@
 export const orga = [
   {
     title: `Le Cercle d'Emeraude`,
-    img: `classes/druid3.png`,
+    img: `orga/emeraude.png`,
     color: "green",
     desc: `Le Cercle d'Emeraude est une organisation secrète composée de druides et de rôdeurs qui se consacrent à la protection de la nature et à la préservation de la vie sauvage. Ils se réunissent dans des lieux sacrés de la nature pour discuter des menaces qui pèsent sur l'environnement et pour élaborer des stratégies pour y faire face. Ils sont également connus pour leur expertise dans les plantes et les animaux, ainsi que pour leur capacité à communiquer avec eux.`,
     rank: [
@@ -17,7 +17,7 @@ export const orga = [
   },
   {
     title: `Le Cercle de Rubis`,
-    img: `classes/roturier.png`,
+    img: `orga/rubis.png`,
     color: "red",
     desc: `Le Cercle de Rubis est une organisation secrète composée de moines et de combattants qui se consacrent à la protection des faibles et des opprimés. Ils ont juré de défendre les innocents et de lutter contre l'injustice, qu'elle soit causée par des puissants ou par des criminels. Leur entraînement rigoureux leur permet de maîtriser les arts martiaux et de devenir des guerriers redoutables.`,
     rank: [
@@ -48,7 +48,7 @@ export const orga = [
   },
   {
     title: `Le Xaral`,
-    img: `orga/Crep.png`,
+    img: `orga/Xaral.png`,
     color: "black",
     desc: `Le Xaral est une organisation criminelle de renom spécialisée dans le commerce illicite, le mercenariat et l'espionnage. Ses membres, souvent issus de milieux défavorisés, sont prêts à tout pour gagner de l'argent et monter en grade au sein de l'organisation. Le Xaral est connu pour sa cruauté envers ceux qui lui résistent et pour sa discrétion lorsqu'il s'agit de protéger ses intérêts. Elle est très active dans le commerce d'armes, de drogues et d'objets magiques, qu'elle obtient souvent par des moyens peu recommandables. Elle n'hésite pas non plus à offrir ses services de mercenaires pour remplir des missions de toutes sortes. Ses membres se reconnaissent grâce un tatouage de serpent enroulé autour d’une dague transpercer par une flèche.`,
     rank: [
@@ -63,20 +63,20 @@ export const orga = [
   },
   {
     title: `L'ordre du Heaume`,
-    img: `orga/Glotergan.png`,
+    img: `orga/dwarf.png`,
     color: "orange",
     desc: `L'Ordre du Heaume est une organisation de chevaliers dévoués à la protection des opprimés, à la défense de la justice et à la lutte contre les forces du mal. Fondé il y a des siècles, l'ordre a traversé les âges en poursuivant sa mission de protéger les plus faibles et d'assurer la paix dans les royaumes.`,
     rank: [
-      {name:"Grand Heaume de Lion :", desc:"Le plus haut rang de l'ordre est celui du Grand Heaume de Lion. Les chevaliers qui ont atteint ce rang ont démontré leur bravoure, leur sagesse et leur engagement sans faille envers la justice. Ils sont les chefs de l'ordre et sont chargés de guider les autres membres dans leur quête pour protéger les innocents."},
-      {name:"Duc de Guerre :", desc:"Le Duc de Guerre est le second rang de l'ordre. Ces chevaliers sont des experts dans l'art de la guerre, prêts à se battre contre toutes les forces du mal pour défendre les opprimés et éradiquer les menaces qui pèsent sur les royaumes."},
+      {name:"Ecuyer :", desc:"L’Ecuyer est le premier rang de l'ordre. Ces chevaliers sont les plus récents membres de l'ordre et doivent prouver leur valeur et leur loyauté envers l'ordre en accomplissant des tâches difficiles. Ils sont souvent envoyés en mission pour découvrir et éliminer les menaces qui pèsent sur les royaumes."},
+      {name:"Cavalier :", desc:"Le Cavalier est le deuxième rang de l'ordre. Ces chevaliers sont des protecteurs des royaumes, chargés de défendre les villes et les villages contre les attaques des forces du mal. Ils sont également responsables de la formation des nouvelles recrues de l'ordre."},
       {name:"Faucon Blanc :", desc:"Le Faucon Blanc est le troisième rang de l'ordre. Ces chevaliers sont des éclaireurs et des messagers de l'ordre. Ils sont chargés de recueillir des informations sur les ennemis de l'ordre et de transmettre ces informations aux autres membres. Ils sont également chargés de surveiller les royaumes à la recherche de toute menace potentielle."},
-      {name:"Cavalier :", desc:"Le Cavalier est le quatrième rang de l'ordre. Ces chevaliers sont des protecteurs des royaumes, chargés de défendre les villes et les villages contre les attaques des forces du mal. Ils sont également responsables de la formation des nouvelles recrues de l'ordre."},
-      {name:"Ecuyer :", desc:"L’Ecuyer est le cinquième et dernier rang de l'ordre. Ces chevaliers sont les plus récents membres de l'ordre et doivent prouver leur valeur et leur loyauté envers l'ordre en accomplissant des tâches difficiles. Ils sont souvent envoyés en mission pour découvrir et éliminer les menaces qui pèsent sur les royaumes."},
+      {name:"Duc de Guerre :", desc:"Le Duc de Guerre est le quatrième rang de l'ordre. Ces chevaliers sont des experts dans l'art de la guerre, prêts à se battre contre toutes les forces du mal pour défendre les opprimés et éradiquer les menaces qui pèsent sur les royaumes."},
+      {name:"Grand Heaume de Lion :", desc:"Le plus haut rang de l'ordre est celui du Grand Heaume de Lion. Les chevaliers qui ont atteint ce rang ont démontré leur bravoure, leur sagesse et leur engagement sans faille envers la justice. Ils sont les chefs de l'ordre et sont chargés de guider les autres membres dans leur quête pour protéger les innocents."},
     ]
   },
   {
     title: `L'Unenmir`,
-    img: `orga/Breton.png`,
+    img: `orga/Unnemir.png`,
     color: "",
     desc: `L'Unenmir ou La guilde de la Cape Noir est une organisation criminelle clandestine qui opère dans les rues sombres des grandes villes. Les membres de l'organisation sont des criminels endurcis, prêts à tout pour réussir leurs missions et augmenter leur prestige au sein de l'organisation. Ils sont connus pour leur discrétion et leur efficacité, mais aussi pour leur brutalité envers ceux qui se dressent sur leur chemin.`,
     rank: [
@@ -89,7 +89,7 @@ export const orga = [
   },
   {
     title: `La Lance Noire`,
-    img: `orga/dwarf.png`,
+    img: `orga/Glotergan.png`,
     color: "green",
     desc: `La Lance Noire est une guilde de chasseurs de monstres renommée pour son expertise dans la traque et l'élimination de créatures dangereuses. Fondée il y a des siècles par un groupe de chasseurs expérimentés, la guilde est devenue une organisation respectée et crainte dans le monde entier. Les membres de la Lance Noire sont des individus courageux et intrépides, prêts à affronter les plus grands périls pour protéger les populations des monstres qui les menacent. La Lance Noire est appelée à intervenir dans toutes sortes de situations impliquant des monstres. Il peut s'agir de protéger des villages ou des villes, d'accompagner des caravanes à travers des territoires dangereux ou encore de répondre à des appels de détresse de particuliers. La guilde est également connue pour son expertise dans la recherche et l'élimination de monstres spécifiques, pour lesquels elle est souvent engagée par des nobles ou des mages en quête de trophées ou de composants magiques.`,
     rank: [

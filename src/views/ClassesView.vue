@@ -50,6 +50,31 @@ function getImageUrl(name: string) {
       </tbody>
     </table>
   </article>
+  <article>
+    <div class='flex'>
+      <p class='descOrga'>Lorsque vous maîtriser une classe d'un rang pour la première fois vous obetenez un bonus en caractéristiques à répartir </p>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <td>Rang</td>
+          <td>Base</td>
+          <td>Novice</td>
+          <td>Avancée</td>
+          <td>Maître</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Caractéristiques gagnées</td>
+          <td>+ 5</td>
+          <td>+ 10</td>
+          <td>+ 20</td>
+          <td>+ 40</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
   <div class="card tabs">
     <input id="tab-1" type="radio" class="tab tab-selector" checked="true" name="tab"/>
     <label for="tab-1" class="tab tab-primary" @click="selected = basicClasses">Base</label>
@@ -74,12 +99,12 @@ function getImageUrl(name: string) {
       </div>
       <div class="green-cards">
         <h4>Bonus de maîtrise</h4>
-        <p><span v-for="w of c.mastery" :key="w">{{ w }}</span> </p>
+        <p><span v-for="(w, index) of c.mastery" :key="w">{{ w }}<i v-if="index != c.mastery.length -1">, </i> </span> </p>
       </div>
     </div>
     <div v-if="c.spell?.length">
       <h4>Sorts</h4>
-      <span class="spell" v-for="w of c.spell" :key="w">{{ w }}, </span>
+      <span class="spell" v-for="(w, index) of c.spell" :key="w">{{ w }}<i v-if="index != c.spell.length -1">, </i></span>
     </div>
 
   </div>

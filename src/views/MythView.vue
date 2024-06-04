@@ -73,7 +73,7 @@ function navigate(godValue: any) {
         <p class="god-title"> {{ major.title }}</p>
       </div>
     </div>
-    <h3>Autre divinité</h3>
+    <!-- <h3>Autre divinité</h3>
     <div class="god-container">
       <div class="god" v-for="major of otherGods" :key="major.name" @click="navigate(major)">
         <img class="god-image" :src="getImageUrl(major.img)"/>
@@ -84,8 +84,8 @@ function navigate(godValue: any) {
         </div>
         <p class="god-name">{{ major.name }}</p>
         <p class="god-title"> {{ major.title }}</p>
-      </div>
-    </div>
+      </div> 
+    </div> -->
   </div>
 </template>
 <style scoped>

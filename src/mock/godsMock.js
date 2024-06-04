@@ -1,89 +1,104 @@
 export const majorGods = [
   {
     name: `Fauscht`,
-    cults: [0, 2, 8, 10, 11],
+    cults: [0, 8, 10, 11],
     title: `Dieu de la mort`,
-    img: `gods/Fausht.png`,
-    character: `gods/Fausht-character.png`,
-    desc: `Il est le dieu de la mort, reconnaissable par sa grande faux et son corbeau Ankou, on reconnaît son arrivée grâce au grincement de sa charrette. Il transporte à son bord les âmes des défunts qu’il mène soit au porte des enfers, soit aux abords de son bateau le “bag noz” pour faire passer des épreuves afin de savoir s’ils sont dignes d'entrer dans le palais des cieux. Ces épreuves sont diverses et dépendent de la personne, par exemple il y a de forte chance que pour un nains des montagnes ils lui fasse passer l’épreuves des 120 auberges ou  le nains doit boire tout ce qu’on lui sert sans s’arrêter. Contrairement à ce que son titre peut laisser penser, il est là pour accompagner dans la mort et sa venu, non pour tuer. De fait il n’est pas mauvais et est l’amant de Metona, la déesse de l’amour `,
+    img: `gods/Fausht2.png`,
+    character: `gods/Fausht2-character.png`,
+    desc: `Fauscht est vénéré comme le dieu de la mort dans le panthéon d'Asun. Reconnaissable par sa grande faux et son corbeau Ankou, il incarne la transition entre la vie et la mort. Son pouvoir réside dans sa capacité à guider les âmes des défunts vers leur destinée finale. Mais contrairement à ce que son titre pourrait laisser penser, Fauscht n'est pas là pour causer la mort, mais pour accompagner les mortels dans leur voyage final.
+    <br/><br/>
+    Son objectif ultime est de maintenir l'harmonie entre le monde des vivants et celui des morts. Pour ce faire, il soumet les âmes à des épreuves diverses, adaptées à chaque individu, pour déterminer leur dignité à entrer dans le palais des cieux. Ces épreuves peuvent varier selon la nature et la vie antérieure de chaque âme, comme l'épreuve des 120 auberges pour les nains des montagnes, où ils doivent boire tout ce qui leur est servi sans s'arrêter.`,
   },
   {
     name: `Metona`,
-    cults: [0, 2, 4, 8, 10, 11],
+    cults: [0, 4, 8, 10, 11],
     title: `Déesse de l’amour et de la vie`,
-    img: `gods/Metona.png`,
-    character: `gods/Metona-character.png`,
-    desc: `Elle est l'incarnation de la bonté, de l'amour et de la famille. Elle est vénérée par presque tous les peuples d’Asun, considérée comme la déesse la plus pure et la plus à l'écoute des mortels. Elle est parfois décrite comme étant la protectrice des mariages, des unions et de la fertilité, et elle est souvent représentée avec des attributs tels que des colombes, des roses ou des cœurs. Sa présence est considérée comme réconfortante et apaisante pour ceux qui cherchent l'amour et la romance. Metona est également connue pour son humilité et sa sagesse. Elle n'est pas avide de pouvoir ou de richesse, mais plutôt de voir ses fidèles s'épanouir et trouver le bonheur. Elle est souvent représentée comme une figure maternelle, prête à écouter et à conseiller tous ceux qui se tournent vers elle avec un cœur sincère. En tant que déesse de l'amour, elle est également souvent associée à la beauté et à l'harmonie. Les artistes et les poètes la vénèrent pour son inspiration, et les amoureux cherchent souvent son aide pour trouver l'équilibre et la passion dans leur relation.En dehors de son rôle d'entremetteuse, Metone est également associée à la protection de la famille et de la communauté. Elle est souvent invoquée pour assurer la sécurité et le bien-être de ceux qui sont chers à son cœur. En fin de compte, Metona est une déesse aimante et attentionnée qui incarne les plus belles qualités de l'humanité. Elle est une figure de réconfort et de sagesse pour tous ceux qui cherchent à trouver l'amour et la paix dans un monde parfois difficile et chaotique.`,
+    img: `gods/Metona2.png`,
+    character: `gods/Metona2-character.png`,
+    desc: `Metona incarne l'amour et la compassion dans le panthéon d'Asun. Elle est vénérée comme la déesse la plus pure et la plus à l'écoute des mortels. Son pouvoir réside dans sa capacité à inspirer l'amour et la compassion chez les individus, favorisant ainsi l'harmonie et le bonheur parmi les peuples.
+    <br/><br/>
+    Son objectif est de promouvoir l'amour et la vie sous toutes ses formes, que ce soit dans les relations amoureuses, familiales ou communautaires. Elle est souvent décrite comme la protectrice des mariages, des unions et de la fertilité. En plus d'incarner l'amour, Metona est également connue pour son humilité et sa sagesse. Elle n'est pas avide de pouvoir ou de richesse, mais cherche plutôt à voir ses fidèles s'épanouir et trouver le bonheur.`,
   },
   {
     name: `Riannedos`,
-    cults: [0, 2, 3, 10],
-    title: `Dieu du Temps`,
-    img: `gods/Riannedos.png`,
-    character: `gods/Riannedos-character.png`,
-    desc: `Rianedos, le dieu-dragon du temps, est l'un des plus anciens et des plus puissants dieux de l'univers connu. Son corps gigantesque enveloppe la planète entière, donnant à sa présence une aura intimidante et majestueuse. Sa peau est recouverte d'écailles éblouissantes, brillant sous la lumière éternelle des étoiles. En tant que gardien du temps, Rianedos possède une sagesse inégalée et une connaissance profonde de la création et de la destruction. Il peut manipuler le temps et les saisons à sa guise, faisant apparaître des tempêtes de neige ou des vagues de chaleur brûlantes selon son bon vouloir. Cependant, il est également conscient que chaque chose a une fin, même lui-même. C'est pourquoi Rianedos est souvent considéré comme un dieu mélancolique, qui observe le temps s'écouler lentement et irrémédiablement. Malgré cela, il n'hésite pas à intervenir lorsqu'il sent que l'équilibre du temps est menacé. Il peut utiliser ses pouvoirs pour réparer les failles temporelles ou pour aider les mortels à résoudre des problèmes liés au temps. Mais Rianedos est également un dieu difficile à approcher. Les mortels qui ont tenté de lui demander des faveurs ont souvent été confrontés à des épreuves difficiles ou à des conditions strictes. Il est impitoyable envers ceux qui abusent du temps ou qui cherchent à manipuler ses pouvoirs pour leur propre bénéfice. En fin de compte, la présence de Rianedos dans l'univers est un rappel constant de la nature cyclique du temps et de la nécessité de respecter les lois de l'univers. Sa puissance et sa sagesse sont à la fois fascinantes et effrayantes, et même les autres dieux le respectent en tant que gardien ultime du temps.`,
+    cults: [0, 3, 10],
+    title: `Dieu du temps`,
+    img: `gods/Riannedos2.png`,
+    character: `gods/Riannedos2-character.png`,
+    desc: `Riannedos est vénéré comme le dieu-dragon du temps dans le panthéon d'Asun. Son corps gigantesque enveloppe la planète entière, donnant à sa présence une aura intimidante et majestueuse. Son pouvoir réside dans sa capacité à contrôler le flux du temps et des saisons, faisant apparaître des tempêtes de neige ou des vagues de chaleur brûlantes selon son bon vouloir.
+    <br/><br/>
+    Son objectif est de maintenir l'équilibre temporel dans l'univers connu. Il intervient lorsqu'il sent que l'équilibre du temps est menacé, réparant les failles temporelles ou aidant les mortels à résoudre des problèmes liés au temps. Cependant, malgré sa puissance, Riannedos est conscient que chaque chose a une fin, même lui-même, ce qui lui confère une aura mélancolique.`,
   },
   {
     name: `Théomis`,
     cults: [0, 1, 3, 9, 10, 11],
     title: `Dieu de l’ordre`,
-    img: `gods/Theomis.png`,
-    character: `gods/Theomis-character.png`,
-    desc: `Theomis est le gardien intransigeant de l'ordre divin, son regard perçant scrutant les âmes et évaluant chaque action en fonction de sa moralité. Il est considéré comme le créateur de l'humanité, donnant forme à la première créature à partir de la poussière et de la terre. En tant que dieu de l'ordre, il est également le père de la magie de la Terre, la source de toute énergie et de toute vie sur Asun. Il est décrit comme ayant un caractère rigide et inflexible, représentant la justice incontestable et la loi inébranlable. Sa voix retentit comme un tonnerre dans les tempêtes les plus tumultueuses, et sa colère est capable d'anéantir des armées entières. Il est souvent représenté sous les traits d'un guerrier à l'armure immaculée, portant un bouclier et une épée, symbolisant la force de la loi qu'il protège. Ses fidèles sont des gardiens zélés de l'ordre et de la justice, souvent appelés à faire régner la loi dans des situations dangereuses. Les prières adressées à Theomis sont souvent des requêtes pour une guidance et une force lors de combats pour la justice et la protection des plus faibles. `,
+    img: `gods/Theomis2.png`,
+    character: `gods/Theomis2-character.png`,
+    desc: `Théomis est le gardien intransigeant de l'ordre divin dans le panthéon d'Asun. Son regard scrutateur évalue chaque action en fonction de sa moralité, représentant la justice incontestable et la loi inébranlable. Son pouvoir réside dans sa capacité à maintenir l'équilibre entre le bien et le mal, en imposant des jugements justes et équitables.
+    <br/><br/>
+    Son objectif est de faire respecter la loi et l'ordre dans l'univers, en protégeant les faibles et en punissant les coupables. Ses fidèles sont des gardiens zélés de l'ordre et de la justice, appelés à faire régner la loi dans des situations dangereuses. Les prières adressées à Théomis sont souvent des requêtes pour guidance et force lors de combats pour la justice et la protection des plus faibles. `,
   },
   {
-    name: `Quara`,
+    name: `Quaara`,
     cults: [0, 3, 4, 9, 10],
-    title: `Déesse de La Nature`,
-    img: `gods/Quara.png`,
-    character: `gods/Quara-character.png`,
-    desc: `Quaara est la déesse de la nature, vénérée par les peuples d'Asun comme la protectrice des plantes. Elle est la mère de la magie des plantes et est considérée comme la créatrice de la flore qui peuple le plan terrestre. On dit qu'elle est à l'origine des forêts, des prairies, des champs et des jardins qui embellissent le monde. Quaara est également associée à la création des elfes, qu'elle a "améliorés" en leur inculquant le respect de la nature et de ses créations. `,
+    title: `Déesse de la nature`,
+    img: `gods/Quara2.png`,
+    character: `gods/Quara2-character.png`,
+    desc: `Quaara est vénérée comme la déesse de la nature dans le panthéon d'Asun. Elle incarne la force vitale des écosystèmes, protégeant les plantes et les créatures qui en dépendent. Son pouvoir réside dans sa capacité à régénérer les écosystèmes et à promouvoir la biodiversité.
+    <br/><br/>
+    Son objectif est de préserver l'harmonie entre les peuples d'Asun et la nature, en favorisant la croissance des végétaux et en guidant les elfes dans leur relation avec le monde naturel. Les temples dédiés à Quaara sont des refuges spirituels situés au cœur des forêts, où les fidèles se rassemblent pour célébrer la beauté et la générosité de la déesse.`,
   },
   {
     name: `Eone`,
-    cults: [0, 2, 5, 8, 10],
-    title: `Dieu des Savoirs et Savoir Interdit`,
-    img: `gods/Eone.png`,
-    character: `gods/Eone-character.png`,
-    desc: `Eone, le dieu des savoirs, est considéré comme l'une des divinités les plus érudites et les plus sages d'Asun. Son palais, qui ressemble à une immense bibliothèque infinie, abrite toutes les connaissances et tous les livres de ce monde et de bien d'autres. Il passe des millénaires à étudier, à acquérir des connaissances et à améliorer son propre savoir. Eone est souvent représenté comme un être mystérieux et étrange. Il a une apparence incompréhensible, avec des membres squelettiques et des tentacules au visage, ce qui peut faire fuir les mortels qui ne sont pas prêts à affronter sa présence. Les rares fois où il s'adresse aux mortels, c'est souvent pour partager sa sagesse et sa connaissance, ou pour avertir de dangers imminents. Eone est également chargé de récupérer des savoirs et des livres sur le plan terrestre qui sont jugés trop dangereux pour être connus des hommes, afin de les protéger des ténèbres qui peuvent les corrompre. Sa quête de savoir infinie peut parfois le conduire à des endroits sombres et dangereux, mais il est toujours prêt à affronter les risques pour préserver la connaissance et la sagesse.`,
+    cults: [0, 5, 8, 10],
+    title: `Dieu des savoirs et savoir interdit`,
+    img: `gods/Eone2.png`,
+    character: `gods/Eone2-character.png`,
+    desc: `Eone est considéré comme l'une des divinités les plus érudites et les plus sages d'Asun. Son palais, qui ressemble à une immense bibliothèque infinie, abrite toutes les connaissances et tous les livres de ce monde et de bien d'autres. Son pouvoir réside dans sa capacité à acquérir, préserver et partager la sagesse et la connaissance.
+    <br/><br/>
+    Son objectif est de préserver la connaissance et la sagesse dans l'univers, en partageant son savoir avec parcimonie et en veillant à ce que les mortels utilisent le savoir de manière responsable. Eone est également chargé de récupérer des savoirs et des livres jugés trop dangereux pour être connus des hommes, afin de les protéger des ténèbres qui peuvent les corrompre.`,
   },
   {
     name: `Ehmjir`,
-    cults: [0, 2, 4, 8, 11],
-    title: `Dieu des Runes`,
-    img: `gods/Emhjir.png`,
-    character: `gods/Emhjir-character.png`,
-    desc: `Également appelé le maître des forges par les Nains, il est celui qui aurait appris les runes elfiques et naines a chacun de ces peuples afin qu’ils puissent se défendre contre la cruauté des hommes de Théomis. Il ne semble pas avoir de forme physique, du moins personne de la jamais vu sur le plan terrestre.
-  Le dieu des runes est souvent représenté avec un marteau ou une hache, des symboles de force et de puissance. Il est également associé à un ensemble de runes mystiques, qui sont des symboles gravés sur des pierres ou des objets.
-  Les adeptes de la magie runique vénèrent le dieu des runes en gravant ses symboles sur des pierres ou des objets, en récitant des prières et en effectuant des rituels. Ils cherchent sa bénédiction pour obtenir des connaissances et des conseils sur des questions importantes, pour protéger contre les dangers et pour améliorer leur chance.`,
+    cults: [0, 4, 8, 11],
+    title: `Dieu des runes`,
+    img: `gods/Emhjir2.png`,
+    character: `gods/Emhjir2-character.png`,
+    desc: `Ehmjir, également appelé le maître des forges par les Nains, est vénéré comme le dieu des runes dans le panthéon d'Asun. Son pouvoir réside dans sa capacité à communiquer avec les runes et à les utiliser pour guider et protéger les mortels. Il est souvent associé à un ensemble de runes mystiques, gravées sur des pierres ou des objets.
+    <br/><br/>
+    Son objectif est d'assurer la protection des peuples contre les forces maléfiques, en accordant sa bénédiction aux adeptes de la magie runique. Les fidèles de la magie runique vénèrent Ehmjir en gravant ses symboles sur des pierres ou des objets, en récitant des prières et en effectuant des rituels pour obtenir des conseils et des protections contre les dangers.`,
   },
   {
     name: `Gusius`,
-    cults: [0, 2, 3, 4],
-    title: `Dieu Des Animaux`,
-    img: `gods/Gusius.png`,
-    character: `gods/Gusius-character.png`,
-    desc: `Frère de Quara et Mari de Zenelia, il incarne le côté sauvage de la nature et des animaux. Il est toujours souriant et d’une grande bonté mais il a tendance a vite s’emporter surtout envers les humains qui ne respectent pas ces enfants les animaux.
-  En tant que dieu de la chasse, il est vénéré par les chasseurs qui cherchent à obtenir sa bénédiction pour réussir leurs quêtes. Il est connu pour sa capacité à guider les chasseurs dans leur quête et à leur accorder la chance et la ruse nécessaires pour abattre leur proie.
-  Gusius est également considéré comme un protecteur des animaux, et est souvent représenté comme un gardien de la nature sauvage. Il est capable de communiquer avec les animaux et de comprendre leurs besoins et leurs désirs. En tant que tel, il peut offrir des conseils aux chasseurs pour les aider à respecter les cycles naturels et les populations animales.
+    cults: [0, 3, 4],
+    title: `Dieu des Animaux`,
+    img: `gods/Gusius2.png`,
+    character: `gods/Gusius2-character.png`,
+    desc: `Gusius est vénéré comme le dieu des animaux dans le panthéon d'Asun. Frère de Quaara et mari de Zenelia, il incarne le côté sauvage de la nature et des animaux. Son pouvoir réside dans sa capacité à communiquer avec les animaux et à les protéger contre les menaces extérieures.
+    <br/><br/>
+    Son objectif est de maintenir l'équilibre entre les espèces et de protéger les habitats naturels, en guidant les animaux dans leur quête de survie et en protégeant les chasseurs respectueux de la nature. Les fidèles de Gusius sont souvent des chasseurs qui cherchent à obtenir sa bénédiction pour réussir leurs quêtes tout en respectant les cycles naturels.
   `,
   },
   {
     name: `Noheia`,
     cults: [0, 3, 9],
     title: `Déesse des Merveilles`,
-    img: `gods/Noheia.png`,
-    character: `gods/Noheia-character.png`,
-    desc: `Déesse des merveilles, elle voit en la création de son frère Théomis les humains la plus belle chose de ce monde. Elle déploya donc ces ailes et tentacule emplie d'œil afin de veiller sur eux et chasser ce qu’il y a de plus laid dans ce monde, les créatures des ténèbres.  Les adeptes de la déesse des merveilles cherchent son inspiration pour leur travail créatif, qu'il s'agisse de peinture, de sculpture, d'écriture ou d'invention. Ils considèrent que l'ouverture d'esprit et l'ouverture aux merveilles du monde sont essentielles pour stimuler la créativité et l'innovation. La déesse des merveilles est souvent invoquée lors de festivals artistiques et culturels, où les gens se rassemblent pour célébrer leur créativité et leur imagination. En tant que déesse des merveilles, elle est souvent associée à la liberté d'esprit et à la capacité de voir le monde avec des yeux neufs et émerveillés. Les adeptes de la déesse des merveilles cherchent à vivre leur vie avec curiosité et ouverture d'esprit, en célébrant les petites merveilles du quotidien et en cherchant constamment de nouvelles expériences.`,
+    img: `gods/Noheia2.png`,
+    character: `gods/Noheia2-character.png`,
+    desc: `Noheia est vénérée comme la déesse des merveilles dans le panthéon d'Asun. Elle voit en la création de son frère Théomis les humains, la plus belle chose de ce monde. Son pouvoir réside dans sa capacité à percevoir la beauté dans toutes les choses et à inspirer la créativité chez les mortels. Elle déploie ses ailes et tentacules emplis d'yeux pour veiller sur eux et chasser ce qu'il y a de plus laid dans ce monde, les créatures des ténèbres.
+    <br/><br/>
+    Son objectif est d'inspirer les mortels à travers la créativité et l'imagination, en les guidant vers une vie remplie de merveilles et d'émerveillement. Les adeptes de Noheia cherchent son inspiration pour leur travail artistique, qu'il s'agisse de peinture, de sculpture, d'écriture ou d'invention. Ils considèrent que l'ouverture d'esprit et la capacité à voir le monde avec des yeux neufs sont essentielles pour stimuler la créativité et l'innovation.`,
   },
   {
     name: `Kyhara`,
-    cults: [0, 3, 9],
-    title: `Déesse De L'Hiver`,
-    img: `gods/Kyhara.png`,
-    character: `gods/Kyhara-character.png`,
-    desc: `Elle représente le froid, la neige et la mort. Elle est souvent décrite comme une femme sévère et froide, avec des yeux d'un bleu glacé et des cheveux argentés. Elle est vénérée par les peuples qui vivent dans des régions froides et enneigées, car elle est considérée comme la gardienne de la nature en hiver. Elle est également associée à la mort et à la renaissance, car elle est responsable de la fin de l'année et du début d'une nouvelle.
-  Kyhara est souvent représentée comme impitoyable, utilisant la force de la nature pour éliminer les faibles et les indésirables. Cependant, elle est également considérée comme juste et impartiale, récompensant ceux qui sont forts et persévérants dans leur quête de survie. Elle est souvent invoquée pour protéger les voyageurs qui se déplacent à travers les terres glacées et les marins qui naviguent sur des eaux dangereuses.`,
+    cults: [0, 3, 9, 2],
+    title: `Déesse de l'hiver`,
+    img: `gods/Kyhara2.png`,
+    character: `gods/Kyhara2-character.png`,
+    desc: `Kyhara est vénérée comme la déesse de l'hiver dans le panthéon d'Asun. Elle représente le froid, la neige et la mort. Son pouvoir réside dans sa capacité à réguler les saisons, en apportant le froid et la neige aux régions qu'elle gouverne. Elle est également associée à la mort et à la renaissance, car elle marque la fin de l'année et le début d'une nouvelle.
+    <br/><br/>
+    Son objectif est de maintenir l'équilibre dans les régions froides et enneigées, en protégeant les habitants contre les dangers de l'hiver tout en favorisant la régénération de la nature. Les fidèles de Kyhara la vénèrent pour sa force et sa résilience, invoquant sa protection lors de voyages à travers les terres glacées et les eaux dangereuses.`,
   },
 ];
 export const minorGods = [
@@ -91,134 +106,179 @@ export const minorGods = [
     name: `Edes`,
     cults: [1, 10],
     title: `Le Justicier`,
-    img: `gods/Edes.png`,
-    character: `gods/Edes-character.png`,
-    desc: `Edes le justicier est un demi-dieu vénéré dans tout le Royaume de Lorus. Son aura de justice et de pureté se ressent à travers tout le royaume, où les habitants lui vouent un respect et une dévotion sans limite. En tant que fils de Théomis, dieu de l'ordre, Edes incarne la loi et l'ordre sur Terre. Son armure d'or blanc est ornée d'une auréole qui symbolise sa sainteté, tandis que son heaume montant renforce sa stature imposante et inspirante. Sa lame de lumière est le symbole de sa mission de protéger les habitants de Lorus des forces maléfiques qui menacent leur sécurité. Les ennemis du Royaume le craignent, car sa lame de lumière est capable de purifier toute forme de mal et de les anéantir en un clin d'œil. Cependant, son amour pour les paladins et les prêtres qui prient son père Théomis est inconditionnel et il n'hésite pas à leur offrir sa protection, même au péril de sa propre vie. Edes est également connu pour sa colère foudroyante envers ceux qui osent blasphémer contre son père ou sa religion. Sa lame de lumière s'abat sur eux sans pitié, ne laissant aucune chance à leurs âmes impures. En somme, Edes est un protecteur intransigeant, déterminé à faire respecter la loi et l'ordre dans son royaume, tout en veillant à la sécurité et au bien-être de ses sujets.
+    img: `gods/Edes2.png`,
+    character: `gods/Edes2-character.png`,
+    desc: `Edes, le Justicier, est un demi-dieu vénéré dans tout le Royaume de Lorus. Fils de Théomis, dieu de l'ordre, il incarne la loi et l'ordre sur Terre. Son aura de justice et de pureté se répand à travers le royaume, où les habitants lui vouent un respect et une dévotion sans limite.
+
+    Revêtu d'une armure d'or blanc ornée d'une auréole symbolisant sa sainteté, Edes brandit une lame de lumière, symbole de sa mission de protéger les habitants de Lorus des forces maléfiques. Craint par les ennemis du royaume, sa lame de lumière est capable de purifier toute forme de mal avec une efficacité redoutable.
+    
+    Bienveillant envers les paladins et les prêtres qui prient son père Théomis, Edes offre sa protection inconditionnelle, même au péril de sa propre vie. Cependant, sa colère foudroyante s'abat sur ceux qui blasphèment contre sa religion ou son père, leur infligeant un châtiment impitoyable.
+    
+    Son objectif principal est de faire respecter la loi et l'ordre dans son royaume tout en veillant à la sécurité et au bien-être de ses sujets. Protecteur intransigeant, Edes est déterminé à éliminer toute forme de mal qui menace la paix de Lorus.
     `
   },
   {
     name: `Edis`,
     cults: [1, 10],
     title: `Gardien des Cieux`,
-    img: `gods/Edis.png`,
-    character: `gods/Edis-character.png`,
-    desc:`Il est le fils cadet de Théomis et Quara. Il est 10 à 15 fois plus grand que le reste de sa famille, de ce fait il est responsable de la garde de la porte des cieux. Ne laissant passer que les âmes ayant passé les épreuves soumises par Fauscht.
-    Divinité puissante et majestueuse, chargée de la tâche sacrée de protéger les portes menant au royaume céleste. Son rôle est de maintenir l'intégrité des frontières entre les mondes terrestre et divin, de sorte que seuls les êtres dignes puissent franchir la porte et accéder au royaume des dieux.
-    Sa présence est imposante, empreinte de force et de sérénité. Ses ailes majestueuses, déployées en un vaste éventail, évoquent à la fois sa nature céleste et sa puissance guerrière. Edis est le gardien ultime de la loi divine. Il est toujours vigilant, prêt à se dresser contre ceux qui chercheraient à violer les règles sacrées. Son regard perçant peut voir à travers les mensonges et les tromperies, et il est capable de détecter les intentions les plus impures.
+    img: `gods/Edis2.png`,
+    character: `gods/Edis2-character.png`,
+    desc:`Edis, fils cadet de Théomis et Quaara, est un être majestueux chargé de la garde de la porte des cieux. Son rôle sacré est de maintenir l'intégrité des frontières entre les mondes terrestre et divin, n'autorisant que les âmes dignes à franchir la porte et accéder au royaume des dieux.
+
+    Sa présence imposante, empreinte de force et de sérénité, est marquée par des ailes majestueuses déployées en un vaste éventail. Edis incarne le gardien ultime de la loi divine, vigilant et prêt à se dresser contre ceux qui cherchent à violer les règles sacrées.
+    
+    Capable de percevoir les intentions impures et de détecter les mensonges, Edis est également doté d'un pouvoir de discernement divin. Son objectif principal est de maintenir l'ordre céleste en empêchant les êtres indignes d'accéder au royaume des dieux, tout en préservant l'équilibre entre les mondes terrestre et divin.
     `
   },
   {
     name: `Zenelia`,
     cults: [4],
     title: `Prêtresse de la Nature`,
-    img: `gods/Zenelia.png`,
-    character: `gods/Zenelia-character.png`,
-    desc: `Prêtresse de la Nature, elle incarne la Flore et la Vie. Femme de Gusius, elle le tempère. Elle est la mère de la magie druydique rassemblant la magie de la Terre de son père Théomis et des plantes de sa mère, Quara. Vénérée pour son lien étroit avec les forces de la nature. Elle est souvent considérée comme la gardienne de la forêt sacrée, protectrice des créatures vivantes qui y résident. Elle porte des vêtements de lin tissés à la main et des ornements de bois, de feuilles et de pierres précieuses. Ses cheveux sont tressés en couronnes de fleurs et de feuilles, et elle se déplace avec une grâce sereine, comme si elle était en harmonie avec le monde naturel qui l'entoure. Les fidèles de Zenelia cherchent souvent sa bénédiction pour obtenir guérison, protection, fertilité et force de la nature. Elle est capable de guérir les blessures et les maladies avec ses connaissances en matière de plantes médicinales, et elle peut appeler à l'aide des esprits de la nature pour protéger les voyageurs égarés. Elle est également capable de communiquer avec les esprits de la nature et d'invoquer leur puissance pour aider ses fidèles. Elle est considérée comme une gardienne de la paix et de l'harmonie, cherchant à maintenir un équilibre naturel entre toutes les créatures vivantes.
+    img: `gods/Zenelia2.png`,
+    character: `gods/Zenelia2-character.png`,
+    desc: `Zenelia, la Prêtresse de la Nature, incarne la Flore et la Vie. Enfant de Gusius et de Quaara, elle est la mère de la magie druidique, unissant la magie de la Terre de son père Théomis aux pouvoirs des plantes de sa mère.
+
+    Vénérée pour son lien étroit avec les forces de la nature, Zenelia est souvent considérée comme la gardienne de la forêt sacrée, veillant sur les créatures qui y résident. Parée de vêtements de lin tissés à la main et d'ornements de bois, de feuilles et de pierres précieuses, elle se déplace avec une grâce sereine, en harmonie avec le monde naturel qui l'entoure.
+    
+    Les fidèles de Zenelia recherchent sa bénédiction pour obtenir guérison, protection, fertilité et force de la nature. Capable de guérir les blessures et les maladies grâce à ses connaissances en plantes médicinales, elle invoque également les esprits de la nature pour protéger les voyageurs égarés et maintenir l'équilibre naturel entre toutes les créatures vivantes.
+    
+    Son objectif principal est de préserver la paix et l'harmonie dans le monde naturel, en protégeant ses habitants et en offrant sa bénédiction à ceux qui cherchent à vivre en harmonie avec la nature.
     `
   },
   {
     name: `Xegmir`,
     cults: [1],
     title: `Le messager, Dieu de la pénitence`,
-    img: `gods/Xegmir.png`,
-    character: `gods/Xegmir-character.png`,
-    desc: `Xegmir est un dieu terrifiant, représentant le péché et la cruauté. Il incarne la chasse aux âmes qui cherchent à fuir leur destinée. Il est craint par les mortels qui savent que leur salut dépend de leur comportement dans leur vie terrestre. Il est souvent représenté sous la forme d'un chasseur, vêtu de noir, avec une lance à la main. Il a un visage sans expression, avec des yeux rouges qui reflètent la souffrance de ceux qu'il pourchasse. Son armure est noire, ornée de pierres rouges qui symbolisent le sang des damnés. Xegmir a également des ailes de chauve-souris qui lui permettent de se déplacer rapidement d'un endroit à l'autre. Il est dit que Xegmir a été celui qui a inspiré la création de l'outre-tombe, un endroit où les âmes sont envoyées pour expier leurs fautes. Il considère que certaines âmes ne sont pas dignes de son père et il les punit avec une cruauté implacable. Les mortels qui ont commis des péchés graves savent que s'ils sont pris par Xegmir, ils seront soumis à des tortures terribles jusqu'à ce qu'ils acceptent de payer pour leurs fautes. Malgré sa nature impitoyable, Xegmir est également un dieu fidèle et dévoué à son père Théomis. Il accomplit avec zèle les missions qu'il lui confie, chassant les âmes récalcitrantes et punissant les blasphémateurs. Cependant, il est souvent vu comme un dieu à éviter, plutôt qu'à adorer.
+    img: `gods/Xegmir2.png`,
+    character: `gods/Xegmir2-character.png`,
+    desc: `Xegmir est un dieu terrifiant, représentant le péché et la cruauté. Fils de Théomis, il incarne la chasse aux âmes cherchant à fuir leur destinée. Craint par les mortels, Xegmir est souvent représenté sous la forme d'un chasseur vêtu de noir, tenant une lance dans sa main.
+
+    Son visage sans expression, orné de yeux rouges reflétant la souffrance des damnés, inspire la terreur. Doté d'une armure noire ornée de pierres rouges symbolisant le sang des pécheurs, il possède également des ailes de chauve-souris lui permettant de se déplacer rapidement d'un endroit à l'autre.
+    
+    Chargé par Théomis de châtier les âmes impies, Xegmir punit avec une cruauté implacable ceux qu'il considère indignes de son père. Malgré sa nature impitoyable, il demeure fidèle et dévoué à Théomis, accomplissant avec zèle les missions qui lui sont confiées.
+    
+    Son objectif principal est de poursuivre les âmes récalcitrantes et de punir les blasphémateurs, assurant ainsi le respect de la loi divine et de l'ordre établi par Théomis.
     `,
   },
   {
     name: `Cione`,
     cults: [4, 5],
     title: `Déesse de l’aube`,
-    img: `gods/Cione.png`,
-    character: `gods/Cione-character.png`,
-    desc: `Première des déesse jumelle, elle s’oppose à sa soeur Cirana,
-    fille de Fauscht et Metona. Elle incarne la beauté et la compassion souvent confondue avec sa mère Metona et la Déesse des merveilles Noheia. 
-    Elle est également l’incarnation de la guerre tout comme sa sœur.  Cione peut être invoquée pour apporter de la guérison, de la régénération ou de la lumière dans les moments sombres. Les joueurs peuvent chercher son aide dans leur quête pour la paix et l'harmonie, ou chercher à obtenir sa bénédiction pour une nouvelle entreprise ou un nouveau départ.
-    Elle est associée à l'émergence du soleil et à l'arrivée d'une nouvelle journée. Elle est célébrée pour sa capacité à apporter la lumière et l'espoir dans les moments les plus sombres. On dit que son énergie positive éclaire les ténèbres et purifie l'esprit
+    img: `gods/Cione2.png`,
+    character: `gods/Cione2-character.png`,
+    desc: `Cione, première des déesses jumelles, incarne la beauté, la compassion et la guerre. Fille de Fauscht et de Metona, elle est souvent confondue avec sa mère et la déesse des merveilles, Noheia. Cione est également l’incarnation de la guerre, tout comme sa sœur, Cirana.
+
+    Elle peut être invoquée pour apporter guérison, régénération ou lumière dans les moments sombres. Les fidèles de Cione cherchent son aide pour la paix, l'harmonie et le succès dans leurs entreprises. Associée à l'émergence du soleil et au début d'une nouvelle journée, elle apporte lumière et espoir dans les ténèbres.
+    
+    Son objectif principal est de favoriser la paix, l'harmonie et la régénération, tout en guidant ses fidèles vers de nouveaux départs et de nouvelles entreprises.
     `,
   },
   {
     name: `Cirana`,
     cults: [4, 5],
     title: `Déesse du crépuscule`,
-    img: `gods/Cirana.png`,
-    character: `gods/Cirana-character.png`,
-    desc: `Cirana, la déesse du crépuscule, est la deuxième des déesses jumelles. Elle s'oppose à sa sœur Cione, fille de Fauscht et Metona. Souvent confondue avec Phiella en raison de son surnom, "la tisseuse d'ombres", elle est la rebelle de la famille et préfère la nuit et les ombres. Bien qu'il n'y ait aucune preuve concrète, certains disent qu'elle serait à l'origine de la création des premiers elfes noirs. Elle incarne souvent le côté sombre de la vie et de la nature. Elle est également l'incarnation de la guerre, tout comme sa sœur. Les adeptes de Cirana sont souvent des assassins ou des voleurs qui se déplacent dans l'obscurité et se cachent dans les ombres pour accomplir leur mission.
+    img: `gods/Cirana2.png`,
+    character: `gods/Cirana2-character.png`,
+    desc: `Cirana, la déesse du crépuscule, est la deuxième des déesses jumelles, s'opposant à sa sœur, Cione. Fille de Fauscht et de Metona, elle incarne souvent le côté sombre de la vie et de la nature.
+
+    Souvent confondue avec Phiella en raison de son surnom, "la tisseuse d'ombres", Cirana est la rebelle de la famille, préférant la nuit et les ombres. Elle est également l'incarnation de la guerre, tout comme sa sœur.
+    
+    Les adeptes de Cirana sont souvent des assassins ou des voleurs, se déplaçant dans l'obscurité et se cachant dans les ombres pour accomplir leur mission.
+    
+    Son objectif principal est de favoriser la chaos, la discorde et l'obscurité, tout en protégeant les marginaux et ceux qui vivent dans les recoins sombres du monde.
     `,
   },
   {
     name: `Heilong`,
     cults: [3],
     title: `Dieu du courage`,
-    img: `gods/Heiloong.png`,
-    character: `gods/Heiloong-character.png`,
-    desc: `Fils de Riannedos, Heilong est un drakéides devenu un dieu après avoir combattu pendant 100 jours sans interruption contre Edes lors de la purge draconique. Par la suite, épuisé Edes accepta de ne tuer que les dragons du continent de Therion et laisser les drakéides survivant en vie. 
-    Heilong est un dieu impétueux et courageux, qui ne recule devant aucun défi. Il encourage ses fidèles à être courageux et à ne pas craindre la peur. Il est également loyal et protecteur envers ceux qui lui sont fidèles, et est prêt à défendre ses croyants en toutes circonstances.
-    Les fidèles de Heilong sont souvent des guerriers courageux et des aventuriers téméraires. Ils célèbrent leur dieu avec des rituels de combat, des compétitions et des cérémonies qui honorent le courage et l'audace. Heilong est également invoqué avant les batailles pour donner aux guerriers le courage de faire face à leurs ennemis avec détermination et bravoure.
+    img: `gods/Heiloong2.png`,
+    character: `gods/Heiloong2-character.png`,
+    desc: `Heilong, fils de Riannedos, est un drakéides devenu dieu après avoir combattu pendant 100 jours sans interruption contre Edes lors de la purge draconique. Par la suite, épuisé, Edes accepta de ne tuer que les dragons du continent de Therion, laissant les drakéides survivants en vie.
+
+    Heilong est un dieu impétueux et courageux, encourageant ses fidèles à faire preuve de bravoure et à ne pas craindre la peur. Il est également loyal et protecteur envers ceux qui lui sont fidèles, prêt à défendre ses croyants en toutes circonstances.
+    
+    Les fidèles de Heilong sont souvent des guerriers courageux et des aventuriers téméraires. Ils célèbrent leur dieu avec des rituels de combat, des compétitions et des cérémonies honorant le courage et l'audace.
+    
+    Son objectif principal est de promouvoir le courage, la loyauté et la protection de ses fidèles, tout en les encourageant à affronter les défis avec détermination.
     `,
   },
   {
     name: `Hrothgar`,
     cults: [10],
     title: `Héros légendaire des Hightlands`,
-    img: `gods/Hrothgar.png`,
-    character: `gods/Hrothgar-character.png`,
-    desc: `Hrothgar, l’Aigle du Nord, est un héros légendaire du peuple des Skurf, vénéré comme une divinité guerrière et le défenseur de son peuple. Sa réputation de vaillant combattant est connue dans tout la région, et il est souvent invoqué par les guerriers avant la bataille. On dit qu'il a vaincu seul un groupe de géants des glaces qui terrorisaient les villages voisins, et qu'il a mené son peuple à la victoire lors d'une bataille décisive contre les forces ennemies. Hrothgar est également connu pour son courage, sa loyauté et son honneur inébranlable. Il est considéré comme le modèle parfait du guerrier nordique, et est souvent invoqué lors des cérémonies de mariage ou des funérailles pour bénir les nouveaux mariés ou guider l'âme des défunts vers l'au-delà. Beaucoup de guerriers portent des plumes d'aigle en son honneur, croyant qu'elles leur donneront le courage et la force d'Hrothgar sur le champ de bataille. En somme, Hrothgar est un héros et une divinité guerrière vénérée pour son courage, sa loyauté et son honneur, ainsi que pour son lien avec l'aigle, symbole de la puissance et de la liberté.
+    img: `gods/Hrothgar2.png`,
+    character: `gods/Hrothgar2-character.png`,
+    desc: `Hrothgar, l’Aigle du Nord, est un héros légendaire du peuple des Skurf, vénéré comme une divinité guerrière et le défenseur de son peuple. Sa réputation de vaillant combattant est connue dans toute la région, et il est souvent invoqué par les guerriers avant la bataille.
+    <br/><br/>
+    On dit qu'il a vaincu seul un groupe de géants des glaces terrorisant les villages voisins, et qu'il a mené son peuple à la victoire lors d'une bataille décisive contre les forces ennemies. Hrothgar est également connu pour son courage, sa loyauté et son honneur inébranlable.
+    <br/><br/>
+    Il est considéré comme le modèle parfait du guerrier nordique, et est souvent invoqué lors des cérémonies de mariage ou des funérailles pour bénir les nouveaux mariés ou guider l'âme des défunts vers l'au-delà.
+    <br/><br/>
+    Son objectif principal est d'inculquer le courage, la loyauté et l'honneur à ses fidèles, tout en les protégeant et en les guidant sur le chemin de la victoire et de la grandeur.
     `,
   },
 ];
 export const kingGods = [
   {
     name: `Phiella`,
-    cults: [5, 11],
+    cults: [5],
     title: `La tentadrice, Symbole de Luxure, du Sexe et de l’infidelité`,
-    img: `gods/Phiella.png`,
-    character: `gods/Phiella-character.png`,
-    desc: `Elle représente la luxure et l'excès. Elle est souvent décrite comme une belle femme avec un charme irrésistible et une voix séduisante. Elle est vénérée par les personnes qui cherchent la satisfaction de leurs désirs les plus profonds, quels qu'ils soient. Cependant, ceux qui se laissent aller trop profondément à ses tentations peuvent être entraînés dans une spirale de destruction, car la déesse ne se préoccupe pas des conséquences de ses actions. Elle est souvent représentée comme manipulatrice, utilisant ses charmes pour tromper et exploiter ceux qui tombent sous son emprise.`,
+    img: `gods/Phiella2.png`,
+    character: `gods/Phiella2-character.png`,
+    desc: `Phiella incarne la luxure et l'excès, souvent représentée comme une belle femme au charme irrésistible et à la voix séduisante. Elle est vénérée par ceux qui recherchent la satisfaction de leurs désirs les plus profonds, quels qu'ils soient. Cependant, ceux qui succombent à ses tentations peuvent être entraînés dans une spirale de destruction, car la déesse ne se préoccupe pas des conséquences de ses actions. Elle est souvent perçue comme manipulatrice, utilisant ses charmes pour tromper et exploiter ceux qui tombent sous son emprise.
+
+    <br/><br/>Phiella cherche à étendre son influence en séduisant les mortels et en les entraînant dans des excès de luxure et d'indulgence, tout en cultivant son propre plaisir et son pouvoir sur eux.`,
   },
   {
     name: `Rhabus`,
     cults: [11],
     title: `Dieu de la Violence et de la Destruction`,
-    img: `gods/Rhabus.png`,
-    character: `gods/Rhabus-character.png`,
-    desc: `Il est le frère jumeaux de Theomis bien que leur apparences sont loin d’être similaire, ils passent leur temps à se battre. Rhabus possède 6 bras et aime par-dessus tout se battre bien plus que son frère, mais se qui l’aime par dessus ça c'est le fait de réduire ces adversaire en bouillie dans un bain de sang. Il est l’un des dieux les plus puissants, et sa danse macabre du feu fait frémir n’importe quel dieux tellement qu’elle est imprévisible et destructrice. Lorsqu’il ne se bat pas, il as tendance à avoir gout pour le sexe, et violer des humains. Il est également l’incarnation de la pyromancie, ne contrôlant aucunement ses émotions.`,
+    img: `gods/Rhabus2.png`,
+    character: `gods/Rhabus2-character.png`,
+    desc: `Rhabus incarne la destruction et la pyromancie, frère jumeau de Théomis, le dieu de l'ordre. Sa nature chaotique et destructrice se manifeste à travers sa présence synonyme de carnage et de violence. Entouré de flammes dansantes et imprévisibles, Rhabus est décrit comme une figure imposante, témoignant des innombrables batailles qu'il a menées. Ses yeux brillent d'un feu intense, reflétant sa passion pour la destruction.
+
+    <br/><br/>Rhabus aspire à semer le chaos et la destruction, à provoquer des conflits et des bouleversements dans le monde, cherchant à affirmer sa suprématie en tant que dieu de la violence.`,
   },
   {
     name: `Buklos`,
-    cults: [11],
+    cults: [],
     title: `Roi de la Débauche et des ivrognes`,
-    img: `gods/Bucklos.png`,
-    character: `gods/Bucklos-character.png`,
-    desc: `Buklos est un dieu très charismatique et séduisant, qui attire facilement les foules avec son sourire éclatant et son attitude insouciante. Il est souvent entouré de femmes et d'hommes qui se laissent séduire par ses discours enjôleurs et ses promesses de plaisir sans fin. Il est le dieu de la débauche et de l'indulgence, et se plaît à pousser les mortels à se perdre dans les plaisirs du jeu et de l'alcool.
-  Cependant, sous cette apparence de fêtard invétéré se cache un guerrier redoutable, qui ne supporte pas d'être dérangé ou contrarié.
-  Lorsqu'il est sobre, il est calme et impitoyable, et n'hésite pas à dégainer ses katanas pour éliminer ceux qui osent s'opposer à lui.
-  Il est extrêmement fier de ses armes, en particulier de son katana rouge et de ses poings, qui sont les symboles de sa puissance. Malgré son tempérament colérique et imprévisible, Buklos est également très attaché à ses fidèles, qu'il considère comme sa famille.
-  En somme, Buklos est un dieu complexe, à la fois dangereux et attachant, qui ne laisse personne indifférent. Son apparence physique, est celle d’un beau jeune homme, Il se coiffe généralement avec une queue de cheval mais se coiffe uniquement lorsqu’il est … calme … `,
+    img: `gods/Bucklos2.png`,
+    character: `gods/Bucklos2-character.png`,
+    desc: `Buklos est un dieu charismatique et séduisant, attirant les foules avec son sourire éclatant et son attitude insouciante. Dieu de la débauche et de l'indulgence, il pousse les mortels à se perdre dans les plaisirs du jeu et de l'alcool. Cependant, sous cette façade de fêtard invétéré se cache un guerrier redoutable, prêt à dégainer ses katanas pour éliminer ceux qui s'opposent à lui.
+
+    <br/><br/>Buklos cherche à étendre son influence en encourageant la débauche et l'indulgence chez les mortels, tout en protégeant farouchement son propre pouvoir et sa réputation.`,
   },
   {
     name: `Qaas`,
     cults: [10],
     title: `Le dormeur, Symbole de l'oisiveté, de la paresse et des mendiants`,
-    img: `gods/Qaas.png`,
-    character: `gods/Qaas-character.png`,
-    desc: `Qaas est souvent décrit comme étant un dieu mystérieux, peu intéressé par les affaires du monde et préférant passer son temps à dormir et jouer de la musique dans son palais entouré de nuages. Il est rarement vu sur le plan terrestre et est considéré comme un dieu des ténèbres, bien qu'il ne soit ni bon ni mauvais, mais simplement indifférent aux événements qui se déroulent autour de lui. Certains mythes racontent que Qaas a le pouvoir de manipuler les rêves des mortels, mais cela reste un sujet de débat parmi les théologiens. On dit également que sa musique a un pouvoir hypnotique et peut plonger ceux qui l'écoutent dans un sommeil profond. Malgré son manque d'intérêt pour les affaires du monde, Qaas est connu pour avoir joué un rôle dans la mort de Neien. Selon la légende, Qaas aurait divertit Neien avec sa musique, le rendant vulnérable aux attaques de ses ennemis. Bien que peu vénéré, Qaas est respecté en tant que dieu des ténèbres et de la musique, et certaines cérémonies lui sont dédiées par les musiciens et les artistes en quête d'inspiration.`,
+    img: `gods/Qaas2.png`,
+    character: `gods/Qaas2-character.png`,
+    desc: `Qaas est souvent perçu comme un dieu mystérieux et indifférent, préférant passer son temps à dormir et à jouer de la musique dans son palais entouré de nuages. Bien qu'il soit rarement vu sur le plan terrestre, il est considéré comme un dieu des ténèbres, mais ni bon ni mauvais. Certains mythes lui attribuent le pouvoir de manipuler les rêves des mortels et une musique hypnotique.
+
+    <br/><br/>Qaas aspire à maintenir son indifférence envers les affaires du monde, tout en exerçant une influence subtile à travers la manipulation des rêves et la diffusion de sa musique hypnotique.`,
   },
   {
     name: `Tumtum`,
     cults: [],
     title: `Le fou symbole de la folie et du chaos`,
-    img: `gods/Tumtum.png`,
-    character: `gods/Tumtum-character.png`,
-    desc: `Tumtum est le petit frère de Neien. Il était autrefois le dieu de l'art, inspirant les artistes à travers le monde et favorisant la créativité. Mais après la mort de son frère, trahi par les autres dieux, il sombra dans la folie et la paranoïa. Désormais, il erre sur le plan terrestre qu'il considère comme "son jardin", et se livre à des actes étranges et imprévisibles. Certains le considèrent comme un dieu mineur et inoffensif, mais d'autres le craignent pour sa nature imprévisible et chaotique. Il est souvent représenté comme un homme aux yeux exorbités et au sourire fou, portant un chapeau pointu et des vêtements extravagants. Les rares cultes qui lui sont dédiés sont souvent composés d'artistes, de fous et d'autres personnes marginales qui se reconnaissent dans sa folie créative.`,
+    img: `gods/Tumtum2.png`,
+    character: `gods/Tumtum2-character.png`,
+    desc: `Tumtum, autrefois dieu de l'art et de la créativité, a sombré dans la folie et la paranoïa après la mort de son frère Neien. Il erre sur le plan terrestre, se livrant à des actes étranges et imprévisibles, représenté comme un homme aux yeux exorbités et au sourire fou, portant un chapeau pointu et des vêtements extravagants.
+
+    <br/><br/>Tumtum cherche à semer le chaos et la confusion, attirant les marginaux et les artistes dans son sillage de folie créative.`,
   },
   {
     name: `Neien`,
     cults: [5],
     title: `Dieu de la vengeance`,
-    img: `gods/Neien.png`,
-    character: `gods/Neien-character.png`,
-    desc:`Neien, autrefois dieu de la miséricorde, il accordait le pardon aux hommes qui mouraient. Sa puissance était telle que les autres dieux des ténèbres se sont alliés contre lui afin de le tuer. Ils créèrent l’outre-tombe à l’aide de ses restes avec Theomis et ses fils qui cherchaient un lieu pour punir les hommes. Mais ce que les autres dieux ignoraient sait que Neien avait anticipé la situation et demanda à son fils Archombres de garder un objet contenant l’essence même de son père. A partir de cet objet maintenant placé au plus profond des enfers, il cherche à récupérer son pouvoir répartie dans le monde formant la magie Obscure. On dit que certains mages l’utilisant finit par sombrer et mourir par les mains de Neien. `
+    img: `gods/Neien2.png`,
+    character: `gods/Neien2-character.png`,
+    desc:`Neien, autrefois dieu de la miséricorde, est devenu le dieu de la vengeance après sa mort orchestrée par les autres dieux des ténèbres. Son essence est dispersée dans le monde sous forme de magie obscure, qu'il cherche à récupérer pour restaurer son pouvoir. Il est vénéré comme un dieu de la vengeance et de la justice punitive.
+
+    <br/><br/>Neien aspire à retrouver son pouvoir et à se venger de ceux qui l'ont trahi, en récupérant son essence dispersée dans le monde sous forme de magie obscure. `
   },
 ];
 export const princeGods = [
@@ -226,63 +286,71 @@ export const princeGods = [
     name: `Sithis`,
     cults: [11],
     title: `Le bourreau, Dieu du meurtre`,
-    img: `gods/Sithis.png`,
-    character: `gods/Sithis-character.png`,
-    desc: `Dieu du meurtre, fils de Phiella et Rhabus, certains pense que cétait autrefois un homme qui as fini par être corompue par les ténèbres. Si Fauscht incarne l'arrivée de la mort, Sithis est la mort. Il représente la destruction, la douleur et la souffrance. Sa fonction principale est de torturer et d'infliger des douleurs intenses aux âmes qu'il capture et aux ennemis de ses adorateurs.
-    Sithis est craint et vénéré par les sectes et les cultes qui pratiquent des rituels sanglants et des sacrifices humains en son nom. Sa présence est souvent accompagnée de la peur et de l'horreur, car il peut déchaîner sa colère sur quiconque ose s'opposer à lui. Il est considéré comme un messager de la mort et un serviteur de la destruction, et son pouvoir est souvent invoqué pour causer la désolation et le chaos.
+    img: `gods/Sithis2.png`,
+    character: `gods/Sithis2-character.png`,
+    desc: `Sithis incarne le meurtre et la destruction, fils de Phiella et Rhabus, certains pensent qu'il était autrefois un homme corrompu par les ténèbres. Alors que Fauchst incarne l'arrivée de la mort, Sithis est la mort elle-même, représentant la douleur et la souffrance. Sa fonction principale est de torturer et d'infliger des douleurs intenses aux âmes qu'il capture et aux ennemis de ses adorateurs.
+
+    <br/><br/>Sithis aspire à semer la terreur et à répandre la douleur, à travers des rituels sanglants et des sacrifices humains, tout en affirmant sa domination en tant que dieu du meurtre.
     `,
   },
   {
     name: `Othar`,
     cults: [5, 10],
     title: `Dieu des marchés`,
-    img: `gods/Othar.png`,
-    character: `gods/Othar-character.png`,
-    desc: `Fils de Buklos et de Phiella, ont dit que sont sang et son palais sont en or. Avare, les hommes qui passent en marché avec lui finissent tous par en payer le prix fort. Il représente la cupidité, l'avidité et la tromperie dans le domaine des affaires et du commerce. Il est souvent décrit comme une créature rusée et malicieuse, avec un sourire trompeur et des yeux perçants qui cherchent à tromper et à corrompre les plus faibles. Il est vénéré par les personnes qui cherchent à tirer profit de manière malhonnête, en utilisant la tromperie et la manipulation pour atteindre leurs objectifs.
-    Othar est souvent représenté comme un manipulateur habile, sachant comment convaincre les autres de faire des affaires injustes et illégales. Cependant, il est également considéré comme imprévisible et potentiellement dangereux, car il peut facilement trahir ceux qui lui font confiance. Il est souvent invoqué par les criminels et les tricheurs pour obtenir une richesse facile, mais sa présence est toujours accompagnée de risques et de conséquences graves.
+    img: `gods/Othar2.png`,
+    character: `gods/Othar2-character.png`,
+    desc: `Othar, fils de Buklos et Phiella, est vénéré comme le dieu des marchés, représentant la cupidité, l'avidité et la tromperie dans le domaine des affaires et du commerce. Il est décrit comme rusé et malicieux, avec un sourire trompeur et des yeux perçants, cherchant à tromper et à corrompre les plus faibles.
+
+    <br/><br/>Othar cherche à étendre son influence en manipulant les marchés et en exploitant la cupidité des mortels pour son propre bénéfice, tout en évitant d'être découvert dans ses manigances.
     `,
   },
   {
     name: `Thorvarus`,
     cults: [4, 5],
     title: `Dieu des complots`,
-    img: `gods/Thorvarus.png`,
-    character: `gods/Thorvarus-character.png`,
-    desc: `Fils de Rhabus et de Phiella, il est le dieu des complots mais également le dieu des voleurs. On dit que c’est lui qui aurait planifier et organiser la mort de Neien pour lui dérober quelque chose dont il était incapable ce dernier en vie. De fait on dit que rien lui est impossible.
-    Thorvarus est un être calculateur et cynique. Il prend un malin plaisir à manipuler les autres pour obtenir ce qu'il veut, souvent pour son propre bénéfice. Il est extrêmement habile pour jouer sur les peurs et les désirs des autres et pour semer la discorde. Thorvarus est également très prudent, préférant travailler dans l'ombre et éviter tout risque inutile.
-    Les adeptes de Thorvarus se réunissent souvent en secret pour planifier des complots et des machinations. Ils sont souvent très éduqués et sophistiqués, capables de manipuler les événements pour obtenir leur propre avantage. Thorvarus est souvent invoqué lors de cérémonies de sorcellerie pour apporter son pouvoir de tromperie et de manipulation aux sorts lancés.
+    img: `gods/Thorvarus2.png`,
+    character: `gods/Thorvarus2-character.png`,
+    desc: `Thorvarus, fils de Rhabus et Phiella, est le dieu des complots et des voleurs, célèbre pour avoir planifié la mort de Neien. Il est calculateur et cynique, prenant un malin plaisir à manipuler les autres pour obtenir ce qu'il veut, souvent pour son propre bénéfice.
+
+    <br/><br/>Thorvarus cherche à semer la discorde et la confusion en orchestrant des complots et des machinations, tout en préservant son anonymat et en évitant d'être découvert.
     `,
   },
   {
     name: `Zadir`,
-    cults: [11],
+    cults: [],
     title: `Dieu des sacrifices`,
-    img: `gods/Zadir.png`,
-    character: `gods/Zadir-character.png`,
-    desc: `dieu des sacrifices mais aussi dieu de l’esclavagisme, il est un être cruel et sanguinaire. Fils de Rhabus et de Phiella, il a l'apparence d'un être avec de longues cheveux rouge. Zadir voue une véritable passion pour les femmes humaines, qu'il capture et retient prisonnières dans son palais. Son passe-temps favori est d'assister aux sacrifices offerts par ses adeptes, qui lui vouent un culte fanatique.
+    img: `gods/Zadir2.png`,
+    character: `gods/Zadir2-character.png`,
+    desc: `Thorvarus, fils de Rhabus et Phiella, est le dieu des complots et des voleurs, célèbre pour avoir planifié la mort de Neien. Il est calculateur et cynique, prenant un malin plaisir à manipuler les autres pour obtenir ce qu'il veut, souvent pour son propre bénéfice.
 
-    Cependant, Zadir est devenu de plus en plus difficile à satisfaire au fil des siècles, et il exige des sacrifices toujours plus importants et sanglants. Pour combler son insatiable soif de sang, il organise même des tournois à mort, mettant en scène des combattants sacrifiés pour son plaisir. Les joueurs devront se méfier des adeptes de Zadir, qui chercheront à les entraîner dans des pratiques sombres et dangereuses pour plaire à leur dieu.
+    <br/><br/>Thorvarus cherche à semer la discorde et la confusion en orchestrant des complots et des machinations, tout en préservant son anonymat et en évitant d'être découvert.
     `,
   },
   {
     name: `Archombre`,
     cults: [5],
     title: `Dieu du sang`,
-    img: `gods/Archombre.png`,
-    character: `gods/Archombre-character.png`,
-    desc: `Fils de Neien, il a juré d’aider son père à se venger. Il est considéré comme l'un des plus puissants et dangereux des démons. Archombre est maître de la magie du sang, une magie qui est basée sur l'utilisation du sang pour invoquer des sorts et des malédictions. Il confie son pouvoir à une famille sur le plan terrestre, les vampires, qui ont des canines prononcées et une soif de sang. Les vampires sont capables de se transformer en chauve-souris ou en brume, et ils sont immortels à moins d'être décapités ou exposés à la lumière du soleil. Cependant, leur soif de sang peut les rendre fous et incontrôlables, ce qui en fait des créatures redoutées. Archombre est également connu pour être implacable envers ses ennemis. Il est souvent représenté avec une épée ensanglantée. Les rumeurs disent qu'il est capable de donner vie à des créatures sanguinaires telles que les loups-garous ou les sangliers géants. Les cultistes qui invoquent Archombre risquent souvent leur âme, tandis que les vampires qui servent sa famille sur terre doivent payer le tribut du sang.`,
+    img: `gods/Archombre2.png`,
+    character: `gods/Archombre2-character.png`,
+    desc: `Archombre, fils de Neien, est considéré comme l'un des plus puissants et dangereux des démons. Maître de la magie du sang, il confie son pouvoir à la famille des vampires sur le plan terrestre, créant des créatures immortelles assoiffées de sang. Implacable envers ses ennemis, il est souvent représenté avec une épée ensanglantée.
+    <br/><br/>
+    Archombre cherche à étendre son influence en utilisant les vampires pour semer la terreur et le chaos, tout en préservant sa domination en tant que dieu du sang.`,
   },
   {
     name: `Belz`,
     cults: [],
     title: `Dieu des hommes bêtes`,
-    img: `gods/Belz.png`,
-    character: `gods/Belz-character.png`,
-    desc: `Origine inconnu. Probablement fils de Zadir et Phiella. Il est le dieu suprême vénéré par les hommes-bêtes. Physiquement, il est représenté comme une immense créature humanoïde mi-homme mi-bouc, avec une barbe épaisse, des cornes en spirale et une peau couverte de poils. Sa nature chaotique et sauvage est reflétée dans sa personnalité, où il est souvent décrit comme un dieu colérique et imprévisible, qui peut autant accorder des faveurs que causer la destruction.
-    Les hommes-bêtes, le voient comme leur protecteur et leur guide, et lui offrent des sacrifices de sang et de viande pour gagner sa faveur. Ils croient que le dieu leur accorde des bénédictions telles que des récoltes abondantes, des succès lors de la chasse et des victoires en combat. Les prêtres de Belzebuth, sont chargés de maintenir la communication entre les hommes-bêtes et leur dieu, et d'utiliser la magie sauvage pour lancer des sorts qui aident leur tribu.
+    img: `gods/Belz2.png`,
+    character: `gods/Belz2-character.png`,
+    desc: `Belz, d'origine inconnue, est vénéré comme le dieu suprême des hommes-bêtes. Représenté comme une immense créature mi-homme mi-animal, il incarne la nature chaotique et sauvage de ses fidèles, offrant protection et guidance en échange de sacrifices de sang et de viande.
+    <br/><br/>
+    Belz cherche à protéger et guider les hommes-bêtes, en échange de sacrifices et de dévotion, tout en consolidant sa position en tant que leur dieu suprême.
     `,
   },
 ];
+
+
+
 export const otherGods = [
   {
     name: `Hanuman`,

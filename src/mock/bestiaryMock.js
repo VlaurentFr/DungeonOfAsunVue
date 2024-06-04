@@ -1,18 +1,13 @@
 export const MOB = [
   {
     name: "Banshie",
-    desc: "La Banshie, créature légendaire des contrées mystérieuses, est une entité surnaturelle dont le cri déchirant glace le sang. Cette apparition fantomatique se distingue par sa silhouette élancée et son voile spectral qui flotte dans les brises nocturnes. Les légendes rapportent que la Banshie est une messagère des ténèbres, avertissant de manière lugubre les mortels de la proximité imminente de la mort. Son visage, souvent dissimulé par le voile, dégage une aura mélancolique et inquiétante. La Banshie est connue pour son cri strident capable de pénétrer l'âme des vivants. Ce hurlement spectral est considéré comme un présage funeste, annonçant la disparition prochaine d'un être cher. Certains récits parlent également de la capacité de la Banshie à prédire les tragédies futures. Elle est souvent associée aux événements fatidiques et aux destinées sombres. La Banshie est généralement liée aux lieux chargés d'histoire, tels que les anciens cimetières, les ruines oubliées et les landes désolées. Elle choisit des endroits isolés pour murmurer ses avertissements dans la nuit, ajoutant une dimension mystique à sa présence. Bien que redoutable, la Banshie est vulnérable aux rituels de protection, aux amulettes bénies et à certains objets sacrés. Les mélodies apaisantes et les prières peuvent également repousser temporairement cette créature funeste. Cependant, il est conseillé d'éviter tout contact direct avec la Banshie, car sa malédiction peut persister longtemps après l'interaction. Rencontrer une Banshie est une expérience terrifiante, et les habitants des régions où elle est connue redoublent de vigilance pour éviter d'attirer son attention. Les récits autour de cette créature persistante ajoutent une touche de mystère et de terreur aux récits folkloriques de nombreuses cultures.",
-    img: "bestiary/Banshee.jpeg",
+    desc: "La mélancolique banshie est une créature malveillante formée à partir de l'esprit d'une femme elfe. Ses cheveux ceignent son visage tel un enchevêtrement désordonné, et son corps est vêtu de haillons vaporeux qui volent et tournent autour d'elle.",
+    img: "bestiary/Banshee.png",
     cards: [
       {
         name: "Banshie",
         type: "Mort-vivant de taille Moyenne",
-        PA: "0",
-        PV: "58",
-        FOR: "10",
-        MAG: "65",
-        CHA: "70",
-        CHM: "85",
+        PA: "0", PV: "58", FOR: "10",  MAG: "65", CHA: "70", CHM: "85",
         act: [
           {
             name: "Touché corrupteur",
@@ -38,92 +33,104 @@ export const MOB = [
   },
   {
     name: "Basilic",
-    desc: "Le Basilic, créature mythique aux origines anciennes, incarne la terreur avec sa nature reptilienne et son regard mortel. Doté d'une envergure imposante et d'écailles luisantes, le Basilic est souvent décrit comme un serpent géant au corps massif et à la tête couronnée de cornes menaçantes. Son regard, légendairement pétrifiant, est source de cauchemars pour ceux qui croisent sa route. Le pouvoir redoutable du Basilic réside dans son regard mortel. La légende raconte que le simple fait de croiser les yeux de cette créature peut pétrifier instantanément ses victimes, figeant leur corps dans une pose de terreur éternelle. Certains récits suggèrent que la seule protection contre ce regard mortel est de voir la créature à travers un miroir, évitant ainsi le contact visuel direct. Les Basilics sont souvent associés aux endroits reculés, tels que les profondes cavernes, les forêts sombres et les lieux où la magie ancienne perdure. Leurs repaires sont jalousement gardés, dissimulés dans des environnements inhospitaliers où peu osent s'aventurer. Bien que redoutable, le Basilic n'est pas sans ses faiblesses. Certains récits mentionnent que la plupart des Basilics craignent la chant du coq, dont le chant aurait le pouvoir de neutraliser leur regard pétrifiant. Les miroirs, en plus de fournir une protection, peuvent également être utilisés pour refléter le regard du Basilic contre lui-même. Rencontrer un Basilic est une aventure périlleuse, et de nombreuses légendes mettent en garde contre l'exploration imprudente de territoires où ces créatures redoutables errent. Les contes autour du Basilic se transmettent de génération en génération, ajoutant une aura de mystère et de danger à ces reptiles mythiques..",
+    desc: "Le basilic est une horreur reptilienne munie de plusieurs paires de pattes, dont le regard transforme les victimes en pierre poreuse. La créature se nourrira ensuite de cette pierre, qu'elle brisera grâce à sa puissante mâchoire, qui reprendra sa forme organique une fois dans son gosier.",
     cards: [
       {
         name: "Basilic",
         type: "Monstruosité de taille Moyenne",
-        PA: "5",
-        PV: "52",
-        FOR: "60",
-        MAG: "10",
-        CHA: "40",
-        CHM: "35",
+        PA: "5", PV: "52", FOR: "60",  MAG: "10", CHA: "40", CHM: "35",
         act: []
       },
     ],
   },
   {
     name: "Béhir",
-    desc: "Le Béhir est une créature impressionnante et reptilienne qui se dresse sur de puissantes pattes, rappelant un hybride de serpent et de dragon. Ses écailles épaisses et rugueuses sont d'un bleu profond, avec des crêtes dorsales qui s'étendent le long de son corps. Ses yeux électriques brillent d'une lueur malveillante, et ses multiples pattes terminées par des griffes acérées sont prêtes à capturer et déchiqueter ses proies. Le Béhir est une créature massive et musclée, capable de se déplacer à grande vitesse malgré sa taille imposante. Sa gueule massive est munie de crocs redoutables, et ses longs serpents électriques qui entourent sa tête lui permettent d'électrocuter ses adversaires. Cette créature reptilienne est également capable de cracher un souffle d'énergie électrique dévastateur. Les Béhirs sont souvent trouvés dans des environnements montagneux, particulièrement dans des cavernes profondes où ils peuvent se tapir en attendant leurs proies. Ils sont également associés à des terrains électriques, tels que des régions fréquentées par des orages magiques. Les Béhirs sont généralement considérés comme des créatures chaotiques et malveillantes. Leur nature prédatrice et leur propension à attaquer sans avertissement les rendent redoutables pour les aventuriers imprudents. Les Béhirs sont attirés par les métaux précieux et peuvent amasser des trésors en pillant des caravanes ou des aventuriers qui traversent leur territoire. Ils sont connus pour garder leurs trésors dans des nids rocheux ou des cavernes isolées. Bien que puissant, le Béhir peut être vulnérable aux attaques coordonnées. Étant une créature plutôt solitaire, il peut être surpris et submergé par des groupes d'aventuriers. Les résistances électriques peuvent également offrir une protection contre certaines de ses attaques. Rencontrer un Béhir est une épreuve redoutable pour les aventuriers, et les histoires de ces créatures impressionnantes qui surgissent des montagnes hantent les récits des voyageurs intrépides.",
-    img: "bestiary/behir.jpeg",
+    desc: "",
+    img: "",
     cards: [
       {
         name: "Béhir",
-        type: "Monstruosité de taille Moyenne",
-        PA: "5",
-        PV: "52",
-        FOR: "60",
-        MAG: "10",
-        CHA: "40",
-        CHM: "35",
+        type: "Monstruosité de Très Grande taille",
+        PA: "5", PV: "52", FOR: "60", MAG: "10", CHA: "40", CHM: "35",
         act: []
       },
     ],
   },
   {
     name: "Gobelins",
-    desc: "Les Gobelins, créatures malicieuses et souvent belliqueuses, peuplent les recoins sombres et reculés du monde fantastique. De petite taille, avec des traits grotesques, ils ont une apparence reptilienne, des peaux rugueuses et des yeux perçants qui révèlent leur nature fourbe. Leurs vêtements dépareillés et leurs armes rudimentaires témoignent de leur existence dans des sociétés tribales. Les Gobelins sont agiles et rapides, compensant leur taille modeste par une astuce sournoise. Leurs compétences furtives et leur capacité à se fondre dans les ombres font d'eux d'excellents embusqués. Bien qu'ils ne soient pas particulièrement forts, leur nombre et leur nature opportuniste les rendent dangereux en groupe. Généralement trouvés dans des terres sauvages, des cavernes ou des souterrains, les Gobelins évitent souvent les endroits fortement peuplés. Leur société est souvent tribale, dirigée par des chamans ou des chefs de guerre, et marquée par des rivalités internes. Les Gobelins sont souvent chaotiques et malveillants, se laissant guider par leurs instincts sauvages. Leurs motivations varient, allant de la simple survie à la recherche de butins et de richesses aux dépens des autres. Généralement attirés par des objets brillants et précieux, les Gobelins amassent des trésors rudimentaires dans leurs repaires. Cependant, leurs richesses sont souvent le fruit de pillages plutôt que d'artisanat. Individuellement faibles, les Gobelins peuvent être vaincus avec une force suffisante. Leur manque de discipline et leurs querelles internes peuvent également être exploités par des adversaires avisés. Cependant, sous-estimer leur nombre et leur ruse peut conduire à des rencontres désastreuses. Rencontrer des Gobelins est un défi fréquent pour les aventuriers, car ces créatures espiègles sont souvent engagées dans des embuscades sournoises. Leurs raids impulsifs et leurs rires cruels laissent une empreinte indélébile dans les histoires des voyageurs intrépides.",
+    desc: "Les gobelins sont de petits humanoïdes malveillants qui vivent dans des donjons abandonnés ou dans des taudis lugubres. Individuellement faibles, ils se rassemblent en grand nombre pour tourmenter les autres créatures.",
     img: "bestiary/gobelins.webp",
     cards: [
       {
         name: "Gobelins",
         type: "Humanoïdes de Petite taille",
-        PA: "5",
-        PV: "52",
-        FOR: "60",
-        MAG: "10",
-        CHA: "40",
-        CHM: "35",
-        act: []
-      },
-      {
-        name: "Shaman Gobelins",
-        type: "Humanoïdes de Petite taille",
-        PA: "5",
-        PV: "52",
-        FOR: "60",
-        MAG: "10",
-        CHA: "40",
-        CHM: "35",
-        act: []
+        PA: "1", PV: "7", FOR: "40",  MAG: "50", CHA: "70", CHM: "40",
+        act: [
+          {
+            name: "Epée",
+            effect: "NC",
+            dmg: "5 ou 1d6+2",
+            type: "Physique",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Epée.</span> Attaque de corps à corps, une cible. Touché : 5 (1d6+2)"
+          },
+          {
+            name: "Arc court",
+            effect: "NC",
+            dmg: "5 ou 1d6+2",
+            type: "Physique",
+            range: "50m",
+            target: "1",
+            desc: "<span>Arc court.</span> Attaque à l'arc, une cible. Touché : 5 (1d6+2)"
+          },
+        ]
       },
       {
         name: "Chef Gobelins",
         type: "Humanoïdes de Petite taille",
-        PA: "5",
-        PV: "52",
-        FOR: "60",
-        MAG: "10",
-        CHA: "40",
-        CHM: "35",
-        act: []
+        PA: "2", PV: "21", FOR: "50", MAG: "50", CHA: "70", CHM: "50",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Double attaque",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "",
+            desc: "<span>Attaques multiples.</span> Attaque deux fois dans ce tour"
+          },
+          {
+            name: "Epée",
+            effect: "NC",
+            dmg: "5 ou 1d6+2",
+            type: "Physique",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Epée.</span> Attaque de corps à corps, une cible. Touché : 5 (1d6+2)"
+          },
+          {
+            name: "Javeline",
+            effect: "NC",
+            dmg: "3 ou 1d6",
+            type: "Physique",
+            range: "30m",
+            target: "1",
+            desc: "<span>Javeline.</span> Attaque à distance, une cible. Touché : 3 (1d6)"
+          },
+        ]
       },
     ]
   },
   {
     name: "Mimique",
-    desc: "La Mimique, maître de la dissimulation, est une créature étrange et dangereuse qui se fond habilement dans son environnement en prenant l'apparence d'objets inanimés. Souvent confondue avec un coffre, un tonneau ou même une porte, la Mimique attend patiemment qu'une proie imprudente s'approche avant de révéler sa véritable forme. La Mimique possède une texture visqueuse et une capacité innée à imiter parfaitement la texture et la couleur de son environnement. Elle est capable de déplacer des parties de son corps pour former des appendices semblables à des tentacules, qu'elle utilise pour saisir sa proie. Sa bouche, cachée sous une surface trompeuse, est remplie de dents pointues. On trouve généralement les Mimiques dans des endroits où des trésors sont stockés, tels que des donjons, des caves ou des salles au trésor. Elles ont un penchant pour les environnements clos où la surprise est leur alliée. Les Mimiques sont souvent considérées comme neutres maléfiques, agissant selon leurs instincts de chasse et de survie. Leur nature prédatrice les pousse à attaquer toute créature qui se trouve à portée. Étant souvent associées à des coffres ou à d'autres objets de valeur, les Mimiques peuvent posséder des trésors qu'elles ont accumulés en attirant et dévorant des aventuriers malchanceux. Bien que camouflée, la Mimique peut être détectée par des observateurs avertis qui notent des détails inhabituels, tels que des textures incohérentes ou des mouvements imperceptibles. Le feu est également une faiblesse connue des Mimiques, car il peut les forcer à révéler leur forme véritable. Rencontrer une Mimique est une expérience redoutée par les aventuriers, car elle remet en question la confiance même dans les objets apparemment inoffensifs. Les récits d'explorateurs trompés par ces créatures insidieuses circulent largement, faisant de la Mimique une menace persistante dans le monde fantastique.",
+    desc: "",
+    img: "bestiary/mimic.png",
     cards: [
       {
         name: "Mimique",
         type: "Monstruosité (métamorphe) de Taille Moyenne",
-        PA: "0",
-        PV: "58",
-        FOR: "85",
-        MAG: "25",
-        CHA: "60",
-        CHM: "45",
+        PA: "0", PV: "58", FOR: "85", MAG: "25", CHA: "60", CHM: "45",
         act: [
           {
             name: "Morsure",
@@ -137,5 +144,539 @@ export const MOB = [
       ]
       },
     ]
-  }
+  },
+  {
+    name: "Cultiste",
+    desc: "Les cultistes prêtent allégeance à un sombre pouvoir. La plupart dissimulent leur engagement pour éviter d'être ostracisés, emprisonnés ou exécutés en raison de leurs croyances. Contrairement aux acolytes mauvais, les cultistes font souvent montre de signes de folie dans leurs croyances et l'accomplissement de leurs pratiques.",
+    img: "",
+    cards: [
+      {
+        name: "Cultiste",
+        type: "Humanoïde (humain) de Taille Moyenne",
+        PA: "2", PV: "9", FOR: "52", MAG: "52", CHA: "60", CHM: "50",
+        act: [
+          {
+            name: "Cimeterre",
+            effect: "NC",
+            dmg: "4 ou 1d6+1",
+            type: "Tranchant",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Cimeterre.</span> Attaque de corps à corps, une cible. Touché : 4 (1d6+1)"
+          },
+          {
+            name: "Dague",
+            effect: "NC",
+            dmg: "4 ou 1d4+2",
+            type: "Perforant",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Dague.</span> Attaque de corps à corps, une cible. Touché : 4 (1d4+2)"
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Efrit",
+    desc: "",
+    img: "",
+    cards: [
+      {
+        name: "Efrit",
+        type: "Elementaire de Grande Taille",
+        PA: "2", PV: "9", FOR: "52", MAG: "52", CHA: "60", CHM: "50",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Double attaque",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> L'efrit effectue deux attaques de cimeterre ou de jet de flammes."
+          },
+          {
+            name: "Cimeterre",
+            effect: "NC",
+            dmg: "4 ou 1d6+1",
+            type: "Tranchant",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Cimeterre.</span> Attaque de corps à corps, une cible. Touché : 4 (1d6+1)"
+          },
+          {
+            name: "Jet de flammes",
+            effect: "NC",
+            dmg: "17 ou (5d6)",
+            type: "Feu",
+            range: "36m",
+            target: "1",
+            desc: "<span>Jet de flammes.</span> Attaque de sort à distance, une cible. Touché : 17 (5d6)"
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Elémentaire du Feu",
+    desc: "Un semblant de silhouette humanoïde apparaît au centre de la capricieuse dévastation qu'est un élémentaire du feu. Où qu'il passe, il embrase tout ce qui l'entoure, ne laissant derrière lui que cendre et fumée.",
+    img: "",
+    cards: [
+      {
+        name: "Elémentaire du Feu",
+        type: "Elementaire de Grande Taille",
+        PA: "0", PV: "102", FOR: "62", MAG: "55", CHA: "77", CHM: "55",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Double attaque",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> L'élémentaire effectue deux attaques de toucher."
+          },
+          {
+            name: "Toucher",
+            effect: "Brûle la cible, si elle est inflamable (1d5 / tour)",
+            dmg: "10 ou 2d6+3",
+            type: "Feu",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Toucher.</span> Attaque de corps à corps, une cible. Touché : 10 (2d6 + 3)"
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Elémentaire de l'Eau",
+    desc: "Les élémentaires de l'eau ressemblent aux crêtes des vagues qui roulent sur le sol. Un élémentaire de l'eau engloutit toutes les créatures qui se dressent contre lui.",
+    img: "",
+    cards: [
+      {
+        name: "Elémentaire de l'Eau",
+        type: "Elementaire de Grande Taille",
+        PA: "0", PV: "114", FOR: "75", MAG: "57", CHA: "62", CHM: "55",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Double attaque",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> L'élémentaire effectue deux attaques de coup."
+          },
+          {
+            name: "Coup",
+            effect: "NC",
+            dmg: "13 ou 2d8+4",
+            type: "Contondant",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Coup.</span> Attaque de corps à corps, une cible. Touché : 13 (2d8 + 4)"
+          },
+          {
+            name: "Vague",
+            effect: "Aggripe les personnages de plus petites taille, jet de Force > 70 pour en sortir, subissez des dégâts a chaque début de tours (13 ou 2d8+4)",
+            dmg: "13 ou 2d8+4",
+            type: "Contondant",
+            range: "CAC",
+            target: "Multiple",
+            desc: "<span>Vague (Recharge 4 - 6).</span> Attaque de corps à corps, multi-cible. Touché : 13 (2d8+4)"
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Elémentaire de l'Air",
+    desc: "Un élémentaire de l'air est une masse d'air tourbillonnante prenant la vague apparence d'un visage. Il peut se transformer en un tourbillon hurlant, créant alors un cyclone destructeur qui éjecte tout sur son passage.",
+    img: "",
+    cards: [
+      {
+        name: "Elémentaire de l'Air",
+        type: "Elementaire de Grande Taille",
+        PA: "0", PV: "90", FOR: "57", MAG: "55", CHA: "90", CHM: "55",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Double attaque",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> L'élémentaire effectue deux attaques de coup."
+          },
+          {
+            name: "Coup",
+            effect: "NC",
+            dmg: "14 ou 2d8+5",
+            type: "Contondant",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Coup.</span> Attaque de corps à corps, une cible. Touché : 14 (2d8 + 5)"
+          },
+          {
+            name: "Tourbillon",
+            effect: "Repousse les personnages de plus petites taille sur 6 mètres, Collision (3 ou 1d3, / 3m)",
+            dmg: "1d3 / 3m",
+            type: "Contondant",
+            range: "CAC",
+            target: "Multiple",
+            desc: "<span>Tourbillon (Recharge 4 - 6).</span> Attaque de corps à corps, multi-cible. Collision : 3(1d3, / 3m)"
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Elémentaire de la Terre",
+    desc: "Un élémentaire de la terre avance lourdement tel une colline humaine, balançant ses bras tels des massues. Sa tête et son corps sont fait de terre et de pierre, occasionnellement sertis de gros morceaux de métal, de gemmes et de minéraux luisants.",
+    img: "",
+    cards: [
+      {
+        name: "Elémentaire de la Terre",
+        type: "Elementaire de Grande Taille",
+        PA: "0", PV: "126", FOR: "90", MAG: "57", CHA: "50", CHM: "55",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Double attaque",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> L'élémentaire effectue deux attaques de coup."
+          },
+          {
+            name: "Coup",
+            effect: "NC",
+            dmg: "14 ou 2d8+5",
+            type: "Contondant",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Coup.</span> Attaque de corps à corps, une cible. Touché : 14 (2d8 + 5)"
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Salamandre",
+    desc: "",
+    img: "",
+    cards: [
+      {
+        name: "Salamandres",
+        type: "Elementaire de Grande Taille",
+        PA: "0", PV: "90", FOR: "70", MAG: "55", CHA: "62", CHM: "55",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Double attaque",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> L'élémentaire effectue deux attaques, une avec sa lance l'autre avec sa queue."
+          },
+          {
+            name: "Lance",
+            effect: "Inflige 7 (2d6) dégâts de feu supplémentaire",
+            dmg: "13 ou 2d6+6",
+            type: "Perforants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Lance.</span> Attaque de corps à corps, une cible. Touché : 13 (2d6 + 6), plus 7 (2d6) dégâts de feu"
+          },
+          {
+            name: "Queue",
+            effect: "Inflige 7 (2d6) dégâts de feu supplémentaire, peux aggriper la cible",
+            dmg: "11 ou 2d6+4",
+            type: "Contondant",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Queue.</span> Attaque de corps à corps, une cible. Touché : 14 (2d8 + 5)"
+          },
+        ]
+      },
+      {
+        name: "Serpent de Feu",
+        type: "Elementaire de Taille Moyenne",
+        PA: "", PV: "", FOR: "", MAG: "", CHA: "", CHM: "",
+        act: [
+          {
+            name: "",
+            effect: "NC",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "",
+            desc: "<span>.</span> "
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Méphites",
+    desc: "Les méphites sont des créatures élémentaires petites et malveillantes, formées à partir des essences brutes des différents éléments. Ils se divisent en plusieurs types, chacun incarnant un élément particulier, tels que la boue, la fumée, la glace, le magma, la poussière et la vapeur. Ces créatures sont connues pour leur nature sournoise et espiègle, souvent causant des ravages mineurs par pur plaisir.",
+    img: "bestiary/magma-mephit.jpeg",
+    cards: [
+      {
+        name: "Méphite Boueux",
+        type: "Elementaire de Petite Taille",
+        PA: "0", PV: "27", FOR: "45", MAG: "50", CHA: "50", CHM: "45",
+        act: [
+          {
+            name: "Poings",
+            effect: "NC",
+            dmg: "4 ou (1d6+1)",
+            type: "Contondant",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Poings.</span> Attaque de corps à corps, une cible. Touché : 4 (1d6 + 1)"
+          },
+          {
+            name: "Souffle de boue",
+            effect: "Entrave",
+            dmg: "",
+            type: "",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Souffle de boue (Recharge 6).</span> Le mephite souffle une boue visqueuse qui entrave la cible"
+          },
+        ]
+      },
+      {
+        name: "Méphite Fumant",
+        type: "Elementaire de Petite Taille",
+        PA: "0", PV: "22", FOR: "40", MAG: "50", CHA: "60", CHM: "50",
+        act: [
+          {
+            name: "Griffes",
+            effect: "NC",
+            dmg: "4 ou (1d4+2)",
+            type: "Tranchants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Griffes.</span> Attaque de corps à corps, une cible. Touché : 4 (1d4 + 2)"
+          },
+          {
+            name: "Souffle de scories",
+            effect: "Aveugle pendant 1 tours",
+            dmg: "",
+            type: "",
+            range: "Cône 4,5m",
+            target: "Multiple",
+            desc: "<span>Souffle de scories (Recharge 6).</span> Le mephite souffle un cône de cendres ardentes qui aveugle les cibles touchées"
+          },
+        ]
+      },
+      {
+        name: "Méphite Gelé",
+        type: "Elementaire de Petite Taille",
+        PA: "0", PV: "21", FOR: "40", MAG: "50", CHA: "55", CHM: "50",
+        act: [
+          {
+            name: "Griffes",
+            effect: "2 (1d4) dégâts de froid",
+            dmg: "3 ou (1d4+1)",
+            type: "Tranchants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Griffes.</span> Attaque de corps à corps, une cible. Touché : 3 (1d4 + 1), plus 2 (1d4) dégâts de froid"
+          },
+          {
+            name: "Souffle de givre",
+            effect: "NC",
+            dmg: "5 ou (2d4)",
+            type: "Froid",
+            range: "Cône 4,5m",
+            target: "Multiple",
+            desc: "<span>Souffle de givre (Recharge 6).</span> Le mephite souffle un cône d'air froid qui inflige 5 (2d4) dégâts de froid"
+          },
+        ]
+      },
+      {
+        name: "Méphite Magmatique",
+        type: "Elementaire de Petite Taille",
+        PA: "0", PV: "22", FOR: "45", MAG: "50", CHA: "50", CHM: "45",
+        act: [
+          {
+            name: "Griffes",
+            effect: "2 (1d4) dégâts de feu",
+            dmg: "3 ou (1d4+1)",
+            type: "Tranchants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Griffes.</span> Attaque de corps à corps, une cible. Touché : 3 (1d4 + 1), plus 2 (1d4) dégâts de feu"
+          },
+          {
+            name: "Souffle de feu",
+            effect: "NC",
+            dmg: "5 ou (2d4)",
+            type: "Feu",
+            range: "Cône 4,5m",
+            target: "Multiple",
+            desc: "<span>Souffle de feu (Recharge 6).</span> Le mephite souffle un cône de feu qui inflige 7 (2d6) dégâts de feu"
+          },
+        ]
+      },
+      {
+        name: "Méphite Poussiéreux",
+        type: "Elementaire de Petite Taille",
+        PA: "0", PV: "17", FOR: "35", MAG: "50", CHA: "60", CHM: "50",
+        act: [
+          {
+            name: "Griffes",
+            effect: "NC",
+            dmg: "4 ou (1d4+2)",
+            type: "Tranchants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Griffes.</span> Attaque de corps à corps, une cible. Touché : 4 (1d4 + 2)"
+          },
+          {
+            name: "Souffle aveuglant",
+            effect: "Aveugle pendant 1 tours",
+            dmg: "",
+            type: "",
+            range: "Cône 4,5m",
+            target: "Multiple",
+            desc: "<span>Souffle aveuglant (Recharge 6).</span> Le mephites souffle un cône de poussières qui aveugle les cibles touchées"
+          },
+        ]
+      },
+      {
+        name: "Méphite Vaporeux",
+        type: "Elementaire de Petite Taille",
+        PA: "0", PV: "21", FOR: "40", MAG: "45", CHA: "40", CHM: "45",
+        act: [
+          {
+            name: "Griffes",
+            effect: "2 (1d4) dégâts de feu",
+            dmg: "2 ou (1d4)",
+            type: "Tranchants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Griffes.</span> Attaque de corps à corps, une cible. Touché : 2 (1d4), plus 2 (1d4) dégâts de feu"
+          },
+          {
+            name: "Souffle de vapeur",
+            effect: "NC",
+            dmg: "",
+            type: "",
+            range: "Cône 4,5m",
+            target: "Multiple",
+            desc: "<span>Souffle de vapeur (Recharge 6).</span> Le mephite souffle un cône de vapeur brûlante qui inflige 4 (1d8) dégâts de feu"
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Balor",
+    desc: "",
+    img: "",
+    cards: [
+      {
+        name: "Balor",
+        type: "Démon de Très Grande Taille",
+        PA: "0", PV: "262", FOR: "98", MAG: "68", CHA: "65", CHM: "79",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Double attaque",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> Le balor effectue deux attaques, une avec son épée longue et avec son fouet"
+          },
+          {
+            name: "Aura de feu",
+            effect: "Début de chaque tours, inflige 10 (3d6) de dégâts de feu, lorsqu'il subit des dégâts au corps à corps inflige 10 (3d6) dégâts de feu",
+            dmg: "10 ou 3d6",
+            type: "Feu",
+            range: "CAC",
+            target: "",
+            desc: ""
+          },
+          {
+            name: "Armes magiques",
+            effect: "Tout les dégâts du Balor sont magiques",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: ""
+          },
+          {
+            name: "Epée longue",
+            effect: "Inflige 13 (3d8) dégâts de foudre",
+            dmg: "21 ou (3d8+8)",
+            type: "Tranchant",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Epée longue.</span> Attaque de corps à corps, une cible. Touché : 21 (3d8 + 8), plus 13 (3d8) dégâts de foudre"
+          },
+          {
+            name: "Fouet",
+            effect: "Inflige 10 (3d6) dégâts de feu et attire la cible vers le Balor",
+            dmg: "14 ou 2d8+5",
+            type: "Contondant",
+            range: "9m",
+            target: "1",
+            desc: "<span>Fouet.</span> Attaque de corps à corps, une cible. Touché : 15 (2d6 + 8), plus 10 (3d6) dégâts de feu et attire la cible vers le Balor"
+          },
+          {
+            name: "Téléportation",
+            effect: "Se téléporte par magie vers un espaces dans son champs de vision à une distance maximale de 36m",
+            dmg: "",
+            type: "",
+            range: "36m",
+            target: "Soi-même",
+            desc: ""
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Molosse infernal",
+    desc: "Démon cracheurs de feu à la silhouette canine, les chiens de chasse infernaux sont communément au service de créatures maléfiques qui les utilisent comme compagnons ou chiens de garde.",
+    img: "",
+    cards: [
+      {
+        name: "Molosse infernal",
+        type: "Démon de Taille Moyenne",
+        PA: "0", PV: "45", FOR: "65", MAG: "55", CHA: "60", CHM: "50",
+        act: [
+          {
+            name: "Morsure",
+            effect: "Inflige 7 (2d6) dégâts de feu",
+            dmg: "7 ou (1d8+3)",
+            type: "Perforants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Morsure.</span> Attaque de corps à corps, une cible. Touché : 7 (1d8 + 3), plus 7 (2d6) dégâts de feu"
+          },
+          {
+            name: "Souffle de feu",
+            effect: "NC",
+            dmg: "21 ou (6d6)",
+            type: "Feu",
+            range: "Cône 4,5m",
+            target: "Multiple",
+            desc: "<span>Souffle de feu (Recharge 5-6).</span> Le molosse soufle du feu en cône de 4,5m, inflige 21 (6d6) dégâts de feu"
+          },
+        ]
+      },
+    ]
+  },
+  
 ]

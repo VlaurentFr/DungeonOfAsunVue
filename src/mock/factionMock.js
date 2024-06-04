@@ -35,7 +35,7 @@ export const faction = [
   },
   {
     title: `La dynastie Owrilia`,
-    img: `orga/waters.png`,
+    img: `factions/Owrilia.png`,
     color: "deepskyblue",
     desc: `<span>La dynastie Owrilia</span> est dirigée par le “Hauts Elfes”, une figure emblématique qui représente le pouvoir suprême dans la société des elfes des mers. Le Hauts Elfes est entouré d'une cour de “Grands Elfes” qui sont des seigneurs féodaux et qui possèdent chacun leur propre domaine et leur propre armée. Les Grands Elfes ont une grande influence sur la vie des elfes des mers et leur relation avec les autres factions. 
     Ils ont des traditions et des particularités propres à leur domaine, mais tous sont unis sous la bannière du Hauts Elfes. <span>La dynastie Owrilia </span>est réputée pour son expertise en matière de commerce et de négociation. Les elfes des mers sont de grands commerçants et leur flotte marchande est l'une des plus importantes du monde. Ils échangent des biens et des idées avec d'autres peuples et ils ont acquis une grande richesse grâce à cela. Cependant, malgré leur passion pour l'argent et la richesse, les elfes des mers sont également connus pour leur loyauté envers leur seigneur et leur respect de l'honneur. <span>La dynastie Owrilia</span> entretient également une relation particulière avec les dragons, en particulier les drakéides. Elle a donc adopté le respect de l'héritage et de la lignée, ainsi que la vénération de certaines créatures comme les dragons. Les drakéides sont considérés comme des alliés et des amis proches des elfes des mers, et leur soutien est souvent sollicité lors de guerres ou de conflits. En somme, <span>la dynastie Owrilia </span>est une organisation bien structurée et puissante, qui a su s'adapter au mode de vie des marins. Les elfes des mers sont un peuple fier et discipliné, doté d'une riche culture et ils ont su se faire une place importante dans le monde grâce à leur expertise en matière de commerce et de guerre.
@@ -59,7 +59,7 @@ export const faction = [
   },
   {
     title: `Le Saint Royaume de Lorus`,
-    img: `races/lorus.png`,
+    img: `factions/Lorus.png`,
     color: "yellow",
     desc: `Situé au Sud-Ouest de Thierion, le Royaume Saint de Lorus a été la première faction à émerger avec la suprématie des hommes sur les dragons, il y a de cela 6000 ans. Rapidement rejoints par les nains des rocheuses, connus comme les exclus, les habitants de Lorus sont fiers, pieux et portent en eux l'orgueil d'avoir combattu les dragons.
     <br/><br/>
@@ -82,7 +82,7 @@ export const faction = [
   },
   {
     title: `La Tour de Magters`,
-    img: `classes/alchimiste.png`,
+    img: `races/mage.png`,
     color: "",
     desc: `La grande tour de Magters est plus qu'un simple lieu d'apprentissage de la magie, c'est une véritable institution qui a forgé l'histoire de Thérion. Les mages qui y étudient sont hautement respectés pour leur maîtrise de la magie, leur connaissance approfondie des sorts et des rituels, ainsi que leur capacité à résoudre les problèmes les plus complexes grâce à leur savoir-faire. <br/><br/>
 
@@ -164,9 +164,9 @@ export const faction = [
     color: "cyan",
     desc: `Niché sur une île majestueuse au cœur d'océans scintillants, le Royaume d'Uriel est le foyer des Elfes d'Uriel, une race sophistiquée imprégnée de magie et de quête constante de savoir. Ce royaume est une merveille d'architecture élégante, de sagesse antique et de puissance arcanique.
     <br/><br/>
-    La capitale d'Uriel, <span>Almara</span>, est une cité d'une beauté éclatante, aux tours étincelantes et aux dômes élancés. Les rues pavées de marbre blanc reflètent la lumière du soleil et de la lune, créant une atmosphère de splendeur intemporelle.
+    La capitale d'Uriel, <span>Eyanor</span>, est une cité d'une beauté éclatante, aux tours étincelantes et aux dômes élancés. Les rues pavées de marbre blanc reflètent la lumière du soleil et de la lune, créant une atmosphère de splendeur intemporelle.
     <br/><br/>
-    Au centre d'<span>Almara</span> s'élève la Tour Astrale, une structure imposante où les plus grands mages et érudits des Elfes d'Uriel se rassemblent pour étudier les arts arcaniques et débattre des mystères du cosmos. La Tour Astrale est le phare du savoir magique qui éclaire le royaume.
+    Au centre d'<span>Eyanor</span> s'élève la Tour Astrale, une structure imposante où les plus grands mages et érudits des Elfes d'Uriel se rassemblent pour étudier les arts arcaniques et débattre des mystères du cosmos. La Tour Astrale est le phare du savoir magique qui éclaire le royaume.
     <br/><br/>
     La Salle des Luminaires est le lieu où se réunit le Conseil des Étoiles, le gouvernement d'Uriel. Les Luminaires, des elfes éminents élus pour leur sagesse et leur expertise, guident le royaume dans des temps de paix et d'incertitude.
     <br/><br/>
@@ -228,7 +228,7 @@ export const faction = [
   },
   {
     title: `L'alliance Glotergan`,
-    img: `classes/Noble.png`,
+    img: `orga/dwarf.png`,
     color: "darkorange",
     desc: `Dans les terres mystiques de Glotergan, une alliance puissante se forge parmi les adeptes des arts arcaniques. Les Conjurateurs de l'Éther, membres de cette alliance, maîtrisent les forces mystérieuses de l'éther et unissent leurs pouvoirs pour protéger leur royaume et étendre leur influence sur les plans astraux.
     Glotergan est une terre baignée d'une lueur éthérée, où les frontières entre les plans matériels et astraux sont fines. Des tours de cristal éthéré s'élèvent au-dessus des cités, créant une harmonie visuelle avec l'énergie magique qui imprègne chaque recoin de la terre. Les paysages éthérés changent constamment, reflétant l'alignement des étoiles et des constellations.<br/><br/>
@@ -287,11 +287,6 @@ export const faction = [
     Les gnomes de Tirwar sont animés par la Quête de l'Invention Ultime, une recherche perpétuelle pour créer une invention qui transcende les limites de la magie et de la technologie. Cette quête les pousse à explorer de nouveaux domaines et à repousser les frontières de la compréhension gnome.
     <br/><br/>
     Tirwar, la Nation Enfouie des Gnomes, est une société dynamique et innovante, façonnée par la créativité et la curiosité sans fin de ses habitants. Les gnomes de Tirwar, en tant qu'inventeurs et gardiens des profondeurs, ont bâti un royaume souterrain où la magie et la mécanique s'entremêlent dans un ballet infini d'invention et de découverte.
-    
-    
-    
-    
-    
     `
   },
   {

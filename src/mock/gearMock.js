@@ -565,6 +565,10 @@ export const divers = [
     cost: '25 po'
   },
   {
+    name: 'Bâteau pliable',
+    cost: '3 000 po'
+  },
+  {
     name: 'Pelle',
     cost: '2 po'
   },

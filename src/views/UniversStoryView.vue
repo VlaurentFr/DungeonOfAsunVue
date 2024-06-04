@@ -34,7 +34,7 @@ import { useRouter } from 'vue-router';
         </p>
       </article>
       <div class="image">
-        <img src="@/assets/gods/Riannedos.png" />
+        <img src="@/assets/bestiary/white_dragon.png" />
         <div class="filter"></div>
       </div>
     </div>
@@ -57,7 +57,7 @@ import { useRouter } from 'vue-router';
         </p>
       </article>
       <div class="image-left">
-        <img src="/assets/genese.png" />
+        <img src="@/assets/races/lorus.png" />
         <div class="filter-left"></div>
       </div>
   </div>
@@ -76,7 +76,7 @@ import { useRouter } from 'vue-router';
         </p>
       </article>
       <div class="image">
-        <img src="/assets/human.png" />
+        <img src="@/assets/orga/dwarf.png" />
         <div class="filter"></div>
       </div>
     </div>
@@ -93,7 +93,7 @@ import { useRouter } from 'vue-router';
         </p>
       </article>
       <div class="image-left">
-        <img src="@/assets/cults/six.png" />
+        <img src="@/assets/races/humans.png" />
         <div class="filter-left"></div>
       </div>
     </div>

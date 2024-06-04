@@ -106,7 +106,7 @@ function changeOrga(index: number) {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale();
+  /* filter: grayscale(); */
 }
 .green-filter {
   position: fixed;
@@ -114,7 +114,7 @@ function changeOrga(index: number) {
   height: calc(100vh - 73px);
   right: 0;
   width: 33%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(36, 190, 116, 0.80) 100%), lightgray 50% / cover no-repeat;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(36, 190, 116, 0.0) 100%), lightgray 50% / cover no-repeat;
   mix-blend-mode: multiply;
 
 }
