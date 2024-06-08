@@ -279,7 +279,7 @@ const selected = ref('WEAPONS');
            </table>
           </div>
           <div  v-if="selected === 'HOUSES'">
-           <h3>Nourriture</h3>
+           <h3>Logements</h3>
            <table>
               <thead>
                 <tr>

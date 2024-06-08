@@ -421,8 +421,13 @@ export const potions = [
     cost: '50 po'
   },
   {
-    name: 'Poison',
+    name: 'Poison (Fiole)',
     effect: 'Liquide empoisonnant (1d4 / tours, dégâts de poison)',
+    cost: '50 po'
+  },
+  {
+    name: 'Poison (Huile)',
+    effect: 'Huile pour armes, empoisonnant (1d4 / tours, dégâts de poison)',
     cost: '100 po'
   }
 ]

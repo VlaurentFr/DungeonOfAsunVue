@@ -185,7 +185,7 @@ export const MOB = [
       {
         name: "Efrit",
         type: "Elementaire de Grande Taille",
-        PA: "2", PV: "9", FOR: "52", MAG: "52", CHA: "60", CHM: "50",
+        PA: "2", PV: "200", FOR: "90", MAG: "75", CHA: "70", CHM: "85",
         act: [
           {
             name: "Attaques multiples",
@@ -199,11 +199,11 @@ export const MOB = [
           {
             name: "Cimeterre",
             effect: "NC",
-            dmg: "4 ou 1d6+1",
+            dmg: "13 ou 2d6+6",
             type: "Tranchant",
             range: "CAC",
             target: "1",
-            desc: "<span>Cimeterre.</span> Attaque de corps à corps, une cible. Touché : 4 (1d6+1)"
+            desc: "<span>Cimeterre.</span> Attaque de corps à corps, une cible. Touché : 13 (2d6+6)"
           },
           {
             name: "Jet de flammes",
@@ -492,7 +492,7 @@ export const MOB = [
           },
           {
             name: "Souffle de givre",
-            effect: "NC",
+            effect: "Esquive, subissez la moitier des dégâts",
             dmg: "5 ou (2d4)",
             type: "Froid",
             range: "Cône 4,5m",
@@ -517,7 +517,7 @@ export const MOB = [
           },
           {
             name: "Souffle de feu",
-            effect: "NC",
+            effect: "Esquive, subissez la moitier des dégâts",
             dmg: "5 ou (2d4)",
             type: "Feu",
             range: "Cône 4,5m",
@@ -567,7 +567,7 @@ export const MOB = [
           },
           {
             name: "Souffle de vapeur",
-            effect: "NC",
+            effect: "Esquive, subissez la moitier des dégâts",
             dmg: "",
             type: "",
             range: "Cône 4,5m",
@@ -649,7 +649,7 @@ export const MOB = [
   {
     name: "Molosse infernal",
     desc: "Démon cracheurs de feu à la silhouette canine, les chiens de chasse infernaux sont communément au service de créatures maléfiques qui les utilisent comme compagnons ou chiens de garde.",
-    img: "",
+    img: "bestiary/hellhound.jpeg",
     cards: [
       {
         name: "Molosse infernal",
@@ -667,12 +667,232 @@ export const MOB = [
           },
           {
             name: "Souffle de feu",
-            effect: "NC",
+            effect: "Esquive, subissez la moitier des dégâts",
             dmg: "21 ou (6d6)",
             type: "Feu",
             range: "Cône 4,5m",
             target: "Multiple",
             desc: "<span>Souffle de feu (Recharge 5-6).</span> Le molosse soufle du feu en cône de 4,5m, inflige 21 (6d6) dégâts de feu"
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Dragon Rouge",
+    desc: "Une odeur de soufre et de roche volcanique enveloppe un dragon rouge, dont la silhouette se reconnaît à ses cornes et sa crête dorsale aiguisées. De la fumée s'échappe en permanence de son museau incurvé, et des flammes dansent dans ses yeux lorsqu'il se met en colère.",
+    img: "bestiary/red_dragon.png",
+    cards: [
+      {
+        name: "Dragon Rouge Vénérable",
+        type: "Dragon de Très Grande Taille",
+        PA: "0", PV: "546", FOR: "100", MAG: "60", CHA: "73", CHM: "90",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Attaque morsure puis deux attaque de griffes",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> Le dragon effectue trois attaques, une sa mâchoires et deux avec ses griffes"
+          },
+          {
+            name: "Morsure",
+            effect: "Inflige 14 (4d6) dégâts de feu",
+            dmg: "21 ou (2d10+10)",
+            type: "Perforants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Morsure.</span> Attaque de corps à corps, une cible. Touché : 21 (2d10 + 10), plus 14 (4d6) dégâts de feu"
+          },
+          {
+            name: "Griffe",
+            effect: "NC",
+            dmg: "17 ou (2d6+10)",
+            type: "Tranchants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Griffe.</span> Attaque de corps à corps, une cible. Touché : 17 (2d6 + 10)"
+          },
+          {
+            name: "Queue",
+            effect: "NC",
+            dmg: "19 ou (2d8+10)",
+            type: "Contondants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Queue.</span> Attaque de corps à corps, une cible. Touché : 19 (2d8 + 10)"
+          },
+          {
+            name: "Souffle de feu",
+            effect: "Esquive, subissez la moitier des dégâts",
+            dmg: "91 ou (26d6)",
+            type: "Feu",
+            range: "Cône 27m",
+            target: "Multiple",
+            desc: "<span>Souffle de feu (Recharge 5-6).</span> Le dragon soufle du feu en cône de 27m, inflige 91 (26d6) dégâts de feu"
+          },
+        ]
+      },
+      {
+        name: "Dragon Rouge Adulte",
+        type: "Dragon de Grande Taille",
+        PA: "0", PV: "256", FOR: "90", MAG: "63", CHA: "50", CHM: "80",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Attaque morsure puis deux attaque de griffes",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> Le dragon effectue trois attaques, une sa mâchoires et deux avec ses griffes"
+          },
+          {
+            name: "Morsure",
+            effect: "Inflige 7 (2d6) dégâts de feu",
+            dmg: "19 ou (2d10+8)",
+            type: "Perforants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Morsure.</span> Attaque de corps à corps, une cible. Touché : 19 (2d10 + 8), plus 7 (2d6) dégâts de feu"
+          },
+          {
+            name: "Griffe",
+            effect: "NC",
+            dmg: "15 ou (2d6+8)",
+            type: "Tranchants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Griffe.</span> Attaque de corps à corps, une cible. Touché : 15 (2d6 + 8)"
+          },
+          {
+            name: "Queue",
+            effect: "NC",
+            dmg: "17 ou (2d8+8)",
+            type: "Contondants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Queue.</span> Attaque de corps à corps, une cible. Touché : 17 (2d8 + 8)"
+          },
+          {
+            name: "Souffle de feu",
+            effect: "Esquive, subissez la moitier des dégâts",
+            dmg: "63 ou (18d6)",
+            type: "Feu",
+            range: "Cône 18m",
+            target: "Multiple",
+            desc: "<span>Souffle de feu (Recharge 5-6).</span> Le dragon soufle du feu en cône de 18m, inflige 63 (18d6) dégâts de feu"
+          },
+        ]
+      },
+      {
+        name: "Jeune Dragon Rouge",
+        type: "Dragon de Taille Gigantesque",
+        PA: "0", PV: "178", FOR: "75", MAG: "48", CHA: "40", CHM: "65",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Attaque morsure puis deux attaque de griffes",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> Le dragon effectue trois attaques, une sa mâchoires et deux avec ses griffes"
+          },
+          {
+            name: "Morsure",
+            effect: "Inflige 3 (1d6) dégâts de feu",
+            dmg: "17 ou (2d10+6)",
+            type: "Perforants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Morsure.</span> Attaque de corps à corps, une cible. Touché : 17 (2d10 + 6), plus 3 (1d6) dégâts de feu"
+          },
+          {
+            name: "Griffe",
+            effect: "NC",
+            dmg: "13 ou (2d6+6)",
+            type: "Tranchants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Griffe.</span> Attaque de corps à corps, une cible. Touché : 13 (2d6 + 6)"
+          },
+          {
+            name: "Souffle de feu",
+            effect: "Esquive, subissez la moitier des dégâts",
+            dmg: "56 ou (16d6)",
+            type: "Feu",
+            range: "Cône 9m",
+            target: "Multiple",
+            desc: "<span>Souffle de feu (Recharge 5-6).</span> Le dragon soufle du feu en cône de 9m, inflige 56 (16d6) dégâts de feu"
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Bandits",
+    desc: "Les bandits vagabondent en bandes et sont parfois dirigés par des malfrats, des vétérans ou des mages. Tous les bandits ne sont pas mauvais. L'oppression, la sécheresse, les épidémies ou la famine peuvent souvent entraîner d'honnêtes gens vers une vie de banditisme. Les pirates sont des bandits de haute mer. Ils peuvent être des flibustiers intéressés uniquement par les trésors et le meurtre, ou être des corsaires légitimés par la couronne pour attaquer et piller les navires d'une nation ennemie.",
+    img: "bestiary/bandits.jpeg",
+    cards: [
+      {
+        name: "Bandit",
+        type: "Humanoïde de Taille Moyenne",
+        PA: "1", PV: "11", FOR: "55", MAG: "50", CHA: "52", CHM: "47",
+        act: [
+          {
+            name: "Cimeterre",
+            effect: "NC",
+            dmg: "5 ou (1d8+1)",
+            type: "Tranchants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Cimeterre.</span> Attaque de corps à corps, une cible. Touché : 5 (1d8 + 1)"
+          },
+          {
+            name: "Arbalète légère",
+            effect: "NC",
+            dmg: "4 ou (1d6+1)",
+            type: "Perforants",
+            range: "24/96m",
+            target: "1",
+            desc: "<span>Arbalète légère.</span> Attaque d'arme à distance, Touché : 4 (1d6 + 1)"
+          },    
+        ]
+      },
+      {
+        name: "Capitaine Bandit",
+        type: "Humanoïde de Taille Moyenne",
+        PA: "2", PV: "65", FOR: "60", MAG: "50", CHA: "57", CHM: "52",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Attaque deux fois avec son cimeterre puis une attaque de dague ou Lance deux fois ses dagues",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> Attaque deux fois avec son cimeterre puis une attaque de dague ou Lance deux fois ses dagues"
+          },
+          {
+            name: "Cimeterre",
+            effect: "NC",
+            dmg: "6 ou (1d6+3)",
+            type: "Tranchants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Cimeterre.</span> Attaque de corps à corps, une cible. Touché : 6 (1d6 + 3)"
+          },
+          {
+            name: "Dagues",
+            effect: "NC",
+            dmg: "5 ou (1d4+3)",
+            type: "Perforants",
+            range: "CAC ou 6/18m",
+            target: "1",
+            desc: "<span>Dagues.</span> Attaque d'arme au corps à corps ou  à distance, Touché : 5 (1d4 + 3)"
           },
         ]
       },

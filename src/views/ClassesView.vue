@@ -52,7 +52,7 @@ function getImageUrl(name: string) {
   </article>
   <article>
     <div class='flex'>
-      <p class='descOrga'>Lorsque vous maîtriser une classe d'un rang pour la première fois vous obetenez un bonus en caractéristiques à répartir </p>
+      <p class='descOrga'>Lorsque vous maîtriser une classe d'un rang pour la première fois vous obetenez un bonus en caractéristiques à répartir dans la FOR, MAG, CHA et CHM</p>
     </div>
     <table>
       <thead>
@@ -66,7 +66,7 @@ function getImageUrl(name: string) {
       </thead>
       <tbody>
         <tr>
-          <td>Caractéristiques gagnées</td>
+          <td><p>Caract. gagnées</p></td>
           <td>+ 5</td>
           <td>+ 10</td>
           <td>+ 20</td>
