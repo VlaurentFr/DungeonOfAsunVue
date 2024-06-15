@@ -14,7 +14,7 @@ const router = useRouter();
     <div id="section-1">
       <div>
         <h3>Les mecaniques de bases</h3>
-        <p>La mécanique de base est celle du lancé de dés pour réussir une actions. L'actions est réussi si la valeur obtenue est inférieur à la statistique exigée. On aura donc soit un jets de <span>force</span> pour un déplacement complexe ou une attaque avec une arme, soit un jet de <span>magie</span> pour l'usage de la magie. Lorsqu'une attaque est réussi qu'elle soit magique ou physique, un certains nombres de dés sont lancées afin de déterminer les points de vie infligées à la cible dépendant du sort et de l'armes utilisées. Lorsque vous êtes attaqué, vous avez <span>CHA %</span> d'esquiver dans la mesure du possible.</p>
+        <p>La mécanique de base est celle du lancé de dés pour réussir une actions. L'actions est réussi si la valeur obtenue est inférieur à la statistique exigée. On aura donc soit un jets de <span>force</span> pour un déplacement complexe ou une attaque avec une arme, soit un jet de <span>magie</span> pour l'usage de la magie. Lorsqu'une attaque est réussi qu'elle soit magique ou physique, un certains nombres de dés sont lancées afin de déterminer les points de vie infligées à la cible dépendant du sort et de l'armes utilisées. Lorsque vous êtes attaqué, vous avez <span>DEX %</span> d'esquiver dans la mesure du possible et  une fois par tours <span>FOR %</span> de chance de parrer.</p>
       </div>
       <div class="image-left">
         <img src="@/assets/combats/combat1.png" />
@@ -62,9 +62,9 @@ const router = useRouter();
         <h3>Les postures</h3>
         <p>
           Les postures sont des possibilités tactiques offertes aux personnages pour mettre l'accent sur une approche des situations au détriment d'autres caractéristiques. La posture peut être changée en début de tour uniquement.
-          La posture offensive permet à un personnage d'infliger automatiquement le maximum de dégâts possibles, sans avoir à jeter de dé de dégâts. En revanche, toute possibilité de défense est annulée.
-          La posture défensive permet à l'utilisateur de répondre à une attaque réussie par une action de défense, comme une parade ou une esquive, annulant les dégâts. Si vous subisser deux attaque consecutif vous pouver faire la deuxieme action de défense pas encore réalisé lors de ce tour. L'esquive n'est normalement pas active contre une attaque magique mais, pour ne pas la réduire à une attaque à "dêgats automatique", le joueur en posture défensive peut esquiver les attaques magiques sur une réussite critique.
-          La posture focus réduit le nombre de points d'énergie nécessaires pour utiliser l'énergie est réduites de 1 tout les 5 points de magie utilisés et octroie un bonus aux jets de magie (+5 MAG). En revanche, toute possibilité de défense est annulée.
+          <span>La posture offensive</span> permet à un personnage d'infliger automatiquement le maximum de dégâts possibles, sans avoir à jeter de dé de dégâts. En revanche, toute possibilité de défense est annulée.
+          <span>La posture défensive</span> permet à l'utilisateur de répondre à une attaque réussie par une action de défense, comme une parade ou une esquive, annulant les dégâts. Si vous subisser deux attaque consecutif vous pouver faire la deuxieme action de défense pas encore réalisé lors de ce tour. L'esquive n'est normalement pas active contre une attaque magique mais, pour ne pas la réduire à une attaque à "dêgats automatique", le joueur en posture défensive peut esquiver les attaques magiques sur une réussite critique.
+          <span>La posture focus</span> réduit le nombre de points d'énergie nécessaires pour utiliser l'énergie est réduites de 1 tout les 5 points de magie utilisés et octroie un bonus aux jets de sagesse (+5 SAG). En revanche, toute possibilité de défense est annulée.
         </p>
       </div>
       <div class="little-text">

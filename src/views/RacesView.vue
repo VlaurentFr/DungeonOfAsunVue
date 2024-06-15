@@ -56,7 +56,7 @@ function getImageUrl(name: string) {
         <h3>{{ h.name }}</h3>
         <div class="race">
           <img :src="getImageUrl(h.img)"/>
-          <p>{{ h.desc }}</p>
+          <p v-html="h.desc"></p>
         </div>
       </div>
     </div>
@@ -66,7 +66,7 @@ function getImageUrl(name: string) {
         <h3>{{ h.name }}</h3>
         <div class="race">
           <img :src="getImageUrl(h.img)"/>
-          <p>{{ h.desc }}</p>
+          <p v-html="h.desc"></p>
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@ function getImageUrl(name: string) {
         <h3>{{ h.name }}</h3>
         <div class="race">
           <img :src="getImageUrl(h.img)"/>
-          <p>{{ h.desc }}</p>
+          <p v-html="h.desc"></p>
         </div>
       </div>
     </div>
@@ -86,7 +86,7 @@ function getImageUrl(name: string) {
         <h3>{{ h.name }}</h3>
         <div class="race">
           <img :src="getImageUrl(h.img)"/>
-          <p>{{ h.desc }}</p>
+          <p v-html="h.desc"></p>
         </div>
       </div>
     </div>
@@ -96,7 +96,7 @@ function getImageUrl(name: string) {
         <h3>{{ h.name }}</h3>
         <div class="race">
           <img :src="getImageUrl(h.img)"/>
-          <p>{{ h.desc }}</p>
+          <p v-html="h.desc"></p>
         </div>
       </div>
     </div>
@@ -140,11 +140,16 @@ function getImageUrl(name: string) {
   align-items: center;
   transition: all 600ms ease-in-out;
   padding: 0;
+  overflow: hidden;
+  border: solid transparent 4px;
 }
 #races button:hover {
   transform-origin: bottom;
   transform: scale(1.05);
   z-index: 1;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  border: solid var(--primaryColor) 4px
 }
 #races button div {
   position: relative;
@@ -221,6 +226,9 @@ function getImageUrl(name: string) {
   #races {
     flex-direction: column;
     justify-content: flex-start;
+  }
+  .race img, .race:after{
+    display: none
   }
 }
 

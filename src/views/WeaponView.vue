@@ -24,7 +24,7 @@ const compRankB = computed(() => {
 <template>
   <div class='visible'>
     <div class='header'>
-      <h1>La Maîtrises d'armes</h1>
+      <h1>Les Maîtrises d'armes</h1>
       <!-- <h2>Découvrez comment créer votre personnage pour<span> jouer </span></h2> -->
     </div>
       <div class="title-section">

@@ -183,6 +183,36 @@ export const hands = [
     type: '2 mains',
     cost: '50 po'
   },
+  {
+    name: 'Tonfa de Bois',
+    dmg: '1d4',
+    type: '2 mains',
+    cost: '5 po'
+  },
+  {
+    name: 'Tonfa de Fer',
+    dmg: '1d6',
+    type: '2 mains',
+    cost: '10 po'
+  },
+  {
+    name: 'Tonfa d\'Acier',
+    dmg: '1d10',
+    type: '2 mains',
+    cost: '20 po'
+  },
+  {
+    name: 'Tonfa d\'Argent',
+    dmg: '1d12',
+    type: '2 mains',
+    cost: '30 po'
+  },
+  {
+    name: 'Tonfa Héros',
+    dmg: '2d8',
+    type: '2 mains',
+    cost: '50 po'
+  },
 ]
 export const bows = [
   {
@@ -208,6 +238,30 @@ export const bows = [
     dmg: '2d8',
     type: '2 mains',
     cost: '50 po'
+  },
+  {
+    name: 'Arbalète de Fer',
+    dmg: '1d6+1',
+    type: '2 mains',
+    cost: '15 po'
+  },
+  {
+    name: 'Arbalète d\'Acier',
+    dmg: '1d10+1',
+    type: '2 mains',
+    cost: '20 po'
+  },
+  {
+    name: 'Arbalète d\'Argent',
+    dmg: '1d12+1',
+    type: '2 mains',
+    cost: '35 po'
+  },
+  {
+    name: 'Arbalète Héros',
+    dmg: '2d8+1',
+    type: '2 mains',
+    cost: '55 po'
   },
 ]
 export const masses = [

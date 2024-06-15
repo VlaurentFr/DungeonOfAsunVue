@@ -56,9 +56,10 @@ function toggle() {
         <p v-if="!isActive && mobs.desc" class="general-desc">{{ mobs.desc }}</p>
       </div>
       <div v-if="!isActive && (mobs.desc || mobs.img)" class="img-container">
-        <div class="img-filter" v-if="mobs.img"></div>
+        <div class="img-filter" v-if="mobs.img && !mobs.by"></div>
         <img class="background-img" src="../assets/Void-green.svg">
         <img class="mob-img" v-if="mobs.img" :src="getImageUrl(mobs.img)"/>
+        <i v-if="mobs.by">by: {{ mobs.by }}</i>
       </div>
       <div class="cards-container">
         <h4 v-if="!isActive">Caractéristiques</h4>
@@ -92,12 +93,12 @@ function toggle() {
                     <p class="stat-value">{{ m.FOR }}</p>
                   </div>
                   <div class="stat">
-                    <p class="stat-title">Magie</p>
-                    <p class="stat-value">{{ m.MAG }}</p>
+                    <p class="stat-title">Dextérité</p>
+                    <p class="stat-value">{{ m.DEX }}</p>
                   </div>
                   <div class="stat">
-                    <p class="stat-title">Chance</p>
-                    <p class="stat-value">{{ m.CHA }}</p>
+                    <p class="stat-title">Sagesse</p>
+                    <p class="stat-value">{{ m.SAG }}</p>
                   </div>
                   <div class="stat">
                     <p class="stat-title">Charisme</p>
@@ -256,6 +257,7 @@ input:focus-visible {
   position: relative;
   overflow: visible;
   margin-left: auto;
+  text-align: center;
 
 }
 .background-img {

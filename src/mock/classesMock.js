@@ -75,7 +75,7 @@ export const noviceClasses = [
   {
     name: `Apprenti Pyromancien`,
     img: `classes/pyromancer.png`,
-    spell: ['Feu'],
+    spell: ['Boule de Feu'],
     weapons: ['Magie D'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "L'Apprenti Pyromancien est un jeune praticien des arts du feu, cherchant à maîtriser les flammes et à canaliser le pouvoir ardent du pyromancien. Bien que ses compétences ne soient pas encore pleinement développées, l'Apprenti Pyromancien commence son voyage dans le monde de la magie en apprenant les rudiments de la manipulation du feu. Ses sorts peuvent inclure des petites boules de feu, des flammes qui dansent et peut-être même des flammèches contrôlées. Cependant, en raison de son inexpérience, ses pouvoirs peuvent parfois être imprévisibles et nécessitent une concentration intense. L'Apprenti Pyromancien est souvent guidé par un mentor plus expérimenté pour éviter les dangers potentiels liés à la magie du feu. En dehors de l'entraînement, il peut être perçu comme curieux, avide d'apprendre et parfois un peu trop enclin à tester ses capacités, parfois au détriment de la sécurité."
@@ -91,7 +91,7 @@ export const noviceClasses = [
   {
     name: `Apprenti Zephyr`,
     img: `classes/Zephyr.png`,
-    spell: ['Vent'],
+    spell: ['Tornade'],
     weapons: ['Magie D'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "L'Apprenti Zephyr est un étudiant engagé dans l'art de manipuler les vents et les courants d'air. Son initiation dans le domaine du Zephyr le conduit à apprendre à sentir et à diriger les flux atmosphériques. Les premiers pas de l'apprenti impliquent généralement la création de brises légères, la manipulation de petits tourbillons, ou même la capacité de déplacer de légères particules dans l'air. Toutefois, en raison de son statut d'apprenti, la maîtrise complète des tempêtes et des bourrasques est encore loin. L'Apprenti Zephyr est souvent supervisé par un maître expérimenté qui le guide à travers les subtilités de la manipulation des vents. En dehors de son apprentissage, il peut être perçu comme quelqu'un qui apprécie la liberté du vent et qui a un profond respect pour les forces naturelles."
@@ -99,7 +99,7 @@ export const noviceClasses = [
   {
     name: `Apprenti Mage Gris`,
     img: `classes/grey-mage.png`,
-    spell: ['Poison'],
+    spell: ["Boule d'Acide"],
     weapons: ['Magie D'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "Malgré son titre d’apprenti mage, il ne fait en général pas partie d’une caste classique de l’école de magie. En effet, l’on peut distinguer l’Apprenti Mage Gris des castes conventionnelles car la Magie Grise est enseignée par des assassins. Longtemps ignorée, la magie a fini par rejoindre l’éventail des capacités des plus grands assassins. Pouvoir empoisonner une cible à distance au lieu de se rapprocher de sa cible et de son verre, devenir invisible pour la poignarder dans une lieu bondé, tant de capacités qui furent longtemps éclipsées avant de mettre leurs égo de côté pour accepter cette “aide extérieure”. En général, le mentor de l’Apprenti Mage Gris ne lui enseigne pas comment utiliser ces magies, mais les utilise plutôt contre lui pour lui enseigner à s’en prémunir. Apprendre comment contrer ces sorts plutôt que de les utiliser, permet d’être plus efficace contre une cible habituée à ce genre de tactiques."
@@ -107,7 +107,7 @@ export const noviceClasses = [
   {
     name: `Apprenti Druide`,
     img: `classes/druid.png`,
-    spell: ['Plante', 'Terre'],
+    spell: ['Immobilisation verte', 'Rocher destructeur'],
     weapons: ['Magie D'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "L'Apprenti Druide est un élève au sein de l'ancienne tradition des druides, cherchant à comprendre et à maîtriser la magie liée à la nature. Initiant son parcours dans le monde des druides, il apprend les bases de la communication avec les éléments naturels, la guérison par les plantes, et la capacité à se connecter avec les esprits de la faune. Les sorts de l'Apprenti Druide peuvent inclure la croissance accélérée des plantes, la guérison légère, et la capacité à parler avec les animaux. Cependant, en tant qu'apprenti, son pouvoir est limité et nécessite une compréhension plus profonde pour atteindre son plein potentiel. Généralement guidé par un mentor expérimenté, l'Apprenti Druide explore les mystères de la nature et apprend à maintenir l'équilibre entre les forces du bien et du mal. En dehors de son apprentissage, il peut être perçu comme un individu respectueux de l'environnement, cherchant à protéger la nature et à vivre en harmonie avec elle."
@@ -149,7 +149,7 @@ export const noviceClasses = [
     name: `Clerc`,
     img: `classes/Clerc.png`,
     weapons: ['Magie C'],
-    spell: ['Soin', 'Lumière'],
+    spell: ['Soin', 'Lumière Divine'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "Le Clerc est un serviteur dévoué de forces divines, canalisateur de la lumière et gardien des principes sacrés. Sa magie est empreinte de la bénédiction des dieux, lui conférant le pouvoir de guérir les blessures, de protéger contre les forces obscures, et même d'invoquer la colère divine sur les ennemis. Armé d'une foi inébranlable, le Clerc peut également avoir des compétences de purification, de restauration, et de résurrection. Son rôle est souvent celui d'un guérisseur sur le champ de bataille, mais il peut également être un conseiller spirituel, guidant sa communauté vers la vertu et la piété. Bien que la plupart des Clercs se consacrent aux divinités bienveillantes, certains peuvent choisir des chemins plus sombres, devenant des inquisiteurs ou des champions de divinités vengeresses. En dehors des conflits, le Clerc est souvent un membre central de la vie religieuse, dirigeant des rituels, dispensant des enseignements et fournissant des soins spirituels à ceux qui en ont besoin."
   },
@@ -210,7 +210,7 @@ export const avancedClasses = [
   {
     name: `Pyromancien`,
     img: `classes/pyromancer.png`,
-    spell: ['Feu', 'Bolganone'],
+    spell: ['Boule de Feu', 'Bolganone'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
     desc: " Le Pyromancien est un praticien des arts du feu, capable de manipuler les flammes avec une maîtrise exceptionnelle. Enflammant l'air autour de lui, il peut engendrer des boules de feu, des colonnes de flammes, et même contrôler le feu pour frapper ses ennemis à distance. La magie du Pyromancien est souvent spectaculaire, empreinte de puissance brute et de destruction. Certains Pyromanciens peuvent maîtriser des sorts plus complexes, tels que la création d'incendies massifs ou l'invo- cation de créatures liées au feu. Sur le champ de bataille, le Pyromancien est redoutable, infligeant des dégâts ravageurs à ses ennemis. En dehors du combat, il peut être un chercheur de connaissances interdites liées au feu, un manipulateur des éléments pour des tâches utilitaires, ou même un artisan spécialisé dans la forge magique. Bien que le feu puisse être perçu comme une force destructrice, certains Pyromanciens peuvent être motivés par la passion, la créativité ou même la protection de leur environnement."
@@ -226,7 +226,7 @@ export const avancedClasses = [
   {
     name: `Zephyr`,
     img: `classes/Zephyr.png`,
-    spell: ['Vent', 'Vents Tranchants'],
+    spell: ['Tornade', 'Vents Tranchants'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
     desc: "Le Zephyr est un manipulateur des vents, capable de canaliser et de diriger les courants d'air avec une habileté exceptionnelle. Sa magie est liée aux éléments atmosphériques, lui permettant de créer des bourrasques, des rafales, et même des tempêtes. Les Zephyrs peuvent influencer la vitesse du vent, altérer les trajectoires des projectiles, et même se déplacer avec une agilité surnaturelle en utilisant les courants d'air. Certains peuvent même posséder la capacité de contrôler la météo sur une petite échelle. Sur le champ de bataille, le Zephyr excelle dans la mobilité, évitant les attaques et infligeant des dégâts à distance avec des attaques éoliennes. En dehors du combat, il peut être un explorateur intrépide, un messager rapide, ou même un gardien des cieux, utilisant ses pouvoirs pour prévenir les catastrophes naturelles. Bien que certains Zephyrs puissent être considérés comme imprévisibles en raison de leur connexion avec les vents capricieux, d'autres peuvent chercher à maintenir l'équilibre naturel et à protéger les régions qu'ils considèrent comme sacrées."
@@ -234,7 +234,7 @@ export const avancedClasses = [
   {
     name: `Mage Gris`,
     img: `classes/grey-mage.png`,
-    spell: ['Poison', 'Invisibilité'],
+    spell: ['Boule d\'Acide', 'Invisibilité'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
     desc: "Le Mage Gris est un maître de la Magie Grise, une discipline enseignée par des assassins. Contrairement aux mages conventionnels, les Mages Gris utilisent leurs pouvoirs pour des actions furtives et létales, comme empoisonner à distance ou devenir invisibles pour frapper en pleine foule. Formés de manière intense et pragmatique, les Mages Gris apprennent à se prémunir contre la magie utilisée contre eux par leurs mentors. Cette méthode leur confère une résistance unique et une compréhension profonde des sorts qu'ils pourraient rencontrer. Opérant dans l'ombre, les Mages Gris acceptent la combinaison de la furtivité et de la magie, se montrant opportunistes et pragmatiques. Leur loyauté est complexe et dictée par des codes personnels, rendant ces mages imprévisibles et extrêmement dangereux."
@@ -242,7 +242,7 @@ export const avancedClasses = [
   {
     name: `Druide`,
     img: `classes/druid.png`,
-    spell: ['Plante', 'Terre', 'Récupération'],
+    spell: ['Immobilisation verte', 'Rocher destructeur', 'Récupération'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
     desc: "Le Druide est un gardien de la nature, un praticien des arts mystiques liés aux forces de la terre, de l'eau et du ciel. Sa magie est enracinée dans la connexion profonde avec les éléments naturels. Les Druides peuvent guérir, communiquer avec les animaux, et même influencer la croissance des plantes. Certains peuvent se transformer en formes animales, tandis que d'autres peuvent invoquer des esprits de la nature pour les aider. Sur le champ de bataille, le Druide peut être un guérisseur, un transformeur d'animorphe, ou un manipulateur des éléments naturels. En dehors du combat, il peut être un gardien des forêts, un protecteur de la vie sauvage, ou un conseiller spirituel. Les Druides sont souvent liés à des sociétés secrètes ou à des cultes anciens, et leur magie est imprégnée d'un profond respect pour l'équilibre naturel de la vie."
@@ -293,7 +293,7 @@ export const avancedClasses = [
     name: `Prêtre`,
     img: `classes/Clerc.png`,
     weapons: ['Magie A'],
-    spell: ['Soin', 'Lumière','Nosferatu','Remède'],
+    spell: ['Soin', 'Lumière Divine','Nosferatu','Remède'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
     desc: "Les prêtres sont des serviteurs dévoués des puissances divines, canalisant la grâce sacrée pour guérir, protéger et purifier. Leur force réside dans leur foi inébranlable et leur capacité à invoquer les bénédictions divines pour soutenir leurs alliés tout en maudissant les forces du mal. Les prêtres peuvent varier dans leurs compétences spécifiques en fonction de la divinité à laquelle ils sont dévoués."
   },
@@ -301,7 +301,7 @@ export const avancedClasses = [
     name: `Croisé`,
     img: `classes/Croise.png`,
     weapons: ['1 Rang B, Magie C'],
-    spell: ['Soin', 'Lumière','Sagitae','Remède'],
+    spell: ['Lumière Divine','Sagitae'],
     mastery: ['+ 20 PV', '+ 10 Énergie'],
     desc: "Le Croisé est un guerrier dévoué, motivé par une foi inébranlable envers une cause sacrée ou une divinité. Armé de lourdes armures et de puissantes armes, le Croisé se distingue par sa loyauté, son courage et son engagement envers la justice. Sur le champ de bataille, il est le défenseur inflexible de la foi, capable de résister aux attaques ennemies tout en infligeant des dégâts considérables. Les Croisés peuvent également être dotés de pouvoirs divins, les aidant à guérir les blessures, à repousser les forces des ténèbres, et même à exorciser des entités maléfiques. En dehors du combat, le Croisé est souvent un champion de sa foi, voyageant pour répandre les enseignements sacrés, protéger les innocents et lutter contre les hérétiques ou les créatures maléfiques. Bien qu'ils puissent appartenir à des ordres religieux, les Croisés peuvent aussi être des individus agissant de manière indépendante, portant la lumière divine là où les ténèbres menacent d'envahir."
   },
@@ -374,7 +374,7 @@ export const masterClasses = [
   {
     name: `Maître Pyromancien`,
     img: `classes/pyromancer.png`,
-    spell: ['Feu', 'Bolganone', 'Ragnarok', 'Météore'],
+    spell: ['Boule de Feu', 'Bolganone', 'Ragnarok', 'Météore'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
     desc: " Le Maître Pyromancien est un sorcier qui a atteint le sommet de la maîtrise des flammes, manipulant le feu avec une expertise incomparable. Ses sorts pyromanciens vont au-delà des simples boules de feu, embrasant le champ de bataille avec des flammes dévastatrices. Grâce à une connaissance approfondie des arts du feu, le Maître Pyromancien peut créer des tempêtes de flammes, des murs de feu impénétrables et même canaliser le pouvoir du feu pour renforcer ses propres capacités. Certains Maîtres Pyromanciens peuvent également maîtriser la métamorphose, prenant l'apparence de créatures enflammées pour intimider leurs adversaires. Cependant, avec un tel pouvoir destructeur vient également le risque de perdre le contrôle, et le Maître Pyromancien doit constamment équilibrer sa passion pour le feu avec la prudence nécessaire pour éviter des conséquences catastrophiques. En dehors du champ de bataille, le Maître Pyromancien peut être un chercheur de connaissances anciennes liées au feu ou un artisan spécialisé dans la forge des armes et armures enflammées."
@@ -390,7 +390,7 @@ export const masterClasses = [
   {
     name: `Maître Zephyr`,
     img: `classes/Zephyr.png`,
-    spell: ['Vent', 'Vents Tranchants', 'Excalidur'],
+    spell: ['Tornade', 'Vents Tranchants', 'Excalidur'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
     desc: "Le Maître Zephyr est un sorcier spécialisé dans la maîtrise des vents et de l'air, manipulant la puissance des tempêtes avec une habileté incomparable. Sa magie de Zephyr va bien au-delà de simples bourrasques, lui permettant de générer des tornades, de contrôler la direction du vent, et même de canaliser l'énergie des tempêtes pour des attaques dévastatrices. Grâce à sa connexion profonde avec les courants d'air, le Maître Zephyr peut également se déplacer avec une agilité exceptionnelle, presque semblable à la lévitation, lui permettant de manœuvrer rapidement sur le champ de bataille. Certains Maîtres Zephyr peuvent avoir la capacité de prédire les changements météorologiques imminents et d'invoquer des éclairs puissants en utilisant l'électricité statique dans l'air. Cependant, la maîtrise de tels pouvoirs exige une compréhension subtile des flux atmosphériques et une sensibilité particulière aux changements dans la nature. En dehors du combat, le Maître Zephyr peut être un explorateur des cieux, cherchant à comprendre les mystères des vents et des nuages, ou un gardien de régions soumises à des conditions météorologiques extrêmes."
@@ -398,7 +398,7 @@ export const masterClasses = [
   {
     name: `Maître Mage Gris`,
     img: `classes/grey-mage.png`,
-    spell: ['Poison', 'Invisibilité', 'Corrosion'],
+    spell: ['Boule d\'Acide', 'Invisibilité', 'Corrosion'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
     desc: "Le Maître Mage Gris est un expert incontesté de la Magie Grise. Sa connaissance approfondie des sorts d'assassinat et des techniques de furtivité en fait un adversaire redoutable et une autorité respectée parmi les Mages Gris. Fort d'une longue expérience sur le terrain, le Maître Mage Gris a acquis une sagesse inestimable en matière de manipulation magique et d'intrigue. En tant que leader de la guilde des Mages Gris, il guide et enseigne aux nouveaux apprentis les secrets de leur art, garantissant la pérennité de leur tradition. Sa réputation s'étend bien au-delà des frontières des guildes. Les rois et les seigneurs font appel à ses services pour des missions délicates et des assassinats politiques. Bien qu'il préfère opérer dans l'ombre, sa présence est largement ressentie dans les cercles les plus puissants de la société, où il est à la fois redouté et respecté pour ses talents et son intégrité."
@@ -406,7 +406,7 @@ export const masterClasses = [
   {
     name: `Maître Druide`,
     img: `classes/druid.png`,
-    spell: ['Plante', 'Terre', 'Récupération', 'Seisme'],
+    spell: ['Immobilisation verte', 'Rocher destructeur', 'Récupération', 'Seisme'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
     desc: "Le Maître Druide est un gardien de la nature et un maître des arts druidiques. Ayant atteint le sommet de sa connexion avec la terre, la faune et les éléments, le Maître Druide peut façonner la réalité elle-même. Il a le pouvoir de contrôler les plantes, de communiquer avec les animaux, et même d'invoquer des forces élémentaires pour défendre la nature. Sa capacité à se transformer en différentes formes animales lui confère une adaptabilité remarquable sur le champ de bataille, pouvant devenir une créature puissante pour attaquer ou un être insaisissable pour éviter les dangers. Les sorts du Maître Druide peuvent également guérir, régénérer la terre et maintenir l'équilibre écologique. En tant que gardien de la nature, il peut être impliqué dans des quêtes visant à protéger les écosystèmes ou à repousser des forces malveillantes qui menacent l'harmonie naturelle. En dehors du combat, le Maître Druide est souvent un sage conseiller, prodiguant des enseignements sur l'importance de la coexistence pacifique avec la nature."
@@ -457,7 +457,7 @@ export const masterClasses = [
     name: `Evêque`,
     img: `classes/Clerc.png`,
     weapons: ['Magie S'],
-    spell: ['Soin', 'Lumière','Nosferatu','Remède','Aura','Sagitae','Abraxas'],
+    spell: ['Soin', 'Lumière Divine','Nosferatu','Remède','Sagitae','Abraxas'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
     desc: " L'Évêque est un prêtre de haut rang, investi d'une autorité ecclésiastique considérable. Au-delà de ses fonctions spirituelles, l'Évêque est doté de pouvoirs divins qui transcendent les simples pratiques religieuses. Il peut guérir les blessures, protéger contre les forces maléfiques et même infliger la colère divine à ceux qui menacent la foi. Sa connexion étroite avec la divinité lui confère également la capacité de prédire les événements futurs et de discerner le bien du mal. L'Évêque peut être un leader spirituel charismatique, guidant ses fidèles vers la vertu et la justice. Sur le champ de bataille, ses pouvoirs de guérison et de protection font de lui un soutien précieux, tandis que sa capacité à invoquer la lumière divine peut repousser les forces des ténèbres. En dehors du combat, l'Évêque peut jouer un rôle central dans la gestion des affaires religieuses et sociales de sa communauté, offrant conseils spirituels et aidant les nécessiteux."
   },
@@ -465,7 +465,7 @@ export const masterClasses = [
     name: `Grand Croisé`,
     img: `classes/Croise.png`,
     weapons: ['1 Rang A+, Magie A'],
-    spell: ['Soin', 'Lumière','Sagitae', 'Abraxas'],
+    spell: ['Lumière Divine','Sagitae', 'Abraxas'],
     mastery: ['+ 40 PV', '+ 20 Énergie'],
     desc: "Le Grand Croisé est un guerrier dévoué, alliant la force martiale à une profonde foi religieuse. Portant une armure sacrée et maniant une épée bénie, le Grand Croisé est un champion de la foi prêt à défendre les valeurs sacrées. Sa mission est souvent liée à l'éradication du mal, à la protection des innocents et à la réalisation des desseins divins. Doté d'une détermination inébranlable, le Grand Croisé inspire ses alliés et incarne la vertu sur le champ de bataille. Il peut également avoir des compétences spéciales liées à la détection du mal, à la purification des lieux corrompus et à la résistance aux forces obscures. En tant que défenseur de la foi, le Grand Croisé peut être reconnu comme un symbole d'espoir et de justice. En dehors des conflits, il peut assumer un rôle de leader spirituel, encourageant la piété et guidant sa communauté vers la lumière."
   },

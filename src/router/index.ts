@@ -11,7 +11,7 @@ const router = createRouter({
     {
       path: '/Home',
       name: 'home',
-      component: () => import('../views/HomeView.vue')
+      redirect: '/'
     },
     {
       path: '/Wizard',
@@ -22,7 +22,7 @@ const router = createRouter({
     {
       path: '/Rules/creation',
       name: 'rules-creation',
-      component: () => import('../views/RulesCreationView.vue')
+      component: () => import('../views/CreationView.vue')
     },
     {
       path: '/Rules/fight',
@@ -37,7 +37,7 @@ const router = createRouter({
     {
       path: '/Rules/weapons',
       name: 'rules-weapon',
-      component: () => import('../views/RulesWeaponView.vue')
+      component: () => import('../views/WeaponView.vue')
     },
     {
       path: '/Rules/spell',
@@ -47,13 +47,18 @@ const router = createRouter({
     {
       path: '/Rules/gear',
       name: 'rules-gear',
-      component: () => import('../views/RulesGearView.vue')
+      component: () => import('../views/GearView.vue')
+    },
+    {
+      path: '/Rules/legendary-gear',
+      name: 'rules-legendary-gear',
+      component: () => import('../views/LegendaryGearView.vue')
     },
     // UNIVERS
     {
       path: '/Univers/story',
       name: 'univers-story',
-      component: () => import('../views/UniversStoryView.vue')
+      component: () => import('../views/StoryView.vue')
     },
     {
       path: '/Univers/gods',
@@ -78,7 +83,7 @@ const router = createRouter({
     {
       path: '/Univers/races',
       name: 'univers-races',
-      component: () => import('../views/UniversRacesView.vue')
+      component: () => import('../views/RacesView.vue')
     },
     {
       path: '/Univers/faction',

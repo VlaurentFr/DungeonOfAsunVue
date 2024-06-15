@@ -40,7 +40,7 @@
 					Vous pouvez maintenant répartir vos points d'attribut pour déterminer les forces et les faiblesses de votre personnage.
 				</p>
 				<p>
-					 Choisissez judicieusement, car cela influencera vos compétences et capacités. Les guerriers auront besoin de force, les mages de la magie, et ainsi de suite. Vous possèdez <span>220 points</span> à répartir entre <span>la Force</span> (FRC), <span>la Magie</span> (MAG), <span>la Chance</span> (CHA) et <span>le Charisme</span> (CHM) avec au maximum 70 et minimum 30 dans chaque caractéristiques. Ainsi que <span>30 points</span> pour <span>les points de vie et d'énergie</span> (PV et PdE).
+					 Choisissez judicieusement, car cela influencera vos compétences et capacités. Les guerriers auront besoin de force, les mages de la sagesse, et ainsi de suite. Vous possèdez <span>220 points</span> à répartir entre <span>la Force</span> (FRC), <span>la Sagesse</span> (SAG), <span>la Dextérité</span> (DEX) et <span>le Charisme</span> (CHM) avec au maximum 70 et minimum 30 dans chaque caractéristiques. Ainsi que <span>30 points</span> pour <span>les points de vie et d'énergie</span> (PV et PdE).
 				</p>
 				<p>Vous pouvez également choisir votre rang d'armes, pour cela vous avez le droit de commencer avec un rang <span>D+</span>, 2 rang <span>D</span> et <span>E+</span> le reste sera de rang <span>E</span><br/>
 				Dans le cas d'une classe avancées vous commencer avec le rang <span>nécessaire</span> à votre classe à la place du rang <span>D+</span>. 

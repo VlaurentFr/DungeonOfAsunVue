@@ -3,11 +3,12 @@ export const MOB = [
     name: "Banshie",
     desc: "La mélancolique banshie est une créature malveillante formée à partir de l'esprit d'une femme elfe. Ses cheveux ceignent son visage tel un enchevêtrement désordonné, et son corps est vêtu de haillons vaporeux qui volent et tournent autour d'elle.",
     img: "bestiary/Banshee.png",
+    by:"2minutetabletop",
     cards: [
       {
         name: "Banshie",
         type: "Mort-vivant de taille Moyenne",
-        PA: "0", PV: "58", FOR: "10",  MAG: "65", CHA: "70", CHM: "85",
+        PA: "0", PV: "58", FOR: "10",  SAG: "65", DEX: "70", CHM: "85",
         act: [
           {
             name: "Touché corrupteur",
@@ -34,24 +35,27 @@ export const MOB = [
   {
     name: "Basilic",
     desc: "Le basilic est une horreur reptilienne munie de plusieurs paires de pattes, dont le regard transforme les victimes en pierre poreuse. La créature se nourrira ensuite de cette pierre, qu'elle brisera grâce à sa puissante mâchoire, qui reprendra sa forme organique une fois dans son gosier.",
+    img: "bestiary/basilic.png",
+    by: "2minutetabletop",
     cards: [
       {
         name: "Basilic",
         type: "Monstruosité de taille Moyenne",
-        PA: "5", PV: "52", FOR: "60",  MAG: "10", CHA: "40", CHM: "35",
+        PA: "5", PV: "52", FOR: "60",  SAG: "10", DEX: "40", CHM: "35",
         act: []
       },
     ],
   },
   {
     name: "Béhir",
-    desc: "",
-    img: "",
+    desc: "Le Behir est une créature monstrueuse dans Dungeons & Dragons, ressemblant à un gigantesque serpent avec des pattes multiples. Il est doté d'écailles bleues et d'une apparence sinueuse, capable de se déplacer rapidement et d'escalader des surfaces verticales. Le Behir est redouté pour son souffle électrique, capable de projeter une décharge foudroyante, et pour sa capacité à engloutir ses victimes entières. Vivant souvent dans des montagnes ou des cavernes, le Behir est un prédateur solitaire et territorial, constituant une menace mortelle pour tout aventurier qui croise son chemin.",
+    img: "bestiary/behir.png",
+    by: "2minutetabletop",
     cards: [
       {
         name: "Béhir",
         type: "Monstruosité de Très Grande taille",
-        PA: "5", PV: "52", FOR: "60", MAG: "10", CHA: "40", CHM: "35",
+        PA: "5", PV: "52", FOR: "60", SAG: "10", DEX: "40", CHM: "35",
         act: []
       },
     ],
@@ -59,12 +63,13 @@ export const MOB = [
   {
     name: "Gobelins",
     desc: "Les gobelins sont de petits humanoïdes malveillants qui vivent dans des donjons abandonnés ou dans des taudis lugubres. Individuellement faibles, ils se rassemblent en grand nombre pour tourmenter les autres créatures.",
-    img: "bestiary/gobelins.webp",
+    img: "bestiary/gobelins.png",
+    by:"2minutetabletop",
     cards: [
       {
         name: "Gobelins",
         type: "Humanoïdes de Petite taille",
-        PA: "1", PV: "7", FOR: "40",  MAG: "50", CHA: "70", CHM: "40",
+        PA: "1", PV: "7", FOR: "40",  SAG: "50", DEX: "70", CHM: "40",
         act: [
           {
             name: "Epée",
@@ -89,7 +94,7 @@ export const MOB = [
       {
         name: "Chef Gobelins",
         type: "Humanoïdes de Petite taille",
-        PA: "2", PV: "21", FOR: "50", MAG: "50", CHA: "70", CHM: "50",
+        PA: "2", PV: "21", FOR: "50", SAG: "50", DEX: "70", CHM: "50",
         act: [
           {
             name: "Attaques multiples",
@@ -124,13 +129,14 @@ export const MOB = [
   },
   {
     name: "Mimique",
-    desc: "",
+    desc: "Le Mimique est une créature trompeuse et redoutée. Capable de se métamorphoser en objets inanimés tels que des coffres, des portes ou des meubles, le Mimique utilise cette capacité pour attirer et piéger les aventuriers imprudents. Une fois sa proie à portée, il révèle sa forme véritable avec une bouche garnie de dents acérées et des pseudopodes gluants pour immobiliser et attaquer. Connus pour leur ruse et leur voracité, les Mimiques sont des prédateurs imprévisibles qui ajoutent un élément de surprise et de danger à toute exploration de donjon.",
     img: "bestiary/mimic.png",
+    by: "2minutetabletop",
     cards: [
       {
         name: "Mimique",
         type: "Monstruosité (métamorphe) de Taille Moyenne",
-        PA: "0", PV: "58", FOR: "85", MAG: "25", CHA: "60", CHM: "45",
+        PA: "0", PV: "58", FOR: "85", SAG: "25", DEX: "60", CHM: "45",
         act: [
           {
             name: "Morsure",
@@ -148,12 +154,13 @@ export const MOB = [
   {
     name: "Cultiste",
     desc: "Les cultistes prêtent allégeance à un sombre pouvoir. La plupart dissimulent leur engagement pour éviter d'être ostracisés, emprisonnés ou exécutés en raison de leurs croyances. Contrairement aux acolytes mauvais, les cultistes font souvent montre de signes de folie dans leurs croyances et l'accomplissement de leurs pratiques.",
-    img: "",
+    img: "bestiary/cultist.png",
+    by:"2minutetabletop",
     cards: [
       {
         name: "Cultiste",
         type: "Humanoïde (humain) de Taille Moyenne",
-        PA: "2", PV: "9", FOR: "52", MAG: "52", CHA: "60", CHM: "50",
+        PA: "2", PV: "9", FOR: "52", SAG: "52", DEX: "60", CHM: "50",
         act: [
           {
             name: "Cimeterre",
@@ -179,13 +186,14 @@ export const MOB = [
   },
   {
     name: "Efrit",
-    desc: "",
-    img: "",
+    desc: "L'Efrit est un puissant génie de feu. Ces êtres imposants et majestueux sont enveloppés de flammes, avec des corps musclés et des yeux brûlants. Connus pour leur tempérament impitoyable et leur amour pour la tyrannie, les Efrits règnent sur des citadelles de laiton et des paysages volcaniques, utilisant leur pouvoir sur le feu et la chaleur pour dominer et punir ceux qui osent les défier.",
+    img: "bestiary/efreeti.png",
+    by: "2minutetabletop",
     cards: [
       {
         name: "Efrit",
         type: "Elementaire de Grande Taille",
-        PA: "2", PV: "200", FOR: "90", MAG: "75", CHA: "70", CHM: "85",
+        PA: "2", PV: "200", FOR: "90", SAG: "75", DEX: "70", CHM: "85",
         act: [
           {
             name: "Attaques multiples",
@@ -221,12 +229,13 @@ export const MOB = [
   {
     name: "Elémentaire du Feu",
     desc: "Un semblant de silhouette humanoïde apparaît au centre de la capricieuse dévastation qu'est un élémentaire du feu. Où qu'il passe, il embrase tout ce qui l'entoure, ne laissant derrière lui que cendre et fumée.",
-    img: "",
+    img: "bestiary/fire-elemental.png",
+    by:"2minutetabletop",
     cards: [
       {
         name: "Elémentaire du Feu",
         type: "Elementaire de Grande Taille",
-        PA: "0", PV: "102", FOR: "62", MAG: "55", CHA: "77", CHM: "55",
+        PA: "0", PV: "102", FOR: "62", SAG: "55", DEX: "77", CHM: "55",
         act: [
           {
             name: "Attaques multiples",
@@ -253,12 +262,13 @@ export const MOB = [
   {
     name: "Elémentaire de l'Eau",
     desc: "Les élémentaires de l'eau ressemblent aux crêtes des vagues qui roulent sur le sol. Un élémentaire de l'eau engloutit toutes les créatures qui se dressent contre lui.",
-    img: "",
+    img: "bestiary/water-elemental.png",
+    by:"2minutetabletop",
     cards: [
       {
         name: "Elémentaire de l'Eau",
         type: "Elementaire de Grande Taille",
-        PA: "0", PV: "114", FOR: "75", MAG: "57", CHA: "62", CHM: "55",
+        PA: "0", PV: "114", FOR: "75", SAG: "57", DEX: "62", CHM: "55",
         act: [
           {
             name: "Attaques multiples",
@@ -294,12 +304,13 @@ export const MOB = [
   {
     name: "Elémentaire de l'Air",
     desc: "Un élémentaire de l'air est une masse d'air tourbillonnante prenant la vague apparence d'un visage. Il peut se transformer en un tourbillon hurlant, créant alors un cyclone destructeur qui éjecte tout sur son passage.",
-    img: "",
+    img: "bestiary/air-elemental.png",
+    by:"2minutetabletop",
     cards: [
       {
         name: "Elémentaire de l'Air",
         type: "Elementaire de Grande Taille",
-        PA: "0", PV: "90", FOR: "57", MAG: "55", CHA: "90", CHM: "55",
+        PA: "0", PV: "90", FOR: "57", SAG: "55", DEX: "90", CHM: "55",
         act: [
           {
             name: "Attaques multiples",
@@ -335,12 +346,13 @@ export const MOB = [
   {
     name: "Elémentaire de la Terre",
     desc: "Un élémentaire de la terre avance lourdement tel une colline humaine, balançant ses bras tels des massues. Sa tête et son corps sont fait de terre et de pierre, occasionnellement sertis de gros morceaux de métal, de gemmes et de minéraux luisants.",
-    img: "",
+    img: "bestiary/earth-elemental.png",
+    by:"2minutetabletop",
     cards: [
       {
         name: "Elémentaire de la Terre",
         type: "Elementaire de Grande Taille",
-        PA: "0", PV: "126", FOR: "90", MAG: "57", CHA: "50", CHM: "55",
+        PA: "0", PV: "126", FOR: "90", SAG: "57", DEX: "50", CHM: "55",
         act: [
           {
             name: "Attaques multiples",
@@ -366,13 +378,14 @@ export const MOB = [
   },
   {
     name: "Salamandre",
-    desc: "",
-    img: "",
+    desc: "La Salamandre, ou Serpent de Feu, est une créature élémentaire. Ressemblant à un serpent ou à un lézard humanoïde, la Salamandre est entourée de flammes vives et possède une peau écailleuse incandescente. Elle incarne la chaleur et la destruction, utilisant ses griffes brûlantes et sa queue enflammée pour incinérer ses ennemis. Les Salamandres sont souvent associées à des environnements volcaniques ou ardents, où elles prospèrent et répandent la dévastation.",
+    img: "bestiary/salamander.png",
+    by: "2minutetabletop",
     cards: [
       {
         name: "Salamandres",
         type: "Elementaire de Grande Taille",
-        PA: "0", PV: "90", FOR: "70", MAG: "55", CHA: "62", CHM: "55",
+        PA: "0", PV: "90", FOR: "70", SAG: "55", DEX: "62", CHM: "55",
         act: [
           {
             name: "Attaques multiples",
@@ -406,7 +419,7 @@ export const MOB = [
       {
         name: "Serpent de Feu",
         type: "Elementaire de Taille Moyenne",
-        PA: "", PV: "", FOR: "", MAG: "", CHA: "", CHM: "",
+        PA: "", PV: "", FOR: "", SAG: "", DEX: "", CHM: "",
         act: [
           {
             name: "",
@@ -424,12 +437,13 @@ export const MOB = [
   {
     name: "Méphites",
     desc: "Les méphites sont des créatures élémentaires petites et malveillantes, formées à partir des essences brutes des différents éléments. Ils se divisent en plusieurs types, chacun incarnant un élément particulier, tels que la boue, la fumée, la glace, le magma, la poussière et la vapeur. Ces créatures sont connues pour leur nature sournoise et espiègle, souvent causant des ravages mineurs par pur plaisir.",
-    img: "bestiary/magma-mephit.jpeg",
+    img: "bestiary/magma-mephit.png",
+    by:"2minutetabletop",
     cards: [
       {
         name: "Méphite Boueux",
         type: "Elementaire de Petite Taille",
-        PA: "0", PV: "27", FOR: "45", MAG: "50", CHA: "50", CHM: "45",
+        PA: "0", PV: "27", FOR: "45", SAG: "50", DEX: "50", CHM: "45",
         act: [
           {
             name: "Poings",
@@ -454,7 +468,7 @@ export const MOB = [
       {
         name: "Méphite Fumant",
         type: "Elementaire de Petite Taille",
-        PA: "0", PV: "22", FOR: "40", MAG: "50", CHA: "60", CHM: "50",
+        PA: "0", PV: "22", FOR: "40", SAG: "50", DEX: "60", CHM: "50",
         act: [
           {
             name: "Griffes",
@@ -479,7 +493,7 @@ export const MOB = [
       {
         name: "Méphite Gelé",
         type: "Elementaire de Petite Taille",
-        PA: "0", PV: "21", FOR: "40", MAG: "50", CHA: "55", CHM: "50",
+        PA: "0", PV: "21", FOR: "40", SAG: "50", DEX: "55", CHM: "50",
         act: [
           {
             name: "Griffes",
@@ -504,7 +518,7 @@ export const MOB = [
       {
         name: "Méphite Magmatique",
         type: "Elementaire de Petite Taille",
-        PA: "0", PV: "22", FOR: "45", MAG: "50", CHA: "50", CHM: "45",
+        PA: "0", PV: "22", FOR: "45", SAG: "50", DEX: "50", CHM: "45",
         act: [
           {
             name: "Griffes",
@@ -529,7 +543,7 @@ export const MOB = [
       {
         name: "Méphite Poussiéreux",
         type: "Elementaire de Petite Taille",
-        PA: "0", PV: "17", FOR: "35", MAG: "50", CHA: "60", CHM: "50",
+        PA: "0", PV: "17", FOR: "35", SAG: "50", DEX: "60", CHM: "50",
         act: [
           {
             name: "Griffes",
@@ -554,7 +568,7 @@ export const MOB = [
       {
         name: "Méphite Vaporeux",
         type: "Elementaire de Petite Taille",
-        PA: "0", PV: "21", FOR: "40", MAG: "45", CHA: "40", CHM: "45",
+        PA: "0", PV: "21", FOR: "40", SAG: "45", DEX: "40", CHM: "45",
         act: [
           {
             name: "Griffes",
@@ -580,13 +594,14 @@ export const MOB = [
   },
   {
     name: "Balor",
-    desc: "",
-    img: "",
+    desc: "Le Balor est l'un des démons les plus puissants et redoutés. Émanant une aura de terreur et de puissance brute, ce seigneur démoniaque se distingue par ses ailes de chauve-souris, son fouet flamboyant, et son épée longue et ardente. Enveloppé de flammes, le Balor incarne la destruction et la colère infernales, semant le chaos et la mort partout où il passe.",
+    img: "bestiary/balor.png",
+    by: "2minutetabletop",
     cards: [
       {
         name: "Balor",
         type: "Démon de Très Grande Taille",
-        PA: "0", PV: "262", FOR: "98", MAG: "68", CHA: "65", CHM: "79",
+        PA: "0", PV: "262", FOR: "98", SAG: "68", DEX: "65", CHM: "79",
         act: [
           {
             name: "Attaques multiples",
@@ -649,12 +664,13 @@ export const MOB = [
   {
     name: "Molosse infernal",
     desc: "Démon cracheurs de feu à la silhouette canine, les chiens de chasse infernaux sont communément au service de créatures maléfiques qui les utilisent comme compagnons ou chiens de garde.",
-    img: "bestiary/hellhound.jpeg",
+    img: "bestiary/hellhound.png",
+    by:"2minutetabletop",
     cards: [
       {
         name: "Molosse infernal",
         type: "Démon de Taille Moyenne",
-        PA: "0", PV: "45", FOR: "65", MAG: "55", CHA: "60", CHM: "50",
+        PA: "0", PV: "45", FOR: "65", SAG: "55", DEX: "60", CHM: "50",
         act: [
           {
             name: "Morsure",
@@ -682,11 +698,12 @@ export const MOB = [
     name: "Dragon Rouge",
     desc: "Une odeur de soufre et de roche volcanique enveloppe un dragon rouge, dont la silhouette se reconnaît à ses cornes et sa crête dorsale aiguisées. De la fumée s'échappe en permanence de son museau incurvé, et des flammes dansent dans ses yeux lorsqu'il se met en colère.",
     img: "bestiary/red_dragon.png",
+    by:"2minutetabletop",
     cards: [
       {
         name: "Dragon Rouge Vénérable",
         type: "Dragon de Très Grande Taille",
-        PA: "0", PV: "546", FOR: "100", MAG: "60", CHA: "73", CHM: "90",
+        PA: "0", PV: "546", FOR: "100", SAG: "60", DEX: "73", CHM: "90",
         act: [
           {
             name: "Attaques multiples",
@@ -738,7 +755,7 @@ export const MOB = [
       {
         name: "Dragon Rouge Adulte",
         type: "Dragon de Grande Taille",
-        PA: "0", PV: "256", FOR: "90", MAG: "63", CHA: "50", CHM: "80",
+        PA: "0", PV: "256", FOR: "90", SAG: "63", DEX: "50", CHM: "80",
         act: [
           {
             name: "Attaques multiples",
@@ -790,7 +807,7 @@ export const MOB = [
       {
         name: "Jeune Dragon Rouge",
         type: "Dragon de Taille Gigantesque",
-        PA: "0", PV: "178", FOR: "75", MAG: "48", CHA: "40", CHM: "65",
+        PA: "0", PV: "178", FOR: "75", SAG: "48", DEX: "40", CHM: "65",
         act: [
           {
             name: "Attaques multiples",
@@ -835,12 +852,13 @@ export const MOB = [
   {
     name: "Bandits",
     desc: "Les bandits vagabondent en bandes et sont parfois dirigés par des malfrats, des vétérans ou des mages. Tous les bandits ne sont pas mauvais. L'oppression, la sécheresse, les épidémies ou la famine peuvent souvent entraîner d'honnêtes gens vers une vie de banditisme. Les pirates sont des bandits de haute mer. Ils peuvent être des flibustiers intéressés uniquement par les trésors et le meurtre, ou être des corsaires légitimés par la couronne pour attaquer et piller les navires d'une nation ennemie.",
-    img: "bestiary/bandits.jpeg",
+    img: "bestiary/bandits.png",
+    by:"2minutetabletop",
     cards: [
       {
         name: "Bandit",
         type: "Humanoïde de Taille Moyenne",
-        PA: "1", PV: "11", FOR: "55", MAG: "50", CHA: "52", CHM: "47",
+        PA: "1", PV: "11", FOR: "55", SAG: "50", DEX: "52", CHM: "47",
         act: [
           {
             name: "Cimeterre",
@@ -865,7 +883,7 @@ export const MOB = [
       {
         name: "Capitaine Bandit",
         type: "Humanoïde de Taille Moyenne",
-        PA: "2", PV: "65", FOR: "60", MAG: "50", CHA: "57", CHM: "52",
+        PA: "2", PV: "65", FOR: "60", SAG: "50", DEX: "57", CHM: "52",
         act: [
           {
             name: "Attaques multiples",
@@ -894,6 +912,48 @@ export const MOB = [
             target: "1",
             desc: "<span>Dagues.</span> Attaque d'arme au corps à corps ou  à distance, Touché : 5 (1d4 + 3)"
           },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Chevalier",
+    desc: "Les chevaliers sont des guerriers ayant prêté allégeance à un dirigeant, un ordre religieux ou une noble cause. L'alignement du chevalier détermine à quel point le serment est honoré. Que ce soit en s'engageant dans une quête ou en patrouillant un royaume, un chevalier voyage souvent avec un entourage qui comprend écuyers et servants, lesquels sont des roturiers.",
+    img: "bestiary/knight.png",
+    by:"2minutetabletop",
+    cards: [
+      {
+        name: "Chevalier",
+        type: "Humanoïde de Taille Moyenne",
+        PA: "8", PV: "52", FOR: "70", DEX: "50", SAG: "45", CHM: "60",
+        act: [
+          {
+            name: "Attaques multiples",
+            effect: "Attaque deux fois avec son épée",
+            dmg: "",
+            type: "",
+            range: "",
+            target: "Soi-même",
+            desc: "<span>Attaques multiples.</span> Attaque deux fois avec son épée"
+          },
+          {
+            name: "Epée longues",
+            effect: "NC",
+            dmg: "10 ou (2d6+3)",
+            type: "Tranchants",
+            range: "CAC",
+            target: "1",
+            desc: "<span>Epée longues</span> Attaque de corps à corps, une cible. Touché : 10 (2d6 + 3)"
+          },
+          {
+            name: "Arbalète ou Arc",
+            effect: "NC",
+            dmg: "5 ou (1d10)",
+            type: "Perforants",
+            range: "30/120m",
+            target: "1",
+            desc: "<span>Arbalète ou Arc.</span> Attaque d'arme à distance, Touché : 5 (1d10)"
+          },    
         ]
       },
     ]

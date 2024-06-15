@@ -8,26 +8,13 @@
       <div>
 				<section>
 					<div class='title-page'>
-						<div id="play">
-							<img src="../assets/DoA.svg"/>
-						</div>
 						<div id="redirect">
-							<div class='redirect-card'>
-								<div class='circle'>
-									<h1>Univers</h1>
-								</div>
-								<div class='card-content'>
-									<h2>Découvrez l'univers de Dungeons of Asun</h2>
-                  <RouterLink to="/Univers/story">Découvrir</RouterLink>
-								</div>
-							</div>
-							<div class='redirect-card'>
-								<div class='circle'>
-									<h1>Règles du jeu</h1>
-								</div>
-								<div class='card-content'>
-									<h2>Découvrez les règles de Dungeons of Asun</h2>
-                  <RouterLink to="/Rules/creation">Découvrir</RouterLink>
+							<div class="title-container">
+								<h1><span>Jouez</span>à un JDR innovant</h1>
+								<p>Inspiré de tactical game</p>
+								<div>
+									<RouterLink id="main" to="/Rules/creation">Démarrer mon aventure</RouterLink>
+									<a href="#intro">Découvrir</a>
 								</div>
 							</div>
 							<img src="@/assets/cults/orc.png"/>
@@ -38,12 +25,77 @@
 			</div>
 			<div>
 					<section id="intro">
-							<h3>Bienvenue dans DungeonOfAsun</h3>
-							<p>Bienvenue dans Dungeon of Asun, un univers riche en histoires épiques, créatures légendaires, et défis sans fin. Que vous soyez un aventurier chevronné ou un novice curieux, notre monde vous offre une expérience unique de jeu de rôle avec ses propres règles, classes, maîtrise d'armes, mythologie, panthéon, objets et sorts.</p>
-							<img src="@/assets/gods/theomis2-character.png"/>
-							<div class="filter"></div>
+						<h3>Univers</h3>
+						<p>Un univers riche en histoires épiques, créatures légendaires, et défis sans fin. Que vous soyez un aventurier chevronné ou un novice curieux, notre monde vous offre une expérience unique de jeu de rôle avec ses propres règles, classes, maîtrise d'armes, mythologie, panthéon, objets et sorts.</p>
+						<article id="goods">
+							<div class="good">
+								<i class="fas fa-dice-d20"></i>
+								<p>heroïque fantaisie</p>
+							</div>
+							<div class="good">
+								<i class="fas fa-dice-d20"></i>
+								<p>heroïque fantaisie</p>
+							</div>
+							<div class="good">
+								<i class="fas fa-dice-d20"></i>
+								<p>heroïque fantaisie</p>
+							</div>
+						</article>
 					</section>
 
+					<section id="rules">
+						<div class="row">
+							<div>
+								<h3>Des règles abordables</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor libero id dicta aut quisquam dolores, nostrum pariatur repudiandae voluptate esse soluta placeat quos. Qui culpa natus nobis quidem quasi.</p>
+								<RouterLink to="/Rules/fight">Consulter les règles</RouterLink>
+							</div>
+							<img src="@/assets/gods/rhabus2-character.png"/>
+						</div>
+						<div class="wrapper option-1 option-1-1">
+							<ol class="stepper">
+								<li class="stepper__item">
+									<h5 class="stepper__title">Etape 1</h5>
+									<p class="stepper__desc">Créez votre personnage</p>
+								</li>
+								<li class="stepper__item">
+									<h5 class="stepper__title">Etape 2</h5>
+									<p class="stepper__desc">Choissisez votre classe</p>
+								</li>
+								<li class="stepper__item">
+									<h5 class="stepper__title">Etape 3</h5>
+									<p class="stepper__desc">Choisissez vos maîtrises d'armes</p>
+								</li>
+								<li class="stepper__item">
+									<h5 class="stepper__title">Etape 4</h5>
+									<p class="stepper__desc">Combattez !</p>
+								</li>
+							</ol>
+						</div>
+					</section>
+					<section id="basics">
+						<div class="row">
+							<img src="@/assets/gods/theomis2-character.png"/>
+							<div>
+								<h3>les basique du jeu de rôles</h3>
+								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsum exercitationem necessitatibus dolor ipsam ipsa sapiente quos nemo debitis earum, itaque fugit aliquid, rem illum sit cupiditate aperiam perspiciatis nam?</p>
+								<article id="goods" class="col">
+									<div class="good">
+										<i class="fas fa-dice-d20"></i>
+										<p>Des caractéristiques simples</p>
+									</div>
+									<div class="good">
+										<i class="fas fa-dice-d20"></i>
+										<p>Races communes et rares</p>
+									</div>
+									<div class="good">
+										<i class="fas fa-dice-d20"></i>
+										<p>Changement de classe facile</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</section>
 					<section id="features">
 						<h3>Nos Caractéristiques Uniques</h3>
 						<div id="features-slider">
@@ -73,175 +125,275 @@
 							</div>
 						</div>
 					</section>
-
-					<section id="perso">
-						<h3>Créez votre personnage :</h3>
-						<article>
-							<p>Concevez un héros unique en choisissant parmi une variété de races, de classes, et de compétences. Personnalisez l'apparence de votre personnage pour qu'il corresponde à votre vision du protagoniste ultime. Au cœur de Dungeon of Asun se trouve la possibilité de créer un héros qui incarne vos rêves les plus fous. Vous avez le choix entre une variété de races, chacune avec ses propres avantages et attributs, des elfes gracieux aux nains robustes en passant par les humains polyvalents. Personnalisez l'apparence de votre personnage, de son visage aux détails les plus subtils, et choisissez une classe qui déterminera votre style de jeu, que ce soit en tant que guerrier intrépide, mage puissant, assassin furtif, ou l'une des classes uniques qui vous sont proposées. Les possibilités sont infinies.</p>
-						</article>
-						<!-- <img src="@/assets/combats/combat2.png"/> -->
-						<img src="@/assets/gods/rhabus2-character.png"/>
-						<div class="filter"></div>
+					<section id="FAQ">
+						<h3>FAQ</h3>
+						<details>
+							<summary>Qu'est-ce que Dungeon of Asun ?</summary>
+							<div>
+								Dungeon of Asun est un jeu de rôle (JdR) immersif où les joueurs incarnent des personnages dans un univers fantastique. Les joueurs interagissent avec l'univers et entre eux en suivant les règles spécifiques du jeu.
+							</div>
+						</details>
+						<details>
+							<summary>Où puis-je trouver les règles ?</summary>
+							<div>
+								Les règles complètes de Dungeon of Asun sont disponibles dans notre section "Règles du Jeu" sur le site. Vous y trouverez des guides détaillés sur la création de personnages, les mécaniques de jeu, les sorts, et plus encore.
+							</div>
+						</details>
 					</section>
-					<section id="world-explore">
-						<h3>Explorez un monde vaste : </h3>
-						<article>
-							<p>Asun est un monde composé de contrées variées, allant des vastes plaines aux sommets enneigés des montagnes, en passant par des jungles luxuriantes et des déserts brûlants. Chaque région a sa propre histoire, ses peuples et sa culture. Les cités florissantes regorgent de marchands, de quêtes et de rencontres avec des personnages non-joueurs captivants. Les étendues sauvages sont habitées par des créatures sauvages et des donjons oubliés. Explorez cet univers vivant et respirez la liberté de l'aventure.</p>
-						</article>
-					</section>
-					<section id="adventure">
-						<h3>Aventures épiques : </h3>
-						<article>
-							<p>Laissez-vous entraîner dans des quêtes épiques qui vous conduiront dans des contrées lointaines, à la recherche de trésors fabuleux, de connaissances oubliées et de vérités insondables. Affrontez des monstres légendaires, résolvez des énigmes complexes et triomphez des donjons les plus dangereux. Chaque quête est une opportunité de vous révéler en tant qu'aventurier intrépide, et chaque donjon est un défi qui teste votre intelligence et vos compétences.</p>
-						</article>
-						<img src="@/assets/gods/quara2-character.png"/>
-						<div class="filter"></div>
-					</section>
-					<section id="pnj">
-						<h3>Alliés et Ennemis Inoubliables :</h3>
-						<article>
-							<p>Dungeon of Asun est peuplé de personnages non-joueurs mémorables. Tissez des liens avec des alliés fidèles, accomplissez des quêtes avec eux et découvrez leur histoire. Méfiez-vous des ennemis redoutables, des créatures mythiques et des boss surpuissants. Vos choix dans le jeu ont un impact significatif sur le monde qui vous entoure, et les conséquences de vos actes se feront ressentir à chaque tournant.</p>
-						</article>
-					</section>
-					<section id="systeme">
-							<h3>Système d'Évolution et de Personnalisation :</h3>
-							<article>
-								<p>Votre personnage évoluera au fil de son aventure, gagnant de l'expérience, maîtrisant de nouvelles compétences et s'améliorant au fur et à mesure. Choisissez comment vous souhaitez personnaliser votre héros en fonction de votre style de jeu, débloquez des compétences uniques et devenez un maître dans votre classe. Participez à la guerre ou au commerce, devenez un artisan accompli ou explorez les secrets de la magie. L'avenir de votre personnage dépend entièrement de vous.</p>
-							</article>
-					</section>
-
-					<!-- <section id="start">
-							<h3>Commencez Votre Aventure</h3>
-							<p>Prêt à commencer? <a href="#telecharger">Téléchargez les règles</a> et créez votre personnage dès aujourd'hui. Plongez dans le monde de Dungeon of Asun et écrivez votre propre légende.</p>
-					</section>
-
-					<footer>
-							<section id="contact">
-									<h2>Contactez-nous</h2>
-									<p>Si vous avez des questions ou besoin d'aide, n'hésitez pas à nous contacter via notre <a href="#page-contact">page de contact</a>.</p>
-							</section>
-							<p>&copy; 2024 Dungeon of Asun. Tous droits réservés.</p>
-					</footer> -->
 			</div>
 		</div>
   </main>
 </template>
 
 <style scoped>
-#play {
-	margin: auto;
-	width: fit-content;
-}
-#play img {
-  height: 164px;
-}
-
 #redirect {
-    margin: 64px auto;
+    margin: auto;
     display: flex;
     justify-content: center;
     gap: 64px;
     flex-wrap: wrap;
     width: fit-content;
-		position: relative;
 }
 
 #redirect img {
 	position: absolute;
-	top: -400px;
+	top: 0px;
 	width: 100vw;
-	height: 900px;
-	right: calc(-50vw + 280px);
+	height: 80vh;
 	object-fit: cover;
 	z-index: -1;
+	transform: scaleX(-1);
 }
 #redirect .filter {
 	position: absolute;
-	top: -400px;
+	top: 0px;
 	width: 100vw;
-	height: 900px;
-	right: calc(-50vw + 280px);
+	height: 80vh;
 	object-fit: cover;
 	z-index: -1;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(36, 190, 116, 0.0) 100%), lightgray 50% / cover no-repeat;
 	mix-blend-mode: multiply;
 
 }
-#redirect .redirect-card {
-    position: relative;
-    width: 252px;
-    background-color: var(--background);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: all 300ms ease-in-out;
-		border: var(--primaryColor) solid 1px;
-	}
-	
-	#redirect .redirect-card h1{
-		font-size: 32px;
-	}
-	
-	#redirect .redirect-card:hover {
-		border: white solid 1px;
-		transform: scale(1.2);
+
+.title-container h1 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 500px;
+	font-size: 56px;
 }
-#redirect .redirect-card .card-content {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.title-container h1 span {
+ flex: 1;
 }
-#redirect .redirect-card .card-content h3 {
-    margin: 0px;
-    font-size: 16px;
+
+.title-container p {
+	margin-bottom: 10vh;
 }
-#redirect .redirect-card .card-content a {
-    margin: 24px;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: var(--primaryColor);
-    color: var(--textColor);
-    text-decoration: none;
+.title-container div {
+	display: flex;
+	gap: 32px;
+	margin-bottom: 20vh;
 }
-#redirect .redirect-card .circle {
-    position: relative;
-    width: 100%;
-    height: 180px;
-    /* height: 420px; */
-    background-color: var(--primaryColor);
-    clip-path: circle(180px at center 0);
-    text-align: center;
-    transition: all 300ms ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.title-container #main, .title-container a, #rules a {
+	border-radius: 8px;
+	font-size: 1rem;
+	padding: 8px 16px;
+	transition: all 300ms ease-in-out;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+}
+
+.title-container #main, #rules a {
+	background-color: var(--primaryColor);
+	border: solid var(--primaryColor) 2px;
+	color: black;
+
+}
+
+.title-container #main:hover, .title-container a:hover , #rules a:hover {
+	background-color: white;
+	color: black;
+}
+
+#intro {
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
+
+#intro h3 {
+	margin-left: auto;
+	margin-right: auto;
+}
+#intro p {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60ch;
+}
+
+#goods {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 64px;
+	display: flex;
+	gap: 32px;
+	width: fit-content;
+}
+#goods.col {
+	flex-direction: column;
+	margin-left: 0px;
+}
+#goods .good {
+	display: flex;
+	gap: 16px;
+}
+
+.good svg {
+	font-size: 60px;
+	padding: 15px;
+	margin: 0 15px 0px 0;
+	color: var(--primaryColor);
+	border: #24BE74 solid 1px;
+	border-radius: 8px;
+	width: 56px !important;
+	height: 56px;
+}
+
+.good p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#rules, #basics {
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+#rules p {
+	margin-bottom: 32px;
+}
+#rules .wrapper {
+	margin-top: 200px;
+}
+
+/************************/
+/********* Stepper **********/
+/************************/
+.stepper {
+  display: flex;
+	padding: 0;
+}
+
+.stepper__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+}
+.stepper__item:before {
+	content: "";
+	display: block;
+	width: clamp(1.5rem, 5vw, 3rem);
+	height: clamp(1.5rem, 5vw, 3rem);
+	border-radius: 50%;
+	background-color: var(--primaryColor);
+	margin: 0 auto 1rem;
+}
+
+.stepper__item:not(:last-child):after {
+	content: "";
+	position: relative;
+	top: calc(clamp(1.5rem, 5vw, 3rem) / 2);
+	width: calc(100% - clamp(1.5rem, 5vw, 3rem) - calc(clamp(0.25rem, 2vw, 0.5rem) * 2));
+	left: calc(50% + calc(clamp(1.5rem, 5vw, 3rem) / 2 + clamp(0.25rem, 2vw, 0.5rem)));
+	height: 2px;
+	background-color: #e0e0e0;
+	order: -1;
+}
+.stepper__title {
+  font-weight: bold;
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  margin-bottom: 0.5rem;
+}
+
+.stepper__desc {
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  padding-left: clamp(0.25rem, 2vw, 0.5rem);
+  padding-right: clamp(0.25rem, 2vw, 0.5rem);
+}
+
+/************************/
+/********* FAQ **********/
+/************************/
+details{
+  background-color: #303030;
+  color: #fff;
+  font-size: 1rem;
+	border-radius: 8px;
+	border: 1px solid #aaa;
+	margin-bottom: 8px;
+}
+
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+	font-size: 1.5rem;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] div{
+  padding: .5em 1em;
 }
 </style>
 
 <style scoped>
-
+/************************/
+/********* Features **********/
+/************************/
 #features-slider {
 	display: flex;
 	flex-direction: row;
 	gap: 12px;
 }
 .feature {
-    background: #202124;
-    margin: 1em 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		width: 15%;
-		position: relative;
-		border: #24BE74 solid 1px;
-		text-shadow: 1px 1px 2px black;
-		overflow: hidden;
+	background: #202124;
+	width: 100%;
+	margin: 1em 0;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	position: relative;
+	border: #24BE74 solid 1px;
+	text-shadow: 1px 1px 2px black;
+	overflow: hidden;
+	margin-bottom: 200px;
 }
 .feature:hover {
-	width: 50%;
+	width: 200%;
 }
 .feature p {
-	height: 150px;
+	height: 170px;
 	position: relative;
 	opacity: 0;
 	padding: 1em;
@@ -293,37 +445,16 @@ h4:after {
   animation: discover 1800ms ease-in-out 300ms;
 }
 
-#perso, #adventure, #intro {
-	position: relative;
+#rules img, #basics img {
+	height: 400px;
+	-webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
 }
 
-#perso img {
-	position: absolute;
-	left: 50%;
-	top: 0;
-}
-#adventure img, #intro img {
-	position: absolute;
-	right: 85%;
-	top: 0;
-}
-#perso .filter {
-	position: absolute;
-	left: 65%;
-	top: 0;
-	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(36, 190, 116, 0.0) 100%), lightgray 50% / cover no-repeat;
-	mix-blend-mode: multiply;
-	width: 1024px;
-	height: 1024px;
-}
-#adventure .filter, #intro .filter {
-	position: absolute;
-	right: 100%;
-	top: 0;
-	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(36, 190, 116, 0.0) 100%), lightgray 50% / cover no-repeat;
-	mix-blend-mode: multiply;
-	width: 1024px;
-	height: 1024px;
+@media screen and (max-width: 1270px) {
+	#rules img, #rules .filter {
+		display: none;
+	}
 }
 
 footer {

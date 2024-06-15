@@ -57,28 +57,41 @@ const LINKS = [
         url: '/Rules/class',
         name: 'Classes'
       },
-      // {
-      //   url: '/Rules/archetype',
-      //   name: 'Archetypes'
-      // },
       {
         url: '/Rules/weapons',
         name: 'Maîtrises d\'armes'
       },
-      {
-        url: '/Rules/spell',
-        name: 'Sorts'
-      },
-      {
-        url: '/Rules/gear',
-        name: 'Objets'
-      },
+      // {
+      //   url: '/Rules/spell',
+      //   name: 'Sorts'
+      // },
+      // {
+      //   url: '/Rules/gear',
+      //   name: 'Objets'
+      // },
     ]
   },
   {
-    url: '/Bestiary',
-    name: 'Bestiaire'
-  },
+    name: 'Compendium',
+    sub: [
+      {
+        url: '/Rules/spell',
+        name: 'Liste des Sorts'
+      },
+      {
+        url: '/Rules/gear',
+        name: `Objets d'aventurier`
+      },
+      {
+        url: '/Rules/legendary-gear',
+        name: 'Objets Légendaires'
+      },
+      {
+        url: '/Bestiary',
+        name: 'Bestiaire'
+      },
+    ]
+  }, 
 ]
 
 const showMenu = () => {

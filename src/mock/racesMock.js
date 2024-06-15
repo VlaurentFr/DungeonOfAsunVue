@@ -209,7 +209,42 @@ export const other = [
   {
     name: `Drakèides`,
     img: `races/drak.png`,
-    desc: `Les Drakéides sont une race hybride, née de l'union entre des dragons et des humains. Leur apparence physique est très variable en fonction de la lignée dragonique de leur parent, mais ils partagent certains traits communs tels que des écailles, des cornes et parfois même des ailes. Leur histoire est marquée par des périodes de discrimination et de persécution en raison de leur héritage draconique. Bien qu'ils soient présents dans de nombreuses régions de Thierion, ils sont souvent mal vus par les autres races, en particulier dans le Royaume de Lorus où leur existence est considérée comme impie. Cependant, les Drakéides ont également des traits positifs qui les rendent uniques. Ils sont très habiles en matière de métallurgie, notamment dans la fabrication d'armes mais aussi dans la magie drakonique. Les Drakéides ont une société organisée, basée sur des clans, chacun étant dirigé par un chef respecté. Leur culture est imprégnée de traditions dragoniques, telles que la pratique de rites de passage inspirés de l'âge adulte des dragons. Malgré leur histoire mouvementée, les Drakéides continuent de s'intégrer dans les sociétés humaines et de contribuer à la richesse de la culture de Thierion.
+    desc: `Les Drakéides sont une race hybride, née de l'union entre des dragons et des humains. Leur apparence physique est très variable en fonction de la lignée dragonique de leur parent, mais ils partagent certains traits communs tels que des écailles, des cornes et parfois même des ailes.<br/><br/>
+    Leur histoire est marquée par des périodes de discrimination et de persécution en raison de leur héritage draconique. Bien qu'ils soient présents dans de nombreuses régions de Thierion, ils sont souvent mal vus par les autres races, en particulier dans le Royaume de Lorus où leur existence est considérée comme impie.<br/>
+    Cependant, les Drakéides ont également des traits positifs qui les rendent uniques. Ils sont très habiles en matière de métallurgie, notamment dans la fabrication d'armes mais aussi dans la magie drakonique.<br/><br/>
+    Les Drakéides ont une société organisée, basée sur des clans, chacun étant dirigé par un chef respecté. Leur culture est imprégnée de traditions dragoniques, telles que la pratique de rites de passage inspirés de l'âge adulte des dragons. Malgré leur histoire mouvementée, les Drakéides continuent de s'intégrer dans les sociétés humaines et de contribuer à la richesse de la culture de Thierion.
+    `,
+  },
+  {
+    name: `Magtersiens`,
+    img: `races/magtersien.jpeg`,
+    desc: `Les Magtersiens sont les descendants d'un cataclysme magique majeur issue de la tour de Magters ce qui provoqua une vague d'instabilité de la magie dnas tout le monde. Certaines personnes se sont ainsi trouvées transformé en une nouvelle races.<br/><br/>
+    Les Magtersiens possèdent des peaux aux teintes rouges, bleues ou pourpres, des cornes variées, des queues préhensiles, et des yeux lumineux. Certains arborent des griffes ou dégagent une légère odeur de soufre.<br/>
+    Souvent perçus avec méfiance en raison de leur apparence, les Magtersiens ont formé des alliances avec les gnomes. Ils se heurtent fréquemment aux ordres religieux qui les considèrent comme des menaces.<br/>
+    Les Magtersiens sont souvent conseillers mystiques, mercenaires, artisans ou alchimistes. Leur maîtrise des arcanes et des énergies infernales en fait des sorciers et des invocateurs puissants.
+    `,
+  },
+  {
+    name: `Hommes Singes`,
+    img: `races/wukong.png`,
+    desc: `Dotés d'une force physique exceptionnelle et d'une agilité incroyable, ils sont connus pour leur peau épaisse et leur pelage sombre et dense. Ils ont une apparence mi-homme, mi-singe, au comportement espiègle et joueur. Ils sont réputés pour leur intelligence limitée mais leur curiosité naturelle, et sont souvent considérés comme des êtres sauvages mais respectés pour leur force physique.
+    <br/><br/>
+    Les Hommes-Singes sont des combattants habiles, utilisant leur force brute et leur agilité pour attaquer leurs ennemis. Ils sont également capables d'utiliser des armes. En tant qu'excellents grimpeurs, ils peuvent attaquer leurs ennemis depuis les arbres ou les falaises.
+    <br/><br/>
+    Les Hommes-Singes ont une culture riche en folklore et en superstitions, et ils croient en de nombreux esprits et démons qui habitent les montagnes et les forêts. Ils sont également réputés pour leur connaissance des plantes et des herbes médicinales, et sont souvent consultés pour leurs connaissances en médecine naturelle.
+    `,
+  },
+  {
+    name: `Laga d'Harkinfall`,
+    img: `races/Laga.jpeg`,
+    desc: `Les Laga sont une race de créatures reptiliennes, anciennement humains, qui ont volontairement adopté des traits serpentins grâce à des rituels sombres et des magies interdites. Ils ont émergé d'une ancienne civilisation humaine, où les dirigeants avides de pouvoir ont cherché à obtenir des capacités divines en pactisant avec des divinités.<br/><br/>
+    Grâce à leurs rituels et leurs expérimentations, les Laga se sont transformés en différentes sous-espèces, chacune avec des degrés variables de traits serpentins :<br/>
+    <span>Anathors</span> : Les plus serpentins, presque entièrement dépourvus de traits humains.<br/>
+    <span>Morphors</span> : Hybrides avec une combinaison de traits humains et serpentins.<br/>
+    <span>Humorphs</span> : Les plus humains en apparence, capables de se fondre dans les sociétés humaines.<br/><br/>
+    Les Laga possèdent une société hiérarchique stricte, dominée par les Anathors et les Morphors, avec les Humorphs souvent en bas de l'échelle. Le pouvoir est concentré entre les mains des prêtres et des sorciers, qui commandent avec une autorité absolue.<br/>
+    Les Laga vénèrent des divinités serpentines telles que Phiella, et Thorvarus. Leurs rituels impliquent souvent des sacrifices et des cérémonies sombres destinées à honorer leurs dieux et à renforcer leurs pouvoirs. Chaque année, lors du Festival des Écailles, ils célèbrent leurs divinités avec des danses rituelles et des combats d'arène.
+    
     `,
   },
   {
@@ -222,14 +257,8 @@ export const other = [
     img: `races/cow.png`,
     desc: `Les hommes-bêtes sont souvent considérés comme des créatures brutales et primitives qui vivent dans les ténèbres et aux abords des portails. Ils ont des têtes qui ressemblent à celles des boucs, des taureaux, des lions ou des chèvres, avec des cornes et des museaux. Leur corps est couvert de poils et leur peau est souvent brune ou rougeâtre. Ils ont également des jambes de bouc et des sabots, ce qui leur permet de courir très vite et de se déplacer rapidement dans les terrains montagneux. Les hommes-bêtes ont une culture tribale et vivent en clans qui sont dirigés par des chefs charismatiques et puissants. Ils vénèrent des dieux sauvages 
     et chaotiques, comme Belzebuth, qui est considéré comme leur 
-    dieu suprême. 
+    dieu suprême. <br/>
     Les hommes-bêtes sont en guerre permanente, qu'ils considèrent comme des intrus sur leur territoire. Ils sont très agiles et ont des réflexes rapides, ce qui en fait des combattants redoutables en corps à corps. Ils utilisent des armes telles que des masses, des haches, des lances et des arcs pour combattre leurs ennemis. Les hommes-bêtes sont également connus pour leur utilisation de la magie sauvage, qui leur permet de lancer des sorts qui confèrent des avantages au combat.
-    `,
-  },
-  {
-    name: `Hommes Singes`,
-    img: `races/wukong.png`,
-    desc: `Dotés d'une force physique exceptionnelle et d'une agilité incroyable, ils sont connus pour leur peau épaisse et leur pelage sombre et dense. Ils ont une apparence mi-homme, mi-singe, au comportement espiègle et joueur. Ils sont réputés pour leur intelligence limitée mais leur curiosité naturelle, et sont souvent considérés comme des êtres sauvages mais respectés pour leur force physique. Les Hommes-Singes sont des combattants habiles, utilisant leur force brute et leur agilité pour attaquer leurs ennemis. Ils sont également capables d'utiliser des armes. En tant qu'excellents grimpeurs, ils peuvent attaquer leurs ennemis depuis les arbres ou les falaises. Les Hommes-Singes ont une culture riche en folklore et en superstitions, et ils croient en de nombreux esprits et démons qui habitent les montagnes et les forêts. Ils sont également réputés pour leur connaissance des plantes et des herbes médicinales, et sont souvent consultés pour leurs connaissances en médecine naturelle.
     `,
   },
 ]

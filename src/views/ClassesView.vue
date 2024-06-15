@@ -52,7 +52,7 @@ function getImageUrl(name: string) {
   </article>
   <article>
     <div class='flex'>
-      <p class='descOrga'>Lorsque vous maîtriser une classe d'un rang pour la première fois vous obetenez un bonus en caractéristiques à répartir dans la FOR, MAG, CHA et CHM</p>
+      <p class='descOrga'>Lorsque vous maîtriser une classe d'un rang pour la première fois vous obetenez un bonus en caractéristiques à répartir dans la FOR, DEX, SAG et CHM</p>
     </div>
     <table>
       <thead>
