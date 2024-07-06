@@ -10,24 +10,28 @@ export const daggers = [
   {
     name: 'Dague de Fer',
     dmg: '1d4',
+    effect: "Attaque double (attaquer 2 fois)",
     type: '1 main',
     cost: '2 po'
   },
   {
     name: 'Dague d\'Acier',
     dmg: '1d8',
+    effect: "Attaque double (attaquer 2 fois)",
     type: '1 main',
     cost: '10 po'
   },
   {
     name: 'Dague d\'Argent',
     dmg: '1d10',
+    effect: "Attaque double (attaquer 2 fois)",
     type: '1 main',
     cost: '20 po'
   },
   {
     name: 'Dague Héros',
     dmg: '2d6',
+    effect: "Attaque double (attaquer 2 fois)",
     type: '1 main',
     cost: '30 po'
   },
@@ -35,49 +39,57 @@ export const daggers = [
 export const swords = [
   {
     name: 'Epée de Fer',
-    dmg: '1d6',
+    dmg: '1d6+3',
+    effect: "",
     type: '1 main',
     cost: '10 po'
   },
   {
     name: 'Epée d\'Acier',
-    dmg: '1d10',
+    dmg: '1d10+4',
+    effect: "",
     type: '1 main',
     cost: '20 po'
   },
   {
     name: 'Epée d\'Argent',
-    dmg: '1d12',
+    dmg: '1d12+5',
+    effect: "",
     type: '1 main',
     cost: '30 po'
   },
   {
     name: 'Epée Héros',
-    dmg: '2d8',
+    dmg: '2d8+6',
+    effect: "",
     type: '1 main',
     cost: '50 po'
   },
   {
     name: 'Epée de Fer à 2 mains',
-    dmg: '1d6+3',
+    dmg: '1d6+13',
+    effect: "",
     type: '2 mains',
     cost: '40 po'
   },
   {
     name: 'Epée d\'Acier à 2 mains',
-    dmg: '1d10+3',
+    dmg: '1d10+14',
+    effect: "",
     type: '2 mains',
     cost: '50 po'
   },
   {
     name: 'Epée d\'Argent à 2 mains',
-    dmg: '1d12+3',
+    dmg: '1d12+15',
+    effect: "",
     type: '2 mains',
     cost: '60 po'
   },
   {
     name: 'Epée Héros à 2 mains',
-    dmg: '2d8+3',
+    dmg: '2d8+16',
+    effect: "",
     type: '2 mains',
     cost: '80 po'
   },
@@ -86,48 +98,56 @@ export const Axes = [
   {
     name: 'Hache de Fer',
     dmg: '1d6',
+    effect: "+1d6 de saignement (passe l'armure)",
     type: '1 main',
     cost: '10 po'
   },
   {
     name: 'Hache d\'Acier',
     dmg: '1d10',
+    effect: "+1d8 de saignement (passe l'armure)",
     type: '1 main',
     cost: '20 po'
   },
   {
     name: 'Hache d\'Argent',
     dmg: '1d12',
+    effect: "+1d10 de saignement (passe l'armure)",
     type: '1 main',
     cost: '30 po'
   },
   {
     name: 'Hache Héros',
     dmg: '2d8',
+    effect: "+1d12 de saignement (passe l'armure)",
     type: '1 main',
     cost: '50 po'
   },
   {
     name: 'Hache de Fer de Bataille',
-    dmg: '1d6+3',
+    dmg: '1d6+10',
+    effect: "+1d6 de saignement (passe l'armure)",
     type: '2 mains',
     cost: '40 po'
   },
   {
     name: 'Hache d\'Acier de Bataille',
-    dmg: '1d10+3',
+    dmg: '1d10+10',
+    effect: "+1d8 de saignement (passe l'armure)",
     type: '2 mains',
     cost: '50 po'
   },
   {
     name: 'Hache d\'Argent de Bataille',
-    dmg: '1d12+3',
+    dmg: '1d12+10',
+    effect: "+1d10 de saignement (passe l'armure)",
     type: '2 mains',
     cost: '60 po'
   },
   {
     name: 'Hache Héros de Bataille',
-    dmg: '2d8+3',
+    dmg: '2d8+10',
+    effect: "+1d12 de saignement (passe l'armure)",
     type: '2 mains',
     cost: '80 po'
   },
@@ -136,80 +156,100 @@ export const spears = [
   {
     name: 'Lance de Fer',
     dmg: '1d6',
+    effect: "Perce-armure (ignore l'armure)",
     type: '1 main',
     cost: '10 po'
   },
   {
     name: 'Lance d\'Acier',
     dmg: '1d10',
+    effect: "Perce-armure (ignore l'armure)",
     type: '1 main',
     cost: '20 po'
   },
   {
     name: 'Lance d\'Argent',
     dmg: '1d12',
+    effect: "Perce-armure (ignore l'armure)",
     type: '1 main',
     cost: '30 po'
   },
   {
     name: 'Lance Héros',
     dmg: '2d8',
+    effect: "Perce-armure (ignore l'armure)",
     type: '1 main',
     cost: '50 po'
   },
 ]
 export const hands = [
   {
+    name: 'Poing Nu',
+    dmg: '1d4',
+    effect: "",
+    type: '2 mains',
+    cost: '-- po'
+  },
+  {
     name: 'Poing de Fer',
     dmg: '1d6',
+    effect: "Brise-armure (Reduits l'armure de 1)",
     type: '2 mains',
     cost: '10 po'
   },
   {
     name: 'Poing d\'Acier',
     dmg: '1d10',
+    effect: "Brise-armure (Reduits l'armure de 1)",
     type: '2 mains',
     cost: '20 po'
   },
   {
     name: 'Poing d\'Argent',
     dmg: '1d12',
+    effect: "Brise-armure (Reduits l'armure de 1)",
     type: '2 mains',
     cost: '30 po'
   },
   {
     name: 'Poing Héros',
     dmg: '2d8',
+    effect: "Brise-armure (Reduits l'armure de 1)",
     type: '2 mains',
     cost: '50 po'
   },
   {
     name: 'Tonfa de Bois',
     dmg: '1d4',
+    effect: "Brise-armure (Reduits l'armure de 1)",
     type: '2 mains',
     cost: '5 po'
   },
   {
     name: 'Tonfa de Fer',
     dmg: '1d6',
+    effect: "Brise-armure (Reduits l'armure de 1)",
     type: '2 mains',
     cost: '10 po'
   },
   {
     name: 'Tonfa d\'Acier',
     dmg: '1d10',
+    effect: "Brise-armure (Reduits l'armure de 1)",
     type: '2 mains',
     cost: '20 po'
   },
   {
     name: 'Tonfa d\'Argent',
     dmg: '1d12',
+    effect: "Brise-armure (Reduits l'armure de 1)",
     type: '2 mains',
     cost: '30 po'
   },
   {
     name: 'Tonfa Héros',
     dmg: '2d8',
+    effect: "Brise-armure (Reduits l'armure de 1)",
     type: '2 mains',
     cost: '50 po'
   },
@@ -218,48 +258,56 @@ export const bows = [
   {
     name: 'Arc de Fer',
     dmg: '1d6',
+    effect: "Portée 20m",
     type: '2 mains',
     cost: '10 po'
   },
   {
     name: 'Arc d\'Acier',
     dmg: '1d10',
+    effect: "Portée 20m",
     type: '2 mains',
     cost: '20 po'
   },
   {
     name: 'Arc d\'Argent',
     dmg: '1d12',
+    effect: "Portée 20m",
     type: '2 mains',
     cost: '30 po'
   },
   {
     name: 'Arc Héros',
     dmg: '2d8',
+    effect: "Portée 20m",
     type: '2 mains',
     cost: '50 po'
   },
   {
     name: 'Arbalète de Fer',
-    dmg: '1d6+1',
+    dmg: '1d6+1d4',
+    effect: "Portée 15m",
     type: '2 mains',
     cost: '15 po'
   },
   {
     name: 'Arbalète d\'Acier',
-    dmg: '1d10+1',
+    dmg: '1d10+1d4',
+    effect: "Portée 15m",
     type: '2 mains',
     cost: '20 po'
   },
   {
     name: 'Arbalète d\'Argent',
-    dmg: '1d12+1',
+    dmg: '1d12+1d4',
+    effect: "Portée 15m",
     type: '2 mains',
     cost: '35 po'
   },
   {
     name: 'Arbalète Héros',
-    dmg: '2d8+1',
+    dmg: '2d8+1d4',
+    effect: "Portée 15m",
     type: '2 mains',
     cost: '55 po'
   },
@@ -268,48 +316,56 @@ export const masses = [
   {
     name: 'Masse de Fer',
     dmg: '1d6',
+    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
     type: '1 main',
     cost: '10 po'
   },
   {
     name: 'Masse d\'Acier',
     dmg: '1d10',
+    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
     type: '1 main',
     cost: '20 po'
   },
   {
     name: 'Masse d\'Argent',
     dmg: '1d12',
+    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
     type: '1 main',
     cost: '30 po'
   },
   {
     name: 'Masse Héros',
     dmg: '2d8',
+    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
     type: '1 main',
     cost: '50 po'
   },
   {
     name: 'Masse de Fer de Guerre',
-    dmg: '1d6+3',
+    dmg: '1d6+10',
+    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
     type: '2 mains',
     cost: '40 po'
   },
   {
     name: 'Masse d\'Acier de Guerre',
-    dmg: '1d10+3',
+    dmg: '1d10+10',
+    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
     type: '2 mains',
     cost: '50 po'
   },
   {
     name: 'Masse d\'Argent de Guerre',
-    dmg: '1d12+3',
+    dmg: '1d12+10',
+    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
     type: '2 mains',
     cost: '60 po'
   },
   {
     name: 'Masse Héros de Guerre',
-    dmg: '2d8+3',
+    dmg: '2d8+10',
+    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
     type: '2 mains',
     cost: '80 po'
   },
@@ -400,19 +456,22 @@ export const shields = [
     name: 'Bouclier de Fer',
     def: '1',
     res: '',
-    cost: '10 po'
+    dmg: '1d4',
+    cost: '20 po'
   },
   {
     name: 'Bouclier d\'Acier',
     def: '2',
     res: '',
-    cost: '20 po'
+    dmg: '1d4',
+    cost: '40 po'
   },
   {
     name: 'Bouclier d\'Argent',
     def: '4',
     res: '',
-    cost: '40 po'
+    dmg: '1d4',
+    cost: '80 po'
   },
 ]
 
@@ -446,17 +505,32 @@ export const spellBook = [
 export const potions = [
   {
     name: 'Potion de soin diluée',
-    effect: 'Soigne 1d6 PV',
+    effect: 'Soigne 1d6+6 PV',
     cost: '25 po'
   },
   {
     name: 'Potion de soin',
-    effect: 'Soigne 2d6 PV',
+    effect: 'Soigne 2d6+12 PV',
     cost: '50 po'
   },
   {
     name: 'Potion de soin Majeur',
-    effect: 'Soigne 4d6 PV',
+    effect: 'Soigne 4d6+24 PV',
+    cost: '100 po'
+  },
+  {
+    name: 'Elixir des Héros',
+    effect: 'Soigne 1d6+3 PdE',
+    cost: '25 po'
+  },
+  {
+    name: 'Tonique des Héros',
+    effect: 'Soigne 2d6+6 PdE',
+    cost: '50 po'
+  },
+  {
+    name: 'Ambroisie des Héros',
+    effect: 'Soigne 4d6+12 PdE',
     cost: '100 po'
   },
   {

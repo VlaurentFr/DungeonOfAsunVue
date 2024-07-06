@@ -294,7 +294,7 @@ h4 {
 }
 .cards {
   display: grid;
-  grid-template-columns:repeat(auto-fill, 560px);
+  grid-template-columns:repeat(auto-fill, 530px);
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   margin-bottom: 80px;

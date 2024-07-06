@@ -47,12 +47,16 @@ const LINKS = [
     sub: [
       {
         url: '/Rules/creation',
-        name: 'Création de personnage'
+        name: 'Système de Jeu'
       },
-      {
-        url: '/Rules/fight',
-        name: 'Combats'
-      },
+      // {
+      //   url: '/Rules/creation',
+      //   name: 'Création de personnage'
+      // },
+      // {
+      //   url: '/Rules/fight',
+      //   name: 'Combats'
+      // },
       {
         url: '/Rules/class',
         name: 'Classes'
@@ -61,27 +65,31 @@ const LINKS = [
         url: '/Rules/weapons',
         name: 'Maîtrises d\'armes'
       },
+      {
+        url: '/Rules/spell',
+        name: 'Listes des Compétences'
+      },
       // {
       //   url: '/Rules/spell',
-      //   name: 'Sorts'
+      //   name: 'Listes des Sorts'
       // },
-      // {
-      //   url: '/Rules/gear',
-      //   name: 'Objets'
-      // },
+      {
+        url: '/Rules/gear',
+        name: "Objets d'aventurier"
+      },
     ]
   },
   {
     name: 'Compendium',
     sub: [
-      {
-        url: '/Rules/spell',
-        name: 'Liste des Sorts'
-      },
-      {
-        url: '/Rules/gear',
-        name: `Objets d'aventurier`
-      },
+      // {
+      //   url: '/Rules/spell',
+      //   name: 'Liste des Sorts'
+      // },
+      // {
+      //   url: '/Rules/gear',
+      //   name: `Objets d'aventurier`
+      // },
       {
         url: '/Rules/legendary-gear',
         name: 'Objets Légendaires'
@@ -157,6 +165,7 @@ const hideMenu = () => {
 <style scoped>
 #main-title {
   font-family: fantasy;
+  max-height: 48px;
 }
 #content {
   display: contents;

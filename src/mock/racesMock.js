@@ -217,7 +217,7 @@ export const other = [
   },
   {
     name: `Magtersiens`,
-    img: `races/magtersien.jpeg`,
+    img: `races/magtersien.png`,
     desc: `Les Magtersiens sont les descendants d'un cataclysme magique majeur issue de la tour de Magters ce qui provoqua une vague d'instabilité de la magie dnas tout le monde. Certaines personnes se sont ainsi trouvées transformé en une nouvelle races.<br/><br/>
     Les Magtersiens possèdent des peaux aux teintes rouges, bleues ou pourpres, des cornes variées, des queues préhensiles, et des yeux lumineux. Certains arborent des griffes ou dégagent une légère odeur de soufre.<br/>
     Souvent perçus avec méfiance en raison de leur apparence, les Magtersiens ont formé des alliances avec les gnomes. Ils se heurtent fréquemment aux ordres religieux qui les considèrent comme des menaces.<br/>
@@ -236,7 +236,7 @@ export const other = [
   },
   {
     name: `Laga d'Harkinfall`,
-    img: `races/Laga.jpeg`,
+    img: `races/Laga.png`,
     desc: `Les Laga sont une race de créatures reptiliennes, anciennement humains, qui ont volontairement adopté des traits serpentins grâce à des rituels sombres et des magies interdites. Ils ont émergé d'une ancienne civilisation humaine, où les dirigeants avides de pouvoir ont cherché à obtenir des capacités divines en pactisant avec des divinités.<br/><br/>
     Grâce à leurs rituels et leurs expérimentations, les Laga se sont transformés en différentes sous-espèces, chacune avec des degrés variables de traits serpentins :<br/>
     <span>Anathors</span> : Les plus serpentins, presque entièrement dépourvus de traits humains.<br/>

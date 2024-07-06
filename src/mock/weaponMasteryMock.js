@@ -44,17 +44,6 @@ export const masterySword = [
   },
   {
     rank: "C",
-    bonus: "Aucun",
-    type:"",
-    total: [
-      {
-        upgraded: false,
-        bonus: "+ 5 Dégâts"
-      }
-    ]
-  },
-  {
-    rank: "C+",
     bonus: "Dash",
     type:"",
     total: [
@@ -65,13 +54,13 @@ export const masterySword = [
       {
         upgraded: false,
         bonus: "+ 5 Dégâts"
-      }
+      },
     ]
   },
   {
-    rank: "B",
-    bonus: "Aucun",
-    type:"",
+    rank: "C+",
+    bonus: "+1d8",
+    type:"Dégâts",
     total: [
       {
         upgraded: false,
@@ -80,11 +69,15 @@ export const masterySword = [
       {
         upgraded: false,
         bonus: "+ 5 Dégâts"
+      },
+      {
+        upgraded: true,
+        bonus: "+ 1d8 Dégâts"
       }
     ]
   },
   {
-    rank: "B+",
+    rank: "B",
     bonus: "+10",
     type:"Dégâts",
     total: [
@@ -95,13 +88,17 @@ export const masterySword = [
       {
         upgraded: true,
         bonus: "+ 15 Dégâts"
-      }
+      },
+      {
+        upgraded: false,
+        bonus: "+ 1d8 Dégâts" 
+      },
     ]
   },
   {
-    rank: "A",
-    bonus: "Aucun",
-    type:"",
+    rank: "B+",
+    bonus: "+1d8",
+    type:"Dégâts",
     total: [
       {
         upgraded: false,
@@ -110,11 +107,15 @@ export const masterySword = [
       {
         upgraded: false,
         bonus: "+ 15 Dégâts"
-      }
+      },
+      {
+        upgraded: true,
+        bonus: "+ 2d8 Dégâts" 
+      },
     ]
   },
   {
-    rank: "A+",
+    rank: "A",
     bonus: "+15",
     type:"Dégâts",
     total: [
@@ -125,7 +126,30 @@ export const masterySword = [
       {
         upgraded: true,
         bonus: "+ 30 Dégâts"
-      }
+      },
+      {
+        upgraded: false,
+        bonus: "+ 2d8 Dégâts" 
+      },
+    ]
+  },
+  {
+    rank: "A+",
+    bonus: "+1d8",
+    type:"Dégâts",
+    total: [
+      {
+        upgraded: false,
+        bonus: "Dash" 
+      },
+      {
+        upgraded: false,
+        bonus: "+ 30 Dégâts"
+      },
+      {
+        upgraded: true,
+        bonus: "+ 3d8 Dégâts" 
+      },
     ]
   },
   {
@@ -139,7 +163,12 @@ export const masterySword = [
       },
       {
         upgraded: false,
-        bonus: "+ 30 Dégâts"
+        bonus: "+ 9d6 Dégâts"
+      },
+
+      {
+        upgraded: false,
+        bonus: "+ 30 Dégâts" 
       },
       {
         upgraded: true,
@@ -149,16 +178,20 @@ export const masterySword = [
   },
   {
     rank: "S+",
-    bonus: "+20",
-    type:"Attaque",
+    bonus: "+1d8",
+    type:"Dégâts",
     total: [
       {
         upgraded: false,
         bonus: "Dash" 
       },
       {
+        upgraded: false,
+        bonus: "+ 30 Dégâts"
+      },
+      {
         upgraded: true,
-        bonus: "+ 50 Dégâts"
+        bonus: "+ 4d8 Dégâts" 
       },
       {
         upgraded: false,
@@ -203,27 +236,16 @@ export const masteryMagic = [
   {
     rank: "D+",
     bonus: "+3",
-    type:"Dégâts",
+    type:"Dmgs / Soins",
     total: [
       {
         upgraded: true,
-        bonus: "+ 3 Dégâts"
+        bonus: "+ 3 Dégâts/Soins"
       }
     ]
   },
   {
     rank: "C",
-    bonus: "Aucun",
-    type:"",
-    total: [
-      {
-        upgraded: false,
-        bonus: "+ 3 Dégâts"
-      }
-    ]
-  },
-  {
-    rank: "C+",
     bonus: "Secours",
     type:"",
     total: [
@@ -233,59 +255,71 @@ export const masteryMagic = [
       },
       {
         upgraded: false,
-        bonus: "+ 3 Dégâts"
+        bonus: "+ 3 Dégâts/Soins"
+      }
+    ]
+  },
+  {
+    rank: "C+",
+    bonus: "+1d8",
+    type:"Dmgs / Soins",
+    total: [
+      {
+        upgraded: false,
+        bonus: "Secours" 
+      },
+      {
+        upgraded: false,
+        bonus: "+ 3 Dégâts/Soins"
+      },
+      {
+        upgraded: true,
+        bonus: "+ 1d8 Dégâts/Soins"
       }
     ]
   },
   {
     rank: "B",
-    bonus: "Aucun",
-    type:"",
+    bonus: "+7",
+    type:"Dmgs / Soins",
     total: [
       {
         upgraded: false,
         bonus: "Secours" 
       },
       {
+        upgraded: true,
+        bonus: "+ 10 Dégâts/Soins"
+      },
+      {
         upgraded: false,
-        bonus: "+ 3 Dégâts"
+        bonus: "+ 1d8 Dégâts/Soins"
       }
     ]
   },
   {
     rank: "B+",
-    bonus: "+9",
-    type:"Dégâts",
+    bonus: "+1d8",
+    type:"Dmgs / Soins",
     total: [
       {
         upgraded: false,
         bonus: "Secours" 
       },
       {
+        upgraded: false,
+        bonus: "+ 10 Dégâts/Soins"
+      },
+      {
         upgraded: true,
-        bonus: "+ 12 Dégâts"
+        bonus: "+ 2d8 Dégâts/Soins"
       }
     ]
   },
   {
     rank: "A",
-    bonus: "Aucun",
-    type:"",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Secours" 
-      },
-      {
-        upgraded: false,
-        bonus: "+ 12 Dégâts"
-      }
-    ]
-  },
-  {
-    rank: "A+",
-    bonus: "+13",
-    type:"Dégâts",
+    bonus: "10",
+    type:"Dmgs / Soins",
     total: [
       {
         upgraded: false,
@@ -293,7 +327,31 @@ export const masteryMagic = [
       },
       {
         upgraded: true,
-        bonus: "+ 25 Dégâts"
+        bonus: "+ 20 Dégâts/Soins"
+      },
+      {
+        upgraded: false,
+        bonus: "+ 2d8 Dégâts/Soins"
+      }
+    ]
+  },
+  {
+    rank: "A+",
+    bonus: "+1d8",
+    type:"Dmgs / Soins",
+    total: [
+      {
+        upgraded: false,
+        bonus: "Secours" 
+      },
+      {
+        upgraded: false,
+        bonus: "+ 20 Dégâts/Soins"
+      }
+      ,
+      {
+        upgraded: true,
+        bonus: "+ 3d8 Dégâts/Soins"
       }
     ]
   },
@@ -308,7 +366,11 @@ export const masteryMagic = [
       },
       {
         upgraded: false,
-        bonus: "+ 25 Dégâts"
+        bonus: "+ 20 Dégâts"
+      },
+      {
+        upgraded: false,
+        bonus: "+ 3d8 Dégâts/Soins"
       },
       {
         upgraded: true,
@@ -318,8 +380,8 @@ export const masteryMagic = [
   },
   {
     rank: "S+",
-    bonus: "+15",
-    type:"Attaque",
+    bonus: "+1d8",
+    type:"Dmgs / Soins",
     total: [
       {
         upgraded: false,
@@ -327,7 +389,11 @@ export const masteryMagic = [
       },
       {
         upgraded: true,
-        bonus: "+ 40 Dégâts"
+        bonus: "+ 20 Dégâts/Soins"
+      },
+      {
+        upgraded: true,
+        bonus: "+ 4d8 Dégâts/Soins"
       },
       {
         upgraded: false,

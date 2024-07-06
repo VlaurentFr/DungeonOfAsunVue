@@ -312,7 +312,7 @@ select:-ms-expand {
 }
 .card-content {
   display: flex;
-  width: 400px;
+  width: 395px;
   padding: 24px;
   flex-direction: column;
   justify-content: space-between;

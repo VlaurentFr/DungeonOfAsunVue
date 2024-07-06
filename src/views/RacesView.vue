@@ -10,13 +10,13 @@ function getImageUrl(name: string) {
 </script>
 <template>
   <div class="visible">
+    <div class='title-page'>
+      <button id="back" v-if="type" @click="type = ''">〈 Retour à la liste</button>
+    </div>
     <div class='header'>
       <h1 v-if="!type">Les Races</h1>
       <h1 v-else>Les {{ type }}</h1>
       <h2>Découvrez la liste des <span v-if="!type"> races </span> <span v-if="type"> {{ type }} </span></h2>
-    </div>
-    <div class='title-page'>
-      <button id="back" v-if="type" @click="type = ''">Retour à la liste</button>
     </div>
     <div id="races" v-if="!type">
       <button @click="type = 'Humains'">
@@ -52,51 +52,56 @@ function getImageUrl(name: string) {
     </div>
     <!-- HUMANS -->
     <div v-if="type == 'Humains'">
-      <div v-for="h of human" :key="h.name">
+      <div v-for="(h, index) of human" :key="h.name">
         <h3>{{ h.name }}</h3>
         <div class="race">
-          <img :src="getImageUrl(h.img)"/>
+          <img v-if="!(index % 2)" :src="getImageUrl(h.img)"/>
           <p v-html="h.desc"></p>
+          <img v-if="(index % 2)" class="img-right" :src="getImageUrl(h.img)"/>
         </div>
       </div>
     </div>
     <!-- ELVES -->
     <div v-if="type == 'Elfes'">
-      <div v-for="h of elf" :key="h.name">
+      <div v-for="(h, index) of elf" :key="h.name">
         <h3>{{ h.name }}</h3>
         <div class="race">
-          <img :src="getImageUrl(h.img)"/>
+          <img v-if="!(index % 2)" :src="getImageUrl(h.img)"/>
           <p v-html="h.desc"></p>
+          <img v-if="(index % 2)" class="img-right" :src="getImageUrl(h.img)"/>
         </div>
       </div>
     </div>
      <!-- DWARFS -->
      <div v-if="type == 'Nains'">
-      <div v-for="h of dwarf" :key="h.name">
+      <div v-for="(h, index) of dwarf" :key="h.name">
         <h3>{{ h.name }}</h3>
         <div class="race">
-          <img :src="getImageUrl(h.img)"/>
+          <img v-if="!(index % 2)" :src="getImageUrl(h.img)"/>
           <p v-html="h.desc"></p>
+          <img v-if="(index % 2)" class="img-right" :src="getImageUrl(h.img)"/>
         </div>
       </div>
     </div>
     <!-- ELVES -->
     <div v-if="type == 'Orcs'">
-      <div v-for="h of orc" :key="h.name">
+      <div v-for="(h, index) of orc" :key="h.name">
         <h3>{{ h.name }}</h3>
         <div class="race">
-          <img :src="getImageUrl(h.img)"/>
+          <img v-if="!(index % 2)" :src="getImageUrl(h.img)"/>
           <p v-html="h.desc"></p>
+          <img v-if="(index % 2)" class="img-right" :src="getImageUrl(h.img)"/>
         </div>
       </div>
     </div>
     <!-- OTHER -->
     <div v-if="type == 'Autres'">
-      <div v-for="h of other" :key="h.name">
+      <div v-for="(h, index) of other" :key="h.name">
         <h3>{{ h.name }}</h3>
         <div class="race">
-          <img :src="getImageUrl(h.img)"/>
+          <img v-if="!(index % 2)" :src="getImageUrl(h.img)"/>
           <p v-html="h.desc"></p>
+          <img v-if="(index % 2)" class="img-right" :src="getImageUrl(h.img)"/>
         </div>
       </div>
     </div>
@@ -106,13 +111,18 @@ function getImageUrl(name: string) {
 <style>
 #back {
   background-color: var(--primaryColor);
-  border: none;
+  border: solid 2px var(--primaryColor);
   border-radius: 8px;
-  color: var(--textColor);
   padding: 8px 16px;
   font-size: 16px;
   cursor: pointer;
   color: black;
+  transition: all 300ms ease-in-out;
+}
+
+#back:hover {
+  background-color: transparent;
+  color: var(--primaryColor);
 }
 #races {
   position: absolute;
@@ -209,17 +219,13 @@ function getImageUrl(name: string) {
   border-radius: 8px;
   margin: 0 48px 16px 0;
   object-fit: cover;
-  background: linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(255,0,0,0.65) 100%);
-
+  -webkit-mask-image: linear-gradient(-90deg, transparent 0%,black 100%);
+  mask-image: linear-gradient(-90deg, transparent 0%,black 100%);
 }
-.race:after {
-  position: absolute;
-  content:'';
-  height: 100%;
-  width:300px;
-  top:0;
-  left:0;
-  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%);
+
+.race .img-right {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%,black 100%);
+  mask-image: linear-gradient(90deg, transparent 0%,black 100%);
 }
 
 @media screen and (max-width: 768px) {
@@ -227,7 +233,7 @@ function getImageUrl(name: string) {
     flex-direction: column;
     justify-content: flex-start;
   }
-  .race img, .race:after{
+  .race img{
     display: none
   }
 }

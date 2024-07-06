@@ -6,7 +6,6 @@
 
 /* semantic color variables for this project */
 :root {
-  --bg: url("../assets/bg1.png");
   --primaryColor: #24BE74;
   --secondaryColor: #24BE74;
   --background: #303036;
@@ -15,7 +14,6 @@
 }
 
   :root.dark {
-    --bg: url("../assets/bg1.png");
     --primaryColor: #24BE74;
     --secondaryColor: #24BE74;
     --background: #303036;

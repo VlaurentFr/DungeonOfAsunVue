@@ -6,7 +6,7 @@ const router = useRouter();
 </script>
 
 <template>
-  <div class="visible">
+  <div id="combat" class="visible">
     <div class='header'>
       <h1>Les Combats</h1>
       <h2>Découvrez comment ce déroule les <span> combats </span></h2>

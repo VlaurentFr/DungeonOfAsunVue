@@ -10,22 +10,21 @@ const selected = computed(() => {
     x.el.toLowerCase().includes(search.value.toLowerCase()) ||
     x.name.toLowerCase().includes(search.value.toLowerCase()) ||
     x.lvl.toString().includes(search.value.toLowerCase())
-    )
+    ).sort((a, b) => a.name.localeCompare(b.name))
 });
 
 function clickSuggest(name: string) {
   search.value = name;
-  console.log('click')
 }
 </script>
 <template>
   <div class='visible'>
     <div class='header'>
-      <h1>Les Sorts</h1>
-      <h2>Découvrez la liste des<span> sorts </span></h2>
+      <h1>Les Compétences</h1>
+      <h2>Découvrez la liste des<span> compétences </span></h2>
       <div id="search">
         <i class="fas fa-search"></i>
-        <input placeholder="Rechercher un sort ..." type="text" v-model="search"/>
+        <input placeholder="Rechercher une compétence ..." type="text" v-model="search"/>
         <div v-if="selected.length !== spell.length" class="searh-suggest">
           <div class="suggest" v-for="m of selected" :key="m.name" @click="clickSuggest(m.name)">
             <p>
@@ -48,8 +47,10 @@ function clickSuggest(name: string) {
         </div>
       </div>
     </div>
+    <h3>Comment-ça marche ?</h3>
+    <p>Pour toute les compétences de type Physique un jet de Force est demander, pour les autres un jet de Sagesse</p>
     <div class="title-section">
-        <h3>Liste des sorts</h3>
+        <h3>Liste des compétences</h3>
     </div>
     <div class="cards">
       <div class="card" v-for="s of selected" :key="s.name">
@@ -180,5 +181,9 @@ input:focus-visible {
   color: #000;
   font-weight: 400;
 }
-
+@media screen and (max-width: 768px) {
+  #search {
+    width: auto;
+  }
+}
 </style>

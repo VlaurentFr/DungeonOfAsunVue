@@ -1,18 +1,18 @@
 export const basicClasses = [
   {
-    name: `Noble`,
-    img: `classes/Noble.png`,
+    name: `Académicien`,
+    img: `classes/Academicien.png`,
     spell: ['Sort mineur, n\'importe quel sort de niveau 1, Effet diviser par 2'],
     weapons: ['Aucune'],
-    mastery: ['+ 5 PV'],
-    desc: "Le Noble vient de la haute société. Gloire, richesse, statut, tout lui est dû et est obtenu grâce à une longue lignée aristocratique derrière lui. Diplomate et éduqué, le Noble est un expert dans l’art de la négociation et de la persuasion, pour ses propres intérêts ou ceux de sa famille. En tant que membre de la noblesse, il a pu avoir accès à diverses formations pouvant inclure l’équitation, la maîtrise d’armes élégantes, plus adaptées à la démonstration qu’au combat, et d’un apprentissage en profondeur tant des us et coutumes que des règles sociales. Souvent plus faibles que les Roturiers, il compense ce manque de force par une prestance et un flegme à toute épreuve, utilisant son influence et ses ressources pour atteindre son but, qu’il soit politique, économique ou diplomatique. Il peut bien entendu compter sur des formations aux arts magiques, bien qu’ils soient des plus élémentaires. Parfois allié à une cour royale, parfois cherchant à mettre à l’épreuve ses capacités, le Noble est un défi perpétuel tant pour ses adversaires que pour lui-même.",
+    mastery: ['+ 5 Énergie'],
+    desc: "L'Académicien est un érudit dévoué à l'étude approfondie des arcanes et des mystères magiques. Passant des années dans les bibliothèques des tours magiques et des universités arcanes, il possède une connaissance encyclopédique des sorts, des rituels et des théories magiques. Expert dans l'analyse et l'enseignement des arts mystiques, l'Académicien en Magie peut déchiffrer des grimoires anciens, concocter des potions complexes et enseigner les principes de la magie à la prochaine génération de mages. Il est respecté pour sa sagesse, sa patience et son dévouement à l'avancement du savoir magique.",
   },
   {
-    name: `Roturier`,
+    name: `Aventurier`,
     img: `classes/roturier.png`,
     weapons: ['Aucune'],
     mastery: ['+ 5 PV'],
-    desc: "Le Roturier est issu des classes sociales inférieures, souvent désavoué ou n’ayant pas le moindre privilège hérité d’une quelconque famille.Loin d’avoir eu la vie facile, ni cuillère en argent dans la bouche, le Roturier n’a pu compter que sur ses expériences. Tantôt agriculteur, parfois artisan voire commerçant, ses facettes sont multiples. Faisant preuve de grande polyvalence, le Roturier est une force tranquille, pragmatique, résilient, mais surtout ayant une connaissance avancée de la réalité du monde qui l’entoure. Souvent décrié pour son manque de raffinement ou son franc-parler parfois mal vu de la noblesse, il est tout de même encensé pour ses perspectives terre-à-terre et sa compréhension des besoins du “bas peuple”. En temps de crise, le Roturier sait se révéler un leader fiable, défendant les intérêts du peuple avant ceux de la noblesse."
+    desc: "L'Aventurier est un explorateur intrépide, parcourant le monde à la recherche de trésors cachés, de mystères anciens et de défis à relever. Doté d'un esprit audacieux et d'une grande polyvalence, il s'adapte rapidement aux situations les plus dangereuses et imprévisibles. L'Aventurier excelle dans le combat, la survie et la navigation à travers des terrains hostiles. Qu'il s'agisse de braver des donjons sombres, de traverser des jungles inexplorées ou de défier des monstres redoutables, l'Aventurier est toujours prêt à l'action, motivé par la soif de découvertes et le désir de gloire."
   },
 ];
 export const noviceClasses = [
@@ -21,6 +21,7 @@ export const noviceClasses = [
     img: `classes/epeiste.png`,
     weapons: ['Epée C'],
     mastery: ['+ 10 PV'],
+    spell: ['Attaque Double'],
     desc: "L'Épéiste est un maître de l'art du combat à l'épée, combinant agilité, précision et maîtrise technique. Il excelle dans les duels rapprochés, maniant son épée avec une grâce mortelle. La formation de l'Épéiste peut varier, allant des techniques traditionnelles transmises dans les écoles d'escrime aux méthodes plus informelles apprises au fil de l'expérience sur le champ de bataille. Souvent vêtu d'une armure légère pour préserver sa mobilité, l'Épéiste est capable de parer habilement les attaques adverses et de riposter avec une efficacité redoutable. En dehors du combat, son code d'honneur peut le guider, faisant de lui un défenseur intrépide de la justice ou un mercenaire pragmatique, suivant la voie tracée par la lame qu'il manie avec expertise."
   },
   {
@@ -29,6 +30,7 @@ export const noviceClasses = [
     
     weapons: ['Hache C'],
     mastery: ['+ 10 PV'],
+    spell: ['Attaque Double'],
     desc: "Le Brigand a préféré mettre ses capacités au service d’une cause moins noble. La hache est sa plus fidèle alliée, capable de briser des portes, les coffres ou les caisses de transport standards et même, en de rares occasions, de briser les portes des maisonnettes des villages ne lui accordant pas l’hospitalité. Il n’use pas à proprement parler de technique au combat, préférant baser ses chances sur sa son avantage de force pour briser ses ennemis. Il préfèrera porter des armures intermédiaires, pouvant facilement l’aider à braver les éléments lorsqu’il attend de pouvoir commettre sa prochaine exaction. En dehors du combat, bien que patibulaire, le Brigand sait se montrer loyal envers qui le mérite."
   },
   {
@@ -37,6 +39,7 @@ export const noviceClasses = [
     
     weapons: ['Arc C'],
     mastery: ['+ 10 PV'],
+    spell: ['Attaque Double'],
     desc: "Lorsque l’on pense à un champ de bataille, on pense souvent aux soldats se battant dans la boue, le sang et la mort. Mais l’on oublie souvent l’Archer, perché dans les hauteurs, dans les remparts ou sur les tours. Maniant avec adresse son arc, il est précis, agile et mortel qu’importe la distance. D’une efficacité incomparable à distance, produisant de véritable nuée de flèches harcelant ses ennemis avec un arc long, il est aussi mortel à courte distance avec un arc court, lui permettant de décocher même dans les endroits les plus étriqués. Au fil du temps, certains Archers finissent même par avoir des compétences spéciales ou même la capacité d’utiliser des flèches plus artisanales aux effets variés. Hors du combat, l’Archer excelle dans la chasse du gibier, utilisant ses capacités de reconnaissance hérité d’un passé d’éclaireur, ou encore un gardien immuable des frontières, utilisant ses capacités pour protéger son peuple des menaces."
   },
   {
@@ -51,7 +54,7 @@ export const noviceClasses = [
   {
     name: `Soldat`,
     img: `classes/lancier.png`,
-    
+    spell: ['Attaque Dévastatrice'],
     weapons: ['Lance C'],
     mastery: ['+ 10 PV'],
     desc: "Le Soldat manie la lance comme un artisan manie ses outils. Un entraînement, voir une carrière dans l’armée fait de lui un rempart naturel pour ses alliés, ou une menace agile et polyvalente sur le champ de bataille. Souvent rustre dans sa façon de procéder, le Soldat ne laisse pas place à l’hésitation, et agît à l’instinct tout en suivant nombre de codes appris et récités pendant des années. Nul n’irait mettre en doute la possibilité d’un assaut si un Soldat a exprimé son opinion. Hors du combat, il adopte la même ligne de conduite que les lances les plus affutées : Droiture et inflexibilité. Si vous connaissez et suivez le code moral, il sera un soutien à toute épreuve."
@@ -59,7 +62,7 @@ export const noviceClasses = [
   {
     name: `Pugiliste`,
     img: `classes/monk.png`,
-    
+    spell: ['Attaque Double'],
     weapons: ['Poing C'],
     mastery: ['+ 10 PV'],
     desc: "Le Pugiliste est un combattant spécialisé dans l'art du combat à mains nues. Expert en techniques de boxe, de coups de pied et de prises, le Pugiliste excelle dans les combats rapprochés. Sa force brute et sa rapidité font de lui un adversaire redoutable, capable de briser la défense de ses ennemis avec des attaques rapides et précises. Certains Pugilistes peuvent également maîtriser des techniques de contournement, évitant habilement les attaques adverses pour mieux riposter. Le Pugiliste peut être vu comme un artiste martial, utilisant son corps comme une arme mortelle. En dehors des arènes de combat, il peut être un protecteur des opprimés, utilisant ses compétences pour défendre ceux qui ne peuvent se défendre ou un compétiteur recherchant des défis pour tester et améliorer ses compétences."
@@ -67,7 +70,7 @@ export const noviceClasses = [
   {
     name: `Combattant`,
     img: `classes/combattant.png`,
-    
+    spell: ['Attaque Dévastatrice'],
     weapons: ['Masse C'],
     mastery: ['+ 10 PV'],
     desc: "Le Combattant est une force de la nature, brisant sans effort la plupart des défenses légères de ses ennemis. Sa masse fend l’air et les boucliers avec l’aisance du mistral. Maniant sa masse efficacement et sans efforts, sa présence sur le champ de bataille impose une idée commune ; il brisera tout objet ou personne entre lui et sa cible.  En dehors du combat, le Combattant s’entraîne sans relâche, prêt à affronter la plus grande et la plus robuste des menaces qui pourrait le confronter lui ou son peuple, prêt à donner sa vie pour le protéger ou imposer sa supériorité combative."
@@ -76,15 +79,23 @@ export const noviceClasses = [
     name: `Apprenti Pyromancien`,
     img: `classes/pyromancer.png`,
     spell: ['Boule de Feu'],
-    weapons: ['Magie D'],
+    weapons: ['Magie C'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "L'Apprenti Pyromancien est un jeune praticien des arts du feu, cherchant à maîtriser les flammes et à canaliser le pouvoir ardent du pyromancien. Bien que ses compétences ne soient pas encore pleinement développées, l'Apprenti Pyromancien commence son voyage dans le monde de la magie en apprenant les rudiments de la manipulation du feu. Ses sorts peuvent inclure des petites boules de feu, des flammes qui dansent et peut-être même des flammèches contrôlées. Cependant, en raison de son inexpérience, ses pouvoirs peuvent parfois être imprévisibles et nécessitent une concentration intense. L'Apprenti Pyromancien est souvent guidé par un mentor plus expérimenté pour éviter les dangers potentiels liés à la magie du feu. En dehors de l'entraînement, il peut être perçu comme curieux, avide d'apprendre et parfois un peu trop enclin à tester ses capacités, parfois au détriment de la sécurité."
+  },
+  {
+    name: `Apprenti Aquamancien`,
+    img: `classes/aquamancien.png`,
+    spell: ['Vague', 'Soin Aquatique',],
+    weapons: ['Magie C'],
+    mastery: ['+ 10 Énergie', '+ 5 PV'],
+    desc: "L'Apprenti Aquamancien est un magicien spécialisé dans la manipulation des forces aquatiques. Ayant débuté son apprentissage sous la tutelle d'un maître aquamancien, il apprend à canaliser la puissance de l'eau pour des sorts offensifs, défensifs et utilitaires. Les Apprentis Aquamanciens possèdent une affinité naturelle avec les milieux aquatiques et tirent leur pouvoir des courants, des marées et des sources sacrées."
   },
   {
     name: `Apprenti Cryomancien`,
     img: `classes/cryomancer.png`,
     spell: ['Main de Givre'],
-    weapons: ['Magie D'],
+    weapons: ['Magie C'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: " L'Apprenti Cryomancien est un étudiant débutant dans l'art de manipuler la glace et les éléments froids. En quête de maîtrise des forces cryomantiques, cet apprenti apprend à générer des rafales de froid, à créer de petites structures de glace, et à ralentir ses adversaires avec des techniques de givre. Ses pouvoirs sont souvent teintés d'une certaine inexpérience, pouvant parfois créer des effets inattendus ou être difficiles à contrôler. Guidé par un mentor expérimenté, l'Apprenti Cryomancien cherche à comprendre les subtilités de sa magie et à éviter les écueils liés à la manipulation de la glace. En dehors de l'entraînement, il peut être perçu comme quelqu'un qui apprécie la fraîcheur et la beauté de la glace, mais qui doit faire preuve de prudence pour ne pas laisser son pouvoir s'échapper de son emprise."
   },
@@ -92,7 +103,7 @@ export const noviceClasses = [
     name: `Apprenti Zephyr`,
     img: `classes/Zephyr.png`,
     spell: ['Tornade'],
-    weapons: ['Magie D'],
+    weapons: ['Magie C'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "L'Apprenti Zephyr est un étudiant engagé dans l'art de manipuler les vents et les courants d'air. Son initiation dans le domaine du Zephyr le conduit à apprendre à sentir et à diriger les flux atmosphériques. Les premiers pas de l'apprenti impliquent généralement la création de brises légères, la manipulation de petits tourbillons, ou même la capacité de déplacer de légères particules dans l'air. Toutefois, en raison de son statut d'apprenti, la maîtrise complète des tempêtes et des bourrasques est encore loin. L'Apprenti Zephyr est souvent supervisé par un maître expérimenté qui le guide à travers les subtilités de la manipulation des vents. En dehors de son apprentissage, il peut être perçu comme quelqu'un qui apprécie la liberté du vent et qui a un profond respect pour les forces naturelles."
   },
@@ -100,7 +111,7 @@ export const noviceClasses = [
     name: `Apprenti Mage Gris`,
     img: `classes/grey-mage.png`,
     spell: ["Boule d'Acide"],
-    weapons: ['Magie D'],
+    weapons: ['Magie C'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "Malgré son titre d’apprenti mage, il ne fait en général pas partie d’une caste classique de l’école de magie. En effet, l’on peut distinguer l’Apprenti Mage Gris des castes conventionnelles car la Magie Grise est enseignée par des assassins. Longtemps ignorée, la magie a fini par rejoindre l’éventail des capacités des plus grands assassins. Pouvoir empoisonner une cible à distance au lieu de se rapprocher de sa cible et de son verre, devenir invisible pour la poignarder dans une lieu bondé, tant de capacités qui furent longtemps éclipsées avant de mettre leurs égo de côté pour accepter cette “aide extérieure”. En général, le mentor de l’Apprenti Mage Gris ne lui enseigne pas comment utiliser ces magies, mais les utilise plutôt contre lui pour lui enseigner à s’en prémunir. Apprendre comment contrer ces sorts plutôt que de les utiliser, permet d’être plus efficace contre une cible habituée à ce genre de tactiques."
   },
@@ -108,7 +119,7 @@ export const noviceClasses = [
     name: `Apprenti Druide`,
     img: `classes/druid.png`,
     spell: ['Immobilisation verte', 'Rocher destructeur'],
-    weapons: ['Magie D'],
+    weapons: ['Magie C'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "L'Apprenti Druide est un élève au sein de l'ancienne tradition des druides, cherchant à comprendre et à maîtriser la magie liée à la nature. Initiant son parcours dans le monde des druides, il apprend les bases de la communication avec les éléments naturels, la guérison par les plantes, et la capacité à se connecter avec les esprits de la faune. Les sorts de l'Apprenti Druide peuvent inclure la croissance accélérée des plantes, la guérison légère, et la capacité à parler avec les animaux. Cependant, en tant qu'apprenti, son pouvoir est limité et nécessite une compréhension plus profonde pour atteindre son plein potentiel. Généralement guidé par un mentor expérimenté, l'Apprenti Druide explore les mystères de la nature et apprend à maintenir l'équilibre entre les forces du bien et du mal. En dehors de son apprentissage, il peut être perçu comme un individu respectueux de l'environnement, cherchant à protéger la nature et à vivre en harmonie avec elle."
   },
@@ -116,7 +127,7 @@ export const noviceClasses = [
     name: `Apprenti Chaman`,
     img: `classes/chaman.png`,
     spell: ['Force Bestial'],
-    weapons: ['Magie D'],
+    weapons: ['Magie C'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "L’apprenti Chaman puise sa force dans la nature. Ceux apprenant ce type de magie ont une tendance beaucoup plus grande à vivre dans la nature, entourés d’animaux ou de plantes, puisant dans cette ressource infinie pour la décliner sous forme magique. Souvent appareillé de tenue légère, représentant ce milieu qu’il affectionne tant, la puissance bestiale de son apparence suffit en un clin d’oeil à connaître son appartenance à ce groupe clos des chamans. Leurs magie, appelée Magie Bestiale, ou Magie Verte, faisant référence aux bêtes ou à la nature, est encore mal comprise par les castes classique de magicien, ne semblant pas venir de l’énergie mais presque de la nature, comme s’ils s’en servaient comme d’un énorme catalyseur."
   },
@@ -124,7 +135,7 @@ export const noviceClasses = [
     name: `Apprenti Illutionniste`,
     img: `classes/illutioniste.png`,
     spell: ['Illusion'],
-    weapons: ['Magie D'],
+    weapons: ['Magie C'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "L'Apprenti Illusionniste est un étudiant prometteur dans l'art complexe de la magie de l'illusion. Ses débuts dans ce domaine fascinant impliquent la création d'images trompeuses, la modification mineure de l'apparence des objets, et la capacité à altérer légèrement la perception de la réalité. Ses tours de magie peuvent inclure des illusions visuelles, des sons mystérieux, et même des changements mineurs dans l'environnement. Cependant, en tant qu'apprenti, la maîtrise complète des illusions éblouissantes et des enchantements complexes reste un objectif à atteindre. Souvent encadré par un mentor expérimenté, l'Apprenti Illusionniste cherche à perfectionner son art tout en apprenant à éviter les pièges de sa propre magie trompeuse. En dehors de son apprentissage, il peut être perçu comme quelqu'un qui apprécie l'aspect ludique de la magie, cherchant à émerveiller et surprendre plutôt qu'à causer des dommages."
   },
@@ -132,7 +143,7 @@ export const noviceClasses = [
     name: `Apprenti Drakomancien`,
     img: `classes/Drakomancien.png`,
     spell: ['Foudre'],
-    weapons: ['Magie D'],
+    weapons: ['Magie C'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "L’apprenti Drakomancien a une affinité particulière avec les Dragons, et particulièrement avec leurs attraits et leurs manipulations de la foudre. Souvent associé à la race des Drakeïdes, et ainsi aussi mal vu dans certaines régions, sa seule présence peut justifier certaines exactions à son encontre. Manipulant la foudre à moindre échelle, il peut créer un courant électrique dans sa paume, qu’il peut projeter sur sa cible sans grand effort. Physiquement et vestimentairement, il ressemble trait pour trait à un clerc, son armure étant plus proche de l’armure intermédiaire que légère, et son aura est plus menaçante que bienveillante, comme si la lumière salvatrice du Clerc avait été retournée pour châtier et non plus guérir."
   },
@@ -140,7 +151,7 @@ export const noviceClasses = [
     name: `Mage Noir`,
     img: `classes/necromancer.png`,
     
-    weapons: ['Magie D'],
+    weapons: ['Magie C'],
     spell: ['Miasme'],
     mastery: ['+ 10 Énergie', '+ 5 PV'],
     desc: "Le Mage Noir est un praticien des arts obscurs, se penchant vers la magie noire et les forces ténébreuses. Maître de sorts impies, il tire son pouvoir des ombres, invoquant des énergies maléfiques pour atteindre ses objectifs. Les sorts du Mage Noir peuvent inclure des malédictions, des invocations démoniaques, et même des manipulations des âmes. Sa magie est souvent teintée d'une aura sinistre, et son apprentissage peut le conduire à des pactes obscurs pour accroître son pouvoir. Le Mage Noir peut être perçu comme un individu énigmatique, attiré par le pouvoir interdit et prêt à utiliser des moyens sombres pour parvenir à ses fins. Sur le champ de bataille, ses sorts peuvent semer la peur et infliger des blessures dévastatrices. En dehors du combat, le Mage Noir peut être un chercheur de connaissances interdites, un manipulateur des intrigues occultes, ou même un serviteur d'entités maléfiques."
@@ -159,6 +170,7 @@ export const avancedClasses = [
     name: `Bretteur`,
     img: `classes/epeiste2.png`,
     weapons: ['Epee A'],
+    spell: ['Attaque Double', 'Frappe Repoussante'],
     mastery: ['+ 20 PV'],
     desc: "Les bretteurs sont des maîtres dans l'art de manier l'épée, combinant une agilité exceptionnelle avec une expertise technique pour devenir des combattants redoutables en combat rapproché. Ces guerriers habiles se distinguent par leur style de combat élégant, rapide et acrobatique, utilisant la finesse plutôt que la force brute pour triompher de leurs adversaires."
   },
@@ -167,12 +179,13 @@ export const avancedClasses = [
     img: `classes/Warrior2.png`,
     weapons: ['Hache A'],
     mastery: ['+ 20 PV'],
+    spell: ['Attaque Double', 'Opportunisme'],
     desc: "Le Guerrier a choisi de mettre ses compétences au service de l'honneur et de la protection. La hache est son arme de prédilection, maniée avec une maîtrise impressionnante, capable de fendre les armures et de terrasser ses ennemis avec force et précision. Contrairement au Brigand, le Guerrier utilise une technique de combat élaborée, combinant des mouvements stratégiques et des parades pour maximiser son efficacité au combat. Il préfère les armures lourdes, qui lui offrent une protection maximale tout en permettant une liberté de mouvement suffisante pour exécuter ses techniques complexes. Le Guerrier est souvent vu comme un pilier de la communauté, respecté pour sa bravoure et son sens de l'honneur. Il est dévoué à sa cause, qu'il s'agisse de défendre son royaume, protéger les innocents, ou combattre les forces du mal. En dehors du champ de bataille, le Guerrier est un leader naturel, capable de rallier les troupes et d'inspirer ceux qui l'entourent par son courage et sa détermination. Loyal et digne de confiance, il est prêt à tout pour défendre ceux qu'il aime et les valeurs qu'il chérit."
   },
   {
     name: `Archer d'élite`,
     img: `classes/Archer2.png`,
-    spell: ['Tir arcanique'],
+    spell: ['Attaque Double','Tir arcanique'],
     weapons: ['Arc A'],
     mastery: ['+ 20 PV'],
     desc: "L'Archer d'Élite est un maître incontesté dans l'art du tir à l'arc, surpassant ses pairs par sa précision et son expertise inégalées. Sa maîtrise de l'arc long ou du composite lui permet de frapper des cibles avec une précision mortelle même à des distances extrêmes. L'Archer d'Élite excelle dans la rapidité d'exécution, la discrétion et la capacité à tirer des flèches imprévisibles. En plus de ses compétences de tir exceptionnelles, il peut avoir des talents spéciaux tels que la capacité de décocher des flèches imprégnées de magie. Souvent employé dans des rôles d'éclaireur ou de tireur d'élite sur le champ de bataille, l'Archer d'Élite peut changer le cours d'une guerre avec une seule flèche bien placée. En dehors du combat, il peut être un chasseur émérite, un gardien des frontières ou un protecteur efficace contre les menaces lointaines."
@@ -189,13 +202,14 @@ export const avancedClasses = [
     name: `Lancier`,
     img: `classes/lancier2.png`,
     weapons: ['Lance A'],
+    spell: ['Attaque Dévastatrice', 'Percée'],
     mastery: ['+ 20 PV'],
     desc: "Le Lancier est un combattant spécialisé dans l'utilisation de la lance, une arme qui offre une portée étendue tout en conservant une grande maniabilité. Habile dans l'art de maintenir la distance avec ses ennemis, le Lancier excelle dans la défense de positions stratégiques et peut également être une force redoutable en attaque. Sa technique de combat implique souvent des mouvements de piétinement habiles pour transpercer les défenses adverses. En plus de la lance, certains Lanciers peuvent être équipés de boucliers pour une défense accrue. Sur le champ de bataille, le Lancier peut être un rempart impénétrable, capable de repousser les charges ennemies tout en infligeant des dégâts significatifs. En dehors du combat, le Lancier peut être un gardien des frontières, un membre d'une phalange disciplinée ou même un compétiteur dans des tournois de lance renommés."
   },
   {
     name: `Moine`,
     img: `classes/monk.png`,
-    spell: ['Main de Givre'],
+    spell: ['Attaque Double','Main de Givre'],
     weapons: ['Poing A'],
     mastery: ['+ 20 PV'],
     desc: "Le Moine est un maître martial qui allie discipline physique, spiritualité et techniques de combat raffinées. Guidé par des principes éthiques et une connexion spirituelle profonde, le Moine utilise souvent des arts martiaux uniques qui mettent l'accent sur la rapidité, l'agilité et la maîtrise de soi. Sa formation peut inclure des styles de combat à mains nues, l'utilisation d'armes traditionnelles comme le bâton ou les couteaux de moine, et même la maîtrise de techniques de guérison spirituelle. Sur le champ de bataille, le Moine est un adversaire redoutable, capable de se déplacer rapidement, d'esquiver les attaques et de délivrer des coups précis. En dehors du combat, il peut jouer le rôle d'un sage, d'un médiateur ou d'un guérisseur spirituel, utilisant ses compétences pour apporter l'harmonie et la paix à ceux qui l'entourent."
@@ -204,6 +218,7 @@ export const avancedClasses = [
     name: `Mercenaire`,
     img: `classes/combattant2.png`,
     weapons: ['Masse A'],
+    spell: ['Attaque Dévastatrice', 'Brise-mâchoire'],
     mastery: ['+ 20 PV'],
     desc: "Le Mercenaire est un guerrier aguerri, prêt à mettre ses compétences au service du plus offrant. Sa masse fend l'air et les boucliers avec une précision impitoyable. Maniant sa masse avec une efficacité redoutable, il s'impose sur le champ de bataille comme une force inarrêtable, capable de briser toute défense entre lui et son objectif. Sa loyauté est à vendre, et il choisit ses engagements en fonction de la récompense et du défi proposé. En dehors des combats, le Mercenaire s'entraîne rigoureusement pour maintenir son niveau d'excellence, toujours prêt à affronter les missions les plus dangereuses et les adversaires les plus redoutables. Opportuniste et pragmatique, il est prêt à tout pour atteindre ses objectifs, tout en respectant un code de conduite personnel qui lui permet de naviguer dans le monde des contrats et des alliances temporaires."
   },
@@ -214,6 +229,14 @@ export const avancedClasses = [
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
     desc: " Le Pyromancien est un praticien des arts du feu, capable de manipuler les flammes avec une maîtrise exceptionnelle. Enflammant l'air autour de lui, il peut engendrer des boules de feu, des colonnes de flammes, et même contrôler le feu pour frapper ses ennemis à distance. La magie du Pyromancien est souvent spectaculaire, empreinte de puissance brute et de destruction. Certains Pyromanciens peuvent maîtriser des sorts plus complexes, tels que la création d'incendies massifs ou l'invo- cation de créatures liées au feu. Sur le champ de bataille, le Pyromancien est redoutable, infligeant des dégâts ravageurs à ses ennemis. En dehors du combat, il peut être un chercheur de connaissances interdites liées au feu, un manipulateur des éléments pour des tâches utilitaires, ou même un artisan spécialisé dans la forge magique. Bien que le feu puisse être perçu comme une force destructrice, certains Pyromanciens peuvent être motivés par la passion, la créativité ou même la protection de leur environnement."
+  },
+  {
+    name: `Aquamancien`,
+    img: `classes/aquamancien.png`,
+    spell: ['Vague', 'Soin Aquatique', 'Prison Aquatique',],
+    weapons: ['Magie A'],
+    mastery: ['+ 20 Énergie', '+ 10 PV'],
+    desc: "L'Aquamancien est un maître des arts magiques aquatiques, capable de contrôler et de manipuler l'eau sous toutes ses formes. Grâce à des années d'étude et de pratique, il peut invoquer des tempêtes, créer des barrières protectrices d'eau et soigner ses alliés avec des eaux curatives. Relié profondément aux forces naturelles de l'eau, l'Aquamancien puise son pouvoir des rivières, des océans et des lacs sacrés, utilisant son savoir pour défendre, attaquer et restaurer l'équilibre dans le monde."
   },
   {
     name: `Cryomancien`,
@@ -302,7 +325,7 @@ export const avancedClasses = [
     img: `classes/Croise.png`,
     weapons: ['1 Rang B, Magie C'],
     spell: ['Lumière Divine','Sagitae'],
-    mastery: ['+ 20 PV', '+ 10 Énergie'],
+    mastery: ['+ 15 PV', '+ 10 Énergie'],
     desc: "Le Croisé est un guerrier dévoué, motivé par une foi inébranlable envers une cause sacrée ou une divinité. Armé de lourdes armures et de puissantes armes, le Croisé se distingue par sa loyauté, son courage et son engagement envers la justice. Sur le champ de bataille, il est le défenseur inflexible de la foi, capable de résister aux attaques ennemies tout en infligeant des dégâts considérables. Les Croisés peuvent également être dotés de pouvoirs divins, les aidant à guérir les blessures, à repousser les forces des ténèbres, et même à exorciser des entités maléfiques. En dehors du combat, le Croisé est souvent un champion de sa foi, voyageant pour répandre les enseignements sacrés, protéger les innocents et lutter contre les hérétiques ou les créatures maléfiques. Bien qu'ils puissent appartenir à des ordres religieux, les Croisés peuvent aussi être des individus agissant de manière indépendante, portant la lumière divine là où les ténèbres menacent d'envahir."
   },
   {
@@ -310,7 +333,7 @@ export const avancedClasses = [
     img: `classes/dark-knight.png`,
     weapons: ['1 Rang B, Magie C'],
     spell: ['Miasme', 'Piques Noirs'],
-    mastery: ['+ 10 PV', '+ 10 Énergie'],
+    mastery: ['+ 15 PV', '+ 10 Énergie'],
     desc: "Le Chevalier Noir est un guerrier sombre et implacable, souvent lié à des forces obscures ou à des motifs sinistres. Revêtu d'une armure noire intimidante, le Chevalier Noir se distingue par son approche impitoyable du combat. Sa force physique combinée à une habileté au maniement des armes en fait un adversaire redoutable sur le champ de bataille. Contrairement au Chevalier classique, le Chevalier Noir tire son pouvoir de sources corrompues, que ce soit par la magie noire, des pactes démoniaques, ou simplement une volonté pervertie. Il peut manier des armes imprégnées de ténèbres, lancer des malédictions, et même commander des créatures des ombres. En dehors du combat, le Chevalier Noir peut être un chasseur de reliques maudites, un serviteur d'entités maléfiques, ou un mercenaire sans pitié accomplissant des tâches sombres. Sa présence est souvent source de crainte et d'hostilité, car il incarne la puissance des ténèbres dans un monde autrement éclairé."
   },
 ];
@@ -318,7 +341,7 @@ export const masterClasses = [
   {
     name: `Maître Epéiste`,
     img: `classes/epeiste3.png`,
-    spell: ['Fortification'],
+    spell: ['Attaque Double', 'Frappe Repoussante', 'Fine Lame'],
     weapons: ['Epee S'],
     mastery: ['+ 40 PV' ],
     desc: "Le Maître Épéiste représente l'apogée de l'art du combat à l'épée. Grâce à des années d'entraînement intense et de perfectionnement de ses compétences, le Maître Épéiste est devenu une véritable légende parmi les guerriers. Sa maîtrise de l'épée est inégalée, et il est capable de réaliser des mouvements complexes avec une fluidité exceptionnelle. Le Maître Épéiste a transcendé les simples techniques de combat pour atteindre un niveau d'harmonie entre son esprit et son arme. Son regard perçant et sa concentration inébranlable font de lui un adversaire redoutable sur le champ de bataille. Certains Maîtres Épéistes, en plus de leurs compétences martiales, peuvent être des mentors, partageant leur sagesse et leurs enseignements avec la génération suivante d'épéistes aspirants."
@@ -326,7 +349,7 @@ export const masterClasses = [
   {
     name: `Berserker`,
     img: `classes/Warrior3.png`,
-    spell: ['Fortification'],
+    spell: ['Attaque Double', 'Opportunisme', 'Rage du Berserker'],
     weapons: ['Hache S'],
     mastery: ['+ 40 PV' ],
     desc: "Le Berserker incarne la fureur indomptable et la sauvagerie brutale sur le champ de bataille. Animé par une rage intérieure, le Berserker entre dans un état de transe lorsqu'il est confronté à ses ennemis, ignorant la douleur et la peur. Armé d'armes lourdes, telles que haches ou épées massives, le Berserker cherche le carnage, déferlant sur ses adversaires avec une force dévastatrice. Sa furie peut être déclenchée par la colère, l'honneur bafoué ou même la simple adrénaline du combat. Cependant, cette rage intense peut également le rendre imprudent, le poussant parfois à négliger la défense au profit de l'attaque. En dehors du champ de bataille, le Berserker peut être perçu comme une force chaotique, mais certains peuvent apprécier son sens de la loyauté et son engagement total envers la protection de ses proches."
@@ -334,7 +357,7 @@ export const masterClasses = [
   {
     name: `Maître Archer`,
     img: `classes/Archer3.png`,
-    spell: ['Tir arcanique'],
+    spell: ['Attaque Double','Tir arcanique', 'Flèche Divine'],
     weapons: ['Arc S'],
     mastery: ['+ 40 PV' ],
     desc: " Le Maître Archer est un virtuose de l'art du tir à l'arc, ayant perfectionné ses compétences au-delà de la norme. Doté d'une précision exceptionnelle et d'une connaissance approfondie des arcs et des flèches, le Maître Archer excelle dans l'art de frapper ses cibles à distance avec une précision mortelle. Le Maître Archer est également capable de s'adapter à différentes situations sur le champ de bataille, que ce soit en escalade, en embuscade ou en combat à distance. En plus de ses compétences martiales, le Maître Archer peut être un expert en stratégie, utilisant son arc comme une extension de sa pensée tactique pour infliger des dégâts dévastateurs à ses ennemis."
@@ -350,7 +373,7 @@ export const masterClasses = [
   {
     name: `Grand Lancier`,
     img: `classes/lancier3.png`,
-    spell: ['Fortification'],
+    spell: ['Attaque Dévastatrice', 'Percée', 'Fortification'],
     weapons: ['Lance S'],
     mastery: ['+ 40 PV' ],
     desc: "Le Grand Lancier est le maître incontesté de la lance, combinant une maîtrise technique exceptionnelle avec une portée dévastatrice. Doté d'une lance imposante, il excelle dans les charges dévastatrices et la création de lignes de défense infranchissables. La portée étendue de sa lance lui permet de garder les ennemis à distance, faisant de lui un adversaire redoutable sur le champ de bataille. Le Grand Lancier peut également utiliser sa lance pour repousser les assaillants, créant un périmètre de sécurité autour de lui. Certains Grand Lanciers peuvent également être formés à l'équitation, devenant des cavaliers redoutables capables de manœuvres stratégiques sur le champ de bataille. En dehors de la guerre, le Grand Lancier peut être perçu comme un gardien de la paix, prêt à défendre les frontières et à assurer la stabilité avec son habileté à manier sa lance avec une précision mortelle."
@@ -358,7 +381,7 @@ export const masterClasses = [
   {
     name: `Grand Moine`,
     img: `classes/monk.png`,
-    spell: ['Main de Givre','Main de feu'],
+    spell: ['Attaque Double', 'Main de Givre','Main de feu'],
     weapons: ['Poing S'],
     mastery: ['+ 40 PV' ],
     desc: "Le Grand Moine est un maître spirituel et martial, fusionnant la sagesse spirituelle avec des compétences martiales exceptionnelles. Ayant consacré sa vie à la voie de la méditation et de l'entraînement physique, le Grand Moine incarne l'harmonie entre le corps et l'esprit. Il excelle dans les arts martiaux à mains nues, déployant des techniques de combat fluides et puissantes. La maîtrise du Grand Moine va au-delà de la simple force physique, englobant des capacités surnaturelles telles que la guérison par l'énergie intérieure, la préscience et la manipulation des énergies spirituelles. Certains Grand Moines peuvent également manier des armes exotiques ou utiliser des objets sacrés dans leur quête de justice et d'équilibre. En dehors du combat, le Grand Moine est souvent un conseiller sage, offrant des conseils spirituels et prodiguant des enseignements de vie à ceux qui recherchent la voie de l'harmonie."
@@ -367,7 +390,7 @@ export const masterClasses = [
     name: `Brise'Os`,
     img: `classes/combattant3.png`,
     weapons: ['Masse S'],
-    spell: ['Fortification'],
+    spell: ['Attaque Dévastatrice', 'Brise-mâchoire', 'Brise-moëlle'],
     mastery: ['+ 40 PV' ],
     desc: " Le Brise-Os est un guerrier spécialisé dans le maniement d'armes contondantes, concentrant sa force brute sur la destruction des défenses adverses. Armé de masses, de marteaux ou de gourdins massifs, le Brise-Os peut pulvériser les armures, écraser les boucliers et infliger des dégâts considérables aux ennemis. Son approche axée sur la destruction des os et des protections en fait un adversaire redoutable sur le champ de bataille. En plus de sa force physique, le Brise-Os peut développer des compétences de contrôle de foule en assourdissant ses ennemis avec des impacts assourdissants. Certains Brise-Os peuvent même invoquer des séismes mineurs en frappant le sol avec une force terrifiante. En dehors du combat, le Brise-Os peut être perçu comme un artisan capable de forger des armes lourdes ou un protecteur des faibles, utilisant sa puissance pour défendre ceux qui ne peuvent se défendre."
   },
@@ -378,6 +401,14 @@ export const masterClasses = [
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
     desc: " Le Maître Pyromancien est un sorcier qui a atteint le sommet de la maîtrise des flammes, manipulant le feu avec une expertise incomparable. Ses sorts pyromanciens vont au-delà des simples boules de feu, embrasant le champ de bataille avec des flammes dévastatrices. Grâce à une connaissance approfondie des arts du feu, le Maître Pyromancien peut créer des tempêtes de flammes, des murs de feu impénétrables et même canaliser le pouvoir du feu pour renforcer ses propres capacités. Certains Maîtres Pyromanciens peuvent également maîtriser la métamorphose, prenant l'apparence de créatures enflammées pour intimider leurs adversaires. Cependant, avec un tel pouvoir destructeur vient également le risque de perdre le contrôle, et le Maître Pyromancien doit constamment équilibrer sa passion pour le feu avec la prudence nécessaire pour éviter des conséquences catastrophiques. En dehors du champ de bataille, le Maître Pyromancien peut être un chercheur de connaissances anciennes liées au feu ou un artisan spécialisé dans la forge des armes et armures enflammées."
+  },
+  {
+    name: `Maître Aquamancien`,
+    img: `classes/aquamancien.png`,
+    spell: ['Vague', 'Soin Aquatique', 'Prison Aquatique','Vague Déferlante'],
+    weapons: ['Magie S'],
+    mastery: ['+ 30 Énergie', '+ 20 PV' ],
+    desc: "Le Maître Aquamancien est l'ultime incarnation de la maîtrise de l'élément aquatique. Ayant atteint le sommet de son art, il commande les forces de l'eau avec une puissance inégalée. Capable d'invoquer des tsunamis, de modeler les courants océaniques et de créer des sanctuaires sous-marins, le Maître Aquamancien utilise ses pouvoirs pour influencer le monde naturel et magique. Il peut aussi communiquer avec les créatures marines, purifier des eaux corrompues, et est souvent consulté pour sa sagesse et sa connexion profonde avec les forces aquatiques."
   },
   {
     name: `Maître Cryomancien`,
@@ -466,14 +497,14 @@ export const masterClasses = [
     img: `classes/Croise.png`,
     weapons: ['1 Rang A+, Magie A'],
     spell: ['Lumière Divine','Sagitae', 'Abraxas'],
-    mastery: ['+ 40 PV', '+ 20 Énergie'],
+    mastery: ['+ 30 PV', '+ 20 Énergie'],
     desc: "Le Grand Croisé est un guerrier dévoué, alliant la force martiale à une profonde foi religieuse. Portant une armure sacrée et maniant une épée bénie, le Grand Croisé est un champion de la foi prêt à défendre les valeurs sacrées. Sa mission est souvent liée à l'éradication du mal, à la protection des innocents et à la réalisation des desseins divins. Doté d'une détermination inébranlable, le Grand Croisé inspire ses alliés et incarne la vertu sur le champ de bataille. Il peut également avoir des compétences spéciales liées à la détection du mal, à la purification des lieux corrompus et à la résistance aux forces obscures. En tant que défenseur de la foi, le Grand Croisé peut être reconnu comme un symbole d'espoir et de justice. En dehors des conflits, il peut assumer un rôle de leader spirituel, encourageant la piété et guidant sa communauté vers la lumière."
   },
   {
     name: `Chevalier du Néant`,
     img: `classes/dark-knight.png`,
     weapons: ['1 Rang A+, Magie A'],
-    mastery: ['+ 20 PV', '+ 20 Énergie'],
+    mastery: ['+ 30 PV', '+ 20 Énergie'],
     spell: ['Miasme', 'Piques Noirs', 'Hades'],
     desc: " Le Chevalier du Néant est un guerrier sombre, lié aux forces du chaos et du vide. Tandis que le Grand Croisé représente la lumière, le Chevalier du Néant incarne les ténèbres. Revêtu d'une armure corrompue et maniant des armes imprégnées d'énergie du néant, il est un serviteur des forces obscures. Les pouvoirs du Chevalier du Néant incluent la capacité d'invoquer des ombres pour obscurcir la vision de ses ennemis, de corrompre l'énergie vitale pour se guérir et d'invoquer des créatures du néant pour le servir. Son combat est souvent empreint de stratégies sournoises, utilisant les ténèbres pour se déplacer furtivement et surprendre ses adversaires. Le Chevalier du Néant peut être perçu comme un antihéros, cherchant à imposer sa vision chaotique du monde ou à se venger d'injustices passées. En dehors du champ de bataille, il peut être un individu solitaire, cherchant des artefacts anciens ou des connaissances interdites pour renforcer son pouvoir."
   },

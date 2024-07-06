@@ -1,13 +1,14 @@
 <script setup lang="ts">
+import FightView from './FightView.vue';
 </script>
 <template>
   <div class='visible'>
 		<div class='header'>
       <h1>La creation de personnage</h1>
       <h2>Découvrez comment créer votre personnage pour<span> jouer </span></h2>
-			<p>
+			<!-- <p>
 				Bienvenue sur la page de création de personnage de notre jeu de rôle épique ! Ici, vous pouvez donner vie à votre héros, le personnaliser à votre guise et le préparer pour des aventures palpitantes dans notre univers fantastique. Suivez les étapes ci-dessous pour créer votre personnage unique.
-			</p>
+			</p> -->
     </div>
 		<div class="fight-wrapper">
 			<div class='fight-container'>
@@ -88,6 +89,7 @@
 				<a href="https://discord.gg/WGR68mBEu3"><i class="fab fa-discord"></i> Rejoingner nous sur Discord</a>
 			</div>
 		</div>
+		<FightView />
 	</div>
 </template>
 
@@ -102,6 +104,7 @@ h3 {
 	flex-wrap: wrap;
 	gap: 24px;
 	flex: 2;
+	margin-bottom: 200px;
 }
 .fight-container {
 	display: flex;

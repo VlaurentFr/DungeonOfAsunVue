@@ -36,7 +36,7 @@ function clickSuggest(name: string) {
       </div>
     </div>
     <div class="tags"><span>Aller à :</span>
-      <div :class="'tag'" v-for="(s, index) of selected" v-show="s.type !== gear[index -1]?.type" >
+      <div :class="'tag'" v-for="(s, index) of selected" v-show="s.type !== gear[index -1]?.type" :key="s.name">
         <a :href="'#'+s.type" >{{ s.type }}</a>
       </div>
     </div>
@@ -70,7 +70,7 @@ function clickSuggest(name: string) {
         <div class="side">
           <p><span>Type : </span><span class="type"> {{ s.type }}</span></p>
           <p><span>Effet :</span> {{ s.dices?.[0] }}</p>
-          <p v-if="s.dices?.[1]"><span>+</span> {{ s.dices?.[1] }}</p>
+          <p v-if="s.dices?.[1]">{{ s.dices?.[1] }}</p>
         </div>
       </div>
     </div>
@@ -191,4 +191,9 @@ input:focus-visible {
   background-color: white;
 }
 
+@media screen and (max-width: 768px) {
+  #search {
+    width: auto;
+  }
+}
 </style>

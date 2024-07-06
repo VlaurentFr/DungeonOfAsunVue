@@ -394,7 +394,7 @@ export const MOB = [
             type: "",
             range: "",
             target: "Soi-même",
-            desc: "<span>Attaques multiples.</span> L'élémentaire effectue deux attaques, une avec sa lance l'autre avec sa queue."
+            desc: "<span>Attaques multiples.</span> La salamandre effectue deux attaques, une avec sa lance l'autre avec sa queue."
           },
           {
             name: "Lance",

@@ -31,26 +31,6 @@ p {
   flex-direction: row;
 }
 
-.background {
-  transition: all 300ms;
-  position: fixed;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex-direction: column;
-  z-index: -1;
-  background-image: var(--bg);
-  /* filter: contrast(0.5); */
-}
-.dark .background {
-  filter: brightness(0.3);
-}
 h3 {
   font-family: Work Sans;
   font-size: 42px;
