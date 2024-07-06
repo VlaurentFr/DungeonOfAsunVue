@@ -10,28 +10,28 @@ export const daggers = [
   {
     name: 'Dague de Fer',
     dmg: '1d4',
-    effect: "Attaque double (attaquer 2 fois)",
+    effect: "Attaque Rapide (attaque x1,5)",
     type: '1 main',
     cost: '2 po'
   },
   {
     name: 'Dague d\'Acier',
     dmg: '1d8',
-    effect: "Attaque double (attaquer 2 fois)",
+    effect: "Attaque Rapide (attaque x1,5)",
     type: '1 main',
     cost: '10 po'
   },
   {
     name: 'Dague d\'Argent',
     dmg: '1d10',
-    effect: "Attaque double (attaquer 2 fois)",
+    effect: "Attaque Rapide (attaque x1,5)",
     type: '1 main',
     cost: '20 po'
   },
   {
     name: 'Dague Héros',
     dmg: '2d6',
-    effect: "Attaque double (attaquer 2 fois)",
+    effect: "Attaque Rapide (attaque x1,5)",
     type: '1 main',
     cost: '30 po'
   },

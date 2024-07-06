@@ -3,7 +3,7 @@ export const orga = [
     title: `Le Cercle d'Emeraude`,
     img: `orga/emeraude.png`,
     color: "green",
-    desc: `Le Cercle d'Emeraude est une organisation secrète composée de druides et de rôdeurs qui se consacrent à la protection de la nature et à la préservation de la vie sauvage. Ils se réunissent dans des lieux sacrés de la nature pour discuter des menaces qui pèsent sur l'environnement et pour élaborer des stratégies pour y faire face. Ils sont également connus pour leur expertise dans les plantes et les animaux, ainsi que pour leur capacité à communiquer avec eux.`,
+    desc: `Le Cercle d'Emeraude est une organisation secrète composée de druides, de chaman et de rôdeurs qui se consacrent à la protection de la nature et à la préservation de la vie sauvage. Ils se réunissent dans des lieux sacrés de la nature pour discuter des menaces qui pèsent sur l'environnement et pour élaborer des stratégies pour y faire face. Ils sont également connus pour leur expertise dans les plantes et les animaux, ainsi que pour leur capacité à communiquer avec eux.`,
     rank: [
       {name:"Recrue :", desc:"Les nouveaux membres du Cercle d'Emeraude sont appelés les Recrues. Ils ont fait preuve d'un intérêt pour la protection de la nature et ont été invités à rejoindre l'organisation."},
       {name:"Gardien de la nature :", desc:"Les Gardiens de la nature sont les membres de base du Cercle d'Emeraude. Ils ont reçu une formation sur les plantes et les animaux, ainsi que sur les techniques de survie en milieu naturel. Ils sont responsables de patrouiller les zones naturelles et de signaler toute activité suspecte."},

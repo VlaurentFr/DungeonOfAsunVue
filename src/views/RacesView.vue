@@ -56,7 +56,11 @@ function getImageUrl(name: string) {
         <h3>{{ h.name }}</h3>
         <div class="race">
           <img v-if="!(index % 2)" :src="getImageUrl(h.img)"/>
-          <p v-html="h.desc"></p>
+          <div>
+            <p v-html="h.desc"></p><br/>
+            <p><span>Caractéristique : </span>{{h.caract}}</p>
+            <p>{{ h.talent }}</p>
+          </div>
           <img v-if="(index % 2)" class="img-right" :src="getImageUrl(h.img)"/>
         </div>
       </div>
@@ -67,7 +71,11 @@ function getImageUrl(name: string) {
         <h3>{{ h.name }}</h3>
         <div class="race">
           <img v-if="!(index % 2)" :src="getImageUrl(h.img)"/>
-          <p v-html="h.desc"></p>
+          <div>
+            <p v-html="h.desc"></p><br/>
+            <p><span>Caractéristique : </span>{{h.caract}}</p>
+            <p>{{ h.talent }}</p>
+          </div>
           <img v-if="(index % 2)" class="img-right" :src="getImageUrl(h.img)"/>
         </div>
       </div>
@@ -78,7 +86,11 @@ function getImageUrl(name: string) {
         <h3>{{ h.name }}</h3>
         <div class="race">
           <img v-if="!(index % 2)" :src="getImageUrl(h.img)"/>
-          <p v-html="h.desc"></p>
+          <div>
+            <p v-html="h.desc"></p><br/>
+            <p><span>Caractéristique : </span>{{h.caract}}</p>
+            <p>{{ h.talent }}</p>
+          </div>
           <img v-if="(index % 2)" class="img-right" :src="getImageUrl(h.img)"/>
         </div>
       </div>
@@ -89,7 +101,11 @@ function getImageUrl(name: string) {
         <h3>{{ h.name }}</h3>
         <div class="race">
           <img v-if="!(index % 2)" :src="getImageUrl(h.img)"/>
-          <p v-html="h.desc"></p>
+          <div>
+            <p v-html="h.desc"></p><br/>
+            <p><span>Caractéristique : </span>{{h.caract}}</p>
+            <p>{{ h.talent }}</p>
+          </div>
           <img v-if="(index % 2)" class="img-right" :src="getImageUrl(h.img)"/>
         </div>
       </div>
@@ -100,7 +116,11 @@ function getImageUrl(name: string) {
         <h3>{{ h.name }}</h3>
         <div class="race">
           <img v-if="!(index % 2)" :src="getImageUrl(h.img)"/>
-          <p v-html="h.desc"></p>
+          <div>
+            <p v-html="h.desc"></p><br/>
+            <p><span>Caractéristique : </span>{{h.caract}}</p>
+            <p>{{ h.talent }}</p>
+          </div>
           <img v-if="(index % 2)" class="img-right" :src="getImageUrl(h.img)"/>
         </div>
       </div>
@@ -213,6 +233,9 @@ function getImageUrl(name: string) {
   margin-bottom: 68px;
   position: relative;
   min-height: 500px;
+}
+.race span {
+  color: var(--primaryColor);
 }
 .race img {
   width: 300px;

@@ -323,7 +323,7 @@ export const avancedClasses = [
   {
     name: `Croisé`,
     img: `classes/Croise.png`,
-    weapons: ['1 Rang B, Magie C'],
+    weapons: ['1 Rang B, Magie C+'],
     spell: ['Lumière Divine','Sagitae'],
     mastery: ['+ 15 PV', '+ 10 Énergie'],
     desc: "Le Croisé est un guerrier dévoué, motivé par une foi inébranlable envers une cause sacrée ou une divinité. Armé de lourdes armures et de puissantes armes, le Croisé se distingue par sa loyauté, son courage et son engagement envers la justice. Sur le champ de bataille, il est le défenseur inflexible de la foi, capable de résister aux attaques ennemies tout en infligeant des dégâts considérables. Les Croisés peuvent également être dotés de pouvoirs divins, les aidant à guérir les blessures, à repousser les forces des ténèbres, et même à exorciser des entités maléfiques. En dehors du combat, le Croisé est souvent un champion de sa foi, voyageant pour répandre les enseignements sacrés, protéger les innocents et lutter contre les hérétiques ou les créatures maléfiques. Bien qu'ils puissent appartenir à des ordres religieux, les Croisés peuvent aussi être des individus agissant de manière indépendante, portant la lumière divine là où les ténèbres menacent d'envahir."
@@ -331,7 +331,7 @@ export const avancedClasses = [
   {
     name: `Chevalier Noir`,
     img: `classes/dark-knight.png`,
-    weapons: ['1 Rang B, Magie C'],
+    weapons: ['1 Rang B, Magie C+'],
     spell: ['Miasme', 'Piques Noirs'],
     mastery: ['+ 15 PV', '+ 10 Énergie'],
     desc: "Le Chevalier Noir est un guerrier sombre et implacable, souvent lié à des forces obscures ou à des motifs sinistres. Revêtu d'une armure noire intimidante, le Chevalier Noir se distingue par son approche impitoyable du combat. Sa force physique combinée à une habileté au maniement des armes en fait un adversaire redoutable sur le champ de bataille. Contrairement au Chevalier classique, le Chevalier Noir tire son pouvoir de sources corrompues, que ce soit par la magie noire, des pactes démoniaques, ou simplement une volonté pervertie. Il peut manier des armes imprégnées de ténèbres, lancer des malédictions, et même commander des créatures des ombres. En dehors du combat, le Chevalier Noir peut être un chasseur de reliques maudites, un serviteur d'entités maléfiques, ou un mercenaire sans pitié accomplissant des tâches sombres. Sa présence est souvent source de crainte et d'hostilité, car il incarne la puissance des ténèbres dans un monde autrement éclairé."
