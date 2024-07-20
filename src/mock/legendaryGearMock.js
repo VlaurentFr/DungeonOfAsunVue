@@ -91,11 +91,11 @@ export const gear = [
     el: "Feu"
   },
   {
-    name: "",
+    name: "WindWalker",
     type: "Hache",
     desc: "",
     dices: ["",],
-    el: "Light"
+    el: "Vent"
   },
   {
     name: "Hache du Berserker",

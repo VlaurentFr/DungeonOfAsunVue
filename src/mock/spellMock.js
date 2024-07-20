@@ -30,11 +30,11 @@ export const spell = [
     el: "Physique"
   },
   {
-    name: "Opportunisme",
+    name: "Entaille profonde",
     type: "DPS Phys.",
     lvl: 2,
-    desc: "Vous vous préparez à attaquez lors d'une opportunité (contre-attaque)",
-    dices: ["2d4 dégâts"],
+    desc: "Vous infliger une attaque avec votre hache qui entaille profondément la cible, saignement x2",
+    dices: ["x2"],
     price: "5",
     range: "CàC",
     el: "Physique"
@@ -101,6 +101,56 @@ export const spell = [
   },
 
   // MAGIE
+  {
+    name: "Vague",
+    type: "DPS Mag.",
+    lvl: 1,
+    desc: "Vous lancez une vague d'eau, infligeant des dégâts aquatiques à la cible.",
+    dices: ["1d8+4 dégâts"],
+    price: "3",
+    range: "courte",
+    el: "Water"
+  },
+  {
+    name: "Soin Aquatique",
+    type: "DPS Mag.",
+    lvl: 1,
+    desc: "Vous soignez un allié proche, lui rendant des points de vie.",
+    dices: ["1d8+4 PV"],
+    price: "3",
+    range: "courte",
+    el: "Water"
+  },
+  {
+    name: "Prison Aquatique",
+    type: "Soutien Mag.",
+    lvl: 2,
+    desc: "Vous faites une prison d’eau pour immobiliser la cible pendant 1d12 tours.",
+    dices: ["Immobilisation"],
+    price: "3",
+    range: "moyenne",
+    el: "Water"
+  },
+  {
+    name: "Vague Deferlante",
+    type: "DPS Mag.",
+    lvl: 3,
+    desc: "Vous lancez une puissante vague d'eau, infligeant d'importants dégâts aquatiques à la cible.",
+    dices: ["1d20+4 dégâts"],
+    price: "7",
+    range: "longue",
+    el: "Water"
+  },
+  {
+    name: "Boule de Feu",
+    type: "DPS Mag.",
+    lvl: 1,
+    desc: "Vous lancez une sphère de feu qui explose à l'impact, infligeant des dégâts de feu à la cible.",
+    dices: ["1d8+4 dégâts"],
+    price: "3",
+    range: "courte",
+    el: "Feu"
+  },
   {
     name: "Boule de Feu",
     type: "DPS Mag.",
@@ -239,7 +289,7 @@ export const spell = [
     dices: ["1d8+4 dégâts"],
     price: "3",
     range: "CàC",
-    el: "Poison"
+    el: "Physique"
   },
   
   // NIVEAU 2
@@ -272,7 +322,7 @@ export const spell = [
     dices: ["1d12+6 dégâts"],
     price: "5",
     range: "moyenne",
-    el: "Psy"
+    el: "Physique"
   },
   {
     name: "Couteau de glace",
@@ -456,7 +506,7 @@ export const spell = [
     dices: ["1d20+4 dégâts"],
     price: "7",
     range: "CàC",
-    el: "Foudre"
+    el: "Physique"
   },
   {
     name: "Corrosion",

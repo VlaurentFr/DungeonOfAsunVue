@@ -208,7 +208,7 @@ export const avancedClasses = [
   },
   {
     name: `Moine`,
-    img: `classes/monk.png`,
+    img: `classes/monk2.png`,
     spell: ['Attaque Double','Main de Givre'],
     weapons: ['Poing A'],
     mastery: ['+ 20 PV'],
@@ -224,7 +224,7 @@ export const avancedClasses = [
   },
   {
     name: `Pyromancien`,
-    img: `classes/pyromancer.png`,
+    img: `classes/pyromancer2.png`,
     spell: ['Boule de Feu', 'Bolganone'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
@@ -232,7 +232,7 @@ export const avancedClasses = [
   },
   {
     name: `Aquamancien`,
-    img: `classes/aquamancien.png`,
+    img: `classes/aquamancien2.png`,
     spell: ['Vague', 'Soin Aquatique', 'Prison Aquatique',],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
@@ -240,7 +240,7 @@ export const avancedClasses = [
   },
   {
     name: `Cryomancien`,
-    img: `classes/cryomancer.png`,
+    img: `classes/cryomancer2.png`,
     spell: ['Main de Givre', 'Couteau de glace'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
@@ -248,7 +248,7 @@ export const avancedClasses = [
   },
   {
     name: `Zephyr`,
-    img: `classes/Zephyr.png`,
+    img: `classes/Zephyr2.png`,
     spell: ['Tornade', 'Vents Tranchants'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
@@ -256,7 +256,7 @@ export const avancedClasses = [
   },
   {
     name: `Mage Gris`,
-    img: `classes/grey-mage.png`,
+    img: `classes/grey-mage2.png`,
     spell: ['Boule d\'Acide', 'Invisibilité'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
@@ -264,7 +264,7 @@ export const avancedClasses = [
   },
   {
     name: `Druide`,
-    img: `classes/druid.png`,
+    img: `classes/druid2.png`,
     spell: ['Immobilisation verte', 'Rocher destructeur', 'Récupération'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
@@ -272,7 +272,7 @@ export const avancedClasses = [
   },
   {
     name: `Chaman`,
-    img: `classes/chaman.png`,
+    img: `classes/chaman2.png`,
     spell: ['Force Bestial', 'Agilité Bestial'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
@@ -280,7 +280,7 @@ export const avancedClasses = [
   },
   {
     name: `Illutionniste`,
-    img: `classes/illutioniste.png`,
+    img: `classes/illutioniste2.png`,
     spell: ['Illusion', 'Invisibilité'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
@@ -288,7 +288,7 @@ export const avancedClasses = [
   },
   {
     name: `Drakomancien`,
-    img: `classes/Drakomancien.png`,
+    img: `classes/Drakomancien2.png`,
     spell: ['Foudre', 'Thoron'],
     weapons: ['Magie A'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
@@ -305,7 +305,7 @@ export const avancedClasses = [
   },
   {
     name: `Necromancien`,
-    img: `classes/necromancer.png`,
+    img: `classes/necromancer2.png`,
     
     weapons: ['Magie A'],
     spell: ['Miasme', 'Mort'],
@@ -314,7 +314,7 @@ export const avancedClasses = [
   },
   {
     name: `Prêtre`,
-    img: `classes/Clerc.png`,
+    img: `classes/Clerc2.png`,
     weapons: ['Magie A'],
     spell: ['Soin', 'Lumière Divine','Nosferatu','Remède'],
     mastery: ['+ 20 Énergie', '+ 10 PV'],
@@ -380,7 +380,7 @@ export const masterClasses = [
   },
   {
     name: `Grand Moine`,
-    img: `classes/monk.png`,
+    img: `classes/monk3.png`,
     spell: ['Attaque Double', 'Main de Givre','Main de feu'],
     weapons: ['Poing S'],
     mastery: ['+ 40 PV' ],
@@ -396,7 +396,7 @@ export const masterClasses = [
   },
   {
     name: `Maître Pyromancien`,
-    img: `classes/pyromancer.png`,
+    img: `classes/pyromancer3.png`,
     spell: ['Boule de Feu', 'Bolganone', 'Ragnarok', 'Météore'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
@@ -404,7 +404,7 @@ export const masterClasses = [
   },
   {
     name: `Maître Aquamancien`,
-    img: `classes/aquamancien.png`,
+    img: `classes/aquamancien3.png`,
     spell: ['Vague', 'Soin Aquatique', 'Prison Aquatique','Vague Déferlante'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
@@ -412,7 +412,7 @@ export const masterClasses = [
   },
   {
     name: `Maître Cryomancien`,
-    img: `classes/cryomancer.png`,
+    img: `classes/cryomancer3.png`,
     spell: ['Main de Givre', 'Couteau de glace', 'Foudroiment', 'Fimbulvetr'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
@@ -420,7 +420,7 @@ export const masterClasses = [
   },
   {
     name: `Maître Zephyr`,
-    img: `classes/Zephyr.png`,
+    img: `classes/Zephyr3.png`,
     spell: ['Tornade', 'Vents Tranchants', 'Excalidur'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
@@ -428,7 +428,7 @@ export const masterClasses = [
   },
   {
     name: `Maître Mage Gris`,
-    img: `classes/grey-mage.png`,
+    img: `classes/grey-mage3.png`,
     spell: ['Boule d\'Acide', 'Invisibilité', 'Corrosion'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
@@ -436,7 +436,7 @@ export const masterClasses = [
   },
   {
     name: `Maître Druide`,
-    img: `classes/druid.png`,
+    img: `classes/druid3.png`,
     spell: ['Immobilisation verte', 'Rocher destructeur', 'Récupération', 'Seisme'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
@@ -444,7 +444,7 @@ export const masterClasses = [
   },
   {
     name: `Maître Chaman`,
-    img: `classes/chaman.png`,
+    img: `classes/chaman3.png`,
     spell: ['Force Bestial', 'Agilité Bestial', 'Transformation Bestial'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
@@ -452,7 +452,7 @@ export const masterClasses = [
   },
   {
     name: `Maître Illutionniste`,
-    img: `classes/illutioniste.png`,
+    img: `classes/illutioniste3.png`,
     spell: ['Illusion', 'Invisibilité', 'Doppelganger'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
@@ -460,7 +460,7 @@ export const masterClasses = [
   },
   {
     name: `Maître Drakomancien`,
-    img: `classes/Drakomancien.png`,
+    img: `classes/Drakomancien3.png`,
     spell: ['Foudre', 'Thoron', 'Fulguration'],
     weapons: ['Magie S'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
@@ -468,7 +468,7 @@ export const masterClasses = [
   },
   {
     name: `Maître de Sang`,
-    img: `classes/bloodMage.png`,
+    img: `classes/bloodMage2.png`,
     
     weapons: ['Magie S'],
     spell: ['Sang', 'Sangsue', 'Hades'],
@@ -477,7 +477,7 @@ export const masterClasses = [
   },
   {
     name: `Maître Necromancien`,
-    img: `classes/necromancer.png`,
+    img: `classes/necromancer3.png`,
     
     weapons: ['Magie S'],
     spell: ['Miasme', 'Mort', 'Banshee'],
@@ -486,7 +486,7 @@ export const masterClasses = [
   },
   {
     name: `Evêque`,
-    img: `classes/Clerc.png`,
+    img: `classes/Clerc3.png`,
     weapons: ['Magie S'],
     spell: ['Soin', 'Lumière Divine','Nosferatu','Remède','Sagitae','Abraxas'],
     mastery: ['+ 30 Énergie', '+ 20 PV' ],
@@ -494,7 +494,7 @@ export const masterClasses = [
   },
   {
     name: `Grand Croisé`,
-    img: `classes/Croise.png`,
+    img: `classes/Croise2.png`,
     weapons: ['1 Rang A+, Magie A'],
     spell: ['Lumière Divine','Sagitae', 'Abraxas'],
     mastery: ['+ 30 PV', '+ 20 Énergie'],
@@ -502,7 +502,7 @@ export const masterClasses = [
   },
   {
     name: `Chevalier du Néant`,
-    img: `classes/dark-knight.png`,
+    img: `classes/dark-knight2.png`,
     weapons: ['1 Rang A+, Magie A'],
     mastery: ['+ 30 PV', '+ 20 Énergie'],
     spell: ['Miasme', 'Piques Noirs', 'Hades'],

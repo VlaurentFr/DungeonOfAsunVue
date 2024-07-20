@@ -2,11 +2,18 @@
 @import './footer.css';
 @import './nav.css';
 @import './header.css';
-/* @import './sideNav.css'; */
-::-webkit-scrollbar-thumb {
-  background: var(--primaryColor); 
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background: #202124;
   border-radius: 10px;
 }
+
 #app {
   min-height: 100vh;
   display: flex;

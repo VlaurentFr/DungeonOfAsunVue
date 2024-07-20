@@ -286,28 +286,28 @@ export const bows = [
   {
     name: 'Arbalète de Fer',
     dmg: '1d6+1d4',
-    effect: "Portée 15m",
+    effect: "Portée 30m, 1 tour de recharge",
     type: '2 mains',
     cost: '15 po'
   },
   {
     name: 'Arbalète d\'Acier',
     dmg: '1d10+1d4',
-    effect: "Portée 15m",
+    effect: "Portée 30m, 1 tour de recharge",
     type: '2 mains',
-    cost: '20 po'
+    cost: '25 po'
   },
   {
     name: 'Arbalète d\'Argent',
     dmg: '1d12+1d4',
-    effect: "Portée 15m",
+    effect: "Portée 30m, 1 tour de rechargev",
     type: '2 mains',
     cost: '35 po'
   },
   {
     name: 'Arbalète Héros',
     dmg: '2d8+1d4',
-    effect: "Portée 15m",
+    effect: "Portée 30m, 1 tour de recharge",
     type: '2 mains',
     cost: '55 po'
   },

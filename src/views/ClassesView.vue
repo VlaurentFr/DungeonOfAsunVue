@@ -19,8 +19,10 @@ function getImageUrl(name: string) {
     <h3>L'experience de classe</h3>
   </div>
   <article>
-    <div class='flex'>
-      <p class='descOrga'>Pour maitriser et obtenir le bonus lier a une classe, il vous faudra combattre. Chaque combat rapporte un certains montant d'expériences et chaque classe nécessite un certains montant en fonction du tiers de cette dernière (Basique, Novice, Avancée ou Maître). Lorsque le montant est atteint vous obtenez alors le bonus de maîtrise lier a cette classe. Bonus permanant même si vous changer de classe dans le futur. </p>
+    <div class='flex desc'>
+      <img src="@/assets/rpg_class.png"/>
+      <div class="filter"></div>
+      <p>Pour maitriser et obtenir le bonus lier a une classe, il vous faudra combattre. Chaque combat rapporte un certains montant d'expériences et chaque classe nécessite un certains montant en fonction du tiers de cette dernière (Basique, Novice, Avancée ou Maître). Lorsque le montant est atteint vous obtenez alors le bonus de maîtrise lier a cette classe. Bonus permanant même si vous changer de classe dans le futur. </p>
     </div>
     <table>
       <thead>
@@ -114,7 +116,6 @@ function getImageUrl(name: string) {
 article {
   width: fit-content;
   max-width: 100%;
-  overflow: auto;
 }
 table {
   margin: 16px 0px 128px;
@@ -126,7 +127,31 @@ td p {
   color: black;
   padding: 4px 8px;
 }
-img {
+/* .desc {
+  overflow: visible;
+} */
+.desc img {
+  width: 420px;
+  position: absolute;
+  z-index: -1;
+  /* top: 0; */
+  right: 0;
+  overflow: visible;
+  height: 645px;
+  object-fit: cover;
+}
+.desc .filter {
+  width: 420px;
+  position: absolute;
+  overflow: visible;
+  z-index: -1;
+  /* top: 0; */
+  right: 0;
+  height: 645px;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 80%);
+}
+
+.cards img {
   width: 320px;
   position: absolute;
   z-index: -1;
@@ -135,7 +160,7 @@ img {
   height: -webkit-fill-available;
   object-fit: cover;
 }
-.filter {
+.cards .filter {
   width: 320px;
   position: absolute;
   z-index: -1;
@@ -177,8 +202,8 @@ img {
   font-size: 16px;
   color: black;
 }
-@media screen and (max-width: 425px) {
-  img {
+@media screen and (max-width: 1124px) {
+  img, .filter {
     display: none;
   }
 }

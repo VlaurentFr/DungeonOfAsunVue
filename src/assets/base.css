@@ -21,7 +21,6 @@
     background-color: #000;
   }
 
-
 *,
 *::before,
 *::after {
@@ -36,7 +35,7 @@ font-weight: bold;
 
 html{
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 300px;
 }
 
 body {

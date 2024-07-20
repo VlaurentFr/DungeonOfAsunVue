@@ -50,8 +50,8 @@ function toggle() {
         </div>
       </div>
     </div>
-    <div class="content" :id="mobs.name" v-for="mobs of selected" :key="mobs.name">
-      <div>
+    <div class="content" :id="mobs.name" v-for="(mobs, index) of selected" :key="mobs.name">
+      <div :id="selected[index - 1]?.name.slice(0,1) != mobs.name.slice(0,1) ? mobs.name.slice(0,1) : ''">
         <h3>{{ mobs.name }}</h3>
         <p v-if="!isActive && mobs.desc" class="general-desc">{{ mobs.desc }}</p>
       </div>
@@ -390,7 +390,7 @@ h4 {
 }
 .stats-card .stat {
   display: flex;
-  width: 86px;
+  width: 70px;
   flex-direction: column;
   justify-content: center;
   align-items: center;

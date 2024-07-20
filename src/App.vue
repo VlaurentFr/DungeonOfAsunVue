@@ -2,6 +2,7 @@
 import { RouterView, useRoute } from 'vue-router'
 import Footer from './components/FooterBar.vue'
 import Nav from './components/NavBar.vue'
+import MegaNavBar from './components/MegaNavBar.vue';
 import { ref, watch } from 'vue';
 
 const route = useRoute()
@@ -19,7 +20,8 @@ watch(route, (newValue) => {
 
 <template>
   <div v-if="!loading" class="visible">
-    <Nav></Nav>
+    <Nav></Nav>x
+    <!-- <MegaNavBar></MegaNavBar> -->
     <div id="container">
       <RouterView />
       <!-- <Footer></Footer> -->

@@ -37,14 +37,14 @@ function clickSuggest(name: string) {
     </div>
     <div class="tags"><span>Aller à :</span>
       <div :class="'tag'" v-for="(s, index) of selected" v-show="s.type !== gear[index -1]?.type" :key="s.name">
-        <a :href="'#'+s.type" >{{ s.type }}</a>
+        <a :href="'#'+s.name" >{{ s.type }}</a>
       </div>
     </div>
     <div class="title-section">
         <h3>Liste des objets</h3>
     </div>
     <div class="cards">
-      <div class="card" v-for="(s, index) of selected" :key="s.name" :id="s.type !== gear[index -1]?.type ? s.type : s.name ">
+      <div class="card" v-for="(s) of selected" :key="s.name" :id="s.name ">
         <div class="card-desc">
           <h4>
             <i v-if="s.el == 'Feu'" class="fas fa-fire"></i>

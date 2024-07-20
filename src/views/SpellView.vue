@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { spell } from '@/mock/spellMock';
-import { computed, ref } from 'vue';
-
+import { computed, onMounted, ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
+import BookIcon from '@/assets/tabler_book.vue'
+import SwordIcon from '@/assets/tabler_sword.vue'
 const search = ref("");
 
 const selected = computed(() => {
@@ -16,6 +18,32 @@ const selected = computed(() => {
 function clickSuggest(name: string) {
   search.value = name;
 }
+
+const route = useRoute()
+const params = ref(route.hash)
+
+const setCurrentSpell = () => {
+  const items = document.getElementsByClassName('card')
+
+  for(let i = 0; i <items.length; i++) {
+   if(items[i].id == params.value) {
+    items[i].classList.add('current-spell')
+   }
+  }
+
+}
+
+watch(route, (newValue)=> {
+  params.value = newValue.hash.slice(1,newValue.hash.length)
+  setCurrentSpell()
+
+}, {immediate: true, deep: true})
+
+onMounted(() => {
+  setCurrentSpell()
+
+})
+
 </script>
 <template>
   <div class='visible'>
@@ -28,19 +56,6 @@ function clickSuggest(name: string) {
         <div v-if="selected.length !== spell.length" class="searh-suggest">
           <div class="suggest" v-for="m of selected" :key="m.name" @click="clickSuggest(m.name)">
             <p>
-              <i v-if="m.el == 'Feu'" class="fas fa-fire"></i>
-              <i v-if="m.el == 'Glace'" class="fas fa-snowflake"></i>
-              <i v-if="m.el == 'Vent'" class="fas fa-wind"></i>
-              <i v-if="m.el == 'Plant'" class="fas fa-seedling"></i>
-              <i v-if="m.el == 'Poison'" class="fas fa-skull-crossbones"></i>
-              <i v-if="m.el == 'Dark'" class="fas fa-skull"></i>
-              <i v-if="m.el == 'Light'" class="fas fa-sun"></i>
-              <i v-if="m.el == 'Druid'" class="fas fa-paw"></i>
-              <i v-if="m.el == 'Alchi'" class="fas fa-flask"></i>
-              <i v-if="m.el == 'Foudre'" class="fas fa-bolt"></i>
-              <i v-if="m.el == 'Psy'" class="fas fa-eye"></i>
-              <i v-if="m.el == 'Blood'" class="fas fa-tint"></i>
-              <i v-if="m.el == 'Illu'" class="fas fa-theater-masks"></i>
               {{ m.name }}
             </p>
           </div>
@@ -48,27 +63,17 @@ function clickSuggest(name: string) {
       </div>
     </div>
     <h3>Comment-ça marche ?</h3>
-    <p>Pour toute les compétences de type Physique un jet de Force est demander, pour les autres un jet de Sagesse</p>
+    <p>Pour toute les compétences de type Physique un jet de Force est demander, pour les autres un jet de Sagesse</p><br/>
+    <p> Vous pouvez avoir jusqu’à 8 sorts à la fois, si vous en acquérez plus il faudra choisir d’en oublier un pour utiliser votre nouveau sort. (Hors capacité de maîtrise d’arme Dash et Secours)</p>
     <div class="title-section">
         <h3>Liste des compétences</h3>
     </div>
     <div class="cards">
-      <div class="card" v-for="s of selected" :key="s.name">
+      <div class="card" v-for="s of selected" :key="s.name" :id="s.name">
         <div class="card-desc">
           <h4>
-            <i v-if="s.el == 'Feu'" class="fas fa-fire"></i>
-            <i v-if="s.el == 'Glace'" class="fas fa-snowflake"></i>
-            <i v-if="s.el == 'Vent'" class="fas fa-wind"></i>
-            <i v-if="s.el == 'Plant'" class="fas fa-seedling"></i>
-            <i v-if="s.el == 'Poison'" class="fas fa-skull-crossbones"></i>
-            <i v-if="s.el == 'Dark'" class="fas fa-skull"></i>
-            <i v-if="s.el == 'Light'" class="fas fa-sun"></i>
-            <i v-if="s.el == 'Druid'" class="fas fa-paw"></i>
-            <i v-if="s.el == 'Alchi'" class="fas fa-flask"></i>
-            <i v-if="s.el == 'Foudre'" class="fas fa-bolt"></i>
-            <i v-if="s.el == 'Psy'" class="fas fa-eye"></i>
-            <i v-if="s.el == 'Blood'" class="fas fa-tint"></i>
-            <i v-if="s.el == 'Illu'" class="fas fa-theater-masks"></i>
+            <SwordIcon v-if="s.el == 'Physique'"></SwordIcon>
+            <BookIcon v-else></BookIcon>
             {{ s.name }}
           </h4>
           <p><span>Level :</span> {{ s.lvl }}</p>
@@ -151,6 +156,19 @@ input:focus-visible {
   background: #0F0F0F;
   transition: all .3s ease-in-out;
 }
+
+.current-spell {
+  animation: selected 3s;
+}
+
+@keyframes selected {
+  0% {
+    background-color: var(--primaryColor);
+  }
+  100% {
+    background-color: #0F0F0F;
+  }
+}
 .card h4 {
   color: #24be74;
   font-family: Work Sans;
@@ -161,6 +179,10 @@ input:focus-visible {
 
   display: flex;
   gap: 8px;
+}
+.card h4 svg {
+  height: 20px;
+  width: 20px;
 }
 .card .side {
   display: flex;

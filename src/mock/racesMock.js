@@ -300,7 +300,7 @@ export const other = [
     dieu suprême. <br/>
     Les hommes-bêtes sont en guerre permanente, qu'ils considèrent comme des intrus sur leur territoire. Ils sont très agiles et ont des réflexes rapides, ce qui en fait des combattants redoutables en corps à corps. Ils utilisent des armes telles que des masses, des haches, des lances et des arcs pour combattre leurs ennemis. Les hommes-bêtes sont également connus pour leur utilisation de la magie sauvage, qui leur permet de lancer des sorts qui confèrent des avantages au combat.
     `,
-    caract: "+30 Force, -20 Sagesse, - 5 Dextérité",
+    caract: "+30 Force, -20 Dextérité, - 5 Charisme",
     talent: "Magie Sauvage : Capacité à utiliser la magie chaotique pour lancer des sorts de combat qui renforcent leurs capacités physiques et affaiblissent leurs ennemis."
   },
 ]
