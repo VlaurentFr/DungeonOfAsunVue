@@ -40,7 +40,7 @@ function navigate(panthIndex: number){
         <p v-html="godStore.god.desc"></p>
       </div>
     </div>
-    <div class="head-religion">
+    <div v-if="godStore.god.cults.length" class="head-religion">
       <h3>Religions</h3>
       <p @click="$router.push({ path: '/Univers/panth'})">Voir toutes</p>
     </div>
@@ -83,7 +83,7 @@ function navigate(panthIndex: number){
   top: 0;
   right: 0;
   z-index: -1;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 80%);
+  background: linear-gradient(90deg, var(--backgroundColor) 0%, rgba(36, 190, 116, 0) 50%), no-repeat;
 }
 @media screen and (max-width: 1024px) {
   .img-desc {
@@ -133,7 +133,7 @@ img {
   border-radius: 4px;
   text-align: center;
   width: fit-content;
-  color: white;
+  color: var(--textColor);
   z-index: 2;
 }
 
@@ -144,5 +144,9 @@ img {
   display: flex;
   gap: 24px;
   overflow: hidden;
+  -webkit-mask-image: url(../assets/splash.png);
+  mask-image: url(../assets/splash.png);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%, contain;
 }
 </style>

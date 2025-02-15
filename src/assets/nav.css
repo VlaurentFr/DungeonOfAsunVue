@@ -7,6 +7,7 @@ Nav
   display: flex;
   align-items: center;
   margin: 16px 0px;
+  border: none;
 }
 
 #sun {
@@ -22,7 +23,7 @@ Nav
   padding: 6px;
   height: 27px;
   display: flex;
-  color: white;
+  color: var(--textColor);
 }
 
 nav {
@@ -31,16 +32,25 @@ nav {
   display: flex;
   width: 100%;
   height: fit-content;
-  background: none;
+  background: transparent;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   z-index: 999;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid #1B1B1B;
-  background: rgba(0, 0, 0, 0.80);
-  backdrop-filter: blur(4px);
+  /* border-bottom: 2px solid #1B1B1B; */
+  /* background: rgba(255, 255, 255, 0.80); */
+  /* background: linear-gradient(-90deg, rgba(255,255,255,0.88) 0%, rgba(255,255,255,0) 100%); */
+  /* backdrop-filter: blur(4px); */
   
+}
+nav .background-blur {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(16px);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1) 75%);
 }
 nav > div {
   width: 1120px;
@@ -62,12 +72,30 @@ nav a, nav p {
   position: relative;
   padding: 0 20px;
   margin: 0 10px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--textColor);
   font-size: 14px;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
   overflow: visible;
+}
+
+nav .link > div:first-child > p {
+  height: 100%;
+}
+nav .link > div:first-child > p::after {
+  position: absolute;
+  top: calc(50% + 1.2em);
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primaryColor);
+  transition: all 300ms ease-in-out;
+}
+nav .link:hover > div:first-child > p::after {
+  width: 80%;
 }
 nav .item {
   /* position: relative;
@@ -79,7 +107,12 @@ nav .item {
   align-items: center;
 }
 
-nav .link:hover > div > a, nav div a.selected, nav a:hover, nav .link:hover > div > p, nav p:hover {
-  transition: all 1s,;
-  border-bottom: 2px solid var(--secondaryColor);
+nav .dropdown > div:first-child {
+  height: 100%;
+}
+
+nav .subNav > div:hover {
+  background-color: var(--backgroundColor);
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }

@@ -10,7 +10,7 @@ body::-webkit-scrollbar-track {
   background: transparent;
 }
 body::-webkit-scrollbar-thumb {
-  background: #202124;
+  background: var(--primaryColor);
   border-radius: 10px;
 }
 
@@ -52,7 +52,7 @@ h3:after {
   content: "";
   width: calc(100% + 8px);
   height: 4px;
-  background-color: #24BE74;
+  background-color: var(--primaryColor);
   position: absolute;
   bottom: -16px;
   right: -8px;

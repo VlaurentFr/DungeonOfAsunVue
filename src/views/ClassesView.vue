@@ -1,4 +1,7 @@
-<script setup lang="ts">
+<template>
+  <div></div>
+</template>
+<!-- <script setup lang="ts">
 import { basicClasses, noviceClasses, avancedClasses, masterClasses } from '@/mock/classesMock';
 import { ref } from 'vue';
 
@@ -8,6 +11,7 @@ function getImageUrl(name: string) {
   return new URL(`../assets/${name}`, import.meta.url).href
 }
 </script>
+
 <template>
 <div class="visible">
   <div class='header'>
@@ -105,11 +109,19 @@ function getImageUrl(name: string) {
       </div>
     </div>
     <div v-if="c.spell?.length">
-      <h4>Sorts</h4>
+      <h4>Compétences</h4>
       <span class="spell" v-for="(w, index) of c.spell" :key="w">{{ w }}<i v-if="index != c.spell.length -1">, </i></span>
     </div>
 
   </div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+    <defs>
+      <mask id="ellipse-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
+        <rect x="0" y="0" width="100%" height="100%" fill="white" />
+        <ellipse cx="100%" cy="100%" rx="30%" ry="50%" fill="black" />
+      </mask>
+    </defs>
+  </svg>
 </div>
 </template>
 <style scoped>
@@ -139,6 +151,7 @@ td p {
   overflow: visible;
   height: 645px;
   object-fit: cover;
+  overflow: auto;
 }
 .desc .filter {
   width: 420px;
@@ -174,7 +187,7 @@ td p {
   gap: 34px;
 }
 .cards {
-  background-color: #202124;
+  background-color: var(--backgroundColor);
   padding: 32px;
   margin: 32px 0;
   border-radius: 6px;
@@ -197,6 +210,9 @@ td p {
     border-radius: 4px;
     padding: 16px 32px;
     margin: 18px 0px;
+    background-color: aqua;
+    mask-image: url('../assets/Subtract.png');
+    mask-size: 100% 100%;
 }
 .green-cards h4 {
   font-size: 16px;
@@ -207,4 +223,4 @@ td p {
     display: none;
   }
 }
-</style>
+</style> -->

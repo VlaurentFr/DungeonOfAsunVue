@@ -29,7 +29,7 @@ watch(route, (newValue) => {
   </div>
   <div v-else>
     <div id="container">
-      <img id="logo-loading" src="../src/assets/DoA.svg"/>
+      <img id="logo-loading" src="../src/assets/DoA.png"/>
     </div>
   </div>
   
@@ -37,7 +37,7 @@ watch(route, (newValue) => {
 
 <style scoped>
 #logo-loading {
-  height: 200px;
+  height: 400px;
   margin: auto;
 }
 </style>
@@ -64,21 +64,21 @@ watch(route, (newValue) => {
   background-color: var(--primaryColor);
 }
 .tab:checked + label:hover {
-  color: white;
+  color: var(--textColor);
 }
 
 .tabs input + label {
   margin: 12px 0 0 0;
   transition: all 0.3s;
   text-align: center;
-  color: #e7e9f5;
+  color: var(--textColor);
   height: 48px;
   justify-content: center;
   align-items: center;
   display: inline-flex;
   padding: 5pt 10pt;
   font-size: 16px;
-  background: #202124;
+  background: var(--backgroundColor);
   border-radius: 4px 4px 0 0;
   cursor: pointer;
 }

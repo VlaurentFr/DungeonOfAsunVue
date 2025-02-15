@@ -40,6 +40,11 @@ const router = createRouter({
       component: () => import('../views/ClassesView.vue')
     },
     {
+      path: '/Rules/class2',
+      name: 'rules-class2',
+      component: () => import('../views/Classes2View.vue')
+    },
+    {
       path: '/Rules/weapons',
       name: 'rules-weapon',
       component: () => import('../views/WeaponView.vue')

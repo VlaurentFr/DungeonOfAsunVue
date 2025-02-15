@@ -68,12 +68,12 @@ const LINKS = [
         name: 'Combats'
       },
       {
-        url: '/Rules/class',
+        url: '/Rules/class2',
         name: 'Classes'
       },
       {
         url: '/Rules/weapons',
-        name: 'Maîtrises d\'armes'
+        name: 'Armes'
       },
       {
         url: '/Rules/spell',
@@ -120,8 +120,9 @@ const hideMenu = () => {
 
 <template>
     <nav>
+      <div class="background-blur"></div>
       <div>
-        <RouterLink id="main-title" to="/Home"><img src="../assets/DoA.svg"/></RouterLink>
+        <RouterLink id="main-title" to="/Home"><img src="../assets/DoA.png"/></RouterLink>
         <div id="content" v-if="width >= 1440">
           <div class="link" :class="[{'dropdown': !link.url}, {'mega': link.mega}]" v-for="link of LINKS" :key="link.url">
             <div v-if="link.url">
@@ -267,7 +268,8 @@ const hideMenu = () => {
                             <RouterLink :to="'/Rules/spell#'+m.name" v-for="m of compList.slice(5,10)" :key="m.name"> {{ m.name }}</RouterLink>
                           </div>
                           <div>
-                            <RouterLink :to="'/Rules/spell#'+m.name" v-for="m of compList.slice(10)" :key="m.name"> {{ m.name }}</RouterLink>
+                            <RouterLink :to="'/Rules/spell#'+m.name" v-for="m of compList.slice(10,14)" :key="m.name"> {{ m.name }}</RouterLink>
+                            <RouterLink class="button" :to="'/Rules/spell'">Voir plus</RouterLink>
                           </div>
                         </div>
                       </div>
@@ -295,7 +297,7 @@ const hideMenu = () => {
     <div @click="hideMenu()">
       <i class="fas fa-times"> </i> 
         <nav>
-            <RouterLink id="main-title" to="/Home"><img src="../assets/DoA.svg"/></RouterLink>
+            <RouterLink id="main-title" to="/Home"><img src="../assets/DoA.png"/></RouterLink>
             <div id="content">
               <div v-for="link of LINKS" :key="link.url" :class="{'mega': link.mega}">
                 <RouterLink v-if="link.url" :to="link.url">{{ link.name }}</RouterLink>
@@ -321,6 +323,9 @@ const hideMenu = () => {
   font-family: fantasy;
   max-height: 48px;
 }
+#main-title img {
+height: 120px;
+}
 #content {
   display: contents;
 }
@@ -341,7 +346,7 @@ const hideMenu = () => {
 
 #coffee {
   border-radius: 16px;
-  border: 1px solid white;
+  border: 1px solid var(--textColor);
   padding: 8px 24px;
   transition: all 300ms ease-in-out;
 }
@@ -354,8 +359,8 @@ const hideMenu = () => {
   position: absolute;
   top: calc(48px + (16px * 2));
   z-index: 3;
-  color: white;
-  background-color: #202124;
+  color: var(--textColor);
+  background-color: var(--background);
   border-radius: 6px;
   line-height: 48px;
   text-align: left;
@@ -405,7 +410,7 @@ const hideMenu = () => {
   flex-wrap: wrap;
   gap: 10px;
   border-bottom: 2px solid #1B1B1B;
-  background: rgba(0, 0, 0, 0.80);
+  background: rgba(255, 255, 255, 0.80);
   backdrop-filter: blur(4px);
   /* height: 180px; */
   overflow: hidden;
@@ -442,6 +447,8 @@ const hideMenu = () => {
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 15ch;
+  text-align: left;
+  justify-content: flex-start;
 }
 .mega ul li .nav a:hover {
   color: var(--primaryColor);

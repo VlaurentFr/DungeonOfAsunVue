@@ -159,7 +159,7 @@ function toggle() {
   text-align: center;
 }
 .header h1 {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Work Sans;
   font-size: 48px;
   font-style: normal;
@@ -167,7 +167,7 @@ function toggle() {
   line-height: normal;
 }
 .header h2 {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Caladea;
   font-size: 32px;
   font-style: italic;
@@ -208,7 +208,7 @@ function toggle() {
   visibility: hidden;
   position: absolute;
   top: 66px;
-  background: #606367;
+  background: var(--background);
   border-radius: 16px;
   width: 100%;
 }
@@ -220,9 +220,9 @@ function toggle() {
   cursor: pointer;
 }
 #search .suggest:hover {
-  background-color: #202124;
-  color: #24BE74;
-  border: #24BE74 1px solid;
+  background-color: var(--backgroundColor);
+  color: var(--primaryColor);
+  border: var(--primaryColor) 1px solid;
 }
 #search:focus-within .searh-suggest {
  visibility: visible;
@@ -232,8 +232,8 @@ input {
   padding: 18.5px 56px;
   border-radius: 16px;
   border: none;
-  background-color: #202124;
-  color: white;
+  background-color: var(--background);
+  color: var(--textColor);
   font-size: 16px;
 }
 input:focus-visible {
@@ -282,7 +282,7 @@ input:focus-visible {
 }
 h4 {
   margin: 80px 0 24px;
-  color: #FFF;
+  color: var(--textColor);
   font-family: Work Sans;
   font-size: 24px;
   font-style: normal;
@@ -306,7 +306,7 @@ h4 {
   align-items: flex-start;
   gap: 16px;
   border-radius: 28px;
-  background: #0F0F0F;
+  background: var(--background);
   transition: all 300ms ease-in-out;
 }
 .mob-wrapper {
@@ -315,7 +315,7 @@ h4 {
   width: 100%;
 }
 .mob-header h5 {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Work Sans;
   font-size: 20px;
   font-style: normal;
@@ -324,7 +324,7 @@ h4 {
   margin-bottom: 8px;
 }
 .mob-header p {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Work Sans;
   font-size: 14px;
   font-style: italic;
@@ -384,7 +384,7 @@ h4 {
 }
 .stats-card {
   display: flex;
-  background: #202124;
+  background: var(--backgroundColor);
   border-radius: 12px;
   padding: 8px 16px;
 }
@@ -428,7 +428,7 @@ h4 {
   align-items: flex-start;
   gap: 8px;
   border-radius: 8px;
-  background: #202124;
+  background: var(--backgroundColor);
 }
 .spell .card .type {
   padding: 4px 8px;
@@ -438,7 +438,7 @@ h4 {
   font-weight: 400;
 }
 .spell h6 {
-  color: #24BE74;
+  color: var(--primaryColor);
   font-family: Work Sans;
   font-size: 20px;
   font-style: normal;
@@ -446,7 +446,7 @@ h4 {
   line-height: normal;
 }
 .spell .effect {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Work Sans;
   font-size: 14px;
   font-style: normal;
@@ -455,7 +455,7 @@ h4 {
   margin: 16px 0 12px 0;
 }
 .spell .effect span {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Work Sans;
   font-size: 14px;
   font-style: normal;
@@ -463,7 +463,7 @@ h4 {
   line-height: normal;
 }
 .spell .spell-desc {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Work Sans;
   font-size: 12px;
   font-style: normal;
@@ -472,7 +472,7 @@ h4 {
   margin-bottom: 40px;
 }
 .spell .spell-desc :deep(span){
-  color: #24BE74;
+  color: var(--primaryColor);
   font-family: Work Sans;
   font-size: 12px;
   font-style: italic;

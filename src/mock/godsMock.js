@@ -1,7 +1,7 @@
 export const majorGods = [
   {
     name: `Fauscht`,
-    cults: [0, 8, 10, 11],
+    cults: [0, 8, 11],
     title: `Dieu de la mort`,
     img: `gods/Fausht2.png`,
     character: `gods/Fausht2-character.png`,
@@ -59,37 +59,37 @@ export const majorGods = [
     <br/><br/>
     Son objectif est de préserver la connaissance et la sagesse dans l'univers, en partageant son savoir avec parcimonie et en veillant à ce que les mortels utilisent le savoir de manière responsable. Eone est également chargé de récupérer des savoirs et des livres jugés trop dangereux pour être connus des hommes, afin de les protéger des ténèbres qui peuvent les corrompre.`,
   },
-  {
-    name: `Ehmjir`,
-    cults: [0, 4, 8, 11],
-    title: `Dieu des runes`,
-    img: `gods/Emhjir2.png`,
-    character: `gods/Emhjir2-character.png`,
-    desc: `Ehmjir, également appelé le maître des forges par les Nains, est vénéré comme le dieu des runes dans le panthéon d'Asun. Son pouvoir réside dans sa capacité à communiquer avec les runes et à les utiliser pour guider et protéger les mortels. Il est souvent associé à un ensemble de runes mystiques, gravées sur des pierres ou des objets.
-    <br/><br/>
-    Son objectif est d'assurer la protection des peuples contre les forces maléfiques, en accordant sa bénédiction aux adeptes de la magie runique. Les fidèles de la magie runique vénèrent Ehmjir en gravant ses symboles sur des pierres ou des objets, en récitant des prières et en effectuant des rituels pour obtenir des conseils et des protections contre les dangers.`,
-  },
+  // {
+  //   name: `Ehmjir`,
+  //   cults: [0, 4, 8, 11],
+  //   title: `Dieu des runes`,
+  //   img: `gods/Emhjir2.png`,
+  //   character: `gods/Emhjir2-character.png`,
+  //   desc: `Ehmjir, également appelé le maître des forges par les Nains, est vénéré comme le dieu des runes dans le panthéon d'Asun. Son pouvoir réside dans sa capacité à communiquer avec les runes et à les utiliser pour guider et protéger les mortels. Il est souvent associé à un ensemble de runes mystiques, gravées sur des pierres ou des objets.
+  //   <br/><br/>
+  //   Son objectif est d'assurer la protection des peuples contre les forces maléfiques, en accordant sa bénédiction aux adeptes de la magie runique. Les fidèles de la magie runique vénèrent Ehmjir en gravant ses symboles sur des pierres ou des objets, en récitant des prières et en effectuant des rituels pour obtenir des conseils et des protections contre les dangers.`,
+  // },
   {
     name: `Gusius`,
     cults: [0, 3, 4],
     title: `Dieu des Animaux`,
     img: `gods/Gusius2.png`,
     character: `gods/Gusius2-character.png`,
-    desc: `Gusius est vénéré comme le dieu des animaux dans le panthéon d'Asun. Frère de Quaara et mari de Zenelia, il incarne le côté sauvage de la nature et des animaux. Son pouvoir réside dans sa capacité à communiquer avec les animaux et à les protéger contre les menaces extérieures.
+    desc: `Gusius est vénéré comme le dieu des animaux dans le panthéon d'Asun. Frère de Quaara, il incarne le côté sauvage de la nature et des animaux. Son pouvoir réside dans sa capacité à communiquer avec les animaux et à les protéger contre les menaces extérieures.
     <br/><br/>
     Son objectif est de maintenir l'équilibre entre les espèces et de protéger les habitats naturels, en guidant les animaux dans leur quête de survie et en protégeant les chasseurs respectueux de la nature. Les fidèles de Gusius sont souvent des chasseurs qui cherchent à obtenir sa bénédiction pour réussir leurs quêtes tout en respectant les cycles naturels.
   `,
   },
-  {
-    name: `Noheia`,
-    cults: [0, 3, 9],
-    title: `Déesse des Merveilles`,
-    img: `gods/Noheia2.png`,
-    character: `gods/Noheia2-character.png`,
-    desc: `Noheia est vénérée comme la déesse des merveilles dans le panthéon d'Asun. Elle voit en la création de son frère Théomis les humains, la plus belle chose de ce monde. Son pouvoir réside dans sa capacité à percevoir la beauté dans toutes les choses et à inspirer la créativité chez les mortels. Elle déploie ses ailes et tentacules emplis d'yeux pour veiller sur eux et chasser ce qu'il y a de plus laid dans ce monde, les créatures des ténèbres.
-    <br/><br/>
-    Son objectif est d'inspirer les mortels à travers la créativité et l'imagination, en les guidant vers une vie remplie de merveilles et d'émerveillement. Les adeptes de Noheia cherchent son inspiration pour leur travail artistique, qu'il s'agisse de peinture, de sculpture, d'écriture ou d'invention. Ils considèrent que l'ouverture d'esprit et la capacité à voir le monde avec des yeux neufs sont essentielles pour stimuler la créativité et l'innovation.`,
-  },
+  // {
+  //   name: `Noheia`,
+  //   cults: [0, 3, 9],
+  //   title: `Déesse des Merveilles`,
+  //   img: `gods/Noheia2.png`,
+  //   character: `gods/Noheia2-character.png`,
+  //   desc: `Noheia est vénérée comme la déesse des merveilles dans le panthéon d'Asun. Elle voit en la création de son frère Théomis les humains, la plus belle chose de ce monde. Son pouvoir réside dans sa capacité à percevoir la beauté dans toutes les choses et à inspirer la créativité chez les mortels. Elle déploie ses ailes et tentacules emplis d'yeux pour veiller sur eux et chasser ce qu'il y a de plus laid dans ce monde, les créatures des ténèbres.
+  //   <br/><br/>
+  //   Son objectif est d'inspirer les mortels à travers la créativité et l'imagination, en les guidant vers une vie remplie de merveilles et d'émerveillement. Les adeptes de Noheia cherchent son inspiration pour leur travail artistique, qu'il s'agisse de peinture, de sculpture, d'écriture ou d'invention. Ils considèrent que l'ouverture d'esprit et la capacité à voir le monde avec des yeux neufs sont essentielles pour stimuler la créativité et l'innovation.`,
+  // },
   {
     name: `Kyhara`,
     cults: [0, 3, 9, 2],
@@ -104,7 +104,7 @@ export const majorGods = [
 export const minorGods = [
   {
     name: `Edes`,
-    cults: [1, 10],
+    cults: [1],
     title: `Le Justicier`,
     img: `gods/Edes2.png`,
     character: `gods/Edes2-character.png`,
@@ -117,34 +117,34 @@ export const minorGods = [
     Son objectif principal est de faire respecter la loi et l'ordre dans son royaume tout en veillant à la sécurité et au bien-être de ses sujets. Protecteur intransigeant, Edes est déterminé à éliminer toute forme de mal qui menace la paix de Lorus.
     `
   },
-  {
-    name: `Edis`,
-    cults: [1, 10],
-    title: `Gardien des Cieux`,
-    img: `gods/Edis2.png`,
-    character: `gods/Edis2-character.png`,
-    desc:`Edis, fils cadet de Théomis et Quaara, est un être majestueux chargé de la garde de la porte des cieux. Son rôle sacré est de maintenir l'intégrité des frontières entre les mondes terrestre et divin, n'autorisant que les âmes dignes à franchir la porte et accéder au royaume des dieux.
+  // {
+  //   name: `Edis`,
+  //   cults: [1, 10],
+  //   title: `Gardien des Cieux`,
+  //   img: `gods/Edis2.png`,
+  //   character: `gods/Edis2-character.png`,
+  //   desc:`Edis, fils cadet de Théomis et Quaara, est un être majestueux chargé de la garde de la porte des cieux. Son rôle sacré est de maintenir l'intégrité des frontières entre les mondes terrestre et divin, n'autorisant que les âmes dignes à franchir la porte et accéder au royaume des dieux.
 
-    Sa présence imposante, empreinte de force et de sérénité, est marquée par des ailes majestueuses déployées en un vaste éventail. Edis incarne le gardien ultime de la loi divine, vigilant et prêt à se dresser contre ceux qui cherchent à violer les règles sacrées.
+  //   Sa présence imposante, empreinte de force et de sérénité, est marquée par des ailes majestueuses déployées en un vaste éventail. Edis incarne le gardien ultime de la loi divine, vigilant et prêt à se dresser contre ceux qui cherchent à violer les règles sacrées.
     
-    Capable de percevoir les intentions impures et de détecter les mensonges, Edis est également doté d'un pouvoir de discernement divin. Son objectif principal est de maintenir l'ordre céleste en empêchant les êtres indignes d'accéder au royaume des dieux, tout en préservant l'équilibre entre les mondes terrestre et divin.
-    `
-  },
-  {
-    name: `Zenelia`,
-    cults: [4],
-    title: `Prêtresse de la Nature`,
-    img: `gods/Zenelia2.png`,
-    character: `gods/Zenelia2-character.png`,
-    desc: `Zenelia, la Prêtresse de la Nature, incarne la Flore et la Vie. Enfant de Gusius et de Quaara, elle est la mère de la magie druidique, unissant la magie de la Terre de son père Théomis aux pouvoirs des plantes de sa mère.
+  //   Capable de percevoir les intentions impures et de détecter les mensonges, Edis est également doté d'un pouvoir de discernement divin. Son objectif principal est de maintenir l'ordre céleste en empêchant les êtres indignes d'accéder au royaume des dieux, tout en préservant l'équilibre entre les mondes terrestre et divin.
+  //   `
+  // },
+  // {
+  //   name: `Zenelia`,
+  //   cults: [4],
+  //   title: `Prêtresse de la Nature`,
+  //   img: `gods/Zenelia2.png`,
+  //   character: `gods/Zenelia2-character.png`,
+  //   desc: `Zenelia, la Prêtresse de la Nature, incarne la Flore et la Vie. Enfant de Gusius et de Quaara, elle est la mère de la magie druidique, unissant la magie de la Terre de son père Théomis aux pouvoirs des plantes de sa mère.
 
-    Vénérée pour son lien étroit avec les forces de la nature, Zenelia est souvent considérée comme la gardienne de la forêt sacrée, veillant sur les créatures qui y résident. Parée de vêtements de lin tissés à la main et d'ornements de bois, de feuilles et de pierres précieuses, elle se déplace avec une grâce sereine, en harmonie avec le monde naturel qui l'entoure.
+  //   Vénérée pour son lien étroit avec les forces de la nature, Zenelia est souvent considérée comme la gardienne de la forêt sacrée, veillant sur les créatures qui y résident. Parée de vêtements de lin tissés à la main et d'ornements de bois, de feuilles et de pierres précieuses, elle se déplace avec une grâce sereine, en harmonie avec le monde naturel qui l'entoure.
     
-    Les fidèles de Zenelia recherchent sa bénédiction pour obtenir guérison, protection, fertilité et force de la nature. Capable de guérir les blessures et les maladies grâce à ses connaissances en plantes médicinales, elle invoque également les esprits de la nature pour protéger les voyageurs égarés et maintenir l'équilibre naturel entre toutes les créatures vivantes.
+  //   Les fidèles de Zenelia recherchent sa bénédiction pour obtenir guérison, protection, fertilité et force de la nature. Capable de guérir les blessures et les maladies grâce à ses connaissances en plantes médicinales, elle invoque également les esprits de la nature pour protéger les voyageurs égarés et maintenir l'équilibre naturel entre toutes les créatures vivantes.
     
-    Son objectif principal est de préserver la paix et l'harmonie dans le monde naturel, en protégeant ses habitants et en offrant sa bénédiction à ceux qui cherchent à vivre en harmonie avec la nature.
-    `
-  },
+  //   Son objectif principal est de préserver la paix et l'harmonie dans le monde naturel, en protégeant ses habitants et en offrant sa bénédiction à ceux qui cherchent à vivre en harmonie avec la nature.
+  //   `
+  // },
   {
     name: `Xegmir`,
     cults: [1],
@@ -166,7 +166,7 @@ export const minorGods = [
     title: `Déesse de l’aube`,
     img: `gods/Cione2.png`,
     character: `gods/Cione2-character.png`,
-    desc: `Cione, première des déesses jumelles, incarne la beauté, la compassion et la guerre. Fille de Fauscht et de Metona, elle est souvent confondue avec sa mère et la déesse des merveilles, Noheia. Cione est également l’incarnation de la guerre, tout comme sa sœur, Cirana.
+    desc: `Cione, première des déesses jumelles, incarne la beauté, la compassion et la guerre. Fille de Fauscht et de Metona. Cione est également l’incarnation de la guerre, tout comme sa sœur, Cirana.
 
     Elle peut être invoquée pour apporter guérison, régénération ou lumière dans les moments sombres. Les fidèles de Cione cherchent son aide pour la paix, l'harmonie et le succès dans leurs entreprises. Associée à l'émergence du soleil et au début d'une nouvelle journée, elle apporte lumière et espoir dans les ténèbres.
     
@@ -188,36 +188,36 @@ export const minorGods = [
     Son objectif principal est de favoriser la chaos, la discorde et l'obscurité, tout en protégeant les marginaux et ceux qui vivent dans les recoins sombres du monde.
     `,
   },
-  {
-    name: `Heilong`,
-    cults: [3],
-    title: `Dieu du courage`,
-    img: `gods/Heiloong2.png`,
-    character: `gods/Heiloong2-character.png`,
-    desc: `Heilong, fils de Riannedos, est un drakéides devenu dieu après avoir combattu pendant 100 jours sans interruption contre Edes lors de la purge draconique. Par la suite, épuisé, Edes accepta de ne tuer que les dragons du continent de Therion, laissant les drakéides survivants en vie.
+  // {
+  //   name: `Heilong`,
+  //   cults: [3],
+  //   title: `Dieu du courage`,
+  //   img: `gods/Heiloong2.png`,
+  //   character: `gods/Heiloong2-character.png`,
+  //   desc: `Heilong, fils de Riannedos, est un drakéides devenu dieu après avoir combattu pendant 100 jours sans interruption contre Edes lors de la purge draconique. Par la suite, épuisé, Edes accepta de ne tuer que les dragons du continent de Therion, laissant les drakéides survivants en vie.
 
-    Heilong est un dieu impétueux et courageux, encourageant ses fidèles à faire preuve de bravoure et à ne pas craindre la peur. Il est également loyal et protecteur envers ceux qui lui sont fidèles, prêt à défendre ses croyants en toutes circonstances.
+  //   Heilong est un dieu impétueux et courageux, encourageant ses fidèles à faire preuve de bravoure et à ne pas craindre la peur. Il est également loyal et protecteur envers ceux qui lui sont fidèles, prêt à défendre ses croyants en toutes circonstances.
     
-    Les fidèles de Heilong sont souvent des guerriers courageux et des aventuriers téméraires. Ils célèbrent leur dieu avec des rituels de combat, des compétitions et des cérémonies honorant le courage et l'audace.
+  //   Les fidèles de Heilong sont souvent des guerriers courageux et des aventuriers téméraires. Ils célèbrent leur dieu avec des rituels de combat, des compétitions et des cérémonies honorant le courage et l'audace.
     
-    Son objectif principal est de promouvoir le courage, la loyauté et la protection de ses fidèles, tout en les encourageant à affronter les défis avec détermination.
-    `,
-  },
-  {
-    name: `Hrothgar`,
-    cults: [10],
-    title: `Héros légendaire des Hightlands`,
-    img: `gods/Hrothgar2.png`,
-    character: `gods/Hrothgar2-character.png`,
-    desc: `Hrothgar, l’Aigle du Nord, est un héros légendaire du peuple des Skurf, vénéré comme une divinité guerrière et le défenseur de son peuple. Sa réputation de vaillant combattant est connue dans toute la région, et il est souvent invoqué par les guerriers avant la bataille.
-    <br/><br/>
-    On dit qu'il a vaincu seul un groupe de géants des glaces terrorisant les villages voisins, et qu'il a mené son peuple à la victoire lors d'une bataille décisive contre les forces ennemies. Hrothgar est également connu pour son courage, sa loyauté et son honneur inébranlable.
-    <br/><br/>
-    Il est considéré comme le modèle parfait du guerrier nordique, et est souvent invoqué lors des cérémonies de mariage ou des funérailles pour bénir les nouveaux mariés ou guider l'âme des défunts vers l'au-delà.
-    <br/><br/>
-    Son objectif principal est d'inculquer le courage, la loyauté et l'honneur à ses fidèles, tout en les protégeant et en les guidant sur le chemin de la victoire et de la grandeur.
-    `,
-  },
+  //   Son objectif principal est de promouvoir le courage, la loyauté et la protection de ses fidèles, tout en les encourageant à affronter les défis avec détermination.
+  //   `,
+  // },
+  // {
+  //   name: `Hrothgar`,
+  //   cults: [10],
+  //   title: `Héros légendaire des Hightlands`,
+  //   img: `gods/Hrothgar2.png`,
+  //   character: `gods/Hrothgar2-character.png`,
+  //   desc: `Hrothgar, l’Aigle du Nord, est un héros légendaire du peuple des Skurf, vénéré comme une divinité guerrière et le défenseur de son peuple. Sa réputation de vaillant combattant est connue dans toute la région, et il est souvent invoqué par les guerriers avant la bataille.
+  //   <br/><br/>
+  //   On dit qu'il a vaincu seul un groupe de géants des glaces terrorisant les villages voisins, et qu'il a mené son peuple à la victoire lors d'une bataille décisive contre les forces ennemies. Hrothgar est également connu pour son courage, sa loyauté et son honneur inébranlable.
+  //   <br/><br/>
+  //   Il est considéré comme le modèle parfait du guerrier nordique, et est souvent invoqué lors des cérémonies de mariage ou des funérailles pour bénir les nouveaux mariés ou guider l'âme des défunts vers l'au-delà.
+  //   <br/><br/>
+  //   Son objectif principal est d'inculquer le courage, la loyauté et l'honneur à ses fidèles, tout en les protégeant et en les guidant sur le chemin de la victoire et de la grandeur.
+  //   `,
+  // },
 ];
 export const kingGods = [
   {
@@ -250,16 +250,16 @@ export const kingGods = [
 
     <br/><br/>Buklos cherche à étendre son influence en encourageant la débauche et l'indulgence chez les mortels, tout en protégeant farouchement son propre pouvoir et sa réputation.`,
   },
-  {
-    name: `Qaas`,
-    cults: [10],
-    title: `Le dormeur, Symbole de l'oisiveté, de la paresse et des mendiants`,
-    img: `gods/Qaas2.png`,
-    character: `gods/Qaas2-character.png`,
-    desc: `Qaas est souvent perçu comme un dieu mystérieux et indifférent, préférant passer son temps à dormir et à jouer de la musique dans son palais entouré de nuages. Bien qu'il soit rarement vu sur le plan terrestre, il est considéré comme un dieu des ténèbres, mais ni bon ni mauvais. Certains mythes lui attribuent le pouvoir de manipuler les rêves des mortels et une musique hypnotique.
+  // {
+  //   name: `Qaas`,
+  //   cults: [10],
+  //   title: `Le dormeur, Symbole de l'oisiveté, de la paresse et des mendiants`,
+  //   img: `gods/Qaas2.png`,
+  //   character: `gods/Qaas2-character.png`,
+  //   desc: `Qaas est souvent perçu comme un dieu mystérieux et indifférent, préférant passer son temps à dormir et à jouer de la musique dans son palais entouré de nuages. Bien qu'il soit rarement vu sur le plan terrestre, il est considéré comme un dieu des ténèbres, mais ni bon ni mauvais. Certains mythes lui attribuent le pouvoir de manipuler les rêves des mortels et une musique hypnotique.
 
-    <br/><br/>Qaas aspire à maintenir son indifférence envers les affaires du monde, tout en exerçant une influence subtile à travers la manipulation des rêves et la diffusion de sa musique hypnotique.`,
-  },
+  //   <br/><br/>Qaas aspire à maintenir son indifférence envers les affaires du monde, tout en exerçant une influence subtile à travers la manipulation des rêves et la diffusion de sa musique hypnotique.`,
+  // },
   {
     name: `Tumtum`,
     cults: [],
@@ -282,17 +282,17 @@ export const kingGods = [
   },
 ];
 export const princeGods = [
-  {
-    name: `Sithis`,
-    cults: [11],
-    title: `Le bourreau, Dieu du meurtre`,
-    img: `gods/Sithis2.png`,
-    character: `gods/Sithis2-character.png`,
-    desc: `Sithis incarne le meurtre et la destruction, fils de Phiella et Rhabus, certains pensent qu'il était autrefois un homme corrompu par les ténèbres. Alors que Fauchst incarne l'arrivée de la mort, Sithis est la mort elle-même, représentant la douleur et la souffrance. Sa fonction principale est de torturer et d'infliger des douleurs intenses aux âmes qu'il capture et aux ennemis de ses adorateurs.
+  // {
+  //   name: `Sithis`,
+  //   cults: [11],
+  //   title: `Le bourreau, Dieu du meurtre`,
+  //   img: `gods/Sithis2.png`,
+  //   character: `gods/Sithis2-character.png`,
+  //   desc: `Sithis incarne le meurtre et la destruction, fils de Phiella et Rhabus, certains pensent qu'il était autrefois un homme corrompu par les ténèbres. Alors que Fauchst incarne l'arrivée de la mort, Sithis est la mort elle-même, représentant la douleur et la souffrance. Sa fonction principale est de torturer et d'infliger des douleurs intenses aux âmes qu'il capture et aux ennemis de ses adorateurs.
 
-    <br/><br/>Sithis aspire à semer la terreur et à répandre la douleur, à travers des rituels sanglants et des sacrifices humains, tout en affirmant sa domination en tant que dieu du meurtre.
-    `,
-  },
+  //   <br/><br/>Sithis aspire à semer la terreur et à répandre la douleur, à travers des rituels sanglants et des sacrifices humains, tout en affirmant sa domination en tant que dieu du meurtre.
+  //   `,
+  // },
   {
     name: `Othar`,
     cults: [5, 10],
@@ -336,148 +336,157 @@ export const princeGods = [
     <br/><br/>
     Archombre cherche à étendre son influence en utilisant les vampires pour semer la terreur et le chaos, tout en préservant sa domination en tant que dieu du sang.`,
   },
-  {
-    name: `Belz`,
-    cults: [],
-    title: `Dieu des hommes bêtes`,
-    img: `gods/Belz2.png`,
-    character: `gods/Belz2-character.png`,
-    desc: `Belz, d'origine inconnue, est vénéré comme le dieu suprême des hommes-bêtes. Représenté comme une immense créature mi-homme mi-animal, il incarne la nature chaotique et sauvage de ses fidèles, offrant protection et guidance en échange de sacrifices de sang et de viande.
-    <br/><br/>
-    Belz cherche à protéger et guider les hommes-bêtes, en échange de sacrifices et de dévotion, tout en consolidant sa position en tant que leur dieu suprême.
-    `,
-  },
+  // {
+  //   name: `Belz`,
+  //   cults: [],
+  //   title: `Dieu des hommes bêtes`,
+  //   img: `gods/Belz2.png`,
+  //   character: `gods/Belz2-character.png`,
+  //   desc: `Belz, d'origine inconnue, est vénéré comme le dieu suprême des hommes-bêtes. Représenté comme une immense créature mi-homme mi-animal, il incarne la nature chaotique et sauvage de ses fidèles, offrant protection et guidance en échange de sacrifices de sang et de viande.
+  //   <br/><br/>
+  //   Belz cherche à protéger et guider les hommes-bêtes, en échange de sacrifices et de dévotion, tout en consolidant sa position en tant que leur dieu suprême.
+  //   `,
+  // },
 ];
 
 
 
 export const otherGods = [
   {
-    name: `Hanuman`,
+    name: `Longtian`,
     cults: [6],
-    title: `Dieu-singe suprême`,
-    img: `gods/hanuman.png`,
-    character: `gods/hanuman-character.png`,
-    desc: `le dieu-singe suprême, vénéré comme le père fondateur des hommes-singes et le protecteur de leur race. Il est représenté avec une tête de singe et un corps humanoïde. Il est considéré comme le dieu de la force, de la ruse et de la sagesse.`,
+    title: `Dragon Céleste`,
+    img: `gods/DragonCelestial.png`,
+    character: `gods/DragonCelestial-character.png`,
+    desc: `
+    Élément : Ciel et Éther<br>
+    Aspect : Sagesse et Équilibre<br>
+    Longtian est le dragon suprême, gardien de l'équilibre entre le ciel et la terre. Il est souvent représenté avec des ailes majestueuses et des écailles scintillantes. Les femmes-dragons de la dynastie prétendent descendre de Longtian, et il est considéré comme le protecteur de la famille impériale.
+    Temple Principal : Le Temple du Ciel, situé au sommet de la plus haute montagne de l'empire, où les rituels sont effectués pour maintenir l'harmonie dans l'Empire.`,
   },
   {
-    name: `Kapi`,
+    name: `Fenghuang`,
     cults: [6],
-    title: `Dieu-singe de la fertilité et de la croissance`,
-    img: `gods/kapi.png`,
-    character: `gods/kapi-character.png`,
-    desc: `dieu-singe de la fertilité et de la croissance, représenté avec un visage grimaçant et une longue queue. Il est le gardien des jardins, des vergers et des forêts, et est souvent invoqué pour assurer une récolte abondante.`,
+    title: `Dragon de Feu`,
+    img: `gods/DragonFire.png`,
+    character: `gods/DragonFire-character.png`,
+    desc: `Élément : Feu<br>
+    Aspect : Courage et Passion<br>
+    Fenghuang est le dragon du feu, incarnant la passion et le courage. Les guerriers de l'Empire invoquent souvent son nom avant une bataille pour obtenir sa bénédiction. Il est représenté avec des écailles rouges ardentes et des yeux flamboyants.
+    Temple Principal : La Pagode de la Flamme Éternelle, où des feux sacrés brûlent en permanence, symbolisant la force et la détermination.
+`,
   },
   {
-    name: `Marakata`,
+    name: `Yinlong`,
     cults: [6],
-    title: `déesse de la guérison et de la magie`,
-    img: `gods/marakata.png`,
-    character: `gods/marakata-character.png`,
-    desc: `déesse de la guérison et de la magie, représentée avec un corps couvert de pierres précieuses et de bijoux. Elle est souvent invoquée pour guérir les maladies et les blessures, ainsi que pour protéger les sages-femmes et les médecins.`,
+    title: `Dragon des Eaux`,
+    img: `gods/DragonWater.png`,
+    character: `gods/DragonWater-character.png`,
+    desc: `Élément : Eau<br>
+    Aspect : Sagesse et Guérison<br>
+    Yinlong est le dragon des eaux, symbole de sagesse et de guérison. Il est vénéré par les moines mystiques et les guérisseurs de l'Empire. Représenté avec des écailles bleues et argentées, il est souvent associé à la pluie et aux rivières.
+    Temple Principal : Le Sanctuaire des Ondes, situé près du plus grand fleuve de l'Empire, où les rituels de purification et de guérison sont pratiqués.`,
   },
   {
-    name: `Langur`,
+    name: `Dilong`,
     cults: [6],
-    title: `dieu-singe de la justice et de l'honnêteté`,
-    img: `gods/langur.png`,
-    character: `gods/langur-character.png`,
-    desc: `dieu-singe de la justice et de l'honnêteté, représenté avec un corps long et mince et un visage sage. Il est souvent invoqué par les hommes-singes pour régler les conflits et les litiges, et est considéré comme le gardien des lois et des valeurs morales.`,
+    title: `Dragon de la Terre`,
+    img: `gods/DragonEarth.png`,
+    character: `gods/DragonEarth-character.png`,
+    desc: `Élément : Terre<br>
+    Aspect : Force et Résilience<br>
+    Dilong est le dragon de la terre, incarnant la force et la résilience. Il est le patron des agriculteurs et des bâtisseurs, aidant à la fertilité des terres et à la stabilité des structures. Il est souvent représenté avec des écailles vertes et brunes.
+    Temple Principal : La Forteresse du Roc, une citadelle robuste où les prières pour la stabilité et la protection des terres sont adressées.`,
   },
   {
-    name: `Aranya`,
+    name: `Qinglong`,
     cults: [6],
-    title: `déesse de la nature et de la vie sauvage`,
-    img: `gods/aranya.png`,
-    character: `gods/aranya-character.png`,
-    desc: `déesse de la nature et de la vie sauvage, représentée avec des feuilles à la place des cheveux. Elle est la gardienne des forêts et des animaux, et est souvent invoquée pour bénir les chasseurs et les cueilleurs.`,
+    title: `Dragon de la Nature`,
+    img: `gods/DragonNature.png`,
+    character: `gods/DragonNature-character.png`,
+    desc: `Élément : Bois<br>
+    Aspect : Croissance et Renouveau<br>
+    Qinglong est le dragon de la nature, symbole de croissance et de renouveau. Les femmes Tangto, avec leur lien étroit avec la nature, lui rendent souvent hommage. Il est représenté avec des écailles vert émeraude et des bois semblables à ceux des cerfs.
+    Temple Principal : Le Jardin Éternel, un sanctuaire luxuriant où les rituels de fertilité et de croissance sont célébrés.`,
   },
   {
-    name: `Riksha`,
-    cults: [6],
-    title: `dieu-singe des arts et de la musique`,
-    img: `gods/riksha.png`,
-    character: `gods/riksha-character.png`,
-    desc: `dieu-singe des arts et de la musique, représenté avec une longue barbe et des yeux perçants. Il est souvent invoqué pour inspirer les artistes et les musiciens, et est considéré comme le gardien des talents créatifs.`,
-  },
-  {
-    name: `Valimukha`,
-    cults: [6],
-    title: `dieu-singe de la guerre et de la destruction`,
-    img: `gods/vali.png`,
-    character: `gods/vali-character.png`,
-    desc: `dieu-singe de la guerre et de la destruction, représenté avec une tête de gorille et un corps musclé. Il est souvent invoqué avant les batailles pour apporter la victoire, mais est également craint pour sa colère incontrôlable et sa soif de sang.`,
-  },
-  {
-    name: `Moradin`,
-    cults: [7],
-    title: `Dieu de la forge et de la création`,
-    img: `gods/Moradin.webp`,
-    character: `gods/Moradin-character.webp`,
-    desc: `Dieu de la forge et de la création, Moradin est le dieu suprême des nains. Il est vénéré pour sa sagesse, son savoir-faire et sa force, et est souvent invoqué par les artisans et les guerriers nains pour leur donner la force et la détermination nécessaires pour accomplir leur travail.`,
-  },
-  {
-    name: `Clangeddin`,
-    cults: [7],
-    title: `Dieu de la guerre et de la vengeance`,
-    img: `gods/Clangeddin.png`,
-    character: `gods/Clangeddin-character.png`,
-    desc: `Dieu de la guerre et de la vengeance, Clangeddin est le dieu de choix pour les guerriers nains qui cherchent à protéger leur peuple et leur foyer contre les ennemis. Il est souvent invoqué lors des combats pour donner aux nains la force de vaincre leurs adversaires.`,
-  },
-  {
-    name: `Dumathoin`,
-    cults: [7],
-    title: `Dieu de la terre et des cavernes`,
-    img: `gods/Dumathoin.png`,
-    character: `gods/Dumathoin-character.png`,
-    desc: `Dieu de la terre et des cavernes, Dumathoin est le protecteur des mines et des carrières naines. Il est vénéré pour sa capacité à révéler les richesses cachées de la terre et à protéger les nains lors de l'exploitation de ces richesses.`,
-  },
-  {
-    name: `Moradul`,
-    cults: [7],
-    title: `Dieu de la richesse et de l'avarice`,
-    img: `gods/Moradul.webp`,
-    character: `gods/Moradul-character.webp`,
-    desc: `Dieu de la richesse et de l'avarice, Moradul est vénéré pour sa capacité à attirer la richesse et la prospérité vers les nains. Cependant, son culte est souvent associé à l'avarice et à la cupidité, et il est souvent considéré comme un dieu plus sinistre que les autres dieux nains.`,
-  },
-  {
-    name: `Abbathor`,
-    cults: [7],
-    title: `Dieu du vol et de la tromperie`,
-    img: `gods/Abbathor.webp`,
-    character: `gods/Abbathor-character.webp`,
-    desc: `Dieu du vol et de la tromperie, Abbathor est le dieu des nains qui cherchent à s'enrichir rapidement et facilement. Son culte est souvent mal vu par les autres nains, mais il est parfois invoqué pour des besoins spécifiques comme l'espionnage ou le sabotage.`,
-  },
-  {
-    name: `Berronar`,
-    cults: [7],
-    title: `Déesse de la famille et de la protection`,
-    img: `gods/Berronar.png`,
-    character: `gods/Berronar-character.png`,
-    desc: `Déesse de la famille et de la protection, Berronar est la patronne des mères et des gardiennes naines. Elle est souvent invoquée pour protéger les familles et les foyers nains contre les dangers extérieurs.`,
-  },
-  {
-    name: `Thard Harr`,
-    cults: [7],
-    title: `Dieu de la pierre et de la construction`,
-    img: `gods/Thard.png`,
-    character: `gods/Thard-character.png`,
-    desc: `Dieu de la pierre et de la construction, Thard Harr est le dieu des architectes et des constructeurs nains. Il est invoqué pour la construction de bâtiments et de fortifications naines, et est souvent considéré comme l'un des dieux les plus importants de la communauté naine.`,
-  },
-  {
-    name: `Gorm Gulthyn`,
-    cults: [7],
-    title: `Dieu de la défense et de la protection`,
-    img: `gods/Gorm.png`,
-    character: `gods/Gorm-character.png`,
-    desc: `Dieu de la défense et de la protection, Gorm Gulthyn est vénéré pour sa capacité à protéger les nains contre les ennemis extérieurs. Il est souvent invoqué lors de batailles et de conflits, et est considéré comme un dieu puissant et protecteur.`,
-  },
-  {
-    name: `Haela Brightaxe`,
-    cults: [7],
-    title: `Déesse de la chance et de la bonne fortune`,
-    img: `gods/Haela.png`,
-    character: `gods/Haela-character.png`,
-    desc: `Déesse de la chance et de la bonne fortune, Haela Brightaxe est invoquée pour apporter la chance et la bonne fortune aux nains. Son culte est souvent associé aux jeux de hasard et aux situations où la chance peut faire la différence.`,
-  },
+      name: `Ancêtres`,
+      cults: [7],
+      title: ``,
+      img: `races/mountains-dwarf.png`,
+      character: ``,
+      desc: `Les Ancêtres des nains sont vénéré pour leur maitrise et expertise dans un art en particulier, chaque clann nains vénérant leur ancêtres par la pratique et l'amélioration de leurs arts.`,
+    },
+  // {
+  //   name: `Moradin`,
+  //   cults: [7],
+  //   title: `Dieu de la forge et de la création`,
+  //   img: `gods/Moradin.webp`,
+  //   character: `gods/Moradin-character.webp`,
+  //   desc: `Dieu de la forge et de la création, Moradin est le dieu suprême des nains. Il est vénéré pour sa sagesse, son savoir-faire et sa force, et est souvent invoqué par les artisans et les guerriers nains pour leur donner la force et la détermination nécessaires pour accomplir leur travail.`,
+  // },
+  // {
+  //   name: `Clangeddin`,
+  //   cults: [7],
+  //   title: `Dieu de la guerre et de la vengeance`,
+  //   img: `gods/Clangeddin.png`,
+  //   character: `gods/Clangeddin-character.png`,
+  //   desc: `Dieu de la guerre et de la vengeance, Clangeddin est le dieu de choix pour les guerriers nains qui cherchent à protéger leur peuple et leur foyer contre les ennemis. Il est souvent invoqué lors des combats pour donner aux nains la force de vaincre leurs adversaires.`,
+  // },
+  // {
+  //   name: `Dumathoin`,
+  //   cults: [7],
+  //   title: `Dieu de la terre et des cavernes`,
+  //   img: `gods/Dumathoin.png`,
+  //   character: `gods/Dumathoin-character.png`,
+  //   desc: `Dieu de la terre et des cavernes, Dumathoin est le protecteur des mines et des carrières naines. Il est vénéré pour sa capacité à révéler les richesses cachées de la terre et à protéger les nains lors de l'exploitation de ces richesses.`,
+  // },
+  // {
+  //   name: `Moradul`,
+  //   cults: [7],
+  //   title: `Dieu de la richesse et de l'avarice`,
+  //   img: `gods/Moradul.webp`,
+  //   character: `gods/Moradul-character.webp`,
+  //   desc: `Dieu de la richesse et de l'avarice, Moradul est vénéré pour sa capacité à attirer la richesse et la prospérité vers les nains. Cependant, son culte est souvent associé à l'avarice et à la cupidité, et il est souvent considéré comme un dieu plus sinistre que les autres dieux nains.`,
+  // },
+  // {
+  //   name: `Abbathor`,
+  //   cults: [7],
+  //   title: `Dieu du vol et de la tromperie`,
+  //   img: `gods/Abbathor.webp`,
+  //   character: `gods/Abbathor-character.webp`,
+  //   desc: `Dieu du vol et de la tromperie, Abbathor est le dieu des nains qui cherchent à s'enrichir rapidement et facilement. Son culte est souvent mal vu par les autres nains, mais il est parfois invoqué pour des besoins spécifiques comme l'espionnage ou le sabotage.`,
+  // },
+  // {
+  //   name: `Berronar`,
+  //   cults: [7],
+  //   title: `Déesse de la famille et de la protection`,
+  //   img: `gods/Berronar.png`,
+  //   character: `gods/Berronar-character.png`,
+  //   desc: `Déesse de la famille et de la protection, Berronar est la patronne des mères et des gardiennes naines. Elle est souvent invoquée pour protéger les familles et les foyers nains contre les dangers extérieurs.`,
+  // },
+  // {
+  //   name: `Thard Harr`,
+  //   cults: [7],
+  //   title: `Dieu de la pierre et de la construction`,
+  //   img: `gods/Thard.png`,
+  //   character: `gods/Thard-character.png`,
+  //   desc: `Dieu de la pierre et de la construction, Thard Harr est le dieu des architectes et des constructeurs nains. Il est invoqué pour la construction de bâtiments et de fortifications naines, et est souvent considéré comme l'un des dieux les plus importants de la communauté naine.`,
+  // },
+  // {
+  //   name: `Gorm Gulthyn`,
+  //   cults: [7],
+  //   title: `Dieu de la défense et de la protection`,
+  //   img: `gods/Gorm.png`,
+  //   character: `gods/Gorm-character.png`,
+  //   desc: `Dieu de la défense et de la protection, Gorm Gulthyn est vénéré pour sa capacité à protéger les nains contre les ennemis extérieurs. Il est souvent invoqué lors de batailles et de conflits, et est considéré comme un dieu puissant et protecteur.`,
+  // },
+  // {
+  //   name: `Haela Brightaxe`,
+  //   cults: [7],
+  //   title: `Déesse de la chance et de la bonne fortune`,
+  //   img: `gods/Haela.png`,
+  //   character: `gods/Haela-character.png`,
+  //   desc: `Déesse de la chance et de la bonne fortune, Haela Brightaxe est invoquée pour apporter la chance et la bonne fortune aux nains. Son culte est souvent associé aux jeux de hasard et aux situations où la chance peut faire la différence.`,
+  // },
 ];

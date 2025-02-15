@@ -19,7 +19,7 @@ function changeOrga(index: number) {
     <div class='header'>
       <h1>Les organisations</h1>
       <h2>Rejoignez celle qui<span> correspond </span></h2>
-      <p>Au cours de votre aventure, il vous sera possible de rejoindre une des  7 organisations d'Asun. Plusieurs vous intéressent ? <br/>Rejoignez les toutes !</p>
+      <p>Au cours de votre aventure, il vous sera possible de rejoindre une des organisations d'Asun. Plusieurs vous intéressent ? <br/>Rejoignez les toutes !</p>
     </div>
 
     <div class='orga-container'>
@@ -70,13 +70,13 @@ function changeOrga(index: number) {
   cursor: pointer;
 }
 .orga-title:hover {
-  background-color: #202124;
+  background-color: var(--backgroundColor);
 }
 .orga-title:hover p {
-  color: #fff;
+  color: var(--primaryColor);
 }
 .orga-title p {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Work Sans;
   font-size: 20px;
   font-style: normal;
@@ -107,7 +107,7 @@ function changeOrga(index: number) {
   font-size: 24px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  background: #202124;
+  background: var(--backgroundColor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,8 +142,7 @@ function changeOrga(index: number) {
   height: calc(100vh - 73px);
   right: 0;
   width: 33%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(36, 190, 116, 0.0) 100%), lightgray 50% / cover no-repeat;
-  mix-blend-mode: multiply;
+  background: linear-gradient(90deg, var(--backgroundColor) 0%, rgba(36, 190, 116, 0) 50%), no-repeat;
 
 }
 @media screen and (max-width: 768px) {

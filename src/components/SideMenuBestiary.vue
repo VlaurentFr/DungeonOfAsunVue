@@ -30,7 +30,6 @@ const path = computed(() =>route.hash || "#");
 <style scoped>
 aside {
   position: fixed;
-  background:black;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -43,7 +42,7 @@ aside {
   border-radius: 0px;
   height: calc(100vh - 72px);
   overflow: auto;
-  border-right: 1px solid grey;
+  /* border-right: 1px solid grey; */
 }
 @media screen and (max-width: 768px) {
   aside {
@@ -110,7 +109,7 @@ aside {
   align-items: center;
   gap: 10px;
   border-radius: 4px;
-  background: #202124;
+  background: var(--backgroundColor);
   margin: 12px;
 }
 .selected {
@@ -119,7 +118,7 @@ aside {
   border-radius: 6px;
 }
 .all p {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Work Sans;
   font-size: 16px;
   font-style: normal;

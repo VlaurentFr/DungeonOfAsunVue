@@ -57,7 +57,7 @@ img {
   font-size: 16px;
   border-radius: 4px;
   text-align: center;
-  color: white;
+  color: var(--textColor);
   z-index: 2;
 }
 .panth:hover img {
@@ -67,5 +67,9 @@ img {
   display: flex;
   gap: 24px;
   overflow: hidden;
+  -webkit-mask-image: url(../assets/splash.png);
+  mask-image: url(../assets/splash.png);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%, contain;
 }
 </style>

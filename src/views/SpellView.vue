@@ -63,8 +63,8 @@ onMounted(() => {
       </div>
     </div>
     <h3>Comment-ça marche ?</h3>
-    <p>Pour toute les compétences de type Physique un jet de Force est demander, pour les autres un jet de Sagesse</p><br/>
-    <p> Vous pouvez avoir jusqu’à 8 sorts à la fois, si vous en acquérez plus il faudra choisir d’en oublier un pour utiliser votre nouveau sort. (Hors capacité de maîtrise d’arme Dash et Secours)</p>
+    <p>Pour toute les compétences de type Physique un jet du type d'arme équipé est demander, pour les autres (la magie) un jet de Sagesse</p><br/>
+    <!-- <p> Vous pouvez avoir jusqu’à 8 sorts à la fois, si vous en acquérez plus il faudra choisir d’en oublier un pour utiliser votre nouveau sort.</p> -->
     <div class="title-section">
         <h3>Liste des compétences</h3>
     </div>
@@ -108,7 +108,7 @@ onMounted(() => {
   visibility: hidden;
   position: absolute;
   top: 66px;
-  background: #606367;
+  background: var(--background);
   border-radius: 16px;
   width: 100%;
 }
@@ -120,9 +120,9 @@ onMounted(() => {
   cursor: pointer;
 }
 #search .suggest:hover {
-  background-color: #202124;
-  color: #24BE74;
-  border: #24BE74 1px solid;
+  background-color: var(--background);
+  color: var(--primaryColor);
+  border: var(--primaryColor) 1px solid;
 }
 #search:focus-within .searh-suggest {
  visibility: visible;
@@ -132,8 +132,8 @@ input {
   padding: 18.5px 56px;
   border-radius: 16px;
   border: none;
-  background-color: #202124;
-  color: white;
+  background-color: var(--background);
+  color: var(--textColor);
   font-size: 16px;
 }
 input:focus-visible {
@@ -153,7 +153,7 @@ input:focus-visible {
   justify-content: space-between;
   gap: 16px;
   border-radius: 28px;
-  background: #0F0F0F;
+  background: var(--background);
   transition: all .3s ease-in-out;
 }
 
@@ -166,11 +166,11 @@ input:focus-visible {
     background-color: var(--primaryColor);
   }
   100% {
-    background-color: #0F0F0F;
+    background-color: var(--background);
   }
 }
 .card h4 {
-  color: #24be74;
+  color: var(--primaryColor);
   font-family: Work Sans;
   font-size: 20px;
   font-style: normal;
@@ -194,7 +194,7 @@ input:focus-visible {
     align-items: flex-start;
     gap: 8px;
     border-radius: 8px;
-    background: #202124;
+    background: var(--backgroundColor);
 }
 .card .side .type {
   padding: 4px 8px;

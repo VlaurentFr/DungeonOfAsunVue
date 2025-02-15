@@ -1,185 +1,249 @@
-export const stick = [
-  {
-    name: 'Bâton',
-    dmg: '1d6',
-    type: '1 main',
-    cost: '2 po'
-  },
-]
 export const daggers = [
   {
     name: 'Dague de Fer',
-    dmg: '1d4',
-    effect: "Attaque Rapide (attaque x1,5)",
+    dmg: '1d4+1',
+    effect: "Parade possible, Possibilité main secondaire",
     type: '1 main',
-    cost: '2 po'
+    typeDmg: 'Tranchant',
+    cost: '15 po'
   },
   {
     name: 'Dague d\'Acier',
-    dmg: '1d8',
-    effect: "Attaque Rapide (attaque x1,5)",
+    dmg: '1d6+1',
+    effect: "Parade possible, Possibilité main secondaire",
     type: '1 main',
-    cost: '10 po'
+    typeDmg: 'Tranchant',
+    cost: '85 po'
   },
   {
     name: 'Dague d\'Argent',
-    dmg: '1d10',
-    effect: "Attaque Rapide (attaque x1,5)",
+    dmg: '1d8+1',
+    effect: "Parade possible, Possibilité main secondaire",
     type: '1 main',
-    cost: '20 po'
+    typeDmg: 'Tranchant',
+    cost: '187 po'
   },
   {
-    name: 'Dague Héros',
-    dmg: '2d6',
-    effect: "Attaque Rapide (attaque x1,5)",
+    name: 'Dague Royale',
+    dmg: '1d8+3',
+    effect: "Parade possible, Possibilité main secondaire",
     type: '1 main',
-    cost: '30 po'
+    typeDmg: 'Tranchant',
+    cost: '250 po'
+  },
+  {
+    name: 'Lame Spectrale',
+    dmg: '1d10+5',
+    effect: "Parade possible, Possibilité main secondaire",
+    type: '1 main',
+    typeDmg: 'Tranchant',
+    cost: '875 po'
   },
 ]
 export const swords = [
   {
     name: 'Epée de Fer',
-    dmg: '1d6+3',
-    effect: "",
+    dmg: '1d6',
+    effect: "Parade possible, Possibilité main secondaire",
     type: '1 main',
-    cost: '10 po'
+    typeDmg: 'Tranchant',
+    cost: '15 po'
   },
   {
     name: 'Epée d\'Acier',
-    dmg: '1d10+4',
-    effect: "",
+    dmg: '1d8',
+    effect: "Parade possible, Possibilité main secondaire",
     type: '1 main',
-    cost: '20 po'
+    typeDmg: 'Tranchant',
+    cost: '85 po'
   },
   {
-    name: 'Epée d\'Argent',
-    dmg: '1d12+5',
-    effect: "",
+    name: 'Lame d\'Argent',
+    dmg: '1d10',
+    effect: "Parade possible, Possibilité main secondaire",
     type: '1 main',
+    typeDmg: 'Tranchant',
+    cost: '187 po'
+  },
+  {
+    name: 'Lame Royale',
+    dmg: '1d10+1',
+    effect: "Parade possible, Possibilité main secondaire",
+    type: '1 main',
+    typeDmg: 'Tranchant',
+    cost: '250 po'
+  },
+  {
+    name: 'Lame Héros',
+    dmg: '1d12+3',
+    effect: "Parade possible, Possibilité main secondaire",
+    type: '1 main',
+    typeDmg: 'Tranchant',
+    cost: '875 po'
+  },
+  {
+    name: 'Espadon de Fer',
+    dmg: '1d8+5',
+    effect: "Parade possible",
+    type: '2 mains',
+    typeDmg: 'Tranchant',
     cost: '30 po'
   },
   {
-    name: 'Epée Héros',
-    dmg: '2d8+6',
-    effect: "",
-    type: '1 main',
-    cost: '50 po'
+    name: 'Espadon d\'Acier',
+    dmg: '1d10+6',
+    effect: "Parade possible",
+    type: '2 mains',
+    typeDmg: 'Tranchant',
+    cost: '170 po'
   },
   {
-    name: 'Epée de Fer à 2 mains',
-    dmg: '1d6+13',
-    effect: "",
+    name: 'Espadon d\'Argent',
+    dmg: '1d12+7',
+    effect: "Parade possible",
     type: '2 mains',
-    cost: '40 po'
+    typeDmg: 'Tranchant',
+    cost: '375 po'
   },
   {
-    name: 'Epée d\'Acier à 2 mains',
-    dmg: '1d10+14',
-    effect: "",
+    name: 'Espadon Royal',
+    dmg: '1d12+8',
+    effect: "Parade possible",
     type: '2 mains',
-    cost: '50 po'
+    typeDmg: 'Tranchant',
+    cost: '500 po'
   },
   {
-    name: 'Epée d\'Argent à 2 mains',
-    dmg: '1d12+15',
-    effect: "",
+    name: 'Espadon Héros',
+    dmg: '1d20+9',
+    effect: "Parade possible",
     type: '2 mains',
-    cost: '60 po'
-  },
-  {
-    name: 'Epée Héros à 2 mains',
-    dmg: '2d8+16',
-    effect: "",
-    type: '2 mains',
-    cost: '80 po'
+    typeDmg: 'Tranchant',
+    cost: '1750 po'
   },
 ]
 export const Axes = [
   {
     name: 'Hache de Fer',
     dmg: '1d6',
-    effect: "+1d6 de saignement (passe l'armure)",
+    effect: "",
     type: '1 main',
-    cost: '10 po'
+    typeDmg: 'Tranchant',
+    cost: '15 po'
   },
   {
     name: 'Hache d\'Acier',
-    dmg: '1d10',
-    effect: "+1d8 de saignement (passe l'armure)",
+    dmg: '1d8',
+    effect: "",
     type: '1 main',
-    cost: '20 po'
+    typeDmg: 'Tranchant',
+    cost: '85 po'
   },
   {
     name: 'Hache d\'Argent',
-    dmg: '1d12',
-    effect: "+1d10 de saignement (passe l'armure)",
+    dmg: '1d10',
+    effect: "",
     type: '1 main',
-    cost: '30 po'
+    typeDmg: 'Tranchant',
+    cost: '187 po'
+  },
+  {
+    name: 'Hache Royale',
+    dmg: '1d10+1',
+    effect: "",
+    type: '1 main',
+    typeDmg: 'Tranchant',
+    cost: '250 po'
   },
   {
     name: 'Hache Héros',
-    dmg: '2d8',
-    effect: "+1d12 de saignement (passe l'armure)",
+    dmg: '1d12+3',
+    effect: "",
     type: '1 main',
-    cost: '50 po'
+    typeDmg: 'Tranchant',
+    cost: '875 po'
   },
   {
-    name: 'Hache de Fer de Bataille',
-    dmg: '1d6+10',
-    effect: "+1d6 de saignement (passe l'armure)",
+    name: 'Hache de bataille de Fer',
+    dmg: '1d8+5',
+    effect: "",
     type: '2 mains',
-    cost: '40 po'
+    typeDmg: 'Tranchant',
+    cost: '30 po'
   },
   {
-    name: 'Hache d\'Acier de Bataille',
-    dmg: '1d10+10',
-    effect: "+1d8 de saignement (passe l'armure)",
+    name: 'Hache de bataille d\'Acier',
+    dmg: '1d10+6',
+    effect: "",
     type: '2 mains',
-    cost: '50 po'
+    typeDmg: 'Tranchant',
+    cost: '170 po'
   },
   {
-    name: 'Hache d\'Argent de Bataille',
-    dmg: '1d12+10',
-    effect: "+1d10 de saignement (passe l'armure)",
+    name: 'Hache de bataille d\'Argent',
+    dmg: '1d12+7',
+    effect: "",
     type: '2 mains',
-    cost: '60 po'
+    typeDmg: 'Tranchant',
+    cost: '375 po'
   },
   {
-    name: 'Hache Héros de Bataille',
-    dmg: '2d8+10',
-    effect: "+1d12 de saignement (passe l'armure)",
+    name: 'Hache de bataille Royal',
+    dmg: '1d12+8',
+    effect: "",
     type: '2 mains',
-    cost: '80 po'
+    typeDmg: 'Tranchant',
+    cost: '500 po'
+  },
+  {
+    name: 'Hache de bataille Héros',
+    dmg: '1d20+9',
+    effect: "",
+    type: '2 mains',
+    typeDmg: 'Tranchant',
+    cost: '1750 po'
   },
 ]
 export const spears = [
   {
     name: 'Lance de Fer',
-    dmg: '1d6',
-    effect: "Perce-armure (ignore l'armure)",
-    type: '1 main',
-    cost: '10 po'
-  },
-  {
-    name: 'Lance d\'Acier',
-    dmg: '1d10',
-    effect: "Perce-armure (ignore l'armure)",
-    type: '1 main',
-    cost: '20 po'
-  },
-  {
-    name: 'Lance d\'Argent',
-    dmg: '1d12',
-    effect: "Perce-armure (ignore l'armure)",
-    type: '1 main',
+    dmg: '1d8+5',
+    effect: "",
+    type: '2 mains',
+    typeDmg: 'Perforant',
     cost: '30 po'
   },
   {
+    name: 'Lance d\'Acier',
+    dmg: '1d10+6',
+    effect: "",
+    type: '2 mains',
+    typeDmg: 'Perforant',
+    cost: '170 po'
+  },
+  {
+    name: 'Lance d\'Argent',
+    dmg: '1d12+7',
+    effect: "",
+    type: '2 mains',
+    typeDmg: 'Perforant',
+    cost: '375 po'
+  },
+  {
+    name: 'Lance Royal',
+    dmg: '1d12+8',
+    effect: "",
+    type: '2 mains',
+    typeDmg: 'Perforant',
+    cost: '500 po'
+  },
+  {
     name: 'Lance Héros',
-    dmg: '2d8',
-    effect: "Perce-armure (ignore l'armure)",
-    type: '1 main',
-    cost: '50 po'
+    dmg: '1d20+9',
+    effect: "",
+    type: '2 mains',
+    typeDmg: 'Perforant',
+    cost: '1750 po'
   },
 ]
 export const hands = [
@@ -187,267 +251,207 @@ export const hands = [
     name: 'Poing Nu',
     dmg: '1d4',
     effect: "",
-    type: '2 mains',
+    type: '1 mains',
+    typeDmg: 'Contondant',
     cost: '-- po'
-  },
-  {
-    name: 'Poing de Fer',
-    dmg: '1d6',
-    effect: "Brise-armure (Reduits l'armure de 1)",
-    type: '2 mains',
-    cost: '10 po'
-  },
-  {
-    name: 'Poing d\'Acier',
-    dmg: '1d10',
-    effect: "Brise-armure (Reduits l'armure de 1)",
-    type: '2 mains',
-    cost: '20 po'
-  },
-  {
-    name: 'Poing d\'Argent',
-    dmg: '1d12',
-    effect: "Brise-armure (Reduits l'armure de 1)",
-    type: '2 mains',
-    cost: '30 po'
-  },
-  {
-    name: 'Poing Héros',
-    dmg: '2d8',
-    effect: "Brise-armure (Reduits l'armure de 1)",
-    type: '2 mains',
-    cost: '50 po'
-  },
-  {
-    name: 'Tonfa de Bois',
-    dmg: '1d4',
-    effect: "Brise-armure (Reduits l'armure de 1)",
-    type: '2 mains',
-    cost: '5 po'
-  },
-  {
-    name: 'Tonfa de Fer',
-    dmg: '1d6',
-    effect: "Brise-armure (Reduits l'armure de 1)",
-    type: '2 mains',
-    cost: '10 po'
-  },
-  {
-    name: 'Tonfa d\'Acier',
-    dmg: '1d10',
-    effect: "Brise-armure (Reduits l'armure de 1)",
-    type: '2 mains',
-    cost: '20 po'
-  },
-  {
-    name: 'Tonfa d\'Argent',
-    dmg: '1d12',
-    effect: "Brise-armure (Reduits l'armure de 1)",
-    type: '2 mains',
-    cost: '30 po'
-  },
-  {
-    name: 'Tonfa Héros',
-    dmg: '2d8',
-    effect: "Brise-armure (Reduits l'armure de 1)",
-    type: '2 mains',
-    cost: '50 po'
-  },
+  }
 ]
 export const bows = [
   {
-    name: 'Arc de Fer',
+    name: 'Arc de Chasse',
     dmg: '1d6',
     effect: "Portée 20m",
-    type: '2 mains',
-    cost: '10 po'
-  },
-  {
-    name: 'Arc d\'Acier',
-    dmg: '1d10',
-    effect: "Portée 20m",
-    type: '2 mains',
-    cost: '20 po'
-  },
-  {
-    name: 'Arc d\'Argent',
-    dmg: '1d12',
-    effect: "Portée 20m",
-    type: '2 mains',
-    cost: '30 po'
-  },
-  {
-    name: 'Arc Héros',
-    dmg: '2d8',
-    effect: "Portée 20m",
-    type: '2 mains',
-    cost: '50 po'
-  },
-  {
-    name: 'Arbalète de Fer',
-    dmg: '1d6+1d4',
-    effect: "Portée 30m, 1 tour de recharge",
-    type: '2 mains',
+    type: '1 main',
+    typeDmg: 'Perforant',
     cost: '15 po'
   },
   {
-    name: 'Arbalète d\'Acier',
-    dmg: '1d10+1d4',
-    effect: "Portée 30m, 1 tour de recharge",
-    type: '2 mains',
-    cost: '25 po'
+    name: 'Arc long',
+    dmg: '1d8',
+    effect: "Portée 25m",
+    type: '1 main',
+    typeDmg: 'Perforant',
+    cost: '85 po'
   },
   {
-    name: 'Arbalète d\'Argent',
-    dmg: '1d12+1d4',
-    effect: "Portée 30m, 1 tour de rechargev",
-    type: '2 mains',
-    cost: '35 po'
+    name: 'Arc de Guerre',
+    dmg: '1d10',
+    effect: "Portée 20m",
+    type: '1 main',
+    typeDmg: 'Perforant',
+    cost: '187 po'
   },
   {
-    name: 'Arbalète Héros',
-    dmg: '2d8+1d4',
-    effect: "Portée 30m, 1 tour de recharge",
-    type: '2 mains',
-    cost: '55 po'
+    name: 'Arc Royale',
+    dmg: '1d10+1',
+    effect: "Portée 20m",
+    type: '1 main',
+    typeDmg: 'Perforant',
+    cost: '250 po'
+  },
+  {
+    name: 'Arc Héros',
+    dmg: '1d12+3',
+    effect: "Portée 20m",
+    type: '1 main',
+    typeDmg: 'Perforant',
+    cost: '875 po'
   },
 ]
 export const masses = [
   {
     name: 'Masse de Fer',
     dmg: '1d6',
-    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
+    effect: "",
     type: '1 main',
-    cost: '10 po'
+    typeDmg: 'Contondant',
+    cost: '15 po'
   },
   {
     name: 'Masse d\'Acier',
-    dmg: '1d10',
-    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
+    dmg: '1d8',
+    effect: "",
     type: '1 main',
-    cost: '20 po'
+    typeDmg: 'Contondant',
+    cost: '85 po'
   },
   {
     name: 'Masse d\'Argent',
-    dmg: '1d12',
-    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
+    dmg: '1d10',
+    effect: "",
     type: '1 main',
-    cost: '30 po'
+    typeDmg: 'Contondant',
+    cost: '187 po'
+  },
+  {
+    name: 'Masse Royale',
+    dmg: '1d10+1',
+    effect: "",
+    type: '1 main',
+    typeDmg: 'Contondant',
+    cost: '250 po'
   },
   {
     name: 'Masse Héros',
-    dmg: '2d8',
-    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
+    dmg: '1d12+3',
+    effect: "",
     type: '1 main',
-    cost: '50 po'
+    typeDmg: 'Contondant',
+    cost: '875 po'
   },
   {
-    name: 'Masse de Fer de Guerre',
-    dmg: '1d6+10',
-    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
+    name: 'Marteau de Fer',
+    dmg: '1d8+5',
+    effect: "",
     type: '2 mains',
-    cost: '40 po'
+    typeDmg: 'Contondant',
+    cost: '30 po'
   },
   {
-    name: 'Masse d\'Acier de Guerre',
-    dmg: '1d10+10',
-    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
+    name: 'Marteau d\'Acier',
+    dmg: '1d10+6',
+    effect: "",
     type: '2 mains',
-    cost: '50 po'
+    typeDmg: 'Contondant',
+    cost: '170 po'
   },
   {
-    name: 'Masse d\'Argent de Guerre',
-    dmg: '1d12+10',
-    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
+    name: 'Marteau d\'Argent',
+    dmg: '1d12+7',
+    effect: "",
     type: '2 mains',
-    cost: '60 po'
+    typeDmg: 'Contondant',
+    cost: '375 po'
   },
   {
-    name: 'Masse Héros de Guerre',
-    dmg: '2d8+10',
-    effect: "Etourdissement (1d6 : 5-6 Etourdis la cible pendant 1 tour)",
+    name: 'Marteau Royal',
+    dmg: '1d12+8',
+    effect: "",
     type: '2 mains',
-    cost: '80 po'
+    typeDmg: 'Contondant',
+    cost: '500 po'
+  },
+  {
+    name: 'Marteau Héros',
+    dmg: '1d20+9',
+    effect: "",
+    type: '2 mains',
+    typeDmg: 'Contondant',
+    cost: '1750 po'
   },
 ]
 
 export const gears = [
   {
-    name: 'Haillon',
+    name: 'Veste de Tissu Sombre',
     def: '0',
     res: '1',
     type: 'Legère',
-    cost: '5 po'
+    cost: '30 po'
   },
   {
-    name: 'Tenue de Tissu ',
-    def: '1',
-    res: '3',
-    type: 'Legère',
-    cost: '50 po'
-  },
-  {
-    name: 'Tenue de Tissu Grandiose',
-    def: '1',
-    res: '6',
-    type: 'Legère',
-    cost: '200 po'
-  },
-  {
-    name: 'Armure de Cuir',
-    def: '1',
-    res: '1',
-    type: 'Intermediare',
-    cost: '10 po'
-  },
-  {
-    name: 'Armure d\'Ecailles',
-    def: '2',
+    name: 'Veste en Cuir souple',
+    def: '0',
     res: '2',
-    type: 'Intermediare',
-    cost: '50 po'
+    type: 'Legère',
+    cost: '170 po'
   },
   {
-    name: 'Cuirrasse',
-    def: '3',
+    name: 'Veste de Cuir renforcé',
+    def: '1',
     res: '3',
-    type: 'Intermediare',
-    cost: '400 po'
+    type: 'Legère',
+    cost: '375 po'
   },
   {
-    name: 'Armure de Demi-plate',
-    def: '4',
+    name: 'Veste en Cuir épais renforcé',
+    def: '2',
     res: '4',
-    type: 'Intermediare',
-    cost: '750 po'
+    type: 'Legère',
+    cost: '500 po'
   },
   {
-    name: 'Armure de Fer',
+    name: 'Veste en Cuir noir renforcé',
+    def: '3',
+    res: '5',
+    type: 'Legère',
+    cost: '1750 po'
+  },
+  // DEF
+  {
+    name: 'Cotte de maille légère',
+    def: '1',
+    res: '0',
+    type: 'Lourde',
+    cost: '30 po'
+  },
+  {
+    name: 'Cotte de maille',
+    def: '2',
+    res: '0',
+    type: 'Lourde',
+    cost: '170 po'
+  },
+  {
+    name: 'Plastron en Acier Léger',
+    def: '3',
+    res: '1',
+    type: 'Lourde',
+    cost: '375 po'
+  },
+  {
+    name: 'Plastron en Argent Léger',
     def: '4',
-    res: '1',
-    type: 'Lourde',
-    cost: '100 po'
-  },
-  {
-    name: 'Armure d\'Acier',
-    def: '6',
-    res: '1',
-    type: 'Lourde',
-    cost: '200 po'
-  },
-  {
-    name: 'Armure d\'Argent',
-    def: '7',
-    res: '1',
+    res: '2',
     type: 'Lourde',
     cost: '500 po'
   },
   {
     name: 'Armure de Plate',
-    def: '8',
-    res: '1',
+    def: '5',
+    res: '3',
     type: 'Lourde',
-    cost: '1500 po'
+    cost: '1750 po'
   },
 ]
 
@@ -455,49 +459,74 @@ export const shields = [
   {
     name: 'Bouclier de Fer',
     def: '1',
-    res: '',
+    res: '0',
     dmg: '1d4',
-    cost: '20 po'
+    effect: "Parade possible, Main secondaire uniquement",
+    cost: '15 po'
   },
   {
     name: 'Bouclier d\'Acier',
-    def: '2',
-    res: '',
+    def: '1',
+    res: '1',
     dmg: '1d4',
-    cost: '40 po'
+    effect: "Parade possible, Main secondaire uniquement",
+    cost: '85 po'
   },
   {
     name: 'Bouclier d\'Argent',
-    def: '4',
-    res: '',
+    def: '1',
+    res: '2',
     dmg: '1d4',
-    cost: '80 po'
+    effect: "Parade possible, Main secondaire uniquement",
+    cost: '187 po'
+  },
+  {
+    name: 'Bouclier Royal',
+    def: '2',
+    res: '2',
+    dmg: '1d4',
+    effect: "Parade possible, Main secondaire uniquement",
+    cost: '250 po'
+  },
+  {
+    name: 'Bouclier Héros',
+    def: '3',
+    res: '2',
+    dmg: '1d4',
+    effect: "Parade possible, Main secondaire uniquement",
+    cost: '875 po'
   },
 ]
 
 export const spellBook = [
   {
     name: 'Livre de sort (lvl 1)',
+    effect: 'Permet d\'apprendre un sort de niveau 1',
     cost: '933 po'
   },
   {
     name: 'Livre de sort (lvl 2)',
+    effect: 'Permet d\'apprendre un sort de niveau 2 nécessite les autres avant',
     cost: '1933 po'
   },
   {
     name: 'Livre de sort (lvl 3)',
+    effect: 'Permet d\'apprendre un sort de niveau 3 nécessite les autres avant',
     cost: '2933 po'
   },
   {
     name: 'Parchemin de sort (lvl 1)',
+    effect: 'Permet de lancer un sort de niveau 1 (consommable)',
     cost: '633 po'
   },
   {
     name: 'Parchemin de sort (lvl 2)',
+    effect: 'Permet de lancer un sort de niveau 2 (consommable)',
     cost: '933 po'
   },
   {
     name: 'Parchemin de sort (lvl 3)',
+    effect: 'Permet de lancer un sort de niveau 3 (consommable)',
     cost: '1333 po'
   },
 ]
@@ -563,103 +592,103 @@ export const potions = [
 export const alcool = [
   {
     name: "Chope de bière",
-    cost: '4 pc'
+    cost: '4 p0'
   },
   {
     name: "Cruche de bière",
-    cost: '2 pa'
+    cost: '20 po'
   },
   {
     name: "Vin ordinaire",
-    cost: '2 pa'
+    cost: '2 po'
   },
   {
     name: "Vin raffiné",
-    cost: '10 po'
+    cost: '100 po'
   },
 ]
 
 export const feed = [
   {
     name: 'Fromage',
-    cost: '1 pa'
+    cost: '1 po'
   },
   {
     name: "Pain",
-    cost: '2 pc'
+    cost: '2 po'
   },
   {
     name: "Viandes",
-    cost: '3 pa'
+    cost: '3 po'
   },
 ]
 
 export const lunch = [
   {
     name: 'Banquet (par personne)',
-    cost: '10 po'
+    cost: '100 po'
   },
   {
     name: 'Repas Misérable (par jour)',
-    cost: '3 pc'
+    cost: '1 po'
   },
   {
     name: "Repas Pauvre (par jour)",
-    cost: '6 pc'
+    cost: '2 po'
   },
   {
     name: "Repas Modeste (par jour)",
-    cost: '3 pa'
+    cost: '4 po'
   },
   {
     name: "Repas Confortable (par jour)",
-    cost: '5 pa'
+    cost: '8 po'
   },
   {
     name: "Repas Riche (par jour)",
-    cost: '8 pa'
+    cost: '12 po'
   },
   {
     name: "Repas Aristocratique (par jour)",
-    cost: '2 po'
+    cost: '20 po'
   },
 ]
 
 export const house = [
   {
     name: 'Auberge Misérable (par jour)',
-    cost: '7 pc'
+    cost: '1 po'
   },
   {
     name: "Auberge Pauvre (par jour)",
-    cost: '1 pa'
-  },
-  {
-    name: "Auberge Modeste (par jour)",
-    cost: '5 pa'
-  },
-  {
-    name: "Auberge Confortable (par jour)",
-    cost: '8 pa'
-  },
-  {
-    name: "Auberge Riche (par jour)",
     cost: '2 po'
   },
   {
-    name: "Auberge Aristocratique (par jour)",
+    name: "Auberge Modeste (par jour)",
     cost: '4 po'
+  },
+  {
+    name: "Auberge Confortable (par jour)",
+    cost: '8 po'
+  },
+  {
+    name: "Auberge Riche (par jour)",
+    cost: '16 po'
+  },
+  {
+    name: "Auberge Aristocratique (par jour)",
+    cost: '32 po'
   },
 ]
 
 export const divers = [
   {
     name: 'Torche',
-    cost: '1 pc'
+    cost: '1 po'
   },
   {
     name: 'Huile',
-    cost: '1 pa'
+    cost: '1 po'
   },
   {
     name: 'Piège à machoires',
@@ -719,7 +748,7 @@ export const divers = [
   },
   {
     name: 'Vêtements ordinaires',
-    cost: '5 pa'
+    cost: '5 po'
   },
   {
     name: 'Tenue de voyage',
@@ -727,7 +756,7 @@ export const divers = [
   },
   {
     name: 'Jeu de Dés',
-    cost: '1 pa'
+    cost: '1 po'
   },
   {
     name: 'Jeu d\'Echecs',

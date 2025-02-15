@@ -4,7 +4,7 @@ import FightView from './FightView.vue';
 <template>
   <div class='visible'>
 		<div class='header'>
-      <h1>La creation de personnage</h1>
+      <h1>La création de personnage</h1>
       <h2>Découvrez comment créer votre personnage pour<span> jouer </span></h2>
 			<!-- <p>
 				Bienvenue sur la page de création de personnage de notre jeu de rôle épique ! Ici, vous pouvez donner vie à votre héros, le personnaliser à votre guise et le préparer pour des aventures palpitantes dans notre univers fantastique. Suivez les étapes ci-dessous pour créer votre personnage unique.
@@ -18,11 +18,11 @@ import FightView from './FightView.vue';
 					</h3>
 				</div>
 				<p>
-					Commencez par choisir la race de votre personnage parmi nos options variées, chacune ayant ses propres avantages et déavantages lier au lore de cette dernière (Sans influence statistique directe). Que vous préfériez être un elfe élégant, un nain robuste, un humain polyvalent ou une race unique de notre monde.
+					Commencez par choisir la race de votre personnage parmi nos options variées, chacune ayant ses propres avantages et déavantages lier au lore de cette dernière. Que vous préfériez être un elfe élégant, un nain robuste, un humain polyvalent ou une race unique de notre monde.
 				</p>
 				<p>
-					Une fois votre race choisie, sélectionnez une classe qui déterminera le style de jeu de votre personnage. Voulez-vous être un puissant guerrier, un sorcier habile, un voleur rusé ou une classe plus unique ? Votre classe dictera vos compétences de base et votre rôle dans le groupe. Pour commencer vous aurez le choix entre <span>Noble</span>, qui peut utiliser la magie et <span>Roturier</span> qui ne peux pas sans s'entrainer au préalable. Après un rude entrainement si vous atteignez les maîtrises nécessaire pour une classe plus avancée vous pourrez changer à tout moment pour cette dernière.
-					Dans certains cas, vous pouvez être amené à vouloir un personnage avec déjà de l'experiencesn il est donc possible de commencer en <span>Novice</span> ou <span>Avancée</span>. Vous pourez. dans ce cas choisir une classe pour chaque rang inférieur à maitriser afin d'obtenir ses bonus.
+					Une fois votre race choisie, sélectionnez une classe qui déterminera le style de jeu de votre personnage. Voulez-vous être un puissant guerrier, un sorcier habile, un surineur rusé ou une classe plus unique ? Votre classe dictera vos compétences de base et votre rôle dans le groupe. Pour commencer vous aurez le choix entre les classes <span>Novices</span>. Après un rude entrainement si vous atteignez les maîtrises nécessaire pour une classe plus avancée vous pourrez changer à tout moment pour cette dernière.
+					Dans certains cas, vous pouvez être amené à vouloir un personnage avec déjà de l'experiencesn il est donc possible de commencer en <span>Avancée</span> ou <span>Maître</span>. Vous pourez. dans ce cas choisir une classe pour chaque rang inférieur à maitriser afin d'obtenir ses bonus.
 				</p>
 				<p>
 					Passez à l'étape de personnalisation de l'apparence pour créer un personnage visuellement unique. Modifiez les traits de son visage, la couleur de ses yeux, sa coiffure, et bien plus encore. Laissez libre cours à votre créativité pour donner vie à votre héros.
@@ -41,10 +41,10 @@ import FightView from './FightView.vue';
 					Vous pouvez maintenant répartir vos points d'attribut pour déterminer les forces et les faiblesses de votre personnage.
 				</p>
 				<p>
-					 Choisissez judicieusement, car cela influencera vos compétences et capacités. Les guerriers auront besoin de force, les mages de la sagesse, et ainsi de suite. Vous possèdez <span>220 points</span> à répartir entre <span>la Force</span> (FRC), <span>la Sagesse</span> (SAG), <span>la Dextérité</span> (DEX) et <span>le Charisme</span> (CHM) avec au maximum 70 et minimum 30 dans chaque caractéristiques (hors bonus/malus de race). Ainsi que <span>30 points</span> pour <span>les points de vie et d'énergie</span> (PV et PdE).
+					 Choisissez judicieusement, car cela influencera vos compétences et capacités. Les guerriers auront besoin de force, les mages de la sagesse, et ainsi de suite. Vous possèdez <span>130 points</span> à répartir entre <span>la Force</span> (FOR), <span>la Sagesse</span> (SAG) et <span>la Dextérité</span> (DEX) avec au maximum 70 et minimum 20 dans chaque caractéristiques (hors bonus/malus de race). Ainsi que <span>30 points</span> pour <span>les points de vie et d'énergie</span> (PV et PdE).
 				</p>
-				<p>Vous pouvez également choisir votre rang d'armes, pour cela vous avez le droit de commencer avec un rang <span>D+</span>, 2 rang <span>D</span> et <span>E+</span> le reste sera de rang <span>E</span><br/>
-				Dans le cas d'une classe avancées vous commencer avec le rang <span>nécessaire</span> à votre classe à la place du rang <span>D+</span>. 
+				<p>Vous pouvez également choisir votre rang d'armes, pour cela vous avez le droit de commencer avec un rang <span>C</span>(correspondant à votre classe), 2 rang <span>D</span> le reste sera de rang <span>E</span><br/>
+				Dans le cas d'une classe avancées vous commencer avec le rang <span>nécessaire</span> à votre classe à la place du rang <span>C</span>. 
 				</p>
 			</div>
 			<div class='fight-container'>
@@ -64,7 +64,7 @@ import FightView from './FightView.vue';
 					</h3>
 				</div>
 				<p>
-					Achetez votre équipement, vous possèdez pour cela de <span>60 po</span> de départ à consommer pour vous équiper de la tête aux pieds, multiplier par le rang de votre classe soi 120 po pour Novice et 180 po pour Avancée. Penser à en gardez un peu de côté pour vos aventures.
+					Achetez votre équipement, vous possèdez pour cela de <span>60 po</span> de départ à consommer pour vous équiper de la tête aux pieds, multiplier par le rang de votre classe soi 120 po pour Avancée et 180 po pour Maître. Penser à en gardez un peu de côté pour vos aventures.
 				</p>
 			</div>
 			<div class='fight-container'>
@@ -112,7 +112,7 @@ h3 {
 	align-items: flex-start;
 	gap: 16px;
 	border-radius: 28px;
-	background: #202124;
+	background: var(--background);
 	transition: all .3s ease-in-out;
 }
 
@@ -142,7 +142,7 @@ h3 {
 }
 a {
 	background-color: #7289da;
-	color: white;
+	color: var(--textColorWhite);
 	border: none;
 	border-radius: 4px;
 	padding: 8px 16px;

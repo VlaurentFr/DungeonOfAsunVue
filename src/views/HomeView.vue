@@ -20,7 +20,7 @@ const router = useRouter();
 									<a href="#intro">Découvrir</a>
 								</div>
 							</div>
-							<img src="@/assets/cults/orc.png"/>
+							<div class="background-image"></div>
 							<div class="filter"></div>
 						</div>
 					</div>
@@ -119,7 +119,7 @@ const router = useRouter();
 										<i class="fas fa-dice-d20"></i>
 										<div>
 											<p><span>Des caractéristiques simples :</span></p>
-											<p>La force, La Dextérité, La Sagesse et Le Charisme</p>
+											<p>La Force, La Dextérité et La Sagesse</p>
 										</div>
 									</div>
 									<div class="good">
@@ -133,7 +133,7 @@ const router = useRouter();
 										<i class="fas fa-dice-d20"></i>
 										<div>
 											<p><span>Changement de classe et évolution facile :</span></p>
-											<p>maîtrise d'aremes et de classe, inpiré de Tactical RPG</p>
+											<p>Maîtrise d'armes et de classe, inpiré de Tactical RPG</p>
 										</div>
 									</div>
 								</article>
@@ -146,12 +146,12 @@ const router = useRouter();
 							<div class="feature">
 									<h4>Mythologie et Panthéon</h4>
 									<p>Plongez dans une mythologie riche et complexe. Découvrez les dieux, déesses et créatures mythiques qui influencent le destin du monde et de ses habitants.</p>
-									<img src="@/assets/gods/emhjir2.png"/>
+									<img src="@/assets/gods/neien2.png"/>
 									<div class="filter"></div>
 							</div>
 							<div class="feature">
 								<h4>Classes Personnalisées</h4>
-								<p>Découvrez des classes uniques, chacune avec ses propres compétences et capacités spéciales. Devenez un guerrier intrépide, un mage mystérieux, un voleur agile ou une multitude d'autres héros.</p>
+								<p>Découvrez des classes uniques, chacune avec ses propres compétences et capacités spéciales. Devenez un guerrier intrépide, un mage mystérieux, un surineur agile ou une multitude d'autres héros.</p>
 								<img src="@/assets/classes/epeiste.png"/>
 								<div class="filter"></div>
 							</div>
@@ -174,7 +174,7 @@ const router = useRouter();
 							<h3>Jouez</h3>
 							<p>Prêt à partir à l'aventure ? Alors n'attendez plus et créer un puissant personnages qu'il soi un mage savant ou bien un grand guerrier intrépide!</p>
 							<RouterLink to="/Rules/creation">Créez votre personnages</RouterLink>
-							<img class="banner-img" src="../assets/combats/combat3.png" />
+							<div class="banner-img" src="../assets/combats/combat3.png" ></div>
 						</div>
 					</section>
 					<section id="FAQ">
@@ -290,8 +290,8 @@ h3 {
     width: fit-content;
 }
 
-#redirect img {
-	position: absolute;
+#redirect .background-image {
+	/* position: absolute;
 	top: 0px;
 	left: 0;
 	right: 0;
@@ -299,7 +299,21 @@ h3 {
 	height: 80vh;
 	object-fit: cover;
 	z-index: -1;
-	transform: scaleX(-1);
+	transform: scaleX(-1); */
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 80% 94%, 50% 99%, 36% 83%, 21% 94%, 7% 88%, 0 100%);
+
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  height: 80vh;
+	top: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(../assets/cults/orc.png);
+  background-attachment: fixed;
+  /* clip-path: polygon(5% 3%, 45% 10%, 55% 0, 83% 15%, 100% 0, 100% 100%, 0 100%, 0 34%, 0 24%, 0 12%); */
+
 }
 #redirect .filter {
 	position: absolute;
@@ -307,12 +321,15 @@ h3 {
 	left: 0;
 	right: 0;
 	width: 100vw;
-	height: 80vh;
+	height: 30vh;
 	object-fit: cover;
 	z-index: -1;
-	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(36, 190, 116, 0.0) 100%), lightgray 50% / cover no-repeat;
-	mix-blend-mode: multiply;
+  background: linear-gradient(180deg, var(--backgroundColor) 10%, #f1f1f100 100%), no-repeat;
+}
 
+.title-container {
+	color: var(--textColorWhite);
+	filter: drop-shadow(2px 4px 6px black);
 }
 
 .title-container h1 {
@@ -341,7 +358,7 @@ h3 {
 	transition: all 300ms ease-in-out;
 	cursor: pointer;
 	text-decoration: none;
-	color: white;
+	color: var(--textColor);
 	border: solid transparent 2px;
 }
 
@@ -349,6 +366,9 @@ h3 {
 	background-color: var(--primaryColor);
 	color: black;
 
+}
+.title-container a {
+	color: var(--textColorWhite);
 }
 .title-container a:hover {
 	border: solid white 2px;
@@ -399,7 +419,7 @@ h3 {
 	padding: 15px;
 	margin: 0 15px 0px 0;
 	color: var(--primaryColor);
-	border: #24BE74 solid 1px;
+	border: var(--primaryColor) solid 1px;
 	border-radius: 8px;
 	width: 56px !important;
 	height: 56px;
@@ -482,6 +502,7 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 64px;
+	color: var(--textColor);
 }
 .banner::after {
   content: '';
@@ -489,15 +510,15 @@ h3 {
   left: 0;
   width: 100vw;
   height: 600px;
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(0deg, var(--backgroundColor) 10%, #f1f1f100 100%), no-repeat;
 }
 .banner-fade::after {
   content: '';
   position: absolute;
   left: 0;
   width: 100vw;
-  height: 500px;
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+  height: 750px;
+  background: linear-gradient(0deg, var(--backgroundColor) 10%, #f1f1f100 100%), no-repeat;
 }
 .banner h3 {
   margin: 100px auto 0;
@@ -516,8 +537,8 @@ h3 {
   text-align: center;
   z-index: 1;
 }
-.banner-fade img {
-  position: absolute;
+.banner-fade div {
+  /* position: absolute;
   width: 100vw;
   left: 0;
 	right: 0;
@@ -525,6 +546,22 @@ h3 {
   z-index: -1;
   object-fit: cover;
   object-position: center;
+	clip-path: polygon(5% 3%, 45% 10%, 55% 0, 83% 15%, 100% 0, 100% 100%, 0 100%, 0 34%, 0 24%, 0 12%); */
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  height: 750px;
+  z-index: -1;
+  background-size: cover;
+  background-position: top;
+  background-image: url(../assets/combats/combat3.png);
+  background-attachment: fixed;
+  clip-path: polygon(5% 3%, 45% 10%, 55% 0, 83% 15%, 100% 0, 100% 100%, 0 100%, 0 34%, 0 24%, 0 12%);
+}
+
+#section-jouez {
+	margin-top: 128px;
+	margin-bottom: 256px;
 }
 
 /************************/
@@ -585,16 +622,17 @@ details a {
 	gap: 12px;
 }
 .feature {
-	background: #202124;
+	background: var(--backgroundColor);
 	width: 100%;
 	margin: 1rem 0;
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	position: relative;
-	border: #24BE74 solid 1px;
+	border: var(--primaryColor) solid 1px;
 	text-shadow: 1px 1px 2px black;
 	overflow: hidden;
 	margin-bottom: 200px;
+	color: var(--textColorWhite);
 }
 .feature:hover {
 	width: 200%;
@@ -622,7 +660,7 @@ details a {
 	width: 100%;
 	object-fit: cover;
 	position: absolute;
-	/* filter: blur(2px); */
+	filter: saturate(0.5);
 	z-index: 1;
 }
 
@@ -631,7 +669,7 @@ details a {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(36, 190, 116, 0.0) 100%), lightgray 50% / cover no-repeat;
+  background: linear-gradient(0deg, var(--backgroundColor) 10%, #f1f1f100 100%), no-repeat;
 	mix-blend-mode: multiply;
 	z-index: 1;
 }
@@ -645,7 +683,7 @@ h4:after {
   content: "";
   width: calc(100% - 40px);
   height: 4px;
-  background-color: #24BE74;
+  background-color: var(--primaryColor);
   position: absolute;
   bottom: -16px;
   right: 40px;

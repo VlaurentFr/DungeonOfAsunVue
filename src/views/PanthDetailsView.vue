@@ -39,64 +39,64 @@ function getImageUrl(name: string) {
         <p v-html="panth[godStore.panth].desc"></p>
       </div>
     </div>
-    <h3>Les dieux associés</h3>
-    <div class="god-container">
-      <div class="god" :class="{'none': !major.cults.includes(godStore.panth)}"
-        v-for="major of majorGods" :key="major.name" @click="navigate(major)">
-        <img class="god-image" :src="getImageUrl(major.img)"/>
-        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
-        <div class="character filter"></div>
-        <div class="logo-type">
-          <img src="../assets/Lawfull.svg"/>
+      <h3>Les dieux associés</h3>
+      <div class="god-container">
+        <div class="god" :class="{'none': !major.cults.includes(godStore.panth)}"
+          v-for="major of majorGods" :key="major.name" @click="navigate(major)">
+          <img class="god-image" :src="getImageUrl(major.img)"/>
+          <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+          <div class="character filter"></div>
+          <div class="logo-type">
+            <img src="../assets/Lawfull.svg"/>
+          </div>
+          <p class="god-name">{{ major.name }}</p>
+          <p class="god-title"> {{ major.title }}</p>
         </div>
-        <p class="god-name">{{ major.name }}</p>
-        <p class="god-title"> {{ major.title }}</p>
-      </div>
-      <div class="god" :class="{'none': !major.cults.includes(godStore.panth)}"
-        v-for="major of minorGods" :key="major.name" @click="navigate(major)">
-        <img class="god-image" :src="getImageUrl(major.img)"/>
-        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
-        <div class="character filter"></div>
-        <div class="logo-type">
-          <img src="../assets/Lawfull.svg"/>
+        <div class="god" :class="{'none': !major.cults.includes(godStore.panth)}"
+          v-for="major of minorGods" :key="major.name" @click="navigate(major)">
+          <img class="god-image" :src="getImageUrl(major.img)"/>
+          <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+          <div class="character filter"></div>
+          <div class="logo-type">
+            <img src="../assets/Lawfull.svg"/>
+          </div>
+          <p class="god-name">{{ major.name }}</p>
+          <p class="god-title"> {{ major.title }}</p>
         </div>
-        <p class="god-name">{{ major.name }}</p>
-        <p class="god-title"> {{ major.title }}</p>
-      </div>
-      <div class="god" :class="{'none': !major.cults.includes(godStore.panth)}"
-        v-for="major of kingGods" :key="major.name" @click="navigate(major)">
-        <img class="god-image" :src="getImageUrl(major.img)"/>
-        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
-        <div class="character filter"></div>
-        <div class="logo-type">
-          <img src="../assets/Void.svg"/>
+        <div class="god" :class="{'none': !major.cults.includes(godStore.panth)}"
+          v-for="major of kingGods" :key="major.name" @click="navigate(major)">
+          <img class="god-image" :src="getImageUrl(major.img)"/>
+          <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+          <div class="character filter"></div>
+          <div class="logo-type">
+            <img src="../assets/Void.svg"/>
+          </div>
+          <p class="god-name">{{ major.name }}</p>
+          <p class="god-title"> {{ major.title }}</p>
         </div>
-        <p class="god-name">{{ major.name }}</p>
-        <p class="god-title"> {{ major.title }}</p>
-      </div>
-      <div class="god" :class="{'none': !major.cults.includes(godStore.panth)}"
-        v-for="major of princeGods" :key="major.name" @click="navigate(major)">
-        <img class="god-image" :src="getImageUrl(major.img)"/>
-        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
-        <div class="character filter"></div>
-        <div class="logo-type">
-          <img src="../assets/Void.svg"/>
+        <div class="god" :class="{'none': !major.cults.includes(godStore.panth)}"
+          v-for="major of princeGods" :key="major.name" @click="navigate(major)">
+          <img class="god-image" :src="getImageUrl(major.img)"/>
+          <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+          <div class="character filter"></div>
+          <div class="logo-type">
+            <img src="../assets/Void.svg"/>
+          </div>
+          <p class="god-name">{{ major.name }}</p>
+          <p class="god-title"> {{ major.title }}</p>
         </div>
-        <p class="god-name">{{ major.name }}</p>
-        <p class="god-title"> {{ major.title }}</p>
-      </div>
-      <div class="god" :class="{'none': !major.cults.includes(godStore.panth)}"
-        v-for="major of otherGods" :key="major.name" @click="navigate(major)">
-        <img class="god-image" :src="getImageUrl(major.img)"/>
-        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
-        <div class="character filter"></div>
-        <div class="logo-type">
-          <img src="../assets/Lawfull.svg"/>
+        <div class="god" :class="{'none': !major.cults.includes(godStore.panth)}"
+          v-for="major of otherGods" :key="major.name" @click="navigate(major)">
+          <img class="god-image" :src="getImageUrl(major.img)"/>
+          <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+          <div class="character filter"></div>
+          <div class="logo-type">
+            <img src="../assets/Lawfull.svg"/>
+          </div>
+          <p class="god-name">{{ major.name }}</p>
+          <p class="god-title"> {{ major.title }}</p>
         </div>
-        <p class="god-name">{{ major.name }}</p>
-        <p class="god-title"> {{ major.title }}</p>
       </div>
-    </div>
   </div>
 </template>
 <style scoped>
@@ -134,7 +134,7 @@ function getImageUrl(name: string) {
   top: 0;
   right: 0;
   z-index: -1;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 80%);
+  background: linear-gradient(90deg, var(--backgroundColor) 0%, rgba(36, 190, 116, 0) 50%), no-repeat;
 }
 
 @media screen and (max-width: 1024px) {
@@ -155,7 +155,7 @@ function getImageUrl(name: string) {
   height: 244px;
   width: 124px;
   object-fit: cover;
-  border: 4px solid var(--primaryColor);
+  /* border: 4px solid var(--primaryColor); */
   border-radius: 4px;
 }
 .god-container {

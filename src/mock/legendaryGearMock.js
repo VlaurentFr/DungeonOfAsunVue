@@ -37,8 +37,8 @@ export const gear = [
   {
     name: "Amulette de la Vitalité",
     type: "Amulette",
-    desc: "L'Amulette de la Vitalité est un artefact légendaire, façonné à partir d'un jade d'un vert éclatant. Elle est incrustée de runes anciennes symbolisant la vie et l'énergie. Portée autour du cou, cette amulette confère une santé inébranlable à son porteur, accélérant la guérison des blessures, renforçant le système immunitaire, et offrant une protection contre les maladies.",
-    dices: ["Récupération rapide", "Immunité maladies"],
+    desc: "L'Amulette de la Vitalité est un artefact légendaire, façonné à partir d'un jade d'un vert éclatant. Elle est incrustée de runes anciennes symbolisant la vie et l'énergie. Portée autour du cou, cette amulette confère une santé inébranlable à son porteur, renforçant le système immunitaire, et offrant une protection contre les maladies.",
+    dices: ["Immunité poison", "Immunité maladies"],
     el: "Light"
   },
   {

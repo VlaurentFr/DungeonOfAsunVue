@@ -7,7 +7,7 @@
   text-align: center;
 }
 .header h1 {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Work Sans;
   font-size: 48px;
   font-style: normal;
@@ -15,7 +15,7 @@
   line-height: normal;
 }
 .header h2 {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Caladea;
   font-size: 32px;
   font-style: italic;
@@ -26,7 +26,7 @@
 .header h2 span {
   font-weight: 400;
   padding: 0 0 6px 0;
-  border-bottom: 1px solid var(--primaryColor);
+  border-bottom: 3px solid var(--primaryColor);
 }
 .header p {
   max-width: 560px;

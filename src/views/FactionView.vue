@@ -69,13 +69,13 @@ function changeOrga(index: number) {
   height: fit-content;
 }
 .orga-title:hover {
-  background-color: #202124;
+  background-color: var(--backgroundColor);
 }
 .orga-title:hover p {
-  color: #fff;
+  color: var(--primaryColor);
 }
 .orga-title p {
-  color: #FFF;
+  color: var(--textColor);
   font-family: Work Sans;
   font-size: 16px;
   font-style: normal;
@@ -114,8 +114,7 @@ function changeOrga(index: number) {
   height: calc(100vh - 73px);
   right: 0;
   width: 33%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(36, 190, 116, 0.0) 100%), lightgray 50% / cover no-repeat;
-  mix-blend-mode: multiply;
+  background: linear-gradient(90deg, var(--backgroundColor) 0%, rgba(36, 190, 116, 0) 50%), no-repeat;
 
 }
 @media screen and (max-width: 768px) {

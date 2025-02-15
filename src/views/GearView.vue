@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 
-import { stick, daggers, swords, Axes, spears, hands, bows, masses, gears, shields, spellBook, potions, feed, alcool, lunch, house, stones, treasure, divers } from '../mock/gearMock.js';
+import { daggers, swords, Axes, spears, hands, bows, masses, gears, shields, spellBook, potions, feed, alcool, lunch, house, stones, treasure, divers } from '../mock/gearMock.js';
 
 const search = ref("");
 
 const selectedGear = computed(() => {
   return {
-    stick: stick.filter(x => x.name.toLowerCase().includes(search.value.toLowerCase())),
     daggers: daggers.filter(x => x.name.toLowerCase().includes(search.value.toLowerCase())),
     swords: swords.filter(x => x.name.toLowerCase().includes(search.value.toLowerCase())),
     Axes: Axes.filter(x => x.name.toLowerCase().includes(search.value.toLowerCase())),
@@ -56,8 +55,6 @@ const selected = ref('WEAPONS');
             </div> -->
           </div>
         </div>
-        <p>1 po = 100 pa = 10 000 pc</p>
-        <p>1 pa = 100 pc</p>
         <div class="card tabs">
           <input id="tab-1" type="radio" class="tab tab-selector" checked="true" name="tab"/>
           <label for="tab-1" class="tab tab-primary" @click="selected = 'WEAPONS'">Armes</label>
@@ -78,25 +75,6 @@ const selected = ref('WEAPONS');
         </div>
         <article class='row'>
           <div  v-if="selected === 'WEAPONS'">
-            <h3 v-if="selectedGear.stick.length">Bâtons</h3>
-            <table v-if="selectedGear.stick.length">
-              <thead>
-                <tr>
-                  <th colspan="1">Nom</th>
-                  <th colspan="1">Dégâts</th>
-                  <th colspan="1">Type</th>
-                  <th colspan="1">Coûts</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="w of selectedGear.stick" :key="w.name">
-                  <td>{{w.name}}</td>
-                  <td>{{w.dmg}}</td>
-                  <td>{{w.type}}</td>
-                  <td><p>{{w.cost}}</p></td>
-                </tr>
-              </tbody>
-            </table>
             <h3 v-if="selectedGear.daggers.length">Dagues</h3>
             <table v-if="selectedGear.daggers.length">
               <thead>
@@ -105,6 +83,7 @@ const selected = ref('WEAPONS');
                   <th colspan="1">Dégâts</th>
                   <th colspan="1">Effets</th>
                   <th colspan="1">Type</th>
+                  <th colspan="1">Type de Dégâts</th>
                   <th colspan="1">Coûts</th>
                 </tr>
               </thead>
@@ -114,6 +93,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.dmg}}</td>
                   <td>{{ w.effect }}</td>
                   <td>{{w.type}}</td>
+                  <td>{{w.typeDmg}}</td>
                   <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
@@ -126,6 +106,7 @@ const selected = ref('WEAPONS');
                   <th colspan="1">Dégâts</th>
                   <th colspan="1">Effets</th>
                   <th colspan="1">Type</th>
+                  <th colspan="1">Type de Dégâts</th>
                   <th colspan="1">Coûts</th>
                 </tr>
               </thead>
@@ -135,6 +116,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.dmg}}</td>
                   <td>{{ w.effect }}</td>
                   <td>{{w.type}}</td>
+                  <td>{{w.typeDmg}}</td>
                   <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
@@ -147,6 +129,7 @@ const selected = ref('WEAPONS');
                   <th colspan="1">Dégâts</th>
                   <th colspan="1">Effets</th>
                   <th colspan="1">Type</th>
+                  <th colspan="1">Type de Dégâts</th>
                   <th colspan="1">Coûts</th>
                 </tr>
               </thead>
@@ -156,6 +139,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.dmg}}</td>
                   <td>{{ w.effect }}</td>
                   <td>{{w.type}}</td>
+                  <td>{{w.typeDmg}}</td>
                   <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
@@ -168,6 +152,7 @@ const selected = ref('WEAPONS');
                   <th colspan="1">Dégâts</th>
                   <th colspan="1">Effets</th>
                   <th colspan="1">Type</th>
+                  <th colspan="1">Type de Dégâts</th>
                   <th colspan="1">Coûts</th>
                 </tr>
               </thead>
@@ -177,6 +162,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.dmg}}</td>
                   <td>{{ w.effect }}</td>
                   <td>{{w.type}}</td>
+                  <td>{{w.typeDmg}}</td>
                   <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
@@ -189,6 +175,7 @@ const selected = ref('WEAPONS');
                   <th colspan="1">Dégâts</th>
                   <th colspan="1">Effets</th>
                   <th colspan="1">Type</th>
+                  <th colspan="1">Type de Dégâts</th>
                   <th colspan="1">Coûts</th>
                 </tr>
               </thead>
@@ -198,6 +185,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.dmg}}</td>
                   <td>{{ w.effect }}</td>
                   <td>{{w.type}}</td>
+                  <td>{{w.typeDmg}}</td>
                   <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
@@ -210,6 +198,7 @@ const selected = ref('WEAPONS');
                   <th colspan="1">Dégâts</th>
                   <th colspan="1">Effets</th>
                   <th colspan="1">Type</th>
+                  <th colspan="1">Type de Dégâts</th>
                   <th colspan="1">Coûts</th>
                 </tr>
               </thead>
@@ -219,6 +208,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.dmg}}</td>
                   <td>{{ w.effect }}</td>
                   <td>{{w.type}}</td>
+                  <td>{{w.typeDmg}}</td>
                   <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
@@ -231,6 +221,7 @@ const selected = ref('WEAPONS');
                   <th colspan="1">Dégâts</th>
                   <th colspan="1">Effets</th>
                   <th colspan="1">Type</th>
+                  <th colspan="1">Type de Dégâts</th>
                   <th colspan="1">Coûts</th>
                 </tr>
               </thead>
@@ -240,6 +231,7 @@ const selected = ref('WEAPONS');
                   <td>{{w.dmg}}</td>
                   <td>{{ w.effect }}</td>
                   <td>{{w.type}}</td>
+                  <td>{{w.typeDmg}}</td>
                   <td><p>{{w.cost}}</p></td>
                 </tr>
               </tbody>
@@ -274,8 +266,10 @@ const selected = ref('WEAPONS');
               <thead>
                 <tr>
                   <th colspan="1">Nom</th>
-                  <th colspan="1">DEF</th>
+                  <th colspan="1">Parade</th>
+                  <th colspan="1">Protection</th>
                   <th colspan="1">Dégâts</th>
+                  <th colspan="1">Effets</th>
                   <th colspan="1">Coûts</th>
                 </tr>
               </thead>
@@ -283,7 +277,9 @@ const selected = ref('WEAPONS');
                 <tr v-for="s of selectedGear.shields" :key="s.name">
                   <td>{{s.name}}</td>
                   <td>{{s.def}}</td>
+                  <td>{{s.res}}</td>
                   <td>{{s.dmg}}</td>
+                  <td>{{s.effect}}</td>
                   <td><p>{{s.cost}}</p></td>
                 </tr>
               </tbody>
@@ -359,12 +355,14 @@ const selected = ref('WEAPONS');
               <thead>
                 <tr>
                   <th colspan="1">Nom</th>
+                  <th colspan="1">Effets</th>
                   <th colspan="1">Coûts</th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="s of selectedGear.spellBook" :key="s.name">
                   <td>{{s.name}}</td>
+                  <td>{{s.effect}}</td>
                   <td><p>{{s.cost}}</p></td>
                 </tr>
               </tbody>
@@ -374,7 +372,7 @@ const selected = ref('WEAPONS');
               <thead>
                 <tr>
                   <th colspan="1">Nom</th>
-                  <th colspan="1">Effet</th>
+                  <th colspan="1">Effets</th>
                   <th colspan="1">Coûts</th>
                 </tr>
               </thead>
@@ -490,7 +488,7 @@ h3 {
   visibility: hidden;
   position: absolute;
   top: 66px;
-  background: #606367;
+  background: var(--background);
   border-radius: 16px;
   width: 100%;
 }
@@ -502,9 +500,9 @@ h3 {
   cursor: pointer;
 }
 #search .suggest:hover {
-  background-color: #202124;
-  color: #24BE74;
-  border: #24BE74 1px solid;
+  background-color: var(--background);
+  color: var(--primaryColor);
+  border: var(--primaryColor) 1px solid;
 }
 #search:focus-within .searh-suggest {
  visibility: visible;
@@ -514,8 +512,8 @@ h3 {
   padding: 18.5px 56px;
   border-radius: 16px;
   border: none;
-  background-color: #202124;
-  color: white;
+  background-color: var(--background);
+  color: var(--textColor);
   font-size: 16px;
 }
 #search input:focus-visible {

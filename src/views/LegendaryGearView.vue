@@ -95,7 +95,7 @@ function clickSuggest(name: string) {
   visibility: hidden;
   position: absolute;
   top: 66px;
-  background: #606367;
+  background: var(--background);
   border-radius: 16px;
   width: 100%;
 }
@@ -107,9 +107,9 @@ function clickSuggest(name: string) {
   cursor: pointer;
 }
 #search .suggest:hover {
-  background-color: #202124;
-  color: #24BE74;
-  border: #24BE74 1px solid;
+  background-color: var(--backgroundColor);
+  color: var(--primaryColor);
+  border: var(--primaryColor) 1px solid;
 }
 #search:focus-within .searh-suggest {
  visibility: visible;
@@ -119,8 +119,8 @@ input {
   padding: 18.5px 56px;
   border-radius: 16px;
   border: none;
-  background-color: #202124;
-  color: white;
+  background-color: var(--background);
+  color: var(--textColor);
   font-size: 16px;
 }
 input:focus-visible {
@@ -140,11 +140,11 @@ input:focus-visible {
   justify-content: space-between;
   gap: 16px;
   border-radius: 28px;
-  background: #0F0F0F;
+  background: var(--background);
   transition: all .3s ease-in-out;
 }
 .card h4 {
-  color: #24be74;
+  color: var(--primaryColor);
   font-family: Work Sans;
   font-size: 20px;
   font-style: normal;
@@ -163,7 +163,7 @@ input:focus-visible {
     align-items: flex-start;
     gap: 8px;
     border-radius: 8px;
-    background: #202124;
+    background: var(--backgroundColor);
 }
 .card .side .type {
   padding: 4px 8px;
@@ -188,7 +188,7 @@ input:focus-visible {
   transition: all 300ms ease-in-out;
 }
 .tag a:hover {
-  background-color: white;
+  background-color: var(--textColor);
 }
 
 @media screen and (max-width: 768px) {

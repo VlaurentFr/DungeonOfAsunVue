@@ -16,7 +16,7 @@ function getImageUrl(name: string) {
     <div class='header'>
       <h1 v-if="!type">Les Races</h1>
       <h1 v-else>Les {{ type }}</h1>
-      <h2>Découvrez la liste des <span v-if="!type"> races </span> <span v-if="type"> {{ type }} </span></h2>
+      <h2>Découvrez la liste des <span v-if="!type"> races jouables </span> <span v-if="type"> {{ type }} jouables</span></h2>
     </div>
     <div id="races" v-if="!type">
       <button @click="type = 'Humains'">
@@ -148,7 +148,7 @@ function getImageUrl(name: string) {
   position: absolute;
   left: 0;
   top: auto;
-  width: 99%;
+  width: 100%;
   height: 70%;
   display: flex;
   align-items: center;
@@ -203,7 +203,7 @@ function getImageUrl(name: string) {
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%);
 }
 #races button:hover:after {
-  background: linear-gradient(0deg, rgba(36, 190, 116, 0.80) 0%,rgba(255,255,255,0) 50%) ;
+  background: linear-gradient(0deg, var(--primaryColor) 0%,rgba(255,255,255,0) 50%) ;
 }
 #races button:hover img{
   transform: scale(1.2);
@@ -242,13 +242,18 @@ function getImageUrl(name: string) {
   border-radius: 8px;
   margin: 0 48px 16px 0;
   object-fit: cover;
-  -webkit-mask-image: linear-gradient(-90deg, transparent 0%,black 100%);
-  mask-image: linear-gradient(-90deg, transparent 0%,black 100%);
+  -webkit-mask-image: url(../assets/splash3.png);
+  mask-image: url(../assets/splash3.png);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%, contain;
 }
 
 .race .img-right {
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%,black 100%);
-  mask-image: linear-gradient(90deg, transparent 0%,black 100%);
+  margin: 0 0 16px 48px;
+  -webkit-mask-image: url(../assets/splash3.png);
+  mask-image: url(../assets/splash3.png);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%, contain;
 }
 
 @media screen and (max-width: 768px) {

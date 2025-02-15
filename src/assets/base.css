@@ -6,19 +6,31 @@
 
 /* semantic color variables for this project */
 :root {
-  --primaryColor: #24BE74;
-  --secondaryColor: #24BE74;
-  --background: #303036;
-  --textColor: #fff;
-  background-color: #000;
+  /* --primaryColor: #24BE74; */
+  --primaryColor: hsl(16,100%,60%);
+  /* --secondaryColor: #24BE74; */
+  --secondaryColor: hsl(0,90%,60%);
+  --background: white;
+  --backgroundColor: #f1f1f1;
+  /* --textColor: #fff; */
+  --textColor: hsl(250, 15%, 10%);
+  --textColorWhite: #f1f1f1;
+  /* background-color: hsl(250, 15%, 10%); */
+  background-color: #F1F1F1;
 }
 
   :root.dark {
-    --primaryColor: #24BE74;
-    --secondaryColor: #24BE74;
-    --background: #303036;
-    --textColor: #fff;
-    background-color: #000;
+    /* --primaryColor: #24BE74; */
+    --primaryColor: hsl(16,100%,60%);
+    /* --secondaryColor: #24BE74; */
+    --secondaryColor: hsl(0,90%,60%);
+    --background: white;
+    --backgroundColor: #f1f1f1;
+    /* --textColor: #fff; */
+    --textColor: hsl(250, 15%, 10%);
+    --textColorWhite: #f1f1f1;
+    /* background-color: hsl(250, 15%, 10%); */
+    background-color: #F1F1F1;
   }
 
 *,
@@ -70,12 +82,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
   border-radius: 8px;
-  border: #202124 1px solid;
+  border: var(--backgroundColor) 1px solid;
   overflow: hidden;
 }
 
 table, td, th, tr {
-  border-bottom: #202124 1px solid;
+  border-bottom: var(--backgroundColor) 1px solid;
   padding: 16px;
   margin-bottom: 16px;
   height: fit-content;
@@ -88,6 +100,6 @@ thead {
 }
 
 thead:first-child tr {
-  background-color: #202124;
-  color: white;
+  background-color: var(--background);
+  color: var(--textColor);
 }

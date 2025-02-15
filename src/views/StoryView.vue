@@ -16,21 +16,10 @@ import { useRouter } from 'vue-router';
             <h3>Introduction</h3>
         </div>
         <p>
-          À l'origine, les Êtres du Néant vivaient seuls dans le Void. L'un d'eux décida un jour de
-          créer un nouveau monde, une terre où vivraient d'autres êtres vivants.<br/>
-          Riannedos créa donc un monde en le protégeant de son corps. Il y plaça ses enfants : les
-          Dragons et le Temps.<br/><br/>
-          Très vite, d'autres Êtres le rejoinrent. Parmi eux, Quara et son frère Gusius, qui créèrent la
-          faune et la flore.<br/>
-          Soucieux de garantir l'harmonie de ce monde, Eone insuffla le savoir aux Dragons.<br/>
-          Fauscht leur fit don de la mortalité, pour les soulager de leurs vies intemporelles.<br/>
-          Quara fut rejointe par son époux, Theomis, et ses fils. Ils créèrent les hommes qui furent
-          soumis à la puissance et au savoir des dragons.<br/><br/>
-          Mais cela ne dura qu'un temps ; soucieux d'aider les hommes, Theomis demanda à son
-          fils Edes de descendre sur le monde, pour prêter main forte à sa création. Edes fut sans
-          pitié pour les Dragons, et décima la plupart d'entre eux. Certains subsistèrent toutefois, et
-          vécurent avec des hommes, donnant naissance aux Drakèides.<br/><br/>
-          La domination des hommes était en marche sous la bannière d'Edes "Le Justicier".
+          Au commencement, il n'y avait que le Néant, un vide infini habité par des entités éternelles connues sous le nom d'<span>Êtres du Néant</span>. Parmi eux, un être singulier ressentit le besoin de créer, de façonner quelque chose de nouveau. Ce fut <span>Riannedos</span>, le dragon primordial, qui, par un acte de volonté divine, enveloppa son propre corps pour donner naissance à un monde. Ainsi naquit <span>Asun</span>, un berceau façonné par le Temps et protégé par les écailles cosmiques de son créateur.<br><br>
+          Riannedos n'était pas seul longtemps. D'autres Êtres du Néant vinrent à lui, fascinés par sa création. <span>Quaara</span>, déesse de la nature, et son frère <span>Gusius</span>, dieu des animaux, insufflèrent la vie dans ce monde, donnant naissance à des forêts luxuriantes, des créatures majestueuses, et des océans sans fin.<br><br>
+          <span>Eone</span>, dieu des savoirs, offrit la connaissance aux premiers habitants : les Dragons. Ces derniers régnèrent en maîtres sur Asun, forts de leur sagesse et de leur puissance. Mais la vie éternelle s'avéra être un fardeau. C'est alors qu'intervint <span>Fauscht</span>, dieu de la mort, qui offrit aux dragons le don de la mortalité, libérant ainsi leur essence de l'ennui de l'éternité.<br><br>
+          Enfin, <span>Théomis</span>, dieu de l'ordre, descendit avec ses enfants pour façonner les <span>Hommes</span>, destinés à vivre sous la domination des Dragons, afin d'apprendre et de prospérer sous leur tutelle divine.
         </p>
       </article>
       <div class="image">
@@ -41,19 +30,16 @@ import { useRouter } from 'vue-router';
     <div class="row-reverse">
     <article>
       <div class="title-section">
-        <h2>Ère des Hommes</h2>
-        <h3>Royaume Saint de Lorus:</h3>
+        <h2>L'ère des Hommes</h2>
+        <h3>Royaume Saint de Lorus</h3>
       </div>
         <p>
-        Après avoir décimé la quasi-totalité des dragons, Edes créa le Royaume saint de Lorus. Un royaume qu’il régissait afin que les hommes puissent continuer à prospérer pendant de longs siècles.<br/><br/>
-
-        Les hommes qui devinrent croyants aimaient Théomis et son fils Edes plus que tout, ceux-ci les ayant sortis de siècles de domination et de reprehension de la part des dragons. <br/>
-        Si tous les hommes ne pensent pas que les dragons sont mauvais, à cette période la majorité le croit. Les hommes, dominant dorénavant le monde, décidèrent d'appréhender les autres races qui petit à petit apparaissait sous la bénédiction d'autres dieux.<br/><br/>
-
-        Cette politique agressive fera naître plusieurs royaumes : <br/>
-        L'Empire de Koven, fervent ennemi juré de Lorus, contrôlé par orcs. <br/>
-        Le Royaume de Trésabia, un royaume bien plus pacifiste que les deux autres. <br/>
-        Un 4ème royaume apparaîtra vers la fin de cette ère, La Dynastie Owrilia, issue du pacifisme de Trésabia et de l'aide des dragons, apparaîtra vers la fin de cette ère. Ils découvriront bien d'autres lieux sur cette planète, notamment le "Nouveau Monde".<br/>
+          Le fragile équilibre fut rompu lorsque Théomis confia à son fils, <span>Edes</span>, la mission de protéger les Hommes. Animé par une soif de justice intransigeante, Edes mena une croisade impitoyable contre les Dragons, les décimant presque jusqu'à leur extinction. Seuls quelques survivants se mêlèrent aux hommes, donnant naissance aux <span>Drakèides</span>, héritiers d'un sang mêlé de gloire et de malédiction.<br><br>
+          Après sa victoire, Edes fonda le <span>Royaume Saint de Lorus</span>, un empire théocratique où l'homme dominait, glorifiant Théomis et Edes comme des divinités suprêmes. Ce royaume devint le symbole de la puissance humaine, mais aussi de l'arrogance des mortels face aux autres races bénies par les dieux.<br><br>
+          La politique expansionniste et belliqueuse de Lorus entraîna la naissance de nouveaux royaumes :
+          <span>L'Empire de Koven</span>, dominé par des orcs, ennemis jurés de Lorus.
+          <span>Le Royaume de Trésabia</span>, havre de paix et de diplomatie.
+          <span>La Dynastie Owrilia</span>, issue de l'union des dragons survivants et des habitants pacifistes de Trésabia, fondée sur des principes d'équilibre et de coexistence.
         </p>
       </article>
       <div class="image-left">
@@ -68,11 +54,8 @@ import { useRouter } from 'vue-router';
           <h3>Exploration Millénaire</h3>
       </div>
         <p>
-          Ce monde, bien plus vaste que les royaumes de Thierrion, Ikawora, Tangto et Harkinfall réunit, sera amené à être exploré par divers peuples et races pendant plus d'un millénaire avant de se stabiliser. Parmi ces races, beaucoup d'hommes ne croyant plus en la bénédiction unique de Théomis.<br/><br/>
-
-          Une autre race apparue du void sur ce monde pour endiguer et corrompre l'œuvre des dieux. Celle des vampires qui était là pour se venger de Théomis et sa famille.<br/><br/>
-
-          Si certains n'étaient pas chaleureux envers les hommes, ce n'était pas le cas de tous car ils savaient que les gens de ce monde pouvaient aider à détruire l'œuvre d'Edes, son Royaume, le Saint Royaume de Lorus...
+          Au-delà des frontières connues d'Asun s'étend un territoire inexploré, appelé le <span>Nouveau Monde</span>. Pendant des millénaires, des peuples divers s'y aventurèrent, cherchant richesse, savoir, et rédemption. Ce fut un terrain d'expansion, mais aussi de conflits, car les vieilles croyances s'effritaient. De nouveaux dieux, de nouvelles races, et de nouveaux empires virent le jour.<br><br>
+          C'est dans ce chaos qu'apparurent les <span>Vampires</span>, êtres du Void, avatars de vengeance contre Théomis et sa lignée. Rejetant les doctrines du Royaume Saint de Lorus, ils cherchèrent à corrompre l'œuvre des dieux et à renverser l'ordre établi.
         </p>
       </article>
       <div class="image">
@@ -82,14 +65,14 @@ import { useRouter } from 'vue-router';
     </div>
     <div class="row-reverse">
       <article>
-      <div class="title-section">
+        <div class="title-section">
           <h2>L'Empire</h2>
           <h3>Montée de l'Empire</h3>
-      </div>
+        </div>
         <p>
-        Sur ce continent ravagé par la disparité et la grandeur des terres et des peuples, un homme arrivera réunir sous la même bannière un grand nombre d'entre eux, créant l'empire.<br/><br/>
-
-        Si l'empire n'a jamais contrôlé la totalité de ce monde, il en est la principale force armée et culturelle, le seul à avoir établi un environnement stable, sain et prospère pour la plupart de ses citoyens malgré quelques déboires au fils des siècles. Il arriva même à soumettre les forces de Thierion le reconnaissance comme plus puissant et plus grand qu'eux.
+          Sur ce continent fracturé, un homme parvint à unir des peuples disparates sous une seule bannière : <span>l'Empire Cytanique</span>. Bien qu'il n'ait jamais dominé la totalité du monde, il s'imposa comme la plus grande force militaire, culturelle, et politique d'Asun. Il établit des cités prospères, des routes commerciales florissantes, et des institutions stables, surpassant même la puissance du Saint Royaume de Lorus.<br><br>
+          Cependant, l'ombre d'un ancien pouvoir plane encore sur Asun...
+          
         </p>
       </article>
       <div class="image-left">
@@ -97,10 +80,28 @@ import { useRouter } from 'vue-router';
         <div class="filter-left"></div>
       </div>
     </div>
+    <div class="row">
+      <article>
+        <div class="title-section">
+            <h2>Le secret millénaires</h2>
+            <h3>Reliques de Neien</h3>
+        </div>
+          <p>
+            Parmi tous les dieux, <span>Neien</span> fut le plus puissant. Anciennement dieu de la miséricorde, il fut trahi, banni, et enfermé par ses pairs au fin fond du <span>Donjon d'Asun</span>, connu sous le nom des <span>Enfers</span>. Son essence fut fracturée et dispersée à travers Asun sous forme de <span>Reliques</span>.<br><br>
+            Ces artefacts, imprégnés de fragments de sa divinité, offrent à quiconque les détient un pouvoir égal à celui d’un dieu. Leur influence est un appel irrésistible pour les aventuriers, les rois, et même les dieux eux-mêmes.<br><br>
+            L'histoire d'Asun est celle d'un monde façonné par des dieux, mais peut-être, un jour, sera-t-il façonné par des mortels.<br><br>
+            <i>Bienvenue dans le monde d'Asun, où chaque choix peut façonner le destin des dieux et des hommes.</i>
+          </p>
+        </article>
+        <div class="image">
+          <img src="@/assets/gods/neien2.png" />
+          <div class="filter"></div>
+        </div>
+      </div>
     <div class="banner">
       <h3>Ecrivez l'histoire</h3>
       <button @click="router.push({ path: '/Rules/creation' })">Commencer</button>
-      <img class="banner-img" src="../assets/combats/combat3.png" />
+      <div class="banner-img"></div>
     </div>
   </div>
 </template>
@@ -130,7 +131,7 @@ h3 {
 .image {
   position: absolute;
   right: 0;
-  width: 33%;
+  width: 40%;
   height: 600px;
   z-index: -1;
 }
@@ -139,6 +140,22 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-mask-image: url(../assets/splash.png);
+  mask-image: url(../assets/splash.png);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%, contain;
+
+}
+.image img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: url(../assets/splash3.png);
+  mask-image: url(../assets/splash3.png);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%, contain;
+
 }
 .filter {
   position: absolute;
@@ -146,14 +163,15 @@ h3 {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 80%);;
+  background:  linear-gradient(90deg, var(--backgroundColor) 0%, rgba(36, 190, 116, 0) 50%), no-repeat;
 }
 .image-left {
   position: absolute;
   left: 0;
-  width: 33%;
+  width: 40%;
   height: 600px;
   z-index: -1;
+  transform: scaleX(-1);
 }
 .filter-left {
   position: absolute;
@@ -161,7 +179,8 @@ h3 {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(-90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 80%);;
+  background:  linear-gradient(-90deg, var(--backgroundColor) 0%, rgba(36, 190, 116, 0) 50%), no-repeat;
+  transform: scaleX(-1);
 }
 .banner {
   margin-top: 300px;
@@ -173,6 +192,7 @@ h3 {
 }
 .banner h3 {
   margin: auto;
+  color: var(--textColorWhite);
 }
 .banner button {
   border-radius: 8px;
@@ -182,14 +202,17 @@ h3 {
   cursor: pointer;
   width: fit-content;
 }
-.banner img {
+.banner div {
   position: absolute;
   width: 100vw;
   left: 0;
-  height: 300px;
+  height: 480px;
   z-index: -1;
-  object-fit: cover;
-  object-position: bottom;
+  background-size: cover;
+  background-position: top;
+  background-image: url(../assets/combats/combat3.png);
+  background-attachment: fixed;
+  clip-path: polygon(5% 3%, 45% 10%, 55% 0, 83% 15%, 100% 0, 100% 100%, 0 100%, 0 34%, 0 24%, 0 12%);
 }
 @media screen and (max-width: 768px) {
   .image, .image-left {

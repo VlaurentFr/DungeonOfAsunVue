@@ -9,30 +9,7 @@ export const masterySword = [
     }]
   },
   {
-    rank: "E+",
-    bonus: "Aucun",
-    type:"",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Aucun" 
-      }
-    ]
-  }
-  ,
-  {
     rank: "D",
-    bonus: "Aucun",
-    type:"",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Aucun" 
-      }
-    ]
-  },
-  {
-    rank: "D+",
     bonus: "+5",
     type:"Dégâts",
     total: [
@@ -44,28 +21,9 @@ export const masterySword = [
   },
   {
     rank: "C",
-    bonus: "Dash",
-    type:"",
-    total: [
-      {
-        upgraded: true,
-        bonus: "Dash" 
-      },
-      {
-        upgraded: false,
-        bonus: "+ 5 Dégâts"
-      },
-    ]
-  },
-  {
-    rank: "C+",
     bonus: "+1d8",
     type:"Dégâts",
     total: [
-      {
-        upgraded: false,
-        bonus: "Dash" 
-      },
       {
         upgraded: false,
         bonus: "+ 5 Dégâts"
@@ -78,127 +36,99 @@ export const masterySword = [
   },
   {
     rank: "B",
-    bonus: "+10",
-    type:"Dégâts",
+    bonus: "",
+    type:"",
     total: [
       {
         upgraded: false,
-        bonus: "Dash" 
+        bonus: "+ 5 Dégâts"
       },
       {
         upgraded: true,
-        bonus: "+ 15 Dégâts"
-      },
-      {
-        upgraded: false,
-        bonus: "+ 1d8 Dégâts" 
-      },
-    ]
-  },
-  {
-    rank: "B+",
-    bonus: "+1d8",
-    type:"Dégâts",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Dash" 
-      },
-      {
-        upgraded: false,
-        bonus: "+ 15 Dégâts"
+        bonus: "+ 1d4 Dégâts" 
       },
       {
         upgraded: true,
-        bonus: "+ 2d8 Dégâts" 
+        bonus: "+ 1d12 Dégâts" 
       },
     ]
   },
   {
     rank: "A",
-    bonus: "+15",
-    type:"Dégâts",
+    bonus: "",
+    type:"",
     total: [
       {
         upgraded: false,
-        bonus: "Dash" 
+        bonus: "+ 5 Dégâts"
+      },
+      {
+        upgraded: false,
+        bonus: "+ 1d4 Dégâts" 
       },
       {
         upgraded: true,
-        bonus: "+ 30 Dégâts"
-      },
-      {
-        upgraded: false,
-        bonus: "+ 2d8 Dégâts" 
-      },
-    ]
-  },
-  {
-    rank: "A+",
-    bonus: "+1d8",
-    type:"Dégâts",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Dash" 
-      },
-      {
-        upgraded: false,
-        bonus: "+ 30 Dégâts"
-      },
-      {
-        upgraded: true,
-        bonus: "+ 3d8 Dégâts" 
+        bonus: "+ 1d20 Dégâts" 
       },
     ]
   },
   {
     rank: "S",
     bonus: "+10",
-    type:"Critique",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Dash" 
-      },
-      {
-        upgraded: false,
-        bonus: "+ 9d6 Dégâts"
-      },
-
-      {
-        upgraded: false,
-        bonus: "+ 30 Dégâts" 
-      },
-      {
-        upgraded: true,
-        bonus: "+ 10 CRIT"
-      }
-    ]
-  },
-  {
-    rank: "S+",
-    bonus: "+1d8",
     type:"Dégâts",
     total: [
       {
-        upgraded: false,
-        bonus: "Dash" 
+        upgraded: true,
+        bonus: "+ 15 Dégâts"
       },
       {
         upgraded: false,
-        bonus: "+ 30 Dégâts"
+        bonus: "+ 1d4 Dégâts" 
+      },
+      {
+        upgraded: false,
+        bonus: "+ 1d20 Dégâts" 
+      },
+    ]
+  },
+  {
+    rank: "M",
+    bonus: "",
+    type:"",
+    total: [
+      {
+        upgraded: false,
+        bonus: "+ 15 Dégâts"
       },
       {
         upgraded: true,
-        bonus: "+ 4d8 Dégâts" 
+        bonus: "+ 1d12 Dégâts" 
       },
       {
         upgraded: false,
-        bonus: "+ 10 CRIT"
-      }
+        bonus: "+ 1d20 Dégâts" 
+      },
     ]
-  }
+  },
+  {
+    rank: "H",
+    bonus: "+15",
+    type:"Dégâts",
+    total: [
+      {
+        upgraded: true,
+        bonus: "+ 30 Dégâts"
+      },
+      {
+        upgraded: false,
+        bonus: "+ 1d12 Dégâts" 
+      },
+      {
+        upgraded: false,
+        bonus: "+ 1d20 Dégâts" 
+      },
+    ]
+  },
 ]
 export const masteryMagic = [
   {
@@ -211,196 +141,126 @@ export const masteryMagic = [
     }]
   },
   {
-    rank: "E+",
-    bonus: "Aucun",
-    type:"",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Aucun" 
-      }
-    ]
-  }
-  ,
-  {
     rank: "D",
-    bonus: "Aucun",
-    type:"",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Aucun" 
-      }
-    ]
-  },
-  {
-    rank: "D+",
-    bonus: "+3",
-    type:"Dmgs / Soins",
+    bonus: "+5",
+    type:"Dmg/Soin",
     total: [
       {
         upgraded: true,
-        bonus: "+ 3 Dégâts/Soins"
+        bonus: "+ 5 Dmg/Soin"
       }
     ]
   },
   {
     rank: "C",
-    bonus: "Secours",
-    type:"",
-    total: [
-      {
-        upgraded: true,
-        bonus: "Secours" 
-      },
-      {
-        upgraded: false,
-        bonus: "+ 3 Dégâts/Soins"
-      }
-    ]
-  },
-  {
-    rank: "C+",
     bonus: "+1d8",
-    type:"Dmgs / Soins",
+    type:"Dmg/Soin",
     total: [
       {
         upgraded: false,
-        bonus: "Secours" 
-      },
-      {
-        upgraded: false,
-        bonus: "+ 3 Dégâts/Soins"
+        bonus: "+ 5 Dmg/Soin"
       },
       {
         upgraded: true,
-        bonus: "+ 1d8 Dégâts/Soins"
+        bonus: "+ 1d8 Dmg/Soin"
       }
     ]
   },
   {
     rank: "B",
-    bonus: "+7",
-    type:"Dmgs / Soins",
+    bonus: "",
+    type:"",
     total: [
       {
         upgraded: false,
-        bonus: "Secours" 
+        bonus: "+ 5 Dmg/Soin"
       },
       {
         upgraded: true,
-        bonus: "+ 10 Dégâts/Soins"
-      },
-      {
-        upgraded: false,
-        bonus: "+ 1d8 Dégâts/Soins"
-      }
-    ]
-  },
-  {
-    rank: "B+",
-    bonus: "+1d8",
-    type:"Dmgs / Soins",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Secours" 
-      },
-      {
-        upgraded: false,
-        bonus: "+ 10 Dégâts/Soins"
+        bonus: "+ 1d4 Dmg/Soin" 
       },
       {
         upgraded: true,
-        bonus: "+ 2d8 Dégâts/Soins"
-      }
+        bonus: "+ 1d12 Dmg/Soin" 
+      },
     ]
   },
   {
     rank: "A",
-    bonus: "10",
-    type:"Dmgs / Soins",
+    bonus: "",
+    type:"",
     total: [
       {
         upgraded: false,
-        bonus: "Secours" 
+        bonus: "+ 5 Dmg/Soin"
+      },
+      {
+        upgraded: false,
+        bonus: "+ 1d4 Dmg/Soin" 
       },
       {
         upgraded: true,
-        bonus: "+ 20 Dégâts/Soins"
+        bonus: "+ 1d20 Dmg/Soin" 
       },
-      {
-        upgraded: false,
-        bonus: "+ 2d8 Dégâts/Soins"
-      }
-    ]
-  },
-  {
-    rank: "A+",
-    bonus: "+1d8",
-    type:"Dmgs / Soins",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Secours" 
-      },
-      {
-        upgraded: false,
-        bonus: "+ 20 Dégâts/Soins"
-      }
-      ,
-      {
-        upgraded: true,
-        bonus: "+ 3d8 Dégâts/Soins"
-      }
     ]
   },
   {
     rank: "S",
     bonus: "+10",
-    type:"Critique",
+    type:"Dmg/Soin",
     total: [
       {
-        upgraded: false,
-        bonus: "Secours" 
-      },
-      {
-        upgraded: false,
-        bonus: "+ 20 Dégâts"
-      },
-      {
-        upgraded: false,
-        bonus: "+ 3d8 Dégâts/Soins"
-      },
-      {
         upgraded: true,
-        bonus: "+ 10 CRIT"
-      }
+        bonus: "+ 15 Dmg/Soin"
+      },
+      {
+        upgraded: false,
+        bonus: "+ 1d4 Dmg/Soin" 
+      },
+      {
+        upgraded: false,
+        bonus: "+ 1d20 Dmg/Soin" 
+      },
     ]
   },
   {
-    rank: "S+",
-    bonus: "+1d8",
-    type:"Dmgs / Soins",
+    rank: "M",
+    bonus: "",
+    type:"",
     total: [
       {
         upgraded: false,
-        bonus: "Secours" 
+        bonus: "+ 15 Dmg/Soin"
       },
       {
         upgraded: true,
-        bonus: "+ 20 Dégâts/Soins"
-      },
-      {
-        upgraded: true,
-        bonus: "+ 4d8 Dégâts/Soins"
+        bonus: "+ 1d12 Dmg/Soin" 
       },
       {
         upgraded: false,
-        bonus: "+ 10 CRIT"
-      }
+        bonus: "+ 1d20 Dmg/Soin" 
+      },
     ]
-  }
+  },
+  {
+    rank: "H",
+    bonus: "+15",
+    type:"Dmg/Soin",
+    total: [
+      {
+        upgraded: true,
+        bonus: "+ 30 Dmg/Soin"
+      },
+      {
+        upgraded: false,
+        bonus: "+ 1d12 Dmg/Soin" 
+      },
+      {
+        upgraded: false,
+        bonus: "+ 1d20 Dmg/Soin" 
+      },
+    ]
+  },
 ]
 export const masteryShield = [
   {
@@ -415,153 +275,104 @@ export const masteryShield = [
     ]
   },
   {
-    rank: "E+",
-    bonus: "Aucun",
-    type:"",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Aucun" 
-      }
-    ]
-  }
-  ,
-  {
     rank: "D",
-    bonus: "Aucun",
-    type:"",
-    total: [
-      {
-        upgraded: false,
-        bonus: "Aucun" 
-      }
-    ]
-  },
-  {
-    rank: "D+",
-    bonus: "+2",
-    type:"DEF",
+    bonus: "+5",
+    type:"Parade",
     total: [
       {
         upgraded: true,
-        bonus: "+ 2 DEF" 
+        bonus: "+ 5 Parade" 
       }
     ]
   },
   {
     rank: "C",
-    bonus: "Aucun",
-    type:"",
+    bonus: "+5",
+    type:"Protection",
     total: [
       {
         upgraded: false,
-        bonus: "+ 2 DEF"
-      }
-    ]
-  },
-  {
-    rank: "C+",
-    bonus: "+2",
-    type:"RES",
-    total: [
-      {
-        upgraded: false,
-        bonus: "+ 2 DEF"
+        bonus: "+ 5 Parade" 
       },
       {
         upgraded: true,
-        bonus: "+ 2 RES"
+        bonus: "+ 5 Protection"
       }
     ]
   },
   {
     rank: "B",
-    bonus: "Aucun",
-    type:"",
-    total: [
-      {
-        upgraded: false,
-        bonus: "+ 2 DEF"
-      },
-      {
-        upgraded: false,
-        bonus: "+ 2 RES"
-      }
-    ]
-  },
-  {
-    rank: "B+",
-    bonus: "+2",
-    type:"DEF",
+    bonus: "+5",
+    type:"Parade",
     total: [
       {
         upgraded: true,
-        bonus: "+ 4 DEF"
+        bonus: "+ 10 Parade" 
       },
       {
         upgraded: false,
-        bonus: "+ 2 RES"
+        bonus: "+ 5 Protection"
       }
     ]
   },
   {
     rank: "A",
-    bonus: "Aucun",
-    type:"",
+    bonus: "+5",
+    type:"Protection",
     total: [
       {
         upgraded: false,
-        bonus: "+ 4 DEF"
-      },
-      {
-        upgraded: false,
-        bonus: "+ 2 RES"
-      }
-    ]
-  },
-  {
-    rank: "A+",
-    bonus: "+4",
-    type:"RES",
-    total: [
-      {
-        upgraded: false,
-        bonus: "+ 4 DEF"
+        bonus: "+ 10 Parade" 
       },
       {
         upgraded: true,
-        bonus: "+ 6 RES"
+        bonus: "+ 10 Protection"
       }
     ]
   },
   {
     rank: "S",
-    bonus: "Aucun",
-    type:"",
+    bonus: "+5",
+    type:"Parade",
     total: [
       {
-        upgraded: false,
-        bonus: "+ 4 DEF"
+        upgraded: true,
+        bonus: "+ 15 Parade" 
       },
       {
         upgraded: false,
-        bonus: "+ 6 RES"
+        bonus: "+ 10 Protection"
       }
     ]
   },
   {
-    rank: "S+",
-    bonus: "+4",
-    type:"DEF",
+    rank: "M",
+    bonus: "+5",
+    type:"Protection",
+    total: [
+      {
+        upgraded: false,
+        bonus: "+ 15 Parade" 
+      },
+      {
+        upgraded: true,
+        bonus: "+ 15 Protection"
+      }
+    ]
+  },
+  {
+    rank: "H",
+    bonus: "+5",
+    type:"Prd et Prt",
     total: [
       {
         upgraded: true,
-        bonus: "+ 8 DEF"
+        bonus: "+ 20 Parade" 
       },
       {
-        upgraded: false,
-        bonus: "+ 6 RES"
+        upgraded: true,
+        bonus: "+ 20 Protection"
       }
     ]
-  }
+  },
 ]

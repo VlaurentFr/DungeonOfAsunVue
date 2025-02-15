@@ -1,5 +1,25 @@
 export const faction = [
   {
+    title: `L'Empire Cytanique`,
+    img: `races/humans.png`,
+    color: "orangered",
+    desc: `Au cœur des terres d'Asun, l’Empire Cytanique s’étend comme un colosse militaire et mystique, gouverné par un empereur ou une impératrice qui revendique son autorité divine. Cet empire majestueux repose sur un équilibre fragile entre la discipline militaire, la ferveur religieuse et la puissance mystique.
+    <br><br>
+    L’Empire Cytanique est dirigé par un empereur ou une impératrice, considéré(e) comme le pont entre le monde matériel et le royaume des dieux. Leur autorité est incontestée, nourrie par la foi et protégée par l’acier. C’est sous leur règne que les Temples Cramoisis, garants de l’ordre spirituel, et l’Académie Céleste, bastion du savoir mystique, façonnent l’avenir de l’Empire.
+    <br><br>
+    Les forces armées impériales, connues sous le nom de Légions Flamboyantes, sont des soldats disciplinés, à la fois formés au combat et initiés à des rituels de bénédiction. Leur entraînement militaire rigoureux est complété par des rites sacrés qui renforcent leur endurance et leur volonté sur le champ de bataille.
+    <br><br>
+    L’Empire Cytanique ne puise pas dans les arts sombres, mais dans une magie imprégnée de la volonté divine. Tissée à travers des rituels et des reliques anciennes, cette magie renforce les armées, protège les cités et guide l’empereur dans ses décisions. Les mages impériaux, souvent formés à l’Académie Céleste, sont chargés d’exploiter ce pouvoir sans jamais outrepasser la volonté des dieux.
+    <br><br>
+    Répartis à travers l’Empire, les Temples Cramoisis sont des lieux de culte dédiés aux Huit Éternels, les divinités majeures. Plus que des sanctuaires, ces temples sont des bastions d’enseignement spirituel et de régulation politique, veillant à ce que l’Empire suive toujours la voie tracée par les dieux.
+    <br><br>
+    Les cités impériales sont des mégalopoles tentaculaires, protégées par d’imposants remparts. Elles abritent les Palais Rouges, centres de gouvernement, les Académies Célestes, foyers du savoir mystique, ainsi que les Arènes Sacrées, où les guerriers se battent pour la gloire de l’Empire. L’économie y est régulée par les Marchands du Rubis, qui contrôlent le commerce des reliques et des ressources précieuses.
+    <br><br>
+    L’Empire Cytanique, puissant et mystique, règne sur un monde façonné par la guerre et la foi. Entre les Légions Flamboyantes, la magie sacrée et les Temples Cramoisis, il incarne à la fois une force militaire redoutable et un centre spirituel incontesté.
+    <br><br>
+    Mais dans l’ombre, les hérétiques et les ambitions humaines menacent toujours la stabilité de cet édifice grandiose, rappelant à chacun que même un empire béni par les dieux doit sans cesse prouver sa valeur.`,
+  },
+  {
     title: `Le Royaume de Trésabia`,
     img: `races/wood-elf.png`,
     color: "green",
@@ -23,7 +43,7 @@ export const faction = [
     `,
   },
   {
-    title: `L'empire de Koven`,
+    title: `L'Empire de Koven`,
     img: `races/orc.png`,
     color: "red",
     desc: `<span>L'Empire de Koven</span>, situé au Nord-Est de Thierion, est une faction redoutée pour sa force et sa détermination. La plupart de ses habitants sont des orcs, des guerriers endurcis et aguerris, qui ont été initiés dès leur plus jeune âge à l'art de la guerre et de la violence. 
@@ -103,36 +123,6 @@ export const faction = [
     <br/><br/>
     Les bateaux de tous types, formes et tailles remplissent le port, depuis les frêles esquifs de pêcheurs jusqu'aux majestueuses frégates de guerre des pirates. Les rues sont étroites et tortueuses, bordées de bâtiments en bois colorés et d'ateliers d'artisans. Malgré leur réputation de pirates, les habitants de Trésoria ont un sens de la justice très fort et sont très protecteurs envers leur île et leurs habitants. Les étrangers sont accueillis à bras ouverts, tant qu'ils ne causent pas de problèmes. En effet, les pirates veulent que leur île reste un havre de paix et de liberté pour tous ceux qui cherchent à échapper aux tyrannies de la terre ferme.
     `,
-  },
-  {
-    title: `L'Empire Cytanique`,
-    img: `races/humans.png`,
-    color: "orangered",
-    desc: `Au cœur des terres obscures, l'Empire Cytanique s'étend comme un colosse militaire et mystique, gouverné par un empereur ou une impératrice qui revendique son autorité divine. Inspiré par l'empire de Warhammer, cet empire majestueux est un équilibre précaire entre le pouvoir martial et les mystères occultes.
-
-    <br/><br/>
-    L'Empire Cytanique est dirigé par un empereur ou une impératrice, considéré(e) comme un être divin, le pont entre le monde matériel et le royaume des dieux. Leur autorité est incontestée, nourrie par la ferveur religieuse et la puissance militaire.
-    
-    <br/><br/>
-    Les forces armées de l'Empire Cytanique, connues sous le nom de Cohortes d'Ébène, sont des légions disciplinées et redoutables. Leur entraînement militaire rigoureux est complété par des rituels mystiques qui renforcent leur puissance au combat.
-    
-    <br/><br/>
-    L'Empire Cytanique maîtrise une forme de magie sombre, tissée avec des rituels occultes et des connaissances interdites. Les sorciers et sorcières impériaux canalisent cette magie pour renforcer les armées, prédire l'avenir et consolider le pouvoir de l'empereur divin.
-    
-    <br/><br/>
-    Répartis à travers l'empire, les Temples Ombraux sont des lieux de culte dédiés aux dieux sombres et mystiques. Les prêtres et prêtresses de ces temples jouent un rôle crucial dans la légitimation du règne de l'empereur et la pratique de la magie sombre.
-    <br/><br/>
-    Les Cités Impériales de l'Empire Cytanique sont des mégalopoles tentaculaires, entourées de remparts impénétrables. Ces cités abritent des palais impériaux, des académies mystiques et des arènes où les guerriers se battent pour l'honneur et la gloire de l'empire.
-    <br/><br/>
-    L'économie de l'Empire Cytanique est soutenue par les Marchands de l'Ombre, une caste puissante de marchands et d'artisans qui prospèrent grâce au commerce d'objets mystiques et d'artefacts sombres. Leur influence s'étend aux confins de l'empire.
-    <br/><br/>
-    Les quêtes d'Éclats Nébuleux sont des missions mystiques confiées aux champions de l'empire. Ces éclats, des fragments de pouvoir divin, sont recherchés pour renforcer le lien entre l'empereur et les dieux sombres.
-    <br/><br/>
-    Cependant, au sein de l'Empire Cytanique, des hérésies émergent, des mouvements dissidents qui remettent en question la légitimité divine de l'empereur ou contestent l'utilisation de la magie sombre. Ces dissensions peuvent déclencher des conflits internes au sein de l'empire.
-    <br/><br/>
-    Les frontières de l'Empire Cytanique sont souvent des terres sombres et inhospitalières, où les légions impériales cherchent à étendre leur influence et à répandre l'ombre mystique de l'empire.
-    <br/><br/>
-    L'Empire Cytanique, puissant et mystique, se dresse dans les terres obscures, dirigé par un empereur divin. Entre les Cohortes d'Ébène, la magie sombre et les Temples Ombraux, l'empire est à la fois une force militaire imposante et un foyer de mystères occultes. Les Cités Impériales prospèrent dans l'ombre, tandis que les Marchands de l'Ombre alimentent l'économie impériale. Pourtant, les hérésies et les frontières sombres défient la stabilité de cet empire qui repose sur l'équilibre fragile entre la puissance militaire et les forces mystiques.`,
   },
   {
     title: `Le royaume de Myrdinn`,
@@ -230,15 +220,11 @@ export const faction = [
     title: `L'alliance Glotergan`,
     img: `orga/dwarf.png`,
     color: "darkorange",
-    desc: `Dans les terres mystiques de Glotergan, une alliance puissante se forge parmi les adeptes des arts arcaniques. Les Conjurateurs de l'Éther, membres de cette alliance, maîtrisent les forces mystérieuses de l'éther et unissent leurs pouvoirs pour protéger leur royaume et étendre leur influence sur les plans astraux.
-    Glotergan est une terre baignée d'une lueur éthérée, où les frontières entre les plans matériels et astraux sont fines. Des tours de cristal éthéré s'élèvent au-dessus des cités, créant une harmonie visuelle avec l'énergie magique qui imprègne chaque recoin de la terre. Les paysages éthérés changent constamment, reflétant l'alignement des étoiles et des constellations.<br/><br/>
-    Les membres de l'Alliance de Glotergan, connus sous le nom de Conjurateurs de l'Éther, sont des maîtres des arts arcaniques. Ils étudient les énergies mystiques de l'éther, apprennent à manipuler les plans astraux et explorent les mystères des dimensions parallèles. Ces magiciens dévoués sont unis par une quête commune de sagesse et de pouvoir dans l'éther.
-    Les Conjurateurs de l'Éther résident dans des tours astrales époustouflantes qui servent de centres d'étude et de méditation. Ces tours, construites avec des cristaux éthérés, sont des lieux où la réalité et l'illusion se mêlent, permettant aux membres de l'Alliance d'approfondir leur compréhension des plans astraux.<br/><br/>
-    L'Alliance est gouvernée par un Conseil Astral, composé des Conjurateurs les plus puissants et sages. Ce conseil prend des décisions importantes, guide les membres dans leurs études et coordonne les efforts pour maintenir l'équilibre entre les plans. La hiérarchie est basée sur la sagesse et la maîtrise des arts mystiques.
-    Les Conjurateurs de l'Éther ont la capacité de créer et de contrôler des portails éthérés, des passages vers d'autres plans. Ces portails sont utilisés pour explorer des mondes inconnus, rechercher des connaissances ésotériques et même renforcer les défenses de Glotergan en invoquant des créatures éthérées pour les protéger.<br/><br/>
-    L'Alliance de Glotergan poursuit la Quête de l'Harmonie Astrale, une mission pour trouver l'équilibre parfait entre les plans et maintenir la stabilité de Glotergan. Les Conjurateurs de l'Éther parcourent les plans astraux pour rassembler des connaissances et des artefacts permettant de préserver l'harmonie.
-    Les membres de l'Alliance recherchent des artefacts éthérés puissants qui renforcent leurs pouvoirs et approfondissent leur compréhension de l'éther. Ces artefacts, souvent liés aux constellations et aux énergies astrales, sont vénérés comme des trésors sacrés et sont utilisés avec précaution.<br/><br/>
-    L'Alliance de Glotergan, incarnée par les Conjurateurs de l'Éther, explore les mystères des plans astraux dans leur quête de sagesse et de puissance. Avec les tours astrales comme phares de leur savoir et les portails éthérés comme moyens d'exploration, ils cherchent à maintenir l'harmonie astrale et à protéger leur terre unique où magie et réalité s'entrelacent.`,
+    desc: `L'Alliance de Glotergan est une coalition de cités-états, de puissants marchands et de maisons nobles unies par des intérêts économiques et stratégiques. Officiellement fondée pour assurer la prospérité et la stabilité commerciale à travers le continent, elle agit en réalité comme une force politique influente, rivalisant parfois avec l’Empire Cytanique.<br><br>
+
+    Son conseil dirigeant, composé des Maîtres de Glotergan, prend des décisions basées sur la richesse et l’influence de ses membres. Si l’Empire gouverne par la force et la foi, l’Alliance préfère manipuler les marchés, financer des armées privées et soudoyer des dirigeants pour façonner le monde selon ses intérêts.<br><br>
+
+    Bien que divisée par des querelles internes, l’Alliance reste un acteur incontournable du jeu politique et commercial, prête à financer des guerres ou négocier des traités, tant que ses coffres en sortent gagnants..`,
   },
   {
     title: `Le royaume Nain`,
@@ -266,7 +252,7 @@ export const faction = [
   },
   {
     title: `La Nation Enfouie de Tirwar`,
-    img: `races/gnome.png`,
+    img: `races/gnome.webp`,
     color: "rebeccapurple",
     desc: `Au cœur des entrailles de la terre, la nation enfouie de Tirwar abrite les gnomes, une race créative et curieuse qui excelle dans les arts de l'invention et de la mécanique. Les gnomes de Tirwar, gardiens des profondeurs, ont forgé une société ingénieuse et mystérieuse sous la surface du monde.
     <br/><br/>
