@@ -17,7 +17,7 @@ function getImageUrl(name: string) {
   </div>
   <article>
     <div class='flex desc'>
-      <img src="@/assets/rpg_class.png"/>
+      <img src="@/assets/spellbook.png"/>
       <div class="filter"></div>
       <p class='descOrga'>Lorsque vous passer à une classe d'un rang supérieur pour la première fois vous obetenez un bonus en caractéristiques à répartir dans la FOR, DEX et SAG</p>
     </div>
@@ -68,8 +68,8 @@ function getImageUrl(name: string) {
   <h3>Novices</h3>
   <div class="cards">
     <div class="card" v-for="c of noviceClasses" :key="c.name">
-      <img :src="getImageUrl(c.img)"/>
-      <div class="filter"></div>
+      <!-- <img :src="getImageUrl(c.img)"/>
+      <div class="filter"></div> -->
       <h2>
         {{ c.name }}
       </h2>
@@ -84,18 +84,18 @@ function getImageUrl(name: string) {
           <p><span v-for="(w, index) of c.mastery" :key="w">{{ w }}<i v-if="index != c.mastery.length -1">, </i> </span> </p>
         </div>
       </div>
-      <div v-if="c.spell?.length">
-        <h4>Compétences</h4>
+      <!-- <div v-if="c.spell?.length">
+        <h4>Compétences Requises</h4>
         <RouterLink :to="'/rules/spell#'+w" class="spell" v-for="(w, index) of c.spell" :key="w">{{ w }}<i v-if="index != c.spell.length -1">, </i></RouterLink>
-      </div>
+      </div> -->
     </div>
   </div>
 
   <h3>Avancées</h3>
   <div class="cards">
     <div class="card" v-for="c of avancedClasses" :key="c.name">
-      <img :src="getImageUrl(c.img)"/>
-      <div class="filter"></div>
+      <!-- <img :src="getImageUrl(c.img)"/> -->
+      <!-- <div class="filter"></div> -->
       <h2>
         {{ c.name }}
       </h2>
@@ -111,7 +111,7 @@ function getImageUrl(name: string) {
         </div>
       </div>
       <div v-if="c.spell?.length">
-        <h4>Compétences</h4>
+        <h4>Compétences Requises</h4>
         <RouterLink :to="'/rules/spell#'+w" class="spell" v-for="(w, index) of c.spell" :key="w">{{ w }}<i v-if="index != c.spell.length -1">, </i></RouterLink>
       </div>
     </div>
@@ -120,8 +120,8 @@ function getImageUrl(name: string) {
   <h3>Maîtres</h3>
   <div class="cards">
     <div class="card" v-for="c of masterClasses" :key="c.name">
-      <img :src="getImageUrl(c.img)"/>
-      <div class="filter"></div>
+      <!-- <img :src="getImageUrl(c.img)"/>
+      <div class="filter"></div> -->
       <h2>
         {{ c.name }}
       </h2>
@@ -137,7 +137,7 @@ function getImageUrl(name: string) {
         </div>
       </div>
       <div v-if="c.spell?.length">
-        <h4>Compétences</h4>
+        <h4>Compétences Requises</h4>
         <RouterLink :to="'/rules/spell#'+w" class="spell" v-for="(w, index) of c.spell" :key="w">{{ w }}<i v-if="index != c.spell.length -1">, </i></RouterLink>
       </div>
     </div>
@@ -156,7 +156,7 @@ table {
 td p {
   background-color: var(--primaryColor);
   border-radius: 8px;
-  color: black;
+  color: white;
   padding: 4px 8px;
 }
 /* .desc {
@@ -172,10 +172,11 @@ td p {
   height: 520px;
   object-fit: cover;
   overflow: auto;
-  -webkit-mask-image: url(../assets/splash2.png);
-  mask-image: url(../assets/splash2.png);
+  -webkit-mask-image: url(../assets/splash.png);
+  mask-image: url(../assets/splash.png);
   mask-repeat: no-repeat;
   mask-size: 100% 100%, contain;
+  /* filter: grayscale(); */
 
 }
 .desc .filter {
@@ -201,6 +202,7 @@ td p {
   right: 0;
   height: -webkit-fill-available;
   object-fit: cover;
+  /* filter: grayscale(); */
 }
 .card .filter {
   width: 320px;
@@ -235,8 +237,9 @@ td p {
   color: var(--primaryColor);
 }
 .green-cards {
-    background: rgba(36,190,116,0.8);
-    color: black;
+    background: rgba(25,25,25,0.8);
+    background: var(--primaryColor);
+    color: white;
     border-radius: 4px;
     padding: 16px 32px;
     margin: 18px 0px;
@@ -244,7 +247,7 @@ td p {
 }
 .green-cards h4 {
   font-size: 16px;
-  color: black;
+  color: white;
 }
 
 .card .card-desc {

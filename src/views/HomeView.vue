@@ -81,7 +81,7 @@ const router = useRouter();
 								<p>Découvrez notre système de jeu de rôle sur table avec des mécaniques innovantes et faciles à apprendre.</p>
 								<RouterLink to="/Rules/creation">Consulter les règles</RouterLink>
 							</div>
-							<img src="@/assets/gods/rhabus2-character.png"/>
+							<!-- <img src="@/assets/gods/Chrissabug/character/Metona.png"/> -->
 						</div>
 						<div class="wrapper option-1 option-1-1">
 							<ol class="stepper">
@@ -110,7 +110,7 @@ const router = useRouter();
 					</section>
 					<section id="basics">
 						<div class="row">
-							<img src="@/assets/gods/theomis2-character.png"/>
+							<img src="@/assets/gods/Chrissabug/character/Neien.png"/>
 							<div>
 								<h3>Les basique du JdR</h3>
 								<p>Les jeux de rôle sont des expériences immersives où l'interaction narrative, l'interprétation de personnages, et la résolution de conflits à travers des règles définies permettent de créer des histoires partagées et mémorables. Le JdR reposent sur l'équilibre entre structure (règles et mécaniques) et créativité (narration et interprétation).</p>
@@ -146,7 +146,7 @@ const router = useRouter();
 							<div class="feature">
 									<h4>Mythologie et Panthéon</h4>
 									<p>Plongez dans une mythologie riche et complexe. Découvrez les dieux, déesses et créatures mythiques qui influencent le destin du monde et de ses habitants.</p>
-									<img src="@/assets/gods/neien2.png"/>
+									<img src="@/assets/gods/Chrissabug/Neien.png"/>
 									<div class="filter"></div>
 							</div>
 							<div class="feature">
@@ -300,7 +300,8 @@ h3 {
 	object-fit: cover;
 	z-index: -1;
 	transform: scaleX(-1); */
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 80% 94%, 50% 99%, 36% 83%, 21% 94%, 7% 88%, 0 100%);
+	/* clip-path: polygon( 0% 100%,3.333% 91.68%,3.333% 91.68%,4.43% 88.923%,5.707% 85.836%,7.143% 82.564%,8.72% 79.252%,10.417% 76.045%,12.213% 73.089%,14.09% 70.529%,16.027% 68.511%,18.003% 67.179%,20% 66.68%,20% 66.68%,22% 67.173%,24% 68.461%,26% 70.361%,28% 72.689%,30% 75.264%,32% 77.902%,34% 80.42%,36% 82.636%,38% 84.367%,40% 85.43%,40% 85.43%,42% 85.637%,44% 85.107%,46% 83.977%,48% 82.385%,50% 80.469%,52% 78.365%,54% 76.21%,56% 74.143%,58% 72.301%,60% 70.82%,60% 70.82%,62% 69.835%,64% 69.231%,66% 68.912%,68% 68.783%,70% 68.75%,72% 68.717%,74% 68.588%,76% 68.269%,78% 67.665%,80% 66.68%,80% 66.68%,81.997% 65.191%,83.973% 63.29%,85.91% 61.065%,87.787% 58.603%,89.583% 55.991%,91.28% 53.318%,92.857% 50.669%,94.293% 48.133%,95.57% 45.798%,96.667% 43.75%,100% 37.5%,100% 0%,96.667% 0%,96.667% 0%,95.57% 0%,94.293% 0%,92.857% 0%,91.28% 0%,89.583% 0%,87.787% 0%,85.91% 0%,83.973% 0%,81.997% 0%,80% 0%,80% 0%,78% 0%,76% 0%,74% 0%,72% 0%,70% 0%,68% 0%,66% 0%,64% 0%,62% 0%,60% 0%,60% 0%,58% 0%,56% 0%,54% 0%,52% 0%,50% 0%,48% 0%,46% 0%,44% 0%,42% 0%,40% 0%,40% 0%,38% 0%,36% 0%,34% 0%,32% 0%,30% 0%,28% 0%,26% 0%,24% 0%,22% 0%,20% 0%,20% 0%,18.003% 0%,16.027% 0%,14.09% 0%,12.213% 0%,10.417% 0%,8.72% 0%,7.143% 0%,5.707% 0%,4.43% 0%,3.333% 0%,0% 0% ); */
+	
 
   position: absolute;
   width: 100vw;
@@ -309,10 +310,9 @@ h3 {
 	top: 0;
   z-index: -1;
   background-size: cover;
-  background-position: bottom;
-  background-image: url(../assets/cults/orc.png);
+  background-position: top;
+  background-image: url(../assets/cults/harm.png);
   background-attachment: fixed;
-  /* clip-path: polygon(5% 3%, 45% 10%, 55% 0, 83% 15%, 100% 0, 100% 100%, 0 100%, 0 34%, 0 24%, 0 12%); */
 
 }
 #redirect .filter {
@@ -345,6 +345,7 @@ h3 {
 
 .title-container p {
 	margin-bottom: 10vh;
+	filter: drop-shadow(2px 4px 6px black);
 }
 .title-container div {
 	display: flex;
@@ -364,7 +365,7 @@ h3 {
 
 .title-container #main, #rules a, .banner a {
 	background-color: var(--primaryColor);
-	color: black;
+	color: white;
 
 }
 .title-container a {
@@ -485,7 +486,7 @@ h3 {
 }
 .stepper__title:hover {
   background-color: var(--primaryColor);
-	color: black;
+	color: white;
 }
 
 .stepper__desc {
@@ -545,18 +546,17 @@ h3 {
   height: 500px;
   z-index: -1;
   object-fit: cover;
-  object-position: center;
-	clip-path: polygon(5% 3%, 45% 10%, 55% 0, 83% 15%, 100% 0, 100% 100%, 0 100%, 0 34%, 0 24%, 0 12%); */
+  object-position: center; */
   position: absolute;
   width: 100vw;
   left: 0;
   height: 750px;
   z-index: -1;
   background-size: cover;
-  background-position: top;
-  background-image: url(../assets/combats/combat3.png);
+  background-position: bottom;
+  background-image: url(../assets/cults/forest.png);
   background-attachment: fixed;
-  clip-path: polygon(5% 3%, 45% 10%, 55% 0, 83% 15%, 100% 0, 100% 100%, 0 100%, 0 34%, 0 24%, 0 12%);
+	/* clip-path: polygon( 0% 60%,3.333% 50%,3.333% 50%,4.43% 46.723%,5.707% 42.987%,7.143% 38.93%,8.72% 34.694%,10.417% 30.418%,12.213% 26.242%,14.09% 22.307%,16.027% 18.752%,18.003% 15.718%,20% 13.344%,20% 13.344%,22% 11.705%,24% 10.802%,26% 10.551%,28% 10.867%,30% 11.668%,32% 12.869%,34% 14.387%,36% 16.137%,38% 18.036%,40% 20%,40% 20%,42% 21.976%,44% 23.957%,46% 25.929%,48% 27.879%,50% 29.793%,52% 31.657%,54% 33.458%,56% 35.182%,58% 36.815%,60% 38.344%,60% 38.344%,62% 39.812%,64% 41.155%,66% 42.368%,68% 43.443%,70% 44.375%,72% 45.157%,74% 45.782%,76% 46.245%,78% 46.538%,80% 46.656%,80% 46.656%,81.997% 46.542%,83.973% 46.271%,85.91% 45.872%,87.787% 45.369%,89.583% 44.789%,91.28% 44.159%,92.857% 43.504%,94.293% 42.851%,95.57% 42.227%,96.667% 41.656%,100% 40%,100% 100%,96.667% 100%,96.667% 100%,95.57% 100%,94.293% 100%,92.857% 100%,91.28% 100%,89.583% 100%,87.787% 100%,85.91% 100%,83.973% 100%,81.997% 100%,80% 100%,80% 100%,78% 100%,76% 100%,74% 100%,72% 100%,70% 100%,68% 100%,66% 100%,64% 100%,62% 100%,60% 100%,60% 100%,58% 100%,56% 100%,54% 100%,52% 100%,50% 100%,48% 100%,46% 100%,44% 100%,42% 100%,40% 100%,40% 100%,38% 100%,36% 100%,34% 100%,32% 100%,30% 100%,28% 100%,26% 100%,24% 100%,22% 100%,20% 100%,20% 100%,18.003% 100%,16.027% 100%,14.09% 100%,12.213% 100%,10.417% 100%,8.72% 100%,7.143% 100%,5.707% 100%,4.43% 100%,3.333% 100%,0% 100% ); */
 }
 
 #section-jouez {
@@ -568,7 +568,7 @@ h3 {
 /********* FAQ **********/
 /************************/
 details{
-  background-color: #303030;
+  background-color: var(--primaryColor);
   color: #fff;
   font-size: 1rem;
 	border-radius: 8px;
@@ -597,15 +597,16 @@ summary:after{
 
 details[open] summary {
     border-bottom: 1px solid #aaa;
-    margin-bottom: .5em;
+    
 }
 
 details[open] summary:after{
   content: "\00D7";
 }
 
-details[open] div{
-  padding: .5em 1em;
+details div{
+  padding: .5em 1.5em;
+	background-color: #333;
 }
 details a {
 	color: var(--primaryColor);
@@ -633,6 +634,7 @@ details a {
 	overflow: hidden;
 	margin-bottom: 200px;
 	color: var(--textColorWhite);
+	background-color: black;
 }
 .feature:hover {
 	width: 200%;
@@ -648,6 +650,10 @@ details a {
 .feature h4 {
 	padding: 1em;
 	z-index: 2;
+	opacity: 0;
+}
+.feature:hover h4 {
+	opacity: 1;
 }
 
 .feature:hover p {
@@ -660,10 +666,12 @@ details a {
 	width: 100%;
 	object-fit: cover;
 	position: absolute;
-	filter: saturate(0.5);
+	/* filter: saturate(0.5); */
 	z-index: 1;
 }
-
+.feature:hover img {
+	opacity: 0.4;
+}
 .feature .filter {
 	top: 0;
 	height: 100%;
@@ -679,15 +687,19 @@ h4 {
 	margin-bottom: 64px;
 }
 
-h4:after {
+.feature h4:after {
+	opacity: 0;
   content: "";
   width: calc(100% - 40px);
   height: 4px;
-  background-color: var(--primaryColor);
+  background-color: var(--textColorWhite);
   position: absolute;
   bottom: -16px;
   right: 40px;
   animation: discover 1800ms ease-in-out 300ms;
+}
+.feature:hover h4:after {
+	opacity: 1;
 }
 
 #rules img, #basics img {

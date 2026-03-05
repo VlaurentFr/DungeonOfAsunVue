@@ -23,7 +23,7 @@ import { useRouter } from 'vue-router';
         </p>
       </article>
       <div class="image">
-        <img src="@/assets/bestiary/white_dragon.png" />
+        <img src="@/assets/gods/Chrissabug/Riannedos.png" />
         <div class="filter"></div>
       </div>
     </div>
@@ -43,7 +43,7 @@ import { useRouter } from 'vue-router';
         </p>
       </article>
       <div class="image-left">
-        <img src="@/assets/races/lorus.png" />
+        <img src="@/assets/factions/lorus.png" />
         <div class="filter-left"></div>
       </div>
   </div>
@@ -59,7 +59,7 @@ import { useRouter } from 'vue-router';
         </p>
       </article>
       <div class="image">
-        <img src="@/assets/orga/dwarf.png" />
+        <img src="@/assets/exploration.png" style="transform: scaleX(-1);"/>
         <div class="filter"></div>
       </div>
     </div>
@@ -76,7 +76,7 @@ import { useRouter } from 'vue-router';
         </p>
       </article>
       <div class="image-left">
-        <img src="@/assets/races/humans.png" />
+        <img src="@/assets/factions/Cytanie.png" />
         <div class="filter-left"></div>
       </div>
     </div>
@@ -94,7 +94,7 @@ import { useRouter } from 'vue-router';
           </p>
         </article>
         <div class="image">
-          <img src="@/assets/gods/neien2.png" />
+          <img src="@/assets/gods/Chrissabug/Neien.png" />
           <div class="filter"></div>
         </div>
       </div>
@@ -201,6 +201,7 @@ h3 {
   padding: 16px 32px;
   cursor: pointer;
   width: fit-content;
+  color: white;
 }
 .banner div {
   position: absolute;

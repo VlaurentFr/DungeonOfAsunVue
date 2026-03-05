@@ -108,7 +108,7 @@ function getImageUrl(name: string) {
   padding: 8px 16px;
   font-size: 16px;
   cursor: pointer;
-  color: black;
+  color: white;
 }
 .desc {
   display: flex;
@@ -189,6 +189,7 @@ function getImageUrl(name: string) {
   border: none;
   width: 100%;
   height: 100%;
+  filter: invert();
 }
 .god-name {
   font-size: 24px;

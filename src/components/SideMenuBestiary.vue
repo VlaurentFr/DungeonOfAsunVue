@@ -90,13 +90,15 @@ aside {
   text-decoration: none;
 }
 .slot .selected {
-  color: black;
-  background-color: var(--secondaryColor);
+  color: white;
+  /* background-color: var(--secondaryColor); */
+  background-color: var(--primaryColor);
   border-radius: 6px;
 }
 .slot p:hover {
-  color: black;
-  background-color: var(--secondaryColor);
+  color: white;
+  background-color: var(--primaryColor);
+  /* background-color: var(--secondaryColor); */
   border-radius: 6px;
   cursor: pointer;
 }

@@ -21,31 +21,31 @@ function getImageUrl(name: string) {
     <div id="races" v-if="!type">
       <button @click="type = 'Humains'">
         <div>
-          <img src="../assets/races/humans.png"/>
+          <img src="../assets/races/Chrissabug/Humans.png"/>
           <span>Humains</span>
         </div>
       </button>
       <button @click="type = 'Elfes'">
         <div>
-          <img src="../assets/races/wood-elf.png"/>
+          <img src="../assets/races/Chrissabug/WoodElf.png"/>
           <span>Elfes</span>
         </div>
       </button>
       <button @click="type = 'Nains'">
         <div>
-          <img src="../assets/races/dwarf.png"/>
+          <img src="../assets/races/Chrissabug/Dwarf.png"/>
           <span>Nains</span>
         </div>
       </button>
       <button @click="type = 'Orcs'">
         <div>
-          <img src="../assets/races/orc.png"/>
+          <img src="../assets/races/Chrissabug/Ork.png"/>
           <span>Orcs</span>
         </div>
       </button>
       <button @click="type = 'Autres'">
         <div>
-          <img src="../assets/races/drak.png"/>
+          <img src="../assets/races/Chrissabug/Drak.png"/>
           <span>Autres</span>
         </div>
       </button>
@@ -136,7 +136,7 @@ function getImageUrl(name: string) {
   padding: 8px 16px;
   font-size: 16px;
   cursor: pointer;
-  color: black;
+  color: white;
   transition: all 300ms ease-in-out;
 }
 
@@ -212,7 +212,7 @@ function getImageUrl(name: string) {
 }
 #races button span {
   padding: 8px 16px;
-  color: black;
+  color: white;
   border-radius: 4px;
   font-size: 48px;
   font-family: Caladea;

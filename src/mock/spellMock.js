@@ -4,18 +4,18 @@ export const spell = [
     name: "Tir Rapide",
     type: "DPS Phys.",
     lvl: 1,
-    desc: "Vous attaquez rapidement, permet de toucher 2 fois la cible avec son arme",
+    desc: "2 tir à l'arc, dégât du deuxième tir divisé par 2, peut toucher deux cible distincte",
     dices: ["2 attaque"],
     price: "3",
     range: "",
     el: "Physique"
   },
   {
-    name: "Tir arcanique",
+    name: "Pluie de flèche",
     type: "DPS Phys.",
     lvl: 2,
-    desc: "Vous tirez une flèche d'arcanes, infligeant des dégâts importants à la cible.",
-    dices: ["1d12+6 dégâts"],
+    desc: "Dégâts d'armes  + Touche toute les cible dans un cercle de 6m",
+    dices: [""],
     price: "5",
     range: "moyenne",
     el: "Physique"
@@ -24,8 +24,8 @@ export const spell = [
     name: "Tir Divin",
     type: "DPS Phys.",
     lvl: 3,
-    desc: "Peut traverser tout sur son passage sur portée armes",
-    dices: ["1d12+6"],
+    desc: "Dégâts d'armes + 1d12+6 Peut traverser tout sur son passage sur portée armes, inflige des dégâts a chaque cible traversée",
+    dices: [""],
     price: "7",
     range: "CàC",
     el: "Physique"
@@ -36,7 +36,7 @@ export const spell = [
     type: "DPS Phys.",
     lvl: 1,
     desc: "Vous attaquez avec une lame d'acide, infligeant des dégâts à la cible au corps à corps.",
-    dices: ["1d8+4 dégâts"],
+    dices: ["1d8+4 dégâts + 1d4 d'acide"],
     price: "3",
     range: "CàC",
     el: "Physique"
@@ -45,7 +45,7 @@ export const spell = [
     name: "Invisibilité",
     type: "Buff Mag.",
     lvl: 2,
-    desc: "Vous devenez invisible pendant 1d20+4 tours.",
+    desc: "Vous devenez invisible pendant 1d6+1 tours.",
     dices: ["Invisibilité"],
     price: "5",
     range: "Soi",
@@ -55,8 +55,8 @@ export const spell = [
     name: "Vif Eclair",
     type: "DPS Phys.",
     lvl: 3,
-    desc: "Attaque d’opportunité, permet d’attaquer à n’importe quel moment 1d20+4 dégâts",
-    dices: ["1d20+4 dégâts"],
+    desc: "Attaque d’opportunité, permet d’attaquer à n’importe quel moment (1 fois par tour de personnage, hors tour personnel), dégâts d'armes maximun + 5",
+    dices: [""],
     price: "7",
     range: "CàC",
     el: "Physique"
@@ -67,7 +67,7 @@ export const spell = [
     type: "DPS Phys.",
     lvl: 1,
     desc: "Vous attaquez avec toute votre force, permet d'infligé de lourd dégâts",
-    dices: ["Dégât de l’armes x1,5 "],
+    dices: ["Dégât de l’armes + 5 "],
     price: "3",
     range: "CàC",
     el: "Physique"
@@ -76,7 +76,7 @@ export const spell = [
     name: "Frappe Repoussante",
     type: "DPS Phys.",
     lvl: 2,
-    desc: "Vous attaquez avec toute votre force, permet d'infliger des dégât d'armes et de repousser la cible",
+    desc: "Dégâts d'armes, repousse la cible (3m) passe le tour de la cible",
     dices: ["Repousse"],
     price: "5",
     range: "CàC",
@@ -86,7 +86,7 @@ export const spell = [
     name: "Fine Lame",
     type: "DPS Phys.",
     lvl: 3,
-    desc: "Vous infliger des dégâts supplémentaire en fonction de votre force",
+    desc: "Dégâts d'armes + 1d20+6 + chiffre de la dizaine de la force",
     dices: ["1d20+6 + FOR/10"],
     price: "7",
     range: "CàC",
@@ -98,7 +98,7 @@ export const spell = [
     type: "DPS Phys.",
     lvl: 1,
     desc: "Vous attaquez avec toute votre force, permet d'infligé de lourd dégâts",
-    dices: ["Dégât de l’armes x1,5 "],
+    dices: ["Dégât de l’armes + 5 "],
     price: "3",
     range: "CàC",
     el: "Physique"
@@ -107,8 +107,8 @@ export const spell = [
     name: "Entaille profonde",
     type: "DPS Phys.",
     lvl: 2,
-    desc: "1d12+6 dégâts passe l’armure",
-    dices: ["1d12+6 dégâts passe l’armure"],
+    desc: "Dégâts d'armes + 1d4 + 5 (50% de chance de réussite critique si moins de 50% PV)",
+    dices: [""],
     price: "5",
     range: "CàC",
     el: "Physique"
@@ -117,8 +117,8 @@ export const spell = [
     name: "Rage du Berserker",
     type: "DPS Phys.",
     lvl: 3,
-    desc: "Vous infliger des dégâts supplémentaire en fonction de vos points de vie manquant",
-    dices: ["1d12+6 + 1 par 5PV manq"],
+    desc: "Dégâts d'armes + 1 par 5 PV manq + convertis Def et Res (hors bonus allié) en dégâts pendant 1 tour",
+    dices: [""],
     price: "7",
     range: "CàC",
     el: "Physique"
@@ -129,7 +129,7 @@ export const spell = [
     type: "DPS Phys.",
     lvl: 1,
     desc: "Vous attaquez avec toute votre force, permet d'infligé de lourd dégâts",
-    dices: ["Dégât de l’armes x1,5 "],
+    dices: ["Dégât de l’armes + 5 "],
     price: "3",
     range: "CàC",
     el: "Physique"
@@ -138,8 +138,8 @@ export const spell = [
     name: "Brise-mâchoire ",
     type: "DPS Phys.",
     lvl: 2,
-    desc: "Vous infliger des dégâts accrue si la cible est en pleine forme (> 50%PV)",
-    dices: ["1d8+4 ou 1d6 dégâts"],
+    desc: "Dégâts d'armes + 1d4+5 ou + 1d12+6 dégâts si la cible est en pleine forme (> 50%PV)",
+    dices: [""],
     price: "5",
     range: "CàC",
     el: "Physique"
@@ -148,7 +148,7 @@ export const spell = [
     name: "Brise-moëlle",
     type: "DPS Phys.",
     lvl: 3,
-    desc: "Vous infliger des dégâts supplémentaire en fonction de votre défense",
+    desc: "Dégâts d'armes + 1d12+6 + DEF",
     dices: ["1d12+6 + DEF"],
     price: "7",
     range: "CàC",
@@ -160,26 +160,26 @@ export const spell = [
     type: "DPS Phys.",
     lvl: 1,
     desc: "Vous attaquez avec toute votre force, permet d'infligé de lourd dégâts",
-    dices: ["Dégât de l’armes x1,5 "],
+    dices: ["Dégât de l’armes + 5 "],
     price: "3",
     range: "CàC",
     el: "Physique"
   },
   {
-    name: "Envolée",
+    name: "Estoc agile",
     type: "DPS Phys.",
     lvl: 2,
-    desc: "Dégât de l’arme + Propulse la cible dans les airs",
+    desc: "Dégâts d’armes + 10% sur esquive pendant 1 tour",
     dices: ["Dégât de l’arme"],
     price: "5",
     range: "CàC",
     el: "Physique"
   },
   {
-    name: "Percée",
+    name: "Percée défensive",
     type: "DPS Phys.",
     lvl: 3,
-    desc: "Vous infliger des dégâts à la personne derrière la cible",
+    desc: "Dégâts d’arme + 1d4 + 5, +10% réussite + 6 Def et Res pendant 1 tour",
     dices: [""],
     price: "7",
     range: "CàC",
@@ -190,7 +190,7 @@ export const spell = [
     name: "Poing d'air",
     type: "DPS Phys.",
     lvl: 1,
-    desc: "1d8+4 dégâts + repousse la cible (?m) passe le tour de la cible",
+    desc: "1d8+4 dégâts + repousse la cible (3m) passe le tour de la cible",
     dices: ["1d8+4 dégâts"],
     price: "3",
     range: "CàC",
@@ -200,8 +200,8 @@ export const spell = [
     name: "Poing de Feu",
     type: "DPS Mag.",
     lvl: 2,
-    desc: "Vous attaquez avec un poing enflammée, infligeant des dégâts importants à la cible.",
-    dices: ["1d12+6 dégâts +1d6 de feu"],
+    desc: "Dégâts d'armes + 1d12+6 +(1d6+2) de feu",
+    dices: [""],
     price: "5",
     range: "CàC",
     el: "Physique"
@@ -210,7 +210,7 @@ export const spell = [
     name: "Poing de Foudre",
     type: "DPS Mag.",
     lvl: 3,
-    desc: "1d20+4 dégâts + traverse la cible + électrocute (étourdit)  la cible pendant 1 tours",
+    desc: "1d20+4 dégâts + vous traversez la cible + électrocute (étourdit)",
     dices: ["1d20+4 dégâts"],
     price: "7",
     range: "CàC",
@@ -221,7 +221,7 @@ export const spell = [
     name: "Frappe de Justice",
     type: "DPS Phys.",
     lvl: 1,
-    desc: "Attaque à l’épée, 1d8+4 dégâts",
+    desc: "1d8+4 dégâts + 10% de réussite pour la prochaine parade",
     dices: ["1d8+4 dégâts"],
     price: "3",
     range: "CàC",
@@ -231,7 +231,7 @@ export const spell = [
     name: "Bouclier Divin",
     type: "Buff",
     lvl: 2,
-    desc: "Augmente la Déf et Res d’un allié ou soi de 4 pendant 1d4 tours",
+    desc: "Augmente la Déf et Res d’un allié et soi de 4 pendant 1d4 tours",
     dices: [],
     price: "5",
     range: "Courte",
@@ -241,7 +241,7 @@ export const spell = [
     name: "Jugement Final",
     type: "DPS Phys.",
     lvl: 3,
-    desc: "Attaque à l’épée, 1d20+4 dégâts +1d12 lumière",
+    desc: "Dégâts d'armes + 1d20+4 dégâts +1d12+6 lumière",
     dices: ["1d20+4 dégâts +1d12 lumière"],
     price: "7",
     range: "Courte",
@@ -252,8 +252,8 @@ export const spell = [
     name: "Bouclier de Rage",
     type: "DPS Phys.",
     lvl: 1,
-    desc: "Étourdit la cible pendant 1d4 tours",
-    dices: ["Étourdit la cible pendant 1d4 tours"],
+    desc: "Étourdit la cible",
+    dices: ["Étourdit la cible"],
     price: "3",
     range: "CàC",
     el: "Physique"
@@ -262,7 +262,7 @@ export const spell = [
     name: "Entaille précise",
     type: "DPS Phys.",
     lvl: 2,
-    desc: "Attaque à la hache, 1d12+6 dégâts + 1 par 5 PV manq",
+    desc: "1d12+6 dégâts + 1 par 5 PV manq",
     dices: ["1d12+6 dégâts + 1 par 5 PV manq"],
     price: "5",
     range: "CàC",
@@ -281,502 +281,533 @@ export const spell = [
 
 
 
-  // EAU
-  {
-    name: "Vague",
-    type: "DPS Mag.",
-    lvl: 1,
-    desc: "Vous lancez une vague d'eau, infligeant des dégâts aquatiques à la cible.",
-    dices: ["1d8+4 dégâts"],
-    price: "3",
-    range: "courte",
-    el: "Water"
-  },
-  {
-    name: "Soin Aquatique",
-    type: "DPS Mag.",
-    lvl: 2,
-    desc: "Vous soignez un allié proche, lui rendant des points de vie.",
-    dices: ["1d12+6 PV"],
-    price: "3",
-    range: "courte",
-    el: "Water"
-  },
-  {
-    name: "Prison Aquatique",
-    type: "Soutien Mag.",
-    lvl: 3,
-    desc: "Vous faites une prison d’eau pour immobiliser la cible pendant 1d12 tours.",
-    dices: ["Immobilisation"],
-    price: "3",
-    range: "moyenne",
-    el: "Water"
-  },
-  {
-    name: "Tsunami",
-    type: "DPS Mag.",
-    lvl: 4,
-    desc: "Vous lancez une puissante vague d'eau, infligeant d'importants dégâts aquatiques à la cible.",
-    dices: ["1d20+4 dégâts"],
-    price: "10",
-    range: "Universelle",
-    el: "Water"
-  },
-  // FEU
+  // Mage
   {
     name: "Boule de Feu",
     type: "DPS Mag.",
     lvl: 1,
-    desc: "Vous lancez une sphère de feu qui explose à l'impact, infligeant des dégâts de feu à la cible.",
-    dices: ["1d8+4 dégâts"],
+    desc: "Lancer en ligne, impact circulaire de 3m de rayon",
+    dices: [
+      "Arme + 5"
+    ],
     price: "3",
-    range: "courte",
+    range: "15m",
     el: "Feu"
   },
   {
     name: "Bolganone",
     type: "DPS Mag.",
     lvl: 2,
-    desc: "Vous lancez une grosse boule de feu, infligeant des dégâts importants à la cible.",
-    dices: ["1d12+6 dégâts"],
+    desc: "50% de chance de critique si PE < 50%, impact circulaire de 6m de rayon",
+    dices: [
+      "Arme + 1d4 + 5"
+    ],
     price: "5",
-    range: "moyenne",
+    range: "25m",
     el: "Feu"
   },
   {
     name: "Ragnarok",
     type: "DPS Mag.",
     lvl: 3,
-    desc: "Vous faites surgir du feu depuis le sol, infligeant d'importants dégâts aux ennemis dans la zone.",
-    dices: ["1d20+4 dégâts"],
+    desc: "Geyser sous la cible, impact circulaire de 12m de rayon",
+    dices: [
+      "Arme + 1 / 5 énergie manquante"
+    ],
     price: "7",
-    range: "longue",
+    range: "40m",
     el: "Feu"
   },
   {
     name: "Météore",
     type: "DPS Mag.",
     lvl: 4,
-    desc: "Vous lancez une énorme météorite de feu, infligeant d'importants dégâts à une zone ciblée.",
-    dices: ["1d20+4 dégâts"],
+    desc: "Fait tomber un météore, impact de 24m de rayon",
+    dices: [
+      "Arme + 1d20 +15"
+    ],
     price: "10",
-    range: "Universelle",
+    range: "64m",
     el: "Feu"
   },
-  // TERRE
-  {
-    name: "Rocher destructeur",
-    type: "DPS Mag.",
-    lvl: 1,
-    desc: "Vous lancez un bloc de terre arraché du sol, infligeant des dégâts à la cible.",
-    dices: ["1d8+4 dégâts"],
-    price: "3",
-    range: "courte",
-    el: "Plant"
-  },
-  {
-    name: "Immobilisation Verte",
-    type: "Soutien Mag.",
-    lvl: 2,
-    desc: "Vous faites surgir des plantes pour immobiliser la cible pendant 1d6 tour.",
-    dices: ["Immobilisation"],
-    price: "5",
-    range: "courte",
-    el: "Plant"
-  },
-  {
-    name: "Récupération",
-    type: "Soin Mag.",
-    lvl: 3,
-    desc: "Vous soignez un joueur, lui rendant des points de vie.",
-    dices: ["1d20+4 PV"],
-    price: "7",
-    range: "longue",
-    el: "Plant"
-  },
-  {
-    name: "Séisme",
-    type: "DPS Mag.",
-    lvl: 4,
-    desc: "Vous créez un tremblement de terre qui inflige des dégâts dans une petite zone.",
-    dices: ["1d20+4 dégâts"],
-    price: "10",
-    range: "Universelle",
-    el: "Plant"
-  },
-  // AIR
   {
     name: "Tornade",
     type: "DPS Mag.",
     lvl: 1,
-    desc: "Vous faites virevolter l'air, créant une petite tornade qui inflige des dégâts de vent à la cible.",
-    dices: ["1d8+4 dégâts"],
+    desc: "Lancer en ligne, zone de 3m de rayon",
+    dices: [
+      "Arme + 5"
+    ],
     price: "3",
-    range: "courte",
+    range: "15m",
     el: "Vent"
   },
   {
     name: "Souffle Ascendant",
-    type: "DPS Mag.",
+    type: "Contrôle",
     lvl: 2,
-    desc: "",
-    dices: [""],
+    desc: "Zone circulaire de 6m de rayon",
+    dices: [],
     price: "5",
-    range: "moyenne",
+    range: "25m",
     el: "Vent"
   },
   {
-    name: "Vents Tranchants",
+    name: "Vents tranchants",
     type: "DPS Mag.",
     lvl: 3,
-    desc: "Vous faites virevolter l'air pour trancher l'adversaire, infligeant des dégâts importants à la cible.",
-    dices: ["1d20+4 dégâts"],
+    desc: "Cône de 9m",
+    dices: [
+      "Arme + 1d20 +6 + sagesse/10"
+    ],
     price: "7",
-    range: "Longue",
+    range: "40m",
     el: "Vent"
   },
   {
     name: "Excalibur",
     type: "DPS Mag.",
     lvl: 4,
-    desc: "Vous créez une nuée de vent tranchant, infligeant d'importants dégâts à une zone ciblée.",
-    dices: ["1d20+4 dégâts"],
+    desc: "Impact de 18m, ne touche pas les alliés",
+    dices: [
+      "Arme + 1d20 +15"
+    ],
     price: "10",
-    range: "Universelle",
+    range: "64m",
     el: "Vent"
   },
-  // Poison
   {
-    name: "Pic empoisonné",
+    name: "Vague",
     type: "DPS Mag.",
-    lvl: 2,
-    desc: "Vous lancez une boule d'acide, infligeant des dégâts de poison à la cible.",
-    dices: ["1d12+6 dégâts"],
-    price: "5",
-    range: "moyenne",
-    el: "Poison"
-  },
-  {
-    name: "Corrosion",
-    type: "DPS Mag.",
-    lvl: 4,
-    desc: "Vous corrompez la peau de la cible pour lui infliger des dégâts.",
-    dices: ["1d20+4 dégâts"],
-    price: "10",
-    range: "Universelle",
-    el: "Poison"
-  },
-  // Chaman
-  {
-    name: "Puissance Bestial",
-    type: "Buff Mag.",
-    lvl: 2,
-    desc: "Vous augmentez la Force et Dextérité de l'utilisateur de 10 pendant 4 tours.",
-    dices: ["+10 FOR"],
-    price: "5",
-    range: "courte",
-    el: "Druid"
-  },
-  {
-    name: "Transformation Bestial",
-    type: "Buff Mag.",
-    lvl: 4,
-    desc: "Vous vous transformez en un animal pendant 4 tours.",
-    dices: ["Transformation"],
-    price: "10",
-    range: "courte",
-    el: "Druid"
-  },
-  // FOUDRE
-  {
-    name: "Thoron",
-    type: "DPS Mag.",
-    lvl: 2,
-    desc: "Vous lancez un gros trait de foudre, infligeant des dégâts à la cible.",
-    dices: ["1d12+6 dégâts"],
-    price: "5",
-    range: "moyenne",
-    el: "Foudre"
-  },
-  {
-    name: "Mjöllnir",
-    type: "DPS Mag.",
-    lvl: 4,
-    desc: "Vous lancez un gros trait de foudre, infligeant des dégâts à la cible.",
-    dices: ["1d20+4 dégâts"],
-    price: "10",
-    range: "Universelle",
-    el: "Foudre"
-  },
-  // GLACE 
-  {
-    name: "Cristaux de glace",
-    type: "DPS Mag.",
-    lvl: 2,
-    desc: "Vous lancez un cristaux de glace, infligeant des dégâts importants à la cible.",
-    dices: ["1d12+6 dégâts"],
-    price: "5",
-    range: "moyenne",
-    el: "Glace"
-  },
-  {
-    name: "Fimbulvetr",
-    type: "DPS Mag.",
-    lvl: 4,
-    desc: "Vous créez une mini tempête de glace, infligeant d'importants dégâts à une zone ciblée.",
-    dices: ["1d20+4 dégâts"],
-    price: "10",
-    range: "Universelle",
-    el: "Glace"
-  },
-  // AUTRES
-  {
-    name: "Sangsue",
-    type: "DPS Mag.",
-    lvl: 3,
-    desc: "Vous infligez des dégâts de sang à la cible et vous vous soignez de 1d6 PV",
-    dices: ["1d20+4 dégâts"],
-    price: "7",
-    range: "Longue",
-    el: "Blood"
-  },
-  {
-    name: "Illusion",
-    type: "Soutien Mag.",
-    lvl: 3,
-    desc: "Vous créez une illusion pouvant également causer des dégâts à la cible.",
-    dices: [""],
-    price: "7",
-    range: "courte",
-    el: "Illu"
-  },
-  {
-    name: "Miroir",
-    type: "Soutien Mag.",
-    lvl: 3,
-    desc: "Vous créez un miroir qui renvoie les dégats magiques. Peut dévier une attaque physique en se brisant",
-    dices: [""],
-    price: "7",
-    range: "courte",
-    el: "Illu"
-  },
-  {
-    name: "Tornade électrique",
-    type: "DPS Mag.",
-    lvl: 3,
-    desc: "Vous faites surgir du feu depuis le sol, infligeant d'importants dégâts aux ennemis dans la zone.",
-    dices: ["1d20+4 dégâts"],
-    price: "7",
-    range: "longue",
-    el: "Foudre"
-  },
-  {
-    name: "Eclair de feu",
-    type: "DPS Mag.",
-    lvl: 3,
-    desc: "Vous faites surgir du feu depuis le sol, infligeant d'importants dégâts aux ennemis dans la zone.",
-    dices: ["1d20+4 dégâts"],
-    price: "7",
-    range: "longue",
-    el: "Foudre"
-  },
-  {
-    name: "Danse de feu",
-    type: "Invoc. Mag.",
-    lvl: 3,
-    desc: "Vous faites surgir du feu depuis le sol, infligeant d'importants dégâts aux ennemis dans la zone.",
-    dices: ["1d20+4 dégâts"],
-    price: "7",
-    range: "courte",
-    el: "Feu"
-  },
-  {
-    name: "Bouclier Terrestre",
-    type: "Buff Mag.",
-    lvl: 3,
-    desc: "Vous formez une barrière protégeant de tout type de dégats",
-    dices: [""],
-    price: "7",
-    range: "longue",
-    el: "Plant"
-  },
-  {
-    name: "Ronce",
-    type: "DPS Mag.",
-    lvl: 3,
-    desc: "Vous faites surgir du feu depuis le sol, infligeant d'importants dégâts aux ennemis dans la zone.",
-    dices: ["1d20+4 dégâts"],
-    price: "7",
-    range: "longue",
-    el: "Plant"
-  },
-
-  // LUMIERE
-  {
-    name: "Soin Luminescent",
-    type: "Soin Mag.",
     lvl: 1,
-    desc: "Vous soignez un allié proche, lui rendant des points de vie.",
-    dices: ["1d8+4 PV"],
+    desc: "Lancer en ligne",
+    dices: [
+      "1d8+4 dégâts"
+    ],
     price: "3",
-    range: "courte",
+    range: "15m",
+    el: "Water"
+  },
+  {
+    name: "Soin Aquatique",
+    type: "Soin",
+    lvl: 2,
+    desc: "Soin ciblé",
+    dices: [
+      "1d12+6 PV"
+    ],
+    price: "5",
+    range: "18m",
+    el: "Water"
+  },
+  {
+    name: "Prison Aquatique",
+    type: "Contrôle",
+    lvl: 3,
+    desc: "Immobilisation 1d6 tours",
+    dices: [],
+    price: "7",
+    range: "30m",
+    el: "Water"
+  },
+  {
+    name: "Tsunami",
+    type: "DPS Mag.",
+    lvl: 4,
+    desc: "Vague de 12m de large",
+    dices: [
+      "Arme + 1d20+4"
+    ],
+    price: "10",
+    range: "64m",
+    el: "Water"
+  },
+  {
+    name: "Rocher destructeur",
+    type: "DPS Mag.",
+    lvl: 1,
+    desc: "Lancer en ligne, impact 3m",
+    dices: [
+      "Arme + 5"
+    ],
+    price: "3",
+    range: "15m",
+    el: "Plant"
+  },
+  {
+    name: "Immobilisation Verte",
+    type: "Contrôle",
+    lvl: 2,
+    desc: "Immobilise 1d6 tours",
+    dices: [],
+    price: "5",
+    range: "20m",
+    el: "Plant"
+  },
+  {
+    name: "Récupération",
+    type: "Soin",
+    lvl: 3,
+    desc: "Soin ciblé",
+    dices: [
+      "Arme + 1d20+4"
+    ],
+    price: "7",
+    range: "20m",
+    el: "Plant"
+  },
+  {
+    name: "Séisme",
+    type: "DPS Mag.",
+    lvl: 4,
+    desc: "Autour de soi, 18m rayon",
+    dices: [
+      "Arme + 1d20+4"
+    ],
+    price: "10",
+    range: "soi-même",
+    el: "Plant"
+  },
+  {
+    name: "lumière divine",
+    type: "DPS Mag.",
+    lvl: 1,
+    desc: "Tombe depuis le ciel, impact circulaire de 3m de rayon",
+    dices: [
+      "1d8+4 dégâts"
+    ],
+    price: "3",
+    range: "15m",
     el: "Light"
   },
   {
-    name: "Lumière Divine",
-    type: "DPS Mag.",
+    name: "Soin luminescent",
+    type: "Soin",
     lvl: 1,
-    desc: "Vous lancez un rayon de lumière, infligeant des dégâts à la cible.",
-    dices: ["1d8+4 dégâts"],
+    desc: "Cible",
+    dices: [
+      "1d8+4 soins"
+    ],
     price: "3",
-    range: "courte",
+    range: "6m",
     el: "Light"
   },
   {
     name: "Fortification",
-    type: "Buff Phys.",
+    type: "Buff",
     lvl: 2,
-    desc: "Vous créez un bouclier sur vous-même ou un allié, vous octroyant une armure supplémentaire de 4 pendant 2 tours.",
-    dices: ["+4 DEF et RES"],
+    desc: "Buff de 4 DEF et RES pendant 2 tours",
+    dices: [],
     price: "5",
-    range: "moyenne",
+    range: "20m",
     el: "Light"
   },
   {
     name: "Sagitae",
     type: "DPS Mag.",
     lvl: 2,
-    desc: "Vous lancez un rayon de lumière, infligeant des dégâts importants à la cible.",
-    dices: ["1d12+6 dégâts"],
+    desc: "Tombe depuis le ciel, impact circulaire de 6m de rayon",
+    dices: [
+      "1d12+6 dégâts"
+    ],
     price: "5",
-    range: "moyenne",
+    range: "25m",
     el: "Light"
   },
   {
     name: "Remède",
-    type: "Soin Mag.",
+    type: "Soin",
     lvl: 3,
-    desc: "Vous soignez un joueur, lui rendant des points de vie.",
-    dices: ["1d20+4 PV"],
+    desc: "Cible",
+    dices: [
+      "1d20+4 soins"
+    ],
     price: "7",
-    range: "Longue",
-    el: "Light"
-  },
-  {
-    name: "Nosferatu",
-    type: "DPS Mag.",
-    lvl: 3,
-    desc: "Vous infligez des dégâts de lumière à la cible et vous vous soignez de 1d6 PV ",
-    dices: ["1d8+4 dégâts"],
-    price: "7",
-    range: "longue",
+    range: "20m",
     el: "Light"
   },
   {
     name: "Abraxas",
     type: "DPS Mag.",
     lvl: 3,
-    desc: "Vous lancez un puissant rayon de lumière, infligeant d'importants dégâts à la cible.",
-    dices: ["1d20+4 dégâts"],
+    desc: "Depuis le ciel, impact circulaire de 12m de rayon",
+    dices: [
+      "1d20+4 dégâts"
+    ],
     price: "7",
-    range: "longue",
+    range: "40m",
     el: "Light"
   },
-  // NOIR
   {
-    name: "Miasme",
+    name: "Nosferatu",
+    type: "Drain",
+    lvl: 3,
+    desc: "PV sur soi + explosion magique depuis le ciel",
+    dices: [
+      "1d8+4 soins",
+      "1d20+4 dégâts"
+    ],
+    price: "7",
+    range: "40m",
+    el: "Light"
+  },
+  {
+    name: "Miasme Noir",
     type: "DPS Mag.",
     lvl: 1,
-    desc: "Vous faites apparaître des miasmes autour de l'adversaire pour l'affaiblir, infligeant des dégâts.",
-    dices: ["1d8+4 dégâts"],
+    desc: "Cible, impact circulaire de 3m de rayon",
+    dices: [
+      "1d8+4 dégâts"
+    ],
     price: "3",
-    range: "courte",
+    range: "15m",
     el: "Dark"
   },
   {
     name: "Corruption",
-    type: "DPS Mag.",
+    type: "Contrôle",
     lvl: 2,
-    desc: "",
-    dices: ["1d12+6 Tours"],
+    desc: "Manipulez l'esprit de la cible (Dé SAG à la fin du tour, max 6 tours)",
+    dices: [],
     price: "5",
-    range: "moyenne",
+    range: "20m",
     el: "Dark"
   },
   {
     name: "Absorption de vitalité",
-    type: "DPS Mag.",
+    type: "Drain",
     lvl: 2,
-    desc: "",
-    dices: ["1d12+6 Tours"],
+    desc: "Vole de la vie",
+    dices: [
+      "1d6 soins"
+    ],
     price: "5",
-    range: "moyenne",
+    range: "20m",
+    el: "Dark"
+  },
+  {
+    name: "Piques Noires",
+    type: "DPS Mag.",
+    lvl: 3,
+    desc: "Cible, impact circulaire de 12m de rayon",
+    dices: [
+      "1d20+4 dégâts"
+    ],
+    price: "7",
+    range: "40m",
     el: "Dark"
   },
   {
     name: "Animation des morts",
-    type: "DPS Mag.",
+    type: "Invocation",
     lvl: 3,
-    desc: "",
-    dices: [""],
+    desc: "Contrôle un cadavre (Dé SAG par tour pour garder le contrôle, max 6 tours)",
+    dices: [],
     price: "7",
-    range: "Courte",
+    range: "30m",
     el: "Dark"
   },
   {
     name: "Malédiction",
-    type: "DPS Mag.",
+    type: "DOT",
     lvl: 3,
-    desc: "",
-    dices: ["1d20+4 Tours"],
+    desc: "1d20+4 contre la cible, effet DOT pendant 1d4+6 tours",
+    dices: [],
     price: "7",
-    range: "Longue",
-    el: "Dark"
-  },
-  {
-    name: "Piques Noirs",
-    type: "DPS Mag.",
-    lvl: 3,
-    desc: "Vous lancez des piques noires de miasme sur une cible pour la transpercer, infligeant des dégâts importants.",
-    dices: ["1d20+4 dégâts"],
-    price: "7",
-    range: "Longue",
+    range: "30m",
     el: "Dark"
   },
   {
     name: "Résurrection des morts",
-    type: "DPS Mag.",
+    type: "Invocation",
     lvl: 4,
-    desc: "Vous invoquez un mort-vivant ou un squelette pour attaquer votre ennemi.",
-    dices: [""],
+    desc: "Invoque un mort-vivant ou squelette",
+    dices: [],
     price: "10",
-    range: "Courte",
+    range: "soi",
     el: "Dark"
   },
   {
-    name: "Invocation démoniaque",
-    type: "DPS Mag.",
+    name: "Invocation Démoniaque",
+    type: "Invocation",
     lvl: 4,
-    desc: "Vous invoquez un démon pour attaquer votre ennemi.",
-    dices: [""],
+    desc: "Invoque un démon mineur",
+    dices: [],
     price: "10",
-    range: "Courte",
+    range: "soi",
     el: "Dark"
   },
   {
     name: "Hades",
     type: "DPS Mag.",
     lvl: 4,
-    desc: "Vous lancez un rayon de miasme, infligeant d'importants dégâts à la cible.",
-    dices: ["1d20+4 dégâts"],
+    desc: "Explosion de magie noire autour de la cible, impact circulaire de 18m",
+    dices: [
+      "1d20+15 dégâts"
+    ],
     price: "10",
-    range: "Universelle",
+    range: "64m",
     el: "Dark"
   },
- 
-  
-
-
- 
+  {
+    name: "Glace",
+    type: "DPS + Entrave",
+    lvl: 2,
+    desc: "Gèle un membre de la cible, entrave ses mouvements",
+    dices: ["1d12+6 dégâts"],
+    price: "5",
+    range: "25m",
+    el: "Mixte"
+  },
+  {
+    name: "Fimbulvetr",
+    type: "Zone / Givre",
+    lvl: 4,
+    desc: "Blizzard autour de la cible, impact de 18m, gèle partiellement",
+    dices: ["1d20+4 dégâts"],
+    price: "10",
+    range: "64m",
+    el: "Mixte"
+  },
+  {
+    name: "Pics empoisonnés",
+    type: "DOT",
+    lvl: 2,
+    desc: "Empoisonne 1d4 tours (1d12 dégâts/tour)",
+    dices: ["1d12+6 dégâts"],
+    price: "5",
+    range: "25m",
+    el: "Mixte"
+  },
+  {
+    name: "Corrosion",
+    type: "DOT",
+    lvl: 4,
+    desc: "Empoisonne pendant 1d4+6 tours (1d12 dégâts/tour)",
+    dices: ["1d20+4 dégâts"],
+    price: "10",
+    range: "64m",
+    el: "Mixte"
+  },
+  {
+    name: "Sangsue",
+    type: "Drain",
+    lvl: 3,
+    desc: "Drain de PV et dégâts sur la cible",
+    dices: ["1d8+4 PV sur soi", "1d20+4 dégâts"],
+    price: "7",
+    range: "40m",
+    el: "Mixte"
+  },
+  {
+    name: "Miroir",
+    type: "Défense Magique",
+    lvl: 3,
+    desc: "Renvoie les dégâts magiques, peut dévier une attaque physique",
+    dices: [],
+    price: "7",
+    range: "Devant soi",
+    el: "Mixte"
+  },
+  {
+    name: "Illusion",
+    type: "Illusion",
+    lvl: 3,
+    desc: "Crée une illusion",
+    dices: [],
+    price: "7",
+    range: "30m",
+    el: "Mixte"
+  },
+  {
+    name: "Ronce",
+    type: "Immobilisation + DOT",
+    lvl: 3,
+    desc: "Immobilise 1d6 tours + dégâts par tour",
+    dices: ["1d12+6 dégâts/tour"],
+    price: "7",
+    range: "30m",
+    el: "Mixte"
+  },
+  {
+    name: "Tornade Electrique",
+    type: "Zone / DPS",
+    lvl: 3,
+    desc: "Tornade de foudre, impact de 12m de rayon",
+    dices: ["1d20+4 dégâts"],
+    price: "7",
+    range: "40m",
+    el: "Mixte"
+  },
+  {
+    name: "Thoron",
+    type: "DPS Mag. traversant",
+    lvl: 2,
+    desc: "Ligne, traverse les cibles",
+    dices: ["1d12+6 dégâts"],
+    price: "5",
+    range: "25m",
+    el: "Mixte"
+  },
+  {
+    name: "Mjöllnir",
+    type: "DPS Mag. traversant",
+    lvl: 4,
+    desc: "Ligne, traverse les cibles",
+    dices: ["1d20+15 dégâts"],
+    price: "10",
+    range: "64m",
+    el: "Mixte"
+  },
+  {
+    name: "Éclair de Feu",
+    type: "Zone / Feu",
+    lvl: 3,
+    desc: "Fait tomber la foudre, brûle le sol (1d12 dégâts au sol)",
+    dices: ["1d20+4 dégâts"],
+    price: "7",
+    range: "40m",
+    el: "Mixte"
+  },
+  {
+    name: "Danse du feu",
+    type: "Multi-hit / Feu",
+    lvl: 3,
+    desc: "4 feux follets explosent chacun leur tour (6m de rayon)",
+    dices: ["(1d20+4)/2 par feu follet"],
+    price: "7",
+    range: "40m",
+    el: "Mixte"
+  },
+  {
+    name: "Bouclier terrestre",
+    type: "Défense",
+    lvl: 3,
+    desc: "Mur de 6m/6m protège de tous dégâts (1 tour)",
+    dices: [],
+    price: "7",
+    range: "30m",
+    el: "Mixte"
+  },
+  {
+    name: "Puissance Bestiale",
+    type: "Buff",
+    lvl: 2,
+    desc: "+10 FOR et DEX pendant 4 tours",
+    dices: [],
+    price: "5",
+    range: "soi-même",
+    el: "Mixte"
+  },
+  {
+    name: "Transformation Bestiale",
+    type: "Métamorphose",
+    lvl: 4,
+    desc: "Transformation en animal pendant 4 tours (taille équivalente ou inférieure)",
+    dices: [],
+    price: "10",
+    range: "soi-même",
+    el: "Mixte"
+  }
 
 ]

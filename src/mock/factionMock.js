@@ -1,7 +1,7 @@
 export const faction = [
   {
     title: `L'Empire Cytanique`,
-    img: `races/humans.png`,
+    img: `factions/Cytanie.png`,
     color: "orangered",
     desc: `Au cœur des terres d'Asun, l’Empire Cytanique s’étend comme un colosse militaire et mystique, gouverné par un empereur ou une impératrice qui revendique son autorité divine. Cet empire majestueux repose sur un équilibre fragile entre la discipline militaire, la ferveur religieuse et la puissance mystique.
     <br><br>
@@ -21,7 +21,7 @@ export const faction = [
   },
   {
     title: `Le Royaume de Trésabia`,
-    img: `races/wood-elf.png`,
+    img: `races/Chrissabug/WoodElf.png`,
     color: "green",
     desc: `Situé au Sud-Ouest de Thérion, le Royaume de Tresabia est une terre enchantée régie par une reine élue par ses citoyens. Ce royaume paisible est principalement peuplé d'elfes des bois et des cavernes, qui ont embrassé un mode de vie harmonieux avec la nature qui les entoure.
     <br/><br/>
@@ -44,7 +44,7 @@ export const faction = [
   },
   {
     title: `L'Empire de Koven`,
-    img: `races/orc.png`,
+    img: `races/Chrissabug/Ork.png`,
     color: "red",
     desc: `<span>L'Empire de Koven</span>, situé au Nord-Est de Thierion, est une faction redoutée pour sa force et sa détermination. La plupart de ses habitants sont des orcs, des guerriers endurcis et aguerris, qui ont été initiés dès leur plus jeune âge à l'art de la guerre et de la violence. 
     <br/><br/>
@@ -102,7 +102,7 @@ export const faction = [
   },
   {
     title: `La Tour de Magters`,
-    img: `races/mage.png`,
+    img: `factions/Chrissabug/magters.png`,
     color: "",
     desc: `La grande tour de Magters est plus qu'un simple lieu d'apprentissage de la magie, c'est une véritable institution qui a forgé l'histoire de Thérion. Les mages qui y étudient sont hautement respectés pour leur maîtrise de la magie, leur connaissance approfondie des sorts et des rituels, ainsi que leur capacité à résoudre les problèmes les plus complexes grâce à leur savoir-faire. <br/><br/>
 
@@ -115,7 +115,7 @@ export const faction = [
   },
   {
     title: `L'île de Trésoria`,
-    img: `factions/pirates.png`,
+    img: `factions/Chrissabug/tresoria.png`,
     color: "",
     desc: `L'île de Trésoria est une terre riche et sauvage, située au milieu de la Mer Chant. Au centre de l'île se dresse un imposant volcan qui est à la fois craint et vénéré par les habitants. Les flancs de la montagne sont couverts de forêts verdoyantes, de cascades rugissantes et de rivières cristallines qui serpentent à travers les vallées fertiles.
     <br/><br/>
@@ -126,7 +126,7 @@ export const faction = [
   },
   {
     title: `Le royaume de Myrdinn`,
-    img: `races/sylvain-elf.png`,
+    img: `factions/Chrissabug/myrdin.png`,
     color: "purple",
     desc: `Au cœur d'une forêt ancienne et enchantée, le Royaume de Myrdinn se dresse, un sanctuaire majestueux où les elfes sylvestres vivent en harmonie avec la nature. Ce berceau sylvestre est le foyer d'une civilisation élégante et spirituelle, où la beauté de la nature est célébrée à chaque tournant.
     <br/><br/>
@@ -150,7 +150,7 @@ export const faction = [
   },
   {
     title: `Le royaume d'Uriel`,
-    img: `races/hight-elf.png`,
+    img: `races/Chrissabug/UrielElf.png`,
     color: "cyan",
     desc: `Niché sur une île majestueuse au cœur d'océans scintillants, le Royaume d'Uriel est le foyer des Elfes d'Uriel, une race sophistiquée imprégnée de magie et de quête constante de savoir. Ce royaume est une merveille d'architecture élégante, de sagesse antique et de puissance arcanique.
     <br/><br/>
@@ -176,7 +176,7 @@ export const faction = [
   },
   {
     title: `Barkovie`,
-    img: `races/barkovie.png`,
+    img: `factions/Chrissabug/barkovie.png`,
     color: "aquamarine",
     desc: `Au cœur des terres glaciales de Barkovie réside une faction puissante et mystérieuse, les Disciples de Khyara. Dirigés par la déesse de l'hiver elle-même, Khyara, cette faction a prospéré dans les conditions les plus inhospitalières, transformant les paysages gelés en un royaume impitoyable et majestueux.
     Les vastes étendues de Barkovie sont constamment enveloppées par un manteau de neige et de glace, créant un paysage austère et magnifique. Les forteresses de la faction sont taillées dans la glace, avec des tours effilées qui s'élèvent vers le ciel en hommage à Khyara. Les rivières gelées serpentent entre les montagnes, ajoutant à l'aspect spectaculaire de ce royaume glacé.<br/><br/>
@@ -189,7 +189,7 @@ export const faction = [
   },
   {
     title: `Le Saint Royaume des Bretons`,
-    img: `races/bretons.png`,
+    img: `factions/Chrissabug/breton.png`,
     color: "darkblue",
     desc: `Au cœur d'une terre bénie et imprégnée de spiritualité, le Saint Royaume des Bretons s'élève comme un bastion de vertu et de noblesse. Inspiré par les légendes des Chevaliers du Graal, ce royaume mystique incarne les idéaux chevaleresques, avec pour guide les principes sacrés du Graal.<br/><br/>
     Les vastes étendues du Saint Royaume des Bretons sont marquées par des prairies luxuriantes, des forêts verdoyantes et des lacs cristallins. Les châteaux majestueux, construits en pierre blanche, se dressent comme des sentinelles de la vertu, entourés de jardins fleuris et de cours d'eau scintillants.<br/><br/>
@@ -203,7 +203,7 @@ export const faction = [
   },
   {
     title: `La dynastie Tangto`,
-    img: `races/tangto.png`,
+    img: `factions/Chrissabug/Tangto.png`,
     color: "orange",
     desc: `Au cœur des vastes territoires de l'Empire de la Dynastie Tangto, une civilisation florissante mêle la grandeur impériale à la mystique draconique. Les Tangto sont des gardiens intrépides qui allient la puissance de l'Empire à la grâce des dragons, tandis que leurs hommes embrassent la nature bestiale des hommes-singes.
     L'Empire des Tangto s'étend sur des terres étendues, où des cités impériales majestueuses se dressent en harmonie avec la nature. Des pagodes ornées, des jardins luxuriants et des temples mystiques coexistent avec des forteresses imprenables, créant un mélange équilibré de beauté et de puissance.<br/><br/>
@@ -218,7 +218,7 @@ export const faction = [
   },
   {
     title: `L'alliance Glotergan`,
-    img: `orga/dwarf.png`,
+    img: `factions/Chrissabug/glotergan.png`,
     color: "darkorange",
     desc: `L'Alliance de Glotergan est une coalition de cités-états, de puissants marchands et de maisons nobles unies par des intérêts économiques et stratégiques. Officiellement fondée pour assurer la prospérité et la stabilité commerciale à travers le continent, elle agit en réalité comme une force politique influente, rivalisant parfois avec l’Empire Cytanique.<br><br>
 
@@ -228,7 +228,7 @@ export const faction = [
   },
   {
     title: `Le royaume Nain`,
-    img: `races/mountains-dwarf.png`,
+    img: `races/Chrissabug/Dwarf.png`,
     color: "mediumpurple",
     desc: `Au cœur des chaînes de montagnes majestueuses, les nains prospèrent dans leur Royaume Nain, une terre de forteresses impénétrables, de mines riches en minerais précieux et de traditions anciennes. Ces Héritiers des Montagnes, fiers et résolus, préservent avec dévotion la grandeur de leur royaume.
     <br/><br/>
@@ -252,7 +252,7 @@ export const faction = [
   },
   {
     title: `La Nation Enfouie de Tirwar`,
-    img: `races/gnome.webp`,
+    img: `races/Chrissabug/Gnome.png`,
     color: "rebeccapurple",
     desc: `Au cœur des entrailles de la terre, la nation enfouie de Tirwar abrite les gnomes, une race créative et curieuse qui excelle dans les arts de l'invention et de la mécanique. Les gnomes de Tirwar, gardiens des profondeurs, ont forgé une société ingénieuse et mystérieuse sous la surface du monde.
     <br/><br/>
@@ -277,7 +277,7 @@ export const faction = [
   },
   {
     title: `Le cercle pourpre`,
-    img: `races/nazlich.png`,
+    img: `factions/Chrissabug/Azgul.png`,
     color: "rebeccapurple",
     desc: `Au cœur des terres ténébreuses et mystiques, le Cercle Pourpre règne en maître, unifiant une société complexe sous l'égide de la nécromancie et des arts magiques interdits. Le Cercle Pourpre est une puissance occulte qui manipule la vie et la mort pour asseoir son pouvoir.<br/><br/>
     Les terres du Cercle Pourpre sont souvent enveloppées d'une brume ténébreuse, créant une atmosphère lugubre et mystérieuse. Des tours maîtrisées par des nécromanciens se dressent comme des silhouettes sinistres, émergeant des vastes plaines où des rituels sombres sont menés pour invoquer et contrôler les forces de l'au-delà.
@@ -290,4 +290,40 @@ export const faction = [
     Les Maîtres Nécromanciens du Cercle Pourpre cherchent constamment à percer les mystères des arts interdits. Leur quête pour maîtriser des sorts encore plus puissants les conduit parfois à des expérimentations macabres et à des hérésies qui choquent même d'autres praticiens de la magie noire.<br/><br/>
     Le Cercle Pourpre, incarne le sombre mariage entre la maîtrise de la nécromancie et la soif de pouvoir. Alors que ses Maîtres Nécromanciens dirigent d'une main de fer, les armées d'ombres et les rituels interdits forgent une nation prête à défier la vie et la mort pour atteindre l'immortalité et la domination.`,
   },
+  {
+    title: `Les Laga d'Harkinfall`,
+    img: `factions/draw/harkinfall.png`,
+    desc: `Les Laga sont une race de créatures reptiliennes, anciennement humains, qui ont volontairement adopté des traits serpentins grâce à des rituels sombres et des magies interdites. Ils ont émergé d'une ancienne civilisation humaine, où les dirigeants avides de pouvoir ont cherché à obtenir des capacités divines en pactisant avec des divinités.<br/><br/>
+    Grâce à leurs rituels et leurs expérimentations, les Laga se sont transformés en différentes sous-espèces, chacune avec des degrés variables de traits serpentins :<br/>
+    <span>Anathors</span> : Les plus serpentins, presque entièrement dépourvus de traits humains.<br/>
+    <span>Morphors</span> : Hybrides avec une combinaison de traits humains et serpentins.<br/>
+    <span>Humorphs</span> : Les plus humains en apparence, capables de se fondre dans les sociétés humaines.<br/><br/>
+    Les Laga possèdent une société hiérarchique stricte, dominée par les Anathors et les Morphors, avec les Humorphs souvent en bas de l'échelle. Le pouvoir est concentré entre les mains des prêtres et des sorciers, qui commandent avec une autorité absolue.<br/>
+    Les Laga vénèrent des divinités serpentines telles que Phiella, et Thorvarus. Leurs rituels impliquent souvent des sacrifices et des cérémonies sombres destinées à honorer leurs dieux et à renforcer leurs pouvoirs. Chaque année, lors du Festival des Écailles, ils célèbrent leurs divinités avec des danses rituelles et des combats d'arène.`
+  },
+  {
+    title: `Les tribus Skurfs`,
+    img: `factions/Chrissabug/Skurf.png`,
+    desc: `Les Skurfs vivant dans la région froide des Hightlands. Ils sont connus pour leur mode de vie simple et leur connexion profonde avec la nature. Les Skurfs ont des traits physiques distinctifs, notamment des yeux bleus profonds et des cheveux noirs et épais. Ils portent souvent des vêtements chauds en fourrure et des bottes pour survivre aux conditions climatiques difficiles de leur région. Ils croient en l'équilibre de la nature et en l'importance de préserver leur environnement pour survivre. Ils utilisent des armes traditionnelles telles que des haches, des arcs et des épées, ainsi que des sorts chamaniques pour augmenter leur force et leur agilité en combat.`
+  },
+  {
+    title: `Les tribus Orcs Vert`,
+    img: `factions/Chrissabug/GreenOrk.png`,
+    desc: `Les Orcs Vert sont connus pour leur nature brutale et leur absence totale d'intelligence, ce qui les amène à vivre exclusivement pour piller et combattre. Pour eux, la taille et la force physique sont le signe ultime de la puissance, et ils croient que plus un orc est gros, plus il est puissant. En tant que race de guerriers sauvages, les orcs verts seraient redoutables sur le champ de bataille en raison de leur force brute et de leur résistance. Ils seraient également connus pour leur capacité à endurer de fortes douleurs et pour leur tendance à se battre jusqu'à la mort plutôt que de fuir. Cependant, leur manque d'intelligence peut être un handicap dans des situations complexes ou stratégiques, et ils peuvent souvent être manipulés ou trompés par des adversaires plus rusés. Leurs habitudes de pillage et de violence peuvent également les mettre en conflit avec d'autres races et communautés, ce qui peut les amener à être considérés comme une menace. Leur force physique surhumaine leur permettrait de porter des coups dévastateurs, tandis que leur résistance les aiderait à survivre à des blessures mortelles pour autrui.`
+  },
+  {
+    title: `Les Fractures`,
+    img: `factions/Chrissabug/Rat.png`,
+    desc: `Libérés de leurs créateurs, les Rak'thar auraient pu sombrer dans le chaos. Mais leur nature hybride les poussa à recréer une forme d'ordre : la société des Fractures. Chaque Fracture est un clan, une meute, une faction aux spécialités uniques, née de la survie et de la nécessité.
+    <br>
+    <span>Fracture de l'OEil Rouillé</span> : Maîtres de l'espionnage, des illusions et des réseaux d'informations. Ils murmurent dans les ombres de Tirwar, vendant secrets et trahisons.
+    <br>
+    <span>Fracture des Crocs Noirs</span> : Guerriers fanatiques, marqués par des implants technomagiques. Leur culte de la guerre les rend aussi redoutables qu'imprévisibles.
+    <br>
+    <span>Fracture de la Chair Tordue</span> : Alchimistes fous et médecins de l'horreur. Ils poursuivent les expérimentations interdites, créant des Rak'thar mutants et des armes vivantes.
+    <br>
+    <span>Fracture des Éclats Cendrés</span> : Ingénieurs technomagiques, détournant les artefacts gnomiques pour en faire des machines de guerre instables.
+    <br>
+    Cette organisation est marquée par une hiérarchie fracturée, où la trahison est un art et la loyauté une commodité éphémère.`
+  }
 ]

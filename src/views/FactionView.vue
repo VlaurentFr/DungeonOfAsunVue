@@ -86,7 +86,7 @@ function changeOrga(index: number) {
   background-color: var(--primaryColor);
 }
 .selected-orga p {
-  color: #000;
+  color: white;
 }
 .orga-desc {
   max-width: 560px;
@@ -106,7 +106,7 @@ function changeOrga(index: number) {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* filter: grayscale(); */
+  filter: grayscale();
 }
 .green-filter {
   position: fixed;

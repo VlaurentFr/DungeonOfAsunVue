@@ -54,6 +54,7 @@ const selected = ref('WEAPONS');
               </div>
             </div> -->
           </div>
+          <img class="side-img" src="@/assets/potions.png"/>
         </div>
         <div class="card tabs">
           <input id="tab-1" type="radio" class="tab tab-selector" checked="true" name="tab"/>
@@ -442,6 +443,21 @@ const selected = ref('WEAPONS');
 </template>
 
 <style scoped>
+.header {
+  /* position: relative; */
+}
+.side-img {
+  position: absolute;
+  filter: grayscale();
+  height: 300px;
+  right: 0;
+  top: 200px;
+  -webkit-mask-image: url(../assets/splash.png);
+  mask-image: url(../assets/splash.png);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%, contain;
+}
+
 table {
   width: 100%;
 }
@@ -451,7 +467,7 @@ th, td {
 td p {
   background-color: var(--primaryColor);
   border-radius: 8px;
-  color: black;
+  color: white;
   padding: 4px 8px;
   width: fit-content;
 }
@@ -462,6 +478,54 @@ h3 {
 .tabs {
   margin-top: 64px;
 }
+
+.tabs {
+  text-align: left;
+  position: relative;
+  border-bottom: solid var(--primaryColor) 4px;
+}
+.tabs input {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs input + label:hover {
+  color: var(--primaryColor);
+}
+
+.tab:checked + label {
+  color: white;
+  background-color: var(--primaryColor);
+}
+.tab:checked + label:hover {
+  color: var(--textColor);
+}
+
+.tabs input + label {
+  margin: 12px 0 0 0;
+  transition: all 0.3s;
+  text-align: center;
+  color: var(--textColor);
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  padding: 5pt 10pt;
+  font-size: 16px;
+  background: var(--backgroundColor);
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+}
+
+.tabs input {
+  position: relative;
+  opacity: 0;
+  margin: auto !important;
+  padding: 0;
+}
+
 .row {
   gap: 64px;
   width: 100%;
@@ -522,6 +586,9 @@ h3 {
 @media screen and (max-width: 768px) {
   #search {
     width: auto;
+  }
+  .side-img {
+    display: none;
   }
 }
 </style>

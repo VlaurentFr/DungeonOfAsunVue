@@ -9,9 +9,24 @@ const router = createRouter({
   },
   routes: [
     {
+      path: '/SpellTree',
+      name: 'SpellTree',
+      component: () => import('../views/SpellTreeView.vue')
+    },
+    {
       path: '/',
       name: 'Accueil',
       component: () => import('../views/HomeView.vue')
+    },
+    {
+      path: '/Map',
+      name: 'map',
+      component: () => import('../views/MapView.vue')
+    },
+    {
+      path: '/Connect',
+      name: 'connect',
+      component: () => import('../views/ConnectView.vue')
     },
     {
       path: '/Home',
@@ -55,6 +70,11 @@ const router = createRouter({
       component: () => import('../views/SpellView.vue')
     },
     {
+      path: '/Rules/dons',
+      name: 'rules-dons',
+      component: () => import('../views/DonsView.vue')
+    },
+    {
       path: '/Rules/gear',
       name: 'rules-gear',
       component: () => import('../views/GearView.vue')
@@ -80,16 +100,16 @@ const router = createRouter({
       name: 'univers-god-detail',
       component: () => import('../views/MythDetailsView.vue')
     },
-    {
-      path: '/Univers/panth',
-      name: 'univers-panth',
-      component: () => import('../views/PanthView.vue')
-    },
-    {
-      path: '/Univers/panthDetails',
-      name: 'univers-panth-detail',
-      component: () => import('../views/PanthDetailsView.vue')
-    },
+    // {
+    //   path: '/Univers/panth',
+    //   name: 'univers-panth',
+    //   component: () => import('../views/PanthView.vue')
+    // },
+    // {
+    //   path: '/Univers/panthDetails',
+    //   name: 'univers-panth-detail',
+    //   component: () => import('../views/PanthDetailsView.vue')
+    // },
     {
       path: '/Univers/races',
       name: 'univers-races',

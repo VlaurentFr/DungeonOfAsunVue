@@ -152,9 +152,12 @@ input:focus-visible {
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
-  border-radius: 28px;
-  background: var(--background);
+  border-radius: 8px;
+  background: var(--primaryColor);
+  color: var(--textColorWhite);
   transition: all .3s ease-in-out;
+  outline: 2px solid darkgrey;
+  outline-offset: -8px;
 }
 
 .current-spell {
@@ -170,13 +173,12 @@ input:focus-visible {
   }
 }
 .card h4 {
-  color: var(--primaryColor);
+  color: var(--textColorWhite);
   font-family: Work Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-
   display: flex;
   gap: 8px;
 }
@@ -195,6 +197,7 @@ input:focus-visible {
     gap: 8px;
     border-radius: 8px;
     background: var(--backgroundColor);
+    color: var(--primaryColor);
 }
 .card .side .type {
   padding: 4px 8px;

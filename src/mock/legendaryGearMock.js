@@ -14,6 +14,27 @@ export const gear = [
     el: "Feu"
   },
   {
+    name: "Fendoir des Flammes Éternelles",
+    type: "Hache à 2 mains",
+    desc: "Flamme Éternelle est une épée longue d'apparence ordinaire au premier abord, mais elle est imprégnée d'un feu divin, capable de brûler les ennemis avec une intensité inégalée. Sa lame semble toujours onduler avec des flammes dorées, émettant une lueur chaude et apaisante. Lorsqu'elle est brandie par un héros courageux, elle confère une force inébranlable et une confiance inégalée à son porteur.",
+    dices: ["Base","+1d10 dégâts de feu"],
+    el: "Feu"
+  },
+  {
+    name: "Cœur-Rubis",
+    type: "Hache",
+    desc: "Tant que le porteur manie Cœur-Rubis, il gagne +2 à la Résistance (RES) contre les sorts de feu et de lumière.",
+    dices: ["Base","+2d6 dégâts de feu, + 2 RES Feu et Lumière"],
+    el: "Feu"
+  },
+  {
+    name: "Tranchant Vorace",
+    type: "Hache",
+    desc: "À première vue, c’est une hache un peu organique, à la lame irrégulière, presque vivante. Le manche semble fait de cuir tanné, mais il pulse subtilement comme s’il respirait. Lorsqu’elle est inactive, elle peut se transformer pour imiter une autre arme ou objet simple. À chaque fois que Tranchant Vorace touche une cible équipée d’une armure ou d’une arme, elle tente de 'mordre' l’objet",
+    dices: ["Base","+1d6 de vol de vie"],
+    el: "Dark"
+  },
+  {
     name: "Mizu no Yūsha",
     type: "Epée",
     desc: "Mizu no Yūsha est un katana légendaire dont la lame scintille comme de l'eau et peut passer de l'état solide à liquide. Il est rangé dans un fourreau en forme de gourde, capable de contenir une quantité infinie d'eau. Ce katana permet de contrôler et manipuler l'eau à volonté, offrant des capacités offensives, défensives, et de guérison.",
@@ -56,6 +77,27 @@ export const gear = [
     el: "Light"
   },
   {
+    name: "Amulette de l'Équilibre Sacré",
+    type: "Amulette",
+    desc: "",
+    dices: ["+ 1 DEF", "+1 RES",],
+    el: "Light"
+  },
+  {
+    name: "Cape du Gardien Céleste",
+    type: "Cape",
+    desc: "Une fois par jour, absorbe un sort hostile à cible unique, le neutralise",
+    dices: ["+ 1 DEF", "+1 RES",],
+    el: "Light"
+  },
+  {
+    name: "Cape de Brume Nocturne",
+    type: "Cape",
+    desc: "",
+    dices: ["+ 5 esquive",],
+    el: "Light"
+  },
+  {
     name: "Epée Fantomatique",
     type: "Epée",
     desc: "L'Epée Fantomatique est une épée légendaire, à l'apparence éthérée et insaisissable, comme si elle était faite d'ombre et de brume. Sa lame semble fluctuer entre la transparence et la solidité, donnant l'impression qu'elle est imprégnée de l'énergie des esprits. Cette épée peut traverser les obstacles physiques et magiques, permettant à son porteur de frapper ses ennemis de manière inattendue et déconcertante. Lorsqu'elle est brandie, elle émet un léger murmure spectral, rappelant sa nature mystérieuse et insaisissable.",
@@ -74,6 +116,34 @@ export const gear = [
     type: "Armure",
     desc: "L'Armure Forteresse est une armure légendaire, forgée à partir d'un métal ancien et enchanté, réputé pour sa résistance inégalée. Cette armure massive est ornée de symboles runiques qui brillent d'une lumière protectrice. Lorsqu'elle est portée, elle confère une défense impénétrable, transformant son porteur en une véritable forteresse ambulante. En plus de sa robustesse physique, l'Armure Forteresse est dotée d'un enchantement qui crée une barrière magique, absorbant et dissipant les attaques magiques et physiques. ",
     dices: ["+ 10 DEF", "+ 5 RES"],
+    el: "Light"
+  },
+  {
+    name: "Armure Oeil de Faucon",
+    type: "Armure",
+    desc: "",
+    dices: ["+ 6 DEF", "+ 4 RES", "+ 5 Perception et esquive"],
+    el: "Light"
+  },
+  {
+    name: "Armure de l'Ange Gardien",
+    type: "Armure",
+    desc: "Une fois par combat, annule complètement un coup porté au porteur (se recharge après un repos long)",
+    dices: ["+ 5 DEF", "+ 6 RES"],
+    el: "Light"
+  },
+  {
+    name: "Cotte de Maille du Titan",
+    type: "Armure",
+    desc: "",
+    dices: ["+ 7 DEF", "+ 3 RES", "+5 Force"],
+    el: "Light"
+  },
+  {
+    name: "Armure du Dragon d’Argent",
+    type: "Armure",
+    desc: "Immunité aux effets de feu",
+    dices: ["+ 6 DEF", "+ 6 RES"],
     el: "Light"
   },
   {

@@ -16,66 +16,70 @@ function navigate(godValue: any) {
 }
 </script>
 <template>
-  <div class="visible">
+  <div class="visible mythology">
     <div class='header'>
       <div class="hero"></div>
       <h1>La Mythologie</h1>
       <h2>Découvrez la liste des <span> Dieux </span></h2>
     </div>
-    <h3>Dieux Majeurs</h3>
-    <div class="god-container">
-      <div class="god" v-for="major of majorGods" :key="major.name" @click="navigate(major)">
-        <img class="god-image" :src="getImageUrl(major.img)"/>
-        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
-        <div class="character filter"></div>
-        <div class="logo-type">
-          <img src="../assets/Lawfull.svg"/>
+    <section>
+      <h3>Dieux Majeurs</h3>
+      <div class="god-container">
+        <div class="god" v-for="major of majorGods" :key="major.name" @click="navigate(major)">
+          <img class="god-image" :src="getImageUrl(major.img)"/>
+          <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+          <div class="character filter"></div>
+          <div class="logo-type">
+            <img src="../assets/Lawfull.svg"/>
+          </div>
+          <p class="god-name">{{ major.name }}</p>
+          <p class="god-title"> {{ major.title }}</p>
         </div>
-        <p class="god-name">{{ major.name }}</p>
-        <p class="god-title"> {{ major.title }}</p>
       </div>
-    </div>
-    <h3>Dieux Mineur</h3>
-    <div class="god-container">
-      <div class="god" v-for="major of minorGods" :key="major.name" @click="navigate(major)">
-        <img class="god-image" :src="getImageUrl(major.img)"/>
-        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
-        <div class="character filter"></div>
-        <div class="logo-type">
-          <img src="../assets/Lawfull.svg"/>
+      <h3>Dieux Mineurs</h3>
+      <div class="god-container">
+        <div class="god" v-for="major of minorGods" :key="major.name" @click="navigate(major)">
+          <img class="god-image" :src="getImageUrl(major.img)"/>
+          <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+          <div class="character filter"></div>
+          <div class="logo-type">
+            <img src="../assets/Lawfull.svg"/>
+          </div>
+          <p class="god-name">{{ major.name }}</p>
+          <p class="god-title"> {{ major.title }}</p>
         </div>
-        <p class="god-name">{{ major.name }}</p>
-        <p class="god-title"> {{ major.title }}</p>
       </div>
-    </div>
+    </section>
     <div class="banner"></div>
-    <h3 class="title-margin">Roi des ténèbres</h3>
-    <div class="god-container">
-      <div class="god" v-for="major of kingGods" :key="major.name" @click="navigate(major)">
-        <img class="god-image" :src="getImageUrl(major.img)"/>
-        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
-        <div class="character filter"></div>
-        <div class="logo-type">
-          <img src="../assets/Void.svg"/>
+    <section class="void">
+      <h3 class="title-margin">Rois Primordiaux</h3>
+      <div class="god-container">
+        <div class="god" v-for="major of kingGods" :key="major.name" @click="navigate(major)">
+          <img class="god-image" :src="getImageUrl(major.img)"/>
+          <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+          <div class="character filter"></div>
+          <div class="logo-type">
+            <img src="../assets/Void.svg"/>
+          </div>
+          <p class="god-name">{{ major.name }}</p>
+          <p class="god-title"> {{ major.title }}</p>
         </div>
-        <p class="god-name">{{ major.name }}</p>
-        <p class="god-title"> {{ major.title }}</p>
       </div>
-    </div>
-    <h3>Prince des ténèbres</h3>
-    <div class="god-container">
-      <div class="god" v-for="major of princeGods" :key="major.name" @click="navigate(major)">
-        <img class="god-image" :src="getImageUrl(major.img)"/>
-        <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
-        <div class="character filter"></div>
-        <div class="logo-type">
-          <img src="../assets/Void.svg"/>
+      <h3>Princes Primordiaux</h3>
+      <div class="god-container">
+        <div class="god" v-for="major of princeGods" :key="major.name" @click="navigate(major)">
+          <img class="god-image" :src="getImageUrl(major.img)"/>
+          <img class="character" :src="major.character ? getImageUrl(major.character) : getImageUrl(major.img)"/>
+          <div class="character filter"></div>
+          <div class="logo-type">
+            <img src="../assets/Void.svg"/>
+          </div>
+          <p class="god-name">{{ major.name }}</p>
+          <p class="god-title"> {{ major.title }}</p>
         </div>
-        <p class="god-name">{{ major.name }}</p>
-        <p class="god-title"> {{ major.title }}</p>
       </div>
-    </div>
-    <div class="banner-end"></div>
+    </section>
+    <!-- <div class="banner-end"></div> -->
     <!-- <h3>Autre divinité</h3>
     <div class="god-container">
       <div class="god" v-for="major of otherGods" :key="major.name" @click="navigate(major)">
@@ -91,10 +95,26 @@ function navigate(godValue: any) {
     </div> -->
   </div>
 </template>
+<style>
+  #container:has(.mythology) {
+     display: flex;
+    max-width: none !important;
+    margin: 122px auto 0px;
+    padding: 0;
+    font-weight: normal;
+    flex: 1;
+    width: -webkit-fill-available;
+  }
+</style>
 <style scoped>
+  .void {
+    background-color: var(--textColor);
+    color: var(--backgroundColor);
+  }
 h3 {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
 }
 h3::after {
   height: 0px;
@@ -102,12 +122,12 @@ h3::after {
 }
 .god-image, .character {
   height: 244px;
-  width: 244px;
+  width: 100%;
   object-fit: cover;
   /* border: 4px solid var(--primaryColor); */
   border-radius: 4px;
-  -webkit-mask-image: url(../assets/splash.png);
-  mask-image: url(../assets/splash.png);
+  /* -webkit-mask-image: url(../assets/splash.png);
+  mask-image: url(../assets/splash.png); */
   mask-repeat: no-repeat;
   mask-size: 100% 100%, contain;
 }
@@ -116,34 +136,41 @@ h3::after {
   gap: 48px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 128px;
+  padding-bottom: 128px;
+  margin: auto 180px;
 }
 .god {
   position: relative;
   cursor: pointer;
-  width: 244px;
+  width: 180px;
 }
 .logo-type {
   position: absolute;
   border-radius: 50%;
   padding: 16px;
   background-color: var(--primaryColor);
+  color: white;
   height: 64px;
   width: 64px;
   top: 212px;
-  transform: translateX(calc((244px - 64px) / 2));
+  transform: translateX(100%);
 }
-.god:hover .god-image {
+.god:hover .god-image  {
   transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
-  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-  filter: opacity(0.3);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75); */
+  filter: opacity(0.8) grayscale(100%);
 }
+.god:hover .logo-type {
+  transform: perspective(900px) translateY(-30%) rotateX(25deg) translateZ(0) translateX(100%);
+}
+
 .logo-type img {
   border: none;
   width: 100%;
   height: 100%;
+  filter: invert();
 }
 .god-name {
   font-size: 24px;
@@ -160,6 +187,8 @@ h3::after {
   position: absolute;
   left: 0;
   border: none;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 .filter {
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%);
@@ -170,10 +199,13 @@ h3::after {
 .god:hover .character {
   opacity: 1;
   height: 304px;
-  transform: translate3d(0%, -84px, 100px);
+  width: 104%;
+  transform: translate3d(-2%, -78px, 100px);
 }
+
 .title-margin {
-  margin-top: 750px;
+  margin-top: 500px;
+  padding-top: 250px;
 }
 
 .banner {
@@ -184,9 +216,8 @@ h3::after {
   z-index: -1;
   background-size: cover;
   background-position: top;
-  background-image: url(../assets/hellFosse.png);
+  background-image: url(/src/assets/hell.png);
   background-attachment: fixed;
-  clip-path: polygon(0% 14%, 14% 0, 29% 12%, 41% 0, 49% 34%, 62% 6%, 82% 14%, 83% 7%, 100% 10%, 100% 99%, 81% 89%, 68% 100%, 59% 87%, 48% 100%, 40% 85%, 28% 94%, 16% 70%, 4% 100%, 0% 89%, 0% 89%, 0 50%);
 }
 .hero {
   position: absolute;
@@ -197,9 +228,8 @@ h3::after {
   z-index: -1;
   background-size: cover;
   /* background-position: top; */
-  background-image: url(../assets/combats/combat4.png);
+  background-image: url(/src/assets/forest.png);
   background-attachment: fixed;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 80% 94%, 50% 99%, 36% 83%, 21% 94%, 7% 88%, 0 100%);
 }
 .hero::after {
   content: '';
@@ -217,9 +247,8 @@ h3::after {
   z-index: -1;
   background-size: cover;
   background-position: center;
-  background-image: url(../assets/hell.png);
+  background-image: url(/src/assets/hell.png);
   background-attachment: fixed;
-  clip-path: polygon(0% 14%, 14% 0, 29% 12%, 41% 0, 49% 34%, 62% 6%, 82% 14%, 83% 7%, 100% 10%, 100% 100%, 0 100%);
 }
 .banner-end::after {
   content: '';

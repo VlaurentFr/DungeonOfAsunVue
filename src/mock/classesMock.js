@@ -139,7 +139,7 @@ export const noviceClasses = [
 export const avancedClasses = [
   {
     name: `Bretteur`,
-    img: `classes/epeiste2.png`,
+    img: `classes/epeiste.png`,
     required: ['Epee A'],
     spell: ['Attaque Lourde à l’épée', 'Frappe repoussante'],
     mastery: ['+ 20 PV', '+ 10 PdE'],
@@ -147,7 +147,7 @@ export const avancedClasses = [
   },
   {
     name: `Berserker`,
-    img: `classes/Warrior2.png`,
+    img: `classes/Warrior.png`,
     required: ['Hache A'],
     mastery: ['+ 20 PV', '+ 10 PdE'],
     spell: ['Attaque Lourde à la hache', 'Entaille profonde'],
@@ -155,7 +155,7 @@ export const avancedClasses = [
   },
   {
     name: `Tireur d'élite`,
-    img: `classes/Archer2.png`,
+    img: `classes/Archer.png`,
     spell: ['Tir Rapide','Tir Arcanique'],
     required: ['Arc A'],
     mastery: ['+ 20 PV', '+ 10 PdE'],
@@ -163,7 +163,7 @@ export const avancedClasses = [
   },
   {
     name: `Trancheur Sombre`,
-    img: `classes/thief2.png`,
+    img: `classes/thief.png`,
     spell: ["Lame d'acide", 'Invisibilité'],
     required: ['Dague A'],
     mastery: ['+ 20 PV', '+ 10 PdE'],
@@ -171,15 +171,15 @@ export const avancedClasses = [
   },
   {
     name: `Chevalier de la lance`,
-    img: `classes/lancier2.png`,
+    img: `classes/lancier.png`,
     required: ['Lance A'],
-    spell: ['Attaque Lourde à la lance', 'Envolée'],
+    spell: ['Attaque Lourde à la lance', 'Estoc agile'],
     mastery: ['+ 20 PV', '+ 10 PdE'],
     desc: "Un guerrier spécialisé dans l'art du combat à la lance combinant portée et rapidité"
   },
   {
     name: `Moine`,
-    img: `classes/monk2.png`,
+    img: `classes/monk.png`,
     spell: ['Poing d\'air','Poing de feu'],
     required: ['Poing A'],
     mastery: ['+ 20 PV', '+ 10 PdE'],
@@ -187,7 +187,7 @@ export const avancedClasses = [
   },
   {
     name: `Brise Os`,
-    img: `classes/combattant2.png`,
+    img: `classes/combattant.png`,
     required: ['Masse A'],
     spell: ['Attaque Lourde à la masse', 'Brise-mâchoire'],
     mastery: ['+ 20 PV', '+ 10 PdE'],
@@ -196,63 +196,63 @@ export const avancedClasses = [
   // CLASSES MAGIQUES
   {
     name: `Pyromancien`,
-    img: `classes/pyromancer2.png`,
+    img: `classes/pyromancer.png`,
     required: ['Bolganone'],
     mastery: ['+ 20 PdE', '+ 10 PV'],
     desc: "Maîtrise des sorts de feu plus avancés afin de combattre ses adversaires"
   },
   {
     name: `Aquamancien`,
-    img: `classes/aquamancien2.png`,
+    img: `classes/aquamancien.png`,
     required: ['Soin Aquatique'],
     mastery: ['+ 20 PdE', '+ 10 PV'],
     desc: "Contrôle les pouvoirs de l'eau pour soigner et attaquer"
   },
   {
     name: `Cryomancien`,
-    img: `classes/cryomancer2.png`,
+    img: `classes/cryomancer.png`,
     required: ['Cristaux de glace'],
     mastery: ['+ 20 PdE', '+ 10 PV'],
     desc: "Utilise la magie de la glace pour ralentir et infliger des dégâts glacés à ses adversaires"
   },
   {
     name: `Zephyr`,
-    img: `classes/Zephyr2.png`,
+    img: `classes/Zephyr.png`,
     required: ['Souffle ascendant'],
     mastery: ['+ 20 PdE', '+ 10 PV'],
     desc: "Maîtrise des vents pour manipuler des objets à des fins utilitaires ou offensives"
   },
   {
     name: `Mage Gris`,
-    img: `classes/grey-mage2.png`,
+    img: `classes/grey-mage.png`,
     required: ['Pic empoisonné'],
     mastery: ['+ 20 PdE', '+ 10 PV'],
     desc: "Manipule la magie toxique pour infliger des dégâts persistants à ses ennemis"
   },
   {
     name: `Druide`,
-    img: `classes/druid2.png`,
+    img: `classes/druid.png`,
     required: ['Immobilisation verte'],
     mastery: ['+ 20 PdE', '+ 10 PV'],
     desc: "Maîtrise les éléments terrestres en manipulant la terre et les racines pour contrôler ses ennemis"
   },
   {
     name: `Chaman`,
-    img: `classes/chaman2.png`,
+    img: `classes/chaman.png`,
     required: ['Puissance Bestial'],
     mastery: ['+ 20 PdE', '+ 10 PV'],
     desc: "Utilise la magie ancestrale pour puiser dans la force des esprits animaux et naturels"
   },
   {
     name: `Drakomancien`,
-    img: `classes/Drakomancien2.png`,
+    img: `classes/Drakomancien.png`,
     required: ['Thoron'],
     mastery: ['+ 20 PdE', '+ 10 PV'],
     desc: "Manipule la foudre pour frapper ses ennemis avec des éclairs puissants"
   },
   {
     name: `Nécromancien`,
-    img: `classes/necromancer2.png`,
+    img: `classes/necromancer.png`,
     required: ['Animation des morts'],
     mastery: ['+ 20 PdE', '+ 10 PV'],
     desc: "Contrôlant les morts-vivants, il est capable de lever des serviteurs squelettiques pour combattre à ses côtés"
@@ -266,7 +266,7 @@ export const avancedClasses = [
   },
   {
     name: `Prêtre`,
-    img: `classes/Clerc2.png`,
+    img: `classes/Clerc.png`,
     required: ['Sagitae'],
     mastery: ['+ 20 PdE', '+ 10 PV'],
     desc: "Un maître des sorts de lumière capable d’infliger des dégâts tout en soignant"
@@ -323,7 +323,7 @@ export const avancedClasses = [
 export const masterClasses = [
   {
     name: `Maître Epéiste`,
-    img: `classes/epeiste3.png`,
+    img: `classes/epeiste.png`,
     spell: ['Attaque Lourde à l’épée', 'Frappe Repoussante', 'Fine Lame'],
     required: ['Epee M'],
     mastery: ['+ 40 PV', '+ 20 PdE'],
@@ -331,7 +331,7 @@ export const masterClasses = [
   },
   {
     name: `Destructeur de batailles`,
-    img: `classes/Warrior3.png`,
+    img: `classes/Warrior.png`,
     spell: ['Attaque Lourde à la hache', 'Entaille profonde', 'Rage du Berserker'],
     required: ['Hache M'],
     mastery: ['+ 40 PV', '+ 20 PdE'],
@@ -339,7 +339,7 @@ export const masterClasses = [
   },
   {
     name: `Seigneur des flèches`,
-    img: `classes/Archer3.png`,
+    img: `classes/Archer.png`,
     spell: ['Tir Rapide','Tir Arcanique', 'Tir Divin'],
     required: ['Arc M'],
     mastery: ['+ 40 PV', '+ 20 PdE'],
@@ -347,7 +347,7 @@ export const masterClasses = [
   },
   {
     name: `Lame fantôme`,
-    img: `classes/thief3.png`,
+    img: `classes/thief.png`,
     spell: ["Lame d'acide", 'Invisibilité', 'Vif Eclair'],
     required: ['Dague M'],
     mastery: ['+ 40 PV', '+ 20 PdE'],
@@ -355,15 +355,15 @@ export const masterClasses = [
   },
   {
     name: `Héraut de la lance`,
-    img: `classes/lancier3.png`,
-    spell: ['Attaque Lourde à la lance', 'Envolée', 'Percée'],
+    img: `classes/lancier.png`,
+    spell: ['Attaque Lourde à la lance', 'Estoc agile', 'Percée défensive'],
     required: ['Lance M'],
     mastery: ['+ 40 PV', '+ 20 PdE'],
     desc: "Un maître lancier capable d'utiliser la portée et la puissance de la lance pour dominer le champ de bataille"
   },
   {
     name: `Chanoine suprême`,
-    img: `classes/monk3.png`,
+    img: `classes/monk.png`,
     spell: ['Poing d\'air', 'Poing de feu','Poing de foudre'],
     required: ['Poing M'],
     mastery: ['+ 40 PV', '+ 20 PdE'],
@@ -371,7 +371,7 @@ export const masterClasses = [
   },
   {
     name: `Briseur de géants`,
-    img: `classes/combattant3.png`,
+    img: `classes/combattant.png`,
     required: ['Masse M'],
     spell: ['Attaque Lourde à la masse', 'Brise-mâchoire', 'Brise-moëlle'],
     mastery: ['+ 40 PV', '+ 20 PdE'],
@@ -380,77 +380,77 @@ export const masterClasses = [
   // CLASSES MAGIQUES
   {
     name: `Maître Pyromancien`,
-    img: `classes/pyromancer3.png`,
+    img: `classes/pyromancer.png`,
     required: ['Ragnarok'],
     mastery: ['+ 40 PdE', '+ 20 PV' ],
     desc: "Contrôle le feu avec des sorts dévastateurs le rendant redoutable"
   },
   {
     name: `Maître Aquamancien`,
-    img: `classes/aquamancien3.png`,
+    img: `classes/aquamancien.png`,
     required: ['Tsunami'],
     mastery: ['+ 40 PdE', '+ 20 PV' ],
     desc: "Maîtrise absolue de l'eau capable de provoquer des tsunamis dévastateurs"
   },
   {
     name: `Maître Cryomancien`,
-    img: `classes/cryomancer3.png`,
+    img: `classes/cryomancer.png`,
     required: ['Fimbulvetr'],
     mastery: ['+ 40 PdE', '+ 20 PV' ],
     desc: "Un maître de la glace capable de créer des tempêtes glaciales et des attaques dévastatrices"
   },
   {
     name: `Maître Zephyr`,
-    img: `classes/Zephyr3.png`,
+    img: `classes/Zephyr.png`,
     required: ['Excalidur'],
     mastery: ['+ 40 PdE', '+ 20 PV' ],
     desc: "Un manipulateur de l'air capable de provoquer des tempêtes violentes et tranchant tout sur son passage"
   },
   {
     name: `Maître Mage Gris`,
-    img: `classes/grey-mage3.png`,
+    img: `classes/grey-mage.png`,
     required: ['Corrosion'],
     mastery: ['+ 40 PdE', '+ 20 PV' ],
     desc: "Un maître des poisons capable de faire fondre l’armure et affaiblir durablement ses ennemis"
   },
   {
     name: `Maître Druide`,
-    img: `classes/druid3.png`,
+    img: `classes/druid.png`,
     required: ['Seisme'],
     mastery: ['+ 40 PdE', '+ 20 PV' ],
     desc: "Un maître de la nature capable de provoquer des séismes et de manipuler la terre à volonté"
   },
   {
     name: `Maître Chaman`,
-    img: `classes/chaman3.png`,
+    img: `classes/chaman.png`,
     required: ['Transformation Bestial'],
     mastery: ['+ 40 PdE', '+ 20 PV' ],
     desc: "Un expert chaman capable de se transformer en créature mythique combinant force physique et pouvoir spirituel"
   },
   {
     name: `Maître Drakomancien`,
-    img: `classes/Drakomancien3.png`,
+    img: `classes/Drakomancien.png`,
     required: ['Mjöllnir'],
     mastery: ['+ 40 PdE', '+ 20 PV' ],
     desc: "Un expert de la foudre capable de provoquer des tempêtes électriques destructrices écrasant ses adversaires"
   },
   {
     name: `Maître Nécromancien`,
-    img: `classes/necromancer3.png`,
+    img: `classes/necromancer.png`,
     required: ['Résurrection des morts'],
     mastery: ['+ 40 PdE', '+ 20 PV' ],
     desc: "Un maître des arts occultes capable de ressusciter les morts afin qu’ils combattent en autonomie à ses côtés"
   },
   {
     name: `Maître démoniste`,
-    img: `classes/bloodMage2.png`,
+    img: `classes/bloodMage.png`,
     required: ['Invocation démoniaque'],
     mastery: ['+ 40 PdE', '+ 20 PV' ],
     desc: "Un sorcier des ténèbres capable d’invoquer des créatures démoniaques pour semer la terreur"
   },
   {
     name: `Evêque`,
-    img: `classes/Clerc3.png`,
+    img: `classes/Clerc.png`,
     required: ['Nosferatu'],
     mastery: ['+ 40 PdE', '+ 20 PV' ],
     desc: "Un expert ultime de la magie sacrée, capable de manipuler la lumière pour infliger des dégâts redoutables et absorber l’énergie vitale"
@@ -458,14 +458,14 @@ export const masterClasses = [
   // CLASSE MAGE GUERRIER
   {
     name: `Templier`,
-    img: `classes/Croise2.png`,
+    img: `classes/Croise.png`,
     required: ['Abraxas +  Épée, Lance ou Masse S'],
     mastery: ['+ 30 PV', '+ 20 PdE'],
     desc: "Un guerrier sombre utilisant la magie des ténèbres pour renforcer ses attaques physiques"
   },
   {
     name: `Chevalier du Néant`,
-    img: `classes/dark-knight2.png`,
+    img: `classes/dark-knight.png`,
     required: ['Hadès + Épée, Lance ou Masse S'],
     mastery: ['+ 30 PV', '+ 20 PdE'],
     desc: "Un maître des ténèbre, combinant la force brute et les arts occultes pour anéantir ses adversaires"
@@ -473,7 +473,7 @@ export const masterClasses = [
   // CLASSES COMBINEES
   {
     name: `Garde Sacrée`,
-    img: `classes/paladin2.png`,
+    img: `classes/paladin.png`,
     required: ['Epee A, Bouclier S'],
     spell: ['Frappe de Justice', 'Bouclier Divin', 'Jugement Final'],
     mastery: ['+ 40 PV', '+ 20 PdE'],
@@ -481,7 +481,7 @@ export const masterClasses = [
   },
   {
     name: `Rempart colossal`,
-    img: `classes/shield-berserker2.png`,
+    img: `classes/shield-berserker.png`,
     required: ['Hache A, Bouclier S'],
     spell: ['Bouclier de Rage', 'Entaille précise', 'Garde-Rage'],
     mastery: ['+ 40 PV', '+ 20 PdE'],
@@ -489,7 +489,7 @@ export const masterClasses = [
   },
   // {
   //   name: `Gardien du Marteau`,
-  //   img: `classes/mace-shield2.png`,
+  //   img: `classes/mace-shield.png`,
   //   required: ['Masse A+, Bouclier A'],
   //   spell: [],
   //   mastery: ['+ 40 PV'],
@@ -497,7 +497,7 @@ export const masterClasses = [
   // },
   // {
   //   name: `Sentielle de l'aube`,
-  //   img: `classes/spear-guard2.png`,
+  //   img: `classes/spear-guard.png`,
   //   required: ['Lance A+, Bouclier A'],
   //   spell: [],
   //   mastery: ['+ 40 PV'],

@@ -190,6 +190,7 @@ function toggle() {
 }
 .active {
   background-color: var(--primaryColor);
+  color: white;
 }
 .simplify_button {
   border-radius: 6px;
@@ -345,6 +346,7 @@ h4 {
 .life-and-shield .green-mini-card {
   border-radius: 12px;
   background-color: var(--primaryColor);
+  color: white;
   flex: 1;
   padding: 16px;
   display: flex;
@@ -352,7 +354,7 @@ h4 {
   align-items: center;
 }
 .life-and-shield .value {
-  color: #000;
+  color: white;
   text-align: center;
   font-family: Work Sans;
   font-size: 16px;
@@ -367,15 +369,17 @@ h4 {
   justify-content: center;
   align-items: center;
   padding-right: 16px;
-  border-right: 1px solid black;
+  border-right: 1px solid white;
   border-radius: 0px;
+  color: white;
 }
 .icon-text img {
   width: 24px;
   height: 24px;
+  filter: invert();
 }
 .icon-text p {
-  color: #000;
+  color: white;
   font-family: Work Sans;
   font-size: 12px;
   font-style: normal;
@@ -398,7 +402,7 @@ h4 {
 }
 .stats-card .stat-title {
   padding-bottom: 8px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   width: 64px;
   text-align: center;
 }

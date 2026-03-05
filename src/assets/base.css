@@ -6,8 +6,9 @@
 
 /* semantic color variables for this project */
 :root {
-  /* --primaryColor: #24BE74; */
-  --primaryColor: hsl(16,100%,60%);
+  --primaryColor: #252525;
+  /* --primaryColor: hsl(16,100%,60%); */
+  /* --primaryColor: rgb(211,112,54); */
   /* --secondaryColor: #24BE74; */
   --secondaryColor: hsl(0,90%,60%);
   --background: white;
@@ -20,8 +21,9 @@
 }
 
   :root.dark {
-    /* --primaryColor: #24BE74; */
-    --primaryColor: hsl(16,100%,60%);
+    --primaryColor: #252525;
+     --primaryColor: rgb(104,24,13);
+    /* --primaryColor: hsl(16,100%,60%); */
     /* --secondaryColor: #24BE74; */
     --secondaryColor: hsl(0,90%,60%);
     --background: white;

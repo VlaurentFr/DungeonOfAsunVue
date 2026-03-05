@@ -103,7 +103,7 @@ const compRankB = computed(() => {
       <h3>Qu'est-ce que c'est ?</h3>
     </div>
     <div class="desc">
-      <img src="@/assets/rpg_weapon.png"/>
+      <img src="@/assets/exploration.png"/>
       <div class="filter"></div>
       <p>Afin d'obtenir l'accès a certaines classe et de nouvelles compétences il vous faudra vous entrainer à manier vos armes. Pour cela vous pouvez lors d'un entrainement, entrainer soit une ou deux armes a la fois, vous pouvez également vous faire aider par quelqu'un possèdant une plus grande maitrise que vous afin d'obtenir un bonus d'expériences lors de l'entrainement. Chaque entrainement permet de lancer  2 <i class="fas fa-dice-d20"></i> 6 se qui revient a 1 <i class="fas fa-dice-d20"></i> 6 par armes. Le tuteur (un maître dans la maîtrise de l'arme) quand a lui multiplie le résultat obtenue par x1,5. Votre maitrise d'armes s'accompagnera alors de nouveau bonus lorsque vous serez equipé de l'arme associer.</p>
     </div>
@@ -338,7 +338,7 @@ table {
 td p {
   background-color: var(--primaryColor);
   border-radius: 8px;
-  color: var(--textColor);
+  color: white;
   padding: 4px 8px;
 }
 select {
@@ -365,11 +365,11 @@ select:-ms-expand {
   height: 745px;
   object-fit: cover;
   overflow: auto;
-  -webkit-mask-image: url(../assets/splash2.png);
-  mask-image: url(../assets/splash2.png);
+  -webkit-mask-image: url(../assets/splash.png);
+  mask-image: url(../assets/splash.png);
   mask-repeat: no-repeat;
   mask-size: 100% 100%, contain;
-
+  filter: grayscale();
 }
 .desc .filter {
   width: 620px;
@@ -407,7 +407,7 @@ select:-ms-expand {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* filter: grayscale(); */
+  filter: grayscale();
 }
 /* .illustration::before {
   position: absolute;
@@ -470,5 +470,6 @@ ul {
 }
 ul .upgraded {
   color: var(--primaryColor);
+  font-weight: bold !important;
 }
 </style>

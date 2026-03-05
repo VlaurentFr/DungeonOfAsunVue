@@ -180,7 +180,7 @@ input:focus-visible {
 }
 .tag a {
   width: fit-content;
-  color: #000;
+  color: white;
   background-color: var(--primaryColor);
   border-radius: 6px;
   padding: 8px;

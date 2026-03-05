@@ -87,7 +87,7 @@ function changeOrga(index: number) {
   background-color: var(--primaryColor);
 }
 .selected-orga p {
-  color: #000;
+  color: white;
 }
 .orga-desc {
   max-width: 560px;
@@ -116,11 +116,11 @@ function changeOrga(index: number) {
 
 .rank-number-container p:hover {
   background: var(--primaryColor);
-  color: #000;
+  color: white;
 }
 .rank-number-container .selected {
   background: var(--primaryColor);
-  color: #000;
+  color: white;
 }
 .aside-img{
   position: fixed;
@@ -134,7 +134,7 @@ function changeOrga(index: number) {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* filter: grayscale(); */
+  filter: grayscale();
 }
 .green-filter {
   position: fixed;

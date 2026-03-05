@@ -12,8 +12,8 @@ const { width } = useWindowSize()
 const isOpen = ref(false)
 
 const mobList = MOB.sort((a, b) => a.name.localeCompare(b.name))
-const gearList = gear.sort((a, b) => a.name.localeCompare(b.name)).filter((w) => w.type == 'Armure' || w.type == 'Amulette' || w.type == 'Anneau' )
-const weaponsList = gear.sort((a, b) => a.name.localeCompare(b.name)).filter((w) => w.type != 'Armure' && w.type != 'Amulette' && w.type != 'Anneau')
+const gearList = gear.sort((a, b) => a.name.localeCompare(b.name)).filter((w) => w.type == 'Armure' || w.type == 'Amulette' || w.type == 'Anneau'|| w.type == 'Cape' )
+const weaponsList = gear.sort((a, b) => a.name.localeCompare(b.name)).filter((w) => w.type != 'Armure' && w.type != 'Amulette' && w.type != 'Anneau' && w.type != 'Cape')
 const spellList = spell.filter((x) => x.type.toLowerCase().includes('mag')).sort((a, b) => a.name.localeCompare(b.name)).slice(0,13)
 const compList = spell.sort((a, b) => a.name.localeCompare(b.name)).filter((x) => x.type.toLowerCase().includes('phys'))
 
@@ -34,10 +34,10 @@ const LINKS = [
         url: '/Univers/gods',
         name: 'Mythologie'
       },
-      {
-        url: '/Univers/panth',
-        name: 'Panthéons'
-      },
+      // {
+      //   url: '/Univers/panth',
+      //   name: 'Panthéons'
+      // },
       {
         url: '/Univers/races',
         name: 'Races & Peuples'
@@ -55,10 +55,6 @@ const LINKS = [
   {
     name: 'Règles du jeu',
     sub: [
-      // {
-      //   url: '/Rules/creation',
-      //   name: 'Système de Jeu'
-      // },
       {
         url: '/Rules/creation',
         name: 'Création de personnage'
@@ -77,12 +73,13 @@ const LINKS = [
       },
       {
         url: '/Rules/spell',
-        name: 'Listes des compétences'
+        name: 'Liste des compétences'
       },
-      // {
-      //   url: '/Rules/spell',
-      //   name: 'Listes des Sorts'
-      // },
+      {
+        url: '/Rules/dons',
+        name: 'Liste des dons'
+      },
+
       {
         url: '/Rules/gear',
         name: "Objets d'aventurier"
@@ -93,10 +90,6 @@ const LINKS = [
     name: 'Compendium',
     mega: true,
     sub: [
-      // {
-      //   url: '/Rules/gear',
-      //   name: `Objets d'aventurier`
-      // },
       {
         url: '/Rules/legendary-gear',
         name: 'Objets Légendaires'
@@ -104,6 +97,19 @@ const LINKS = [
       {
         url: '/Bestiary',
         name: 'Bestiaire'
+      },
+    ]
+  },
+  {
+    name: 'Autres',
+    sub: [
+      {
+        url: '/Map',
+        name: 'Map'
+      },
+      {
+        url: '/Bibliothèque',
+        name: 'W.I.P Bibliothèque'
       },
     ]
   }, 
@@ -211,13 +217,13 @@ const hideMenu = () => {
                         <div class="row">
                           <div>
                             <RouterLink :to="'/Rules/legendary-gear#'+m.name" v-for="m of gearList.slice(0,5)" :key="m.name"> {{ m.name }}</RouterLink>
-                            <RouterLink class="button" :to="'/Rules/legendary-gear'">Voir plus</RouterLink>
                           </div>
                           <div>
                             <RouterLink :to="'/Rules/legendary-gear#'+m.name" v-for="m of gearList.slice(5,10)" :key="m.name"> {{ m.name }}</RouterLink>
                           </div>
                           <div>
-                            <RouterLink :to="'/Rules/legendary-gear#'+m.name" v-for="m of gearList.slice(10)" :key="m.name"> {{ m.name }}</RouterLink>
+                            <RouterLink :to="'/Rules/legendary-gear#'+m.name" v-for="m of gearList.slice(10,14)" :key="m.name"> {{ m.name }}</RouterLink>
+                            <RouterLink class="button" :to="'/Rules/legendary-gear'">Voir plus</RouterLink>
                           </div>
                         </div>
                       </div>
@@ -279,7 +285,9 @@ const hideMenu = () => {
               </ul>
             </div>
           </div>
-          <a id="coffee" href='https://www.buymeacoffee.com/dungeonOfAsun'>Buy me a coffee</a>
+          <!-- <a id="coffee" href='https://www.buymeacoffee.com/dungeonOfAsun'>Soutenir</a> -->
+          <!-- <RouterLink id="sign_up" to='/signUp'>S'inscrire</RouterLink> -->
+          <!-- <RouterLink id="connect" to='/Connect'>Connexion</RouterLink> -->
           <!-- <a href='https://www.paypal.com/paypalme/DungeonOfAsun?v=1&utm_source=unp&utm_medium=email&utm_campaign=RT000269&utm_unptid=dfbce4e8-0c44-11ee-a37f-3cecef432e8b&ppid=RT000269&cnac=FR&rsta=fr_FR%28fr-FR%29&cust=33MHU9E7LYTKW&unptid=dfbce4e8-0c44-11ee-a37f-3cecef432e8b&calc=f47253660671a&unp_tpcid=ppme-social-user-profile-created&page=main%3Aemail%3ART000269&pgrp=main%3Aemail&e=cl&mchn=em&s=ci&mail=sys&appVersion=1.178.0&xt=104038%2C127632'>Donnations</a> -->
           <!-- <div v-if="isDark" id="sun" @click="toggleDark()">
             <i class="fas fa-sun"></i>
@@ -322,6 +330,7 @@ const hideMenu = () => {
 #main-title {
   font-family: fantasy;
   max-height: 48px;
+  justify-content: flex-start;
 }
 #main-title img {
 height: 120px;
@@ -345,7 +354,8 @@ height: 120px;
 }
 
 #coffee {
-  border-radius: 16px;
+  margin-left: 32px;
+  border-radius: 8px;
   border: 1px solid var(--textColor);
   padding: 8px 24px;
   transition: all 300ms ease-in-out;
@@ -353,6 +363,17 @@ height: 120px;
 #coffee:hover {
   border: 1px var(--primaryColor) solid;
   color: var(--primaryColor);
+}
+#connect:hover {
+  background-color: var(--secondaryColor);
+
+}
+#connect {
+  border-radius: 8px;
+  padding: 8px 24px;
+  transition: all 300ms ease-in-out;
+  background-color:var(--primaryColor);
+  color: var(--textColorWhite);
 }
 .subNav {
   display: none;

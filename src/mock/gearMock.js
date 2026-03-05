@@ -1,3 +1,45 @@
+export const poings = [
+  {
+    name: 'Poing de Fer',
+    dmg: '1d4+1',
+    effect: "Parade possible, Possibilité main secondaire",
+    type: '1 main',
+    typeDmg: 'Contondant',
+    cost: '15 po'
+  },
+  {
+    name: 'Poing d\'Acier',
+    dmg: '1d6+1',
+    effect: "Parade possible, Possibilité main secondaire",
+    type: '1 main',
+    typeDmg: 'Contondant',
+    cost: '85 po'
+  },
+  {
+    name: 'Poing d\'Argent',
+    dmg: '1d8+1',
+    effect: "Parade possible, Possibilité main secondaire",
+    type: '1 main',
+    typeDmg: 'Contondant',
+    cost: '187 po'
+  },
+  {
+    name: 'Poing Royale',
+    dmg: '1d8+3',
+    effect: "Parade possible, Possibilité main secondaire",
+    type: '1 main',
+    typeDmg: 'Contondant',
+    cost: '250 po'
+  },
+  {
+    name: 'Poing Héros',
+    dmg: '1d10+5',
+    effect: "Parade possible, Possibilité main secondaire",
+    type: '1 main',
+    typeDmg: 'Contondant',
+    cost: '875 po'
+  },
+]
 export const daggers = [
   {
     name: 'Dague de Fer',
@@ -259,40 +301,40 @@ export const hands = [
 export const bows = [
   {
     name: 'Arc de Chasse',
-    dmg: '1d6',
-    effect: "Portée 20m",
+    dmg: '1d6+2',
+    effect: "Portée 30m",
     type: '1 main',
     typeDmg: 'Perforant',
     cost: '15 po'
   },
   {
     name: 'Arc long',
-    dmg: '1d8',
-    effect: "Portée 25m",
+    dmg: '1d8+3',
+    effect: "Portée 40m",
     type: '1 main',
     typeDmg: 'Perforant',
     cost: '85 po'
   },
   {
     name: 'Arc de Guerre',
-    dmg: '1d10',
-    effect: "Portée 20m",
+    dmg: '1d10+4',
+    effect: "Portée 50m",
     type: '1 main',
     typeDmg: 'Perforant',
     cost: '187 po'
   },
   {
     name: 'Arc Royale',
-    dmg: '1d10+1',
-    effect: "Portée 20m",
+    dmg: '1d10+5',
+    effect: "Portée 60m",
     type: '1 main',
     typeDmg: 'Perforant',
     cost: '250 po'
   },
   {
     name: 'Arc Héros',
-    dmg: '1d12+3',
-    effect: "Portée 20m",
+    dmg: '1d12+7',
+    effect: "Portée 70m",
     type: '1 main',
     typeDmg: 'Perforant',
     cost: '875 po'
@@ -500,34 +542,74 @@ export const shields = [
 
 export const spellBook = [
   {
+    name: 'Grimoire de combat novice',
+    dmg: '1d8+5',
+    effect: "Ajout les dégât au sort",
+    type: '2 mains',
+    typeDmg: 'magique',
+    cost: '30 po'
+  },
+  {
+    name: 'Grimoire de combat avancé',
+    dmg: '1d10+6',
+    effect: "Ajout les dégât au sort",
+    type: '2 mains',
+    typeDmg: 'magique',
+    cost: '170 po'
+  },
+  {
+    name: 'Grimoire de combat expert',
+    dmg: '1d12+7',
+    effect: "Ajout les dégât au sort",
+    type: '2 mains',
+    typeDmg: 'magique',
+    cost: '375 po'
+  },
+  {
+    name: 'Grimoire Royal',
+    dmg: '1d12+8',
+    effect: "Ajout les dégât au sort",
+    type: '2 mains',
+    typeDmg: 'magique',
+    cost: '500 po'
+  },
+  {
+    name: 'Grimoire du Héros',
+    dmg: '1d20+9',
+    effect: "Ajout les dégât au sort",
+    type: '2 mains',
+    typeDmg: 'magique',
+    cost: '1750 po'
+  },
+  {
     name: 'Livre de sort (lvl 1)',
     effect: 'Permet d\'apprendre un sort de niveau 1',
-    cost: '933 po'
+    cost: '500 po'
   },
   {
     name: 'Livre de sort (lvl 2)',
     effect: 'Permet d\'apprendre un sort de niveau 2 nécessite les autres avant',
-    cost: '1933 po'
+    cost: '875 po'
   },
   {
     name: 'Livre de sort (lvl 3)',
     effect: 'Permet d\'apprendre un sort de niveau 3 nécessite les autres avant',
-    cost: '2933 po'
+    cost: '1750 po'
   },
   {
     name: 'Parchemin de sort (lvl 1)',
     effect: 'Permet de lancer un sort de niveau 1 (consommable)',
-    cost: '633 po'
+    cost: '375 po'
   },
   {
     name: 'Parchemin de sort (lvl 2)',
     effect: 'Permet de lancer un sort de niveau 2 (consommable)',
-    cost: '933 po'
+    cost: '500 po'
   },
   {
     name: 'Parchemin de sort (lvl 3)',
     effect: 'Permet de lancer un sort de niveau 3 (consommable)',
-    cost: '1333 po'
+    cost: '875 po'
   },
 ]
 

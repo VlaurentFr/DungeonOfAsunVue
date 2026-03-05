@@ -23,10 +23,6 @@ const router = useRouter();
         <img src="@/assets/combats/combat8.png" />
         <div class="filter-left"></div>
       </div>
-      <div class="image-left no-clip">
-        <img src="@/assets/combats/combat6.png" />
-        <div class="filter-left"></div>
-      </div>
     </div>
     <div id="section-2">
       <div>
@@ -263,6 +259,7 @@ p, h3 {
   cursor: pointer;
   width: fit-content;
   z-index: 1;
+  color: white;
 }
 .banner p {
   text-align: center;
@@ -285,18 +282,18 @@ p, h3 {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  clip-path: polygon(5% 3%, 45% 10%, 55% 0, 83% 15%, 100% 0, 100% 100%, 0 100%, 0 34%, 0 24%, 0 12%);
+  /* clip-path: polygon(5% 3%, 45% 10%, 55% 0, 83% 15%, 100% 0, 100% 100%, 0 100%, 0 34%, 0 24%, 0 12%); */
 }
 .banner-fade .banner-img {
   background-position: top;
-  background-image: url(../assets/rpg_weapon.png);
+  background-image: url(../assets/exploration.png);
 }
 .banner-fade .hero {
-  background-image: url(../assets/combats/combat1.png);
+  background-image: url(../assets/combats/Owrilia.png);
   clip-path: none;
-  background-position: bottom;
+  background-position: top;
   top: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 80% 94%, 50% 99%, 36% 83%, 21% 94%, 7% 88%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 80% 94%, 50% 99%, 36% 83%, 21% 94%, 7% 88%, 0 100%); */
 
 }
 .banner-fade {
@@ -310,9 +307,9 @@ p, h3 {
   z-index: -1;
   background-size: cover;
   background-position: center;
-  background-image: url(../assets/village.png);
+  background-image: url(../assets/forest.png);
   background-attachment: fixed;
-  clip-path: polygon(5% 3%, 45% 10%, 55% 0, 83% 15%, 100% 0, 100% 100%, 0 100%, 0 34%, 0 24%, 0 12%);
+  /* clip-path: polygon(5% 3%, 45% 10%, 55% 0, 83% 15%, 100% 0, 100% 100%, 0 100%, 0 34%, 0 24%, 0 12%); */
 }
 @media screen and (max-width: 768px) {
   .image, .image-left {

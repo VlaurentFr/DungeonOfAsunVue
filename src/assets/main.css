@@ -18,6 +18,8 @@ body::-webkit-scrollbar-thumb {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
 #container {

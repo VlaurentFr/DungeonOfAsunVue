@@ -37,7 +37,7 @@ export const race = [
 export const human = [
   {
     name: `Humains`,
-    img: `races/humans.png`,
+    img: `races/Chrissabug/Humans.png`,
     desc: `Leur culture est diverse et variée, allant des civilisations les plus avancées aux tribus nomades. Les humains sont souvent considérés comme des créatures passionnées, avec une grande curiosité et une soif de connaissances. Ils ont une grande capacité d'adaptation, qui leur a permis de prospérer dans des environnements très différents. Bien que les humains aient été les premiers à se révolter contre les dragons, ils ont également entretenu des relations pacifiques avec certains d'entre eux, notamment avec les drakéides, une race de dragons semi-humanoïdes. Les humains sont également connus pour leur habileté à manipuler la magie, et de nombreux mages humains ont acquis une grande renommée à travers les âges. La société humaine est souvent divisée en classes sociales, avec des structures hiérarchiques complexes et des systèmes de gouvernance variés. Les humains ont également joué un rôle majeur dans l'histoire des royaumes, participant à de nombreuses guerres et alliances, et ont souvent été les instigateurs de changements politiques importants. En somme, les humains sont une espèce diversifiée et complexe, ayant joué un rôle majeur dans l'histoire des royaumes et dont l'influence continue de se faire sentir aujourd'hui.
     `,
     caract: "+5 FOR +5 DEX +5 SAG",
@@ -138,14 +138,14 @@ export const human = [
 export const elf = [
   {
     name: `Elfes des bois`,
-    img: `races/wood-elf.png`,
+    img: `races/Chrissabug/WoodElf.png`,
     desc: `ont émergé il y a plusieurs millénaires comme une race distincte dans votre univers. Au début, ils étaient simplement des humains qui vivaient dans les bois, mais au fil du temps, ils ont subi des transformations physiques qui les ont changés en une race distincte. Ces transformations ont également conduit les Elfes des bois à vénérer la nature au lieu des dieux célestes, créant ainsi le Royaume de Trésabia. En tant que race de guerriers forestiers, les Elfes des bois seraient connus pour leur connaissance intime des bois et de la faune qui y vit ainsi que leur dextérité et discrétion en forêt. Ils seraient également connus pour leur capacité à canaliser la magie de la nature, qui est renforcée par leur lien étroit avec la nature. Leur capacité à canaliser la magie de la nature leur permettrait également l'appel d'animaux sauvages pour les aider dans le combat.    `,
     caract: "-5 FOR +15 DEX +5 SAG",
     talent: "Oeil de faucon: Permet de voir mieux / plus facilement"
   },
   {
     name: `Elfes des cavernes`,
-    img: `races/dark-elf.png`,
+    img: `races/Chrissabug/DarkElf.png`,
     desc: `Les elfes des cavernes, également connus sous le nom d'elfes noirs ou d'elfes du néant, sont une race de créatures sinistres qui vivent dans les profondeurs des cavernes et des souterrains. Tout comme leurs cousins elfes des bois, les elfes des cavernes sont originellement des hommes, mais leur mode de vie et leurs croyances les ont transformés en une race à part entière. Les elfes des cavernes ne vénèrent pas les mêmes aspects de la nature que les elfes des bois. Au contraire, ils vouent un culte fort au macabre et au monstrueux. Ils sont fascinés par les créatures qui se cachent dans les ténèbres, et leur société est basée sur la domination et la cruauté. En raison de leur habitat sombre et souterrain, les elfes des cavernes sont devenus nyctalopes, capables de voir dans l'obscurité totale. Ils sont également connus pour leur agilité et leur discrétion, ce qui en fait des prédateurs redoutables dans les souterrains et les cavernes.
     Les elfes des cavernes sont souvent craints et évités par les autres races, car leur réputation de cruauté et de malveillance est bien établie. 
     Cependant, leur connaissance de l'environnement souterrain peut être utile pour les aventuriers qui cherchent à explorer les profondeurs de la terre. 
@@ -164,7 +164,7 @@ export const elf = [
   // },
   {
     name: `Elfes d'Uriel`,
-    img: `races/hight-elf.png`,
+    img: `races/Chrissabug/UrielElf.png`,
     desc: `Les elfes d'Uriel sont les plus proches des elfes ayant des liens étroits avec leur ancêtre, l'homme. Cependant, leur longévité exceptionnelle et leur magie puissante ont fait d'eux une cible pour les humains qui les craignent et les envient. Les elfes d'Uriel ont ainsi été persécutés pendant des siècles, poussés à quitter leurs foyers et à errer à travers le monde à la recherche d'un lieu sûr pour s'établir. Après des siècles d'errance et de souffrance, les elfes d'Uriel ont trouvé refuge dans une vallée isolée, protégée par des montagnes et de vastes forêts. Ils ont fondé une cité, appelée Elvandar, et ont érigé des murs magiques pour la protéger des invasions humaines. Les elfes d'Uriel ont développé une culture sophistiquée basée sur la magie, l'art et la poésie. Ils ont une grande sagesse et une connaissance approfondie de la nature, qu'ils considèrent comme sacrée. Cependant, leur histoire de persécution a laissé des cicatrices profondes, et les elfes d'Uriel ont une méfiance naturelle envers les étrangers, en particulier les humains. En dépit de leur reclusivité, les elfes d'Uriel ont un rôle important dans le monde, agissant souvent comme gardiens de la nature et des artefacts magiques. Leur magie puissante, combinée à leur grande agilité et leur maîtrise des armes de mêlée, font d'eux des adversaires redoutables en cas de conflit.
     `,
     caract: "-5 FOR +5 DEX +15 SAG",
@@ -191,7 +191,7 @@ export const dwarf = [
   // },
   {
     name: `Nains des Montagnes`,
-    img: `races/mountains-dwarf.png`,
+    img: `races/Chrissabug/Dwarf.png`,
     desc: `sont un peuple fier et indépendant, qui vivent dans des cités souterraines taillées dans les montagnes. Les nains sont réputés pour leur expertise en matière d'exploitation minière, de forgerie et de construction de fortifications, ce qui leur a permis de survivre dans leur environnement difficile. Ils ont également acquis une grande expertise en matière de runes naines, qui leur permettent de renforcer les armes, les armures et les outils qu'ils créent. Ils sont également connus pour leur force physique et leur habileté au combat, et sont souvent engagés comme mercenaires ou gardes du corps. Les nains sont fiers de leur héritage et de leur culture, et ont une grande affection pour les traditions et les cérémonies. Cependant, ils ont tendance à être méfiants envers les étrangers et à se montrer très réservés avec ceux qu'ils ne connaissent pas bien. Ils sont les gardiens des secrets les plus 
     anciens et les plus puissants de la magie naine, et ils ont le pouvoir de transformer 
     la roche en or et d'ouvrir des portails vers d'autres mondes. Les nains des montagnes 
@@ -209,7 +209,7 @@ export const dwarf = [
   },
   {
     name: `Gnomes de Tirwar`,
-    img: `races/gnome.webp`,
+    img: `races/Chrissabug/Gnome.png`,
     desc: `Tirwar n'est pas une cité, mais un labyrinthe souterrain, un enchevêtrement de cavernes naturelles fusionnées avec des structures mécaniques complexes, des ponts suspendus, des tours de verre renforcé et des laboratoires interdits. La lumière y est artificielle, émise par des cristaux technomagiques pulsant d’une lueur froide. Chaque mur transpire le génie... et la décadence.
     Les gnomes de Tirwar forment une société stratifiée et autoritaire, dominée par des castes de scientifiques, de technomages, et de bio-ingénieurs. La connaissance est la monnaie la plus précieuse. Ils vénèrent non pas des dieux, mais des concepts : la Domination de la Nature, la Perfection de la Forme, et l'Évolution Forcée. Leur arrogance est telle qu’ils se considèrent comme les héritiers légitimes du monde souterrain, voire du monde entier.
     Ce sont eux qui, dans leur quête de perfection, ont créé les Rak’thar. Pour eux, les Rak’thar n’étaient pas des êtres vivants, mais des outils, des prototypes dans une longue série d’expérimentations. Cette incapacité à percevoir les limites morales de leurs actes a été la cause de leur chute partielle, lorsque ces « créations » se sont rebellées.
@@ -222,7 +222,7 @@ export const dwarf = [
 export const orc = [
   {
     name: `Orcs de Koven`,
-    img: `races/orc.png`,
+    img: `races/Chrissabug/Ork.png`,
     desc: `Les orcs de Koven sont des humains qui se différencient par leur force physique nettement supérieure au détriment d’une part d’intelligence.
     Les Orcs sont des combattants redoutables, utilisant des armes lourdes telles que des haches et des masses, ainsi que des armes de jet comme des javelots et des arcs. Ils préfèrent également le combat rapproché, utilisant leur force brute pour écraser leurs ennemis.
     Bien que les Orcs soient souvent considérés comme des ennemis dangereux, ils ont leur propre code d'honneur et de loyauté envers leur tribu. Les Orcs qui trahissent leur tribu sont souvent considérés comme des lâches et des traîtres, et peuvent être bannis ou même exécutés.
@@ -241,7 +241,7 @@ export const orc = [
   // {
   //   name: `Orcs Vert`,
   //   img: `races/green-orc.png`,
-  //   desc: `Les Orcs Vert sont une race d'orcs qui descendent d'un parent gobelin. Ils sont connus pour leur nature brutale et leur absence totale d'intelligence, ce qui les amène à vivre exclusivement pour piller et combattre. Pour eux, la taille et la force physique sont le signe ultime de la puissance, et ils croient que plus un orc est gros, plus il est puissant. En tant que race de guerriers sauvages, les orcs verts seraient redoutables sur le champ de bataille en raison de leur force brute et de leur résistance. Ils seraient également connus pour leur capacité à endurer de fortes douleurs et pour leur tendance à se battre jusqu'à la mort plutôt que de fuir. Cependant, leur manque d'intelligence peut être un handicap dans des situations complexes ou stratégiques, et ils peuvent souvent être manipulés ou trompés par des adversaires plus rusés. Leurs habitudes de pillage et de violence peuvent également les mettre en conflit avec d'autres races et communautés, ce qui peut les amener à être considérés comme une menace. Leur force physique surhumaine leur permettrait de porter des coups dévastateurs, tandis que leur résistance les aiderait à survivre à des blessures mortelles pour autrui.
+  //   desc: `Les Orcs Vert sont connus pour leur nature brutale et leur absence totale d'intelligence, ce qui les amène à vivre exclusivement pour piller et combattre. Pour eux, la taille et la force physique sont le signe ultime de la puissance, et ils croient que plus un orc est gros, plus il est puissant. En tant que race de guerriers sauvages, les orcs verts seraient redoutables sur le champ de bataille en raison de leur force brute et de leur résistance. Ils seraient également connus pour leur capacité à endurer de fortes douleurs et pour leur tendance à se battre jusqu'à la mort plutôt que de fuir. Cependant, leur manque d'intelligence peut être un handicap dans des situations complexes ou stratégiques, et ils peuvent souvent être manipulés ou trompés par des adversaires plus rusés. Leurs habitudes de pillage et de violence peuvent également les mettre en conflit avec d'autres races et communautés, ce qui peut les amener à être considérés comme une menace. Leur force physique surhumaine leur permettrait de porter des coups dévastateurs, tandis que leur résistance les aiderait à survivre à des blessures mortelles pour autrui.
   //   `,
   //   caract: "+20 Force, -15 Sagesse",
   //   talent: "Résistance à la Douleur : Capacité à continuer à se battre malgré des blessures graves, montrant une ténacité et une résilience exceptionnelles."
@@ -250,18 +250,18 @@ export const orc = [
 export const other = [
   {
     name: `Drakèides`,
-    img: `races/drak.png`,
+    img: `races/Chrissabug/Drak.png`,
     desc: `Les Drakéides sont une race hybride, née de l'union entre des dragons et des humains. Leur apparence physique est très variable en fonction de la lignée dragonique de leur parent, mais ils partagent certains traits communs tels que des écailles, des cornes et parfois même des ailes.<br/><br/>
     Leur histoire est marquée par des périodes de discrimination et de persécution en raison de leur héritage draconique. Bien qu'ils soient présents dans de nombreuses régions de Thierion, ils sont souvent mal vus par les autres races, en particulier dans le Royaume de Lorus où leur existence est considérée comme impie.<br/>
     Cependant, les Drakéides ont également des traits positifs qui les rendent uniques. Ils sont très habiles en matière de métallurgie, notamment dans la fabrication d'armes mais aussi dans la magie drakonique.<br/><br/>
     Les Drakéides ont une société organisée, basée sur des clans, chacun étant dirigé par un chef respecté. Leur culture est imprégnée de traditions dragoniques, telles que la pratique de rites de passage inspirés de l'âge adulte des dragons. Malgré leur histoire mouvementée, les Drakéides continuent de s'intégrer dans les sociétés humaines et de contribuer à la richesse de la culture de Thierion.
     `,
     caract: "+10 FOR -5 DEX +10 SAG",
-    talent: "Langue Draconique: Permet de parler et lire le draconique"
+    talent: "Volonté du Dragon: Avantage contre les effets de peur et charme, jets re-lançables une fois par jour"
   },
   {
     name: `Magtersiens`,
-    img: `races/magtersien.png`,
+    img: `races/Chrissabug/Magtersien.png`,
     desc: `Les Magtersiens sont les descendants d'un cataclysme magique majeur issue de la tour de Magters ce qui provoqua une vague d'instabilité de la magie dnas tout le monde. Certaines personnes se sont ainsi trouvées transformé en une nouvelle races.<br/><br/>
     Les Magtersiens possèdent des peaux aux teintes rouges, bleues ou pourpres, des cornes variées, des queues préhensiles, et des yeux lumineux. Certains arborent des griffes ou dégagent une légère odeur de soufre.<br/>
     Souvent perçus avec méfiance en raison de leur apparence, les Magtersiens ont formé des alliances avec les gnomes. Ils se heurtent fréquemment aux ordres religieux qui les considèrent comme des menaces.<br/>
@@ -272,7 +272,7 @@ export const other = [
   },
   {
     name: `Hommes Singes`,
-    img: `races/wukong.png`,
+    img: `races/Chrissabug/monkey.png`,
     desc: `Dotés d'une force physique exceptionnelle et d'une agilité incroyable, ils sont connus pour leur peau épaisse et leur pelage sombre et dense. Ils ont une apparence mi-homme, mi-singe, au comportement espiègle et joueur. Ils sont réputés pour leur intelligence limitée mais leur curiosité naturelle, et sont souvent considérés comme des êtres sauvages mais respectés pour leur force physique.
     <br/><br/>
     Les Hommes-Singes sont des combattants habiles, utilisant leur force brute et leur agilité pour attaquer leurs ennemis. Ils sont également capables d'utiliser des armes. En tant qu'excellents grimpeurs, ils peuvent attaquer leurs ennemis depuis les arbres ou les falaises.
