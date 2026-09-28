@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { panth } from '@/mock/panthsMock';
+import { panth } from '@/oldMock/panthsMock';
 import { useGodsStore } from '@/stores/Gods';
 import { useRouter } from 'vue-router';
 

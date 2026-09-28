@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { panth } from '@/mock/panthsMock';
-import { kingGods, majorGods, minorGods, princeGods, otherGods } from '@/mock/godsMock'
+import { panth } from '@/oldMock/panthsMock';
+import { kingGods, majorGods, minorGods, princeGods, otherGods } from '@/oldMock/godsMock'
 import { useGodsStore } from '@/stores/Gods';
 import { useRouter } from 'vue-router';
 

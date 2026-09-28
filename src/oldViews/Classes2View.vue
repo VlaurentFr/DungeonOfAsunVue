@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { noviceClasses, avancedClasses, masterClasses } from '@/mock/classesMock';
+import { noviceClasses, avancedClasses, masterClasses } from '@/oldMock/classesMock';
 
 function getImageUrl(name: string) {
   return new URL(`../assets/${name}`, import.meta.url).href

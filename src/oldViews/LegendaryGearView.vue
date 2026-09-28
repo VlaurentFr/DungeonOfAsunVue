@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { gear } from '@/mock/legendaryGearMock';
+import { gear } from '@/oldMock/legendaryGearMock';
 import { computed, ref } from 'vue';
 
 const search = ref("");

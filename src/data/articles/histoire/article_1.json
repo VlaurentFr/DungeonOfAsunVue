@@ -1,0 +1,27 @@
+{
+  "citation": "Les Temps Innommables désignent la période la plus ancienne de l'existence d'Asun. Elle précède toute histoire fiable, toute civilisation...",
+  "tags": ["Public", "histoire"],
+  "link_articles": [2,3,4],
+  "sections": [
+  {
+    "title": "Présentation",
+    "type": "text",
+    "content": "Les Temps Innommables désignent la période la plus ancienne de l'existence d'Asun.\nElle précède toute histoire fiable, toute civilisation connue et tout récit pouvant être vérifié.\n\nC'est durant cette période que se situent les événements les plus anciens connus :\n- l'existence de l'Innommé ;\n- l'apparition des Forces ;\n- l'apparition d'Asun ;\n- l'éveil des dieux ;\n- les premières transformations du monde.\n\nAucun calendrier mortel ne permet de mesurer cette époque."
+  },
+  {
+    "title": "TEST",
+    "type": "banner",
+    "subtitle": "Ceci est un test",
+    "content": "Les Temps Innommables désignent la période la plus ancienne de l'existence d'Asun."
+  },
+  {
+    "type": "banner",
+    "subtitle": "Ceci est un test",
+    "content": "Les Temps Innommables désignent la période la plus ancienne de l'existence d'Asun."
+  },
+  {
+    "title": "Secrets",
+    "type": "dm-banner",
+    "content": "Les Temps Innommables désignent la période la plus ancienne de l'existence d'Asun."
+  }
+]}

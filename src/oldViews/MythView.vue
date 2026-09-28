@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { kingGods, majorGods, minorGods, princeGods, otherGods } from '@/mock/godsMock'
+import { kingGods, majorGods, minorGods, princeGods, otherGods } from '@/oldMock/godsMock'
 import { useGodsStore } from '@/stores/Gods';
 import { useRouter } from 'vue-router';
 

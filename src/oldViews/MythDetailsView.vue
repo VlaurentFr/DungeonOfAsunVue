@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { kingGods, majorGods, minorGods, princeGods, otherGods } from '@/mock/godsMock'
-import { miracles } from '@/mock/miracleMock';
-import { panth } from '@/mock/panthsMock';
+import { kingGods, majorGods, minorGods, princeGods, otherGods } from '@/oldMock/godsMock'
+import { miracles } from '@/oldMock/miracleMock';
+import { panth } from '@/oldMock/panthsMock';
 import { useGodsStore } from '@/stores/Gods';
 import { useRouter } from 'vue-router';
 

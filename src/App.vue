@@ -4,23 +4,26 @@ import Footer from './components/FooterBar.vue'
 import Nav from './components/NavBar.vue'
 import MegaNavBar from './components/MegaNavBar.vue';
 import { ref, watch } from 'vue';
+import { useNavbar } from './composables/useNavbar.js';
 
 const route = useRoute()
 const loading = ref(true)
 
 watch(route, (newValue) => {
-  if(newValue.name == 'home'){
-    setTimeout(() => loading.value = false, 2000)
+  if(newValue.name == 'accueil'){
+    setTimeout(() => loading.value = false, 1000)
   } else {
     loading.value = false;
   }
   window.scrollTo(0,0);
 })
+
+useNavbar()
 </script>
 
 <template>
   <div v-if="!loading" class="visible">
-    <Nav></Nav>x
+    <Nav></Nav>
     <!-- <MegaNavBar></MegaNavBar> -->
     <div id="container">
       <RouterView />

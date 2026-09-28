@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { faction } from '@/mock/factionMock';
+import { orga } from '@/oldMock/orgaMock';
 import { ref } from 'vue';
 
 const selected = ref<number>(0);
@@ -17,23 +17,30 @@ function changeOrga(index: number) {
 <template>
   <div class="visible">
     <div class='header'>
-      <h1>Les Factions</h1>
+      <h1>Les organisations</h1>
       <h2>Rejoignez celle qui<span> correspond </span></h2>
-      <p>Au cours de votre aventure, il vous sera possible de rejoindre une faction d'Asun</p>
+      <p>Au cours de votre aventure, il vous sera possible de rejoindre une des organisations d'Asun. Plusieurs vous intéressent ? <br/>Rejoignez les toutes !</p>
     </div>
 
     <div class='orga-container'>
       <div class="orga-title-list">
-        <div class="orga-title" :class="{ 'selected-orga': selected === index }" v-for="(o, index) of faction" :key="o.title" @click="changeOrga(index)">
+        <div class="orga-title" :class="{ 'selected-orga': selected === index }" v-for="(o, index) of orga" :key="o.title" @click="changeOrga(index)">
           <p>{{ o.title }}</p>
         </div>
       </div>
       <div class="orga-desc">
         <h3>Description</h3>
-        <div v-html="faction[selected].desc"></div>
+        <p>{{ orga[selected].desc }}</p>
+        <h3 class="rank-title">Rangs</h3>
+        <div class="rank-number-container">
+          <div v-for="(rank, index) of orga[selected].rank" :key="rank.name">
+            <p @click="selectedRank = index" class="rank-number" :class="{ 'selected': selectedRank === index }">{{ index + 1 }}</p>
+          </div>
+        </div>
+        <p><span>{{ orga[selected].rank[selectedRank].name }}</span> {{ orga[selected].rank[selectedRank].desc }}</p>
       </div>
       <div class="aside-img">
-        <img :src="getImageUrl(faction[selected].img)"/>
+        <img :src="getImageUrl(orga[selected].img)"/>
         <div class="green-filter"></div>
       </div>
     </div>
@@ -54,19 +61,13 @@ function changeOrga(index: number) {
   border-right: #FFF solid 1px;
   padding: 0 41px 0 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 8px;
-  height: min-content;
-  width: 33%;
+  flex-direction: column;
+  gap: 16px;
 }
 .orga-title {
   padding: 16px 32px;
   border-radius: 8px;
   cursor: pointer;
-  flex: 1;
-  flex-basis: calc(50% - 16px);
-  height: fit-content;
 }
 .orga-title:hover {
   background-color: var(--backgroundColor);
@@ -77,7 +78,7 @@ function changeOrga(index: number) {
 .orga-title p {
   color: var(--textColor);
   font-family: Work Sans;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -91,8 +92,35 @@ function changeOrga(index: number) {
 .orga-desc {
   max-width: 560px;
 }
-.orga-desc :deep(span) {
-  color: var(--primaryColor);
+.rank-title {
+  margin: 64px 0 !important;
+}
+.rank-number-container {
+  display: flex;
+  margin: 64px 0 24px 0;
+  gap: 4px;
+  border-bottom: solid var(--primaryColor) 4px;
+}
+.rank-number-container p {
+  height: 48px;
+  width: 48px;
+  font-size: 24px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: var(--backgroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rank-number-container p:hover {
+  background: var(--primaryColor);
+  color: white;
+}
+.rank-number-container .selected {
+  background: var(--primaryColor);
+  color: white;
 }
 .aside-img{
   position: fixed;
@@ -122,12 +150,11 @@ function changeOrga(index: number) {
     flex-direction: column;
   }
   .orga-title-list {
-    flex-wrap: nowrap;
+    flex-direction: row;
     height: fit-content;
-    overflow: auto;
+    overflow: scroll;
     border-right: none;
     border-bottom: solid white 1px;
-    width: auto;
   }
   .orga-title {
     display: flex;
@@ -136,6 +163,9 @@ function changeOrga(index: number) {
   }
   .orga-title p {
     font-size: 16px;
+  }
+  .rank-number-container {
+    overflow: auto;
   }
 }
 @media screen and (max-width: 1024px) { 

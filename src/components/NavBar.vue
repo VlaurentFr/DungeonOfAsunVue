@@ -1,290 +1,49 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 import { useDark, useToggle, useWindowSize } from '@vueuse/core'
-import { computed, ref } from 'vue';
-import { MOB } from '@/mock/bestiaryMock';
-import { gear } from '@/mock/legendaryGearMock';
-import { spell } from '@/mock/spellMock';
+import { computed, ref, watch } from 'vue';
+import { useRoute } from 'vue-router'
+import { hasNavbar } from '@/composables/useNavbar';
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 const { width } = useWindowSize()
-const isOpen = ref(false)
-
-const mobList = MOB.sort((a, b) => a.name.localeCompare(b.name))
-const gearList = gear.sort((a, b) => a.name.localeCompare(b.name)).filter((w) => w.type == 'Armure' || w.type == 'Amulette' || w.type == 'Anneau'|| w.type == 'Cape' )
-const weaponsList = gear.sort((a, b) => a.name.localeCompare(b.name)).filter((w) => w.type != 'Armure' && w.type != 'Amulette' && w.type != 'Anneau' && w.type != 'Cape')
-const spellList = spell.filter((x) => x.type.toLowerCase().includes('mag')).sort((a, b) => a.name.localeCompare(b.name)).slice(0,13)
-const compList = spell.sort((a, b) => a.name.localeCompare(b.name)).filter((x) => x.type.toLowerCase().includes('phys'))
-
+const route = useRoute()
 
 const LINKS = [
   {
-    url: '/Home',
+    url: '/accueil',
     name: 'Accueil'
   },
   {
-    name: 'Univers',
-    sub: [
-      {
-        url: '/Univers/story',
-        name: 'Histoires générales'
-      },
-      {
-        url: '/Univers/gods',
-        name: 'Mythologie'
-      },
-      // {
-      //   url: '/Univers/panth',
-      //   name: 'Panthéons'
-      // },
-      {
-        url: '/Univers/races',
-        name: 'Races & Peuples'
-      },
-      {
-        url: '/Univers/faction',
-        name: 'Factions & Royaumes'
-      },
-      {
-        url: '/Univers/orga',
-        name: 'Organisations'
-      },
-    ]
+    url: '/wiki',
+    name: 'Wiki',
   },
   {
+    url: '/regles',
     name: 'Règles du jeu',
-    sub: [
-      {
-        url: '/Rules/creation',
-        name: 'Création de personnage'
-      },
-      {
-        url: '/Rules/fight',
-        name: 'Combats'
-      },
-      {
-        url: '/Rules/class2',
-        name: 'Classes'
-      },
-      {
-        url: '/Rules/weapons',
-        name: 'Armes'
-      },
-      {
-        url: '/Rules/spell',
-        name: 'Liste des compétences'
-      },
-      {
-        url: '/Rules/dons',
-        name: 'Liste des dons'
-      },
-
-      {
-        url: '/Rules/gear',
-        name: "Objets d'aventurier"
-      },
-    ]
   },
   {
-    name: 'Compendium',
-    mega: true,
-    sub: [
-      {
-        url: '/Rules/legendary-gear',
-        name: 'Objets Légendaires'
-      },
-      {
-        url: '/Bestiary',
-        name: 'Bestiaire'
-      },
-    ]
+    url: '/builder',
+    name: 'Builder',
   },
-  {
-    name: 'Autres',
-    sub: [
-      {
-        url: '/Map',
-        name: 'Map'
-      },
-      {
-        url: '/Bibliothèque',
-        name: 'W.I.P Bibliothèque'
-      },
-    ]
-  }, 
 ]
-
-const showMenu = () => {
-  isOpen.value = true;
-}
-const hideMenu = () => {
-  isOpen.value = false;
-}
 
 </script>
 
 <template>
-    <nav>
-      <div class="background-blur"></div>
+    <nav :class="{'isDisplayed': hasNavbar}">
+      <!-- <div class="background-blur"></div> -->
       <div>
-        <RouterLink id="main-title" to="/Home"><img src="../assets/DoA.png"/></RouterLink>
-        <div id="content" v-if="width >= 1440">
-          <div class="link" :class="[{'dropdown': !link.url}, {'mega': link.mega}]" v-for="link of LINKS" :key="link.url">
-            <div v-if="link.url">
-              <RouterLink :to="link.url">{{ link.name }}</RouterLink>
-            </div>
-            <div v-else>
-              <p>{{ link.name }}</p>
-            </div>
-            <div v-if="!link.mega" class="subNav">
-              <div v-for="sublink of link.sub" :key="sublink.url">
-                  <RouterLink v-if="sublink.url" :to="sublink.url">{{ sublink.name }}</RouterLink>
-                </div>
-            </div>
-            <div v-else class="subNav">
-              <ul>
-                <li>
-                  <p><RouterLink :to="'/bestiary'">Bestiaire</RouterLink></p>
-                  <div class="nav">
-                    <div class="nav-wrapper">
-                      <div class="col"><img class="huge-img" src="@/assets/dragon.png"/></div>
-                      <div class="col">
-                        <h4>A - D</h4>
-                        <div class="row">
-                          <div>
-                            <RouterLink :to="'/bestiary#'+m.name" v-for="m of mobList.filter((mob) => mob.name.startsWith('A') ||  mob.name.startsWith('B') ||  mob.name.startsWith('C') ||  mob.name.startsWith('D')).slice(0,4)" :key="m.name"> {{ m.name }}</RouterLink>
-                            <RouterLink class="button" :to="'/bestiary#A'">Voir plus</RouterLink>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h4>E - H</h4>
-                        <div class="row">
-                          <div>
-                            <RouterLink :to="'/bestiary#'+m.name" v-for="m of mobList.filter((mob) => mob.name.startsWith('E') ||  mob.name.startsWith('F') ||  mob.name.startsWith('G') ||  mob.name.startsWith('H')).slice(0,4)" :key="m.name"> {{ m.name }}</RouterLink>
-                            <RouterLink class="button" :to="'/bestiary#E'">Voir plus</RouterLink>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h4>I - L</h4>
-                        <div class="row">
-                          <div>
-                            <RouterLink :to="'/bestiary#'+m.name" v-for="m of mobList.filter((mob) => mob.name.startsWith('I') ||  mob.name.startsWith('J') ||  mob.name.startsWith('K') ||  mob.name.startsWith('L')).slice(0,4)" :key="m.name"> {{ m.name }}</RouterLink>
-                            <RouterLink class="button" :to="'/bestiary#I'">Voir plus</RouterLink>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h4>M - P</h4>
-                        <div class="row">
-                          <div>
-                            <RouterLink :to="'/bestiary#'+m.name" v-for="m of mobList.filter((mob) => mob.name.startsWith('M') ||  mob.name.startsWith('N') ||  mob.name.startsWith('0') ||  mob.name.startsWith('P')).slice(0,4)" :key="m.name"> {{ m.name }}</RouterLink>
-                            <RouterLink class="button" :to="'/bestiary#M'">Voir plus</RouterLink>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h4>Q - T</h4>
-                        <div class="row">
-                          <div>
-                            <RouterLink :to="'/bestiary#'+m.name" v-for="m of mobList.filter((mob) => mob.name.startsWith('Q') ||  mob.name.startsWith('R') ||  mob.name.startsWith('S') ||  mob.name.startsWith('R')).slice(0,4)" :key="m.name"> {{ m.name }}</RouterLink>
-                            <RouterLink class="button" :to="'/bestiary#Q'">Voir plus</RouterLink>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h4>U - Z</h4>
-                        <div class="row">
-                          <div>
-                            <RouterLink :to="'/bestiary#'+m.name" v-for="m of mobList.filter((mob) => mob.name.startsWith('U') ||  mob.name.startsWith('V') ||  mob.name.startsWith('W') ||  mob.name.startsWith('X') ||  mob.name.startsWith('Y') ||  mob.name.startsWith('Z')).slice(0,4) " :key="m.name"> {{ m.name }}</RouterLink>
-                            <RouterLink class="button" :to="'/bestiary#U'">Voir plus</RouterLink>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </li>
-                <li><p><RouterLink :to="'/Rules/gear'">Objets d'Aventurier</RouterLink></p></li>
-                <li><p><RouterLink :to="'/Rules/legendary-gear'">Objets Légendaires</RouterLink></p>
-                  <div class="nav">
-                    <div class="nav-wrapper">
-                      <div class="col"><img class="huge-img" src="@/assets/Spear.png"/></div>
-                      <div class="col">
-                        <h4>Equipements</h4>
-                        <div class="row">
-                          <div>
-                            <RouterLink :to="'/Rules/legendary-gear#'+m.name" v-for="m of gearList.slice(0,5)" :key="m.name"> {{ m.name }}</RouterLink>
-                          </div>
-                          <div>
-                            <RouterLink :to="'/Rules/legendary-gear#'+m.name" v-for="m of gearList.slice(5,10)" :key="m.name"> {{ m.name }}</RouterLink>
-                          </div>
-                          <div>
-                            <RouterLink :to="'/Rules/legendary-gear#'+m.name" v-for="m of gearList.slice(10,14)" :key="m.name"> {{ m.name }}</RouterLink>
-                            <RouterLink class="button" :to="'/Rules/legendary-gear'">Voir plus</RouterLink>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h4>Armes</h4>
-                        <div class="row">
-                          <div>
-                            <RouterLink :to="'/Rules/legendary-gear#'+m.name" v-for="m of weaponsList.slice(0,5)" :key="m.name"> {{ m.name }}</RouterLink>
-                          </div>
-                          <div>
-                            <RouterLink :to="'/Rules/legendary-gear#'+m.name" v-for="m of weaponsList.slice(5,10)" :key="m.name"> {{ m.name }}</RouterLink>
-                          </div>
-                          <div>
-                            <RouterLink :to="'/Rules/legendary-gear#'+m.name" v-for="m of weaponsList.slice(10,14)" :key="m.name"> {{ m.name }}</RouterLink>
-                            <RouterLink class="button" :to="'/Rules/legendary-gear'">Voir plus</RouterLink>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li><p><RouterLink :to="'/Rules/spell'">Liste des compétences</RouterLink></p>
-                  <div class="nav">
-                    <div class="nav-wrapper">
-                      <div class="col"><img class="huge-img" src="@/assets/spellbook.png"/></div>
-                      <div class="col">
-                        <h4>Magiques</h4>
-                        <div class="row">
-                          <div>
-                            <RouterLink :to="'/Rules/spell#'+m.name" v-for="m of spellList.slice(0,5)" :key="m.name"> {{ m.name }}</RouterLink>
-                          </div>
-                          <div>
-                            <RouterLink :to="'/Rules/spell#'+m.name" v-for="m of spellList.slice(5,10)" :key="m.name"> {{ m.name }}</RouterLink>
-                          </div>
-                          <div>
-                            <RouterLink :to="'/Rules/spell#'+m.name" v-for="m of spellList.slice(10,14)" :key="m.name"> {{ m.name }}</RouterLink>
-                            <RouterLink class="button" :to="'/Rules/spell'">Voir plus</RouterLink>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <h4>Physiques</h4>
-                        <div class="row">
-                          <div>
-                            <RouterLink :to="'/Rules/spell#'+m.name" v-for="m of compList.slice(0,5)" :key="m.name"> {{ m.name }}</RouterLink>
-                          </div>
-                          <div>
-                            <RouterLink :to="'/Rules/spell#'+m.name" v-for="m of compList.slice(5,10)" :key="m.name"> {{ m.name }}</RouterLink>
-                          </div>
-                          <div>
-                            <RouterLink :to="'/Rules/spell#'+m.name" v-for="m of compList.slice(10,14)" :key="m.name"> {{ m.name }}</RouterLink>
-                            <RouterLink class="button" :to="'/Rules/spell'">Voir plus</RouterLink>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <RouterLink id="main-title" to="/Home"><img src="../assets/logo/DungeonOfAsun_logo_dark.png"/></RouterLink>
+        <div id="content">
+          <ul>
+            <li class="link" v-for="link of LINKS" :key="link.url" :class="{ 'active': route.path.startsWith(link.url) }">
+              <RouterLink :to="link.url" v-if="link.url" >{{ link.name }}</RouterLink>
+              <a v-else >{{ link.name }}</a>
+            </li>
+          </ul>
+          <button class="cta"><RouterLink to="/wiki"><span>Explorez le Wiki</span></RouterLink></button>
           <!-- <a id="coffee" href='https://www.buymeacoffee.com/dungeonOfAsun'>Soutenir</a> -->
           <!-- <RouterLink id="sign_up" to='/signUp'>S'inscrire</RouterLink> -->
           <!-- <RouterLink id="connect" to='/Connect'>Connexion</RouterLink> -->
@@ -296,47 +55,29 @@ const hideMenu = () => {
             <i class="fas fa-moon"></i>
           </div> -->
         </div>
-        <div v-else @click="showMenu()">
-          <i class="fas fa-bars"> </i> 
-        </div>
       </div>
     </nav>
-  <div id="menu" v-if="isOpen">
-    <div @click="hideMenu()">
-      <i class="fas fa-times"> </i> 
-        <nav>
-            <RouterLink id="main-title" to="/Home"><img src="../assets/DoA.png"/></RouterLink>
-            <div id="content">
-              <div v-for="link of LINKS" :key="link.url" :class="{'mega': link.mega}">
-                <RouterLink v-if="link.url" :to="link.url">{{ link.name }}</RouterLink>
-                <div v-for="sublink of link.sub" :key="sublink.url">
-                  <RouterLink v-if="sublink.url" :to="sublink.url">{{ sublink.name }}</RouterLink>
-                </div>
-              </div>
-              <a id="coffee" href='https://www.buymeacoffee.com/dungeonOfAsun'>Buy me a coffee</a>
-              <!-- <div v-if="isDark" id="sun" @click="toggleDark()">
-                <i class="far fa-sun"></i>
-              </div>
-              <div v-if="!isDark" id="moon" @click="toggleDark()">
-                <i class="far fa-moon"></i>
-              </div> -->
-            </div>
-        </nav>
-    </div>
-  </div>
 </template>
 
 <style scoped>
 #main-title {
-  font-family: fantasy;
-  max-height: 48px;
-  justify-content: flex-start;
+  flex: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  border: none;
 }
+
 #main-title img {
-height: 120px;
+  /* filter: invert(1); */
+  height: auto;
+  width: 90px;
 }
 #content {
-  display: contents;
+  display: flex;
+  flex: auto;
+  justify-content: space-between;
 }
 
 #menu {
@@ -348,10 +89,109 @@ height: 120px;
   line-height: 48px;
 }
 
-#menu nav {
+nav {
+  position: fixed;
+  text-align: center;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 83px;
+  background: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  background-color: #090C11;
+  color: #737880;
+  border-bottom: 0.1rem solid #737880;
 }
+
+nav:not(.isDisplayed) {
+  transform: translateY(-100px);
+  transition: all 0.3s;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: .5rem;
+  font-size: 2.2rem;
+}
+
+ul:before {
+  content:"";
+  position: absolute;
+  position-anchor: --li;
+  inset: auto anchor(right) calc(anchor(bottom) - 8px) anchor(left);
+  background: var(--secondaryColor);
+  height: 0.2rem;
+  transition: .2s .2s;
+}
+
+ul li:is(:hover,.active) {
+  anchor-name: --li;
+  background-size: 100% 100%;
+  color: var(--secondaryColor);
+  transition: .2s;
+}
+ul:has(li:hover) li.active:not(:hover) {
+  anchor-name: none;
+  background-size: 100% 0%;
+  transition: .2s;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: 900;
+  line-height: 1.5;
+  padding-inline: 0;
+  display: block;
+}
+
+nav > div {
+  width: 1120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav a, nav p {
+  color: inherit;
+  position: relative;
+  padding: 0 20px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
+  overflow: visible;
+}
+.cta {
+  border: none;
+  background-color: inherit;
+}
+.cta a{
+  border-radius: 4px;
+  padding: 8px 24px;
+  border: 1px solid var(--secondaryColor);
+  background-color: transparent;
+  color: var(--secondaryColor);
+  transform: skewX(-16deg);
+}
+
+.cta a span {
+  display: block;
+  transform: skewX(16deg);
+}
+
+.cta a:hover {
+  background-color: var(--secondaryColor);
+  color: var(--textColorWhite);
+}
+
+
 
 #coffee {
   margin-left: 32px;
@@ -375,108 +215,11 @@ height: 120px;
   background-color:var(--primaryColor);
   color: var(--textColorWhite);
 }
-.subNav {
-  display: none;
-  position: absolute;
-  top: calc(48px + (16px * 2));
-  z-index: 3;
-  color: var(--textColor);
-  background-color: var(--background);
-  border-radius: 6px;
-  line-height: 48px;
-  text-align: left;
-  border-top: solid var(--primaryColor) 4px;
-}
-/* Show the dropdown menu on hover */
-.dropdown:hover .subNav {
-  display: block;
-}
 
-.mega .subNav {
-  width: 100%;
-  left: 0;
-  background-color: var(--background);
-  position: absolute;
-}
-
-.mega ul {
+#content, #content > div {
+  height: calc(48px + (16px * 2));
   display: flex;
-  margin: auto;
-  max-width: 1120px;
-  list-style-type: none;
-  justify-content: center;
-  gap: 20px;
-  
-}
-.mega ul li > p{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-bottom: 2px transparent solid;
-  border-top: 2px transparent solid;
-}
-.mega ul li:hover > p{
-  border-bottom: 2px var(--primaryColor) solid;
-  border-top: 2px var(--primaryColor) solid;
-}
-.mega ul li > p a{
-  border-bottom: none;
-}
-.mega ul li .nav {
-  height: 0px;
-  position: absolute;
-  left: 0;
-  display: flex;
-  width: 100%;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  border-bottom: 2px solid #1B1B1B;
-  background: rgba(255, 255, 255, 0.80);
-  backdrop-filter: blur(4px);
-  /* height: 180px; */
-  overflow: hidden;
-}
-.mega .nav-wrapper {
-  max-width: 1120px;
-  margin: auto;
-  display: flex;
-}
-.mega ul li:hover .nav {
-  height: 184px;
-}
-.mega ul li .nav h4 {
-  color: var(--primaryColor);
-  font-weight: bold;
-  padding: 0 20px;
-  margin: 0 10px;
-  font-size: larger;
-}
-.mega ul li .nav .col {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-}
-.mega ul li .nav .col .huge-img {
-  height: 180px;
-}
-.mega ul li .nav a {
-  margin: 0 10px;
-  padding: 0 20px;
-  line-height: 24px;
-  border: none;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 15ch;
-  text-align: left;
-  justify-content: flex-start;
-}
-.mega ul li .nav a:hover {
-  color: var(--primaryColor);
-}
-.mega ul li .nav .button {
-  color: var(--primaryColor);
-  font-weight: bold;
 }
 
 

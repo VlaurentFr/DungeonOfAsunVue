@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { spell } from '@/mock/spellMock';
+import { spell } from '@/oldMock/spellMock';
 import { computed, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import BookIcon from '@/assets/tabler_book.vue'

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 
-import { daggers, swords, Axes, spears, hands, bows, masses, gears, shields, spellBook, potions, feed, alcool, lunch, house, stones, treasure, divers } from '../mock/gearMock.js';
+import { daggers, swords, Axes, spears, hands, bows, masses, gears, shields, spellBook, potions, feed, alcool, lunch, house, stones, treasure, divers } from '../oldMock/gearMock.js';
 
 const search = ref("");
 

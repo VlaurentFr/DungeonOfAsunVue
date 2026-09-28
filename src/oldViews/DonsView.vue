@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { dons } from '@/mock/donsMock';
+import { dons } from '@/oldMock/donsMock';
 import { computed, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import BookIcon from '@/assets/tabler_book.vue'

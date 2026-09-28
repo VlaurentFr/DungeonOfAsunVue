@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import { ref } from 'vue';
-import { human, elf, dwarf, orc, other } from '@/mock/racesMock.js';
+import { human, elf, dwarf, orc, other } from '@/oldMock/racesMock.js';
 
 const type = ref("")
 function getImageUrl(name: string) {

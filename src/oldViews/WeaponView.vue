@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import { masterySword, masteryMagic, masteryShield } from '@/mock/weaponMasteryMock'
+import { masterySword, masteryMagic, masteryShield } from '@/oldMock/weaponMasteryMock'
 
 const selectedRankW = ref("H")
 const selectedRankM = ref("E")

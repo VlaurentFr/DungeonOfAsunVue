@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import SideMenuBestiary from '@/components/SideMenuBestiary.vue';
-import { MOB } from '@/mock/bestiaryMock';
+import { MOB } from '@/oldMock/bestiaryMock';
 
 const search = ref("");
 const openSpell = ref<Array<string>>([]);

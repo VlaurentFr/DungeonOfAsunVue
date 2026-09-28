@@ -1,32 +1,63 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
+import ARTICLES from '@/data/articles_index.json'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   scrollBehavior(to, from, savedPosition) {
-    if (to.hash) {
-      return { el: to.hash, top: 80 }
+    if (to.meta.scrollToTop) {
+      return { el: to.meta.scrollToTop, top: 80 }
     }
   },
   routes: [
     {
       path: '/SpellTree',
       name: 'SpellTree',
-      component: () => import('../views/SpellTreeView.vue')
+      component: () => import('../oldViews/SpellTreeView.vue')
     },
     {
       path: '/',
-      name: 'Accueil',
+      redirect: '/accueil'
+    },
+    {
+      path: '/accueil',
+      name: 'accueil',
       component: () => import('../views/HomeView.vue')
+    },
+    {
+      path: '/wiki',
+      name: 'wiki',
+      component: () => import('../views/WikiView.vue'),
+      meta: {
+        breadcrumb: 'Accueil'
+      }
+    },
+    {
+      path: '/wiki-histoire',
+      name: 'wiki-histoire',
+      component: () => import('../views/WikiHistoryView.vue'),
+      meta: {
+        breadcrumb: 'Histoire'
+      },
+      children: [
+        {
+          path: ':id',
+          name: 'wiki-histoire-article',
+          component: () => import('../views/WikiHistoryArticleView.vue'),
+          meta: {
+            breadcrumb: (route: any) => ARTICLES.find(article => article.id.toString() === route.params.id)?.title
+          }
+        },
+      ]
     },
     {
       path: '/Map',
       name: 'map',
-      component: () => import('../views/MapView.vue')
+      component: () => import('../oldViews/MapView.vue')
     },
     {
       path: '/Connect',
       name: 'connect',
-      component: () => import('../views/ConnectView.vue')
+      component: () => import('../oldViews/ConnectView.vue')
     },
     {
       path: '/Home',
@@ -36,69 +67,69 @@ const router = createRouter({
     {
       path: '/Wizard',
       name: 'wizard',
-      component: () => import('../views/WizardView.vue')
+      component: () => import('../oldViews/WizardView.vue')
     },
     // RULES
     {
       path: '/Rules/creation',
       name: 'rules-creation',
-      component: () => import('../views/CreationView.vue')
+      component: () => import('../oldViews/CreationView.vue')
     },
     {
       path: '/Rules/fight',
       name: 'rules-fight',
-      component: () => import('../views/FightView.vue')
+      component: () => import('../oldViews/FightView.vue')
     },
     {
       path: '/Rules/class',
       name: 'rules-class',
-      component: () => import('../views/ClassesView.vue')
+      component: () => import('../oldViews/ClassesView.vue')
     },
     {
       path: '/Rules/class2',
       name: 'rules-class2',
-      component: () => import('../views/Classes2View.vue')
+      component: () => import('../oldViews/Classes2View.vue')
     },
     {
       path: '/Rules/weapons',
       name: 'rules-weapon',
-      component: () => import('../views/WeaponView.vue')
+      component: () => import('../oldViews/WeaponView.vue')
     },
     {
       path: '/Rules/spell',
       name: 'rules-spell',
-      component: () => import('../views/SpellView.vue')
+      component: () => import('../oldViews/SpellView.vue')
     },
     {
       path: '/Rules/dons',
       name: 'rules-dons',
-      component: () => import('../views/DonsView.vue')
+      component: () => import('../oldViews/DonsView.vue')
     },
     {
       path: '/Rules/gear',
       name: 'rules-gear',
-      component: () => import('../views/GearView.vue')
+      component: () => import('../oldViews/GearView.vue')
     },
     {
       path: '/Rules/legendary-gear',
       name: 'rules-legendary-gear',
-      component: () => import('../views/LegendaryGearView.vue')
+      component: () => import('../oldViews/LegendaryGearView.vue')
     },
     // UNIVERS
     {
       path: '/Univers/story',
       name: 'univers-story',
-      component: () => import('../views/StoryView.vue')
+      component: () => import('../oldViews/StoryView.vue')
     },
     {
       path: '/Univers/gods',
       name: 'univers-gods',
-      component: () => import('../views/MythView.vue')
+      component: () => import('../oldViews/MythView.vue')
     },
     {
       path: '/Univers/godsDetails',
       name: 'univers-god-detail',
-      component: () => import('../views/MythDetailsView.vue')
+      component: () => import('../oldViews/MythDetailsView.vue')
     },
     // {
     //   path: '/Univers/panth',
@@ -113,23 +144,23 @@ const router = createRouter({
     {
       path: '/Univers/races',
       name: 'univers-races',
-      component: () => import('../views/RacesView.vue')
+      component: () => import('../oldViews/RacesView.vue')
     },
     {
       path: '/Univers/faction',
       name: 'univers-faction',
-      component: () => import('../views/FactionView.vue')
+      component: () => import('../oldViews/FactionView.vue')
     },
     {
       path: '/Univers/orga',
       name: 'univers-orga',
-      component: () => import('../views/OrganisationView.vue')
+      component: () => import('../oldViews/OrganisationView.vue')
     },
     // BESTIAIRE
     {
       path: '/Bestiary',
       name: 'bestiary',
-      component: () => import('../views/BestiaryView.vue')
+      component: () => import('../oldViews/BestiaryView.vue')
     },
   ]
 })

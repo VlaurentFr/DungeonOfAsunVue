@@ -1,6 +1,6 @@
 @import './base.css';
 @import './footer.css';
-@import './nav.css';
+/* @import './nav.css'; */
 @import './header.css';
 
 body::-webkit-scrollbar {
@@ -40,7 +40,7 @@ p {
   flex-direction: row;
 }
 
-h3 {
+/* h3 {
   font-family: Work Sans;
   font-size: 42px;
   font-style: normal;
@@ -59,7 +59,7 @@ h3:after {
   bottom: -16px;
   right: -8px;
   animation: discover 1800ms ease-in-out 300ms;
-}
+} */
 @keyframes discover {
   0% {
       width: calc(100% + 8px);
