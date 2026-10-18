@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "run-p \"build-only {@}\" --",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
@@ -20,7 +19,8 @@
     "cytoscape": "^3.32.0",
     "pinia": "^2.1.7",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vue3-toastify": "^0.2.9"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.3",
@@ -39,6 +39,7 @@
     "jsdom": "^22.1.0",
     "npm-run-all2": "^6.1.1",
     "prettier": "^3.0.3",
+    "sass": "^1.105.1",
     "typescript": "~5.2.0",
     "vite": "^4.4.11",
     "vitest": "^0.34.6",

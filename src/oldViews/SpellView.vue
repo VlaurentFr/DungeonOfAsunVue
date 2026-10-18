@@ -2,8 +2,8 @@
 import { spell } from '@/oldMock/spellMock';
 import { computed, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
-import BookIcon from '@/assets/tabler_book.vue'
-import SwordIcon from '@/assets/tabler_sword.vue'
+// import BookIcon from '@/assets/tabler_book.vue'
+// import SwordIcon from '@/assets/tabler_sword.vue'
 const search = ref("");
 
 const selected = computed(() => {

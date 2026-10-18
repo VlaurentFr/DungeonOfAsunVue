@@ -1,0 +1,70 @@
+{
+  "citation": "Personne ne savait ce qu'ils étaient devenus. Seulement que quelque chose les avait changés.",
+  "citation_author": "Encyclopédie des explorateurs",
+  "tags": ["Peuple & Lignée","Origine Hybride / Mutée", "Codex #PEU-010"],
+  "link_articles": [1,2,3,4],
+  "class": "Mutée",
+  "repart": "Vieux Monde, Nordheim, Nouveau Monde, Tangfall, Elogos",
+  "trait": "Cornes, Peau colorée, Queue préhensible",
+  "height": "150cm - 190cm",
+  "age": "100",
+  "surname": "« Les Cornues »",
+  "image": "Vhaerith_icone.jpeg",
+  "statut": "Très Rare",
+  "sections": [
+  {
+    "title": "L'aparition des Vhaerith",
+    "type": "text",
+    "content": "L'apparition des Vhaerith bouleversa le Vieux Monde. Des individus commencèrent à apparaître parmi différents peuples, portant des transformations physiques et magiques inconnues. Personne ne comprenait ce qui leur était arrivé. Chaque civilisation interpréta le phénomène selon ses propres croyances. Les Lythari et les Virelith cherchèrent à comprendre. Les Kovraks y virent principalement un phénomène étrange à observer. À Lorus, certains considérèrent les Vhaerith comme une corruption ou une hérésie. À Magters, quelques individus comprirent progressivement que le phénomène était lié à des événements que les mages cherchaient désespérément à cacher."
+  },
+  {
+    "title": "Une origine impossible à oublier",
+    "type": "text",
+    "content": "Les premières transformations semblèrent limitées au Vieux Monde. Mais les explorateurs découvrirent rapidement des Vhaerith dans des régions éloignées, en Nordheim. Puis dans le Nouveau Monde. Puis dans Tangfall. Cette découverte changea complètement la perception du phénomène. Les Vhaerith n'étaient plus un problème local. Quelque chose avait affecté Asun bien au-delà des frontières connues. C'est cette constatation qui contribua directement au début de l'Âge des Explorations."
+  },
+  {
+    "title": "Culture",
+    "type": "text",
+    "content": "Il n'existe pas de culture Vhaerith unique. Chaque communauté conserve une partie de la culture du peuple dont ses ancêtres sont issus. Certains vivent parmi les humains. D'autres vivent auprès des Elfes, des Kovraks ou d'autres peuples. Certaines communautés ont développé leurs propres traditions après plusieurs générations. Cette diversité rend impossible toute définition simple de ce qu'est un Vhaerith. Ce qui les rassemble n'est donc pas une culture commune, mais une histoire commune de transformation."
+  },
+  {
+    "title": "Les Vhaerith et les autres peuples",
+    "type": "politique_list_long",
+    "content": [
+      {
+        "headline": "Amical",
+        "title": "Les Lythari et les Virelith",
+        "content": "Les Elfes furent parmi les premiers à considérer les Vhaerith comme des êtres à comprendre plutôt que comme une menace à éliminer. Certains érudits elfiques participèrent aux premières expéditions consacrées à leur étude.",
+         "color": "#34D399"
+      },
+      {
+        "headline": "Amical",
+        "title": "Les Kovraks",
+        "content": "Les Kovraks ont généralement abordé les Vhaerith avec davantage de curiosité que de peur.",
+         "color": "#34D399"
+      },
+      {
+        "headline": "Complexe",
+        "title": "Les Valm",
+        "content": "Les réactions des Valm furent beaucoup plus diverses. Certaines communautés les rejetèrent. À Lorus, les Vhaerith furent souvent associés à la corruption et à la transgression religieuse. Mais certains érudits Valm refusèrent de condamner des êtres dont personne ne comprenait réellement l'origine. Ces chercheurs rejoignirent parfois les expéditions elfiques.",
+        "color": "#FF7A5C"
+      },
+      {
+        "headline": "Secret",
+        "title": "Magters",
+        "content": "Les mages de Magters savent que l'apparition des Vhaerith est liée à la catastrophe magique qui frappa leur région. Ils ont cependant consacré des générations à empêcher cette vérité de devenir publique. La plupart des Vhaerith eux-mêmes ignorent donc l'origine réelle de leur condition.",
+        "color": "#FF7A5C"
+      }
+    ]
+  },
+  {
+    "title": "Aujourd'hui",
+    "type": "text",
+    "content": "Les Vhaerith sont présents dans de nombreuses régions d'Asun. Certains vivent ouvertement parmi les autres peuples. D'autres préfèrent leurs propres communautés. Leur situation dépend énormément de l'endroit où ils vivent. Dans certaines régions, ils sont considérés comme des voisins ordinaires. Dans d'autres, ils restent victimes de peur, de discrimination ou de persécution. Pour les chercheurs, leur existence reste l'un des plus grands mystères de l'Histoire connue."
+  },
+  {
+    "title": "Secrets",
+    "type": "dm-banner",
+    "content": "Les Vhaerith sont liés à la catastrophe de Magters. Les transformations ne furent probablement pas limitées à une seule espèce. La diversité actuelle des Vhaerith pourrait être la conséquence directe de cette catastrophe. Mais ce qui s'est réellement produit dans la Tour de Magters, pourquoi les transformations se sont propagées si loin et pourquoi elles existent encore aujourd'hui restent des questions auxquelles le monde ne possède pas de réponse."
+  }
+]}

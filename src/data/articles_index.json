@@ -2,64 +2,155 @@
   {
     "id": 1,
     "type": "histoire",
-    "title": "Les Temps Innommables",
+    "title": "Les Temps Innommables (WIP)",
     "description": "Les Temps Innommables désignent la période la plus ancienne de l'existence d'Asun. Elle précède toute histoire fiable, toute civilisation...",
-    "image": "../assets/cosmic.png",
+    "image": "cosmic.png",
     "tag": "Public",
     "url": "/wiki-histoire"
   },
   {
     "id": 2,
     "type": "histoire",
-    "title": "Les Temps Innommables",
-    "description": "Les Temps Innommables",
-    "image": "../assets/cosmic.png",
-    "tag": "DM",
+    "title": "FAKE ARTICLE",
+    "description": "FAKE ARTICLE",
+    "image": "hero.png",
+    "tag": "Dungeon Master",
     "url": "/wiki-histoire"
   },
   {
-    "id": 3,
+    "id": 15,
     "type": "histoire",
-    "title": "Les Temps Innommables",
-    "description": "Les Temps Innommables désignent la plus ancienne de l'existence d'Asun. Elle précède toute histoire fiable, toute civilisation...",
-    "image": "../assets/cosmic.png",
+    "title": "La Fondation de Cytanie",
+    "description": "La Fondation de Cytanie marque la naissance de la première grande puissance impériale du Nouveau Monde.\nAprès plusieurs générations de divisions, de guerres et de reconstruction, les territoires humains du continent sont réunis sous une même autorité.\n\nLe nouvel empire reçoit le nom de Cytanie.\nSon ambition dépasse rapidement les frontières du Nouveau Monde.",
+    "image": "Catania.png",
     "tag": "Public",
     "url": "/wiki-histoire"
+  },
+
+
+
+  {
+    "id": 1,
+    "type": "cult",
+    "title": "Les Cultes d'Asun",
+    "description": "La religion occupe une place importante dans les sociétés d’Asun, mais il n’existe pas de doctrine religieuse universelle. Les dieux existent. Les Forces qu’ils incarnent sont réelles. Des miracles ont été observés et certains individus semblent capables d'accomplir des actes dépassant les limites ordinaires du monde. Pourtant, les mortels ne connaissent pas toute la vérité sur les dieux. Une religion est donc moins une connaissance absolue qu'une interprétation mortelle du divin. Un peuple peut vénérer un dieu d'une manière très différente d'un autre, sans que l'une de ces traditions soit nécessairement fausse.",
+    "image": "Pantheon.png",
+    "url": "/wiki-cults"
+  },
+
+
+
+
+
+  {
+    "id": 1,
+    "type": "faction",
+    "title": "L'Empire Cytanique",
+    "description": "L'Empire Cytanique est l'une des plus grandes puissances politiques du Nouveau Monde. Fondé par Tiberian Valcior, il naquit après une longue période de fragmentation provoquée par les bouleversements ayant suivi la catastrophe des Badlands. Cytanique repose sur une idée simple : un territoire uni serait plus capable de survivre qu'un territoire divisé. L'Empire est aujourd'hui une puissance militaire, politique et économique majeure.",
+    "image": "Catania.png",
+    "area": "Nouveau Monde",
+    "url": "/wiki-factions"
+  },
+
+
+  {
+    "id": 1,
+    "type": "peuple",
+    "title": "Les Valm",
+    "description": "Les Valm sont le nom ancestral donné à l'ensemble de l'espèce humaine d'Asun. Le terme « humain » est aujourd'hui le plus couramment utilisé, mais Valm demeure le nom historique de leur peuple. Les Valm sont présents sur une grande partie d'Asun et ont développé des civilisations extrêmement différentes les unes des autres. De Lorus à Cytanie, de Koven aux communautés de Nordheim, aucune culture valm ne peut être considérée comme représentative de l'ensemble du peuple.",
+    "image": "Valm.png",
+    "url": "/wiki-peuples",
+    "color": "#C29B38"
+  },
+  {
+    "id": 2,
+    "type": "peuple",
+    "title": "Les Kovraks",
+    "description": "Les Kovraks sont un ancien peuple d'Asun dont le nom est aujourd'hui souvent remplacé par le terme plus courant d' orcs . Comme les Valm, les Kovraks sont présents dans plusieurs régions du monde et possèdent des cultures très différentes selon leur histoire. Leur réputation de peuple brutal et guerrier est largement liée aux conflits qu'ils ont traversés. Elle ne reflète pas l'ensemble de leurs sociétés.",
+    "image": "Kovraks.png",
+    "url": "/wiki-peuples",
+    "color": "#FF7A5C"
   },
   {
     "id": 4,
-    "type": "histoire",
-    "title": "Les Temps Innommables",
-    "description": "Les Temps Innommables désignent la période la plus ancienne de l'existence d'Asun. Elle précède toute histoire fiable, toute civilisation...",
-    "image": "../assets/cosmic.png",
-    "tag": "Public",
-    "url": "/wiki-histoire"
-  },
-  {
-    "id": 5,
-    "type": "histoire",
-    "title": "Les Temps Innommables",
-    "description": "Les Temps Innommables désignenElle précède toute histoire fiable, toute civilisation...",
-    "image": "../assets/cosmic.png",
-    "tag": "Public",
-    "url": "/wiki-histoire"
+    "type": "peuple",
+    "title": "Les Dra'Zun",
+    "description": "Les Dra’Zuun sont un peuple lié à l’ancien héritage draconique. Leur apparence et certaines de leurs traditions rappellent les Dragons, mais ils ne sont pas responsables de la domination draconique qui précéda la Rébellion des Valm. Après la chute des Dragons, cette distinction importa peu aux vainqueurs. Pour beaucoup de peuples, être associé aux Dragons suffisait à devenir suspect. Les Dra’Zuun durent alors survivre dans un monde qui les considérait comme les héritiers d’un pouvoir qu’ils n’avaient jamais possédé.",
+    "image": "Dra'Zun.png",
+    "url": "/wiki-peuples",
+    "color": "#FF7A5C"
   },
   {
     "id": 6,
-    "type": "histoire",
-    "title": "Les Temps Innommables",
-    "description": "Les Temps Innommables désignent  Elle précède toute histoire fiable, toute civilisation...",
-    "image": "../assets/cosmic.png",
-    "tag": "Public",
-    "url": "/wiki-histoire"
+    "type": "peuple",
+    "title": "Les Lythari",
+    "description": "Les Lythari sont les Elfes des forêts. Ils vivent principalement dans les grandes étendues boisées de Trésabia, où ils ont fondé un royaume profondément lié à la nature. Contrairement à de nombreux peuples d'Asun, les Lythari ne cherchent pas à transformer leur environnement pour le rendre plus adapté à leur civilisation. Ils ont développé leur société autour de l'idée inverse : c'est à leur civilisation de s'adapter à son environnement.",
+    "image": "Lythari.png",
+    "url": "/wiki-peuples",
+    "color": "#34D399"
   },
   {
     "id": 7,
-    "type": "histoire",
-    "title": "Les Temps Innommables",
-    "description": "Les Temps Innommables désignent la période la plus ancienne de l'existence d'Asun. Elle précède toute histoire fiable, toute civilisation...",
-    "image": "../assets/cosmic.png",
-    "tag": "Public",
-    "url": "/wiki-histoire"
+    "type": "peuple",
+    "title": "Les Virelith",
+    "description": "Les Virelith sont une branche ancienne du peuple elfique, installée dans les régions montagneuses proches de Trésabia. Souvent appelés les Elfes des montagnes ou, plus rarement, les Elfes sombres, ils partagent une origine commune avec les Lythari. Leur culture s'est cependant développée dans un environnement radicalement différent. Les forêts profondes ont laissé place aux falaises, aux vallées encaissées et aux sommets. Les Virelith ont ainsi développé une société fondée sur l'endurance, la discrétion et la connaissance de leur territoire.",
+    "image": "Virelith.png",
+    "url": "/wiki-peuples",
+    "color": "#A47DAB"
+  },
+  {
+    "id": 8,
+    "type": "peuple",
+    "title": "Les Umiyori",
+    "description": "Les Umiyori sont une branche des Elfes qui s'est progressivement tournée vers la mer. Navigateurs, commerçants et explorateurs, ils ont développé une culture profondément maritime et fondé leur principal foyer en Ikawora. Contrairement aux Lythari et aux Virelith, dont les sociétés se sont construites autour d'un territoire précis, les Umiyori ont appris à vivre avec le mouvement. Pour eux, les frontières sont moins importantes que les routes qui les relient.",
+    "image": "Umiyori.png",
+    "url": "/wiki-peuples",
+    "color": "#4169E1"
+  },
+  {
+    "id": 9,
+    "type": "peuple",
+    "title": "Les Urielar",
+    "description": "Les Urielar sont une branche des Elfes installée sur l’île d’**Uriel**, dans le continent d’Elogos. Ils sont parfois considérés comme les « Hauts-Elfes » d’Asun en raison de leur culture raffinée, de leur maîtrise de la magie et de leur royaume particulièrement développé. Contrairement aux Lythari, Virelith et Umiyori, les Urielar vivent aujourd’hui très éloignés des principales communautés elfiques du Vieux Monde. Ils ont développé leur propre identité au fil de leur isolement.",
+    "image": "Urielar.png",
+    "url": "/wiki-peuples",
+    "color": "#C29B38"
+  },
+  {
+    "id": 10,
+    "type": "peuple",
+    "title": "Les Vhaerith",
+    "description": "Les Vhaerith sont un peuple apparu à la suite d'un événement dont l'origine reste inconnue pour la majorité d'Asun. Ils ne constituent pas une espèce ancienne et homogène. Les Vhaerith sont les descendants de différents peuples et créatures dont les corps furent profondément transformés par un phénomène encore mal compris. Leurs apparences peuvent donc être très différentes d'une communauté à l'autre. Cette diversité est l'une des premières indications permettant de comprendre que les Vhaerith ne possèdent probablement pas une origine unique.",
+    "image": "Vhaerith.png",
+    "url": "/wiki-peuples",
+    "color": "#A47DAB"
+  },
+  {
+    "id": 11,
+    "type": "peuple",
+    "title": "Les Morndal",
+    "description": "Les Morndal sont un peuple ancien vivant dans les régions montagneuses de Nordheim. Leur apparence massive et leur relation avec la pierre les ont conduits à être parfois comparés aux peuples nains des légendes du Vieux Monde. Pourtant, leur origine reste inconnue. Les Morndal eux-mêmes possèdent peu de récits permettant d'expliquer leur apparition.",
+    "image": "Morndal.png",
+    "url": "/wiki-peuples",
+    "color": "#A47DAB"
+  },
+  {
+    "id": 12,
+    "type": "peuple",
+    "title": "Les Skurf",
+    "description": "Les Skurf sont un peuple de Valm vivant principalement dans les régions septentrionales de Nordheim. Ils ne constituent pas une espèce différente des autres humains. Leur particularité vient de leur histoire : leurs ancêtres étaient des Valm originaires du Vieux Monde qui s'installèrent à Nordheim bien avant sa redécouverte par les explorateurs. Des générations d'isolement ont progressivement donné naissance à une culture propre.",
+    "image": "Skaal.png",
+    "url": "/wiki-peuples",
+    "color": "#4169E1"
+  },
+  {
+    "id": 13,
+    "type": "peuple",
+    "title": "Les Fenghou",
+    "description": "Les Fenghou sont l'un des peuples anciens de Tangfall. Ils vivent principalement dans les territoires de Tangto, où leur culture s'est développée autour de traditions anciennes, de royaumes puissants et de récits concernant les dieux et les grands cataclysmes du passé. Leur histoire reste largement inconnue des peuples du Vieux Monde. Les Fenghou possèdent leurs propres récits sur l'origine du monde, les anciennes guerres et les événements qui auraient autrefois bouleversé Tangfall.",
+    "image": "Fenghou.png",
+    "url": "/wiki-peuples",
+    "color": "#34D399"
   }
+
 ]

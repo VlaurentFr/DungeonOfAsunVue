@@ -1,114 +1,251 @@
 <script lang="ts" setup>
-import { useScroll } from '@vueuse/core';
-import { computed, onMounted, ref, watch } from 'vue';
-import { RouterLink, useRoute, useRouter } from 'vue-router';
-import ARTICLES from '@/data/articles_index.json'
-import WikiSearch from '@/components/WikiSearch.vue';
+  import { useScroll } from '@vueuse/core'
+  import { capitalize, computed, onBeforeUnmount, onMounted, onUnmounted, ref, watch } from 'vue'
+  import { RouterLink, useRoute, useRouter } from 'vue-router'
+  import ARTICLES from '@/data/articles_index.json'
+  import WikiSearch from '@/components/WikiSearch.vue'
+  import { toast } from 'vue3-toastify'
+  import WikiAsideMenu from '@/components/WikiAsideMenu.vue'
+  import WikiBreadcrumbs from '@/components/WikiBreadcrumbs.vue'
+  import { useViewArticle } from '@/composables/useViewArticle'
+  import { getImageUrl } from '@/composables/useImages'
+  import { useShowSecret } from '@/composables/useShowSecret'
 
-const isDisplayed = ref(true)
-const route = useRoute()
-const router = useRouter()
-const { directions } = useScroll(document)
+  const isDisplayed = ref(true)
+  const route = useRoute()
+  const router = useRouter()
+  const { directions } = useScroll(document)
+  const { isShowed, toggleSecret } = useShowSecret()
 
-const ARTICLE = ref<any>(null)
-const ARTICLE_BASE = ref<any>(null)
+  const ARTICLE = ref<any>(null)
+  const ARTICLE_BASE = ref<any>(null)
 
-watch(directions, (newValue) => {
-  if(newValue){
-    if(newValue.top) {
-      isDisplayed.value = true;
-    } else if(newValue.bottom) {
-      isDisplayed.value = false;
+  watch(directions, (newValue) => {
+    if (newValue) {
+      if (newValue.top) {
+        isDisplayed.value = true
+      } else if (newValue.bottom) {
+        isDisplayed.value = false
+      }
     }
-  }
-})
+  })
 
-const initData = () => {
+  const isLoadingData = ref(false)
+  const errorDetect = ref(false)
+  const initData = (type: String) => {
+    isLoadingData.value = true
+
     const articleId = route.params.id
-  
-    ARTICLE_BASE.value = ARTICLES.find(article => article.id === Number(articleId))
-  
-    import(`@/data/articles/histoire/article_${articleId}.json`).then((module) => {
-          ARTICLE.value = module.default
-      }).catch(() => router.push({name: 'wiki'}))
-}
 
-watch(route, () => {
-  initData()
-})
+    ARTICLE_BASE.value = ARTICLES.find(
+      (article) => article.id === Number(articleId) && article.type === type
+    )
 
-onMounted(() => {
-  initData()
-})
-
-const getImageUrl = (path: string) => {
-  return new URL(`${path}`, import.meta.url).href
-}
-
-const scrollTo = (sectionId: string) => {
-  const sectionElement = document.getElementById(sectionId);
-  if (sectionElement) {
-    sectionElement.scrollIntoView({ behavior: 'smooth' });
+    import(`@/data/articles/${type}/article_${articleId}.json`)
+      .then((module) => {
+        ARTICLE.value = module.default
+      })
+      .catch(() => {
+        errorDetect.value = true
+        router.push({ name: 'wiki' })
+      })
+      .finally(() => {
+        isLoadingData.value = false
+        if (!useViewArticle().isConsulted(type, articleId) && !errorDetect.value) {
+          useViewArticle().consultArticle(type, articleId)
+        }
+      })
   }
-};
+
+  watch(route, (newValue) => {
+    if (newValue.path.startsWith('/wiki-histoire/')) initData('histoire')
+  })
+
+  onMounted(() => {
+    initData('histoire')
+  })
+
+  onBeforeUnmount(() => {
+    if (errorDetect.value) {
+      toast.error('Article non trouvé', {
+        theme: 'dark'
+      })
+    }
+  })
+
+  const key = ref(0)
 </script>
 
 <template>
-  <!-- <WikiSearch></WikiSearch>
+  <WikiAsideMenu></WikiAsideMenu>
 
-  <aside :class="{'hasNavbar': isDisplayed}">
-    <h3>Base de connaissances</h3>
-    <ul>
-      <li><RouterLink to="/wiki" :class="{'active': route.name === 'wiki'}"><span>Accueil</span></RouterLink></li>
-      <li><RouterLink to="/wiki-univers" :class="{'active': route.path.includes('wiki-univers')}"><span>Univers</span></RouterLink></li>
-      <li><RouterLink to="/wiki-histoire" :class="{'active': route.path.includes('wiki-histoire')}"><span>Histoire</span></RouterLink></li>
-      <li><RouterLink to="/wiki-geographie" :class="{'active': route.path.includes('wiki-geographie')}"><span>Geographie</span></RouterLink></li>
-      <li><RouterLink to="/wiki-peuples" :class="{'active': route.path.includes('wiki-peuples')}"><span>Peuples</span></RouterLink></li>
-      <li><RouterLink to="/wiki-factions" :class="{'active': route.path.includes('wiki-factions')}"><span>Factions</span></RouterLink></li>
-      <li><RouterLink to="/wiki-cultes" :class="{'active': route.path.includes('wiki-cultes')}"><span>Cultes et religions</span></RouterLink></li>
-      <li><RouterLink to="/wiki-personnages" :class="{'active': route.path.includes('wiki-personnages')}"><span>Personnages</span></RouterLink></li>
-      <li><RouterLink to="/wiki-monstres" :class="{'active': route.path.includes('wiki-monstres')}"><span>Monstres et Créatures</span></RouterLink></li>
-    </ul>
-  </aside> -->
-
-  <div id="wiki_container" v-if="ARTICLE_BASE">
+  <div
+    id="wiki_container"
+    v-if="ARTICLE_BASE && ARTICLE"
+  >
+    <WikiBreadcrumbs></WikiBreadcrumbs>
     <section id="wiki_head">
       <div class="tags">
-        <p v-for="value in ARTICLE?.tags" :key="value">{{ value }}</p>
+        <div
+          v-for="value in ARTICLE?.tags"
+          :key="value"
+        >
+          <p>{{ value }}</p>
+        </div>
       </div>
-      <h4>{{ARTICLE_BASE.title}}</h4>
-      <p>{{ ARTICLE?.citation }}</p>
+      <h3>{{ ARTICLE_BASE.title }}</h3>
+      <div class="sub_tags">
+        <div>
+          <p>
+            Catégorie : <span>{{ capitalize(ARTICLE_BASE.type) }}</span>
+          </p>
+        </div>
+        <div>
+          <p>
+            Ère : <span>{{ capitalize(ARTICLE.era) }}</span>
+          </p>
+        </div>
+        <div>
+          <p>
+            Statut: <span>{{ capitalize(ARTICLE.statut) }}</span>
+          </p>
+        </div>
+      </div>
+      <div class="citation_banner">
+        <p>"{{ ARTICLE?.citation }}"</p>
+        <p>- {{ ARTICLE?.citation_author }}</p>
+      </div>
+    </section>
+    <section id="article_presentation">
+      <h4>Présentation</h4>
+      <div>
+        <p>{{ ARTICLE_BASE.description }}</p>
+        <img :src="getImageUrl(ARTICLE_BASE.image)" />
+      </div>
     </section>
     <section id="wiki_article">
-     <img :src="getImageUrl(ARTICLE_BASE.image)"/>
-      <div id="wiki_summary">
+      <!-- <div id="wiki_summary">
         <p id="wiki_summary_title">SOMMAIRE</p>
         <ol>
           <li v-for="section in ARTICLE?.sections.filter((s: any) => s.title)" :key="section.title">
             <p @click="scrollTo(section.title)" :class="{ 'dm-infos': section.type === 'dm-banner' }">{{ section.title }}</p>
           </li>
         </ol>
-      </div>
-      <article v-for="section in ARTICLE?.sections" :key="section.title" :id="section.title" class="wiki_section">
-        <h5 v-if="section.title?.length">{{ section.title }}</h5>
+      </div> -->
+
+      <article
+        v-for="(section, index) in ARTICLE?.sections"
+        :key="section.title"
+        :id="section.title"
+        class="wiki_section"
+      >
+        <h4 v-if="section.title?.length">{{ section.title }}</h4>
+
         <p v-if="section.type === 'text'">{{ section.content }}</p>
-        <img v-else-if="section.type === 'image'" :src="getImageUrl(section.content)"/>
-        <div v-else-if="section.type === 'dm-banner'" class="dm-banner">
+
+        <img
+          v-else-if="section.type === 'image'"
+          :src="getImageUrl(section.content)"
+        />
+
+        <div
+          v-else-if="section.type === 'dm-banner'"
+          class="dm-banner"
+        >
           <p class="subtitle">NOTE INTERDITE</p>
-          <p>{{ section.content }}</p>
+          <p
+            v-if="isShowed(ARTICLE_BASE.type, ARTICLE_BASE.id, index)"
+            :key="key"
+          >
+            {{ section.content }}
+          </p>
+          <div v-else>
+            <p>
+              Réservé de préférence au MJ, cela pourrais vous révéler des éléments de l'intrigue
+            </p>
+          </div>
+          <button @click="toggleSecret(ARTICLE_BASE.type, ARTICLE_BASE.id, index), key++">
+            {{ isShowed(ARTICLE_BASE.type, ARTICLE_BASE.id, index) ? 'Masquer' : 'Afficher' }}
+          </button>
         </div>
-        <div v-else-if="section.type === 'banner'" class="banner">
+
+        <div
+          v-else-if="section.type === 'banner'"
+          class="banner"
+        >
           <p>{{ section.content }}</p>
           <p class="subtitle">{{ section.subtitle }}</p>
         </div>
+
+        <div
+          v-else-if="section.type === 'cards'"
+          class="section_cards"
+        >
+          <div
+            v-for="(sectionContent, index) in section.content"
+            class="section_card"
+            :key="index"
+            :style="{ 'border-top': `4px solid ${sectionContent.color}` }"
+          >
+            <h6 :style="{ color: sectionContent.color }">{{ sectionContent.headline }}</h6>
+            <h5>{{ sectionContent.title }}</h5>
+            <p>{{ sectionContent.content }}</p>
+          </div>
+        </div>
+
+        <div
+          v-else-if="section.type === 'list'"
+          class="section_list"
+        >
+          <div
+            v-for="(sectionContent, index) in section.content"
+            class="section_list_item"
+            :key="index"
+          >
+            <h6 :style="{ color: sectionContent.color }">{{ sectionContent.headline }}</h6>
+            <h5>{{ sectionContent.title }}</h5>
+          </div>
+        </div>
+
+        <div
+          v-else-if="section.type === 'politique_list'"
+          class="section_politique_list"
+        >
+          <div class="section_politique_list_item">
+            <p>Puissance</p>
+            <p>Relation</p>
+            <p>Situation</p>
+          </div>
+          <div
+            v-for="(sectionContent, index) in section.content"
+            class="section_politique_list_item"
+            :key="index"
+          >
+            <h5>{{ sectionContent.title }}</h5>
+            <h6>
+              <span :style="{ backgroundColor: sectionContent.color }"></span
+              >{{ sectionContent.headline }}
+            </h6>
+            <p>{{ sectionContent.content }}</p>
+          </div>
+        </div>
       </article>
     </section>
+
+    <h4 class="linked_articles">Articles liées</h4>
     <section id="article_cards">
-      <h4>Articles liées</h4>
-      <RouterLink :to="ARTICLES.find(article => article.id === id)?.url+'/'+id" v-for="id in ARTICLE?.link_articles" :key="id" class="article_card">
-        <h4>{{ ARTICLES.find(article => article.id === id)?.type }}</h4>
-        <h5>{{ ARTICLES.find(article => article.id === id)?.title }}</h5>
-        <p>{{ ARTICLES.find(article => article.id === id)?.description }}</p>
+      <RouterLink
+        :to="ARTICLES.find((article) => article.id === id)?.url + '/' + id"
+        v-for="id in ARTICLE?.link_articles"
+        :key="id"
+        class="article_card"
+      >
+        <div>
+          <h4>{{ ARTICLES.find((article) => article.id === id)?.type }}</h4>
+          <div class="tag">{{ ARTICLES.find((article) => article.id === id)?.tag }}</div>
+        </div>
+        <h5>{{ ARTICLES.find((article) => article.id === id)?.title }}</h5>
+        <p>{{ ARTICLES.find((article) => article.id === id)?.description }}</p>
         <p>Lire l'article</p>
       </RouterLink>
     </section>
@@ -116,395 +253,364 @@ const scrollTo = (sectionId: string) => {
 </template>
 
 <style lang="css" scoped>
-#article_cards {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.article_card {
-  padding: 16px;
-  background-color: #11151D;
-  border: 1px solid #737880;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.article_card h4 {
-  margin-bottom: 8px !important;
-}
-.article_card h5 {
-  font-size: 1.2rem;
-  margin-top: 8px;
-}
-.article_card p:last-child {
-  color: var(--secondaryColor);
-  font-weight: bolder;
-  margin-top: 16px;
-}
-
-#article_cards a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h5 {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 8px;
-  margin-top: 24px;
-}
-img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  margin-bottom: 16px;
-  border-radius: 8px;
-  border: 1px solid #737880
-}
-.tags {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  margin-bottom: 16px;
-}
-
-.tags p {
-  display: inline-block;
-  background-color: var(--secondaryColor);
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-  margin-right: 8px;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-.tags p:nth-child(1) {
-  background-color: #7A0E13;
-}
-
-.banner {
-  background-color: #C2660A30;
-  border-left: 4px solid #C2660A;
-  color: #737880;
-  padding: 16px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-}
-
-.banner .subtitle {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: var(--secondaryColor);
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-.dm-banner {
-  background-color: #7A0E1330;
-  border-left: 4px solid #7A0E13;
-  color: #737880;
-  padding: 16px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-}
-
-.dm-banner .subtitle {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: var(--secondaryColor);
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-#wiki_summary {
-  border: 1px solid #737880;
-  padding: 16px;
-  border-radius: 4px;
-  background-color: #11151D;
-  width: fit-content;
-}
-
-#wiki_summary_title {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: var(--secondaryColor);
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-#wiki_summary ol li p:hover {
-  color: var(--secondaryColor);
-  cursor: pointer;
-}
-#wiki_summary ol li p.dm-infos {
-  color: #7A0E13;
-}
-
-.wiki_section {
-  white-space: pre-line;
-}
-
-#wiki_search {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 20px;
-  height: var(--heigtSearchBar);
-  color: var(--textColorWhite);
-  width: 100%;
-  border-bottom: 1px solid #737880;
-  transition: all 0.3s;
-  background-color: #090C11;
-}
-#wiki_search a {
-  color: inherit;
-  text-decoration: none;
-}
-
-#wiki_search a:hover {
-  color: var(--secondaryColor);
-}
-
-#wiki_search.hasNavbar {
-  top: 83px;
-}
-
-#wiki_search button {
-  background-color: transparent;
-  color: #737880;
-  border: none;
-  padding: 8px 64px 8px 16px;
-  border-radius: 4px;
-  border: 1px solid #737880;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-#wiki_search p > span {
-  color: var(--secondaryColor);
-}
-
-aside {
-  position: fixed;
-  left: 0;
-  top: var(--heigtSearchBar);
-  width: 300px;
-  height: 100%;
-  color: var(--secondaryColor);
-  padding: 8px 16px;
-  border-right: 1px solid #737880;
-  transition: all 0.3s;;
-}
-
-aside.hasNavbar {
-  top: calc(83px + var(--heigtSearchBar));
-}
-
-aside h3 {
-  font-size: 0.8rem;
-  margin-bottom: 24px;
-  text-transform: uppercase;
-}
-
-aside ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  color: #737880;
-}
-
-.grid-container {
-  columns: 1;
-  column-gap: 1rem;
-}
-
-@media (min-width: 640px) {
-  .grid-container {
-    columns: 3;
+  #wiki_container {
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
-}
 
-@media (min-width: 1024px) {
-  .grid-container {
-    columns: 4;
+  #wiki_head {
+    margin-bottom: 32px;
   }
-}
 
-.grid-item {
-  break-inside: avoid;
-  display: block;
-  margin-bottom: 1rem;
-}
+  #wiki_container #wiki_head h3 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: white;
+    font-family: var(--font-display);
+  }
 
-aside ul li a {
-  display: block;
-  padding: 8px 16px;
-  border-radius: 4px;
-  border: 1px solid #737880;;
-  text-decoration: none;
-  color: inherit;
-  /* transform: skewX(16deg); */
-  margin: 0px 16px 0px 8px;
-}
+  .tags {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .tags div {
+    border: 1px solid #737880;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transform: skewX(16deg);
+  }
 
-aside ul li a:hover {
-  background-color: var(--secondaryColor);
-  color: var(--textColorWhite);
-  /* transform: skewX(0); */
-}
+  .tags p {
+    transform: skewX(-16deg);
+  }
 
-aside ul li a.active {
-  background-color: var(--secondaryColor);
-  color: var(--textColorWhite);
-}
+  .tags div:nth-child(1) {
+    border: 1px solid var(--red-text);
+  }
 
-#wiki_head {
-  margin-bottom: 32px;
-}
+  .sub_tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
 
-#wiki_container #wiki_head h4 {
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: white;
-}
+  .sub_tags div {
+    /* background: linear-gradient(100deg, rgba(201, 47, 24, 0.42) 0%, rgba(201, 47, 24, 0.12) 100%); */
+    color: var(--textColorWhite);
+    padding: 4px 16px;
+  }
 
-#wiki_container {
-  margin-left: 300px;
-  padding: 32px 0px;
-}
+  .sub_tags span {
+    color: var(--red-text);
+  }
 
-#wiki_articles {
-  display: flex;
-  flex-direction: column;
-}
+  .citation_banner {
+    background-color: #7a0e1330;
+    border-left: 4px solid #7a0e13;
+    color: #737880;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
 
-#wiki_container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
+  .citation_banner p:first-child {
+    font-family: var(--font-display);
+    color: white;
+    font-size: 1rem;
+    max-width: none;
+  }
+  .citation_banner p:last-child {
+    font-family: var(--font-ui);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+  }
 
-#wiki_container h4 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: var(--secondaryColor);
-  margin-bottom: 24px;
-}
+  #article_presentation h4 {
+    font-size: 2rem;
+    /* border-left: #7a0e13 4px solid;
+    padding-left: 24px; */
+    font-family: var(--font-display);
+    color: white;
+    border-radius: 4px;
+    text-transform: none;
+    margin-bottom: 12px;
+  }
 
-#wiki_articles ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 16px;
-}
+  #article_presentation div {
+    display: flex;
+    gap: 24px;
+    white-space: pre-line;
+  }
+  #article_presentation div p::first-letter {
+    initial-letter: 2;
+    font-weight: bold;
+    color: var(--red-text);
+    margin-right: 4px;
+    font-family: var(--font-display);
+  }
 
-#wiki_articles ul li {
-  transition: all 0.3s;
-}
+  #article_presentation div img {
+    height: 180px;
+    aspect-ratio: 16 / 11;
+    object-fit: cover;
+  }
+  #wiki_article {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .wiki_section h4 {
+    font-size: 2rem;
+    font-family: var(--font-display);
+    color: white;
+    border-radius: 4px;
+    text-transform: none;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
 
-#wiki_articles ul li a {
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 16px;
-  /* transform: skewX(16deg); */
-  border: 1px solid #737880;
-  border-radius: 4px;
-  background-color: #11151D;
-}
+  .banner {
+    background-color: #c2660a30;
+    border-left: 4px solid #c2660a;
+    color: white;
+    padding: 16px;
+    border-radius: 4px;
+    margin: 16px 0;
+  }
 
-#wiki_articles ul li a:hover {
-  border: 1px solid var(--secondaryColor);
-}
+  .banner > p,
+  .dm-banner > p {
+    transform: none;
+  }
 
-#wiki_articles ul li a img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 4px;
-}
+  .dm-banner div {
+    border: 1px dashed#7a0e13;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
 
-#wiki_articles ul li h5 {
-  margin: 0 0 0 8px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: var(--secondaryColor);
-  /* transform: skewX(-16deg); */
-}
+  .dm-banner button {
+    background-color: transparent;
+    border: 1px solid#7a0e13;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-top: 16px;
+  }
 
-#wiki_articles ul li p {
-  margin: 0;
-  font-size: 0.8rem;
-  color: #737880;
-  /* transform: skewX(-16deg); */
-}
+  .section_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 
-#filtre_tags {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  margin-bottom: 16px;
-}
+  .section_card {
+    background-color: #1a1c1e;
+    padding: 16px;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 320px;
+  }
 
-p.tag-public {
-  background-color: transparent;
-  border: 1px solid var(--secondaryColor);
-  color: white !important;
-  padding: 4px 8px;
-  border-radius: 4px;
-  width: fit-content;
-}
-p.tag-dm {
-  background-color: transparent;
-  border: 1px solid #7A0E13;
-  color: white !important;
-  padding: 4px 8px;
-  border-radius: 4px;
-  width: fit-content;
-}
+  .section_card > p {
+    transform: none;
+  }
+  .section_card h6 {
+    color: var(--red-text);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .section_card h5 {
+    color: white;
+    font-size: 1.2rem;
+    font-family: var(--font-display);
+  }
 
-p.tag-public.active {
-  background-color: var(--secondaryColor);
-  color: white !important;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-p.tag-dm.active {
-  background-color: #7A0E13;
-  color: white !important;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
+  .section_politique_list {
+    gap: 16px;
+  }
 
-a .tag-public {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background-color: var(--secondaryColor);
-  color: white !important;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-a .tag-dm {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background-color: #7A0E13;
-  color: white !important;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
+  .section_politique_list_item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    border-bottom: 1px solid #737880;
+    padding: 16px;
+    align-items: center;
+  }
+
+  .section_politique_list_item span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  .section_politique_list_item p {
+    color: var(--textColorWhite);
+    font-size: 1rem;
+  }
+  .section_politique_list_item h6 {
+    color: var(--textColorWhite);
+    font-size: 1rem;
+  }
+  .section_politique_list_item h5 {
+    color: var(--textColorWhite);
+    font-family: var(--font-display);
+    font-size: 1rem;
+  }
+
+  .section_list_item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #737880;
+  }
+
+  .section_list_item h6 {
+    color: var(--red-text);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-right: 24px;
+  }
+  .section_list_item h5 {
+    color: white;
+    font-size: 1.2rem;
+    font-family: var(--font-display);
+  }
+
+  .linked_articles {
+    font-size: 1.6rem;
+    color: var(--red-text);
+    font-family: var(--font-display);
+  }
+  #article_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .article_card {
+    padding: 16px;
+    background: linear-gradient(100deg, rgba(201, 47, 24, 0.14) 0%, #1c181a 42%);
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+  }
+
+  .article_card div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .article_card .tag {
+    border-radius: 8px;
+    border: 1px solid var(--secondaryColor);
+    color: var(--secondaryColor);
+    padding: 4px 8px;
+    font-size: 0.6rem;
+    height: fit-content;
+  }
+  .article_card h4 {
+    margin-bottom: 8px !important;
+    text-transform: uppercase;
+    color: var(--red-text);
+  }
+  .article_card h5 {
+    font-size: 1.2rem;
+    margin-top: 8px;
+  }
+  .article_card p:last-child {
+    color: var(--secondaryColor);
+    font-weight: bolder;
+    margin-top: auto;
+    align-self: flex-end;
+  }
+
+  #article_cards a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #article_cards .tags {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  #article_cards .tags p {
+    display: inline-block;
+    background-color: var(--secondaryColor);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  #article_cards .tags p:nth-child(1) {
+    background-color: #7a0e13;
+  }
+
+  .banner .subtitle {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .dm-banner {
+    background-color: #7a0e1330;
+    border-left: 4px solid #7a0e13;
+    color: #737880;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+
+  .dm-banner .subtitle {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  #wiki_summary {
+    border: 1px solid #737880;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #11151d;
+    width: fit-content;
+  }
+
+  #wiki_summary_title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  #wiki_summary ol li p:hover {
+    color: var(--secondaryColor);
+    cursor: pointer;
+  }
+  #wiki_summary ol li p.dm-infos {
+    color: #7a0e13;
+  }
 </style>

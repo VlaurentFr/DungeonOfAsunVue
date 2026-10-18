@@ -1,19 +1,71 @@
 /* color palette from <https://github.com/vuejs/theme> */
 
 :root {
-  background-color: #000;
+  /* Polices */
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-logo: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+
+  /* Fonds */
+  --bg-page: #0e0c0d;
+  --bg-hero: #171415;
+  --bg-card: #1c181a;
+  --bg-header-scroll: rgba(16, 13, 14, 0.94);
+  --bg-input: rgba(242, 236, 228, 0.04);
+
+  /* Textes */
+  --text-strong: #F2ECE4;
+  --text-logo: #EDE4D6;
+  --text-body: #D6CDC4;
+  --text-soft: #C9BFB5;
+  --text-muted: #9C928A;
+
+  /* Rouge de marque */
+  --red-brand: #C92F18;      /* fonds de bouton, voiles */
+  --red-brand-hover: #DB3A21; /* survol du bouton plein */
+  --red-active-bg: #8A1C10;  /* fond d'élément actif si besoin d'un aplat */
+  --red-text: #FF7A5C;       /* texte et icônes rouges sur fond sombre */
+  --red-text-hover: #FF8A6E;
+
+  /* Traits */
+  --line-subtle: rgba(242, 236, 228, 0.08);
+  --line: rgba(242, 236, 228, 0.16);
+  --line-strong: rgba(242, 236, 228, 0.45);
+
+  /* Dégradés */
+  --grad-card: linear-gradient(100deg, rgba(201, 47, 24, 0.14) 0%, var(--bg-card) 42%);
+  --grad-active: linear-gradient(100deg, rgba(201, 47, 24, 0.42) 0%, rgba(201, 47, 24, 0.12) 100%);
+
+  /* Formes */
+  --radius: 4px;
+  --radius-icon: 8px;
+  --skew-card: 28px;
+  --skew-nav: 12px;
+
+  /* Layout */
+  --container: 1280px;
+  --gutter: 48px;
+  --header-h: 80px;
+  --sidebar-w: 260px;
+  --touch: 44px;
 }
 
 /* semantic color variables for this project */
 :root {
+
+  --asun-red: #C92F18;
+  --asun-red-dark: #8F1E14;
+  --asun-black: #0A0A0D;
+  --asun-white: #F2EFE8;
+
   --heigtSearchBar: 66px;
 
 
-  --primaryColor: #252525;
+  --primaryColor: #C92F18;
   /* --primaryColor: hsl(16,100%,60%); */
   /* --primaryColor: rgb(211,112,54); */
   /* --secondaryColor: #24BE74; */
-  --secondaryColor: #C2660A;
+  --secondaryColor: #C92F18;
   --background: white;
   --backgroundColor: #f1f1f1;
   /* --textColor: #fff; */
@@ -25,10 +77,10 @@
 
   :root.dark {
     --primaryColor: #252525;
-    --primaryColor: #C2660A;
+    --primaryColor: #C92F18;
     /* --primaryColor: hsl(16,100%,60%); */
     /* --secondaryColor: #24BE74; */
-    --secondaryColor: #C2660A;
+    --secondaryColor: #C92F18;
     --background: white;
     --backgroundColor: #f1f1f1;
     /* --textColor: #fff; */

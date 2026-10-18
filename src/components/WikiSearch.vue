@@ -1,35 +1,6 @@
 <template>
-  <section id="wiki_search" :class="{'hasNavbar': hasNavbar}">
-    <div>
-      <ol>
-      <li>
-        <router-link to="/wiki">Wiki</router-link>
-      </li>
-      
-      <li v-for="(crumb, index) in visibleCrumbs" :key="index">
-        <!-- Cas normal : Lien cliquable -->
-        <router-link v-if="!crumb.isDropdown" :to="crumb.path">
-          {{ crumb.label }}
-        </router-link>
-
-        <!-- Cas tronqué : Menu au survol (...) -->
-        <div v-else class="dropdown">
-          <span class="ellipsis">...</span>
-          <div class="dropdown-menu">
-            <router-link 
-              v-for="(hidden, hIdx) in crumb.hiddenItems" 
-              :key="hIdx" 
-              :to="hidden.path"
-              class="dropdown-item"
-            >
-              {{ hidden.label }}
-            </router-link>
-          </div>
-        </div>
-      </li>
-    </ol>
-    </div>
-    <button @click="openSearch()"><i class="fas fa-search"></i>Rechercher un article...</button>
+  <section id="wiki_search" :class="{'hasNavbar': hasNavbar, 'iconOnly': iconOnly}">
+    <button @click="openSearch()"><i class="fas fa-search"></i>{{!iconOnly ? 'Rechercher un article...': ''}}</button>
   </section>
   
   <transition name="fade">
@@ -41,10 +12,16 @@
               <i class="fas fa-search"></i>Rechercher un article...
             </div>
             <input v-model="searchQuery" type="text" ref="searchbar" id="searchBar" autocomplete="off" placeholder="Rechercher un article..."/>
-            <ul ref="listeRef">
+            <ul ref="listeRef" class="list">
               <li v-for="article of comp__ARTICLES" :key="article.id">
                 <RouterLink :to="article.url+'/'+article.id">
-                  <h5>{{ article.title }}</h5>
+                  <div class="title_article">
+                    <h5>{{ article.title }}</h5>
+                    <div>
+                      <p>{{ article.type }}</p>
+                      <p class="tag">{{ article.tag }}</p>
+                    </div>
+                  </div>
                   <p>{{ article.description.slice(0,65) }} {{ article.description.length > 65 ? '...' : '' }}</p>
                 </RouterLink>
               </li>
@@ -63,6 +40,15 @@ import { useRoute, useRouter } from 'vue-router';
 import { OnClickOutside } from '@vueuse/components'
 import ARTICLES from '@/data/articles_index.json'
 import { useFocusWithin } from '@vueuse/core';
+import { searchQuery } from '@/composables/useSearch';
+
+defineProps({
+  iconOnly: {
+    type: Boolean,
+    required: false,
+    default: false
+  }
+})
 
 const route = useRoute()
 const router = useRouter()
@@ -72,43 +58,7 @@ watch(route, async () => {
   closeSearch()
 })
 
-// 1. Récupération de tous les chemins valides
-const allCrumbs = computed(() => {
-  return route.matched
-    .filter((item) => item.meta && item.meta.breadcrumb)
-    .map((item) => {
-      // 1. Gestion mixte : exécute la fonction si dynamique, sinon prend la chaîne
-      const label = typeof item.meta.breadcrumb === 'function'
-        ? item.meta.breadcrumb(route)
-        : item.meta.breadcrumb
-      console.log(route, item)
-      // 2. Résolution du chemin (remplace :id par la vraie valeur s'il y en a)
-      let resolvedPath = item.path
-      Object.keys(route.params).forEach((key) => {
-        resolvedPath = resolvedPath.replace(`:${key}`, route.params[key])
-      })
-
-      return {
-        label,
-        path: resolvedPath,
-      }
-    })
-})
-
-// 2. Logique de troncature si plus de 4 éléments
-const visibleCrumbs = computed(() => {
-  const crumbs = allCrumbs.value
-  if (crumbs.length <= 4) return crumbs
-
-  // On garde le premier, et les deux derniers
-  return [
-    crumbs[0],
-    { isDropdown: true, hiddenItems: crumbs.slice(1, -2) },
-    ...crumbs.slice(-2)
-  ]
-})
 const searchbar = ref<HTMLElement | null>(null)
-const searchQuery = ref('')
 const searchOpenned = ref(false)
 
 const openSearch = async () => {
@@ -132,7 +82,7 @@ function handleKeydown(event: KeyboardEvent): void {
   } else if (event.key === 'Enter' && comp__ARTICLES.value.length && focusedSearchBar){
     router.push(comp__ARTICLES.value[0].url+'/'+comp__ARTICLES.value[0].id)
   } else if (event.key === 'ArrowUp') {
-    if(index.value === 0) {
+    if(index.value === 0 && listeRef.value?.querySelectorAll('a')) {
       index.value = listeRef.value?.querySelectorAll('a')?.length - 1|| 0
       
     } else {
@@ -141,7 +91,7 @@ function handleKeydown(event: KeyboardEvent): void {
     }
 
     listeRef.value?.querySelectorAll('a')?.[index.value].focus()
-  } else if (event.key === 'ArrowDown') {
+  } else if (event.key === 'ArrowDown' && listeRef.value?.querySelectorAll('a')) {
     if(index.value < listeRef.value?.querySelectorAll('a')?.length -1) {
       index.value++
 
@@ -176,16 +126,46 @@ const comp__ARTICLES = computed(() => {
     article.title.toUpperCase()
       .includes(
         searchQuery.value.toUpperCase()
-      )).slice(0,5)
+      ))
   }
 })
 </script>
 
 <style lang="css" scoped>
+.iconOnly {
+  width: fit-content !important;
+}
+.iconOnly button {
+  padding: 8px !important;
+  border: none !important;
+  color: white;
+}
+.title_article {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+.title_article p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.title_article div {
+  display: flex;
+  flex-direction: row !important;
+  gap: 8px;
+  justify-content: flex-end !important;
+}
+
+.title_article .tag {
+  border-radius: 8px;
+  border: 1px solid var(--secondaryColor);
+  padding: 0px 8px;
+  text-transform: capitalize;
+}
+
 #wiki_search {
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,9 +173,10 @@ const comp__ARTICLES = computed(() => {
   height: var(--heigtSearchBar);
   color: var(--textColorWhite);
   width: 100%;
-  border-bottom: 1px solid #737880;
   transition: all 0.3s;
-  background-color: #090C11;
+  background-color: transparent;
+  z-index: 999;
+  cursor: pointer;
 }
 
 #wiki_search.hasNavbar {
@@ -234,10 +215,11 @@ button, input {
   align-items: center;
   gap: 8px;
   padding: 8px;
+  cursor: pointer;
 }
 
 #wiki_search button, input {
-  padding: 8px 64px 8px 16px;
+  padding: 8px 24px 8px 16px;
 }
 
 .dialog a {
@@ -274,8 +256,10 @@ button, input {
 
 /* Dialog base */
 .dialog {
-  position: relative;
+  position: absolute;
   background: #11151D;
+  left: calc(50% - 200px);
+  top: 200px;
   border: 1px solid #737880;
   border-radius: 8px;
   padding: 8px;
@@ -293,6 +277,11 @@ button, input {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+.list {
+  max-height: 60vh;
+  overflow: auto;
 }
 
 .dialog ul {
