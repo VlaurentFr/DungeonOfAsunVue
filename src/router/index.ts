@@ -93,7 +93,7 @@ const router = createRouter({
       name: 'wiki-peuples',
       component: () => import('../views/WikiPeuplesView.vue'),
       meta: {
-        breadcrumb: 'Factions'
+        breadcrumb: 'Peuples'
       }
     },
     {
@@ -105,6 +105,33 @@ const router = createRouter({
           ARTICLES.find(
             (article) => article.id.toString() === route.params.id && article.type === 'peuple'
           )?.title
+      }
+    },
+    {
+      path: '/wiki-univers',
+      name: 'wiki-univers',
+      component: () => import('../views/WikiUniversView.vue'),
+      meta: {
+        breadcrumb: 'Univers'
+      }
+    },
+    {
+      path: '/wiki-univers/:id',
+      name: 'wiki-univers-article',
+      component: () => import('../views/WikiPeuplesArticleView.vue'),
+      meta: {
+        breadcrumb: (route: any) =>
+          ARTICLES.find(
+            (article) => article.id.toString() === route.params.id && article.type === 'peuple'
+          )?.title
+      }
+    },
+    {
+      path: '/wiki-object',
+      name: 'wiki-object',
+      component: () => import('../views/WikiObjectView.vue'),
+      meta: {
+        breadcrumb: 'Objets'
       }
     },
     {

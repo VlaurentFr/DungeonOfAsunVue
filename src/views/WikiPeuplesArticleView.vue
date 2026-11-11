@@ -1,6 +1,6 @@
 <script lang="ts" setup>
   import { useScroll } from '@vueuse/core'
-  import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
+  import { capitalize, onBeforeUnmount, onMounted, ref, watch } from 'vue'
   import { RouterLink, useRoute, useRouter } from 'vue-router'
   import ARTICLES from '@/data/articles_index.json'
   import { toast } from 'vue3-toastify'
@@ -8,8 +8,8 @@
   import WikiBreadcrumbs from '@/components/WikiBreadcrumbs.vue'
   import { useViewArticle } from '@/composables/useViewArticle'
   import { getImageUrl } from '@/composables/useImages'
-  import { useMarkArticle } from '@/composables/useMarkArticle'
   import { useShowSecret } from '@/composables/useShowSecret'
+  import { useMarkArticle } from '@/composables/useMarkArticle'
 
   const isDisplayed = ref(true)
   const route = useRoute()
@@ -17,6 +17,7 @@
   const { directions } = useScroll(document)
   const { isShowed, toggleSecret } = useShowSecret()
   const key = ref(0)
+  const { markedArticle, markArticle, unmarkArticle } = useMarkArticle()
 
   const ARTICLE = ref<any>(null)
   const ARTICLE_BASE = ref<any>(null)
@@ -59,7 +60,7 @@
   }
 
   watch(route, (newValue) => {
-    if (newValue.path.startsWith('/wiki-factions/')) initData('peuple')
+    if (newValue.path.startsWith('/wiki-peuples/')) initData('peuple')
   })
 
   onMounted(() => {
@@ -73,8 +74,6 @@
       })
     }
   })
-
-  const { markArticle, markedArticle, unmarkArticle } = useMarkArticle()
 </script>
 
 <template>
@@ -95,38 +94,28 @@
         </div>
       </div>
       <h3>{{ ARTICLE_BASE.title }}</h3>
+      <!-- <div class="sub_tags">
+        <div>
+          <p>
+            Catégorie : <span>{{ capitalize(ARTICLE_BASE.type) }}</span>
+          </p>
+        </div>
+        <div>
+          <p>
+            Zone : <span>{{ capitalize(ARTICLE_BASE.area) }}</span>
+          </p>
+        </div>
+      </div> -->
       <div class="citation_banner">
         <p>"{{ ARTICLE?.citation }}"</p>
         <p>- {{ ARTICLE?.citation_author }}</p>
       </div>
     </section>
+
     <section id="article_presentation">
-      <div>
-        <img :src="getImageUrl(ARTICLE_BASE.image)" />
-        <h4>Présentation</h4>
-        <p>{{ ARTICLE_BASE.description }}</p>
-      </div>
       <div class="aside_presentation">
-        <img :src="getImageUrl(ARTICLE.image)" />
+        <img :src="getImageUrl(ARTICLE_BASE.image)" />
         <h4>« Les Cornues »</h4>
-        <p>
-          Classification <span>{{ ARTICLE.class }}</span>
-        </p>
-        <p>
-          Taille <span>{{ ARTICLE.height }}</span>
-        </p>
-        <p>
-          Âge max <span>{{ ARTICLE.age }}</span>
-        </p>
-        <p>
-          Repartition <span>{{ ARTICLE.repart }}</span>
-        </p>
-        <p>
-          Trait Principaux <span>{{ ARTICLE.trait }}</span>
-        </p>
-        <p>
-          Statut <span>{{ ARTICLE.statut }}</span>
-        </p>
         <button
           v-if="
             markedArticle.findIndex(
@@ -135,14 +124,31 @@
           "
           @click="markArticle(ARTICLE_BASE.type, ARTICLE_BASE.id)"
         >
-          <i class="far fa-bookmark"></i> Ajouter aux signets
+          <i class="far fa-bookmark"></i>
         </button>
         <button
           v-else
           @click="unmarkArticle(ARTICLE_BASE.type, ARTICLE_BASE.id)"
         >
-          <i class="fas fa-bookmark"></i> Retirer des signets
+          <i class="fas fa-bookmark"></i>
         </button>
+
+        <p>Classification</p>
+        <p>{{ ARTICLE.class }}</p>
+        <p>Taille</p>
+        <p>{{ ARTICLE.height }}</p>
+        <p>Âge max</p>
+        <p>{{ ARTICLE.age }}</p>
+        <p>Repartition</p>
+        <p>{{ ARTICLE.repart }}</p>
+        <p>Trait Principaux</p>
+        <p>{{ ARTICLE.trait }}</p>
+        <p>Statut</p>
+        <p>{{ ARTICLE.statut }}</p>
+      </div>
+      <div>
+        <h4>Présentation</h4>
+        <p>{{ ARTICLE_BASE.description }}</p>
       </div>
     </section>
     <section id="wiki_article">
@@ -242,7 +248,7 @@
       </article>
     </section>
 
-    <h4 class="linked_articles">Articles liées</h4>
+    <!-- <h4 class="linked_articles">Articles liées</h4>
     <section id="article_cards">
       <RouterLink
         :to="ARTICLES.find((article) => article.id === id)?.url + '/' + id"
@@ -258,7 +264,7 @@
         <p>{{ ARTICLES.find((article) => article.id === id)?.description }}</p>
         <p>Lire l'article</p>
       </RouterLink>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -344,8 +350,7 @@
   }
 
   #article_presentation {
-    display: flex;
-    gap: 16px;
+    position: relative;
   }
 
   #article_presentation h4 {
@@ -357,12 +362,6 @@
     margin-bottom: 12px;
   }
 
-  #article_presentation div {
-    display: flex;
-    gap: 24px;
-    white-space: pre-line;
-    flex-direction: column;
-  }
   #article_presentation div:not(.aside_presentation) p::first-letter {
     initial-letter: 2;
     font-weight: bold;
@@ -371,62 +370,72 @@
     font-family: var(--font-display);
   }
 
-  #article_presentation div img {
+  #article_presentation img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 24 / 9;
     object-fit: cover;
   }
 
   .aside_presentation {
-    min-width: 320px;
-    border-radius: 4px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-color: #1a1c1e;
-    gap: 0px !important;
-    height: fit-content;
-    border-top: #7a0e13 solid 4px;
+    padding-left: 128px;
+    margin-bottom: 24px;
   }
   .aside_presentation img {
-    height: 120px !important;
+    position: absolute;
+    height: 180px !important;
+    width: 180px !important;
     object-fit: contain !important;
+    top: -12px;
+    left: -48px;
+    border: 2px solid var(--red-text);
+    outline: 1px solid #7a0e13;
+    outline-offset: 8px;
+    border-radius: 50%;
+    padding: 16px;
+    background-color: #1a1c1e;
+  }
+  .aside_presentation h4 {
+    text-decoration: underline;
+    margin-left: 16px;
   }
 
-  .aside_presentation h4 {
-    padding: 8px 16px;
-    font-size: 1.2rem !important;
-    color: var(--red-text) !important;
-    border: none !important;
-    text-align: center;
-  }
   .aside_presentation p {
     padding: 8px 16px;
-    font-size: 0.8rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    font-size: 1rem;
     color: white;
-    border: 0.5px solid #737880;
-  }
-  .aside_presentation span {
-    font-weight: bold;
-    justify-self: end;
-    border-left: 1px solid white;
-    width: 100%;
-    text-align: right;
-    padding-left: 24px;
-    color: var(--red-text);
+    display: flex;
   }
   .aside_presentation p:nth-child(even) {
-    background-color: #1c181a;
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: var(--red-text);
+    display: flex;
   }
+
+  .aside_presentation div {
+    margin: 8px 16px;
+    font-size: 1rem;
+    color: white;
+    border-bottom: 0.5px solid #737880;
+  }
+
   .aside_presentation button {
-    background: linear-gradient(100deg, rgba(201, 47, 24, 0.42) 0%, rgba(201, 47, 24, 0.12) 100%);
-    color: var(--textColorWhite);
+    background-color: transparent;
+    /* border: 1px solid var(--red-text); */
     border: none;
+    margin: 4px 16px 4px auto;
+    color: var(--red-text);
+    font-size: 1.6rem;
     border-radius: 4px;
-    padding: 8px 48px;
+    padding: 4px 8px;
     width: fit-content;
-    margin: 16px;
-    align-self: center;
     cursor: pointer;
+    /* grid-column: span 2;
+    margin: 16px auto 8px; */
   }
 
   #wiki_article {
@@ -456,22 +465,6 @@
   .banner > p,
   .dm-banner > p {
     transform: none;
-  }
-
-  .dm-banner div {
-    border: 1px dashed#7a0e13;
-    padding: 4px 8px;
-    border-radius: 4px;
-  }
-
-  .dm-banner button {
-    background-color: transparent;
-    border: 1px solid#7a0e13;
-    color: white;
-    font-size: 1rem;
-    border-radius: 4px;
-    padding: 4px 8px;
-    margin-top: 16px;
   }
 
   .section_cards {
@@ -546,7 +539,7 @@
   }
   .article_card {
     padding: 16px;
-    background: linear-gradient(100deg, rgba(201, 47, 24, 0.14) 0%, #1c181a 42%);
+    background: #1e2022;
     /* border: 1px solid #737880; */
     border-radius: 8px;
     cursor: pointer;
@@ -627,6 +620,22 @@
     padding: 16px;
     border-radius: 4px;
     margin-bottom: 16px;
+  }
+
+  .dm-banner div {
+    border: 1px dashed#7a0e13;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  .dm-banner button {
+    background-color: transparent;
+    border: 1px solid#7a0e13;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-top: 16px;
   }
 
   .dm-banner .subtitle {

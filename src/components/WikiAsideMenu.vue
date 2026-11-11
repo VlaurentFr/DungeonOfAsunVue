@@ -26,7 +26,9 @@
             <i class="fas fa-globe-europe"></i>
             <p>Univers</p>
           </div>
-          <span>{{ ARTICLES.filter((a) => a.type === 'univers').length }}</span></RouterLink
+          <span>{{
+            ARTICLES.filter((a) => a.type === 'univers' || a.type === 'divinites').length
+          }}</span></RouterLink
         >
       </li>
       <li>
@@ -113,6 +115,18 @@
           <span>{{ ARTICLES.filter((a) => a.type === 'monstres').length }}</span></RouterLink
         >
       </li>
+      <li>
+        <RouterLink
+          to="/wiki-object"
+          :class="{ active: route.path.includes('wiki-object') }"
+        >
+          <div>
+            <i class="fas fa-boxes"></i>
+            <p>Objets</p>
+          </div>
+          <!-- <span>{{ ARTICLES.filter((a) => a.type === 'monstres').length }}</span> -->
+        </RouterLink>
+      </li>
     </ul>
   </aside>
 </template>
@@ -174,7 +188,7 @@
   }
 
   aside ul li a:hover {
-    background: linear-gradient(100deg, rgba(201, 47, 24, 0.14) 0%, #1c181a 42%);
+    background: #1e2022;
     color: var(--textColorWhite);
     /* transform: skewX(0); */
   }

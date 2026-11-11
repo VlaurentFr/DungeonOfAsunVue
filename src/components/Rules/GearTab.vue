@@ -98,24 +98,38 @@
       <h3 class="title-md mb-3">Focalisateurs Arcaniques</h3>
       <div class="stack-y">
         <div class="sub-box">
-          <strong class="text-primary text-sm block">Fétiche de Sang (WIP)</strong
+          <strong class="text-primary text-sm block">Fétiche de Sang (35 EC)</strong
           ><span class="text-sm"
-            >Permet de dépenser 3 PV à la place de 3 PE pour lancer un sort d'illusion ou
-            nécromancie.</span
+            >Sacrifice : Perdez 2 PV pour transformer un échec en réussite (1x par combat).</span
           >
         </div>
         <div class="sub-box">
-          <strong class="text-primary text-sm block">Baguette en Bois-Fiel</strong
+          <strong class="text-primary text-sm block">Baguette en Bois-Fiel (60 EC)</strong
+          ><span class="text-sm">Légère : Se cache facilement dans une manche.</span>
+        </div>
+        <div class="sub-box">
+          <strong class="text-primary text-sm block">Baguette en Cristal (150 EC)</strong
+          ><span class="text-sm">Précision : +1 au jet de toucher magique.</span>
+        </div>
+        <div class="sub-box">
+          <strong class="text-primary text-sm block">Sphère de pouvoir (350 EC)</strong
           ><span class="text-sm"
-            >+1 au toucher des sorts à distance et réduction de 1 PE sur le premier sort du
-            combat.</span
+            >Surcharge : Ajoutez +1d8 aux dégâts, mais gagnez +1 Corruption.</span
           >
         </div>
         <div class="sub-box">
-          <strong class="text-primary text-sm block">Grimoire Scellé d'Asun</strong
+          <strong class="text-primary text-sm block">Sceptre de fer (450 EC)</strong
+          ><span class="text-sm">Canalisation : -1 au coût en Énergie (1x par Combat).</span>
+        </div>
+        <div class="sub-box">
+          <strong class="text-primary text-sm block">Grimoire de cuir (500 EC)</strong
+          ><span class="text-sm">Mémoire : Relancez un jet d'INT raté (1x par jour). </span>
+        </div>
+        <div class="sub-box">
+          <strong class="text-primary text-sm block">Grimoire Scellé d'Asun (1200 EC)</strong
           ><span class="text-sm"
-            >Augmente la puissance des runes et autorise l'apprentissage d'un 5ème sort
-            rituel.</span
+            >Savoir : 1x par repos long, permet de doubler (relancer immédiatement) un sort
+            lancé.</span
           >
         </div>
       </div>
@@ -233,18 +247,46 @@
           </div>
           <div class="sub-box flex-between">
             <div>
-              <strong class="text-sm block">Potion de Sang Vital</strong
-              ><span class="text-xs">Restaure 2d8 + 4 PV en action d'urgence.</span>
+              <strong class="text-sm block">Potion de Soin Dilué</strong
+              ><span class="text-xs">Restaure 1d6 + 6 PV en action d'urgence.</span>
             </div>
             <span class="text-xs font-bold">30 EC</span>
           </div>
+          <!-- <div class="sub-box flex-between">
+            <div>
+              <strong class="text-sm block">Potion de Soin</strong
+              ><span class="text-xs">Restaure 2d6 + 12 PV en action d'urgence.</span>
+            </div>
+            <span class="text-xs font-bold">50 EC</span>
+          </div>
           <div class="sub-box flex-between">
             <div>
-              <strong class="text-sm block">Élixir d'Âme Ardente</strong
-              ><span class="text-xs">Régénère 1d10 + 2 Points d'Énergie (PE).</span>
+              <strong class="text-sm block">Potion de Soin Vital</strong
+              ><span class="text-xs">Restaure 4d6 + 24 PV en action d'urgence.</span>
+            </div>
+            <span class="text-xs font-bold">100 EC</span>
+          </div> -->
+          <div class="sub-box flex-between">
+            <div>
+              <strong class="text-sm block">Élixir d'Héros</strong
+              ><span class="text-xs">Régénère 1d6 + 3 Points d'Énergie (PE).</span>
             </div>
             <span class="text-xs font-bold">40 EC</span>
           </div>
+          <!-- <div class="sub-box flex-between">
+            <div>
+              <strong class="text-sm block">Tonique d'Héros</strong
+              ><span class="text-xs">Régénère 2d6 + 6 Points d'Énergie (PE).</span>
+            </div>
+            <span class="text-xs font-bold">40 EC</span>
+          </div>
+          <div class="sub-box flex-between">
+            <div>
+              <strong class="text-sm block">Ambroisie d'Héros</strong
+              ><span class="text-xs">Régénère 4d6 + 12 Points d'Énergie (PE).</span>
+            </div>
+            <span class="text-xs font-bold">40 EC</span>
+          </div> -->
           <div class="sub-box flex-between">
             <div>
               <strong class="text-error text-sm block">Feu Grégeois d'Asun</strong

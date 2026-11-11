@@ -51,6 +51,17 @@
     "area": "Nouveau Monde",
     "url": "/wiki-factions"
   },
+  {
+    "id": 11,
+    "type": "faction",
+    "title": "La Lance Noire",
+    "description": "La Lance Noire est une organisation indépendante regroupant des aventuriers, mercenaires, chasseurs de monstres et explorateurs. Sa réputation s'est construite au fil des générations grâce à une activité simple : accepter les missions que les royaumes et les particuliers ne peuvent ou ne veulent pas accomplir eux-mêmes. La Lance Noire n'appartient à aucun royaume. Ses membres peuvent traverser les frontières, travailler pour des puissances rivales et intervenir dans des régions où les armées officielles ne peuvent agir.",
+    "image": "LanceNoire.png",
+    "area": "Nouveau Monde",
+    "url": "/wiki-factions"
+  },
+
+
 
 
   {
@@ -151,6 +162,155 @@
     "image": "Fenghou.png",
     "url": "/wiki-peuples",
     "color": "#34D399"
+  },
+
+
+
+
+
+  {
+    "id": 1,
+    "type": "divinites",
+    "title": "Fauscht",
+    "description": "Dieu de la mort",
+    "image": "Fauscht.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 2,
+    "type": "divinites",
+    "title": "Metona",
+    "description": "Déesse de l’Amour et de la Vie",
+    "image": "Metona.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 3,
+    "type": "divinites",
+    "title": "Riannedos",
+    "description": "Dieu du Temps",
+    "image": "Riannedos.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 4,
+    "type": "divinites",
+    "title": "Théomis",
+    "description": "Dieu de l'Ordre",
+    "image": "Theomis.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 5,
+    "type": "divinites",
+    "title": "Quaara",
+    "description": "Déesse de la nature",
+    "image": "Quaara.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 6,
+    "type": "divinites",
+    "title": "Eone",
+    "description": "Dieu du savoir et de la connaissance",
+    "image": "Eone.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 7,
+    "type": "divinites",
+    "title": "Gusius",
+    "description": "Dieu des Animaux",
+    "image": "Gusius.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 8,
+    "type": "divinites",
+    "title": "Kyhara",
+    "description": "Déesse de l'Hiver",
+    "image": "Kyhara.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 9,
+    "type": "divinites",
+    "title": "Edes",
+    "description": "Dieu de la Justice",
+    "image": "Edes.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 10,
+    "type": "divinites",
+    "title": "Neien",
+    "description": "Dieu de la Vengeance",
+    "image": "Neien.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 11,
+    "type": "divinites",
+    "title": "Cione & Cirana",
+    "description": "Déesses de l'Aube et du Crépuscule",
+    "image": "CioneCirana.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 12,
+    "type": "divinites",
+    "title": "Phiella",
+    "description": "Déesses de la tentation et de la luxure",
+    "image": "Phiella.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 13,
+    "type": "divinites",
+    "title": "Rhabus",
+    "description": "Dieu de la destruction",
+    "image": "Rhabus.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 14,
+    "type": "divinites",
+    "title": "Buklos",
+    "description": "Dieu de la débauche",
+    "image": "Buklos.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 15,
+    "type": "divinites",
+    "title": "Tumtum",
+    "description": "Dieu de la folie",
+    "image": "Tumtum.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 16,
+    "type": "divinites",
+    "title": "Othar",
+    "description": "Dieu des marchés",
+    "image": "Othar.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 17,
+    "type": "divinites",
+    "title": "Thorvarus",
+    "description": "Dieu des Voleurs et des Intrigues",
+    "image": "Thorvarus.png",
+    "url": "/wiki-divinites"
+  },
+  {
+    "id": 18,
+    "type": "divinites",
+    "title": "Archombre",
+    "description": "Dieu des Vampires et du Sang",
+    "image": "Archombre.png",
+    "url": "/wiki-divinites"
   }
 
 ]

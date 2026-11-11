@@ -205,7 +205,7 @@
       </article>
     </section>
 
-    <h4 class="linked_articles">Articles liées</h4>
+    <!-- <h4 class="linked_articles">Articles liées</h4>
     <section id="article_cards">
       <RouterLink
         :to="ARTICLES.find((article) => article.id === id)?.url + '/' + id"
@@ -221,7 +221,7 @@
         <p>{{ ARTICLES.find((article) => article.id === id)?.description }}</p>
         <p>Lire l'article</p>
       </RouterLink>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -458,7 +458,7 @@
   }
   .article_card {
     padding: 16px;
-    background: linear-gradient(100deg, rgba(201, 47, 24, 0.14) 0%, #1c181a 42%);
+    background: #1e2022;
     /* border: 1px solid #737880; */
     border-radius: 8px;
     cursor: pointer;

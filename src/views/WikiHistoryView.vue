@@ -219,12 +219,13 @@
     border: 1px solid #11151d;
     border-radius: 4px;
     transition: all 300ms ease-in-out;
-    background: linear-gradient(100deg, rgba(201, 47, 24, 0.14) 0%, #1c181a 42%);
+    background: #1e2022;
   }
 
   #wiki_articles ul li a:hover {
     /* border: 1px solid var(--secondaryColor); */
-    background: linear-gradient(100deg, rgba(201, 47, 24, 0.42) 0%, rgba(201, 47, 24, 0.12) 100%);
+    background: rgba(201, 47, 24, 0.2);
+    /* background: linear-gradient(100deg, rgba(201, 47, 24, 0.42) 0%, rgba(201, 47, 24, 0.12) 100%); */
   }
 
   #wiki_articles ul li a img {

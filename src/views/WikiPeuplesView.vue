@@ -55,7 +55,7 @@
                 <span><i class="far fa-eye"></i> Déjà vu</span>
               </p>
               <h5 :style="{ color: article.color }">{{ article.title }}</h5>
-              <p>{{ article.description }}</p>
+              <!-- <p>{{ article.description }}</p> -->
             </RouterLink>
           </li>
         </ul>
@@ -89,7 +89,7 @@
 
   @media (min-width: 1024px) {
     .grid-container {
-      columns: 3;
+      columns: 4;
     }
   }
 
@@ -172,11 +172,12 @@
     border: 1px solid #11151d;
     border-radius: 4px;
     transition: all 300ms ease-in-out;
-    background: linear-gradient(180deg, rgba(201, 47, 24, 0.14) 0%, #1c181a 24%);
+    background: #1e2022;
   }
 
   #wiki_articles ul li a:hover {
-    border: 1px solid var(--secondaryColor);
+    /* border: 1px solid var(--secondaryColor); */
+    background: rgba(201, 47, 24, 0.2);
     /* background: linear-gradient(
       100deg,
       rgba(201, 47, 24, 0.42) 0%,
@@ -186,7 +187,6 @@
 
   #wiki_articles ul li a img {
     width: 100%;
-    height: 150px;
     object-fit: cover;
     border-radius: 4px;
   }
